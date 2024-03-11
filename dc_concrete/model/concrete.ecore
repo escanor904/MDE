@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="concretemodel" nsURI="http://concretemodel" nsPrefix="concretemodel">
+  <eAnnotations source="gmf"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ModelFactoryConcrete">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="listProjects" upperBound="-1"
+        eType="#//ProjectAdj" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProjectAdj">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="path" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstClassDiagramAdj" upperBound="-1"
+        eType="#//ClassDiagramAdj" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassDiagramAdj">
+    <eAnnotations source="gmf.diagram"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstPackageConcreteAdj"
+        upperBound="-1" eType="#//PackageConcreteAdj" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstOutputRelationship"
+        upperBound="-1" eType="#//RelationshipAdj" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstInputRelationship" upperBound="-1"
+        eType="#//RelationshipAdj" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstClassConcreteAdj" upperBound="-1"
+        eType="#//ClassConcreteAdj" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PackageConcreteAdj">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="name"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="path" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RelationshipAdj" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="roleTarget" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="roleSource" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="multiplicityTargetClass"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="multiplicitySourceClass"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="classSource" eType="#//ClassConcreteAdj"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="classTarget" eType="#//ClassConcreteAdj"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ContainmentSdj" eSuperTypes="#//RelationshipAdj">
+    <eAnnotations source="gmf.link">
+      <details key="source" value="classSource"/>
+      <details key="target" value="classTarget"/>
+      <details key="style" value="dot"/>
+      <details key="width" value="2"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SharingAdj" eSuperTypes="#//RelationshipAdj">
+    <eAnnotations source="gmf.link">
+      <details key="source" value="classSource"/>
+      <details key="target" value="classTarget"/>
+      <details key="style" value="dot"/>
+      <details key="width" value="2"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AssociationAdj" eSuperTypes="#//RelationshipAdj">
+    <eAnnotations source="gmf.link">
+      <details key="source" value="classSource"/>
+      <details key="target" value="classTarget"/>
+      <details key="style" value="dot"/>
+      <details key="width" value="2"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GeneralizationAdj" eSuperTypes="#//RelationshipAdj">
+    <eAnnotations source="gmf.link">
+      <details key="source" value="classSource"/>
+      <details key="target" value="classTarget"/>
+      <details key="style" value="dot"/>
+      <details key="width" value="2"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassConcreteAdj">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="name"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstAttributeConcreteAdj"
+        upperBound="-1" eType="#//AttributeConcreteAdj" containment="true">
+      <eAnnotations source="gmf.compartment"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstMethodConcreteAdj" upperBound="-1"
+        eType="#//MethodConcreteAdj" containment="true">
+      <eAnnotations source="gmf.compartment"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MethodConcreteAdj">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="methodName"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="methodName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="returnType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accessModifier" eType="#//AccessModifier"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstParameterConcreteAdj"
+        upperBound="-1" eType="#//ParameterConcreteAdj" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ParameterConcreteAdj">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="AttributeTypeConcreteAdj"
+        eType="#//AttributeTypeConcreteAdj"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeTypeConcreteAdj">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ParameterConcreteAdj" upperBound="-1"
+        eType="#//ParameterConcreteAdj" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstAttributeConcreteAdj"
+        upperBound="-1" eType="#//AttributeConcreteAdj" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeConcreteAdj">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="name"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributeTypeConcreteAdj"
+        eType="#//AttributeTypeConcreteAdj"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="AccessModifier">
+    <eLiterals name="PUBLIC" value="1"/>
+    <eLiterals name="PRIVATE" value="2"/>
+    <eLiterals name="PROTECTED" value="3"/>
+  </eClassifiers>
+</ecore:EPackage>

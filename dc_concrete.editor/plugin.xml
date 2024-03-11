@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated concrete -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="concretemodel.presentation.ConcretemodelModelWizardID"
+            name="%_UI_ConcretemodelModelWizard_label"
+            class="concretemodel.presentation.ConcretemodelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ConcretemodelModelFile.gif">
+         <description>%_UI_ConcretemodelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated concrete -->
+      <editor
+            id="concretemodel.presentation.ConcretemodelEditorID"
+            name="%_UI_ConcretemodelEditor_label"
+            icon="icons/full/obj16/ConcretemodelModelFile.gif"
+            extensions="concretemodel"
+            class="concretemodel.presentation.ConcretemodelEditor"
+            contributorClass="concretemodel.presentation.ConcretemodelActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

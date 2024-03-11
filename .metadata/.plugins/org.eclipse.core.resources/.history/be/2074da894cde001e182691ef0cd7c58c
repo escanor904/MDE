@@ -1,0 +1,393 @@
+/**
+ */
+package abstractmodel.impl;
+
+import abstractmodel.AbstractmodelPackage;
+import abstractmodel.AttributeAdj;
+import abstractmodel.ClassAdj;
+import abstractmodel.ClassTypeAdj;
+import abstractmodel.MethodAdj;
+import abstractmodel.RelationshipAdj;
+
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.EObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Class Adj</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link abstractmodel.impl.ClassAdjImpl#getName <em>Name</em>}</li>
+ *   <li>{@link abstractmodel.impl.ClassAdjImpl#getClassTypeAdj <em>Class Type Adj</em>}</li>
+ *   <li>{@link abstractmodel.impl.ClassAdjImpl#getLstAttributeAdj <em>Lst Attribute Adj</em>}</li>
+ *   <li>{@link abstractmodel.impl.ClassAdjImpl#getLstMethodAdj <em>Lst Method Adj</em>}</li>
+ *   <li>{@link abstractmodel.impl.ClassAdjImpl#getLstRelationShipInAdj <em>Lst Relation Ship In Adj</em>}</li>
+ *   <li>{@link abstractmodel.impl.ClassAdjImpl#getLstRelationShipExitAdj <em>Lst Relation Ship Exit Adj</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class ClassAdjImpl extends EObjectImpl implements ClassAdj {
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getClassTypeAdj() <em>Class Type Adj</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getClassTypeAdj()
+	 * @generated
+	 * @ordered
+	 */
+	protected ClassTypeAdj classTypeAdj;
+
+	/**
+	 * The cached value of the '{@link #getLstAttributeAdj() <em>Lst Attribute Adj</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLstAttributeAdj()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<AttributeAdj> lstAttributeAdj;
+
+	/**
+	 * The cached value of the '{@link #getLstMethodAdj() <em>Lst Method Adj</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLstMethodAdj()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<MethodAdj> lstMethodAdj;
+
+	/**
+	 * The cached value of the '{@link #getLstRelationShipInAdj() <em>Lst Relation Ship In Adj</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLstRelationShipInAdj()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<RelationshipAdj> lstRelationShipInAdj;
+
+	/**
+	 * The cached value of the '{@link #getLstRelationShipExitAdj() <em>Lst Relation Ship Exit Adj</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLstRelationShipExitAdj()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<RelationshipAdj> lstRelationShipExitAdj;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ClassAdjImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return AbstractmodelPackage.Literals.CLASS_ADJ;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AbstractmodelPackage.CLASS_ADJ__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ClassTypeAdj getClassTypeAdj() {
+		if (classTypeAdj != null && classTypeAdj.eIsProxy()) {
+			InternalEObject oldClassTypeAdj = (InternalEObject)classTypeAdj;
+			classTypeAdj = (ClassTypeAdj)eResolveProxy(oldClassTypeAdj);
+			if (classTypeAdj != oldClassTypeAdj) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, AbstractmodelPackage.CLASS_ADJ__CLASS_TYPE_ADJ, oldClassTypeAdj, classTypeAdj));
+			}
+		}
+		return classTypeAdj;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ClassTypeAdj basicGetClassTypeAdj() {
+		return classTypeAdj;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setClassTypeAdj(ClassTypeAdj newClassTypeAdj) {
+		ClassTypeAdj oldClassTypeAdj = classTypeAdj;
+		classTypeAdj = newClassTypeAdj;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AbstractmodelPackage.CLASS_ADJ__CLASS_TYPE_ADJ, oldClassTypeAdj, classTypeAdj));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<AttributeAdj> getLstAttributeAdj() {
+		if (lstAttributeAdj == null) {
+			lstAttributeAdj = new EObjectContainmentEList<AttributeAdj>(AttributeAdj.class, this, AbstractmodelPackage.CLASS_ADJ__LST_ATTRIBUTE_ADJ);
+		}
+		return lstAttributeAdj;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<MethodAdj> getLstMethodAdj() {
+		if (lstMethodAdj == null) {
+			lstMethodAdj = new EObjectContainmentEList<MethodAdj>(MethodAdj.class, this, AbstractmodelPackage.CLASS_ADJ__LST_METHOD_ADJ);
+		}
+		return lstMethodAdj;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<RelationshipAdj> getLstRelationShipInAdj() {
+		if (lstRelationShipInAdj == null) {
+			lstRelationShipInAdj = new EObjectContainmentEList<RelationshipAdj>(RelationshipAdj.class, this, AbstractmodelPackage.CLASS_ADJ__LST_RELATION_SHIP_IN_ADJ);
+		}
+		return lstRelationShipInAdj;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<RelationshipAdj> getLstRelationShipExitAdj() {
+		if (lstRelationShipExitAdj == null) {
+			lstRelationShipExitAdj = new EObjectContainmentEList<RelationshipAdj>(RelationshipAdj.class, this, AbstractmodelPackage.CLASS_ADJ__LST_RELATION_SHIP_EXIT_ADJ);
+		}
+		return lstRelationShipExitAdj;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case AbstractmodelPackage.CLASS_ADJ__LST_ATTRIBUTE_ADJ:
+				return ((InternalEList<?>)getLstAttributeAdj()).basicRemove(otherEnd, msgs);
+			case AbstractmodelPackage.CLASS_ADJ__LST_METHOD_ADJ:
+				return ((InternalEList<?>)getLstMethodAdj()).basicRemove(otherEnd, msgs);
+			case AbstractmodelPackage.CLASS_ADJ__LST_RELATION_SHIP_IN_ADJ:
+				return ((InternalEList<?>)getLstRelationShipInAdj()).basicRemove(otherEnd, msgs);
+			case AbstractmodelPackage.CLASS_ADJ__LST_RELATION_SHIP_EXIT_ADJ:
+				return ((InternalEList<?>)getLstRelationShipExitAdj()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case AbstractmodelPackage.CLASS_ADJ__NAME:
+				return getName();
+			case AbstractmodelPackage.CLASS_ADJ__CLASS_TYPE_ADJ:
+				if (resolve) return getClassTypeAdj();
+				return basicGetClassTypeAdj();
+			case AbstractmodelPackage.CLASS_ADJ__LST_ATTRIBUTE_ADJ:
+				return getLstAttributeAdj();
+			case AbstractmodelPackage.CLASS_ADJ__LST_METHOD_ADJ:
+				return getLstMethodAdj();
+			case AbstractmodelPackage.CLASS_ADJ__LST_RELATION_SHIP_IN_ADJ:
+				return getLstRelationShipInAdj();
+			case AbstractmodelPackage.CLASS_ADJ__LST_RELATION_SHIP_EXIT_ADJ:
+				return getLstRelationShipExitAdj();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case AbstractmodelPackage.CLASS_ADJ__NAME:
+				setName((String)newValue);
+				return;
+			case AbstractmodelPackage.CLASS_ADJ__CLASS_TYPE_ADJ:
+				setClassTypeAdj((ClassTypeAdj)newValue);
+				return;
+			case AbstractmodelPackage.CLASS_ADJ__LST_ATTRIBUTE_ADJ:
+				getLstAttributeAdj().clear();
+				getLstAttributeAdj().addAll((Collection<? extends AttributeAdj>)newValue);
+				return;
+			case AbstractmodelPackage.CLASS_ADJ__LST_METHOD_ADJ:
+				getLstMethodAdj().clear();
+				getLstMethodAdj().addAll((Collection<? extends MethodAdj>)newValue);
+				return;
+			case AbstractmodelPackage.CLASS_ADJ__LST_RELATION_SHIP_IN_ADJ:
+				getLstRelationShipInAdj().clear();
+				getLstRelationShipInAdj().addAll((Collection<? extends RelationshipAdj>)newValue);
+				return;
+			case AbstractmodelPackage.CLASS_ADJ__LST_RELATION_SHIP_EXIT_ADJ:
+				getLstRelationShipExitAdj().clear();
+				getLstRelationShipExitAdj().addAll((Collection<? extends RelationshipAdj>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case AbstractmodelPackage.CLASS_ADJ__NAME:
+				setName(NAME_EDEFAULT);
+				return;
+			case AbstractmodelPackage.CLASS_ADJ__CLASS_TYPE_ADJ:
+				setClassTypeAdj((ClassTypeAdj)null);
+				return;
+			case AbstractmodelPackage.CLASS_ADJ__LST_ATTRIBUTE_ADJ:
+				getLstAttributeAdj().clear();
+				return;
+			case AbstractmodelPackage.CLASS_ADJ__LST_METHOD_ADJ:
+				getLstMethodAdj().clear();
+				return;
+			case AbstractmodelPackage.CLASS_ADJ__LST_RELATION_SHIP_IN_ADJ:
+				getLstRelationShipInAdj().clear();
+				return;
+			case AbstractmodelPackage.CLASS_ADJ__LST_RELATION_SHIP_EXIT_ADJ:
+				getLstRelationShipExitAdj().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case AbstractmodelPackage.CLASS_ADJ__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case AbstractmodelPackage.CLASS_ADJ__CLASS_TYPE_ADJ:
+				return classTypeAdj != null;
+			case AbstractmodelPackage.CLASS_ADJ__LST_ATTRIBUTE_ADJ:
+				return lstAttributeAdj != null && !lstAttributeAdj.isEmpty();
+			case AbstractmodelPackage.CLASS_ADJ__LST_METHOD_ADJ:
+				return lstMethodAdj != null && !lstMethodAdj.isEmpty();
+			case AbstractmodelPackage.CLASS_ADJ__LST_RELATION_SHIP_IN_ADJ:
+				return lstRelationShipInAdj != null && !lstRelationShipInAdj.isEmpty();
+			case AbstractmodelPackage.CLASS_ADJ__LST_RELATION_SHIP_EXIT_ADJ:
+				return lstRelationShipExitAdj != null && !lstRelationShipExitAdj.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (name: ");
+		result.append(name);
+		result.append(')');
+		return result.toString();
+	}
+
+} //ClassAdjImpl

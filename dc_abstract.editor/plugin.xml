@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated abstract -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="abstractmodel.presentation.AbstractmodelModelWizardID"
+            name="%_UI_AbstractmodelModelWizard_label"
+            class="abstractmodel.presentation.AbstractmodelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/AbstractmodelModelFile.gif">
+         <description>%_UI_AbstractmodelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated abstract -->
+      <editor
+            id="abstractmodel.presentation.AbstractmodelEditorID"
+            name="%_UI_AbstractmodelEditor_label"
+            icon="icons/full/obj16/AbstractmodelModelFile.gif"
+            extensions="abstractmodel"
+            class="abstractmodel.presentation.AbstractmodelEditor"
+            contributorClass="abstractmodel.presentation.AbstractmodelActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

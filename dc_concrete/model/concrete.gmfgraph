@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="concretemodel">
+  <figures name="Default">
+    <descriptors name="PackageConcreteAdjFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="PackageConcreteAdjFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="PackageConcreteAdjLabelFigure" text="PackageConcreteAdj"/>
+      </actualFigure>
+      <accessors accessor="getFigurePackageConcreteAdjLabelFigure" figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ClassConcreteAdjFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ClassConcreteAdjFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="ClassConcreteAdjLabelFigure" text="ClassConcreteAdj">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="ClassConcreteAdjLstAttributeConcreteAdjCompartmentFigure" outline="false"/>
+        <children xsi:type="gmfgraph:Rectangle" name="ClassConcreteAdjLstMethodConcreteAdjCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureClassConcreteAdjLabelFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+      <accessors accessor="getClassConcreteAdjLstAttributeConcreteAdjCompartmentFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.1"/>
+      <accessors accessor="getClassConcreteAdjLstMethodConcreteAdjCompartmentFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.2"/>
+    </descriptors>
+    <descriptors name="MethodConcreteAdjFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="MethodConcreteAdjFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="MethodConcreteAdjLabelFigure" text="MethodConcreteAdj"/>
+      </actualFigure>
+      <accessors accessor="getFigureMethodConcreteAdjLabelFigure" figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="AttributeConcreteAdjFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AttributeConcreteAdjFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="AttributeConcreteAdjLabelFigure" text="AttributeConcreteAdj"/>
+      </actualFigure>
+      <accessors accessor="getFigureAttributeConcreteAdjLabelFigure" figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ContainmentSdjFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ContainmentSdjFigure" lineWidth="2" lineKind="LINE_DOT"/>
+    </descriptors>
+    <descriptors name="SharingAdjFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="SharingAdjFigure" lineWidth="2" lineKind="LINE_DOT"/>
+    </descriptors>
+    <descriptors name="AssociationAdjFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="AssociationAdjFigure" lineWidth="2" lineKind="LINE_DOT"/>
+    </descriptors>
+    <descriptors name="GeneralizationAdjFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="GeneralizationAdjFigure" lineWidth="2" lineKind="LINE_DOT"/>
+    </descriptors>
+  </figures>
+  <nodes name="PackageConcreteAdj" figure="PackageConcreteAdjFigure"/>
+  <nodes name="ClassConcreteAdj" figure="ClassConcreteAdjFigure"/>
+  <nodes name="MethodConcreteAdj" figure="MethodConcreteAdjFigure"/>
+  <nodes name="AttributeConcreteAdj" figure="AttributeConcreteAdjFigure"/>
+  <connections name="ContainmentSdj" figure="ContainmentSdjFigure"/>
+  <connections name="SharingAdj" figure="SharingAdjFigure"/>
+  <connections name="AssociationAdj" figure="AssociationAdjFigure"/>
+  <connections name="GeneralizationAdj" figure="GeneralizationAdjFigure"/>
+  <compartments name="ClassConcreteAdjLstAttributeConcreteAdjCompartment" figure="ClassConcreteAdjFigure" collapsible="true" accessor="//@figures.0/@descriptors.1/@accessors.1"/>
+  <compartments name="ClassConcreteAdjLstMethodConcreteAdjCompartment" figure="ClassConcreteAdjFigure" collapsible="true" accessor="//@figures.0/@descriptors.1/@accessors.2"/>
+  <labels name="PackageConcreteAdjLabel" figure="PackageConcreteAdjFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="ClassConcreteAdjLabel" figure="ClassConcreteAdjFigure" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+  <labels name="MethodConcreteAdjLabel" figure="MethodConcreteAdjFigure" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
+  <labels name="AttributeConcreteAdjLabel" figure="AttributeConcreteAdjFigure" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
+</gmfgraph:Canvas>

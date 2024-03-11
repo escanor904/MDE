@@ -1,0 +1,24 @@
+/*
+ * 
+ */
+package concretemodel.diagram.providers.assistants;
+
+/**
+ * @generated
+ */
+public class ConcretemodelModelingAssistantProviderOfClassDiagramAdjEditPart extends concretemodel.diagram.providers.ConcretemodelModelingAssistantProvider {
+
+				/**
+ * @generated
+ */
+	@Override
+
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getTypesForPopupBar(org.eclipse.core.runtime.IAdaptable host) {
+		java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType>(2);
+					types.add(concretemodel.diagram.providers.ConcretemodelElementTypes.PackageConcreteAdj_2001);
+					types.add(concretemodel.diagram.providers.ConcretemodelElementTypes.ClassConcreteAdj_2002);
+					return types;	
+	}
+			
+	
+	}

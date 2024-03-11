@@ -1,0 +1,104 @@
+@namespace( uri="http://abstractmodel", prefix="p")
+package abstractmodel;
+
+class ModelFactoryAbstract {
+    val ProjectAdj [*] listProjects;
+}
+
+class ProjectAdj{
+    attr String name;
+    attr String path;
+    val ClassTypeFactoryAdj classTypeFactoryAdj;
+    val AttributeTypeFactoryAdj attributeTypeFactoryAdj;
+    val PackageAdj [*] lstPackageAdj;       
+}
+
+class ClassTypeFactoryAdj{   
+    val   ClassTypeAdj [*] lstClassTypeAdj;   
+}
+
+class ClassTypeAdj{
+    attr String name;   
+    val ClassAdj [*] lstClassAdj;
+       
+}
+
+class AttributeTypeFactoryAdj{   
+    val   AttributeTypeAdj [*] lstAttributeTypeAdj;   
+}
+
+class AttributeTypeAdj {   
+    attr String name;   
+    val ParameterAdj [*] lstParameterAdj;
+    val AttributeAdj [*] lstAttributeAdj;
+    
+}
+
+class PackageAdj  {
+    attr String name;
+    attr String path;
+    val PackageAdj [*] lstChildPackageAdj;   
+    val ClassAdj [*] lstClassAdj;
+}
+
+class ClassAdj {
+    attr String name;
+    ref  ClassTypeAdj classTypeAdj;
+    val AttributeAdj [*] lstAttributeAdj;
+    val MethodAdj [*] lstMethodAdj;
+    val RelationshipAdj[*] lstRelationShipAdj;//lista de todas las relaciones que tiene la clase
+    val RelationshipAdj[*] lstInputRelationshipAdj;//lista de relaciones que entran a la clase
+}
+
+
+abstract class RelationshipAdj{
+    attr String roleTarget;//destino
+    attr String roleSource;//origen
+    attr String multiplicityTargetClass;
+    attr String multiplicitySourceClass;
+    ref ClassAdj targetClass;  
+}
+
+
+class ContainmentAdj extends RelationshipAdj {	
+}
+
+class  SharingAdj extends RelationshipAdj {	
+}
+
+class AssociationAdj extends RelationshipAdj {	
+}
+
+class GeneralizationAdj extends RelationshipAdj {//herencia
+}
+
+class AttributeAdj {
+    attr String name;
+    attr String valor;
+    attr String accesModifier;
+    ref AttributeTypeAdj attributeTypeAdj;
+    
+}
+
+class MethodAdj{
+    attr String methodName;
+    attr AccessModifier accessModify;
+    attr String returnTypeAdj;
+    attr String body;
+    val ParameterAdj [*] lstParameterAdj;
+
+}
+
+class ParameterAdj {
+    attr String name;
+    ref AttributeTypeAdj attributeTypeAdj;
+}
+
+
+enum AccessModifier {   
+    PUBLIC=1;
+    PRIVATE=2;
+    PROTECTED=3;
+}
+
+

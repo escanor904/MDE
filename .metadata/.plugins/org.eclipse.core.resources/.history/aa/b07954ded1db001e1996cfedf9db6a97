@@ -1,0 +1,21 @@
+/*
+ * 
+ */
+package concretemodel.diagram.providers;
+
+/**
+ * @generated
+ */
+public class ConcretemodelEditPartProvider extends org.eclipse.gmf.tooling.runtime.providers.DefaultEditPartProvider {
+
+	
+	/**
+ * @generated
+ */
+	public ConcretemodelEditPartProvider() {
+		super(new concretemodel.diagram.edit.parts.ConcretemodelEditPartFactory(), 			concretemodel.diagram.part.ConcretemodelVisualIDRegistry.TYPED_INSTANCE, 			concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart.MODEL_ID			
+		);
+	}
+
+
+	}

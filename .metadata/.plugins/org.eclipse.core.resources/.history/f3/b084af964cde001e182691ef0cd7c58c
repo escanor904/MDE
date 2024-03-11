@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="abstractmodel" nsURI="http://abstractmodel" nsPrefix="p">
+  <eClassifiers xsi:type="ecore:EClass" name="ModelFactoryAbstract">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="listProjects" upperBound="-1"
+        eType="#//ProjectAdj" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProjectAdj">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="path" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="classTypeFactoryAdj" eType="#//ClassTypeFactoryAdj"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributeTypeFactoryAdj"
+        eType="#//AttributeTypeFactoryAdj" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstPackageAdj" upperBound="-1"
+        eType="#//PackageAdj" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassTypeFactoryAdj">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstClassTypeAdj" upperBound="-1"
+        eType="#//ClassTypeAdj" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassTypeAdj">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstClassAdj" upperBound="-1"
+        eType="#//ClassAdj" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeTypeFactoryAdj">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstAttributeTypeAdj" upperBound="-1"
+        eType="#//AttributeTypeAdj" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeTypeAdj">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstParameterAdj" upperBound="-1"
+        eType="#//ParameterAdj" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstAttributeAdj" upperBound="-1"
+        eType="#//AttributeAdj" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstMethod" upperBound="-1"
+        eType="#//MethodAdj" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PackageAdj">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="path" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstChildPackageAdj" upperBound="-1"
+        eType="#//PackageAdj" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstClassAdj" upperBound="-1"
+        eType="#//ClassAdj" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassAdj">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="classTypeAdj" eType="#//ClassTypeAdj"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstAttributeAdj" upperBound="-1"
+        eType="#//AttributeAdj" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstMethodAdj" upperBound="-1"
+        eType="#//MethodAdj" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstRelationShipInAdj" upperBound="-1"
+        eType="#//RelationshipAdj" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstRelationShipExitAdj"
+        upperBound="-1" eType="#//RelationshipAdj" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RelationshipAdj" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="roleTarget" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="roleSource" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="multiplicityTargetClass"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="multiplicitySourceClass"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetClass" eType="#//ClassAdj"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ContainmentAdj" eSuperTypes="#//RelationshipAdj"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SharingAdj" eSuperTypes="#//RelationshipAdj"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AssociationAdj" eSuperTypes="#//RelationshipAdj"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GeneralizationAdj" eSuperTypes="#//RelationshipAdj"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeAdj">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributeTypeAdj" eType="#//AttributeTypeAdj"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MethodAdj">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="methodName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accessModify" eType="#//AccessModifier"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="returnTypeAdj" eType="#//AttributeTypeAdj"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="body" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstParameterAdj" upperBound="-1"
+        eType="#//ParameterAdj" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ParameterAdj">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributeTypeAdj" eType="#//AttributeTypeAdj"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="AccessModifier">
+    <eLiterals name="PUBLIC" value="1"/>
+    <eLiterals name="PRIVATE" value="2"/>
+    <eLiterals name="PROTECTED" value="3"/>
+  </eClassifiers>
+</ecore:EPackage>

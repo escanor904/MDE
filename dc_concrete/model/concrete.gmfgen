@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmfgen:GenEditorGenerator xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgen="http://www.eclipse.org/gmf/2009/GenModel" copyrightText="">
+  <diagram visualID="1000" editPartClassName="ClassDiagramAdjEditPart" itemSemanticEditPolicyClassName="ClassDiagramAdjItemSemanticEditPolicy" canonicalEditPolicyClassName="ClassDiagramAdjCanonicalEditPolicy" iconProviderPriority="Low" validationProviderPriority="Low" validationEnabled="true" validationDecorators="true" liveValidationUIFeedback="true">
+    <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Diagram"/>
+    <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="ClassDiagramAdjEditHelper"/>
+    <viewmap xsi:type="gmfgen:FigureViewmap" figureQualifiedClassName="org.eclipse.draw2d.FreeformLayer"/>
+    <containsShortcutsTo>concretemodel</containsShortcutsTo>
+    <shortcutsProvidedFor>concretemodel</shortcutsProvidedFor>
+    <domainDiagramElement href="concrete.genmodel#//concretemodel/ClassDiagramAdj"/>
+    <childNodes visualID="3001" editPartClassName="AttributeConcreteAdjEditPart" itemSemanticEditPolicyClassName="AttributeConcreteAdjItemSemanticEditPolicy" canonicalEditPolicyClassName="AttributeConcreteAdjCanonicalEditPolicy" graphicalNodeEditPolicyClassName="AttributeConcreteAdjGraphicalNodeEditPolicy" createCommandClassName="AttributeConcreteAdjCreateCommand" containers="//@diagram/@compartments.0">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="AttributeConcreteAdjEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AttributeConcreteAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AttributeConcreteAdjFigure extends org.eclipse.draw2d.RoundedRectangle {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureAttributeConcreteAdjLabelFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AttributeConcreteAdjFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureAttributeConcreteAdjLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureAttributeConcreteAdjLabelFigure.setText(&quot;AttributeConcreteAdj&quot;);&#xA;&#xA;this.add(fFigureAttributeConcreteAdjLabelFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureAttributeConcreteAdjLabelFigure() {&#xA;&#x9;&#x9;return fFigureAttributeConcreteAdjLabelFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet>
+        <metaClass href="concrete.genmodel#//concretemodel/AttributeConcreteAdj"/>
+        <containmentMetaFeature href="concrete.genmodel#//concretemodel/ClassConcreteAdj/lstAttributeConcreteAdj"/>
+        <childMetaFeature href="concrete.genmodel#//concretemodel/ClassConcreteAdj/lstAttributeConcreteAdj"/>
+      </modelFacet>
+      <labels visualID="5002" editPartClassName="AttributeConcreteAdjNameEditPart" itemSemanticEditPolicyClassName="AttributeConcreteAdjNameItemSemanticEditPolicy" elementIcon="true">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAttributeConcreteAdjLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="concrete.genmodel#//concretemodel/AttributeConcreteAdj/name"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
+    <childNodes visualID="3002" editPartClassName="MethodConcreteAdjEditPart" itemSemanticEditPolicyClassName="MethodConcreteAdjItemSemanticEditPolicy" canonicalEditPolicyClassName="MethodConcreteAdjCanonicalEditPolicy" graphicalNodeEditPolicyClassName="MethodConcreteAdjGraphicalNodeEditPolicy" createCommandClassName="MethodConcreteAdjCreateCommand" containers="//@diagram/@compartments.1">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="MethodConcreteAdjEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="MethodConcreteAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class MethodConcreteAdjFigure extends org.eclipse.draw2d.RoundedRectangle {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureMethodConcreteAdjLabelFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public MethodConcreteAdjFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureMethodConcreteAdjLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureMethodConcreteAdjLabelFigure.setText(&quot;MethodConcreteAdj&quot;);&#xA;&#xA;this.add(fFigureMethodConcreteAdjLabelFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureMethodConcreteAdjLabelFigure() {&#xA;&#x9;&#x9;return fFigureMethodConcreteAdjLabelFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet>
+        <metaClass href="concrete.genmodel#//concretemodel/MethodConcreteAdj"/>
+        <containmentMetaFeature href="concrete.genmodel#//concretemodel/ClassConcreteAdj/lstMethodConcreteAdj"/>
+        <childMetaFeature href="concrete.genmodel#//concretemodel/ClassConcreteAdj/lstMethodConcreteAdj"/>
+      </modelFacet>
+      <labels visualID="5003" editPartClassName="MethodConcreteAdjMethodNameEditPart" itemSemanticEditPolicyClassName="MethodConcreteAdjMethodNameItemSemanticEditPolicy" elementIcon="true">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureMethodConcreteAdjLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="concrete.genmodel#//concretemodel/MethodConcreteAdj/methodName"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
+    <topLevelNodes visualID="2001" editPartClassName="PackageConcreteAdjEditPart" itemSemanticEditPolicyClassName="PackageConcreteAdjItemSemanticEditPolicy" canonicalEditPolicyClassName="PackageConcreteAdjCanonicalEditPolicy" graphicalNodeEditPolicyClassName="PackageConcreteAdjGraphicalNodeEditPolicy" createCommandClassName="PackageConcreteAdjCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="PackageConcreteAdjEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="PackageConcreteAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class PackageConcreteAdjFigure extends org.eclipse.draw2d.RoundedRectangle {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigurePackageConcreteAdjLabelFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public PackageConcreteAdjFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigurePackageConcreteAdjLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigurePackageConcreteAdjLabelFigure.setText(&quot;PackageConcreteAdj&quot;);&#xA;&#xA;this.add(fFigurePackageConcreteAdjLabelFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigurePackageConcreteAdjLabelFigure() {&#xA;&#x9;&#x9;return fFigurePackageConcreteAdjLabelFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet>
+        <metaClass href="concrete.genmodel#//concretemodel/PackageConcreteAdj"/>
+        <containmentMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstPackageConcreteAdj"/>
+        <childMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstPackageConcreteAdj"/>
+      </modelFacet>
+      <labels visualID="5001" editPartClassName="PackageConcreteAdjNameEditPart" itemSemanticEditPolicyClassName="PackageConcreteAdjNameItemSemanticEditPolicy" elementIcon="true">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigurePackageConcreteAdjLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="concrete.genmodel#//concretemodel/PackageConcreteAdj/name"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2002" editPartClassName="ClassConcreteAdjEditPart" itemSemanticEditPolicyClassName="ClassConcreteAdjItemSemanticEditPolicy" canonicalEditPolicyClassName="ClassConcreteAdjCanonicalEditPolicy" compartments="//@diagram/@compartments.0 //@diagram/@compartments.1" graphicalNodeEditPolicyClassName="ClassConcreteAdjGraphicalNodeEditPolicy" createCommandClassName="ClassConcreteAdjCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="ClassConcreteAdjEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ClassConcreteAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ClassConcreteAdjFigure extends org.eclipse.draw2d.RoundedRectangle {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClassConcreteAdjLabelFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fClassConcreteAdjLstAttributeConcreteAdjCompartmentFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fClassConcreteAdjLstMethodConcreteAdjCompartmentFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ClassConcreteAdjFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureClassConcreteAdjLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureClassConcreteAdjLabelFigure.setText(&quot;ClassConcreteAdj&quot;);&#xA;fFigureClassConcreteAdjLabelFigure.setMaximumSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(10000)&#xA;, getMapMode().DPtoLP(50)&#xA;));&#xA;&#xA;this.add(fFigureClassConcreteAdjLabelFigure);&#xA;&#xA;&#xA;&#xA;fClassConcreteAdjLstAttributeConcreteAdjCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fClassConcreteAdjLstAttributeConcreteAdjCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fClassConcreteAdjLstAttributeConcreteAdjCompartmentFigure);&#xA;&#xA;&#xA;&#xA;fClassConcreteAdjLstMethodConcreteAdjCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fClassConcreteAdjLstMethodConcreteAdjCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fClassConcreteAdjLstMethodConcreteAdjCompartmentFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClassConcreteAdjLabelFigure() {&#xA;&#x9;&#x9;return fFigureClassConcreteAdjLabelFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getClassConcreteAdjLstAttributeConcreteAdjCompartmentFigure() {&#xA;&#x9;&#x9;return fClassConcreteAdjLstAttributeConcreteAdjCompartmentFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getClassConcreteAdjLstMethodConcreteAdjCompartmentFigure() {&#xA;&#x9;&#x9;return fClassConcreteAdjLstMethodConcreteAdjCompartmentFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <behaviour xsi:type="gmfgen:OpenDiagramBehaviour"/>
+      <modelFacet>
+        <metaClass href="concrete.genmodel#//concretemodel/ClassConcreteAdj"/>
+        <containmentMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstClassConcreteAdj"/>
+        <childMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstClassConcreteAdj"/>
+      </modelFacet>
+      <labels visualID="5004" editPartClassName="ClassConcreteAdjNameEditPart" itemSemanticEditPolicyClassName="ClassConcreteAdjNameItemSemanticEditPolicy" elementIcon="true">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureClassConcreteAdjLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="concrete.genmodel#//concretemodel/ClassConcreteAdj/name"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <links visualID="4001" editPartClassName="ContainmentSdjEditPart" itemSemanticEditPolicyClassName="ContainmentSdjItemSemanticEditPolicy" createCommandClassName="ContainmentSdjCreateCommand" reorientCommandClassName="ContainmentSdjReorientCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="ContainmentSdjEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ContainmentSdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ContainmentSdjFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ContainmentSdjFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;this.setLineStyle(org.eclipse.draw2d.Graphics.LINE_DOT);&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet xsi:type="gmfgen:TypeLinkModelFacet">
+        <metaClass href="concrete.genmodel#//concretemodel/ContainmentSdj"/>
+        <containmentMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstOutputRelationship"/>
+        <childMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstOutputRelationship"/>
+        <sourceMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classSource"/>
+        <targetMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classTarget"/>
+      </modelFacet>
+    </links>
+    <links visualID="4002" editPartClassName="ContainmentSdj2EditPart" itemSemanticEditPolicyClassName="ContainmentSdj2ItemSemanticEditPolicy" createCommandClassName="ContainmentSdj2CreateCommand" reorientCommandClassName="ContainmentSdj2ReorientCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
+      <elementType xsi:type="gmfgen:SpecializationType" metamodelType="//@diagram/@links.0/@elementType"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ContainmentSdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ContainmentSdjFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ContainmentSdjFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;this.setLineStyle(org.eclipse.draw2d.Graphics.LINE_DOT);&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet xsi:type="gmfgen:TypeLinkModelFacet">
+        <metaClass href="concrete.genmodel#//concretemodel/ContainmentSdj"/>
+        <containmentMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstInputRelationship"/>
+        <childMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstInputRelationship"/>
+        <sourceMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classSource"/>
+        <targetMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classTarget"/>
+      </modelFacet>
+    </links>
+    <links visualID="4003" editPartClassName="SharingAdjEditPart" itemSemanticEditPolicyClassName="SharingAdjItemSemanticEditPolicy" createCommandClassName="SharingAdjCreateCommand" reorientCommandClassName="SharingAdjReorientCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="SharingAdjEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="SharingAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class SharingAdjFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public SharingAdjFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;this.setLineStyle(org.eclipse.draw2d.Graphics.LINE_DOT);&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet xsi:type="gmfgen:TypeLinkModelFacet">
+        <metaClass href="concrete.genmodel#//concretemodel/SharingAdj"/>
+        <containmentMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstOutputRelationship"/>
+        <childMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstOutputRelationship"/>
+        <sourceMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classSource"/>
+        <targetMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classTarget"/>
+      </modelFacet>
+    </links>
+    <links visualID="4004" editPartClassName="SharingAdj2EditPart" itemSemanticEditPolicyClassName="SharingAdj2ItemSemanticEditPolicy" createCommandClassName="SharingAdj2CreateCommand" reorientCommandClassName="SharingAdj2ReorientCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
+      <elementType xsi:type="gmfgen:SpecializationType" metamodelType="//@diagram/@links.2/@elementType"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="SharingAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class SharingAdjFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public SharingAdjFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;this.setLineStyle(org.eclipse.draw2d.Graphics.LINE_DOT);&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet xsi:type="gmfgen:TypeLinkModelFacet">
+        <metaClass href="concrete.genmodel#//concretemodel/SharingAdj"/>
+        <containmentMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstInputRelationship"/>
+        <childMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstInputRelationship"/>
+        <sourceMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classSource"/>
+        <targetMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classTarget"/>
+      </modelFacet>
+    </links>
+    <links visualID="4005" editPartClassName="AssociationAdjEditPart" itemSemanticEditPolicyClassName="AssociationAdjItemSemanticEditPolicy" createCommandClassName="AssociationAdjCreateCommand" reorientCommandClassName="AssociationAdjReorientCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="AssociationAdjEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AssociationAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AssociationAdjFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AssociationAdjFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;this.setLineStyle(org.eclipse.draw2d.Graphics.LINE_DOT);&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet xsi:type="gmfgen:TypeLinkModelFacet">
+        <metaClass href="concrete.genmodel#//concretemodel/AssociationAdj"/>
+        <containmentMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstOutputRelationship"/>
+        <childMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstOutputRelationship"/>
+        <sourceMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classSource"/>
+        <targetMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classTarget"/>
+      </modelFacet>
+    </links>
+    <links visualID="4006" editPartClassName="AssociationAdj2EditPart" itemSemanticEditPolicyClassName="AssociationAdj2ItemSemanticEditPolicy" createCommandClassName="AssociationAdj2CreateCommand" reorientCommandClassName="AssociationAdj2ReorientCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
+      <elementType xsi:type="gmfgen:SpecializationType" metamodelType="//@diagram/@links.4/@elementType"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AssociationAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AssociationAdjFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AssociationAdjFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;this.setLineStyle(org.eclipse.draw2d.Graphics.LINE_DOT);&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet xsi:type="gmfgen:TypeLinkModelFacet">
+        <metaClass href="concrete.genmodel#//concretemodel/AssociationAdj"/>
+        <containmentMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstInputRelationship"/>
+        <childMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstInputRelationship"/>
+        <sourceMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classSource"/>
+        <targetMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classTarget"/>
+      </modelFacet>
+    </links>
+    <links visualID="4007" editPartClassName="GeneralizationAdjEditPart" itemSemanticEditPolicyClassName="GeneralizationAdjItemSemanticEditPolicy" createCommandClassName="GeneralizationAdjCreateCommand" reorientCommandClassName="GeneralizationAdjReorientCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="GeneralizationAdjEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="GeneralizationAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class GeneralizationAdjFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public GeneralizationAdjFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;this.setLineStyle(org.eclipse.draw2d.Graphics.LINE_DOT);&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet xsi:type="gmfgen:TypeLinkModelFacet">
+        <metaClass href="concrete.genmodel#//concretemodel/GeneralizationAdj"/>
+        <containmentMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstOutputRelationship"/>
+        <childMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstOutputRelationship"/>
+        <sourceMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classSource"/>
+        <targetMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classTarget"/>
+      </modelFacet>
+    </links>
+    <links visualID="4008" editPartClassName="GeneralizationAdj2EditPart" itemSemanticEditPolicyClassName="GeneralizationAdj2ItemSemanticEditPolicy" createCommandClassName="GeneralizationAdj2CreateCommand" reorientCommandClassName="GeneralizationAdj2ReorientCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
+      <elementType xsi:type="gmfgen:SpecializationType" metamodelType="//@diagram/@links.6/@elementType"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="GeneralizationAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class GeneralizationAdjFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public GeneralizationAdjFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;this.setLineStyle(org.eclipse.draw2d.Graphics.LINE_DOT);&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet xsi:type="gmfgen:TypeLinkModelFacet">
+        <metaClass href="concrete.genmodel#//concretemodel/GeneralizationAdj"/>
+        <containmentMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstInputRelationship"/>
+        <childMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstInputRelationship"/>
+        <sourceMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classSource"/>
+        <targetMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classTarget"/>
+      </modelFacet>
+    </links>
+    <compartments visualID="7001" editPartClassName="ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentEditPart" itemSemanticEditPolicyClassName="ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.0" title="ClassConcreteAdjLstAttributeConcreteAdjCompartment" needsTitle="false" node="//@diagram/@topLevelNodes.1" listLayout="false">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getClassConcreteAdjLstAttributeConcreteAdjCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <compartments visualID="7002" editPartClassName="ClassConcreteAdjClassConcreteAdjLstMethodConcreteAdjCompartmentEditPart" itemSemanticEditPolicyClassName="ClassConcreteAdjClassConcreteAdjLstMethodConcreteAdjCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="ClassConcreteAdjClassConcreteAdjLstMethodConcreteAdjCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.1" title="ClassConcreteAdjLstMethodConcreteAdjCompartment" needsTitle="false" node="//@diagram/@topLevelNodes.1" listLayout="false">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getClassConcreteAdjLstMethodConcreteAdjCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <palette>
+      <groups title="Objects" collapse="true">
+        <entries xsi:type="gmfgen:ToolEntry" title="AttributeConcreteAdj" description="Create new AttributeConcreteAdj" genNodes="//@diagram/@childNodes.0"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="ClassConcreteAdj" description="Create new ClassConcreteAdj" genNodes="//@diagram/@topLevelNodes.1"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="MethodConcreteAdj" description="Create new MethodConcreteAdj" genNodes="//@diagram/@childNodes.1"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="PackageConcreteAdj" description="Create new PackageConcreteAdj" genNodes="//@diagram/@topLevelNodes.0"/>
+      </groups>
+      <groups title="Connections" collapse="true">
+        <entries xsi:type="gmfgen:ToolEntry" title="AssociationAdj" description="Create new AssociationAdj" genLinks="//@diagram/@links.4 //@diagram/@links.5"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="ContainmentSdj" description="Create new ContainmentSdj" genLinks="//@diagram/@links.0 //@diagram/@links.1"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="GeneralizationAdj" description="Create new GeneralizationAdj" genLinks="//@diagram/@links.6 //@diagram/@links.7"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="SharingAdj" description="Create new SharingAdj" genLinks="//@diagram/@links.2 //@diagram/@links.3"/>
+      </groups>
+    </palette>
+    <preferencePages xsi:type="gmfgen:GenStandardPreferencePage" iD="dc_concrete.diagram.general" name="Concretemodel Diagram">
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="dc_concrete.diagram.appearance" name="Appearance" kind="Appearance"/>
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="dc_concrete.diagram.connections" name="Connections" kind="Connections"/>
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="dc_concrete.diagram.printing" name="Printing" kind="Printing"/>
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="dc_concrete.diagram.rulersAndGrid" name="Rulers And Grid" kind="RulersAndGrid"/>
+    </preferencePages>
+  </diagram>
+  <plugin printingEnabled="true">
+    <requiredPlugins>org.eclipse.gmf.tooling.runtime</requiredPlugins>
+    <requiredPlugins>org.eclipse.draw2d</requiredPlugins>
+    <requiredPlugins>org.eclipse.gmf.runtime.draw2d.ui</requiredPlugins>
+  </plugin>
+  <editor/>
+  <navigator>
+    <childReferences child="//@diagram"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.0"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@childNodes.0"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@childNodes.1"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.1"/>
+    <childReferences parent="//@diagram" child="//@diagram/@links.0" groupName="links" groupIcon="icons/linksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.0" child="//@diagram/@topLevelNodes.1" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@links.0" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.0" child="//@diagram/@topLevelNodes.1" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@links.0" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram" child="//@diagram/@links.1" groupName="links" groupIcon="icons/linksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.1" child="//@diagram/@topLevelNodes.1" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@links.1" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.1" child="//@diagram/@topLevelNodes.1" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@links.1" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram" child="//@diagram/@links.2" groupName="links" groupIcon="icons/linksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.2" child="//@diagram/@topLevelNodes.1" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@links.2" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.2" child="//@diagram/@topLevelNodes.1" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@links.2" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram" child="//@diagram/@links.3" groupName="links" groupIcon="icons/linksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.3" child="//@diagram/@topLevelNodes.1" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@links.3" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.3" child="//@diagram/@topLevelNodes.1" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@links.3" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram" child="//@diagram/@links.4" groupName="links" groupIcon="icons/linksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.4" child="//@diagram/@topLevelNodes.1" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@links.4" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.4" child="//@diagram/@topLevelNodes.1" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@links.4" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram" child="//@diagram/@links.5" groupName="links" groupIcon="icons/linksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.5" child="//@diagram/@topLevelNodes.1" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@links.5" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.5" child="//@diagram/@topLevelNodes.1" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@links.5" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram" child="//@diagram/@links.6" groupName="links" groupIcon="icons/linksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.6" child="//@diagram/@topLevelNodes.1" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@links.6" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.6" child="//@diagram/@topLevelNodes.1" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@links.6" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram" child="//@diagram/@links.7" groupName="links" groupIcon="icons/linksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.7" child="//@diagram/@topLevelNodes.1" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@links.7" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.7" child="//@diagram/@topLevelNodes.1" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.1" child="//@diagram/@links.7" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+  </navigator>
+  <diagramUpdater/>
+  <propertySheet>
+    <tabs xsi:type="gmfgen:GenStandardPropertyTab" iD="appearance"/>
+    <tabs xsi:type="gmfgen:GenStandardPropertyTab" iD="diagram"/>
+    <tabs xsi:type="gmfgen:GenCustomPropertyTab" iD="domain" label="Core">
+      <filter xsi:type="gmfgen:TypeTabFilter">
+        <types>org.eclipse.gmf.runtime.notation.View</types>
+        <types>org.eclipse.gef.EditPart</types>
+        <generatedTypes>abstractNavigatorItem</generatedTypes>
+      </filter>
+    </tabs>
+  </propertySheet>
+  <domainGenModel href="concrete.genmodel#/"/>
+  <labelParsers extensibleViaService="true">
+    <implementations xsi:type="gmfgen:PredefinedParser" uses="//@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet"/>
+  </labelParsers>
+  <contextMenus context="//@diagram">
+    <items xsi:type="gmfgen:LoadResourceAction"/>
+  </contextMenus>
+</gmfgen:GenEditorGenerator>

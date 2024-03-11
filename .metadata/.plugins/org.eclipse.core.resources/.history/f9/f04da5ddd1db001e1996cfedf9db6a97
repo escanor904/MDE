@@ -1,0 +1,25 @@
+	/*
+ * 
+ */
+package concretemodel.diagram.edit.policies;
+
+/**
+ * @generated
+ */
+public class SharingAdj2ItemSemanticEditPolicy extends concretemodel.diagram.edit.policies.ConcretemodelBaseItemSemanticEditPolicy {
+
+		/**
+ * @generated
+ */
+	public SharingAdj2ItemSemanticEditPolicy() {
+				super(concretemodel.diagram.providers.ConcretemodelElementTypes.SharingAdj_4004);
+	}
+
+			/**
+ * @generated
+ */
+	protected org.eclipse.gef.commands.Command getDestroyElementCommand(org.eclipse.gmf.runtime.emf.type.core.requests.DestroyElementRequest req) {
+		return getGEFWrapper(new org.eclipse.gmf.runtime.emf.type.core.commands.DestroyElementCommand(req));
+	}
+					
+	}

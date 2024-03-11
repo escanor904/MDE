@@ -1,0 +1,7 @@
+# Tracing options for the dc_concrete.diagram plug-in
+
+# Common issues
+dc_concrete.diagram/debug=false
+
+# Visual IDs
+dc_concrete.diagram/debug/visualID=false

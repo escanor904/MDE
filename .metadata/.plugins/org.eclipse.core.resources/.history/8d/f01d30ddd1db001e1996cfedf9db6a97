@@ -1,0 +1,14 @@
+/*
+ * 
+ */
+package concretemodel.diagram.providers.assistants;
+
+/**
+ * @generated
+ */
+public class ConcretemodelModelingAssistantProviderOfMethodConcreteAdjEditPart extends concretemodel.diagram.providers.ConcretemodelModelingAssistantProvider {
+
+					
+	
+
+	}

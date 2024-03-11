@@ -1,0 +1,1157 @@
+	/*
+ * 
+ */
+package concretemodel.diagram.part;
+
+	/**
+ * @generated
+ */
+public class ConcretemodelDiagramUpdater {
+		
+	/**
+ * @generated
+ */
+public static boolean isShortcutOrphaned(org.eclipse.gmf.runtime.notation.View view) {
+	return !view.isSetElement() || view.getElement() == null || view.getElement().eIsProxy();
+}
+	
+		/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelNodeDescriptor> getSemanticChildren(org.eclipse.gmf.runtime.notation.View view) {
+		switch (concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getVisualID(view)) {
+		case concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart.VISUAL_ID:
+	return getClassDiagramAdj_1000SemanticChildren(view);
+case concretemodel.diagram.edit.parts.ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentEditPart.VISUAL_ID:
+	return getClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartment_7001SemanticChildren(view);
+case concretemodel.diagram.edit.parts.ClassConcreteAdjClassConcreteAdjLstMethodConcreteAdjCompartmentEditPart.VISUAL_ID:
+	return getClassConcreteAdjClassConcreteAdjLstMethodConcreteAdjCompartment_7002SemanticChildren(view);
+	}
+		return java.util.Collections.emptyList();
+}
+	
+	/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelNodeDescriptor> getClassDiagramAdj_1000SemanticChildren(org.eclipse.gmf.runtime.notation.View view) {
+		if (!view.isSetElement()) {
+	return java.util.Collections.emptyList();
+}
+concretemodel.ClassDiagramAdj modelElement = (concretemodel.ClassDiagramAdj) view.getElement();
+	java.util.LinkedList<concretemodel.diagram.part.ConcretemodelNodeDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelNodeDescriptor>();
+						for (java.util.Iterator<?> it = modelElement.getLstPackageConcreteAdj().iterator(); it.hasNext();) {
+		concretemodel.PackageConcreteAdj childElement = (concretemodel.PackageConcreteAdj) it.next();
+					int visualID = concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getNodeVisualID(view, childElement);
+			if (visualID == concretemodel.diagram.edit.parts.PackageConcreteAdjEditPart.VISUAL_ID) {
+	result.add(new concretemodel.diagram.part.ConcretemodelNodeDescriptor(childElement, visualID));
+	continue;
+}
+	}
+						for (java.util.Iterator<?> it = modelElement.getLstClassConcreteAdj().iterator(); it.hasNext();) {
+		concretemodel.ClassConcreteAdj childElement = (concretemodel.ClassConcreteAdj) it.next();
+					int visualID = concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getNodeVisualID(view, childElement);
+			if (visualID == concretemodel.diagram.edit.parts.ClassConcreteAdjEditPart.VISUAL_ID) {
+	result.add(new concretemodel.diagram.part.ConcretemodelNodeDescriptor(childElement, visualID));
+	continue;
+}
+	}
+			return result;
+	}
+
+	/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelNodeDescriptor> getClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartment_7001SemanticChildren(org.eclipse.gmf.runtime.notation.View view) {
+		if (false == view.eContainer() instanceof org.eclipse.gmf.runtime.notation.View) {
+	return java.util.Collections.emptyList();
+}
+org.eclipse.gmf.runtime.notation.View containerView = (org.eclipse.gmf.runtime.notation.View) view.eContainer();
+if (!containerView.isSetElement()) {
+	return java.util.Collections.emptyList();
+}
+concretemodel.ClassConcreteAdj modelElement = (concretemodel.ClassConcreteAdj) containerView.getElement();
+	java.util.LinkedList<concretemodel.diagram.part.ConcretemodelNodeDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelNodeDescriptor>();
+						for (java.util.Iterator<?> it = modelElement.getLstAttributeConcreteAdj().iterator(); it.hasNext();) {
+		concretemodel.AttributeConcreteAdj childElement = (concretemodel.AttributeConcreteAdj) it.next();
+					int visualID = concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getNodeVisualID(view, childElement);
+			if (visualID == concretemodel.diagram.edit.parts.AttributeConcreteAdjEditPart.VISUAL_ID) {
+	result.add(new concretemodel.diagram.part.ConcretemodelNodeDescriptor(childElement, visualID));
+	continue;
+}
+	}
+			return result;
+	}
+
+	/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelNodeDescriptor> getClassConcreteAdjClassConcreteAdjLstMethodConcreteAdjCompartment_7002SemanticChildren(org.eclipse.gmf.runtime.notation.View view) {
+		if (false == view.eContainer() instanceof org.eclipse.gmf.runtime.notation.View) {
+	return java.util.Collections.emptyList();
+}
+org.eclipse.gmf.runtime.notation.View containerView = (org.eclipse.gmf.runtime.notation.View) view.eContainer();
+if (!containerView.isSetElement()) {
+	return java.util.Collections.emptyList();
+}
+concretemodel.ClassConcreteAdj modelElement = (concretemodel.ClassConcreteAdj) containerView.getElement();
+	java.util.LinkedList<concretemodel.diagram.part.ConcretemodelNodeDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelNodeDescriptor>();
+						for (java.util.Iterator<?> it = modelElement.getLstMethodConcreteAdj().iterator(); it.hasNext();) {
+		concretemodel.MethodConcreteAdj childElement = (concretemodel.MethodConcreteAdj) it.next();
+					int visualID = concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getNodeVisualID(view, childElement);
+			if (visualID == concretemodel.diagram.edit.parts.MethodConcreteAdjEditPart.VISUAL_ID) {
+	result.add(new concretemodel.diagram.part.ConcretemodelNodeDescriptor(childElement, visualID));
+	continue;
+}
+	}
+			return result;
+	}
+	
+		/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+		switch (concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getVisualID(view)) {
+		case concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart.VISUAL_ID:
+	return getClassDiagramAdj_1000ContainedLinks(view);
+case concretemodel.diagram.edit.parts.PackageConcreteAdjEditPart.VISUAL_ID:
+	return getPackageConcreteAdj_2001ContainedLinks(view);
+case concretemodel.diagram.edit.parts.ClassConcreteAdjEditPart.VISUAL_ID:
+	return getClassConcreteAdj_2002ContainedLinks(view);
+case concretemodel.diagram.edit.parts.AttributeConcreteAdjEditPart.VISUAL_ID:
+	return getAttributeConcreteAdj_3001ContainedLinks(view);
+case concretemodel.diagram.edit.parts.MethodConcreteAdjEditPart.VISUAL_ID:
+	return getMethodConcreteAdj_3002ContainedLinks(view);
+case concretemodel.diagram.edit.parts.ContainmentSdjEditPart.VISUAL_ID:
+	return getContainmentSdj_4001ContainedLinks(view);
+case concretemodel.diagram.edit.parts.ContainmentSdj2EditPart.VISUAL_ID:
+	return getContainmentSdj_4002ContainedLinks(view);
+case concretemodel.diagram.edit.parts.SharingAdjEditPart.VISUAL_ID:
+	return getSharingAdj_4003ContainedLinks(view);
+case concretemodel.diagram.edit.parts.SharingAdj2EditPart.VISUAL_ID:
+	return getSharingAdj_4004ContainedLinks(view);
+case concretemodel.diagram.edit.parts.AssociationAdjEditPart.VISUAL_ID:
+	return getAssociationAdj_4005ContainedLinks(view);
+case concretemodel.diagram.edit.parts.AssociationAdj2EditPart.VISUAL_ID:
+	return getAssociationAdj_4006ContainedLinks(view);
+case concretemodel.diagram.edit.parts.GeneralizationAdjEditPart.VISUAL_ID:
+	return getGeneralizationAdj_4007ContainedLinks(view);
+case concretemodel.diagram.edit.parts.GeneralizationAdj2EditPart.VISUAL_ID:
+	return getGeneralizationAdj_4008ContainedLinks(view);
+	}
+		return java.util.Collections.emptyList();
+}
+	
+		/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getIncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+		switch (concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getVisualID(view)) {
+		case concretemodel.diagram.edit.parts.PackageConcreteAdjEditPart.VISUAL_ID:
+	return getPackageConcreteAdj_2001IncomingLinks(view);
+case concretemodel.diagram.edit.parts.ClassConcreteAdjEditPart.VISUAL_ID:
+	return getClassConcreteAdj_2002IncomingLinks(view);
+case concretemodel.diagram.edit.parts.AttributeConcreteAdjEditPart.VISUAL_ID:
+	return getAttributeConcreteAdj_3001IncomingLinks(view);
+case concretemodel.diagram.edit.parts.MethodConcreteAdjEditPart.VISUAL_ID:
+	return getMethodConcreteAdj_3002IncomingLinks(view);
+case concretemodel.diagram.edit.parts.ContainmentSdjEditPart.VISUAL_ID:
+	return getContainmentSdj_4001IncomingLinks(view);
+case concretemodel.diagram.edit.parts.ContainmentSdj2EditPart.VISUAL_ID:
+	return getContainmentSdj_4002IncomingLinks(view);
+case concretemodel.diagram.edit.parts.SharingAdjEditPart.VISUAL_ID:
+	return getSharingAdj_4003IncomingLinks(view);
+case concretemodel.diagram.edit.parts.SharingAdj2EditPart.VISUAL_ID:
+	return getSharingAdj_4004IncomingLinks(view);
+case concretemodel.diagram.edit.parts.AssociationAdjEditPart.VISUAL_ID:
+	return getAssociationAdj_4005IncomingLinks(view);
+case concretemodel.diagram.edit.parts.AssociationAdj2EditPart.VISUAL_ID:
+	return getAssociationAdj_4006IncomingLinks(view);
+case concretemodel.diagram.edit.parts.GeneralizationAdjEditPart.VISUAL_ID:
+	return getGeneralizationAdj_4007IncomingLinks(view);
+case concretemodel.diagram.edit.parts.GeneralizationAdj2EditPart.VISUAL_ID:
+	return getGeneralizationAdj_4008IncomingLinks(view);
+	}
+		return java.util.Collections.emptyList();
+}
+	
+		/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getOutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+		switch (concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getVisualID(view)) {
+		case concretemodel.diagram.edit.parts.PackageConcreteAdjEditPart.VISUAL_ID:
+	return getPackageConcreteAdj_2001OutgoingLinks(view);
+case concretemodel.diagram.edit.parts.ClassConcreteAdjEditPart.VISUAL_ID:
+	return getClassConcreteAdj_2002OutgoingLinks(view);
+case concretemodel.diagram.edit.parts.AttributeConcreteAdjEditPart.VISUAL_ID:
+	return getAttributeConcreteAdj_3001OutgoingLinks(view);
+case concretemodel.diagram.edit.parts.MethodConcreteAdjEditPart.VISUAL_ID:
+	return getMethodConcreteAdj_3002OutgoingLinks(view);
+case concretemodel.diagram.edit.parts.ContainmentSdjEditPart.VISUAL_ID:
+	return getContainmentSdj_4001OutgoingLinks(view);
+case concretemodel.diagram.edit.parts.ContainmentSdj2EditPart.VISUAL_ID:
+	return getContainmentSdj_4002OutgoingLinks(view);
+case concretemodel.diagram.edit.parts.SharingAdjEditPart.VISUAL_ID:
+	return getSharingAdj_4003OutgoingLinks(view);
+case concretemodel.diagram.edit.parts.SharingAdj2EditPart.VISUAL_ID:
+	return getSharingAdj_4004OutgoingLinks(view);
+case concretemodel.diagram.edit.parts.AssociationAdjEditPart.VISUAL_ID:
+	return getAssociationAdj_4005OutgoingLinks(view);
+case concretemodel.diagram.edit.parts.AssociationAdj2EditPart.VISUAL_ID:
+	return getAssociationAdj_4006OutgoingLinks(view);
+case concretemodel.diagram.edit.parts.GeneralizationAdjEditPart.VISUAL_ID:
+	return getGeneralizationAdj_4007OutgoingLinks(view);
+case concretemodel.diagram.edit.parts.GeneralizationAdj2EditPart.VISUAL_ID:
+	return getGeneralizationAdj_4008OutgoingLinks(view);
+	}
+		return java.util.Collections.emptyList();
+}
+		
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getClassDiagramAdj_1000ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	concretemodel.ClassDiagramAdj modelElement = (concretemodel.ClassDiagramAdj) view.getElement();
+		java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+		result.addAll(getContainedTypeModelFacetLinks_ContainmentSdj_4001(modelElement));	
+	result.addAll(getContainedTypeModelFacetLinks_ContainmentSdj_4002(modelElement));	
+	result.addAll(getContainedTypeModelFacetLinks_SharingAdj_4003(modelElement));	
+	result.addAll(getContainedTypeModelFacetLinks_SharingAdj_4004(modelElement));	
+	result.addAll(getContainedTypeModelFacetLinks_AssociationAdj_4005(modelElement));	
+	result.addAll(getContainedTypeModelFacetLinks_AssociationAdj_4006(modelElement));	
+	result.addAll(getContainedTypeModelFacetLinks_GeneralizationAdj_4007(modelElement));	
+	result.addAll(getContainedTypeModelFacetLinks_GeneralizationAdj_4008(modelElement));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getPackageConcreteAdj_2001ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getClassConcreteAdj_2002ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getAttributeConcreteAdj_3001ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getMethodConcreteAdj_3002ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getContainmentSdj_4001ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getContainmentSdj_4002ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getSharingAdj_4003ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getSharingAdj_4004ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getAssociationAdj_4005ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getAssociationAdj_4006ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getGeneralizationAdj_4007ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getGeneralizationAdj_4008ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+		
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getPackageConcreteAdj_2001IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getClassConcreteAdj_2002IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	concretemodel.ClassConcreteAdj modelElement = (concretemodel.ClassConcreteAdj) view.getElement();
+	java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences = org.eclipse.emf.ecore.util.EcoreUtil.CrossReferencer.find(view.eResource().getResourceSet().getResources());
+		java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+		result.addAll(getIncomingTypeModelFacetLinks_ContainmentSdj_4001(modelElement, crossReferences));	
+	result.addAll(getIncomingTypeModelFacetLinks_ContainmentSdj_4002(modelElement, crossReferences));	
+	result.addAll(getIncomingTypeModelFacetLinks_SharingAdj_4003(modelElement, crossReferences));	
+	result.addAll(getIncomingTypeModelFacetLinks_SharingAdj_4004(modelElement, crossReferences));	
+	result.addAll(getIncomingTypeModelFacetLinks_AssociationAdj_4005(modelElement, crossReferences));	
+	result.addAll(getIncomingTypeModelFacetLinks_AssociationAdj_4006(modelElement, crossReferences));	
+	result.addAll(getIncomingTypeModelFacetLinks_GeneralizationAdj_4007(modelElement, crossReferences));	
+	result.addAll(getIncomingTypeModelFacetLinks_GeneralizationAdj_4008(modelElement, crossReferences));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getAttributeConcreteAdj_3001IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getMethodConcreteAdj_3002IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getContainmentSdj_4001IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getContainmentSdj_4002IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getSharingAdj_4003IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getSharingAdj_4004IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getAssociationAdj_4005IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getAssociationAdj_4006IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getGeneralizationAdj_4007IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getGeneralizationAdj_4008IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+		
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getPackageConcreteAdj_2001OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getClassConcreteAdj_2002OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	concretemodel.ClassConcreteAdj modelElement = (concretemodel.ClassConcreteAdj) view.getElement();
+		java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+		result.addAll(getOutgoingTypeModelFacetLinks_ContainmentSdj_4001(modelElement));	
+	result.addAll(getOutgoingTypeModelFacetLinks_ContainmentSdj_4002(modelElement));	
+	result.addAll(getOutgoingTypeModelFacetLinks_SharingAdj_4003(modelElement));	
+	result.addAll(getOutgoingTypeModelFacetLinks_SharingAdj_4004(modelElement));	
+	result.addAll(getOutgoingTypeModelFacetLinks_AssociationAdj_4005(modelElement));	
+	result.addAll(getOutgoingTypeModelFacetLinks_AssociationAdj_4006(modelElement));	
+	result.addAll(getOutgoingTypeModelFacetLinks_GeneralizationAdj_4007(modelElement));	
+	result.addAll(getOutgoingTypeModelFacetLinks_GeneralizationAdj_4008(modelElement));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getAttributeConcreteAdj_3001OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getMethodConcreteAdj_3002OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getContainmentSdj_4001OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getContainmentSdj_4002OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getSharingAdj_4003OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getSharingAdj_4004OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getAssociationAdj_4005OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getAssociationAdj_4006OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getGeneralizationAdj_4007OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getGeneralizationAdj_4008OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+	/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getContainedTypeModelFacetLinks_ContainmentSdj_4001(concretemodel.ClassDiagramAdj container) {
+	java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	for (java.util.Iterator<?> links = container.getLstOutputRelationship().iterator(); links.hasNext();) {
+	org.eclipse.emf.ecore.EObject linkObject = (org.eclipse.emf.ecore.EObject ) links.next();
+	if (false == linkObject instanceof concretemodel.ContainmentSdj) {
+		continue;
+	}
+	concretemodel.ContainmentSdj link = (concretemodel.ContainmentSdj) linkObject;
+		if (concretemodel.diagram.edit.parts.ContainmentSdjEditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+			concretemodel.ClassConcreteAdj dst = link.getClassTarget();
+							concretemodel.ClassConcreteAdj src = link.getClassSource();
+							result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, dst, link, concretemodel.diagram.providers.ConcretemodelElementTypes.ContainmentSdj_4001, concretemodel.diagram.edit.parts.ContainmentSdjEditPart.VISUAL_ID));
+		}
+	return result;	
+}
+
+	/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getContainedTypeModelFacetLinks_ContainmentSdj_4002(concretemodel.ClassDiagramAdj container) {
+	java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	for (java.util.Iterator<?> links = container.getLstInputRelationship().iterator(); links.hasNext();) {
+	org.eclipse.emf.ecore.EObject linkObject = (org.eclipse.emf.ecore.EObject ) links.next();
+	if (false == linkObject instanceof concretemodel.ContainmentSdj) {
+		continue;
+	}
+	concretemodel.ContainmentSdj link = (concretemodel.ContainmentSdj) linkObject;
+		if (concretemodel.diagram.edit.parts.ContainmentSdj2EditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+			concretemodel.ClassConcreteAdj dst = link.getClassTarget();
+							concretemodel.ClassConcreteAdj src = link.getClassSource();
+							result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, dst, link, concretemodel.diagram.providers.ConcretemodelElementTypes.ContainmentSdj_4002, concretemodel.diagram.edit.parts.ContainmentSdj2EditPart.VISUAL_ID));
+		}
+	return result;	
+}
+
+	/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getContainedTypeModelFacetLinks_SharingAdj_4003(concretemodel.ClassDiagramAdj container) {
+	java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	for (java.util.Iterator<?> links = container.getLstOutputRelationship().iterator(); links.hasNext();) {
+	org.eclipse.emf.ecore.EObject linkObject = (org.eclipse.emf.ecore.EObject ) links.next();
+	if (false == linkObject instanceof concretemodel.SharingAdj) {
+		continue;
+	}
+	concretemodel.SharingAdj link = (concretemodel.SharingAdj) linkObject;
+		if (concretemodel.diagram.edit.parts.SharingAdjEditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+			concretemodel.ClassConcreteAdj dst = link.getClassTarget();
+							concretemodel.ClassConcreteAdj src = link.getClassSource();
+							result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, dst, link, concretemodel.diagram.providers.ConcretemodelElementTypes.SharingAdj_4003, concretemodel.diagram.edit.parts.SharingAdjEditPart.VISUAL_ID));
+		}
+	return result;	
+}
+
+	/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getContainedTypeModelFacetLinks_SharingAdj_4004(concretemodel.ClassDiagramAdj container) {
+	java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	for (java.util.Iterator<?> links = container.getLstInputRelationship().iterator(); links.hasNext();) {
+	org.eclipse.emf.ecore.EObject linkObject = (org.eclipse.emf.ecore.EObject ) links.next();
+	if (false == linkObject instanceof concretemodel.SharingAdj) {
+		continue;
+	}
+	concretemodel.SharingAdj link = (concretemodel.SharingAdj) linkObject;
+		if (concretemodel.diagram.edit.parts.SharingAdj2EditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+			concretemodel.ClassConcreteAdj dst = link.getClassTarget();
+							concretemodel.ClassConcreteAdj src = link.getClassSource();
+							result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, dst, link, concretemodel.diagram.providers.ConcretemodelElementTypes.SharingAdj_4004, concretemodel.diagram.edit.parts.SharingAdj2EditPart.VISUAL_ID));
+		}
+	return result;	
+}
+
+	/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getContainedTypeModelFacetLinks_AssociationAdj_4005(concretemodel.ClassDiagramAdj container) {
+	java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	for (java.util.Iterator<?> links = container.getLstOutputRelationship().iterator(); links.hasNext();) {
+	org.eclipse.emf.ecore.EObject linkObject = (org.eclipse.emf.ecore.EObject ) links.next();
+	if (false == linkObject instanceof concretemodel.AssociationAdj) {
+		continue;
+	}
+	concretemodel.AssociationAdj link = (concretemodel.AssociationAdj) linkObject;
+		if (concretemodel.diagram.edit.parts.AssociationAdjEditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+			concretemodel.ClassConcreteAdj dst = link.getClassTarget();
+							concretemodel.ClassConcreteAdj src = link.getClassSource();
+							result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, dst, link, concretemodel.diagram.providers.ConcretemodelElementTypes.AssociationAdj_4005, concretemodel.diagram.edit.parts.AssociationAdjEditPart.VISUAL_ID));
+		}
+	return result;	
+}
+
+	/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getContainedTypeModelFacetLinks_AssociationAdj_4006(concretemodel.ClassDiagramAdj container) {
+	java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	for (java.util.Iterator<?> links = container.getLstInputRelationship().iterator(); links.hasNext();) {
+	org.eclipse.emf.ecore.EObject linkObject = (org.eclipse.emf.ecore.EObject ) links.next();
+	if (false == linkObject instanceof concretemodel.AssociationAdj) {
+		continue;
+	}
+	concretemodel.AssociationAdj link = (concretemodel.AssociationAdj) linkObject;
+		if (concretemodel.diagram.edit.parts.AssociationAdj2EditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+			concretemodel.ClassConcreteAdj dst = link.getClassTarget();
+							concretemodel.ClassConcreteAdj src = link.getClassSource();
+							result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, dst, link, concretemodel.diagram.providers.ConcretemodelElementTypes.AssociationAdj_4006, concretemodel.diagram.edit.parts.AssociationAdj2EditPart.VISUAL_ID));
+		}
+	return result;	
+}
+
+	/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getContainedTypeModelFacetLinks_GeneralizationAdj_4007(concretemodel.ClassDiagramAdj container) {
+	java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	for (java.util.Iterator<?> links = container.getLstOutputRelationship().iterator(); links.hasNext();) {
+	org.eclipse.emf.ecore.EObject linkObject = (org.eclipse.emf.ecore.EObject ) links.next();
+	if (false == linkObject instanceof concretemodel.GeneralizationAdj) {
+		continue;
+	}
+	concretemodel.GeneralizationAdj link = (concretemodel.GeneralizationAdj) linkObject;
+		if (concretemodel.diagram.edit.parts.GeneralizationAdjEditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+			concretemodel.ClassConcreteAdj dst = link.getClassTarget();
+							concretemodel.ClassConcreteAdj src = link.getClassSource();
+							result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, dst, link, concretemodel.diagram.providers.ConcretemodelElementTypes.GeneralizationAdj_4007, concretemodel.diagram.edit.parts.GeneralizationAdjEditPart.VISUAL_ID));
+		}
+	return result;	
+}
+
+	/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getContainedTypeModelFacetLinks_GeneralizationAdj_4008(concretemodel.ClassDiagramAdj container) {
+	java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	for (java.util.Iterator<?> links = container.getLstInputRelationship().iterator(); links.hasNext();) {
+	org.eclipse.emf.ecore.EObject linkObject = (org.eclipse.emf.ecore.EObject ) links.next();
+	if (false == linkObject instanceof concretemodel.GeneralizationAdj) {
+		continue;
+	}
+	concretemodel.GeneralizationAdj link = (concretemodel.GeneralizationAdj) linkObject;
+		if (concretemodel.diagram.edit.parts.GeneralizationAdj2EditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+			concretemodel.ClassConcreteAdj dst = link.getClassTarget();
+							concretemodel.ClassConcreteAdj src = link.getClassSource();
+							result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, dst, link, concretemodel.diagram.providers.ConcretemodelElementTypes.GeneralizationAdj_4008, concretemodel.diagram.edit.parts.GeneralizationAdj2EditPart.VISUAL_ID));
+		}
+	return result;	
+}
+	
+/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getIncomingTypeModelFacetLinks_ContainmentSdj_4001(concretemodel.ClassConcreteAdj target, java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences) {
+	java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting> settings = crossReferences.get(target);
+	for (org.eclipse.emf.ecore.EStructuralFeature.Setting setting : settings) {
+		if (setting.getEStructuralFeature() != concretemodel.ConcretemodelPackage.eINSTANCE.getRelationshipAdj_ClassTarget() || false == setting.getEObject() instanceof concretemodel.ContainmentSdj) {
+	continue;
+}
+concretemodel.ContainmentSdj link = (concretemodel.ContainmentSdj) setting.getEObject();
+	if (concretemodel.diagram.edit.parts.ContainmentSdjEditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+				concretemodel.ClassConcreteAdj src = link.getClassSource();
+			result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, target, link, concretemodel.diagram.providers.ConcretemodelElementTypes.ContainmentSdj_4001, concretemodel.diagram.edit.parts.ContainmentSdjEditPart.VISUAL_ID));
+		}
+	return result;	
+}
+
+/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getIncomingTypeModelFacetLinks_ContainmentSdj_4002(concretemodel.ClassConcreteAdj target, java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences) {
+	java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting> settings = crossReferences.get(target);
+	for (org.eclipse.emf.ecore.EStructuralFeature.Setting setting : settings) {
+		if (setting.getEStructuralFeature() != concretemodel.ConcretemodelPackage.eINSTANCE.getRelationshipAdj_ClassTarget() || false == setting.getEObject() instanceof concretemodel.ContainmentSdj) {
+	continue;
+}
+concretemodel.ContainmentSdj link = (concretemodel.ContainmentSdj) setting.getEObject();
+	if (concretemodel.diagram.edit.parts.ContainmentSdj2EditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+				concretemodel.ClassConcreteAdj src = link.getClassSource();
+			result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, target, link, concretemodel.diagram.providers.ConcretemodelElementTypes.ContainmentSdj_4002, concretemodel.diagram.edit.parts.ContainmentSdj2EditPart.VISUAL_ID));
+		}
+	return result;	
+}
+
+/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getIncomingTypeModelFacetLinks_SharingAdj_4003(concretemodel.ClassConcreteAdj target, java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences) {
+	java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting> settings = crossReferences.get(target);
+	for (org.eclipse.emf.ecore.EStructuralFeature.Setting setting : settings) {
+		if (setting.getEStructuralFeature() != concretemodel.ConcretemodelPackage.eINSTANCE.getRelationshipAdj_ClassTarget() || false == setting.getEObject() instanceof concretemodel.SharingAdj) {
+	continue;
+}
+concretemodel.SharingAdj link = (concretemodel.SharingAdj) setting.getEObject();
+	if (concretemodel.diagram.edit.parts.SharingAdjEditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+				concretemodel.ClassConcreteAdj src = link.getClassSource();
+			result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, target, link, concretemodel.diagram.providers.ConcretemodelElementTypes.SharingAdj_4003, concretemodel.diagram.edit.parts.SharingAdjEditPart.VISUAL_ID));
+		}
+	return result;	
+}
+
+/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getIncomingTypeModelFacetLinks_SharingAdj_4004(concretemodel.ClassConcreteAdj target, java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences) {
+	java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting> settings = crossReferences.get(target);
+	for (org.eclipse.emf.ecore.EStructuralFeature.Setting setting : settings) {
+		if (setting.getEStructuralFeature() != concretemodel.ConcretemodelPackage.eINSTANCE.getRelationshipAdj_ClassTarget() || false == setting.getEObject() instanceof concretemodel.SharingAdj) {
+	continue;
+}
+concretemodel.SharingAdj link = (concretemodel.SharingAdj) setting.getEObject();
+	if (concretemodel.diagram.edit.parts.SharingAdj2EditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+				concretemodel.ClassConcreteAdj src = link.getClassSource();
+			result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, target, link, concretemodel.diagram.providers.ConcretemodelElementTypes.SharingAdj_4004, concretemodel.diagram.edit.parts.SharingAdj2EditPart.VISUAL_ID));
+		}
+	return result;	
+}
+
+/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getIncomingTypeModelFacetLinks_AssociationAdj_4005(concretemodel.ClassConcreteAdj target, java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences) {
+	java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting> settings = crossReferences.get(target);
+	for (org.eclipse.emf.ecore.EStructuralFeature.Setting setting : settings) {
+		if (setting.getEStructuralFeature() != concretemodel.ConcretemodelPackage.eINSTANCE.getRelationshipAdj_ClassTarget() || false == setting.getEObject() instanceof concretemodel.AssociationAdj) {
+	continue;
+}
+concretemodel.AssociationAdj link = (concretemodel.AssociationAdj) setting.getEObject();
+	if (concretemodel.diagram.edit.parts.AssociationAdjEditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+				concretemodel.ClassConcreteAdj src = link.getClassSource();
+			result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, target, link, concretemodel.diagram.providers.ConcretemodelElementTypes.AssociationAdj_4005, concretemodel.diagram.edit.parts.AssociationAdjEditPart.VISUAL_ID));
+		}
+	return result;	
+}
+
+/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getIncomingTypeModelFacetLinks_AssociationAdj_4006(concretemodel.ClassConcreteAdj target, java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences) {
+	java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting> settings = crossReferences.get(target);
+	for (org.eclipse.emf.ecore.EStructuralFeature.Setting setting : settings) {
+		if (setting.getEStructuralFeature() != concretemodel.ConcretemodelPackage.eINSTANCE.getRelationshipAdj_ClassTarget() || false == setting.getEObject() instanceof concretemodel.AssociationAdj) {
+	continue;
+}
+concretemodel.AssociationAdj link = (concretemodel.AssociationAdj) setting.getEObject();
+	if (concretemodel.diagram.edit.parts.AssociationAdj2EditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+				concretemodel.ClassConcreteAdj src = link.getClassSource();
+			result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, target, link, concretemodel.diagram.providers.ConcretemodelElementTypes.AssociationAdj_4006, concretemodel.diagram.edit.parts.AssociationAdj2EditPart.VISUAL_ID));
+		}
+	return result;	
+}
+
+/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getIncomingTypeModelFacetLinks_GeneralizationAdj_4007(concretemodel.ClassConcreteAdj target, java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences) {
+	java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting> settings = crossReferences.get(target);
+	for (org.eclipse.emf.ecore.EStructuralFeature.Setting setting : settings) {
+		if (setting.getEStructuralFeature() != concretemodel.ConcretemodelPackage.eINSTANCE.getRelationshipAdj_ClassTarget() || false == setting.getEObject() instanceof concretemodel.GeneralizationAdj) {
+	continue;
+}
+concretemodel.GeneralizationAdj link = (concretemodel.GeneralizationAdj) setting.getEObject();
+	if (concretemodel.diagram.edit.parts.GeneralizationAdjEditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+				concretemodel.ClassConcreteAdj src = link.getClassSource();
+			result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, target, link, concretemodel.diagram.providers.ConcretemodelElementTypes.GeneralizationAdj_4007, concretemodel.diagram.edit.parts.GeneralizationAdjEditPart.VISUAL_ID));
+		}
+	return result;	
+}
+
+/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getIncomingTypeModelFacetLinks_GeneralizationAdj_4008(concretemodel.ClassConcreteAdj target, java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences) {
+	java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting> settings = crossReferences.get(target);
+	for (org.eclipse.emf.ecore.EStructuralFeature.Setting setting : settings) {
+		if (setting.getEStructuralFeature() != concretemodel.ConcretemodelPackage.eINSTANCE.getRelationshipAdj_ClassTarget() || false == setting.getEObject() instanceof concretemodel.GeneralizationAdj) {
+	continue;
+}
+concretemodel.GeneralizationAdj link = (concretemodel.GeneralizationAdj) setting.getEObject();
+	if (concretemodel.diagram.edit.parts.GeneralizationAdj2EditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+				concretemodel.ClassConcreteAdj src = link.getClassSource();
+			result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, target, link, concretemodel.diagram.providers.ConcretemodelElementTypes.GeneralizationAdj_4008, concretemodel.diagram.edit.parts.GeneralizationAdj2EditPart.VISUAL_ID));
+		}
+	return result;	
+}
+				
+		/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getOutgoingTypeModelFacetLinks_ContainmentSdj_4001(concretemodel.ClassConcreteAdj source) {
+	concretemodel.ClassDiagramAdj container = null;
+	// Find container element for the link.
+	// Climb up by containment hierarchy starting from the source
+	// and return the first element that is instance of the container class.
+	for (org.eclipse.emf.ecore.EObject element = source; element != null && container == null; element = element.eContainer()) {
+		if (element instanceof concretemodel.ClassDiagramAdj) {
+			container = (concretemodel.ClassDiagramAdj) element;
+		}
+	}
+	if (container == null) {
+		return java.util.Collections.emptyList();
+	}
+		java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	for (java.util.Iterator<?> links = container.getLstOutputRelationship().iterator(); links.hasNext();) {
+	org.eclipse.emf.ecore.EObject linkObject = (org.eclipse.emf.ecore.EObject ) links.next();
+	if (false == linkObject instanceof concretemodel.ContainmentSdj) {
+		continue;
+	}
+	concretemodel.ContainmentSdj link = (concretemodel.ContainmentSdj) linkObject;
+		if (concretemodel.diagram.edit.parts.ContainmentSdjEditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+			concretemodel.ClassConcreteAdj dst = link.getClassTarget();
+							concretemodel.ClassConcreteAdj src = link.getClassSource();
+								if (src != source) {
+	continue;
+}
+						result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, dst, link, concretemodel.diagram.providers.ConcretemodelElementTypes.ContainmentSdj_4001, concretemodel.diagram.edit.parts.ContainmentSdjEditPart.VISUAL_ID));
+		}
+	return result;	
+}		
+				
+		/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getOutgoingTypeModelFacetLinks_ContainmentSdj_4002(concretemodel.ClassConcreteAdj source) {
+	concretemodel.ClassDiagramAdj container = null;
+	// Find container element for the link.
+	// Climb up by containment hierarchy starting from the source
+	// and return the first element that is instance of the container class.
+	for (org.eclipse.emf.ecore.EObject element = source; element != null && container == null; element = element.eContainer()) {
+		if (element instanceof concretemodel.ClassDiagramAdj) {
+			container = (concretemodel.ClassDiagramAdj) element;
+		}
+	}
+	if (container == null) {
+		return java.util.Collections.emptyList();
+	}
+		java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	for (java.util.Iterator<?> links = container.getLstInputRelationship().iterator(); links.hasNext();) {
+	org.eclipse.emf.ecore.EObject linkObject = (org.eclipse.emf.ecore.EObject ) links.next();
+	if (false == linkObject instanceof concretemodel.ContainmentSdj) {
+		continue;
+	}
+	concretemodel.ContainmentSdj link = (concretemodel.ContainmentSdj) linkObject;
+		if (concretemodel.diagram.edit.parts.ContainmentSdj2EditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+			concretemodel.ClassConcreteAdj dst = link.getClassTarget();
+							concretemodel.ClassConcreteAdj src = link.getClassSource();
+								if (src != source) {
+	continue;
+}
+						result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, dst, link, concretemodel.diagram.providers.ConcretemodelElementTypes.ContainmentSdj_4002, concretemodel.diagram.edit.parts.ContainmentSdj2EditPart.VISUAL_ID));
+		}
+	return result;	
+}		
+				
+		/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getOutgoingTypeModelFacetLinks_SharingAdj_4003(concretemodel.ClassConcreteAdj source) {
+	concretemodel.ClassDiagramAdj container = null;
+	// Find container element for the link.
+	// Climb up by containment hierarchy starting from the source
+	// and return the first element that is instance of the container class.
+	for (org.eclipse.emf.ecore.EObject element = source; element != null && container == null; element = element.eContainer()) {
+		if (element instanceof concretemodel.ClassDiagramAdj) {
+			container = (concretemodel.ClassDiagramAdj) element;
+		}
+	}
+	if (container == null) {
+		return java.util.Collections.emptyList();
+	}
+		java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	for (java.util.Iterator<?> links = container.getLstOutputRelationship().iterator(); links.hasNext();) {
+	org.eclipse.emf.ecore.EObject linkObject = (org.eclipse.emf.ecore.EObject ) links.next();
+	if (false == linkObject instanceof concretemodel.SharingAdj) {
+		continue;
+	}
+	concretemodel.SharingAdj link = (concretemodel.SharingAdj) linkObject;
+		if (concretemodel.diagram.edit.parts.SharingAdjEditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+			concretemodel.ClassConcreteAdj dst = link.getClassTarget();
+							concretemodel.ClassConcreteAdj src = link.getClassSource();
+								if (src != source) {
+	continue;
+}
+						result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, dst, link, concretemodel.diagram.providers.ConcretemodelElementTypes.SharingAdj_4003, concretemodel.diagram.edit.parts.SharingAdjEditPart.VISUAL_ID));
+		}
+	return result;	
+}		
+				
+		/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getOutgoingTypeModelFacetLinks_SharingAdj_4004(concretemodel.ClassConcreteAdj source) {
+	concretemodel.ClassDiagramAdj container = null;
+	// Find container element for the link.
+	// Climb up by containment hierarchy starting from the source
+	// and return the first element that is instance of the container class.
+	for (org.eclipse.emf.ecore.EObject element = source; element != null && container == null; element = element.eContainer()) {
+		if (element instanceof concretemodel.ClassDiagramAdj) {
+			container = (concretemodel.ClassDiagramAdj) element;
+		}
+	}
+	if (container == null) {
+		return java.util.Collections.emptyList();
+	}
+		java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	for (java.util.Iterator<?> links = container.getLstInputRelationship().iterator(); links.hasNext();) {
+	org.eclipse.emf.ecore.EObject linkObject = (org.eclipse.emf.ecore.EObject ) links.next();
+	if (false == linkObject instanceof concretemodel.SharingAdj) {
+		continue;
+	}
+	concretemodel.SharingAdj link = (concretemodel.SharingAdj) linkObject;
+		if (concretemodel.diagram.edit.parts.SharingAdj2EditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+			concretemodel.ClassConcreteAdj dst = link.getClassTarget();
+							concretemodel.ClassConcreteAdj src = link.getClassSource();
+								if (src != source) {
+	continue;
+}
+						result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, dst, link, concretemodel.diagram.providers.ConcretemodelElementTypes.SharingAdj_4004, concretemodel.diagram.edit.parts.SharingAdj2EditPart.VISUAL_ID));
+		}
+	return result;	
+}		
+				
+		/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getOutgoingTypeModelFacetLinks_AssociationAdj_4005(concretemodel.ClassConcreteAdj source) {
+	concretemodel.ClassDiagramAdj container = null;
+	// Find container element for the link.
+	// Climb up by containment hierarchy starting from the source
+	// and return the first element that is instance of the container class.
+	for (org.eclipse.emf.ecore.EObject element = source; element != null && container == null; element = element.eContainer()) {
+		if (element instanceof concretemodel.ClassDiagramAdj) {
+			container = (concretemodel.ClassDiagramAdj) element;
+		}
+	}
+	if (container == null) {
+		return java.util.Collections.emptyList();
+	}
+		java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	for (java.util.Iterator<?> links = container.getLstOutputRelationship().iterator(); links.hasNext();) {
+	org.eclipse.emf.ecore.EObject linkObject = (org.eclipse.emf.ecore.EObject ) links.next();
+	if (false == linkObject instanceof concretemodel.AssociationAdj) {
+		continue;
+	}
+	concretemodel.AssociationAdj link = (concretemodel.AssociationAdj) linkObject;
+		if (concretemodel.diagram.edit.parts.AssociationAdjEditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+			concretemodel.ClassConcreteAdj dst = link.getClassTarget();
+							concretemodel.ClassConcreteAdj src = link.getClassSource();
+								if (src != source) {
+	continue;
+}
+						result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, dst, link, concretemodel.diagram.providers.ConcretemodelElementTypes.AssociationAdj_4005, concretemodel.diagram.edit.parts.AssociationAdjEditPart.VISUAL_ID));
+		}
+	return result;	
+}		
+				
+		/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getOutgoingTypeModelFacetLinks_AssociationAdj_4006(concretemodel.ClassConcreteAdj source) {
+	concretemodel.ClassDiagramAdj container = null;
+	// Find container element for the link.
+	// Climb up by containment hierarchy starting from the source
+	// and return the first element that is instance of the container class.
+	for (org.eclipse.emf.ecore.EObject element = source; element != null && container == null; element = element.eContainer()) {
+		if (element instanceof concretemodel.ClassDiagramAdj) {
+			container = (concretemodel.ClassDiagramAdj) element;
+		}
+	}
+	if (container == null) {
+		return java.util.Collections.emptyList();
+	}
+		java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	for (java.util.Iterator<?> links = container.getLstInputRelationship().iterator(); links.hasNext();) {
+	org.eclipse.emf.ecore.EObject linkObject = (org.eclipse.emf.ecore.EObject ) links.next();
+	if (false == linkObject instanceof concretemodel.AssociationAdj) {
+		continue;
+	}
+	concretemodel.AssociationAdj link = (concretemodel.AssociationAdj) linkObject;
+		if (concretemodel.diagram.edit.parts.AssociationAdj2EditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+			concretemodel.ClassConcreteAdj dst = link.getClassTarget();
+							concretemodel.ClassConcreteAdj src = link.getClassSource();
+								if (src != source) {
+	continue;
+}
+						result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, dst, link, concretemodel.diagram.providers.ConcretemodelElementTypes.AssociationAdj_4006, concretemodel.diagram.edit.parts.AssociationAdj2EditPart.VISUAL_ID));
+		}
+	return result;	
+}		
+				
+		/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getOutgoingTypeModelFacetLinks_GeneralizationAdj_4007(concretemodel.ClassConcreteAdj source) {
+	concretemodel.ClassDiagramAdj container = null;
+	// Find container element for the link.
+	// Climb up by containment hierarchy starting from the source
+	// and return the first element that is instance of the container class.
+	for (org.eclipse.emf.ecore.EObject element = source; element != null && container == null; element = element.eContainer()) {
+		if (element instanceof concretemodel.ClassDiagramAdj) {
+			container = (concretemodel.ClassDiagramAdj) element;
+		}
+	}
+	if (container == null) {
+		return java.util.Collections.emptyList();
+	}
+		java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	for (java.util.Iterator<?> links = container.getLstOutputRelationship().iterator(); links.hasNext();) {
+	org.eclipse.emf.ecore.EObject linkObject = (org.eclipse.emf.ecore.EObject ) links.next();
+	if (false == linkObject instanceof concretemodel.GeneralizationAdj) {
+		continue;
+	}
+	concretemodel.GeneralizationAdj link = (concretemodel.GeneralizationAdj) linkObject;
+		if (concretemodel.diagram.edit.parts.GeneralizationAdjEditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+			concretemodel.ClassConcreteAdj dst = link.getClassTarget();
+							concretemodel.ClassConcreteAdj src = link.getClassSource();
+								if (src != source) {
+	continue;
+}
+						result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, dst, link, concretemodel.diagram.providers.ConcretemodelElementTypes.GeneralizationAdj_4007, concretemodel.diagram.edit.parts.GeneralizationAdjEditPart.VISUAL_ID));
+		}
+	return result;	
+}		
+				
+		/**
+ * @generated
+ */
+private static java.util.Collection<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getOutgoingTypeModelFacetLinks_GeneralizationAdj_4008(concretemodel.ClassConcreteAdj source) {
+	concretemodel.ClassDiagramAdj container = null;
+	// Find container element for the link.
+	// Climb up by containment hierarchy starting from the source
+	// and return the first element that is instance of the container class.
+	for (org.eclipse.emf.ecore.EObject element = source; element != null && container == null; element = element.eContainer()) {
+		if (element instanceof concretemodel.ClassDiagramAdj) {
+			container = (concretemodel.ClassDiagramAdj) element;
+		}
+	}
+	if (container == null) {
+		return java.util.Collections.emptyList();
+	}
+		java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor> result = new java.util.LinkedList<concretemodel.diagram.part.ConcretemodelLinkDescriptor>();
+	for (java.util.Iterator<?> links = container.getLstInputRelationship().iterator(); links.hasNext();) {
+	org.eclipse.emf.ecore.EObject linkObject = (org.eclipse.emf.ecore.EObject ) links.next();
+	if (false == linkObject instanceof concretemodel.GeneralizationAdj) {
+		continue;
+	}
+	concretemodel.GeneralizationAdj link = (concretemodel.GeneralizationAdj) linkObject;
+		if (concretemodel.diagram.edit.parts.GeneralizationAdj2EditPart.VISUAL_ID != concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+			concretemodel.ClassConcreteAdj dst = link.getClassTarget();
+							concretemodel.ClassConcreteAdj src = link.getClassSource();
+								if (src != source) {
+	continue;
+}
+						result.add(new concretemodel.diagram.part.ConcretemodelLinkDescriptor(src, dst, link, concretemodel.diagram.providers.ConcretemodelElementTypes.GeneralizationAdj_4008, concretemodel.diagram.edit.parts.GeneralizationAdj2EditPart.VISUAL_ID));
+		}
+	return result;	
+}		
+		
+					/**
+ * @generated
+ */
+	public static final org.eclipse.gmf.tooling.runtime.update.DiagramUpdater TYPED_INSTANCE = new org.eclipse.gmf.tooling.runtime.update.DiagramUpdater() {
+				/**
+ * @generated
+ */
+		@Override
+
+		public java.util.List<concretemodel.diagram.part.ConcretemodelNodeDescriptor> getSemanticChildren(org.eclipse.gmf.runtime.notation.View view) {
+			return ConcretemodelDiagramUpdater.getSemanticChildren(view);
+		}
+
+		/**
+ * @generated
+ */
+		@Override
+
+		public java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+			return ConcretemodelDiagramUpdater.getContainedLinks(view);
+		}
+
+		/**
+ * @generated
+ */
+		@Override
+
+		public java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getIncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+			return ConcretemodelDiagramUpdater.getIncomingLinks(view);
+		}
+
+		/**
+ * @generated
+ */
+		@Override
+
+		public java.util.List<concretemodel.diagram.part.ConcretemodelLinkDescriptor> getOutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+			return ConcretemodelDiagramUpdater.getOutgoingLinks(view);
+		}
+	}; 
+			
+	}

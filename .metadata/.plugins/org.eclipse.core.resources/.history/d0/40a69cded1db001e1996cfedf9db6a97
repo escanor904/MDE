@@ -1,0 +1,339 @@
+	/*
+ * 
+ */
+package concretemodel.diagram.part;
+
+	/**
+ * This registry is used to determine which type of visual object should be
+ * created for the corresponding Diagram, Node, ChildNode or Link represented
+ * by a domain model object.
+ * 
+ * @generated
+ */
+public class ConcretemodelVisualIDRegistry {
+
+		/**
+ * @generated
+ */
+	private static final String DEBUG_KEY = "dc_concrete.diagram/debug/visualID";  //$NON-NLS-1$
+
+		/**
+ * @generated
+ */
+public static int getVisualID(org.eclipse.gmf.runtime.notation.View view) {
+	if (view instanceof org.eclipse.gmf.runtime.notation.Diagram) {
+		if (concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart.MODEL_ID.equals(view.getType())) {
+			return concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart.VISUAL_ID;
+		} else {
+			return -1;
+		}
+	}
+	return concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getVisualID(view.getType());
+}
+	
+		/**
+ * @generated
+ */
+public static String getModelID(org.eclipse.gmf.runtime.notation.View view) {
+	org.eclipse.gmf.runtime.notation.View diagram = view.getDiagram();
+	while (view != diagram) {
+		org.eclipse.emf.ecore.EAnnotation annotation = view.getEAnnotation("Shortcut");  //$NON-NLS-1$
+		if (annotation != null) {
+			return (String) annotation.getDetails().get("modelID");  //$NON-NLS-1$
+		}
+		view = (org.eclipse.gmf.runtime.notation.View) view.eContainer();
+	}
+	return diagram != null ? diagram.getType() : null;
+}
+	
+		/**
+ * @generated
+ */
+public static int getVisualID(String type) {
+	try {
+		return Integer.parseInt(type);
+	} catch (NumberFormatException e) {
+		if (Boolean.TRUE.toString().equalsIgnoreCase(org.eclipse.core.runtime.Platform.getDebugOption(DEBUG_KEY))) {
+			concretemodel.diagram.part.ConcretemodelDiagramEditorPlugin.getInstance().logError("Unable to parse view type as a visualID number: " + type);
+		}
+	}
+	return -1;
+}
+
+	/**
+ * @generated
+ */
+public static String getType(int visualID) {
+	return Integer.toString(visualID);
+}
+	
+		/**
+ * @generated
+ */
+public static int getDiagramVisualID(org.eclipse.emf.ecore.EObject domainElement) {
+	if (domainElement == null) {
+		return -1;
+	}
+	if (concretemodel.ConcretemodelPackage.eINSTANCE.getClassDiagramAdj().isSuperTypeOf(domainElement.eClass()) && isDiagram((concretemodel.ClassDiagramAdj) domainElement)) {
+	return concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart.VISUAL_ID;
+}
+	return -1;
+}
+	
+		/**
+ * @generated
+ */
+public static int getNodeVisualID(org.eclipse.gmf.runtime.notation.View containerView, org.eclipse.emf.ecore.EObject domainElement) {
+	if (domainElement == null) {
+		return -1;
+	}
+	String containerModelID = concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getModelID(containerView);
+	if (!concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart.MODEL_ID.equals(containerModelID) && !"concretemodel".equals(containerModelID)) {  //$NON-NLS-1$
+		return -1;
+	}
+	int containerVisualID;
+	if (concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart.MODEL_ID.equals(containerModelID)) {
+		containerVisualID = concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getVisualID(containerView);
+	} else {
+		if (containerView instanceof org.eclipse.gmf.runtime.notation.Diagram) {
+			containerVisualID = concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart.VISUAL_ID;		
+		} else {
+			return -1;
+		}
+	}
+	switch (containerVisualID) {
+			case concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart.VISUAL_ID:
+	if (concretemodel.ConcretemodelPackage.eINSTANCE.getPackageConcreteAdj().isSuperTypeOf(domainElement.eClass())) {
+	return concretemodel.diagram.edit.parts.PackageConcreteAdjEditPart.VISUAL_ID;
+}
+if (concretemodel.ConcretemodelPackage.eINSTANCE.getClassConcreteAdj().isSuperTypeOf(domainElement.eClass())) {
+	return concretemodel.diagram.edit.parts.ClassConcreteAdjEditPart.VISUAL_ID;
+}
+	break;
+						case concretemodel.diagram.edit.parts.ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentEditPart.VISUAL_ID:
+	if (concretemodel.ConcretemodelPackage.eINSTANCE.getAttributeConcreteAdj().isSuperTypeOf(domainElement.eClass())) {
+	return concretemodel.diagram.edit.parts.AttributeConcreteAdjEditPart.VISUAL_ID;
+}
+	break;
+		case concretemodel.diagram.edit.parts.ClassConcreteAdjClassConcreteAdjLstMethodConcreteAdjCompartmentEditPart.VISUAL_ID:
+	if (concretemodel.ConcretemodelPackage.eINSTANCE.getMethodConcreteAdj().isSuperTypeOf(domainElement.eClass())) {
+	return concretemodel.diagram.edit.parts.MethodConcreteAdjEditPart.VISUAL_ID;
+}
+	break;
+		}
+	return -1;
+}
+	
+		/**
+ * @generated
+ */
+public static boolean canCreateNode(org.eclipse.gmf.runtime.notation.View containerView, int nodeVisualID) {
+	String containerModelID = concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getModelID(containerView);
+	if (!concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart.MODEL_ID.equals(containerModelID) && !"concretemodel".equals(containerModelID)) {  //$NON-NLS-1$
+		return false;
+	}
+	int containerVisualID;
+	if (concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart.MODEL_ID.equals(containerModelID)) {
+		containerVisualID = concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getVisualID(containerView);
+	} else {
+		if (containerView instanceof org.eclipse.gmf.runtime.notation.Diagram) {
+			containerVisualID = concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart.VISUAL_ID;		
+		} else {
+			return false;
+		}
+	}
+	switch (containerVisualID) {
+		case concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart.VISUAL_ID:
+	if (concretemodel.diagram.edit.parts.PackageConcreteAdjEditPart.VISUAL_ID == nodeVisualID) {
+	return true;
+}
+if (concretemodel.diagram.edit.parts.ClassConcreteAdjEditPart.VISUAL_ID == nodeVisualID) {
+	return true;
+}
+	break;
+case concretemodel.diagram.edit.parts.PackageConcreteAdjEditPart.VISUAL_ID:
+	if (concretemodel.diagram.edit.parts.PackageConcreteAdjNameEditPart.VISUAL_ID == nodeVisualID) {
+	return true;
+}
+	break;
+case concretemodel.diagram.edit.parts.ClassConcreteAdjEditPart.VISUAL_ID:
+	if (concretemodel.diagram.edit.parts.ClassConcreteAdjNameEditPart.VISUAL_ID == nodeVisualID) {
+	return true;
+}
+if (concretemodel.diagram.edit.parts.ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentEditPart.VISUAL_ID == nodeVisualID) {
+	return true;
+}
+if (concretemodel.diagram.edit.parts.ClassConcreteAdjClassConcreteAdjLstMethodConcreteAdjCompartmentEditPart.VISUAL_ID == nodeVisualID) {
+	return true;
+}
+	break;
+case concretemodel.diagram.edit.parts.AttributeConcreteAdjEditPart.VISUAL_ID:
+	if (concretemodel.diagram.edit.parts.AttributeConcreteAdjNameEditPart.VISUAL_ID == nodeVisualID) {
+	return true;
+}
+	break;
+case concretemodel.diagram.edit.parts.MethodConcreteAdjEditPart.VISUAL_ID:
+	if (concretemodel.diagram.edit.parts.MethodConcreteAdjMethodNameEditPart.VISUAL_ID == nodeVisualID) {
+	return true;
+}
+	break;
+case concretemodel.diagram.edit.parts.ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentEditPart.VISUAL_ID:
+	if (concretemodel.diagram.edit.parts.AttributeConcreteAdjEditPart.VISUAL_ID == nodeVisualID) {
+	return true;
+}
+	break;
+case concretemodel.diagram.edit.parts.ClassConcreteAdjClassConcreteAdjLstMethodConcreteAdjCompartmentEditPart.VISUAL_ID:
+	if (concretemodel.diagram.edit.parts.MethodConcreteAdjEditPart.VISUAL_ID == nodeVisualID) {
+	return true;
+}
+	break;
+			}
+	return false;
+}
+	
+		/**
+ * @generated
+ */
+public static int getLinkWithClassVisualID(org.eclipse.emf.ecore.EObject domainElement) {
+	if (domainElement == null) {
+		return -1;
+	}
+	if (concretemodel.ConcretemodelPackage.eINSTANCE.getContainmentSdj().isSuperTypeOf(domainElement.eClass())) {
+	return concretemodel.diagram.edit.parts.ContainmentSdjEditPart.VISUAL_ID;
+}
+if (concretemodel.ConcretemodelPackage.eINSTANCE.getContainmentSdj().isSuperTypeOf(domainElement.eClass())) {
+	return concretemodel.diagram.edit.parts.ContainmentSdj2EditPart.VISUAL_ID;
+}
+if (concretemodel.ConcretemodelPackage.eINSTANCE.getSharingAdj().isSuperTypeOf(domainElement.eClass())) {
+	return concretemodel.diagram.edit.parts.SharingAdjEditPart.VISUAL_ID;
+}
+if (concretemodel.ConcretemodelPackage.eINSTANCE.getSharingAdj().isSuperTypeOf(domainElement.eClass())) {
+	return concretemodel.diagram.edit.parts.SharingAdj2EditPart.VISUAL_ID;
+}
+if (concretemodel.ConcretemodelPackage.eINSTANCE.getAssociationAdj().isSuperTypeOf(domainElement.eClass())) {
+	return concretemodel.diagram.edit.parts.AssociationAdjEditPart.VISUAL_ID;
+}
+if (concretemodel.ConcretemodelPackage.eINSTANCE.getAssociationAdj().isSuperTypeOf(domainElement.eClass())) {
+	return concretemodel.diagram.edit.parts.AssociationAdj2EditPart.VISUAL_ID;
+}
+if (concretemodel.ConcretemodelPackage.eINSTANCE.getGeneralizationAdj().isSuperTypeOf(domainElement.eClass())) {
+	return concretemodel.diagram.edit.parts.GeneralizationAdjEditPart.VISUAL_ID;
+}
+if (concretemodel.ConcretemodelPackage.eINSTANCE.getGeneralizationAdj().isSuperTypeOf(domainElement.eClass())) {
+	return concretemodel.diagram.edit.parts.GeneralizationAdj2EditPart.VISUAL_ID;
+}
+	return -1;
+}
+	
+				/**
+ * User can change implementation of this method to handle some specific
+ * situations not covered by default logic.
+ * 
+ * @generated
+ */
+private static boolean isDiagram(concretemodel.ClassDiagramAdj element) {
+	return true;
+}
+	
+		
+	
+	/**
+ * @generated
+ */
+	public static boolean checkNodeVisualID(org.eclipse.gmf.runtime.notation.View containerView, org.eclipse.emf.ecore.EObject domainElement, int candidate) {
+		if (candidate == -1){
+			//unrecognized id is always bad
+			return false;
+		}
+				int basic = getNodeVisualID(containerView, domainElement);
+		return basic == candidate;
+	}
+
+		/**
+ * @generated
+ */
+	public static boolean isCompartmentVisualID(int visualID) {
+					switch (visualID) {
+				case concretemodel.diagram.edit.parts.ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentEditPart.VISUAL_ID:case concretemodel.diagram.edit.parts.ClassConcreteAdjClassConcreteAdjLstMethodConcreteAdjCompartmentEditPart.VISUAL_ID:
+					return true;
+				default:
+					break;
+			}
+				return false;
+	}
+
+		/**
+ * @generated
+ */
+	public static boolean isSemanticLeafVisualID(int visualID) {
+		switch (visualID) {
+						case concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart.VISUAL_ID:
+				return false;
+									case concretemodel.diagram.edit.parts.PackageConcreteAdjEditPart.VISUAL_ID:case concretemodel.diagram.edit.parts.AttributeConcreteAdjEditPart.VISUAL_ID:case concretemodel.diagram.edit.parts.MethodConcreteAdjEditPart.VISUAL_ID:
+				return true;
+									default:
+				break;
+		}
+		return false;
+	}
+
+		/**
+ * @generated
+ */
+	public static final org.eclipse.gmf.tooling.runtime.structure.DiagramStructure TYPED_INSTANCE = new org.eclipse.gmf.tooling.runtime.structure.DiagramStructure() {
+		/**
+ * @generated
+ */
+		@Override
+
+		public int getVisualID(org.eclipse.gmf.runtime.notation.View view) {
+			return concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getVisualID(view);
+		}
+		
+		/**
+ * @generated
+ */
+		@Override
+
+		public String getModelID(org.eclipse.gmf.runtime.notation.View view) {
+			return concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getModelID(view);
+		}
+		
+		/**
+ * @generated
+ */
+		@Override
+
+		public int getNodeVisualID(org.eclipse.gmf.runtime.notation.View containerView, org.eclipse.emf.ecore.EObject domainElement) {
+			return concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getNodeVisualID(containerView, domainElement);
+		}
+		
+		/**
+ * @generated
+ */
+		@Override
+
+		public boolean checkNodeVisualID(org.eclipse.gmf.runtime.notation.View containerView, org.eclipse.emf.ecore.EObject domainElement, int candidate) {
+			return concretemodel.diagram.part.ConcretemodelVisualIDRegistry.checkNodeVisualID(containerView, domainElement, candidate);
+		}
+
+		/**
+ * @generated
+ */
+		@Override
+
+		public boolean isCompartmentVisualID(int visualID) {
+			return concretemodel.diagram.part.ConcretemodelVisualIDRegistry.isCompartmentVisualID(visualID);
+		}
+
+		/**
+ * @generated
+ */
+		@Override
+
+		public boolean isSemanticLeafVisualID(int visualID) {
+			return concretemodel.diagram.part.ConcretemodelVisualIDRegistry.isSemanticLeafVisualID(visualID);
+		}
+	};
+
+	}

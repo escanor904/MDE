@@ -1,0 +1,104 @@
+/*
+ * 
+ */
+package concretemodel.diagram.edit.parts;
+
+/**
+ * @generated
+ */
+public class ConcretemodelEditPartFactory implements org.eclipse.gef.EditPartFactory {
+
+		/**
+ * @generated
+ */
+	public org.eclipse.gef.EditPart createEditPart(org.eclipse.gef.EditPart context, Object model) {
+		if (model instanceof org.eclipse.gmf.runtime.notation.View) {
+			org.eclipse.gmf.runtime.notation.View view = (org.eclipse.gmf.runtime.notation.View) model;
+			switch (concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getVisualID(view)) {
+				
+	case concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart.VISUAL_ID:
+		return new concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart(view);
+									
+	case concretemodel.diagram.edit.parts.PackageConcreteAdjEditPart.VISUAL_ID:
+		return new concretemodel.diagram.edit.parts.PackageConcreteAdjEditPart(view);
+					
+	case concretemodel.diagram.edit.parts.PackageConcreteAdjNameEditPart.VISUAL_ID:
+		return new concretemodel.diagram.edit.parts.PackageConcreteAdjNameEditPart(view);
+									
+	case concretemodel.diagram.edit.parts.ClassConcreteAdjEditPart.VISUAL_ID:
+		return new concretemodel.diagram.edit.parts.ClassConcreteAdjEditPart(view);
+					
+	case concretemodel.diagram.edit.parts.ClassConcreteAdjNameEditPart.VISUAL_ID:
+		return new concretemodel.diagram.edit.parts.ClassConcreteAdjNameEditPart(view);
+									
+	case concretemodel.diagram.edit.parts.AttributeConcreteAdjEditPart.VISUAL_ID:
+		return new concretemodel.diagram.edit.parts.AttributeConcreteAdjEditPart(view);
+					
+	case concretemodel.diagram.edit.parts.AttributeConcreteAdjNameEditPart.VISUAL_ID:
+		return new concretemodel.diagram.edit.parts.AttributeConcreteAdjNameEditPart(view);
+									
+	case concretemodel.diagram.edit.parts.MethodConcreteAdjEditPart.VISUAL_ID:
+		return new concretemodel.diagram.edit.parts.MethodConcreteAdjEditPart(view);
+					
+	case concretemodel.diagram.edit.parts.MethodConcreteAdjMethodNameEditPart.VISUAL_ID:
+		return new concretemodel.diagram.edit.parts.MethodConcreteAdjMethodNameEditPart(view);
+								
+	case concretemodel.diagram.edit.parts.ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentEditPart.VISUAL_ID:
+		return new concretemodel.diagram.edit.parts.ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentEditPart(view);
+
+	case concretemodel.diagram.edit.parts.ClassConcreteAdjClassConcreteAdjLstMethodConcreteAdjCompartmentEditPart.VISUAL_ID:
+		return new concretemodel.diagram.edit.parts.ClassConcreteAdjClassConcreteAdjLstMethodConcreteAdjCompartmentEditPart(view);
+									
+	case concretemodel.diagram.edit.parts.ContainmentSdjEditPart.VISUAL_ID:
+		return new concretemodel.diagram.edit.parts.ContainmentSdjEditPart(view);
+					
+									
+	case concretemodel.diagram.edit.parts.ContainmentSdj2EditPart.VISUAL_ID:
+		return new concretemodel.diagram.edit.parts.ContainmentSdj2EditPart(view);
+					
+									
+	case concretemodel.diagram.edit.parts.SharingAdjEditPart.VISUAL_ID:
+		return new concretemodel.diagram.edit.parts.SharingAdjEditPart(view);
+					
+									
+	case concretemodel.diagram.edit.parts.SharingAdj2EditPart.VISUAL_ID:
+		return new concretemodel.diagram.edit.parts.SharingAdj2EditPart(view);
+					
+									
+	case concretemodel.diagram.edit.parts.AssociationAdjEditPart.VISUAL_ID:
+		return new concretemodel.diagram.edit.parts.AssociationAdjEditPart(view);
+					
+									
+	case concretemodel.diagram.edit.parts.AssociationAdj2EditPart.VISUAL_ID:
+		return new concretemodel.diagram.edit.parts.AssociationAdj2EditPart(view);
+					
+									
+	case concretemodel.diagram.edit.parts.GeneralizationAdjEditPart.VISUAL_ID:
+		return new concretemodel.diagram.edit.parts.GeneralizationAdjEditPart(view);
+					
+									
+	case concretemodel.diagram.edit.parts.GeneralizationAdj2EditPart.VISUAL_ID:
+		return new concretemodel.diagram.edit.parts.GeneralizationAdj2EditPart(view);
+					
+							}
+		}
+		return createUnrecognizedEditPart(context, model);
+	}
+	
+		/**
+ * @generated
+ */
+	 private org.eclipse.gef.EditPart createUnrecognizedEditPart(org.eclipse.gef.EditPart context, Object model) {
+	 	// Handle creation of unrecognized child node EditParts here
+	 	return null;
+	 }
+	
+		/**
+ * @generated
+ */
+	public static org.eclipse.gef.tools.CellEditorLocator getTextCellEditorLocator(
+			org.eclipse.gmf.runtime.diagram.ui.editparts.ITextAwareEditPart source) {
+		return org.eclipse.gmf.tooling.runtime.directedit.locator.CellEditorLocatorAccess.INSTANCE.getTextCellEditorLocator(source);
+	}
+	
+	}

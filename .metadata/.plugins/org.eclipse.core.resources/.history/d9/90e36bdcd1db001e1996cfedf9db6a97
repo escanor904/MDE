@@ -1,0 +1,18 @@
+/*
+ * 
+ */
+package concretemodel.diagram.edit.helpers;
+
+/**
+ * @generated
+ */
+public class ConcretemodelBaseEditHelper extends org.eclipse.gmf.tooling.runtime.edit.helpers.GeneratedEditHelperBase {
+
+		
+		
+	
+	
+	
+	
+	
+	}

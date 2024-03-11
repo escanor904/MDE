@@ -1,0 +1,66 @@
+/*
+ * 
+ */
+package concretemodel.diagram.providers;
+
+/**
+ * @generated
+ */
+public class ConcretemodelValidationProvider {
+
+	/**
+ * @generated
+ */
+private static boolean constraintsActive = false;	
+
+	/**
+ * @generated
+ */
+public static boolean shouldConstraintsBePrivate() {
+	return false;
+}
+
+	/**
+ * @generated
+ */
+public static void runWithConstraints(org.eclipse.emf.transaction.TransactionalEditingDomain editingDomain, Runnable operation) {
+	final Runnable op = operation;
+	Runnable task = new Runnable() {
+		public void run() {
+			try {
+				constraintsActive = true;
+				op.run();
+			} finally {
+				constraintsActive = false;
+			}
+		}
+	};
+	if(editingDomain != null) {
+		try {
+			editingDomain.runExclusive(task);
+		} catch (Exception e) {
+			concretemodel.diagram.part.ConcretemodelDiagramEditorPlugin.getInstance().logError("Validation failed", e);  //$NON-NLS-1$
+		}
+	} else {
+		task.run();
+	}
+}
+
+	/**
+ * @generated
+ */
+static boolean isInDefaultEditorContext(Object object) {
+	if(shouldConstraintsBePrivate() && !constraintsActive) {
+		return false;
+	}
+	if (object instanceof org.eclipse.gmf.runtime.notation.View) {
+		return constraintsActive && concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart.MODEL_ID.equals(concretemodel.diagram.part.ConcretemodelVisualIDRegistry.getModelID((org.eclipse.gmf.runtime.notation.View) object));
+	}
+	return true;
+}
+
+
+
+
+
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="" modelDirectory="/dc_concrete/src" modelPluginID="dc_concrete"
+    modelName="Concretemodel" importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0"
+    copyrightFields="false">
+  <foreignModel>concrete.emf</foreignModel>
+  <genPackages prefix="Concretemodel" disposableProviderFactory="true" ecorePackage="concrete.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="concrete.ecore#//AccessModifier">
+      <genEnumLiterals ecoreEnumLiteral="concrete.ecore#//AccessModifier/PUBLIC"/>
+      <genEnumLiterals ecoreEnumLiteral="concrete.ecore#//AccessModifier/PRIVATE"/>
+      <genEnumLiterals ecoreEnumLiteral="concrete.ecore#//AccessModifier/PROTECTED"/>
+    </genEnums>
+    <genClasses ecoreClass="concrete.ecore#//ModelFactoryConcrete">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//ModelFactoryConcrete/listProjects"/>
+    </genClasses>
+    <genClasses ecoreClass="concrete.ecore#//ProjectAdj">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//ProjectAdj/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//ProjectAdj/path"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//ProjectAdj/lstClassDiagramAdj"/>
+    </genClasses>
+    <genClasses ecoreClass="concrete.ecore#//ClassDiagramAdj">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//ClassDiagramAdj/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//ClassDiagramAdj/lstPackageConcreteAdj"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//ClassDiagramAdj/lstOutputRelationship"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//ClassDiagramAdj/lstInputRelationship"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//ClassDiagramAdj/lstClassConcreteAdj"/>
+    </genClasses>
+    <genClasses ecoreClass="concrete.ecore#//PackageConcreteAdj">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//PackageConcreteAdj/path"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//PackageConcreteAdj/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="concrete.ecore#//RelationshipAdj">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//RelationshipAdj/roleTarget"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//RelationshipAdj/roleSource"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//RelationshipAdj/multiplicityTargetClass"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//RelationshipAdj/multiplicitySourceClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference concrete.ecore#//RelationshipAdj/classSource"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference concrete.ecore#//RelationshipAdj/classTarget"/>
+    </genClasses>
+    <genClasses ecoreClass="concrete.ecore#//ContainmentSdj"/>
+    <genClasses ecoreClass="concrete.ecore#//SharingAdj"/>
+    <genClasses ecoreClass="concrete.ecore#//AssociationAdj"/>
+    <genClasses ecoreClass="concrete.ecore#//GeneralizationAdj"/>
+    <genClasses ecoreClass="concrete.ecore#//ClassConcreteAdj">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//ClassConcreteAdj/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//ClassConcreteAdj/lstAttributeConcreteAdj"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//ClassConcreteAdj/lstMethodConcreteAdj"/>
+    </genClasses>
+    <genClasses ecoreClass="concrete.ecore#//MethodConcreteAdj">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//MethodConcreteAdj/methodName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//MethodConcreteAdj/returnType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//MethodConcreteAdj/accessModifier"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//MethodConcreteAdj/lstParameterConcreteAdj"/>
+    </genClasses>
+    <genClasses ecoreClass="concrete.ecore#//ParameterConcreteAdj">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//ParameterConcreteAdj/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference concrete.ecore#//ParameterConcreteAdj/AttributeTypeConcreteAdj"/>
+    </genClasses>
+    <genClasses ecoreClass="concrete.ecore#//AttributeTypeConcreteAdj">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//AttributeTypeConcreteAdj/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//AttributeTypeConcreteAdj/ParameterConcreteAdj"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//AttributeTypeConcreteAdj/lstAttributeConcreteAdj"/>
+    </genClasses>
+    <genClasses ecoreClass="concrete.ecore#//AttributeConcreteAdj">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//AttributeConcreteAdj/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//AttributeConcreteAdj/value"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference concrete.ecore#//AttributeConcreteAdj/attributeTypeConcreteAdj"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

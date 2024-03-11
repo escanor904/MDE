@@ -1,0 +1,29 @@
+	/*
+ * 
+ */
+package concretemodel.diagram.edit.policies;
+
+	/**
+ * @generated
+ */
+public class ClassConcreteAdjClassConcreteAdjLstMethodConcreteAdjCompartmentItemSemanticEditPolicy extends concretemodel.diagram.edit.policies.ConcretemodelBaseItemSemanticEditPolicy {
+
+		/**
+ * @generated
+ */
+	public ClassConcreteAdjClassConcreteAdjLstMethodConcreteAdjCompartmentItemSemanticEditPolicy() {
+				super(concretemodel.diagram.providers.ConcretemodelElementTypes.ClassConcreteAdj_2002);
+	}
+
+	
+	/**
+ * @generated
+ */
+	protected org.eclipse.gef.commands.Command getCreateCommand(org.eclipse.gmf.runtime.emf.type.core.requests.CreateElementRequest req) {
+		if (concretemodel.diagram.providers.ConcretemodelElementTypes.MethodConcreteAdj_3002 == req.getElementType()) {
+	return getGEFWrapper(new concretemodel.diagram.edit.commands.MethodConcreteAdjCreateCommand(req));
+}
+		return super.getCreateCommand(req);
+	}
+	
+	}
