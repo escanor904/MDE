@@ -1,5 +1,6 @@
 #encoding=UTF-8
 #version=1
+Generator,1.0.0.qualifier,file:/C:/td/ws_epsilon/Generator/,4,false
 com.atlassian.commonmark,0.15.1.v20200707-1444,file:/C:/Users/escanor/Documents/uniquindio_2024-1/MDE/Epsilon/epsilon%20modeling/plugins/com.atlassian.commonmark_0.15.1.v20200707-1444.jar,4,false
 com.atlassian.commonmark-gfm-strikethrough,0.15.1.v20200707-1444,file:/C:/Users/escanor/Documents/uniquindio_2024-1/MDE/Epsilon/epsilon%20modeling/plugins/com.atlassian.commonmark-gfm-strikethrough_0.15.1.v20200707-1444.jar,4,false
 com.atlassian.commonmark-gfm-tables,0.15.1.v20200707-1444,file:/C:/Users/escanor/Documents/uniquindio_2024-1/MDE/Epsilon/epsilon%20modeling/plugins/com.atlassian.commonmark-gfm-tables_0.15.1.v20200707-1444.jar,4,false

@@ -32,6 +32,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link concretemodel.impl.ClassConcreteAdjImpl#getName <em>Name</em>}</li>
+ *   <li>{@link concretemodel.impl.ClassConcreteAdjImpl#getPath <em>Path</em>}</li>
  *   <li>{@link concretemodel.impl.ClassConcreteAdjImpl#getLstAttributeConcreteAdj <em>Lst Attribute Concrete Adj</em>}</li>
  *   <li>{@link concretemodel.impl.ClassConcreteAdjImpl#getLstMethodConcreteAdj <em>Lst Method Concrete Adj</em>}</li>
  * </ul>
@@ -58,6 +59,26 @@ public class ClassConcreteAdjImpl extends EObjectImpl implements ClassConcreteAd
 	 * @ordered
 	 */
 	protected String name = NAME_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getPath() <em>Path</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPath()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String PATH_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getPath() <em>Path</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPath()
+	 * @generated
+	 * @ordered
+	 */
+	protected String path = PATH_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getLstAttributeConcreteAdj() <em>Lst Attribute Concrete Adj</em>}' containment reference list.
@@ -124,6 +145,27 @@ public class ClassConcreteAdjImpl extends EObjectImpl implements ClassConcreteAd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getPath() {
+		return path;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setPath(String newPath) {
+		String oldPath = path;
+		path = newPath;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ConcretemodelPackage.CLASS_CONCRETE_ADJ__PATH, oldPath, path));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<AttributeConcreteAdj> getLstAttributeConcreteAdj() {
 		if (lstAttributeConcreteAdj == null) {
 			lstAttributeConcreteAdj = new EObjectContainmentEList<AttributeConcreteAdj>(AttributeConcreteAdj.class, this, ConcretemodelPackage.CLASS_CONCRETE_ADJ__LST_ATTRIBUTE_CONCRETE_ADJ);
@@ -169,6 +211,8 @@ public class ClassConcreteAdjImpl extends EObjectImpl implements ClassConcreteAd
 		switch (featureID) {
 			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__NAME:
 				return getName();
+			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__PATH:
+				return getPath();
 			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__LST_ATTRIBUTE_CONCRETE_ADJ:
 				return getLstAttributeConcreteAdj();
 			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__LST_METHOD_CONCRETE_ADJ:
@@ -188,6 +232,9 @@ public class ClassConcreteAdjImpl extends EObjectImpl implements ClassConcreteAd
 		switch (featureID) {
 			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__NAME:
 				setName((String)newValue);
+				return;
+			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__PATH:
+				setPath((String)newValue);
 				return;
 			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__LST_ATTRIBUTE_CONCRETE_ADJ:
 				getLstAttributeConcreteAdj().clear();
@@ -212,6 +259,9 @@ public class ClassConcreteAdjImpl extends EObjectImpl implements ClassConcreteAd
 			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__NAME:
 				setName(NAME_EDEFAULT);
 				return;
+			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__PATH:
+				setPath(PATH_EDEFAULT);
+				return;
 			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__LST_ATTRIBUTE_CONCRETE_ADJ:
 				getLstAttributeConcreteAdj().clear();
 				return;
@@ -232,6 +282,8 @@ public class ClassConcreteAdjImpl extends EObjectImpl implements ClassConcreteAd
 		switch (featureID) {
 			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__PATH:
+				return PATH_EDEFAULT == null ? path != null : !PATH_EDEFAULT.equals(path);
 			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__LST_ATTRIBUTE_CONCRETE_ADJ:
 				return lstAttributeConcreteAdj != null && !lstAttributeConcreteAdj.isEmpty();
 			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__LST_METHOD_CONCRETE_ADJ:
@@ -252,6 +304,8 @@ public class ClassConcreteAdjImpl extends EObjectImpl implements ClassConcreteAd
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (name: ");
 		result.append(name);
+		result.append(", path: ");
+		result.append(path);
 		result.append(')');
 		return result.toString();
 	}

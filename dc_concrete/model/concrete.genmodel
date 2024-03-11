@@ -43,6 +43,7 @@
     <genClasses ecoreClass="concrete.ecore#//GeneralizationAdj"/>
     <genClasses ecoreClass="concrete.ecore#//ClassConcreteAdj">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//ClassConcreteAdj/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//ClassConcreteAdj/path"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//ClassConcreteAdj/lstAttributeConcreteAdj"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//ClassConcreteAdj/lstMethodConcreteAdj"/>
     </genClasses>

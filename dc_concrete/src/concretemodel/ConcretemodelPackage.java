@@ -616,13 +616,22 @@ public interface ConcretemodelPackage extends EPackage {
 	int CLASS_CONCRETE_ADJ__NAME = 0;
 
 	/**
+	 * The feature id for the '<em><b>Path</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS_CONCRETE_ADJ__PATH = 1;
+
+	/**
 	 * The feature id for the '<em><b>Lst Attribute Concrete Adj</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_CONCRETE_ADJ__LST_ATTRIBUTE_CONCRETE_ADJ = 1;
+	int CLASS_CONCRETE_ADJ__LST_ATTRIBUTE_CONCRETE_ADJ = 2;
 
 	/**
 	 * The feature id for the '<em><b>Lst Method Concrete Adj</b></em>' containment reference list.
@@ -631,7 +640,7 @@ public interface ConcretemodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_CONCRETE_ADJ__LST_METHOD_CONCRETE_ADJ = 2;
+	int CLASS_CONCRETE_ADJ__LST_METHOD_CONCRETE_ADJ = 3;
 
 	/**
 	 * The number of structural features of the '<em>Class Concrete Adj</em>' class.
@@ -640,7 +649,7 @@ public interface ConcretemodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_CONCRETE_ADJ_FEATURE_COUNT = 3;
+	int CLASS_CONCRETE_ADJ_FEATURE_COUNT = 4;
 
 	/**
 	 * The meta object id for the '{@link concretemodel.impl.MethodConcreteAdjImpl <em>Method Concrete Adj</em>}' class.
@@ -1136,6 +1145,17 @@ public interface ConcretemodelPackage extends EPackage {
 	EAttribute getClassConcreteAdj_Name();
 
 	/**
+	 * Returns the meta object for the attribute '{@link concretemodel.ClassConcreteAdj#getPath <em>Path</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Path</em>'.
+	 * @see concretemodel.ClassConcreteAdj#getPath()
+	 * @see #getClassConcreteAdj()
+	 * @generated
+	 */
+	EAttribute getClassConcreteAdj_Path();
+
+	/**
 	 * Returns the meta object for the containment reference list '{@link concretemodel.ClassConcreteAdj#getLstAttributeConcreteAdj <em>Lst Attribute Concrete Adj</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1604,6 +1624,14 @@ public interface ConcretemodelPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute CLASS_CONCRETE_ADJ__NAME = eINSTANCE.getClassConcreteAdj_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Path</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLASS_CONCRETE_ADJ__PATH = eINSTANCE.getClassConcreteAdj_Path();
 
 		/**
 		 * The meta object literal for the '<em><b>Lst Attribute Concrete Adj</b></em>' containment reference list feature.

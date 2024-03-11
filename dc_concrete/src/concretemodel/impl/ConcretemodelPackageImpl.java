@@ -458,8 +458,17 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getClassConcreteAdj_Path() {
+		return (EAttribute)classConcreteAdjEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EReference getClassConcreteAdj_LstAttributeConcreteAdj() {
-		return (EReference)classConcreteAdjEClass.getEStructuralFeatures().get(1);
+		return (EReference)classConcreteAdjEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -468,7 +477,7 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 	 * @generated
 	 */
 	public EReference getClassConcreteAdj_LstMethodConcreteAdj() {
-		return (EReference)classConcreteAdjEClass.getEStructuralFeatures().get(2);
+		return (EReference)classConcreteAdjEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -689,6 +698,7 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 
 		classConcreteAdjEClass = createEClass(CLASS_CONCRETE_ADJ);
 		createEAttribute(classConcreteAdjEClass, CLASS_CONCRETE_ADJ__NAME);
+		createEAttribute(classConcreteAdjEClass, CLASS_CONCRETE_ADJ__PATH);
 		createEReference(classConcreteAdjEClass, CLASS_CONCRETE_ADJ__LST_ATTRIBUTE_CONCRETE_ADJ);
 		createEReference(classConcreteAdjEClass, CLASS_CONCRETE_ADJ__LST_METHOD_CONCRETE_ADJ);
 
@@ -787,6 +797,7 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 
 		initEClass(classConcreteAdjEClass, ClassConcreteAdj.class, "ClassConcreteAdj", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getClassConcreteAdj_Name(), ecorePackage.getEString(), "name", null, 0, 1, ClassConcreteAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getClassConcreteAdj_Path(), ecorePackage.getEString(), "path", null, 0, 1, ClassConcreteAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getClassConcreteAdj_LstAttributeConcreteAdj(), this.getAttributeConcreteAdj(), null, "lstAttributeConcreteAdj", null, 0, -1, ClassConcreteAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getClassConcreteAdj_LstMethodConcreteAdj(), this.getMethodConcreteAdj(), null, "lstMethodConcreteAdj", null, 0, -1, ClassConcreteAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
