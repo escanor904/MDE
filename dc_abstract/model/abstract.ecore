@@ -45,6 +45,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ClassAdj">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pathPackage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="classTypeAdj" eType="#//ClassTypeAdj"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="lstAttributeAdj" upperBound="-1"
         eType="#//AttributeAdj" containment="true"/>

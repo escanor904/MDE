@@ -34,8 +34,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link concretemodel.impl.ClassDiagramAdjImpl#getName <em>Name</em>}</li>
  *   <li>{@link concretemodel.impl.ClassDiagramAdjImpl#getLstPackageConcreteAdj <em>Lst Package Concrete Adj</em>}</li>
- *   <li>{@link concretemodel.impl.ClassDiagramAdjImpl#getLstOutputRelationship <em>Lst Output Relationship</em>}</li>
- *   <li>{@link concretemodel.impl.ClassDiagramAdjImpl#getLstInputRelationship <em>Lst Input Relationship</em>}</li>
+ *   <li>{@link concretemodel.impl.ClassDiagramAdjImpl#getLstRelationship <em>Lst Relationship</em>}</li>
  *   <li>{@link concretemodel.impl.ClassDiagramAdjImpl#getLstClassConcreteAdj <em>Lst Class Concrete Adj</em>}</li>
  * </ul>
  *
@@ -73,24 +72,14 @@ public class ClassDiagramAdjImpl extends EObjectImpl implements ClassDiagramAdj 
 	protected EList<PackageConcreteAdj> lstPackageConcreteAdj;
 
 	/**
-	 * The cached value of the '{@link #getLstOutputRelationship() <em>Lst Output Relationship</em>}' containment reference list.
+	 * The cached value of the '{@link #getLstRelationship() <em>Lst Relationship</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getLstOutputRelationship()
+	 * @see #getLstRelationship()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<RelationshipAdj> lstOutputRelationship;
-
-	/**
-	 * The cached value of the '{@link #getLstInputRelationship() <em>Lst Input Relationship</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getLstInputRelationship()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<RelationshipAdj> lstInputRelationship;
+	protected EList<RelationshipAdj> lstRelationship;
 
 	/**
 	 * The cached value of the '{@link #getLstClassConcreteAdj() <em>Lst Class Concrete Adj</em>}' containment reference list.
@@ -159,23 +148,11 @@ public class ClassDiagramAdjImpl extends EObjectImpl implements ClassDiagramAdj 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<RelationshipAdj> getLstOutputRelationship() {
-		if (lstOutputRelationship == null) {
-			lstOutputRelationship = new EObjectContainmentEList<RelationshipAdj>(RelationshipAdj.class, this, ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_OUTPUT_RELATIONSHIP);
+	public EList<RelationshipAdj> getLstRelationship() {
+		if (lstRelationship == null) {
+			lstRelationship = new EObjectContainmentEList<RelationshipAdj>(RelationshipAdj.class, this, ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_RELATIONSHIP);
 		}
-		return lstOutputRelationship;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<RelationshipAdj> getLstInputRelationship() {
-		if (lstInputRelationship == null) {
-			lstInputRelationship = new EObjectContainmentEList<RelationshipAdj>(RelationshipAdj.class, this, ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_INPUT_RELATIONSHIP);
-		}
-		return lstInputRelationship;
+		return lstRelationship;
 	}
 
 	/**
@@ -200,10 +177,8 @@ public class ClassDiagramAdjImpl extends EObjectImpl implements ClassDiagramAdj 
 		switch (featureID) {
 			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_PACKAGE_CONCRETE_ADJ:
 				return ((InternalEList<?>)getLstPackageConcreteAdj()).basicRemove(otherEnd, msgs);
-			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_OUTPUT_RELATIONSHIP:
-				return ((InternalEList<?>)getLstOutputRelationship()).basicRemove(otherEnd, msgs);
-			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_INPUT_RELATIONSHIP:
-				return ((InternalEList<?>)getLstInputRelationship()).basicRemove(otherEnd, msgs);
+			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_RELATIONSHIP:
+				return ((InternalEList<?>)getLstRelationship()).basicRemove(otherEnd, msgs);
 			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_CLASS_CONCRETE_ADJ:
 				return ((InternalEList<?>)getLstClassConcreteAdj()).basicRemove(otherEnd, msgs);
 		}
@@ -222,10 +197,8 @@ public class ClassDiagramAdjImpl extends EObjectImpl implements ClassDiagramAdj 
 				return getName();
 			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_PACKAGE_CONCRETE_ADJ:
 				return getLstPackageConcreteAdj();
-			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_OUTPUT_RELATIONSHIP:
-				return getLstOutputRelationship();
-			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_INPUT_RELATIONSHIP:
-				return getLstInputRelationship();
+			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_RELATIONSHIP:
+				return getLstRelationship();
 			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_CLASS_CONCRETE_ADJ:
 				return getLstClassConcreteAdj();
 		}
@@ -248,13 +221,9 @@ public class ClassDiagramAdjImpl extends EObjectImpl implements ClassDiagramAdj 
 				getLstPackageConcreteAdj().clear();
 				getLstPackageConcreteAdj().addAll((Collection<? extends PackageConcreteAdj>)newValue);
 				return;
-			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_OUTPUT_RELATIONSHIP:
-				getLstOutputRelationship().clear();
-				getLstOutputRelationship().addAll((Collection<? extends RelationshipAdj>)newValue);
-				return;
-			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_INPUT_RELATIONSHIP:
-				getLstInputRelationship().clear();
-				getLstInputRelationship().addAll((Collection<? extends RelationshipAdj>)newValue);
+			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_RELATIONSHIP:
+				getLstRelationship().clear();
+				getLstRelationship().addAll((Collection<? extends RelationshipAdj>)newValue);
 				return;
 			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_CLASS_CONCRETE_ADJ:
 				getLstClassConcreteAdj().clear();
@@ -278,11 +247,8 @@ public class ClassDiagramAdjImpl extends EObjectImpl implements ClassDiagramAdj 
 			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_PACKAGE_CONCRETE_ADJ:
 				getLstPackageConcreteAdj().clear();
 				return;
-			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_OUTPUT_RELATIONSHIP:
-				getLstOutputRelationship().clear();
-				return;
-			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_INPUT_RELATIONSHIP:
-				getLstInputRelationship().clear();
+			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_RELATIONSHIP:
+				getLstRelationship().clear();
 				return;
 			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_CLASS_CONCRETE_ADJ:
 				getLstClassConcreteAdj().clear();
@@ -303,10 +269,8 @@ public class ClassDiagramAdjImpl extends EObjectImpl implements ClassDiagramAdj 
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_PACKAGE_CONCRETE_ADJ:
 				return lstPackageConcreteAdj != null && !lstPackageConcreteAdj.isEmpty();
-			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_OUTPUT_RELATIONSHIP:
-				return lstOutputRelationship != null && !lstOutputRelationship.isEmpty();
-			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_INPUT_RELATIONSHIP:
-				return lstInputRelationship != null && !lstInputRelationship.isEmpty();
+			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_RELATIONSHIP:
+				return lstRelationship != null && !lstRelationship.isEmpty();
 			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_CLASS_CONCRETE_ADJ:
 				return lstClassConcreteAdj != null && !lstClassConcreteAdj.isEmpty();
 		}

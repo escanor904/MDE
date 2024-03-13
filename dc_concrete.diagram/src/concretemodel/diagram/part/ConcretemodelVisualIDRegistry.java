@@ -12,7 +12,6 @@ import org.eclipse.gmf.tooling.runtime.structure.DiagramStructure;
 
 import concretemodel.ClassDiagramAdj;
 import concretemodel.ConcretemodelPackage;
-import concretemodel.diagram.edit.parts.AssociationAdj2EditPart;
 import concretemodel.diagram.edit.parts.AssociationAdjEditPart;
 import concretemodel.diagram.edit.parts.AttributeConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.AttributeConcreteAdjNameEditPart;
@@ -21,15 +20,12 @@ import concretemodel.diagram.edit.parts.ClassConcreteAdjClassConcreteAdjLstMetho
 import concretemodel.diagram.edit.parts.ClassConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.ClassConcreteAdjNameEditPart;
 import concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart;
-import concretemodel.diagram.edit.parts.ContainmentSdj2EditPart;
 import concretemodel.diagram.edit.parts.ContainmentSdjEditPart;
-import concretemodel.diagram.edit.parts.GeneralizationAdj2EditPart;
 import concretemodel.diagram.edit.parts.GeneralizationAdjEditPart;
 import concretemodel.diagram.edit.parts.MethodConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.MethodConcreteAdjMethodNameEditPart;
 import concretemodel.diagram.edit.parts.PackageConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.PackageConcreteAdjNameEditPart;
-import concretemodel.diagram.edit.parts.SharingAdj2EditPart;
 import concretemodel.diagram.edit.parts.SharingAdjEditPart;
 
 /**
@@ -232,26 +228,14 @@ public class ConcretemodelVisualIDRegistry {
 		if (ConcretemodelPackage.eINSTANCE.getContainmentSdj().isSuperTypeOf(domainElement.eClass())) {
 			return ContainmentSdjEditPart.VISUAL_ID;
 		}
-		if (ConcretemodelPackage.eINSTANCE.getContainmentSdj().isSuperTypeOf(domainElement.eClass())) {
-			return ContainmentSdj2EditPart.VISUAL_ID;
-		}
 		if (ConcretemodelPackage.eINSTANCE.getSharingAdj().isSuperTypeOf(domainElement.eClass())) {
 			return SharingAdjEditPart.VISUAL_ID;
-		}
-		if (ConcretemodelPackage.eINSTANCE.getSharingAdj().isSuperTypeOf(domainElement.eClass())) {
-			return SharingAdj2EditPart.VISUAL_ID;
 		}
 		if (ConcretemodelPackage.eINSTANCE.getAssociationAdj().isSuperTypeOf(domainElement.eClass())) {
 			return AssociationAdjEditPart.VISUAL_ID;
 		}
-		if (ConcretemodelPackage.eINSTANCE.getAssociationAdj().isSuperTypeOf(domainElement.eClass())) {
-			return AssociationAdj2EditPart.VISUAL_ID;
-		}
 		if (ConcretemodelPackage.eINSTANCE.getGeneralizationAdj().isSuperTypeOf(domainElement.eClass())) {
 			return GeneralizationAdjEditPart.VISUAL_ID;
-		}
-		if (ConcretemodelPackage.eINSTANCE.getGeneralizationAdj().isSuperTypeOf(domainElement.eClass())) {
-			return GeneralizationAdj2EditPart.VISUAL_ID;
 		}
 		return -1;
 	}

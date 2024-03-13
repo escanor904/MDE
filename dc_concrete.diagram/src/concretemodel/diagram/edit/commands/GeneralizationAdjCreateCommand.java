@@ -84,7 +84,7 @@ public class GeneralizationAdjCreateCommand extends EditElementCommand {
 		}
 
 		GeneralizationAdj newElement = ConcretemodelFactory.eINSTANCE.createGeneralizationAdj();
-		getContainer().getLstOutputRelationship().add(newElement);
+		getContainer().getLstRelationship().add(newElement);
 		newElement.setClassSource(getSource());
 		newElement.setClassTarget(getTarget());
 		doConfigure(newElement, monitor, info);

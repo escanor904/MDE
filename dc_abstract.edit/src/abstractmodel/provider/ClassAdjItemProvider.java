@@ -64,6 +64,7 @@ public class ClassAdjItemProvider
 			super.getPropertyDescriptors(object);
 
 			addNamePropertyDescriptor(object);
+			addPathPackagePropertyDescriptor(object);
 			addClassTypeAdjPropertyDescriptor(object);
 			addLstInputRelationshipAdjPropertyDescriptor(object);
 		}
@@ -84,6 +85,28 @@ public class ClassAdjItemProvider
 				 getString("_UI_ClassAdj_name_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_ClassAdj_name_feature", "_UI_ClassAdj_type"),
 				 AbstractmodelPackage.Literals.CLASS_ADJ__NAME,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Path Package feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addPathPackagePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_ClassAdj_pathPackage_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ClassAdj_pathPackage_feature", "_UI_ClassAdj_type"),
+				 AbstractmodelPackage.Literals.CLASS_ADJ__PATH_PACKAGE,
 				 true,
 				 false,
 				 false,
@@ -207,6 +230,7 @@ public class ClassAdjItemProvider
 
 		switch (notification.getFeatureID(ClassAdj.class)) {
 			case AbstractmodelPackage.CLASS_ADJ__NAME:
+			case AbstractmodelPackage.CLASS_ADJ__PATH_PACKAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 			case AbstractmodelPackage.CLASS_ADJ__LST_ATTRIBUTE_ADJ:

@@ -84,7 +84,7 @@ public class SharingAdjCreateCommand extends EditElementCommand {
 		}
 
 		SharingAdj newElement = ConcretemodelFactory.eINSTANCE.createSharingAdj();
-		getContainer().getLstOutputRelationship().add(newElement);
+		getContainer().getLstRelationship().add(newElement);
 		newElement.setClassSource(getSource());
 		newElement.setClassTarget(getTarget());
 		doConfigure(newElement, monitor, info);

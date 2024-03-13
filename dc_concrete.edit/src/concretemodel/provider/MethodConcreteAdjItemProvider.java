@@ -64,6 +64,7 @@ public class MethodConcreteAdjItemProvider
 			super.getPropertyDescriptors(object);
 
 			addMethodNamePropertyDescriptor(object);
+			addBodyPropertyDescriptor(object);
 			addReturnTypePropertyDescriptor(object);
 			addAccessModifierPropertyDescriptor(object);
 		}
@@ -84,6 +85,28 @@ public class MethodConcreteAdjItemProvider
 				 getString("_UI_MethodConcreteAdj_methodName_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_MethodConcreteAdj_methodName_feature", "_UI_MethodConcreteAdj_type"),
 				 ConcretemodelPackage.Literals.METHOD_CONCRETE_ADJ__METHOD_NAME,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Body feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addBodyPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_MethodConcreteAdj_body_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_MethodConcreteAdj_body_feature", "_UI_MethodConcreteAdj_type"),
+				 ConcretemodelPackage.Literals.METHOD_CONCRETE_ADJ__BODY,
 				 true,
 				 false,
 				 false,
@@ -205,6 +228,7 @@ public class MethodConcreteAdjItemProvider
 
 		switch (notification.getFeatureID(MethodConcreteAdj.class)) {
 			case ConcretemodelPackage.METHOD_CONCRETE_ADJ__METHOD_NAME:
+			case ConcretemodelPackage.METHOD_CONCRETE_ADJ__BODY:
 			case ConcretemodelPackage.METHOD_CONCRETE_ADJ__RETURN_TYPE:
 			case ConcretemodelPackage.METHOD_CONCRETE_ADJ__ACCESS_MODIFIER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));

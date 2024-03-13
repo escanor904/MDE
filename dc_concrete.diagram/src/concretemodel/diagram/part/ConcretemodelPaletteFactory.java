@@ -4,14 +4,12 @@
  */
 package concretemodel.diagram.part;
 
-import java.util.ArrayList;
 import java.util.Collections;
 
 import org.eclipse.gef.palette.PaletteContainer;
 import org.eclipse.gef.palette.PaletteDrawer;
 import org.eclipse.gef.palette.PaletteRoot;
 import org.eclipse.gef.palette.ToolEntry;
-import org.eclipse.gmf.runtime.emf.type.core.IElementType;
 import org.eclipse.gmf.tooling.runtime.part.DefaultLinkToolEntry;
 import org.eclipse.gmf.tooling.runtime.part.DefaultNodeToolEntry;
 
@@ -118,11 +116,9 @@ public class ConcretemodelPaletteFactory {
 	* @generated
 	*/
 	private ToolEntry createAssociationAdj1CreationTool() {
-		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
-		types.add(ConcretemodelElementTypes.AssociationAdj_4005);
-		types.add(ConcretemodelElementTypes.AssociationAdj_4006);
 		DefaultLinkToolEntry entry = new DefaultLinkToolEntry(Messages.AssociationAdj1CreationTool_title,
-				Messages.AssociationAdj1CreationTool_desc, types);
+				Messages.AssociationAdj1CreationTool_desc,
+				Collections.singletonList(ConcretemodelElementTypes.AssociationAdj_4005));
 		entry.setId("createAssociationAdj1CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(ConcretemodelElementTypes.getImageDescriptor(ConcretemodelElementTypes.AssociationAdj_4005));
 		entry.setLargeIcon(entry.getSmallIcon());
@@ -133,11 +129,9 @@ public class ConcretemodelPaletteFactory {
 	* @generated
 	*/
 	private ToolEntry createContainmentSdj2CreationTool() {
-		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
-		types.add(ConcretemodelElementTypes.ContainmentSdj_4001);
-		types.add(ConcretemodelElementTypes.ContainmentSdj_4002);
 		DefaultLinkToolEntry entry = new DefaultLinkToolEntry(Messages.ContainmentSdj2CreationTool_title,
-				Messages.ContainmentSdj2CreationTool_desc, types);
+				Messages.ContainmentSdj2CreationTool_desc,
+				Collections.singletonList(ConcretemodelElementTypes.ContainmentSdj_4001));
 		entry.setId("createContainmentSdj2CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(ConcretemodelElementTypes.getImageDescriptor(ConcretemodelElementTypes.ContainmentSdj_4001));
 		entry.setLargeIcon(entry.getSmallIcon());
@@ -148,11 +142,9 @@ public class ConcretemodelPaletteFactory {
 	* @generated
 	*/
 	private ToolEntry createGeneralizationAdj3CreationTool() {
-		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
-		types.add(ConcretemodelElementTypes.GeneralizationAdj_4007);
-		types.add(ConcretemodelElementTypes.GeneralizationAdj_4008);
 		DefaultLinkToolEntry entry = new DefaultLinkToolEntry(Messages.GeneralizationAdj3CreationTool_title,
-				Messages.GeneralizationAdj3CreationTool_desc, types);
+				Messages.GeneralizationAdj3CreationTool_desc,
+				Collections.singletonList(ConcretemodelElementTypes.GeneralizationAdj_4007));
 		entry.setId("createGeneralizationAdj3CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(
 				ConcretemodelElementTypes.getImageDescriptor(ConcretemodelElementTypes.GeneralizationAdj_4007));
@@ -164,11 +156,9 @@ public class ConcretemodelPaletteFactory {
 	* @generated
 	*/
 	private ToolEntry createSharingAdj4CreationTool() {
-		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
-		types.add(ConcretemodelElementTypes.SharingAdj_4003);
-		types.add(ConcretemodelElementTypes.SharingAdj_4004);
 		DefaultLinkToolEntry entry = new DefaultLinkToolEntry(Messages.SharingAdj4CreationTool_title,
-				Messages.SharingAdj4CreationTool_desc, types);
+				Messages.SharingAdj4CreationTool_desc,
+				Collections.singletonList(ConcretemodelElementTypes.SharingAdj_4003));
 		entry.setId("createSharingAdj4CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(ConcretemodelElementTypes.getImageDescriptor(ConcretemodelElementTypes.SharingAdj_4003));
 		entry.setLargeIcon(entry.getSmallIcon());

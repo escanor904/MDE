@@ -84,7 +84,7 @@ public class AssociationAdjCreateCommand extends EditElementCommand {
 		}
 
 		AssociationAdj newElement = ConcretemodelFactory.eINSTANCE.createAssociationAdj();
-		getContainer().getLstOutputRelationship().add(newElement);
+		getContainer().getLstRelationship().add(newElement);
 		newElement.setClassSource(getSource());
 		newElement.setClassTarget(getTarget());
 		doConfigure(newElement, monitor, info);

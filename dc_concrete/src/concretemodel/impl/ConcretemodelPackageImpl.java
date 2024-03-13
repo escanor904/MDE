@@ -287,7 +287,7 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClassDiagramAdj_LstOutputRelationship() {
+	public EReference getClassDiagramAdj_LstRelationship() {
 		return (EReference)classDiagramAdjEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -296,17 +296,8 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClassDiagramAdj_LstInputRelationship() {
-		return (EReference)classDiagramAdjEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EReference getClassDiagramAdj_LstClassConcreteAdj() {
-		return (EReference)classDiagramAdjEClass.getEStructuralFeatures().get(4);
+		return (EReference)classDiagramAdjEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -503,7 +494,7 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMethodConcreteAdj_ReturnType() {
+	public EAttribute getMethodConcreteAdj_Body() {
 		return (EAttribute)methodConcreteAdjEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -512,7 +503,7 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMethodConcreteAdj_AccessModifier() {
+	public EAttribute getMethodConcreteAdj_ReturnType() {
 		return (EAttribute)methodConcreteAdjEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -521,8 +512,17 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getMethodConcreteAdj_AccessModifier() {
+		return (EAttribute)methodConcreteAdjEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EReference getMethodConcreteAdj_LstParameterConcreteAdj() {
-		return (EReference)methodConcreteAdjEClass.getEStructuralFeatures().get(3);
+		return (EReference)methodConcreteAdjEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -672,8 +672,7 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 		classDiagramAdjEClass = createEClass(CLASS_DIAGRAM_ADJ);
 		createEAttribute(classDiagramAdjEClass, CLASS_DIAGRAM_ADJ__NAME);
 		createEReference(classDiagramAdjEClass, CLASS_DIAGRAM_ADJ__LST_PACKAGE_CONCRETE_ADJ);
-		createEReference(classDiagramAdjEClass, CLASS_DIAGRAM_ADJ__LST_OUTPUT_RELATIONSHIP);
-		createEReference(classDiagramAdjEClass, CLASS_DIAGRAM_ADJ__LST_INPUT_RELATIONSHIP);
+		createEReference(classDiagramAdjEClass, CLASS_DIAGRAM_ADJ__LST_RELATIONSHIP);
 		createEReference(classDiagramAdjEClass, CLASS_DIAGRAM_ADJ__LST_CLASS_CONCRETE_ADJ);
 
 		packageConcreteAdjEClass = createEClass(PACKAGE_CONCRETE_ADJ);
@@ -704,6 +703,7 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 
 		methodConcreteAdjEClass = createEClass(METHOD_CONCRETE_ADJ);
 		createEAttribute(methodConcreteAdjEClass, METHOD_CONCRETE_ADJ__METHOD_NAME);
+		createEAttribute(methodConcreteAdjEClass, METHOD_CONCRETE_ADJ__BODY);
 		createEAttribute(methodConcreteAdjEClass, METHOD_CONCRETE_ADJ__RETURN_TYPE);
 		createEAttribute(methodConcreteAdjEClass, METHOD_CONCRETE_ADJ__ACCESS_MODIFIER);
 		createEReference(methodConcreteAdjEClass, METHOD_CONCRETE_ADJ__LST_PARAMETER_CONCRETE_ADJ);
@@ -771,8 +771,7 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 		initEClass(classDiagramAdjEClass, ClassDiagramAdj.class, "ClassDiagramAdj", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getClassDiagramAdj_Name(), ecorePackage.getEString(), "name", null, 0, 1, ClassDiagramAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getClassDiagramAdj_LstPackageConcreteAdj(), this.getPackageConcreteAdj(), null, "lstPackageConcreteAdj", null, 0, -1, ClassDiagramAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getClassDiagramAdj_LstOutputRelationship(), this.getRelationshipAdj(), null, "lstOutputRelationship", null, 0, -1, ClassDiagramAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getClassDiagramAdj_LstInputRelationship(), this.getRelationshipAdj(), null, "lstInputRelationship", null, 0, -1, ClassDiagramAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getClassDiagramAdj_LstRelationship(), this.getRelationshipAdj(), null, "lstRelationship", null, 0, -1, ClassDiagramAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getClassDiagramAdj_LstClassConcreteAdj(), this.getClassConcreteAdj(), null, "lstClassConcreteAdj", null, 0, -1, ClassDiagramAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(packageConcreteAdjEClass, PackageConcreteAdj.class, "PackageConcreteAdj", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -803,6 +802,7 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 
 		initEClass(methodConcreteAdjEClass, MethodConcreteAdj.class, "MethodConcreteAdj", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getMethodConcreteAdj_MethodName(), ecorePackage.getEString(), "methodName", null, 0, 1, MethodConcreteAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMethodConcreteAdj_Body(), ecorePackage.getEString(), "body", null, 0, 1, MethodConcreteAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMethodConcreteAdj_ReturnType(), ecorePackage.getEString(), "returnType", null, 0, 1, MethodConcreteAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMethodConcreteAdj_AccessModifier(), this.getAccessModifier(), "accessModifier", null, 0, 1, MethodConcreteAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMethodConcreteAdj_LstParameterConcreteAdj(), this.getParameterConcreteAdj(), null, "lstParameterConcreteAdj", null, 0, -1, MethodConcreteAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

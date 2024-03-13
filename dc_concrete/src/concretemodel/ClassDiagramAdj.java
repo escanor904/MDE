@@ -17,8 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link concretemodel.ClassDiagramAdj#getName <em>Name</em>}</li>
  *   <li>{@link concretemodel.ClassDiagramAdj#getLstPackageConcreteAdj <em>Lst Package Concrete Adj</em>}</li>
- *   <li>{@link concretemodel.ClassDiagramAdj#getLstOutputRelationship <em>Lst Output Relationship</em>}</li>
- *   <li>{@link concretemodel.ClassDiagramAdj#getLstInputRelationship <em>Lst Input Relationship</em>}</li>
+ *   <li>{@link concretemodel.ClassDiagramAdj#getLstRelationship <em>Lst Relationship</em>}</li>
  *   <li>{@link concretemodel.ClassDiagramAdj#getLstClassConcreteAdj <em>Lst Class Concrete Adj</em>}</li>
  * </ul>
  *
@@ -70,36 +69,20 @@ public interface ClassDiagramAdj extends EObject {
 	EList<PackageConcreteAdj> getLstPackageConcreteAdj();
 
 	/**
-	 * Returns the value of the '<em><b>Lst Output Relationship</b></em>' containment reference list.
+	 * Returns the value of the '<em><b>Lst Relationship</b></em>' containment reference list.
 	 * The list contents are of type {@link concretemodel.RelationshipAdj}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Lst Output Relationship</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Lst Relationship</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Lst Output Relationship</em>' containment reference list.
-	 * @see concretemodel.ConcretemodelPackage#getClassDiagramAdj_LstOutputRelationship()
+	 * @return the value of the '<em>Lst Relationship</em>' containment reference list.
+	 * @see concretemodel.ConcretemodelPackage#getClassDiagramAdj_LstRelationship()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<RelationshipAdj> getLstOutputRelationship();
-
-	/**
-	 * Returns the value of the '<em><b>Lst Input Relationship</b></em>' containment reference list.
-	 * The list contents are of type {@link concretemodel.RelationshipAdj}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Lst Input Relationship</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Lst Input Relationship</em>' containment reference list.
-	 * @see concretemodel.ConcretemodelPackage#getClassDiagramAdj_LstInputRelationship()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<RelationshipAdj> getLstInputRelationship();
+	EList<RelationshipAdj> getLstRelationship();
 
 	/**
 	 * Returns the value of the '<em><b>Lst Class Concrete Adj</b></em>' containment reference list.

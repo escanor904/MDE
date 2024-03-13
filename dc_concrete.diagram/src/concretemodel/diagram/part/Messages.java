@@ -376,32 +376,12 @@ public class Messages extends NLS {
 	/**
 	* @generated
 	*/
-	public static String NavigatorGroupName_ContainmentSdj_4002_target;
-
-	/**
-	* @generated
-	*/
-	public static String NavigatorGroupName_ContainmentSdj_4002_source;
-
-	/**
-	* @generated
-	*/
 	public static String NavigatorGroupName_SharingAdj_4003_target;
 
 	/**
 	* @generated
 	*/
 	public static String NavigatorGroupName_SharingAdj_4003_source;
-
-	/**
-	* @generated
-	*/
-	public static String NavigatorGroupName_SharingAdj_4004_target;
-
-	/**
-	* @generated
-	*/
-	public static String NavigatorGroupName_SharingAdj_4004_source;
 
 	/**
 	* @generated
@@ -416,32 +396,12 @@ public class Messages extends NLS {
 	/**
 	* @generated
 	*/
-	public static String NavigatorGroupName_AssociationAdj_4006_target;
-
-	/**
-	* @generated
-	*/
-	public static String NavigatorGroupName_AssociationAdj_4006_source;
-
-	/**
-	* @generated
-	*/
 	public static String NavigatorGroupName_GeneralizationAdj_4007_target;
 
 	/**
 	* @generated
 	*/
 	public static String NavigatorGroupName_GeneralizationAdj_4007_source;
-
-	/**
-	* @generated
-	*/
-	public static String NavigatorGroupName_GeneralizationAdj_4008_target;
-
-	/**
-	* @generated
-	*/
-	public static String NavigatorGroupName_GeneralizationAdj_4008_source;
 
 	/**
 	* @generated

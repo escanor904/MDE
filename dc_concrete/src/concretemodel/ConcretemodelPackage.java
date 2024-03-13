@@ -159,22 +159,13 @@ public interface ConcretemodelPackage extends EPackage {
 	int CLASS_DIAGRAM_ADJ__LST_PACKAGE_CONCRETE_ADJ = 1;
 
 	/**
-	 * The feature id for the '<em><b>Lst Output Relationship</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Lst Relationship</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_DIAGRAM_ADJ__LST_OUTPUT_RELATIONSHIP = 2;
-
-	/**
-	 * The feature id for the '<em><b>Lst Input Relationship</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASS_DIAGRAM_ADJ__LST_INPUT_RELATIONSHIP = 3;
+	int CLASS_DIAGRAM_ADJ__LST_RELATIONSHIP = 2;
 
 	/**
 	 * The feature id for the '<em><b>Lst Class Concrete Adj</b></em>' containment reference list.
@@ -183,7 +174,7 @@ public interface ConcretemodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_DIAGRAM_ADJ__LST_CLASS_CONCRETE_ADJ = 4;
+	int CLASS_DIAGRAM_ADJ__LST_CLASS_CONCRETE_ADJ = 3;
 
 	/**
 	 * The number of structural features of the '<em>Class Diagram Adj</em>' class.
@@ -192,7 +183,7 @@ public interface ConcretemodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_DIAGRAM_ADJ_FEATURE_COUNT = 5;
+	int CLASS_DIAGRAM_ADJ_FEATURE_COUNT = 4;
 
 	/**
 	 * The meta object id for the '{@link concretemodel.impl.PackageConcreteAdjImpl <em>Package Concrete Adj</em>}' class.
@@ -671,13 +662,22 @@ public interface ConcretemodelPackage extends EPackage {
 	int METHOD_CONCRETE_ADJ__METHOD_NAME = 0;
 
 	/**
+	 * The feature id for the '<em><b>Body</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int METHOD_CONCRETE_ADJ__BODY = 1;
+
+	/**
 	 * The feature id for the '<em><b>Return Type</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int METHOD_CONCRETE_ADJ__RETURN_TYPE = 1;
+	int METHOD_CONCRETE_ADJ__RETURN_TYPE = 2;
 
 	/**
 	 * The feature id for the '<em><b>Access Modifier</b></em>' attribute.
@@ -686,7 +686,7 @@ public interface ConcretemodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHOD_CONCRETE_ADJ__ACCESS_MODIFIER = 2;
+	int METHOD_CONCRETE_ADJ__ACCESS_MODIFIER = 3;
 
 	/**
 	 * The feature id for the '<em><b>Lst Parameter Concrete Adj</b></em>' containment reference list.
@@ -695,7 +695,7 @@ public interface ConcretemodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHOD_CONCRETE_ADJ__LST_PARAMETER_CONCRETE_ADJ = 3;
+	int METHOD_CONCRETE_ADJ__LST_PARAMETER_CONCRETE_ADJ = 4;
 
 	/**
 	 * The number of structural features of the '<em>Method Concrete Adj</em>' class.
@@ -704,7 +704,7 @@ public interface ConcretemodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METHOD_CONCRETE_ADJ_FEATURE_COUNT = 4;
+	int METHOD_CONCRETE_ADJ_FEATURE_COUNT = 5;
 
 	/**
 	 * The meta object id for the '{@link concretemodel.impl.ParameterConcreteAdjImpl <em>Parameter Concrete Adj</em>}' class.
@@ -943,26 +943,15 @@ public interface ConcretemodelPackage extends EPackage {
 	EReference getClassDiagramAdj_LstPackageConcreteAdj();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link concretemodel.ClassDiagramAdj#getLstOutputRelationship <em>Lst Output Relationship</em>}'.
+	 * Returns the meta object for the containment reference list '{@link concretemodel.ClassDiagramAdj#getLstRelationship <em>Lst Relationship</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Lst Output Relationship</em>'.
-	 * @see concretemodel.ClassDiagramAdj#getLstOutputRelationship()
+	 * @return the meta object for the containment reference list '<em>Lst Relationship</em>'.
+	 * @see concretemodel.ClassDiagramAdj#getLstRelationship()
 	 * @see #getClassDiagramAdj()
 	 * @generated
 	 */
-	EReference getClassDiagramAdj_LstOutputRelationship();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link concretemodel.ClassDiagramAdj#getLstInputRelationship <em>Lst Input Relationship</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Lst Input Relationship</em>'.
-	 * @see concretemodel.ClassDiagramAdj#getLstInputRelationship()
-	 * @see #getClassDiagramAdj()
-	 * @generated
-	 */
-	EReference getClassDiagramAdj_LstInputRelationship();
+	EReference getClassDiagramAdj_LstRelationship();
 
 	/**
 	 * Returns the meta object for the containment reference list '{@link concretemodel.ClassDiagramAdj#getLstClassConcreteAdj <em>Lst Class Concrete Adj</em>}'.
@@ -1197,6 +1186,17 @@ public interface ConcretemodelPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getMethodConcreteAdj_MethodName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link concretemodel.MethodConcreteAdj#getBody <em>Body</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Body</em>'.
+	 * @see concretemodel.MethodConcreteAdj#getBody()
+	 * @see #getMethodConcreteAdj()
+	 * @generated
+	 */
+	EAttribute getMethodConcreteAdj_Body();
 
 	/**
 	 * Returns the meta object for the attribute '{@link concretemodel.MethodConcreteAdj#getReturnType <em>Return Type</em>}'.
@@ -1460,20 +1460,12 @@ public interface ConcretemodelPackage extends EPackage {
 		EReference CLASS_DIAGRAM_ADJ__LST_PACKAGE_CONCRETE_ADJ = eINSTANCE.getClassDiagramAdj_LstPackageConcreteAdj();
 
 		/**
-		 * The meta object literal for the '<em><b>Lst Output Relationship</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Lst Relationship</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CLASS_DIAGRAM_ADJ__LST_OUTPUT_RELATIONSHIP = eINSTANCE.getClassDiagramAdj_LstOutputRelationship();
-
-		/**
-		 * The meta object literal for the '<em><b>Lst Input Relationship</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CLASS_DIAGRAM_ADJ__LST_INPUT_RELATIONSHIP = eINSTANCE.getClassDiagramAdj_LstInputRelationship();
+		EReference CLASS_DIAGRAM_ADJ__LST_RELATIONSHIP = eINSTANCE.getClassDiagramAdj_LstRelationship();
 
 		/**
 		 * The meta object literal for the '<em><b>Lst Class Concrete Adj</b></em>' containment reference list feature.
@@ -1666,6 +1658,14 @@ public interface ConcretemodelPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute METHOD_CONCRETE_ADJ__METHOD_NAME = eINSTANCE.getMethodConcreteAdj_MethodName();
+
+		/**
+		 * The meta object literal for the '<em><b>Body</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute METHOD_CONCRETE_ADJ__BODY = eINSTANCE.getMethodConcreteAdj_Body();
 
 		/**
 		 * The meta object literal for the '<em><b>Return Type</b></em>' attribute feature.

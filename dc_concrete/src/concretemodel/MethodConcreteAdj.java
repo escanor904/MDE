@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link concretemodel.MethodConcreteAdj#getMethodName <em>Method Name</em>}</li>
+ *   <li>{@link concretemodel.MethodConcreteAdj#getBody <em>Body</em>}</li>
  *   <li>{@link concretemodel.MethodConcreteAdj#getReturnType <em>Return Type</em>}</li>
  *   <li>{@link concretemodel.MethodConcreteAdj#getAccessModifier <em>Access Modifier</em>}</li>
  *   <li>{@link concretemodel.MethodConcreteAdj#getLstParameterConcreteAdj <em>Lst Parameter Concrete Adj</em>}</li>
@@ -51,6 +52,32 @@ public interface MethodConcreteAdj extends EObject {
 	 * @generated
 	 */
 	void setMethodName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Body</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Body</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Body</em>' attribute.
+	 * @see #setBody(String)
+	 * @see concretemodel.ConcretemodelPackage#getMethodConcreteAdj_Body()
+	 * @model
+	 * @generated
+	 */
+	String getBody();
+
+	/**
+	 * Sets the value of the '{@link concretemodel.MethodConcreteAdj#getBody <em>Body</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Body</em>' attribute.
+	 * @see #getBody()
+	 * @generated
+	 */
+	void setBody(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Return Type</b></em>' attribute.

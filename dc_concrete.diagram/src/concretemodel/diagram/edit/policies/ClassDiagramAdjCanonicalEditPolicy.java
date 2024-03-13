@@ -35,18 +35,14 @@ import org.eclipse.gmf.runtime.notation.View;
 import org.eclipse.gmf.tooling.runtime.update.UpdaterLinkDescriptor;
 
 import concretemodel.ConcretemodelPackage;
-import concretemodel.diagram.edit.parts.AssociationAdj2EditPart;
 import concretemodel.diagram.edit.parts.AssociationAdjEditPart;
 import concretemodel.diagram.edit.parts.AttributeConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.ClassConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart;
-import concretemodel.diagram.edit.parts.ContainmentSdj2EditPart;
 import concretemodel.diagram.edit.parts.ContainmentSdjEditPart;
-import concretemodel.diagram.edit.parts.GeneralizationAdj2EditPart;
 import concretemodel.diagram.edit.parts.GeneralizationAdjEditPart;
 import concretemodel.diagram.edit.parts.MethodConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.PackageConcreteAdjEditPart;
-import concretemodel.diagram.edit.parts.SharingAdj2EditPart;
 import concretemodel.diagram.edit.parts.SharingAdjEditPart;
 import concretemodel.diagram.part.ConcretemodelDiagramUpdater;
 import concretemodel.diagram.part.ConcretemodelLinkDescriptor;
@@ -310,23 +306,9 @@ public class ClassDiagramAdjCanonicalEditPolicy extends CanonicalEditPolicy {
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
 		}
-		case ContainmentSdj2EditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(ConcretemodelDiagramUpdater.getContainmentSdj_4002ContainedLinks(view));
-			}
-			domain2NotationMap.putView(view.getElement(), view);
-			break;
-		}
 		case SharingAdjEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(ConcretemodelDiagramUpdater.getSharingAdj_4003ContainedLinks(view));
-			}
-			domain2NotationMap.putView(view.getElement(), view);
-			break;
-		}
-		case SharingAdj2EditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(ConcretemodelDiagramUpdater.getSharingAdj_4004ContainedLinks(view));
 			}
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
@@ -338,23 +320,9 @@ public class ClassDiagramAdjCanonicalEditPolicy extends CanonicalEditPolicy {
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
 		}
-		case AssociationAdj2EditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(ConcretemodelDiagramUpdater.getAssociationAdj_4006ContainedLinks(view));
-			}
-			domain2NotationMap.putView(view.getElement(), view);
-			break;
-		}
 		case GeneralizationAdjEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(ConcretemodelDiagramUpdater.getGeneralizationAdj_4007ContainedLinks(view));
-			}
-			domain2NotationMap.putView(view.getElement(), view);
-			break;
-		}
-		case GeneralizationAdj2EditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(ConcretemodelDiagramUpdater.getGeneralizationAdj_4008ContainedLinks(view));
 			}
 			domain2NotationMap.putView(view.getElement(), view);
 			break;

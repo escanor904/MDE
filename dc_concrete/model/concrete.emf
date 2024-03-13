@@ -17,8 +17,7 @@ class ProjectAdj{
 class ClassDiagramAdj {
 	attr String name;
 	val PackageConcreteAdj [*] lstPackageConcreteAdj;
-	val RelationshipAdj [*] lstOutputRelationship;
-	val RelationshipAdj [*] lstInputRelationship;
+	val RelationshipAdj [*] lstRelationship;
 	val ClassConcreteAdj [*] lstClassConcreteAdj;
 }
 
@@ -70,6 +69,7 @@ class ClassConcreteAdj{
 @gmf.node(label="methodName")
 class MethodConcreteAdj{
 	attr String methodName;
+	attr String body;
 	attr String returnType;
 	attr AccessModifier accessModifier;
 	val ParameterConcreteAdj [*] lstParameterConcreteAdj;

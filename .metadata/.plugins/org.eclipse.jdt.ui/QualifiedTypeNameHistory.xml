@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="abstractmodel.AttributeTypeAdj"/>
-<fullyQualifiedTypeName name="concretemodel.AttributeConcreteAdj"/>
-<fullyQualifiedTypeName name="concretemodel.ClassConcreteAdj"/>
 <fullyQualifiedTypeName name="org.eclipse.emf.ecore.resource.URIConverter.Loadable"/>
 <fullyQualifiedTypeName name="concretemodel.ConcretemodelPackage"/>
 <fullyQualifiedTypeName name="abstractmodel.AbstractmodelPackage"/>
@@ -14,6 +12,16 @@
 <fullyQualifiedTypeName name="abstractmodel.ProjectAdj"/>
 <fullyQualifiedTypeName name="concretemodel.ClassDiagramAdj"/>
 <fullyQualifiedTypeName name="concretemodel.PackageConcreteAdj"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="concretemodel.AttributeConcreteAdj"/>
+<fullyQualifiedTypeName name="abstractmodel.AttributeAdj"/>
+<fullyQualifiedTypeName name="concretemodel.MethodConcreteAdj"/>
+<fullyQualifiedTypeName name="abstractmodel.MethodAdj"/>
+<fullyQualifiedTypeName name="abstractmodel.ClassAdj"/>
+<fullyQualifiedTypeName name="concretemodel.ClassConcreteAdj"/>
+<fullyQualifiedTypeName name="abstractmodel.ParameterAdj"/>
 <fullyQualifiedTypeName name="abstractmodel.PackageAdj"/>
+<fullyQualifiedTypeName name="concretemodel.RelationshipAdj"/>
 <fullyQualifiedTypeName name="abstractmodel.AbstractmodelFactory"/>
+<fullyQualifiedTypeName name="abstractmodel.ContainmentAdj"/>
 </qualifiedTypeNameHistroy>

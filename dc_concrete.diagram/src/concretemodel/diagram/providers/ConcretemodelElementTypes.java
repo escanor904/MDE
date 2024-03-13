@@ -18,18 +18,14 @@ import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.swt.graphics.Image;
 
 import concretemodel.ConcretemodelPackage;
-import concretemodel.diagram.edit.parts.AssociationAdj2EditPart;
 import concretemodel.diagram.edit.parts.AssociationAdjEditPart;
 import concretemodel.diagram.edit.parts.AttributeConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.ClassConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart;
-import concretemodel.diagram.edit.parts.ContainmentSdj2EditPart;
 import concretemodel.diagram.edit.parts.ContainmentSdjEditPart;
-import concretemodel.diagram.edit.parts.GeneralizationAdj2EditPart;
 import concretemodel.diagram.edit.parts.GeneralizationAdjEditPart;
 import concretemodel.diagram.edit.parts.MethodConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.PackageConcreteAdjEditPart;
-import concretemodel.diagram.edit.parts.SharingAdj2EditPart;
 import concretemodel.diagram.edit.parts.SharingAdjEditPart;
 import concretemodel.diagram.part.ConcretemodelDiagramEditorPlugin;
 
@@ -91,15 +87,7 @@ public class ConcretemodelElementTypes {
 	/**
 	* @generated
 	*/
-	public static final IElementType ContainmentSdj_4002 = getElementType("dc_concrete.diagram.ContainmentSdj_4002"); //$NON-NLS-1$
-	/**
-	* @generated
-	*/
 	public static final IElementType SharingAdj_4003 = getElementType("dc_concrete.diagram.SharingAdj_4003"); //$NON-NLS-1$
-	/**
-	* @generated
-	*/
-	public static final IElementType SharingAdj_4004 = getElementType("dc_concrete.diagram.SharingAdj_4004"); //$NON-NLS-1$
 	/**
 	* @generated
 	*/
@@ -107,17 +95,8 @@ public class ConcretemodelElementTypes {
 	/**
 	* @generated
 	*/
-	public static final IElementType AssociationAdj_4006 = getElementType("dc_concrete.diagram.AssociationAdj_4006"); //$NON-NLS-1$
-	/**
-	* @generated
-	*/
 	public static final IElementType GeneralizationAdj_4007 = getElementType(
 			"dc_concrete.diagram.GeneralizationAdj_4007"); //$NON-NLS-1$
-	/**
-	* @generated
-	*/
-	public static final IElementType GeneralizationAdj_4008 = getElementType(
-			"dc_concrete.diagram.GeneralizationAdj_4008"); //$NON-NLS-1$
 
 	/**
 	* @generated
@@ -169,19 +148,11 @@ public class ConcretemodelElementTypes {
 
 			elements.put(ContainmentSdj_4001, ConcretemodelPackage.eINSTANCE.getContainmentSdj());
 
-			elements.put(ContainmentSdj_4002, ConcretemodelPackage.eINSTANCE.getContainmentSdj());
-
 			elements.put(SharingAdj_4003, ConcretemodelPackage.eINSTANCE.getSharingAdj());
-
-			elements.put(SharingAdj_4004, ConcretemodelPackage.eINSTANCE.getSharingAdj());
 
 			elements.put(AssociationAdj_4005, ConcretemodelPackage.eINSTANCE.getAssociationAdj());
 
-			elements.put(AssociationAdj_4006, ConcretemodelPackage.eINSTANCE.getAssociationAdj());
-
 			elements.put(GeneralizationAdj_4007, ConcretemodelPackage.eINSTANCE.getGeneralizationAdj());
-
-			elements.put(GeneralizationAdj_4008, ConcretemodelPackage.eINSTANCE.getGeneralizationAdj());
 		}
 		return (ENamedElement) elements.get(type);
 	}
@@ -205,13 +176,9 @@ public class ConcretemodelElementTypes {
 			KNOWN_ELEMENT_TYPES.add(AttributeConcreteAdj_3001);
 			KNOWN_ELEMENT_TYPES.add(MethodConcreteAdj_3002);
 			KNOWN_ELEMENT_TYPES.add(ContainmentSdj_4001);
-			KNOWN_ELEMENT_TYPES.add(ContainmentSdj_4002);
 			KNOWN_ELEMENT_TYPES.add(SharingAdj_4003);
-			KNOWN_ELEMENT_TYPES.add(SharingAdj_4004);
 			KNOWN_ELEMENT_TYPES.add(AssociationAdj_4005);
-			KNOWN_ELEMENT_TYPES.add(AssociationAdj_4006);
 			KNOWN_ELEMENT_TYPES.add(GeneralizationAdj_4007);
-			KNOWN_ELEMENT_TYPES.add(GeneralizationAdj_4008);
 		}
 		return KNOWN_ELEMENT_TYPES.contains(elementType);
 	}
@@ -233,20 +200,12 @@ public class ConcretemodelElementTypes {
 			return MethodConcreteAdj_3002;
 		case ContainmentSdjEditPart.VISUAL_ID:
 			return ContainmentSdj_4001;
-		case ContainmentSdj2EditPart.VISUAL_ID:
-			return ContainmentSdj_4002;
 		case SharingAdjEditPart.VISUAL_ID:
 			return SharingAdj_4003;
-		case SharingAdj2EditPart.VISUAL_ID:
-			return SharingAdj_4004;
 		case AssociationAdjEditPart.VISUAL_ID:
 			return AssociationAdj_4005;
-		case AssociationAdj2EditPart.VISUAL_ID:
-			return AssociationAdj_4006;
 		case GeneralizationAdjEditPart.VISUAL_ID:
 			return GeneralizationAdj_4007;
-		case GeneralizationAdj2EditPart.VISUAL_ID:
-			return GeneralizationAdj_4008;
 		}
 		return null;
 	}

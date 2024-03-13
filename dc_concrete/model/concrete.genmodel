@@ -21,8 +21,7 @@
     <genClasses ecoreClass="concrete.ecore#//ClassDiagramAdj">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//ClassDiagramAdj/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//ClassDiagramAdj/lstPackageConcreteAdj"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//ClassDiagramAdj/lstOutputRelationship"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//ClassDiagramAdj/lstInputRelationship"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//ClassDiagramAdj/lstRelationship"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//ClassDiagramAdj/lstClassConcreteAdj"/>
     </genClasses>
     <genClasses ecoreClass="concrete.ecore#//PackageConcreteAdj">
@@ -49,6 +48,7 @@
     </genClasses>
     <genClasses ecoreClass="concrete.ecore#//MethodConcreteAdj">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//MethodConcreteAdj/methodName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//MethodConcreteAdj/body"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//MethodConcreteAdj/returnType"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//MethodConcreteAdj/accessModifier"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//MethodConcreteAdj/lstParameterConcreteAdj"/>

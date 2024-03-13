@@ -32,6 +32,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link concretemodel.impl.MethodConcreteAdjImpl#getMethodName <em>Method Name</em>}</li>
+ *   <li>{@link concretemodel.impl.MethodConcreteAdjImpl#getBody <em>Body</em>}</li>
  *   <li>{@link concretemodel.impl.MethodConcreteAdjImpl#getReturnType <em>Return Type</em>}</li>
  *   <li>{@link concretemodel.impl.MethodConcreteAdjImpl#getAccessModifier <em>Access Modifier</em>}</li>
  *   <li>{@link concretemodel.impl.MethodConcreteAdjImpl#getLstParameterConcreteAdj <em>Lst Parameter Concrete Adj</em>}</li>
@@ -59,6 +60,26 @@ public class MethodConcreteAdjImpl extends EObjectImpl implements MethodConcrete
 	 * @ordered
 	 */
 	protected String methodName = METHOD_NAME_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getBody() <em>Body</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBody()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String BODY_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getBody() <em>Body</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBody()
+	 * @generated
+	 * @ordered
+	 */
+	protected String body = BODY_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getReturnType() <em>Return Type</em>}' attribute.
@@ -155,6 +176,27 @@ public class MethodConcreteAdjImpl extends EObjectImpl implements MethodConcrete
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getBody() {
+		return body;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setBody(String newBody) {
+		String oldBody = body;
+		body = newBody;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ConcretemodelPackage.METHOD_CONCRETE_ADJ__BODY, oldBody, body));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public String getReturnType() {
 		return returnType;
 	}
@@ -228,6 +270,8 @@ public class MethodConcreteAdjImpl extends EObjectImpl implements MethodConcrete
 		switch (featureID) {
 			case ConcretemodelPackage.METHOD_CONCRETE_ADJ__METHOD_NAME:
 				return getMethodName();
+			case ConcretemodelPackage.METHOD_CONCRETE_ADJ__BODY:
+				return getBody();
 			case ConcretemodelPackage.METHOD_CONCRETE_ADJ__RETURN_TYPE:
 				return getReturnType();
 			case ConcretemodelPackage.METHOD_CONCRETE_ADJ__ACCESS_MODIFIER:
@@ -249,6 +293,9 @@ public class MethodConcreteAdjImpl extends EObjectImpl implements MethodConcrete
 		switch (featureID) {
 			case ConcretemodelPackage.METHOD_CONCRETE_ADJ__METHOD_NAME:
 				setMethodName((String)newValue);
+				return;
+			case ConcretemodelPackage.METHOD_CONCRETE_ADJ__BODY:
+				setBody((String)newValue);
 				return;
 			case ConcretemodelPackage.METHOD_CONCRETE_ADJ__RETURN_TYPE:
 				setReturnType((String)newValue);
@@ -275,6 +322,9 @@ public class MethodConcreteAdjImpl extends EObjectImpl implements MethodConcrete
 			case ConcretemodelPackage.METHOD_CONCRETE_ADJ__METHOD_NAME:
 				setMethodName(METHOD_NAME_EDEFAULT);
 				return;
+			case ConcretemodelPackage.METHOD_CONCRETE_ADJ__BODY:
+				setBody(BODY_EDEFAULT);
+				return;
 			case ConcretemodelPackage.METHOD_CONCRETE_ADJ__RETURN_TYPE:
 				setReturnType(RETURN_TYPE_EDEFAULT);
 				return;
@@ -298,6 +348,8 @@ public class MethodConcreteAdjImpl extends EObjectImpl implements MethodConcrete
 		switch (featureID) {
 			case ConcretemodelPackage.METHOD_CONCRETE_ADJ__METHOD_NAME:
 				return METHOD_NAME_EDEFAULT == null ? methodName != null : !METHOD_NAME_EDEFAULT.equals(methodName);
+			case ConcretemodelPackage.METHOD_CONCRETE_ADJ__BODY:
+				return BODY_EDEFAULT == null ? body != null : !BODY_EDEFAULT.equals(body);
 			case ConcretemodelPackage.METHOD_CONCRETE_ADJ__RETURN_TYPE:
 				return RETURN_TYPE_EDEFAULT == null ? returnType != null : !RETURN_TYPE_EDEFAULT.equals(returnType);
 			case ConcretemodelPackage.METHOD_CONCRETE_ADJ__ACCESS_MODIFIER:
@@ -320,6 +372,8 @@ public class MethodConcreteAdjImpl extends EObjectImpl implements MethodConcrete
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (methodName: ");
 		result.append(methodName);
+		result.append(", body: ");
+		result.append(body);
 		result.append(", returnType: ");
 		result.append(returnType);
 		result.append(", accessModifier: ");

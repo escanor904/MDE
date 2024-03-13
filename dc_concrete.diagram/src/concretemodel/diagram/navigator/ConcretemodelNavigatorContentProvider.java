@@ -28,20 +28,16 @@ import org.eclipse.ui.IMemento;
 import org.eclipse.ui.navigator.ICommonContentExtensionSite;
 import org.eclipse.ui.navigator.ICommonContentProvider;
 
-import concretemodel.diagram.edit.parts.AssociationAdj2EditPart;
 import concretemodel.diagram.edit.parts.AssociationAdjEditPart;
 import concretemodel.diagram.edit.parts.AttributeConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentEditPart;
 import concretemodel.diagram.edit.parts.ClassConcreteAdjClassConcreteAdjLstMethodConcreteAdjCompartmentEditPart;
 import concretemodel.diagram.edit.parts.ClassConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart;
-import concretemodel.diagram.edit.parts.ContainmentSdj2EditPart;
 import concretemodel.diagram.edit.parts.ContainmentSdjEditPart;
-import concretemodel.diagram.edit.parts.GeneralizationAdj2EditPart;
 import concretemodel.diagram.edit.parts.GeneralizationAdjEditPart;
 import concretemodel.diagram.edit.parts.MethodConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.PackageConcreteAdjEditPart;
-import concretemodel.diagram.edit.parts.SharingAdj2EditPart;
 import concretemodel.diagram.edit.parts.SharingAdjEditPart;
 import concretemodel.diagram.part.ConcretemodelVisualIDRegistry;
 import concretemodel.diagram.part.Messages;
@@ -256,25 +252,13 @@ public class ConcretemodelNavigatorContentProvider implements ICommonContentProv
 					ConcretemodelVisualIDRegistry.getType(ContainmentSdjEditPart.VISUAL_ID));
 			links.addChildren(createNavigatorItems(connectedViews, links, false));
 			connectedViews = getDiagramLinksByType(Collections.singleton(sv),
-					ConcretemodelVisualIDRegistry.getType(ContainmentSdj2EditPart.VISUAL_ID));
-			links.addChildren(createNavigatorItems(connectedViews, links, false));
-			connectedViews = getDiagramLinksByType(Collections.singleton(sv),
 					ConcretemodelVisualIDRegistry.getType(SharingAdjEditPart.VISUAL_ID));
-			links.addChildren(createNavigatorItems(connectedViews, links, false));
-			connectedViews = getDiagramLinksByType(Collections.singleton(sv),
-					ConcretemodelVisualIDRegistry.getType(SharingAdj2EditPart.VISUAL_ID));
 			links.addChildren(createNavigatorItems(connectedViews, links, false));
 			connectedViews = getDiagramLinksByType(Collections.singleton(sv),
 					ConcretemodelVisualIDRegistry.getType(AssociationAdjEditPart.VISUAL_ID));
 			links.addChildren(createNavigatorItems(connectedViews, links, false));
 			connectedViews = getDiagramLinksByType(Collections.singleton(sv),
-					ConcretemodelVisualIDRegistry.getType(AssociationAdj2EditPart.VISUAL_ID));
-			links.addChildren(createNavigatorItems(connectedViews, links, false));
-			connectedViews = getDiagramLinksByType(Collections.singleton(sv),
 					ConcretemodelVisualIDRegistry.getType(GeneralizationAdjEditPart.VISUAL_ID));
-			links.addChildren(createNavigatorItems(connectedViews, links, false));
-			connectedViews = getDiagramLinksByType(Collections.singleton(sv),
-					ConcretemodelVisualIDRegistry.getType(GeneralizationAdj2EditPart.VISUAL_ID));
 			links.addChildren(createNavigatorItems(connectedViews, links, false));
 			if (!links.isEmpty()) {
 				result.add(links);
@@ -309,22 +293,10 @@ public class ConcretemodelNavigatorContentProvider implements ICommonContentProv
 					ConcretemodelVisualIDRegistry.getType(ContainmentSdjEditPart.VISUAL_ID));
 			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
 			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
-					ConcretemodelVisualIDRegistry.getType(ContainmentSdj2EditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
-			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
-					ConcretemodelVisualIDRegistry.getType(ContainmentSdj2EditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
 					ConcretemodelVisualIDRegistry.getType(SharingAdjEditPart.VISUAL_ID));
 			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
 			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
 					ConcretemodelVisualIDRegistry.getType(SharingAdjEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
-					ConcretemodelVisualIDRegistry.getType(SharingAdj2EditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
-			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
-					ConcretemodelVisualIDRegistry.getType(SharingAdj2EditPart.VISUAL_ID));
 			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
 			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
 					ConcretemodelVisualIDRegistry.getType(AssociationAdjEditPart.VISUAL_ID));
@@ -333,22 +305,10 @@ public class ConcretemodelNavigatorContentProvider implements ICommonContentProv
 					ConcretemodelVisualIDRegistry.getType(AssociationAdjEditPart.VISUAL_ID));
 			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
 			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
-					ConcretemodelVisualIDRegistry.getType(AssociationAdj2EditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
-			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
-					ConcretemodelVisualIDRegistry.getType(AssociationAdj2EditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
 					ConcretemodelVisualIDRegistry.getType(GeneralizationAdjEditPart.VISUAL_ID));
 			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
 			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
 					ConcretemodelVisualIDRegistry.getType(GeneralizationAdjEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
-					ConcretemodelVisualIDRegistry.getType(GeneralizationAdj2EditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
-			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
-					ConcretemodelVisualIDRegistry.getType(GeneralizationAdj2EditPart.VISUAL_ID));
 			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
 			if (!incominglinks.isEmpty()) {
 				result.add(incominglinks);
@@ -367,31 +327,6 @@ public class ConcretemodelNavigatorContentProvider implements ICommonContentProv
 					parentElement);
 			ConcretemodelNavigatorGroup source = new ConcretemodelNavigatorGroup(
 					Messages.NavigatorGroupName_ContainmentSdj_4001_source, "icons/linkSourceNavigatorGroup.gif", //$NON-NLS-1$
-					parentElement);
-			Collection<View> connectedViews;
-			connectedViews = getLinksTargetByType(Collections.singleton(sv),
-					ConcretemodelVisualIDRegistry.getType(ClassConcreteAdjEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target, true));
-			connectedViews = getLinksSourceByType(Collections.singleton(sv),
-					ConcretemodelVisualIDRegistry.getType(ClassConcreteAdjEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source, true));
-			if (!target.isEmpty()) {
-				result.add(target);
-			}
-			if (!source.isEmpty()) {
-				result.add(source);
-			}
-			return result.toArray();
-		}
-
-		case ContainmentSdj2EditPart.VISUAL_ID: {
-			LinkedList<ConcretemodelAbstractNavigatorItem> result = new LinkedList<ConcretemodelAbstractNavigatorItem>();
-			Edge sv = (Edge) view;
-			ConcretemodelNavigatorGroup target = new ConcretemodelNavigatorGroup(
-					Messages.NavigatorGroupName_ContainmentSdj_4002_target, "icons/linkTargetNavigatorGroup.gif", //$NON-NLS-1$
-					parentElement);
-			ConcretemodelNavigatorGroup source = new ConcretemodelNavigatorGroup(
-					Messages.NavigatorGroupName_ContainmentSdj_4002_source, "icons/linkSourceNavigatorGroup.gif", //$NON-NLS-1$
 					parentElement);
 			Collection<View> connectedViews;
 			connectedViews = getLinksTargetByType(Collections.singleton(sv),
@@ -434,31 +369,6 @@ public class ConcretemodelNavigatorContentProvider implements ICommonContentProv
 			return result.toArray();
 		}
 
-		case SharingAdj2EditPart.VISUAL_ID: {
-			LinkedList<ConcretemodelAbstractNavigatorItem> result = new LinkedList<ConcretemodelAbstractNavigatorItem>();
-			Edge sv = (Edge) view;
-			ConcretemodelNavigatorGroup target = new ConcretemodelNavigatorGroup(
-					Messages.NavigatorGroupName_SharingAdj_4004_target, "icons/linkTargetNavigatorGroup.gif", //$NON-NLS-1$
-					parentElement);
-			ConcretemodelNavigatorGroup source = new ConcretemodelNavigatorGroup(
-					Messages.NavigatorGroupName_SharingAdj_4004_source, "icons/linkSourceNavigatorGroup.gif", //$NON-NLS-1$
-					parentElement);
-			Collection<View> connectedViews;
-			connectedViews = getLinksTargetByType(Collections.singleton(sv),
-					ConcretemodelVisualIDRegistry.getType(ClassConcreteAdjEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target, true));
-			connectedViews = getLinksSourceByType(Collections.singleton(sv),
-					ConcretemodelVisualIDRegistry.getType(ClassConcreteAdjEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source, true));
-			if (!target.isEmpty()) {
-				result.add(target);
-			}
-			if (!source.isEmpty()) {
-				result.add(source);
-			}
-			return result.toArray();
-		}
-
 		case AssociationAdjEditPart.VISUAL_ID: {
 			LinkedList<ConcretemodelAbstractNavigatorItem> result = new LinkedList<ConcretemodelAbstractNavigatorItem>();
 			Edge sv = (Edge) view;
@@ -484,31 +394,6 @@ public class ConcretemodelNavigatorContentProvider implements ICommonContentProv
 			return result.toArray();
 		}
 
-		case AssociationAdj2EditPart.VISUAL_ID: {
-			LinkedList<ConcretemodelAbstractNavigatorItem> result = new LinkedList<ConcretemodelAbstractNavigatorItem>();
-			Edge sv = (Edge) view;
-			ConcretemodelNavigatorGroup target = new ConcretemodelNavigatorGroup(
-					Messages.NavigatorGroupName_AssociationAdj_4006_target, "icons/linkTargetNavigatorGroup.gif", //$NON-NLS-1$
-					parentElement);
-			ConcretemodelNavigatorGroup source = new ConcretemodelNavigatorGroup(
-					Messages.NavigatorGroupName_AssociationAdj_4006_source, "icons/linkSourceNavigatorGroup.gif", //$NON-NLS-1$
-					parentElement);
-			Collection<View> connectedViews;
-			connectedViews = getLinksTargetByType(Collections.singleton(sv),
-					ConcretemodelVisualIDRegistry.getType(ClassConcreteAdjEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target, true));
-			connectedViews = getLinksSourceByType(Collections.singleton(sv),
-					ConcretemodelVisualIDRegistry.getType(ClassConcreteAdjEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source, true));
-			if (!target.isEmpty()) {
-				result.add(target);
-			}
-			if (!source.isEmpty()) {
-				result.add(source);
-			}
-			return result.toArray();
-		}
-
 		case GeneralizationAdjEditPart.VISUAL_ID: {
 			LinkedList<ConcretemodelAbstractNavigatorItem> result = new LinkedList<ConcretemodelAbstractNavigatorItem>();
 			Edge sv = (Edge) view;
@@ -517,31 +402,6 @@ public class ConcretemodelNavigatorContentProvider implements ICommonContentProv
 					parentElement);
 			ConcretemodelNavigatorGroup source = new ConcretemodelNavigatorGroup(
 					Messages.NavigatorGroupName_GeneralizationAdj_4007_source, "icons/linkSourceNavigatorGroup.gif", //$NON-NLS-1$
-					parentElement);
-			Collection<View> connectedViews;
-			connectedViews = getLinksTargetByType(Collections.singleton(sv),
-					ConcretemodelVisualIDRegistry.getType(ClassConcreteAdjEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target, true));
-			connectedViews = getLinksSourceByType(Collections.singleton(sv),
-					ConcretemodelVisualIDRegistry.getType(ClassConcreteAdjEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source, true));
-			if (!target.isEmpty()) {
-				result.add(target);
-			}
-			if (!source.isEmpty()) {
-				result.add(source);
-			}
-			return result.toArray();
-		}
-
-		case GeneralizationAdj2EditPart.VISUAL_ID: {
-			LinkedList<ConcretemodelAbstractNavigatorItem> result = new LinkedList<ConcretemodelAbstractNavigatorItem>();
-			Edge sv = (Edge) view;
-			ConcretemodelNavigatorGroup target = new ConcretemodelNavigatorGroup(
-					Messages.NavigatorGroupName_GeneralizationAdj_4008_target, "icons/linkTargetNavigatorGroup.gif", //$NON-NLS-1$
-					parentElement);
-			ConcretemodelNavigatorGroup source = new ConcretemodelNavigatorGroup(
-					Messages.NavigatorGroupName_GeneralizationAdj_4008_source, "icons/linkSourceNavigatorGroup.gif", //$NON-NLS-1$
 					parentElement);
 			Collection<View> connectedViews;
 			connectedViews = getLinksTargetByType(Collections.singleton(sv),

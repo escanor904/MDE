@@ -84,7 +84,7 @@ public class ContainmentSdjCreateCommand extends EditElementCommand {
 		}
 
 		ContainmentSdj newElement = ConcretemodelFactory.eINSTANCE.createContainmentSdj();
-		getContainer().getLstOutputRelationship().add(newElement);
+		getContainer().getLstRelationship().add(newElement);
 		newElement.setClassSource(getSource());
 		newElement.setClassTarget(getTarget());
 		doConfigure(newElement, monitor, info);

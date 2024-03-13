@@ -26,20 +26,16 @@ import concretemodel.GeneralizationAdj;
 import concretemodel.MethodConcreteAdj;
 import concretemodel.PackageConcreteAdj;
 import concretemodel.SharingAdj;
-import concretemodel.diagram.edit.parts.AssociationAdj2EditPart;
 import concretemodel.diagram.edit.parts.AssociationAdjEditPart;
 import concretemodel.diagram.edit.parts.AttributeConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentEditPart;
 import concretemodel.diagram.edit.parts.ClassConcreteAdjClassConcreteAdjLstMethodConcreteAdjCompartmentEditPart;
 import concretemodel.diagram.edit.parts.ClassConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart;
-import concretemodel.diagram.edit.parts.ContainmentSdj2EditPart;
 import concretemodel.diagram.edit.parts.ContainmentSdjEditPart;
-import concretemodel.diagram.edit.parts.GeneralizationAdj2EditPart;
 import concretemodel.diagram.edit.parts.GeneralizationAdjEditPart;
 import concretemodel.diagram.edit.parts.MethodConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.PackageConcreteAdjEditPart;
-import concretemodel.diagram.edit.parts.SharingAdj2EditPart;
 import concretemodel.diagram.edit.parts.SharingAdjEditPart;
 import concretemodel.diagram.providers.ConcretemodelElementTypes;
 
@@ -165,20 +161,12 @@ public class ConcretemodelDiagramUpdater {
 			return getMethodConcreteAdj_3002ContainedLinks(view);
 		case ContainmentSdjEditPart.VISUAL_ID:
 			return getContainmentSdj_4001ContainedLinks(view);
-		case ContainmentSdj2EditPart.VISUAL_ID:
-			return getContainmentSdj_4002ContainedLinks(view);
 		case SharingAdjEditPart.VISUAL_ID:
 			return getSharingAdj_4003ContainedLinks(view);
-		case SharingAdj2EditPart.VISUAL_ID:
-			return getSharingAdj_4004ContainedLinks(view);
 		case AssociationAdjEditPart.VISUAL_ID:
 			return getAssociationAdj_4005ContainedLinks(view);
-		case AssociationAdj2EditPart.VISUAL_ID:
-			return getAssociationAdj_4006ContainedLinks(view);
 		case GeneralizationAdjEditPart.VISUAL_ID:
 			return getGeneralizationAdj_4007ContainedLinks(view);
-		case GeneralizationAdj2EditPart.VISUAL_ID:
-			return getGeneralizationAdj_4008ContainedLinks(view);
 		}
 		return Collections.emptyList();
 	}
@@ -198,20 +186,12 @@ public class ConcretemodelDiagramUpdater {
 			return getMethodConcreteAdj_3002IncomingLinks(view);
 		case ContainmentSdjEditPart.VISUAL_ID:
 			return getContainmentSdj_4001IncomingLinks(view);
-		case ContainmentSdj2EditPart.VISUAL_ID:
-			return getContainmentSdj_4002IncomingLinks(view);
 		case SharingAdjEditPart.VISUAL_ID:
 			return getSharingAdj_4003IncomingLinks(view);
-		case SharingAdj2EditPart.VISUAL_ID:
-			return getSharingAdj_4004IncomingLinks(view);
 		case AssociationAdjEditPart.VISUAL_ID:
 			return getAssociationAdj_4005IncomingLinks(view);
-		case AssociationAdj2EditPart.VISUAL_ID:
-			return getAssociationAdj_4006IncomingLinks(view);
 		case GeneralizationAdjEditPart.VISUAL_ID:
 			return getGeneralizationAdj_4007IncomingLinks(view);
-		case GeneralizationAdj2EditPart.VISUAL_ID:
-			return getGeneralizationAdj_4008IncomingLinks(view);
 		}
 		return Collections.emptyList();
 	}
@@ -231,20 +211,12 @@ public class ConcretemodelDiagramUpdater {
 			return getMethodConcreteAdj_3002OutgoingLinks(view);
 		case ContainmentSdjEditPart.VISUAL_ID:
 			return getContainmentSdj_4001OutgoingLinks(view);
-		case ContainmentSdj2EditPart.VISUAL_ID:
-			return getContainmentSdj_4002OutgoingLinks(view);
 		case SharingAdjEditPart.VISUAL_ID:
 			return getSharingAdj_4003OutgoingLinks(view);
-		case SharingAdj2EditPart.VISUAL_ID:
-			return getSharingAdj_4004OutgoingLinks(view);
 		case AssociationAdjEditPart.VISUAL_ID:
 			return getAssociationAdj_4005OutgoingLinks(view);
-		case AssociationAdj2EditPart.VISUAL_ID:
-			return getAssociationAdj_4006OutgoingLinks(view);
 		case GeneralizationAdjEditPart.VISUAL_ID:
 			return getGeneralizationAdj_4007OutgoingLinks(view);
-		case GeneralizationAdj2EditPart.VISUAL_ID:
-			return getGeneralizationAdj_4008OutgoingLinks(view);
 		}
 		return Collections.emptyList();
 	}
@@ -256,13 +228,9 @@ public class ConcretemodelDiagramUpdater {
 		ClassDiagramAdj modelElement = (ClassDiagramAdj) view.getElement();
 		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
 		result.addAll(getContainedTypeModelFacetLinks_ContainmentSdj_4001(modelElement));
-		result.addAll(getContainedTypeModelFacetLinks_ContainmentSdj_4002(modelElement));
 		result.addAll(getContainedTypeModelFacetLinks_SharingAdj_4003(modelElement));
-		result.addAll(getContainedTypeModelFacetLinks_SharingAdj_4004(modelElement));
 		result.addAll(getContainedTypeModelFacetLinks_AssociationAdj_4005(modelElement));
-		result.addAll(getContainedTypeModelFacetLinks_AssociationAdj_4006(modelElement));
 		result.addAll(getContainedTypeModelFacetLinks_GeneralizationAdj_4007(modelElement));
-		result.addAll(getContainedTypeModelFacetLinks_GeneralizationAdj_4008(modelElement));
 		return result;
 	}
 
@@ -304,21 +272,7 @@ public class ConcretemodelDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<ConcretemodelLinkDescriptor> getContainmentSdj_4002ContainedLinks(View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
 	public static List<ConcretemodelLinkDescriptor> getSharingAdj_4003ContainedLinks(View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<ConcretemodelLinkDescriptor> getSharingAdj_4004ContainedLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -332,21 +286,7 @@ public class ConcretemodelDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<ConcretemodelLinkDescriptor> getAssociationAdj_4006ContainedLinks(View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
 	public static List<ConcretemodelLinkDescriptor> getGeneralizationAdj_4007ContainedLinks(View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<ConcretemodelLinkDescriptor> getGeneralizationAdj_4008ContainedLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -366,13 +306,9 @@ public class ConcretemodelDiagramUpdater {
 				.find(view.eResource().getResourceSet().getResources());
 		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
 		result.addAll(getIncomingTypeModelFacetLinks_ContainmentSdj_4001(modelElement, crossReferences));
-		result.addAll(getIncomingTypeModelFacetLinks_ContainmentSdj_4002(modelElement, crossReferences));
 		result.addAll(getIncomingTypeModelFacetLinks_SharingAdj_4003(modelElement, crossReferences));
-		result.addAll(getIncomingTypeModelFacetLinks_SharingAdj_4004(modelElement, crossReferences));
 		result.addAll(getIncomingTypeModelFacetLinks_AssociationAdj_4005(modelElement, crossReferences));
-		result.addAll(getIncomingTypeModelFacetLinks_AssociationAdj_4006(modelElement, crossReferences));
 		result.addAll(getIncomingTypeModelFacetLinks_GeneralizationAdj_4007(modelElement, crossReferences));
-		result.addAll(getIncomingTypeModelFacetLinks_GeneralizationAdj_4008(modelElement, crossReferences));
 		return result;
 	}
 
@@ -400,21 +336,7 @@ public class ConcretemodelDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<ConcretemodelLinkDescriptor> getContainmentSdj_4002IncomingLinks(View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
 	public static List<ConcretemodelLinkDescriptor> getSharingAdj_4003IncomingLinks(View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<ConcretemodelLinkDescriptor> getSharingAdj_4004IncomingLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -428,21 +350,7 @@ public class ConcretemodelDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<ConcretemodelLinkDescriptor> getAssociationAdj_4006IncomingLinks(View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
 	public static List<ConcretemodelLinkDescriptor> getGeneralizationAdj_4007IncomingLinks(View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<ConcretemodelLinkDescriptor> getGeneralizationAdj_4008IncomingLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -460,13 +368,9 @@ public class ConcretemodelDiagramUpdater {
 		ClassConcreteAdj modelElement = (ClassConcreteAdj) view.getElement();
 		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
 		result.addAll(getOutgoingTypeModelFacetLinks_ContainmentSdj_4001(modelElement));
-		result.addAll(getOutgoingTypeModelFacetLinks_ContainmentSdj_4002(modelElement));
 		result.addAll(getOutgoingTypeModelFacetLinks_SharingAdj_4003(modelElement));
-		result.addAll(getOutgoingTypeModelFacetLinks_SharingAdj_4004(modelElement));
 		result.addAll(getOutgoingTypeModelFacetLinks_AssociationAdj_4005(modelElement));
-		result.addAll(getOutgoingTypeModelFacetLinks_AssociationAdj_4006(modelElement));
 		result.addAll(getOutgoingTypeModelFacetLinks_GeneralizationAdj_4007(modelElement));
-		result.addAll(getOutgoingTypeModelFacetLinks_GeneralizationAdj_4008(modelElement));
 		return result;
 	}
 
@@ -494,21 +398,7 @@ public class ConcretemodelDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<ConcretemodelLinkDescriptor> getContainmentSdj_4002OutgoingLinks(View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
 	public static List<ConcretemodelLinkDescriptor> getSharingAdj_4003OutgoingLinks(View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<ConcretemodelLinkDescriptor> getSharingAdj_4004OutgoingLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -522,21 +412,7 @@ public class ConcretemodelDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<ConcretemodelLinkDescriptor> getAssociationAdj_4006OutgoingLinks(View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
 	public static List<ConcretemodelLinkDescriptor> getGeneralizationAdj_4007OutgoingLinks(View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<ConcretemodelLinkDescriptor> getGeneralizationAdj_4008OutgoingLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -546,7 +422,7 @@ public class ConcretemodelDiagramUpdater {
 	private static Collection<ConcretemodelLinkDescriptor> getContainedTypeModelFacetLinks_ContainmentSdj_4001(
 			ClassDiagramAdj container) {
 		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
-		for (Iterator<?> links = container.getLstOutputRelationship().iterator(); links.hasNext();) {
+		for (Iterator<?> links = container.getLstRelationship().iterator(); links.hasNext();) {
 			EObject linkObject = (EObject) links.next();
 			if (false == linkObject instanceof ContainmentSdj) {
 				continue;
@@ -566,33 +442,10 @@ public class ConcretemodelDiagramUpdater {
 	/**
 	* @generated
 	*/
-	private static Collection<ConcretemodelLinkDescriptor> getContainedTypeModelFacetLinks_ContainmentSdj_4002(
-			ClassDiagramAdj container) {
-		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
-		for (Iterator<?> links = container.getLstInputRelationship().iterator(); links.hasNext();) {
-			EObject linkObject = (EObject) links.next();
-			if (false == linkObject instanceof ContainmentSdj) {
-				continue;
-			}
-			ContainmentSdj link = (ContainmentSdj) linkObject;
-			if (ContainmentSdj2EditPart.VISUAL_ID != ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
-				continue;
-			}
-			ClassConcreteAdj dst = link.getClassTarget();
-			ClassConcreteAdj src = link.getClassSource();
-			result.add(new ConcretemodelLinkDescriptor(src, dst, link, ConcretemodelElementTypes.ContainmentSdj_4002,
-					ContainmentSdj2EditPart.VISUAL_ID));
-		}
-		return result;
-	}
-
-	/**
-	* @generated
-	*/
 	private static Collection<ConcretemodelLinkDescriptor> getContainedTypeModelFacetLinks_SharingAdj_4003(
 			ClassDiagramAdj container) {
 		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
-		for (Iterator<?> links = container.getLstOutputRelationship().iterator(); links.hasNext();) {
+		for (Iterator<?> links = container.getLstRelationship().iterator(); links.hasNext();) {
 			EObject linkObject = (EObject) links.next();
 			if (false == linkObject instanceof SharingAdj) {
 				continue;
@@ -612,33 +465,10 @@ public class ConcretemodelDiagramUpdater {
 	/**
 	* @generated
 	*/
-	private static Collection<ConcretemodelLinkDescriptor> getContainedTypeModelFacetLinks_SharingAdj_4004(
-			ClassDiagramAdj container) {
-		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
-		for (Iterator<?> links = container.getLstInputRelationship().iterator(); links.hasNext();) {
-			EObject linkObject = (EObject) links.next();
-			if (false == linkObject instanceof SharingAdj) {
-				continue;
-			}
-			SharingAdj link = (SharingAdj) linkObject;
-			if (SharingAdj2EditPart.VISUAL_ID != ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
-				continue;
-			}
-			ClassConcreteAdj dst = link.getClassTarget();
-			ClassConcreteAdj src = link.getClassSource();
-			result.add(new ConcretemodelLinkDescriptor(src, dst, link, ConcretemodelElementTypes.SharingAdj_4004,
-					SharingAdj2EditPart.VISUAL_ID));
-		}
-		return result;
-	}
-
-	/**
-	* @generated
-	*/
 	private static Collection<ConcretemodelLinkDescriptor> getContainedTypeModelFacetLinks_AssociationAdj_4005(
 			ClassDiagramAdj container) {
 		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
-		for (Iterator<?> links = container.getLstOutputRelationship().iterator(); links.hasNext();) {
+		for (Iterator<?> links = container.getLstRelationship().iterator(); links.hasNext();) {
 			EObject linkObject = (EObject) links.next();
 			if (false == linkObject instanceof AssociationAdj) {
 				continue;
@@ -658,33 +488,10 @@ public class ConcretemodelDiagramUpdater {
 	/**
 	* @generated
 	*/
-	private static Collection<ConcretemodelLinkDescriptor> getContainedTypeModelFacetLinks_AssociationAdj_4006(
-			ClassDiagramAdj container) {
-		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
-		for (Iterator<?> links = container.getLstInputRelationship().iterator(); links.hasNext();) {
-			EObject linkObject = (EObject) links.next();
-			if (false == linkObject instanceof AssociationAdj) {
-				continue;
-			}
-			AssociationAdj link = (AssociationAdj) linkObject;
-			if (AssociationAdj2EditPart.VISUAL_ID != ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
-				continue;
-			}
-			ClassConcreteAdj dst = link.getClassTarget();
-			ClassConcreteAdj src = link.getClassSource();
-			result.add(new ConcretemodelLinkDescriptor(src, dst, link, ConcretemodelElementTypes.AssociationAdj_4006,
-					AssociationAdj2EditPart.VISUAL_ID));
-		}
-		return result;
-	}
-
-	/**
-	* @generated
-	*/
 	private static Collection<ConcretemodelLinkDescriptor> getContainedTypeModelFacetLinks_GeneralizationAdj_4007(
 			ClassDiagramAdj container) {
 		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
-		for (Iterator<?> links = container.getLstOutputRelationship().iterator(); links.hasNext();) {
+		for (Iterator<?> links = container.getLstRelationship().iterator(); links.hasNext();) {
 			EObject linkObject = (EObject) links.next();
 			if (false == linkObject instanceof GeneralizationAdj) {
 				continue;
@@ -697,29 +504,6 @@ public class ConcretemodelDiagramUpdater {
 			ClassConcreteAdj src = link.getClassSource();
 			result.add(new ConcretemodelLinkDescriptor(src, dst, link, ConcretemodelElementTypes.GeneralizationAdj_4007,
 					GeneralizationAdjEditPart.VISUAL_ID));
-		}
-		return result;
-	}
-
-	/**
-	* @generated
-	*/
-	private static Collection<ConcretemodelLinkDescriptor> getContainedTypeModelFacetLinks_GeneralizationAdj_4008(
-			ClassDiagramAdj container) {
-		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
-		for (Iterator<?> links = container.getLstInputRelationship().iterator(); links.hasNext();) {
-			EObject linkObject = (EObject) links.next();
-			if (false == linkObject instanceof GeneralizationAdj) {
-				continue;
-			}
-			GeneralizationAdj link = (GeneralizationAdj) linkObject;
-			if (GeneralizationAdj2EditPart.VISUAL_ID != ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
-				continue;
-			}
-			ClassConcreteAdj dst = link.getClassTarget();
-			ClassConcreteAdj src = link.getClassSource();
-			result.add(new ConcretemodelLinkDescriptor(src, dst, link, ConcretemodelElementTypes.GeneralizationAdj_4008,
-					GeneralizationAdj2EditPart.VISUAL_ID));
 		}
 		return result;
 	}
@@ -750,29 +534,6 @@ public class ConcretemodelDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	private static Collection<ConcretemodelLinkDescriptor> getIncomingTypeModelFacetLinks_ContainmentSdj_4002(
-			ClassConcreteAdj target, Map<EObject, Collection<EStructuralFeature.Setting>> crossReferences) {
-		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
-		Collection<EStructuralFeature.Setting> settings = crossReferences.get(target);
-		for (EStructuralFeature.Setting setting : settings) {
-			if (setting.getEStructuralFeature() != ConcretemodelPackage.eINSTANCE.getRelationshipAdj_ClassTarget()
-					|| false == setting.getEObject() instanceof ContainmentSdj) {
-				continue;
-			}
-			ContainmentSdj link = (ContainmentSdj) setting.getEObject();
-			if (ContainmentSdj2EditPart.VISUAL_ID != ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
-				continue;
-			}
-			ClassConcreteAdj src = link.getClassSource();
-			result.add(new ConcretemodelLinkDescriptor(src, target, link, ConcretemodelElementTypes.ContainmentSdj_4002,
-					ContainmentSdj2EditPart.VISUAL_ID));
-		}
-		return result;
-	}
-
-	/**
-	 * @generated
-	 */
 	private static Collection<ConcretemodelLinkDescriptor> getIncomingTypeModelFacetLinks_SharingAdj_4003(
 			ClassConcreteAdj target, Map<EObject, Collection<EStructuralFeature.Setting>> crossReferences) {
 		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
@@ -789,29 +550,6 @@ public class ConcretemodelDiagramUpdater {
 			ClassConcreteAdj src = link.getClassSource();
 			result.add(new ConcretemodelLinkDescriptor(src, target, link, ConcretemodelElementTypes.SharingAdj_4003,
 					SharingAdjEditPart.VISUAL_ID));
-		}
-		return result;
-	}
-
-	/**
-	 * @generated
-	 */
-	private static Collection<ConcretemodelLinkDescriptor> getIncomingTypeModelFacetLinks_SharingAdj_4004(
-			ClassConcreteAdj target, Map<EObject, Collection<EStructuralFeature.Setting>> crossReferences) {
-		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
-		Collection<EStructuralFeature.Setting> settings = crossReferences.get(target);
-		for (EStructuralFeature.Setting setting : settings) {
-			if (setting.getEStructuralFeature() != ConcretemodelPackage.eINSTANCE.getRelationshipAdj_ClassTarget()
-					|| false == setting.getEObject() instanceof SharingAdj) {
-				continue;
-			}
-			SharingAdj link = (SharingAdj) setting.getEObject();
-			if (SharingAdj2EditPart.VISUAL_ID != ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
-				continue;
-			}
-			ClassConcreteAdj src = link.getClassSource();
-			result.add(new ConcretemodelLinkDescriptor(src, target, link, ConcretemodelElementTypes.SharingAdj_4004,
-					SharingAdj2EditPart.VISUAL_ID));
 		}
 		return result;
 	}
@@ -842,29 +580,6 @@ public class ConcretemodelDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	private static Collection<ConcretemodelLinkDescriptor> getIncomingTypeModelFacetLinks_AssociationAdj_4006(
-			ClassConcreteAdj target, Map<EObject, Collection<EStructuralFeature.Setting>> crossReferences) {
-		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
-		Collection<EStructuralFeature.Setting> settings = crossReferences.get(target);
-		for (EStructuralFeature.Setting setting : settings) {
-			if (setting.getEStructuralFeature() != ConcretemodelPackage.eINSTANCE.getRelationshipAdj_ClassTarget()
-					|| false == setting.getEObject() instanceof AssociationAdj) {
-				continue;
-			}
-			AssociationAdj link = (AssociationAdj) setting.getEObject();
-			if (AssociationAdj2EditPart.VISUAL_ID != ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
-				continue;
-			}
-			ClassConcreteAdj src = link.getClassSource();
-			result.add(new ConcretemodelLinkDescriptor(src, target, link, ConcretemodelElementTypes.AssociationAdj_4006,
-					AssociationAdj2EditPart.VISUAL_ID));
-		}
-		return result;
-	}
-
-	/**
-	 * @generated
-	 */
 	private static Collection<ConcretemodelLinkDescriptor> getIncomingTypeModelFacetLinks_GeneralizationAdj_4007(
 			ClassConcreteAdj target, Map<EObject, Collection<EStructuralFeature.Setting>> crossReferences) {
 		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
@@ -881,29 +596,6 @@ public class ConcretemodelDiagramUpdater {
 			ClassConcreteAdj src = link.getClassSource();
 			result.add(new ConcretemodelLinkDescriptor(src, target, link,
 					ConcretemodelElementTypes.GeneralizationAdj_4007, GeneralizationAdjEditPart.VISUAL_ID));
-		}
-		return result;
-	}
-
-	/**
-	 * @generated
-	 */
-	private static Collection<ConcretemodelLinkDescriptor> getIncomingTypeModelFacetLinks_GeneralizationAdj_4008(
-			ClassConcreteAdj target, Map<EObject, Collection<EStructuralFeature.Setting>> crossReferences) {
-		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
-		Collection<EStructuralFeature.Setting> settings = crossReferences.get(target);
-		for (EStructuralFeature.Setting setting : settings) {
-			if (setting.getEStructuralFeature() != ConcretemodelPackage.eINSTANCE.getRelationshipAdj_ClassTarget()
-					|| false == setting.getEObject() instanceof GeneralizationAdj) {
-				continue;
-			}
-			GeneralizationAdj link = (GeneralizationAdj) setting.getEObject();
-			if (GeneralizationAdj2EditPart.VISUAL_ID != ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
-				continue;
-			}
-			ClassConcreteAdj src = link.getClassSource();
-			result.add(new ConcretemodelLinkDescriptor(src, target, link,
-					ConcretemodelElementTypes.GeneralizationAdj_4008, GeneralizationAdj2EditPart.VISUAL_ID));
 		}
 		return result;
 	}
@@ -926,7 +618,7 @@ public class ConcretemodelDiagramUpdater {
 			return Collections.emptyList();
 		}
 		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
-		for (Iterator<?> links = container.getLstOutputRelationship().iterator(); links.hasNext();) {
+		for (Iterator<?> links = container.getLstRelationship().iterator(); links.hasNext();) {
 			EObject linkObject = (EObject) links.next();
 			if (false == linkObject instanceof ContainmentSdj) {
 				continue;
@@ -949,44 +641,6 @@ public class ConcretemodelDiagramUpdater {
 	/**
 	* @generated
 	*/
-	private static Collection<ConcretemodelLinkDescriptor> getOutgoingTypeModelFacetLinks_ContainmentSdj_4002(
-			ClassConcreteAdj source) {
-		ClassDiagramAdj container = null;
-		// Find container element for the link.
-		// Climb up by containment hierarchy starting from the source
-		// and return the first element that is instance of the container class.
-		for (EObject element = source; element != null && container == null; element = element.eContainer()) {
-			if (element instanceof ClassDiagramAdj) {
-				container = (ClassDiagramAdj) element;
-			}
-		}
-		if (container == null) {
-			return Collections.emptyList();
-		}
-		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
-		for (Iterator<?> links = container.getLstInputRelationship().iterator(); links.hasNext();) {
-			EObject linkObject = (EObject) links.next();
-			if (false == linkObject instanceof ContainmentSdj) {
-				continue;
-			}
-			ContainmentSdj link = (ContainmentSdj) linkObject;
-			if (ContainmentSdj2EditPart.VISUAL_ID != ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
-				continue;
-			}
-			ClassConcreteAdj dst = link.getClassTarget();
-			ClassConcreteAdj src = link.getClassSource();
-			if (src != source) {
-				continue;
-			}
-			result.add(new ConcretemodelLinkDescriptor(src, dst, link, ConcretemodelElementTypes.ContainmentSdj_4002,
-					ContainmentSdj2EditPart.VISUAL_ID));
-		}
-		return result;
-	}
-
-	/**
-	* @generated
-	*/
 	private static Collection<ConcretemodelLinkDescriptor> getOutgoingTypeModelFacetLinks_SharingAdj_4003(
 			ClassConcreteAdj source) {
 		ClassDiagramAdj container = null;
@@ -1002,7 +656,7 @@ public class ConcretemodelDiagramUpdater {
 			return Collections.emptyList();
 		}
 		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
-		for (Iterator<?> links = container.getLstOutputRelationship().iterator(); links.hasNext();) {
+		for (Iterator<?> links = container.getLstRelationship().iterator(); links.hasNext();) {
 			EObject linkObject = (EObject) links.next();
 			if (false == linkObject instanceof SharingAdj) {
 				continue;
@@ -1025,44 +679,6 @@ public class ConcretemodelDiagramUpdater {
 	/**
 	* @generated
 	*/
-	private static Collection<ConcretemodelLinkDescriptor> getOutgoingTypeModelFacetLinks_SharingAdj_4004(
-			ClassConcreteAdj source) {
-		ClassDiagramAdj container = null;
-		// Find container element for the link.
-		// Climb up by containment hierarchy starting from the source
-		// and return the first element that is instance of the container class.
-		for (EObject element = source; element != null && container == null; element = element.eContainer()) {
-			if (element instanceof ClassDiagramAdj) {
-				container = (ClassDiagramAdj) element;
-			}
-		}
-		if (container == null) {
-			return Collections.emptyList();
-		}
-		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
-		for (Iterator<?> links = container.getLstInputRelationship().iterator(); links.hasNext();) {
-			EObject linkObject = (EObject) links.next();
-			if (false == linkObject instanceof SharingAdj) {
-				continue;
-			}
-			SharingAdj link = (SharingAdj) linkObject;
-			if (SharingAdj2EditPart.VISUAL_ID != ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
-				continue;
-			}
-			ClassConcreteAdj dst = link.getClassTarget();
-			ClassConcreteAdj src = link.getClassSource();
-			if (src != source) {
-				continue;
-			}
-			result.add(new ConcretemodelLinkDescriptor(src, dst, link, ConcretemodelElementTypes.SharingAdj_4004,
-					SharingAdj2EditPart.VISUAL_ID));
-		}
-		return result;
-	}
-
-	/**
-	* @generated
-	*/
 	private static Collection<ConcretemodelLinkDescriptor> getOutgoingTypeModelFacetLinks_AssociationAdj_4005(
 			ClassConcreteAdj source) {
 		ClassDiagramAdj container = null;
@@ -1078,7 +694,7 @@ public class ConcretemodelDiagramUpdater {
 			return Collections.emptyList();
 		}
 		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
-		for (Iterator<?> links = container.getLstOutputRelationship().iterator(); links.hasNext();) {
+		for (Iterator<?> links = container.getLstRelationship().iterator(); links.hasNext();) {
 			EObject linkObject = (EObject) links.next();
 			if (false == linkObject instanceof AssociationAdj) {
 				continue;
@@ -1101,44 +717,6 @@ public class ConcretemodelDiagramUpdater {
 	/**
 	* @generated
 	*/
-	private static Collection<ConcretemodelLinkDescriptor> getOutgoingTypeModelFacetLinks_AssociationAdj_4006(
-			ClassConcreteAdj source) {
-		ClassDiagramAdj container = null;
-		// Find container element for the link.
-		// Climb up by containment hierarchy starting from the source
-		// and return the first element that is instance of the container class.
-		for (EObject element = source; element != null && container == null; element = element.eContainer()) {
-			if (element instanceof ClassDiagramAdj) {
-				container = (ClassDiagramAdj) element;
-			}
-		}
-		if (container == null) {
-			return Collections.emptyList();
-		}
-		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
-		for (Iterator<?> links = container.getLstInputRelationship().iterator(); links.hasNext();) {
-			EObject linkObject = (EObject) links.next();
-			if (false == linkObject instanceof AssociationAdj) {
-				continue;
-			}
-			AssociationAdj link = (AssociationAdj) linkObject;
-			if (AssociationAdj2EditPart.VISUAL_ID != ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
-				continue;
-			}
-			ClassConcreteAdj dst = link.getClassTarget();
-			ClassConcreteAdj src = link.getClassSource();
-			if (src != source) {
-				continue;
-			}
-			result.add(new ConcretemodelLinkDescriptor(src, dst, link, ConcretemodelElementTypes.AssociationAdj_4006,
-					AssociationAdj2EditPart.VISUAL_ID));
-		}
-		return result;
-	}
-
-	/**
-	* @generated
-	*/
 	private static Collection<ConcretemodelLinkDescriptor> getOutgoingTypeModelFacetLinks_GeneralizationAdj_4007(
 			ClassConcreteAdj source) {
 		ClassDiagramAdj container = null;
@@ -1154,7 +732,7 @@ public class ConcretemodelDiagramUpdater {
 			return Collections.emptyList();
 		}
 		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
-		for (Iterator<?> links = container.getLstOutputRelationship().iterator(); links.hasNext();) {
+		for (Iterator<?> links = container.getLstRelationship().iterator(); links.hasNext();) {
 			EObject linkObject = (EObject) links.next();
 			if (false == linkObject instanceof GeneralizationAdj) {
 				continue;
@@ -1170,44 +748,6 @@ public class ConcretemodelDiagramUpdater {
 			}
 			result.add(new ConcretemodelLinkDescriptor(src, dst, link, ConcretemodelElementTypes.GeneralizationAdj_4007,
 					GeneralizationAdjEditPart.VISUAL_ID));
-		}
-		return result;
-	}
-
-	/**
-	* @generated
-	*/
-	private static Collection<ConcretemodelLinkDescriptor> getOutgoingTypeModelFacetLinks_GeneralizationAdj_4008(
-			ClassConcreteAdj source) {
-		ClassDiagramAdj container = null;
-		// Find container element for the link.
-		// Climb up by containment hierarchy starting from the source
-		// and return the first element that is instance of the container class.
-		for (EObject element = source; element != null && container == null; element = element.eContainer()) {
-			if (element instanceof ClassDiagramAdj) {
-				container = (ClassDiagramAdj) element;
-			}
-		}
-		if (container == null) {
-			return Collections.emptyList();
-		}
-		LinkedList<ConcretemodelLinkDescriptor> result = new LinkedList<ConcretemodelLinkDescriptor>();
-		for (Iterator<?> links = container.getLstInputRelationship().iterator(); links.hasNext();) {
-			EObject linkObject = (EObject) links.next();
-			if (false == linkObject instanceof GeneralizationAdj) {
-				continue;
-			}
-			GeneralizationAdj link = (GeneralizationAdj) linkObject;
-			if (GeneralizationAdj2EditPart.VISUAL_ID != ConcretemodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
-				continue;
-			}
-			ClassConcreteAdj dst = link.getClassTarget();
-			ClassConcreteAdj src = link.getClassSource();
-			if (src != source) {
-				continue;
-			}
-			result.add(new ConcretemodelLinkDescriptor(src, dst, link, ConcretemodelElementTypes.GeneralizationAdj_4008,
-					GeneralizationAdj2EditPart.VISUAL_ID));
 		}
 		return result;
 	}

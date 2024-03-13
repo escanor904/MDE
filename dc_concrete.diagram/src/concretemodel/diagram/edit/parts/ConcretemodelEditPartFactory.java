@@ -61,26 +61,14 @@ public class ConcretemodelEditPartFactory implements EditPartFactory {
 			case ContainmentSdjEditPart.VISUAL_ID:
 				return new ContainmentSdjEditPart(view);
 
-			case ContainmentSdj2EditPart.VISUAL_ID:
-				return new ContainmentSdj2EditPart(view);
-
 			case SharingAdjEditPart.VISUAL_ID:
 				return new SharingAdjEditPart(view);
-
-			case SharingAdj2EditPart.VISUAL_ID:
-				return new SharingAdj2EditPart(view);
 
 			case AssociationAdjEditPart.VISUAL_ID:
 				return new AssociationAdjEditPart(view);
 
-			case AssociationAdj2EditPart.VISUAL_ID:
-				return new AssociationAdj2EditPart(view);
-
 			case GeneralizationAdjEditPart.VISUAL_ID:
 				return new GeneralizationAdjEditPart(view);
-
-			case GeneralizationAdj2EditPart.VISUAL_ID:
-				return new GeneralizationAdj2EditPart(view);
 
 			}
 		}

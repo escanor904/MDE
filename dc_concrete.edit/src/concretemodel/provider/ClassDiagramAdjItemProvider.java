@@ -103,8 +103,7 @@ public class ClassDiagramAdjItemProvider
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(ConcretemodelPackage.Literals.CLASS_DIAGRAM_ADJ__LST_PACKAGE_CONCRETE_ADJ);
-			childrenFeatures.add(ConcretemodelPackage.Literals.CLASS_DIAGRAM_ADJ__LST_OUTPUT_RELATIONSHIP);
-			childrenFeatures.add(ConcretemodelPackage.Literals.CLASS_DIAGRAM_ADJ__LST_INPUT_RELATIONSHIP);
+			childrenFeatures.add(ConcretemodelPackage.Literals.CLASS_DIAGRAM_ADJ__LST_RELATIONSHIP);
 			childrenFeatures.add(ConcretemodelPackage.Literals.CLASS_DIAGRAM_ADJ__LST_CLASS_CONCRETE_ADJ);
 		}
 		return childrenFeatures;
@@ -165,8 +164,7 @@ public class ClassDiagramAdjItemProvider
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_PACKAGE_CONCRETE_ADJ:
-			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_OUTPUT_RELATIONSHIP:
-			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_INPUT_RELATIONSHIP:
+			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_RELATIONSHIP:
 			case ConcretemodelPackage.CLASS_DIAGRAM_ADJ__LST_CLASS_CONCRETE_ADJ:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
@@ -192,71 +190,28 @@ public class ClassDiagramAdjItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
-				(ConcretemodelPackage.Literals.CLASS_DIAGRAM_ADJ__LST_OUTPUT_RELATIONSHIP,
+				(ConcretemodelPackage.Literals.CLASS_DIAGRAM_ADJ__LST_RELATIONSHIP,
 				 ConcretemodelFactory.eINSTANCE.createContainmentSdj()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(ConcretemodelPackage.Literals.CLASS_DIAGRAM_ADJ__LST_OUTPUT_RELATIONSHIP,
+				(ConcretemodelPackage.Literals.CLASS_DIAGRAM_ADJ__LST_RELATIONSHIP,
 				 ConcretemodelFactory.eINSTANCE.createSharingAdj()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(ConcretemodelPackage.Literals.CLASS_DIAGRAM_ADJ__LST_OUTPUT_RELATIONSHIP,
+				(ConcretemodelPackage.Literals.CLASS_DIAGRAM_ADJ__LST_RELATIONSHIP,
 				 ConcretemodelFactory.eINSTANCE.createAssociationAdj()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(ConcretemodelPackage.Literals.CLASS_DIAGRAM_ADJ__LST_OUTPUT_RELATIONSHIP,
-				 ConcretemodelFactory.eINSTANCE.createGeneralizationAdj()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(ConcretemodelPackage.Literals.CLASS_DIAGRAM_ADJ__LST_INPUT_RELATIONSHIP,
-				 ConcretemodelFactory.eINSTANCE.createContainmentSdj()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(ConcretemodelPackage.Literals.CLASS_DIAGRAM_ADJ__LST_INPUT_RELATIONSHIP,
-				 ConcretemodelFactory.eINSTANCE.createSharingAdj()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(ConcretemodelPackage.Literals.CLASS_DIAGRAM_ADJ__LST_INPUT_RELATIONSHIP,
-				 ConcretemodelFactory.eINSTANCE.createAssociationAdj()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(ConcretemodelPackage.Literals.CLASS_DIAGRAM_ADJ__LST_INPUT_RELATIONSHIP,
+				(ConcretemodelPackage.Literals.CLASS_DIAGRAM_ADJ__LST_RELATIONSHIP,
 				 ConcretemodelFactory.eINSTANCE.createGeneralizationAdj()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(ConcretemodelPackage.Literals.CLASS_DIAGRAM_ADJ__LST_CLASS_CONCRETE_ADJ,
 				 ConcretemodelFactory.eINSTANCE.createClassConcreteAdj()));
-	}
-
-	/**
-	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
-		Object childFeature = feature;
-		Object childObject = child;
-
-		boolean qualify =
-			childFeature == ConcretemodelPackage.Literals.CLASS_DIAGRAM_ADJ__LST_OUTPUT_RELATIONSHIP ||
-			childFeature == ConcretemodelPackage.Literals.CLASS_DIAGRAM_ADJ__LST_INPUT_RELATIONSHIP;
-
-		if (qualify) {
-			return getString
-				("_UI_CreateChild_text2",
-				 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
-		}
-		return super.getCreateChildText(owner, feature, child, selection);
 	}
 
 	/**

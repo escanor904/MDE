@@ -6,6 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import javax.swing.JOptionPane;
@@ -15,12 +16,16 @@ import abstractmodel.AbstractmodelPackage;
 import abstractmodel.ModelFactoryAbstract;
 import abstractmodel.PackageAdj;
 import abstractmodel.impl.AbstractmodelFactoryImpl;
+import concretemodel.AttributeConcreteAdj;
+import concretemodel.ClassConcreteAdj;
 import concretemodel.ClassDiagramAdj;
 import concretemodel.ConcretemodelFactory;
 import concretemodel.ConcretemodelPackage;
+import concretemodel.MethodConcreteAdj;
 import concretemodel.ModelFactoryConcrete;
 import concretemodel.PackageConcreteAdj;
 import concretemodel.ProjectAdj;
+import concretemodel.RelationshipAdj;
 
 
 
@@ -64,7 +69,7 @@ public class ModelFactoryModel {
 		ConcretemodelPackage whoownmePackage = ConcretemodelPackage.eINSTANCE;
 		org.eclipse.emf.ecore.resource.ResourceSet resourceSet = new org.eclipse.emf.ecore.resource.impl.ResourceSetImpl();
 		org.eclipse.emf.common.util.URI uri = org.eclipse.emf.common.util.URI
-				.createURI("platform:/resource/test/src/model.concreta");
+				.createURI("platform:/resource/test/src/model.concretemodel");
 		org.eclipse.emf.ecore.resource.Resource resource = resourceSet.createResource(uri);
 		try {
 			resource.load(null);
@@ -86,7 +91,7 @@ public class ModelFactoryModel {
 		AbstractmodelPackage whoownmePackage = AbstractmodelPackage.eINSTANCE;
 		org.eclipse.emf.ecore.resource.ResourceSet resourceSet = new org.eclipse.emf.ecore.resource.impl.ResourceSetImpl();
 		org.eclipse.emf.common.util.URI uri = org.eclipse.emf.common.util.URI
-				.createURI("platform:/resource/test/src/model.abstracta");
+				.createURI("platform:/resource/test/src/model.abstractmodel");
 		org.eclipse.emf.ecore.resource.Resource resource = resourceSet.createResource(uri);
 		try {
 			resource.load(null);
@@ -103,44 +108,44 @@ public class ModelFactoryModel {
 	/**
 	 * Este metodo permite guardar el ModelFactorySpecific del diagrama de clases
 	 */
-//	public void saveConcreta() {
-//
-//		// EXISTEN 2 FORMAS DE GUARDAR EL RECURSO
-//		org.eclipse.emf.common.util.URI uri = org.eclipse.emf.common.util.URI
-//				.createURI("platform:/resource/test/src/model.concreta");
-//		org.eclipse.emf.ecore.resource.ResourceSet resourceSet = new org.eclipse.emf.ecore.resource.impl.ResourceSetImpl();
-//
-//		org.eclipse.emf.ecore.resource.Resource resource = resourceSet.createResource(uri);
-//		resource.getContents().add(modelFactoryConcreta);
-//		try {
-//			resource.save(java.util.Collections.EMPTY_MAP);
-//		} catch (java.io.IOException e) {
-//			// TO-DO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//	}
+	public void saveConcreta() {
+
+		// EXISTEN 2 FORMAS DE GUARDAR EL RECURSO
+		org.eclipse.emf.common.util.URI uri = org.eclipse.emf.common.util.URI
+				.createURI("platform:/resource/test/src/model.concreta");
+		org.eclipse.emf.ecore.resource.ResourceSet resourceSet = new org.eclipse.emf.ecore.resource.impl.ResourceSetImpl();
+
+		org.eclipse.emf.ecore.resource.Resource resource = resourceSet.createResource(uri);
+		resource.getContents().add(modelFactoryConcreta);
+		try {
+			resource.save(java.util.Collections.EMPTY_MAP);
+		} catch (java.io.IOException e) {
+			// TO-DO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 //
 //
 //
 //	/**
 //	 * Este metodo permite guardar el ModelFactoryAbstract del diagrama de clases
 //	 */
-//	public void saveAbstracta() {
-//
-//		// EXISTEN 2 FORMAS DE GUARDAR EL RECURSO
-//		org.eclipse.emf.common.util.URI uri = org.eclipse.emf.common.util.URI
-//				.createURI("platform:/resource/test/src/model.abstracta");
-//		org.eclipse.emf.ecore.resource.ResourceSet resourceSet = new org.eclipse.emf.ecore.resource.impl.ResourceSetImpl();
-//
-//		org.eclipse.emf.ecore.resource.Resource resource = resourceSet.createResource(uri);
-//		resource.getContents().add(modelFactoryAbstracta);
-//		try {
-//			resource.save(java.util.Collections.EMPTY_MAP);
-//		} catch (java.io.IOException e) {
-//			// TO-DO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//	}
+	public void saveAbstracta() {
+
+		// EXISTEN 2 FORMAS DE GUARDAR EL RECURSO
+		org.eclipse.emf.common.util.URI uri = org.eclipse.emf.common.util.URI
+				.createURI("platform:/resource/test/src/model.abstractmodel");
+		org.eclipse.emf.ecore.resource.ResourceSet resourceSet = new org.eclipse.emf.ecore.resource.impl.ResourceSetImpl();
+
+		org.eclipse.emf.ecore.resource.Resource resource = resourceSet.createResource(uri);
+		resource.getContents().add(modelFactoryAbstracta);
+		try {
+			resource.save(java.util.Collections.EMPTY_MAP);
+		} catch (java.io.IOException e) {
+			// TO-DO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 //
 //
 //
@@ -155,7 +160,6 @@ public class ModelFactoryModel {
 
 		modelFactoryConcreta = loadConcreteModel();// el modelo oigen
 		modelFactoryAbstracta = loadAbstractaModel();// el modelo destino
-		
      	modelFactoryAbstracta.getListProjects().clear();
 //		
 //		
@@ -168,100 +172,129 @@ public class ModelFactoryModel {
 			proyectoAdjAbstracta.setPath(projectAdjConcreta.getPath());
 			modelFactoryAbstracta.getListProjects().add(proyectoAdjAbstracta);
 			
+			
+			//creamos el paquete raiz por defecto
 			PackageAdj packageRaizAdj = AbstractmodelFactory.eINSTANCE.createPackageAdj();
 			packageRaizAdj.setName(projectAdjConcreta.getName());
-			packageRaizAdj.setPath("");
+			packageRaizAdj.setPath("/"+projectAdjConcreta.getName());  
 			
 			proyectoAdjAbstracta.getLstPackageAdj().add(packageRaizAdj);
-//			
+			
+			//se recorren todos los diagramas y se crea el sistema de paquetes
 			for ( ClassDiagramAdj diagrama : projectAdjConcreta.getLstClassDiagramAdj()) {
+				
+				//va rrecorrer todos los paquetes de todos los diagramas
+				// por cada paquete se crea un paquete 
 				for (PackageConcreteAdj packageConcreta : diagrama.getLstPackageConcreteAdj()) {
 					crearPaquete(packageConcreta,packageRaizAdj);
 				}
-//				for (ClassRam classRamConcreta : diagrama.getListClassRam()) {
-//					crearClass(packageRaizRam, classRamConcreta);
-//				}
+				for (ClassConcreteAdj classAdjConcreta : diagrama.getLstClassConcreteAdj()) {
+					crearClass(packageRaizAdj, classAdjConcreta);
+				}
 //				
-//				for (RelationRam relationRam : diagrama.getListRelationRam()) {
-//					crearRelacion(relationRam,packageRaizRam);
-//				}
+				for (RelationshipAdj relationAdj : diagrama.getLstRelationship()) {
+					//System.out.println(relationAdj.getClass().);
+					crearRelacion(relationAdj,packageRaizAdj);
+				}
 			}
 			
 			
 		}
-//		saveAbstracta();
+  	saveAbstracta();
 	}
 //
 //
-//	private void crearRelacion(RelationRam relationRamConcreta, abstracta.PackageRam packageRaizRam) {
-//		
-//		ClassRam sourceConcreta = relationRamConcreta.getSource();
-//		ClassRam targetConcret = relationRamConcreta.getTarget();
-//		
-//		abstracta.ClassRam classRamAbstractaSource = obtenerClase(sourceConcreta,packageRaizRam);
-//		abstracta.ClassRam classRamAbstractaTarget = obtenerClase(targetConcret,packageRaizRam);
-//		
-//		abstracta.RelationRam relationRamAbstractaSource = AbstractaFactory.eINSTANCE.createRelationRam();
-//		relationRamAbstractaSource.setSource(classRamAbstractaSource);
-//		relationRamAbstractaSource.setTarget(classRamAbstractaTarget);
-//		relationRamAbstractaSource.setRoleA(relationRamConcreta.getRoleA());
-//		relationRamAbstractaSource.setRoleB(relationRamConcreta.getRoleB());
-//		relationRamAbstractaSource.setMultA(relationRamConcreta.getMultA());
-//		relationRamAbstractaSource.setMultB(relationRamConcreta.getMultB());
-//		classRamAbstractaSource.getListRelationRamSalida().add(relationRamAbstractaSource);
-//		
-//		abstracta.RelationRam relationRamAbstractaTarget = AbstractaFactory.eINSTANCE.createRelationRam();
-//		relationRamAbstractaSource.setSource(classRamAbstractaSource);
-//		relationRamAbstractaSource.setTarget(classRamAbstractaTarget);
-//		relationRamAbstractaSource.setRoleA(relationRamConcreta.getRoleB());
-//		relationRamAbstractaSource.setRoleB(relationRamConcreta.getRoleA());
-//		relationRamAbstractaSource.setMultA(relationRamConcreta.getMultB());
-//		relationRamAbstractaSource.setMultB(relationRamConcreta.getMultA());
-//		classRamAbstractaTarget.getListRelationRamSalida().add(relationRamAbstractaSource);
-//		
-//	}
+	private void crearRelacion(RelationshipAdj relationAdjConcreta, abstractmodel.PackageAdj packageRaizRam) {
+		//relationAdjConcreta.
+		ClassConcreteAdj sourceConcreta = relationAdjConcreta.getClassSource();
+		ClassConcreteAdj targetConcret = relationAdjConcreta.getClassTarget();
+		
+		abstractmodel.ClassAdj classAdjAbstractaSource = obtenerClase(sourceConcreta,packageRaizRam);
+		abstractmodel.ClassAdj classAdjAbstractaTarget = obtenerClase(targetConcret,packageRaizRam);
+		
+		switch (relationAdjConcreta.getClass().getName()) {
+		case "concretemodel.impl.ContainmentSdjImpl":
+			
+			
+			//Clase A
+			abstractmodel.ContainmentAdj relationAdjAbstractaSource = AbstractmodelFactory.eINSTANCE.createContainmentAdj();
+			relationAdjAbstractaSource.setMultiplicitySourceClass(relationAdjConcreta.getMultiplicitySourceClass());
+			relationAdjAbstractaSource.setMultiplicityTargetClass(relationAdjConcreta.getMultiplicityTargetClass());
+			relationAdjAbstractaSource.setRoleSource(relationAdjConcreta.getRoleSource());
+			relationAdjAbstractaSource.setRoleTarget(relationAdjConcreta.getRoleTarget());
+			relationAdjAbstractaSource.setTargetClass(classAdjAbstractaTarget);			
+			
+			//Clase B
+			abstractmodel.ContainmentAdj relationAdjAbstractaTarget = AbstractmodelFactory.eINSTANCE.createContainmentAdj();
+			relationAdjAbstractaTarget.setMultiplicitySourceClass(relationAdjConcreta.getMultiplicityTargetClass());
+			relationAdjAbstractaTarget.setMultiplicityTargetClass(relationAdjConcreta.getMultiplicitySourceClass());
+			relationAdjAbstractaTarget.setRoleSource(relationAdjConcreta.getRoleTarget());
+			relationAdjAbstractaTarget.setRoleTarget(relationAdjConcreta.getRoleSource());
+			relationAdjAbstractaTarget.setTargetClass(classAdjAbstractaSource);
+			
+			//Asignamos las relaciones que salen y las que entran a la clase A
+			classAdjAbstractaSource.getLstRelationShipAdj().add(relationAdjAbstractaSource);
+			classAdjAbstractaSource.getLstInputRelationshipAdj().add(relationAdjAbstractaTarget);
+			
+			//Asignamos las relaciones que salen y las que entran a la clase B
+			classAdjAbstractaTarget.getLstRelationShipAdj().add(relationAdjAbstractaTarget);
+			classAdjAbstractaTarget.getLstInputRelationshipAdj().add(relationAdjAbstractaSource);
+			
+
+			
+			
+
+			break;
+
+		default:
+			break;
+		}
+		
+
+		
+	}
 //
 //
-//	private abstracta.ClassRam obtenerClase(ClassRam claseABuscar, abstracta.PackageRam packageRaizRam) {
-//
-//		abstracta.PackageRam packageRam = obtenerPackagePadre(claseABuscar.getPathPackage(), packageRaizRam);
-//		
-//		for (abstracta.ClassRam clase : packageRam.getListClassRam()) {
-//			if(claseABuscar.getName().equals(clase.getName())) {
-//				return clase;
-//			}
-//		}
-//		return null;
-//	}
-//
-//
+	private abstractmodel.ClassAdj obtenerClase(ClassConcreteAdj claseABuscar, abstractmodel.PackageAdj packageRaizRam) {
+
+		abstractmodel.PackageAdj packageRam = obtenerPackagePadre(claseABuscar.getPath(), packageRaizRam);
+		
+		for (abstractmodel.ClassAdj clase : packageRam.getLstClassAdj()) {
+			if(claseABuscar.getName().equals(clase.getName())) {
+				return clase;
+			}
+		}
+		return null;
+	}
 //
 //
-//	private void crearClass(abstracta.PackageRam packageRaizRam, ClassRam classRamConcreta) {
-//		abstracta.ClassRam classRamAbsracta = AbstractaFactory.eINSTANCE.createClassRam();
-//		classRamAbsracta.setDescription(classRamConcreta.getDescription());
-//		classRamAbsracta.setIsAbstract(classRamConcreta.isIsAbstract());
-//		classRamAbsracta.setName(classRamConcreta.getName());
-//		classRamAbsracta.setPathPackage(classRamConcreta.getPathPackage());
-//		
-//		abstracta.PackageRam paquetePadre = obtenerPackagePadre(classRamAbsracta.getPathPackage(), packageRaizRam);
-//		paquetePadre.getListClassRam().add(classRamAbsracta);
-//		
-//		for (AttributeRam attributeRamConcreta : classRamConcreta.getListAttributeRam()) {
-//			abstracta.AttributeRam attributeRamAbstracta = AbstractaFactory.eINSTANCE.createAttributeRam();
-//			attributeRamAbstracta.setName(attributeRamConcreta.getName());
-//			attributeRamAbstracta.setTypeRam(null);
-//			attributeRamAbstracta.setValue(attributeRamAbstracta.getValue());
-//			classRamAbsracta.getListAttributeRam().add(attributeRamAbstracta);
-//		}
-//		for (MethodRam methodRamConcreta : classRamConcreta.getListMethodRam()) {
-//			abstracta.MethodRam methodRam = AbstractaFactory.eINSTANCE.createMethodRam();
-//			methodRam.setName(methodRamConcreta.getName());
-//			methodRam.setBody(methodRamConcreta.getBody());
-//			methodRam.setReturnType(methodRamConcreta.getReturnType());
-//			classRamAbsracta.getListMethodRam().add(methodRam);
-//		}
-//	}
+//
+//
+	private void crearClass(abstractmodel.PackageAdj packageRaizAdj, ClassConcreteAdj classAdjConcreta) {
+		abstractmodel.ClassAdj classAdjAbsracta = AbstractmodelFactory.eINSTANCE.createClassAdj();
+		//classAdjAbsracta.setDescription(classAdjConcreta.getDescription());
+		//classAdjAbsracta.setIsAbstract(classAdjConcreta.isIsAbstract());
+		classAdjAbsracta.setName(classAdjConcreta.getName());
+		classAdjAbsracta.setPathPackage(classAdjConcreta.getPath());
+		
+		abstractmodel.PackageAdj paquetePadre = obtenerPackagePadre(classAdjAbsracta.getPathPackage(), packageRaizAdj);
+		paquetePadre.getLstClassAdj().add(classAdjAbsracta);
+		
+		for (AttributeConcreteAdj attributeAdjConcreta : classAdjConcreta.getLstAttributeConcreteAdj()) {
+			abstractmodel.AttributeAdj attributeAdjAbstracta = AbstractmodelFactory.eINSTANCE.createAttributeAdj();
+			attributeAdjAbstracta.setName(attributeAdjConcreta.getName());
+			attributeAdjAbstracta.setAttributeTypeAdj(null);
+			attributeAdjAbstracta.setValor(attributeAdjConcreta.getValue());
+			classAdjAbsracta.getLstAttributeAdj().add(attributeAdjAbstracta);
+		}
+		for (MethodConcreteAdj methodAdjConcreta : classAdjConcreta.getLstMethodConcreteAdj()) {
+			abstractmodel.MethodAdj methodAdj = AbstractmodelFactory.eINSTANCE.createMethodAdj();
+			methodAdj.setMethodName(methodAdjConcreta.getMethodName());
+			methodAdj.setBody(methodAdjConcreta.getBody());
+			methodAdj.setReturnTypeAdj(methodAdjConcreta.getReturnType());
+			classAdjAbsracta.getLstMethodAdj().add(methodAdj);
+		}
+	}
 //
 //
 //	// -------------------------------- Tranformacion M2T de parte abstracta a archivos de texto -----------------------------------------------
@@ -284,8 +317,10 @@ public class ModelFactoryModel {
 		PackageAdj newPaqueteAbstracta = null;
 		newPaqueteAbstracta = AbstractmodelFactory.eINSTANCE.createPackageAdj();
 		newPaqueteAbstracta.setName(packageConcreta.getName());
+		// ? operador ternario que equivale a if-else
 		newPaqueteAbstracta.setPath(packageConcreta.getPath()== null?"":packageConcreta.getPath());
-
+		
+		
 		PackageAdj packageRamPadre = obtenerPackagePadre(packageConcreta.getPath(),packageRaizRam);//src/main
 		packageRamPadre.getLstChildPackageAdj().add(newPaqueteAbstracta);
 	}
@@ -295,8 +330,31 @@ public class ModelFactoryModel {
 //
 	private PackageAdj obtenerPackagePadre(String path, PackageAdj packageRaizRam) {
 		
+		char[] pathNotValidated = path.toCharArray();//src,main
+		String[] pathArray = null;
 		
-		String[] pathArray = path.split("/");//src,main
+		
+		//validamos la ruta
+		if (path.length()>3) {
+			if (pathNotValidated[1] == ':' && pathNotValidated[2]=='/' && pathNotValidated[3]=='/') {
+				//corta el arreglo quitandole la parte de ":\\"
+				char[] nuevoPathArray = new char[pathNotValidated.length - 4];
+	            System.arraycopy(pathNotValidated, 4, nuevoPathArray, 0, nuevoPathArray.length);
+	            String nuevoPath = new String(nuevoPathArray);
+	            pathArray= nuevoPath.split("/");
+	            
+	            
+			}else {
+				pathArray= path.split("/");	
+			}
+					
+		}else {
+			
+			pathArray= path.split("/");	
+		}
+		
+		System.out.println(pathArray.toString());
+		
 		PackageAdj padre = packageRaizRam;
 		for (int j = 0; j < pathArray.length; j++) {
 			padre = obtenerPaquete(pathArray[j],padre);
@@ -309,6 +367,10 @@ public class ModelFactoryModel {
 //
 //
 	private PackageAdj obtenerPaquete(String nameP,PackageAdj packageParentAdj) {
+		
+		if (nameP .equals(packageParentAdj.getName())) {
+			
+		}
 		for (PackageAdj pac : packageParentAdj.getLstChildPackageAdj()) {
 			if(pac.getName().equalsIgnoreCase(nameP)) {
 				return pac;

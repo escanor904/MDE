@@ -43,6 +43,7 @@ class PackageAdj  {
 
 class ClassAdj {
     attr String name;
+    attr String pathPackage;
     ref  ClassTypeAdj classTypeAdj;
     val AttributeAdj [*] lstAttributeAdj;
     val MethodAdj [*] lstMethodAdj;

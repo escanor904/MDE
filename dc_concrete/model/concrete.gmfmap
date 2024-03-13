@@ -103,24 +103,7 @@
     <domainMetaElement
         href="concrete.ecore#//ContainmentSdj"/>
     <containmentFeature
-        href="concrete.ecore#//ClassDiagramAdj/lstOutputRelationship"/>
-    <tool
-        xsi:type="gmftool:CreationTool"
-        href="concrete.gmftool#//@palette/@tools.1/@tools.1"/>
-    <diagramLink
-        href="concrete.gmfgraph#ContainmentSdj"/>
-    <sourceMetaFeature
-        xsi:type="ecore:EReference"
-        href="concrete.ecore#//RelationshipAdj/classSource"/>
-    <linkMetaFeature
-        xsi:type="ecore:EReference"
-        href="concrete.ecore#//RelationshipAdj/classTarget"/>
-  </links>
-  <links>
-    <domainMetaElement
-        href="concrete.ecore#//ContainmentSdj"/>
-    <containmentFeature
-        href="concrete.ecore#//ClassDiagramAdj/lstInputRelationship"/>
+        href="concrete.ecore#//ClassDiagramAdj/lstRelationship"/>
     <tool
         xsi:type="gmftool:CreationTool"
         href="concrete.gmftool#//@palette/@tools.1/@tools.1"/>
@@ -137,24 +120,7 @@
     <domainMetaElement
         href="concrete.ecore#//SharingAdj"/>
     <containmentFeature
-        href="concrete.ecore#//ClassDiagramAdj/lstOutputRelationship"/>
-    <tool
-        xsi:type="gmftool:CreationTool"
-        href="concrete.gmftool#//@palette/@tools.1/@tools.3"/>
-    <diagramLink
-        href="concrete.gmfgraph#SharingAdj"/>
-    <sourceMetaFeature
-        xsi:type="ecore:EReference"
-        href="concrete.ecore#//RelationshipAdj/classSource"/>
-    <linkMetaFeature
-        xsi:type="ecore:EReference"
-        href="concrete.ecore#//RelationshipAdj/classTarget"/>
-  </links>
-  <links>
-    <domainMetaElement
-        href="concrete.ecore#//SharingAdj"/>
-    <containmentFeature
-        href="concrete.ecore#//ClassDiagramAdj/lstInputRelationship"/>
+        href="concrete.ecore#//ClassDiagramAdj/lstRelationship"/>
     <tool
         xsi:type="gmftool:CreationTool"
         href="concrete.gmftool#//@palette/@tools.1/@tools.3"/>
@@ -171,24 +137,7 @@
     <domainMetaElement
         href="concrete.ecore#//AssociationAdj"/>
     <containmentFeature
-        href="concrete.ecore#//ClassDiagramAdj/lstOutputRelationship"/>
-    <tool
-        xsi:type="gmftool:CreationTool"
-        href="concrete.gmftool#//@palette/@tools.1/@tools.0"/>
-    <diagramLink
-        href="concrete.gmfgraph#AssociationAdj"/>
-    <sourceMetaFeature
-        xsi:type="ecore:EReference"
-        href="concrete.ecore#//RelationshipAdj/classSource"/>
-    <linkMetaFeature
-        xsi:type="ecore:EReference"
-        href="concrete.ecore#//RelationshipAdj/classTarget"/>
-  </links>
-  <links>
-    <domainMetaElement
-        href="concrete.ecore#//AssociationAdj"/>
-    <containmentFeature
-        href="concrete.ecore#//ClassDiagramAdj/lstInputRelationship"/>
+        href="concrete.ecore#//ClassDiagramAdj/lstRelationship"/>
     <tool
         xsi:type="gmftool:CreationTool"
         href="concrete.gmftool#//@palette/@tools.1/@tools.0"/>
@@ -205,24 +154,7 @@
     <domainMetaElement
         href="concrete.ecore#//GeneralizationAdj"/>
     <containmentFeature
-        href="concrete.ecore#//ClassDiagramAdj/lstOutputRelationship"/>
-    <tool
-        xsi:type="gmftool:CreationTool"
-        href="concrete.gmftool#//@palette/@tools.1/@tools.2"/>
-    <diagramLink
-        href="concrete.gmfgraph#GeneralizationAdj"/>
-    <sourceMetaFeature
-        xsi:type="ecore:EReference"
-        href="concrete.ecore#//RelationshipAdj/classSource"/>
-    <linkMetaFeature
-        xsi:type="ecore:EReference"
-        href="concrete.ecore#//RelationshipAdj/classTarget"/>
-  </links>
-  <links>
-    <domainMetaElement
-        href="concrete.ecore#//GeneralizationAdj"/>
-    <containmentFeature
-        href="concrete.ecore#//ClassDiagramAdj/lstInputRelationship"/>
+        href="concrete.ecore#//ClassDiagramAdj/lstRelationship"/>
     <tool
         xsi:type="gmftool:CreationTool"
         href="concrete.gmftool#//@palette/@tools.1/@tools.2"/>

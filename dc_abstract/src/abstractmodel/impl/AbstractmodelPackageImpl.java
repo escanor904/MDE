@@ -456,8 +456,8 @@ public class AbstractmodelPackageImpl extends EPackageImpl implements Abstractmo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClassAdj_ClassTypeAdj() {
-		return (EReference)classAdjEClass.getEStructuralFeatures().get(1);
+	public EAttribute getClassAdj_PathPackage() {
+		return (EAttribute)classAdjEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -465,7 +465,7 @@ public class AbstractmodelPackageImpl extends EPackageImpl implements Abstractmo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClassAdj_LstAttributeAdj() {
+	public EReference getClassAdj_ClassTypeAdj() {
 		return (EReference)classAdjEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -474,7 +474,7 @@ public class AbstractmodelPackageImpl extends EPackageImpl implements Abstractmo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClassAdj_LstMethodAdj() {
+	public EReference getClassAdj_LstAttributeAdj() {
 		return (EReference)classAdjEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -483,7 +483,7 @@ public class AbstractmodelPackageImpl extends EPackageImpl implements Abstractmo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClassAdj_LstRelationShipAdj() {
+	public EReference getClassAdj_LstMethodAdj() {
 		return (EReference)classAdjEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -492,8 +492,17 @@ public class AbstractmodelPackageImpl extends EPackageImpl implements Abstractmo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getClassAdj_LstInputRelationshipAdj() {
+	public EReference getClassAdj_LstRelationShipAdj() {
 		return (EReference)classAdjEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getClassAdj_LstInputRelationshipAdj() {
+		return (EReference)classAdjEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -782,6 +791,7 @@ public class AbstractmodelPackageImpl extends EPackageImpl implements Abstractmo
 
 		classAdjEClass = createEClass(CLASS_ADJ);
 		createEAttribute(classAdjEClass, CLASS_ADJ__NAME);
+		createEAttribute(classAdjEClass, CLASS_ADJ__PATH_PACKAGE);
 		createEReference(classAdjEClass, CLASS_ADJ__CLASS_TYPE_ADJ);
 		createEReference(classAdjEClass, CLASS_ADJ__LST_ATTRIBUTE_ADJ);
 		createEReference(classAdjEClass, CLASS_ADJ__LST_METHOD_ADJ);
@@ -891,6 +901,7 @@ public class AbstractmodelPackageImpl extends EPackageImpl implements Abstractmo
 
 		initEClass(classAdjEClass, ClassAdj.class, "ClassAdj", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getClassAdj_Name(), ecorePackage.getEString(), "name", null, 0, 1, ClassAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getClassAdj_PathPackage(), ecorePackage.getEString(), "pathPackage", null, 0, 1, ClassAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getClassAdj_ClassTypeAdj(), this.getClassTypeAdj(), null, "classTypeAdj", null, 0, 1, ClassAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getClassAdj_LstAttributeAdj(), this.getAttributeAdj(), null, "lstAttributeAdj", null, 0, -1, ClassAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getClassAdj_LstMethodAdj(), this.getMethodAdj(), null, "lstMethodAdj", null, 0, -1, ClassAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

@@ -362,13 +362,22 @@ public interface AbstractmodelPackage extends EPackage {
 	int CLASS_ADJ__NAME = 0;
 
 	/**
+	 * The feature id for the '<em><b>Path Package</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS_ADJ__PATH_PACKAGE = 1;
+
+	/**
 	 * The feature id for the '<em><b>Class Type Adj</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_ADJ__CLASS_TYPE_ADJ = 1;
+	int CLASS_ADJ__CLASS_TYPE_ADJ = 2;
 
 	/**
 	 * The feature id for the '<em><b>Lst Attribute Adj</b></em>' containment reference list.
@@ -377,7 +386,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_ADJ__LST_ATTRIBUTE_ADJ = 2;
+	int CLASS_ADJ__LST_ATTRIBUTE_ADJ = 3;
 
 	/**
 	 * The feature id for the '<em><b>Lst Method Adj</b></em>' containment reference list.
@@ -386,7 +395,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_ADJ__LST_METHOD_ADJ = 3;
+	int CLASS_ADJ__LST_METHOD_ADJ = 4;
 
 	/**
 	 * The feature id for the '<em><b>Lst Relation Ship Adj</b></em>' containment reference list.
@@ -395,7 +404,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_ADJ__LST_RELATION_SHIP_ADJ = 4;
+	int CLASS_ADJ__LST_RELATION_SHIP_ADJ = 5;
 
 	/**
 	 * The feature id for the '<em><b>Lst Input Relationship Adj</b></em>' reference list.
@@ -404,7 +413,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_ADJ__LST_INPUT_RELATIONSHIP_ADJ = 5;
+	int CLASS_ADJ__LST_INPUT_RELATIONSHIP_ADJ = 6;
 
 	/**
 	 * The number of structural features of the '<em>Class Adj</em>' class.
@@ -413,7 +422,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_ADJ_FEATURE_COUNT = 6;
+	int CLASS_ADJ_FEATURE_COUNT = 7;
 
 	/**
 	 * The meta object id for the '{@link abstractmodel.impl.RelationshipAdjImpl <em>Relationship Adj</em>}' class.
@@ -1181,6 +1190,17 @@ public interface AbstractmodelPackage extends EPackage {
 	EAttribute getClassAdj_Name();
 
 	/**
+	 * Returns the meta object for the attribute '{@link abstractmodel.ClassAdj#getPathPackage <em>Path Package</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Path Package</em>'.
+	 * @see abstractmodel.ClassAdj#getPathPackage()
+	 * @see #getClassAdj()
+	 * @generated
+	 */
+	EAttribute getClassAdj_PathPackage();
+
+	/**
 	 * Returns the meta object for the reference '{@link abstractmodel.ClassAdj#getClassTypeAdj <em>Class Type Adj</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1746,6 +1766,14 @@ public interface AbstractmodelPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute CLASS_ADJ__NAME = eINSTANCE.getClassAdj_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Path Package</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLASS_ADJ__PATH_PACKAGE = eINSTANCE.getClassAdj_PathPackage();
 
 		/**
 		 * The meta object literal for the '<em><b>Class Type Adj</b></em>' reference feature.

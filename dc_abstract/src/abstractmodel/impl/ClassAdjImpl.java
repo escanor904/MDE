@@ -35,6 +35,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link abstractmodel.impl.ClassAdjImpl#getName <em>Name</em>}</li>
+ *   <li>{@link abstractmodel.impl.ClassAdjImpl#getPathPackage <em>Path Package</em>}</li>
  *   <li>{@link abstractmodel.impl.ClassAdjImpl#getClassTypeAdj <em>Class Type Adj</em>}</li>
  *   <li>{@link abstractmodel.impl.ClassAdjImpl#getLstAttributeAdj <em>Lst Attribute Adj</em>}</li>
  *   <li>{@link abstractmodel.impl.ClassAdjImpl#getLstMethodAdj <em>Lst Method Adj</em>}</li>
@@ -64,6 +65,26 @@ public class ClassAdjImpl extends EObjectImpl implements ClassAdj {
 	 * @ordered
 	 */
 	protected String name = NAME_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getPathPackage() <em>Path Package</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPathPackage()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String PATH_PACKAGE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getPathPackage() <em>Path Package</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPathPackage()
+	 * @generated
+	 * @ordered
+	 */
+	protected String pathPackage = PATH_PACKAGE_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getClassTypeAdj() <em>Class Type Adj</em>}' reference.
@@ -153,6 +174,27 @@ public class ClassAdjImpl extends EObjectImpl implements ClassAdj {
 		name = newName;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, AbstractmodelPackage.CLASS_ADJ__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getPathPackage() {
+		return pathPackage;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setPathPackage(String newPathPackage) {
+		String oldPathPackage = pathPackage;
+		pathPackage = newPathPackage;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AbstractmodelPackage.CLASS_ADJ__PATH_PACKAGE, oldPathPackage, pathPackage));
 	}
 
 	/**
@@ -269,6 +311,8 @@ public class ClassAdjImpl extends EObjectImpl implements ClassAdj {
 		switch (featureID) {
 			case AbstractmodelPackage.CLASS_ADJ__NAME:
 				return getName();
+			case AbstractmodelPackage.CLASS_ADJ__PATH_PACKAGE:
+				return getPathPackage();
 			case AbstractmodelPackage.CLASS_ADJ__CLASS_TYPE_ADJ:
 				if (resolve) return getClassTypeAdj();
 				return basicGetClassTypeAdj();
@@ -295,6 +339,9 @@ public class ClassAdjImpl extends EObjectImpl implements ClassAdj {
 		switch (featureID) {
 			case AbstractmodelPackage.CLASS_ADJ__NAME:
 				setName((String)newValue);
+				return;
+			case AbstractmodelPackage.CLASS_ADJ__PATH_PACKAGE:
+				setPathPackage((String)newValue);
 				return;
 			case AbstractmodelPackage.CLASS_ADJ__CLASS_TYPE_ADJ:
 				setClassTypeAdj((ClassTypeAdj)newValue);
@@ -330,6 +377,9 @@ public class ClassAdjImpl extends EObjectImpl implements ClassAdj {
 			case AbstractmodelPackage.CLASS_ADJ__NAME:
 				setName(NAME_EDEFAULT);
 				return;
+			case AbstractmodelPackage.CLASS_ADJ__PATH_PACKAGE:
+				setPathPackage(PATH_PACKAGE_EDEFAULT);
+				return;
 			case AbstractmodelPackage.CLASS_ADJ__CLASS_TYPE_ADJ:
 				setClassTypeAdj((ClassTypeAdj)null);
 				return;
@@ -359,6 +409,8 @@ public class ClassAdjImpl extends EObjectImpl implements ClassAdj {
 		switch (featureID) {
 			case AbstractmodelPackage.CLASS_ADJ__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case AbstractmodelPackage.CLASS_ADJ__PATH_PACKAGE:
+				return PATH_PACKAGE_EDEFAULT == null ? pathPackage != null : !PATH_PACKAGE_EDEFAULT.equals(pathPackage);
 			case AbstractmodelPackage.CLASS_ADJ__CLASS_TYPE_ADJ:
 				return classTypeAdj != null;
 			case AbstractmodelPackage.CLASS_ADJ__LST_ATTRIBUTE_ADJ:
@@ -385,6 +437,8 @@ public class ClassAdjImpl extends EObjectImpl implements ClassAdj {
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (name: ");
 		result.append(name);
+		result.append(", pathPackage: ");
+		result.append(pathPackage);
 		result.append(')');
 		return result.toString();
 	}

@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link abstractmodel.ClassAdj#getName <em>Name</em>}</li>
+ *   <li>{@link abstractmodel.ClassAdj#getPathPackage <em>Path Package</em>}</li>
  *   <li>{@link abstractmodel.ClassAdj#getClassTypeAdj <em>Class Type Adj</em>}</li>
  *   <li>{@link abstractmodel.ClassAdj#getLstAttributeAdj <em>Lst Attribute Adj</em>}</li>
  *   <li>{@link abstractmodel.ClassAdj#getLstMethodAdj <em>Lst Method Adj</em>}</li>
@@ -53,6 +54,32 @@ public interface ClassAdj extends EObject {
 	 * @generated
 	 */
 	void setName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Path Package</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Path Package</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Path Package</em>' attribute.
+	 * @see #setPathPackage(String)
+	 * @see abstractmodel.AbstractmodelPackage#getClassAdj_PathPackage()
+	 * @model
+	 * @generated
+	 */
+	String getPathPackage();
+
+	/**
+	 * Sets the value of the '{@link abstractmodel.ClassAdj#getPathPackage <em>Path Package</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Path Package</em>' attribute.
+	 * @see #getPathPackage()
+	 * @generated
+	 */
+	void setPathPackage(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Class Type Adj</b></em>' reference.

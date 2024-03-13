@@ -259,7 +259,7 @@
          <context viewClass="org.eclipse.gmf.runtime.notation.Node" containerViews="referencing-diagrams"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="Concretemodel"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2001,2002,3001,3002"/>
-         <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4001,4002,4003,4004,4005,4006,4007,4008"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4001,4003,4005,4007"/>
       </viewProvider>
    </extension>
 
@@ -274,7 +274,7 @@
             <method name="getType()" value="2001,2002,3001,3002"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
-            <method name="getType()" value="4001,4002,4003,4004,4005,4006,4007,4008"/>
+            <method name="getType()" value="4001,4003,4005,4007"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-labels">
             <method name="getType()" value="5001,5004,5002,5003"/>
@@ -406,15 +406,6 @@
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://concretemodel">
-         <specializationType
-               id="dc_concrete.diagram.ContainmentSdj_4002"
-               name="%metatype.name.ContainmentSdj_4002"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="dc_concrete.diagram.ContainmentSdj_4001"/>
-            <param name="semanticHint" value="4002"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="http://concretemodel">
          <metamodelType
                id="dc_concrete.diagram.SharingAdj_4003"
                name="%metatype.name.SharingAdj_4003"
@@ -423,15 +414,6 @@
                edithelper="concretemodel.diagram.edit.helpers.SharingAdjEditHelper">
             <param name="semanticHint" value="4003"/>
          </metamodelType>
-      </metamodel>
-      <metamodel nsURI="http://concretemodel">
-         <specializationType
-               id="dc_concrete.diagram.SharingAdj_4004"
-               name="%metatype.name.SharingAdj_4004"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="dc_concrete.diagram.SharingAdj_4003"/>
-            <param name="semanticHint" value="4004"/>
-         </specializationType>
       </metamodel>
       <metamodel nsURI="http://concretemodel">
          <metamodelType
@@ -444,15 +426,6 @@
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://concretemodel">
-         <specializationType
-               id="dc_concrete.diagram.AssociationAdj_4006"
-               name="%metatype.name.AssociationAdj_4006"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="dc_concrete.diagram.AssociationAdj_4005"/>
-            <param name="semanticHint" value="4006"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="http://concretemodel">
          <metamodelType
                id="dc_concrete.diagram.GeneralizationAdj_4007"
                name="%metatype.name.GeneralizationAdj_4007"
@@ -461,15 +434,6 @@
                edithelper="concretemodel.diagram.edit.helpers.GeneralizationAdjEditHelper">
             <param name="semanticHint" value="4007"/>
          </metamodelType>
-      </metamodel>
-      <metamodel nsURI="http://concretemodel">
-         <specializationType
-               id="dc_concrete.diagram.GeneralizationAdj_4008"
-               name="%metatype.name.GeneralizationAdj_4008"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="dc_concrete.diagram.GeneralizationAdj_4007"/>
-            <param name="semanticHint" value="4008"/>
-         </specializationType>
       </metamodel>
    </extension>
 
@@ -489,13 +453,9 @@
          <elementType ref="dc_concrete.diagram.AttributeConcreteAdj_3001"/>
          <elementType ref="dc_concrete.diagram.MethodConcreteAdj_3002"/>
          <elementType ref="dc_concrete.diagram.ContainmentSdj_4001"/>
-         <elementType ref="dc_concrete.diagram.ContainmentSdj_4002"/>
          <elementType ref="dc_concrete.diagram.SharingAdj_4003"/>
-         <elementType ref="dc_concrete.diagram.SharingAdj_4004"/>
          <elementType ref="dc_concrete.diagram.AssociationAdj_4005"/>
-         <elementType ref="dc_concrete.diagram.AssociationAdj_4006"/>
          <elementType ref="dc_concrete.diagram.GeneralizationAdj_4007"/>
-         <elementType ref="dc_concrete.diagram.GeneralizationAdj_4008"/>
          <advice ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>
       </binding>
    </extension>

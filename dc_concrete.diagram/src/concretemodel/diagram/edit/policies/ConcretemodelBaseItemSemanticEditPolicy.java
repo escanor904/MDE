@@ -323,25 +323,9 @@ public class ConcretemodelBaseItemSemanticEditPolicy extends SemanticEditPolicy 
 		/**
 		 * @generated
 		 */
-		public boolean canCreateContainmentSdj_4002(ClassDiagramAdj container, ClassConcreteAdj source,
-				ClassConcreteAdj target) {
-			return canExistContainmentSdj_4002(container, null, source, target);
-		}
-
-		/**
-		 * @generated
-		 */
 		public boolean canCreateSharingAdj_4003(ClassDiagramAdj container, ClassConcreteAdj source,
 				ClassConcreteAdj target) {
 			return canExistSharingAdj_4003(container, null, source, target);
-		}
-
-		/**
-		 * @generated
-		 */
-		public boolean canCreateSharingAdj_4004(ClassDiagramAdj container, ClassConcreteAdj source,
-				ClassConcreteAdj target) {
-			return canExistSharingAdj_4004(container, null, source, target);
 		}
 
 		/**
@@ -355,39 +339,15 @@ public class ConcretemodelBaseItemSemanticEditPolicy extends SemanticEditPolicy 
 		/**
 		 * @generated
 		 */
-		public boolean canCreateAssociationAdj_4006(ClassDiagramAdj container, ClassConcreteAdj source,
-				ClassConcreteAdj target) {
-			return canExistAssociationAdj_4006(container, null, source, target);
-		}
-
-		/**
-		 * @generated
-		 */
 		public boolean canCreateGeneralizationAdj_4007(ClassDiagramAdj container, ClassConcreteAdj source,
 				ClassConcreteAdj target) {
 			return canExistGeneralizationAdj_4007(container, null, source, target);
 		}
 
 		/**
-		 * @generated
-		 */
-		public boolean canCreateGeneralizationAdj_4008(ClassDiagramAdj container, ClassConcreteAdj source,
-				ClassConcreteAdj target) {
-			return canExistGeneralizationAdj_4008(container, null, source, target);
-		}
-
-		/**
 		* @generated
 		*/
 		public boolean canExistContainmentSdj_4001(ClassDiagramAdj container, ContainmentSdj linkInstance,
-				ClassConcreteAdj source, ClassConcreteAdj target) {
-			return true;
-		}
-
-		/**
-		* @generated
-		*/
-		public boolean canExistContainmentSdj_4002(ClassDiagramAdj container, ContainmentSdj linkInstance,
 				ClassConcreteAdj source, ClassConcreteAdj target) {
 			return true;
 		}
@@ -403,14 +363,6 @@ public class ConcretemodelBaseItemSemanticEditPolicy extends SemanticEditPolicy 
 		/**
 		* @generated
 		*/
-		public boolean canExistSharingAdj_4004(ClassDiagramAdj container, SharingAdj linkInstance,
-				ClassConcreteAdj source, ClassConcreteAdj target) {
-			return true;
-		}
-
-		/**
-		* @generated
-		*/
 		public boolean canExistAssociationAdj_4005(ClassDiagramAdj container, AssociationAdj linkInstance,
 				ClassConcreteAdj source, ClassConcreteAdj target) {
 			return true;
@@ -419,23 +371,7 @@ public class ConcretemodelBaseItemSemanticEditPolicy extends SemanticEditPolicy 
 		/**
 		* @generated
 		*/
-		public boolean canExistAssociationAdj_4006(ClassDiagramAdj container, AssociationAdj linkInstance,
-				ClassConcreteAdj source, ClassConcreteAdj target) {
-			return true;
-		}
-
-		/**
-		* @generated
-		*/
 		public boolean canExistGeneralizationAdj_4007(ClassDiagramAdj container, GeneralizationAdj linkInstance,
-				ClassConcreteAdj source, ClassConcreteAdj target) {
-			return true;
-		}
-
-		/**
-		* @generated
-		*/
-		public boolean canExistGeneralizationAdj_4008(ClassDiagramAdj container, GeneralizationAdj linkInstance,
 				ClassConcreteAdj source, ClassConcreteAdj target) {
 			return true;
 		}
