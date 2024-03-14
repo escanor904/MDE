@@ -228,42 +228,6 @@
         <sourceMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classSource"/>
         <targetMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classTarget"/>
       </modelFacet>
-      <labels visualID="6012" editPartClassName="GeneralizationAdjRoleSourceEditPart" itemSemanticEditPolicyClassName="GeneralizationAdjRoleSourceItemSemanticEditPolicy" alignment="TARGET">
-        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="GeneralizationAdjroleSourceLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class GeneralizationAdjroleSourceLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public GeneralizationAdjroleSourceLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;roleSource&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
-          <attributes xsi:type="gmfgen:LabelOffsetAttributes" y="12"/>
-        </viewmap>
-        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="concrete.genmodel#//concretemodel/RelationshipAdj/roleSource"/>
-        </modelFacet>
-      </labels>
-      <labels visualID="6013" editPartClassName="GeneralizationAdjMultiplicitySourceClassEditPart" itemSemanticEditPolicyClassName="GeneralizationAdjMultiplicitySourceClassItemSemanticEditPolicy" alignment="TARGET">
-        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="GeneralizationAdjmultiplicitySourceClassLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class GeneralizationAdjmultiplicitySourceClassLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public GeneralizationAdjmultiplicitySourceClassLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;multiplicitySourceClass&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
-          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="-20" y="-12"/>
-        </viewmap>
-        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="concrete.genmodel#//concretemodel/RelationshipAdj/multiplicitySourceClass"/>
-        </modelFacet>
-      </labels>
-      <labels visualID="6014" editPartClassName="GeneralizationAdjRoleTargetEditPart" itemSemanticEditPolicyClassName="GeneralizationAdjRoleTargetItemSemanticEditPolicy" alignment="SOURCE">
-        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="GeneralizationAdjroleTargetLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class GeneralizationAdjroleTargetLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public GeneralizationAdjroleTargetLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;roleTarget&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
-          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="3" y="12"/>
-        </viewmap>
-        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="concrete.genmodel#//concretemodel/RelationshipAdj/roleTarget"/>
-        </modelFacet>
-      </labels>
-      <labels visualID="6015" editPartClassName="GeneralizationAdjMultiplicityTargetClassEditPart" itemSemanticEditPolicyClassName="GeneralizationAdjMultiplicityTargetClassItemSemanticEditPolicy" alignment="SOURCE">
-        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="GeneralizationAdjmultiplicityTargetClassLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class GeneralizationAdjmultiplicityTargetClassLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public GeneralizationAdjmultiplicityTargetClassLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;multiplicityTargetClass&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
-          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="20" y="-12"/>
-        </viewmap>
-        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="concrete.genmodel#//concretemodel/RelationshipAdj/multiplicityTargetClass"/>
-        </modelFacet>
-      </labels>
     </links>
     <compartments visualID="7001" editPartClassName="ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentEditPart" itemSemanticEditPolicyClassName="ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.0" title="ClassConcreteAdjLstAttributeConcreteAdjCompartment" needsTitle="false" node="//@diagram/@topLevelNodes.1" listLayout="false">
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
@@ -341,7 +305,7 @@
   </propertySheet>
   <domainGenModel href="concrete.genmodel#/"/>
   <labelParsers extensibleViaService="true">
-    <implementations xsi:type="gmfgen:PredefinedParser" uses="//@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet //@diagram/@links.0/@labels.0/@modelFacet //@diagram/@links.0/@labels.1/@modelFacet //@diagram/@links.0/@labels.2/@modelFacet //@diagram/@links.1/@labels.0/@modelFacet //@diagram/@links.1/@labels.1/@modelFacet //@diagram/@links.1/@labels.2/@modelFacet //@diagram/@links.1/@labels.3/@modelFacet //@diagram/@links.2/@labels.0/@modelFacet //@diagram/@links.2/@labels.1/@modelFacet //@diagram/@links.2/@labels.2/@modelFacet //@diagram/@links.2/@labels.3/@modelFacet //@diagram/@links.3/@labels.0/@modelFacet //@diagram/@links.3/@labels.1/@modelFacet //@diagram/@links.3/@labels.2/@modelFacet //@diagram/@links.3/@labels.3/@modelFacet"/>
+    <implementations xsi:type="gmfgen:PredefinedParser" uses="//@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet //@diagram/@links.0/@labels.0/@modelFacet //@diagram/@links.0/@labels.1/@modelFacet //@diagram/@links.0/@labels.2/@modelFacet //@diagram/@links.1/@labels.0/@modelFacet //@diagram/@links.1/@labels.1/@modelFacet //@diagram/@links.1/@labels.2/@modelFacet //@diagram/@links.1/@labels.3/@modelFacet //@diagram/@links.2/@labels.0/@modelFacet //@diagram/@links.2/@labels.1/@modelFacet //@diagram/@links.2/@labels.2/@modelFacet //@diagram/@links.2/@labels.3/@modelFacet"/>
   </labelParsers>
   <contextMenus context="//@diagram">
     <items xsi:type="gmfgen:LoadResourceAction"/>

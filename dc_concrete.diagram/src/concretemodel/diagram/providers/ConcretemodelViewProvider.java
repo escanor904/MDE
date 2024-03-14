@@ -648,30 +648,6 @@ public class ConcretemodelViewProvider extends AbstractProvider implements IView
 		if (routing != null) {
 			ViewUtil.setStructuralFeatureValue(edge, NotationPackage.eINSTANCE.getRoutingStyle_Routing(), routing);
 		}
-		Node label6012 = createLabel(edge,
-				ConcretemodelVisualIDRegistry.getType(GeneralizationAdjRoleSourceEditPart.VISUAL_ID));
-		label6012.setLayoutConstraint(NotationFactory.eINSTANCE.createLocation());
-		Location location6012 = (Location) label6012.getLayoutConstraint();
-		location6012.setX(0);
-		location6012.setY(12);
-		Node label6013 = createLabel(edge,
-				ConcretemodelVisualIDRegistry.getType(GeneralizationAdjMultiplicitySourceClassEditPart.VISUAL_ID));
-		label6013.setLayoutConstraint(NotationFactory.eINSTANCE.createLocation());
-		Location location6013 = (Location) label6013.getLayoutConstraint();
-		location6013.setX(-20);
-		location6013.setY(-12);
-		Node label6014 = createLabel(edge,
-				ConcretemodelVisualIDRegistry.getType(GeneralizationAdjRoleTargetEditPart.VISUAL_ID));
-		label6014.setLayoutConstraint(NotationFactory.eINSTANCE.createLocation());
-		Location location6014 = (Location) label6014.getLayoutConstraint();
-		location6014.setX(3);
-		location6014.setY(12);
-		Node label6015 = createLabel(edge,
-				ConcretemodelVisualIDRegistry.getType(GeneralizationAdjMultiplicityTargetClassEditPart.VISUAL_ID));
-		label6015.setLayoutConstraint(NotationFactory.eINSTANCE.createLocation());
-		Location location6015 = (Location) label6015.getLayoutConstraint();
-		location6015.setX(20);
-		location6015.setY(-12);
 		return edge;
 	}
 

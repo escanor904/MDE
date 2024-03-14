@@ -103,18 +103,6 @@ public class ConcretemodelEditPartFactory implements EditPartFactory {
 			case GeneralizationAdjEditPart.VISUAL_ID:
 				return new GeneralizationAdjEditPart(view);
 
-			case GeneralizationAdjRoleSourceEditPart.VISUAL_ID:
-				return new GeneralizationAdjRoleSourceEditPart(view);
-
-			case GeneralizationAdjMultiplicitySourceClassEditPart.VISUAL_ID:
-				return new GeneralizationAdjMultiplicitySourceClassEditPart(view);
-
-			case GeneralizationAdjRoleTargetEditPart.VISUAL_ID:
-				return new GeneralizationAdjRoleTargetEditPart(view);
-
-			case GeneralizationAdjMultiplicityTargetClassEditPart.VISUAL_ID:
-				return new GeneralizationAdjMultiplicityTargetClassEditPart(view);
-
 			}
 		}
 		return createUnrecognizedEditPart(context, model);

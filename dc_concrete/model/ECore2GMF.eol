@@ -20,11 +20,6 @@ association.createLinkEndLabel("roleTarget", false,false);
 association.createLinkEndLabel("multiplicityTargetClass",false, true);
 //Generalization
 var association = ECore!EClass.all.selectOne(c|c.name = "GeneralizationAdj");
-association.createLinkEndLabel("roleSource", true,true);
-association.createLinkEndLabel("multiplicitySourceClass", true, false);
-
-association.createLinkEndLabel("roleTarget", false,false);
-association.createLinkEndLabel("multiplicityTargetClass",false, true);
 
 
 operation ECore!EClass createLinkEndLabel(attribute:String, source:Boolean, up:Boolean){

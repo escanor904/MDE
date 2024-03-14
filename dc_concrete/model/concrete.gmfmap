@@ -230,34 +230,6 @@
   <links>
     <domainMetaElement
         href="concrete.ecore#//GeneralizationAdj"/>
-    <labelMappings
-        xsi:type="gmfmap:FeatureLabelMapping">
-      <diagramLabel
-          href="concrete.gmfgraph#GeneralizationAdjroleSourceLabel"/>
-      <features
-          href="concrete.ecore#//RelationshipAdj/roleSource"/>
-    </labelMappings>
-    <labelMappings
-        xsi:type="gmfmap:FeatureLabelMapping">
-      <diagramLabel
-          href="concrete.gmfgraph#GeneralizationAdjmultiplicitySourceClassLabel"/>
-      <features
-          href="concrete.ecore#//RelationshipAdj/multiplicitySourceClass"/>
-    </labelMappings>
-    <labelMappings
-        xsi:type="gmfmap:FeatureLabelMapping">
-      <diagramLabel
-          href="concrete.gmfgraph#GeneralizationAdjroleTargetLabel"/>
-      <features
-          href="concrete.ecore#//RelationshipAdj/roleTarget"/>
-    </labelMappings>
-    <labelMappings
-        xsi:type="gmfmap:FeatureLabelMapping">
-      <diagramLabel
-          href="concrete.gmfgraph#GeneralizationAdjmultiplicityTargetClassLabel"/>
-      <features
-          href="concrete.ecore#//RelationshipAdj/multiplicityTargetClass"/>
-    </labelMappings>
     <containmentFeature
         href="concrete.ecore#//ClassDiagramAdj/lstRelationship"/>
     <tool

@@ -107,18 +107,6 @@
     <descriptors name="AssociationAdjmultiplicityTargetClassLabelFigure">
       <actualFigure xsi:type="gmfgraph:Label" name="AssociationAdjmultiplicityTargetClassLabel" text="multiplicityTargetClass"/>
     </descriptors>
-    <descriptors name="GeneralizationAdjroleSourceLabelFigure">
-      <actualFigure xsi:type="gmfgraph:Label" name="GeneralizationAdjroleSourceLabel" text="roleSource"/>
-    </descriptors>
-    <descriptors name="GeneralizationAdjmultiplicitySourceClassLabelFigure">
-      <actualFigure xsi:type="gmfgraph:Label" name="GeneralizationAdjmultiplicitySourceClassLabel" text="multiplicitySourceClass"/>
-    </descriptors>
-    <descriptors name="GeneralizationAdjroleTargetLabelFigure">
-      <actualFigure xsi:type="gmfgraph:Label" name="GeneralizationAdjroleTargetLabel" text="roleTarget"/>
-    </descriptors>
-    <descriptors name="GeneralizationAdjmultiplicityTargetClassLabelFigure">
-      <actualFigure xsi:type="gmfgraph:Label" name="GeneralizationAdjmultiplicityTargetClassLabel" text="multiplicityTargetClass"/>
-    </descriptors>
   </figures>
   <nodes name="PackageConcreteAdj" figure="PackageConcreteAdjFigure"/>
   <nodes name="ClassConcreteAdj" figure="ClassConcreteAdjFigure"/>
@@ -175,22 +163,6 @@
     <facets xsi:type="gmfgraph:LabelOffsetFacet" x="3" y="12"/>
   </labels>
   <labels name="AssociationAdjmultiplicityTargetClassLabel" figure="AssociationAdjmultiplicityTargetClassLabelFigure" elementIcon="false">
-    <facets xsi:type="gmfgraph:AlignmentFacet"/>
-    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="20" y="-12"/>
-  </labels>
-  <labels name="GeneralizationAdjroleSourceLabel" figure="GeneralizationAdjroleSourceLabelFigure" elementIcon="false">
-    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="END"/>
-    <facets xsi:type="gmfgraph:LabelOffsetFacet" y="12"/>
-  </labels>
-  <labels name="GeneralizationAdjmultiplicitySourceClassLabel" figure="GeneralizationAdjmultiplicitySourceClassLabelFigure" elementIcon="false">
-    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="END"/>
-    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="-20" y="-12"/>
-  </labels>
-  <labels name="GeneralizationAdjroleTargetLabel" figure="GeneralizationAdjroleTargetLabelFigure" elementIcon="false">
-    <facets xsi:type="gmfgraph:AlignmentFacet"/>
-    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="3" y="12"/>
-  </labels>
-  <labels name="GeneralizationAdjmultiplicityTargetClassLabel" figure="GeneralizationAdjmultiplicityTargetClassLabelFigure" elementIcon="false">
     <facets xsi:type="gmfgraph:AlignmentFacet"/>
     <facets xsi:type="gmfgraph:LabelOffsetFacet" x="20" y="-12"/>
   </labels>

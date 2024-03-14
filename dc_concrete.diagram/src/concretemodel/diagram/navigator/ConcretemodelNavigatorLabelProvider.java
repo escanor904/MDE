@@ -346,14 +346,12 @@ public class ConcretemodelNavigatorLabelProvider extends LabelProvider
 	* @generated
 	*/
 	private String getGeneralizationAdj_4007Text(View view) {
-		IParser parser = ConcretemodelParserProvider.getParser(ConcretemodelElementTypes.GeneralizationAdj_4007,
-				view.getElement() != null ? view.getElement() : view,
-				ConcretemodelVisualIDRegistry.getType(GeneralizationAdjRoleSourceEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
+		GeneralizationAdj domainModelElement = (GeneralizationAdj) view.getElement();
+		if (domainModelElement != null) {
+			return domainModelElement.getRoleTarget();
 		} else {
-			ConcretemodelDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 6012); //$NON-NLS-1$
+			ConcretemodelDiagramEditorPlugin.getInstance()
+					.logError("No domain element for view with visualID = " + 4007); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}

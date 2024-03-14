@@ -308,76 +308,6 @@ public class ConcretemodelParserProvider extends AbstractProvider implements IPa
 	/**
 	* @generated
 	*/
-	private IParser generalizationAdjRoleSource_6012Parser;
-
-	/**
-	* @generated
-	*/
-	private IParser getGeneralizationAdjRoleSource_6012Parser() {
-		if (generalizationAdjRoleSource_6012Parser == null) {
-			EAttribute[] features = new EAttribute[] { ConcretemodelPackage.eINSTANCE.getRelationshipAdj_RoleSource() };
-			MessageFormatParser parser = new MessageFormatParser(features);
-			generalizationAdjRoleSource_6012Parser = parser;
-		}
-		return generalizationAdjRoleSource_6012Parser;
-	}
-
-	/**
-	* @generated
-	*/
-	private IParser generalizationAdjMultiplicitySourceClass_6013Parser;
-
-	/**
-	* @generated
-	*/
-	private IParser getGeneralizationAdjMultiplicitySourceClass_6013Parser() {
-		if (generalizationAdjMultiplicitySourceClass_6013Parser == null) {
-			EAttribute[] features = new EAttribute[] {
-					ConcretemodelPackage.eINSTANCE.getRelationshipAdj_MultiplicitySourceClass() };
-			MessageFormatParser parser = new MessageFormatParser(features);
-			generalizationAdjMultiplicitySourceClass_6013Parser = parser;
-		}
-		return generalizationAdjMultiplicitySourceClass_6013Parser;
-	}
-
-	/**
-	* @generated
-	*/
-	private IParser generalizationAdjRoleTarget_6014Parser;
-
-	/**
-	* @generated
-	*/
-	private IParser getGeneralizationAdjRoleTarget_6014Parser() {
-		if (generalizationAdjRoleTarget_6014Parser == null) {
-			EAttribute[] features = new EAttribute[] { ConcretemodelPackage.eINSTANCE.getRelationshipAdj_RoleTarget() };
-			MessageFormatParser parser = new MessageFormatParser(features);
-			generalizationAdjRoleTarget_6014Parser = parser;
-		}
-		return generalizationAdjRoleTarget_6014Parser;
-	}
-
-	/**
-	* @generated
-	*/
-	private IParser generalizationAdjMultiplicityTargetClass_6015Parser;
-
-	/**
-	* @generated
-	*/
-	private IParser getGeneralizationAdjMultiplicityTargetClass_6015Parser() {
-		if (generalizationAdjMultiplicityTargetClass_6015Parser == null) {
-			EAttribute[] features = new EAttribute[] {
-					ConcretemodelPackage.eINSTANCE.getRelationshipAdj_MultiplicityTargetClass() };
-			MessageFormatParser parser = new MessageFormatParser(features);
-			generalizationAdjMultiplicityTargetClass_6015Parser = parser;
-		}
-		return generalizationAdjMultiplicityTargetClass_6015Parser;
-	}
-
-	/**
-	* @generated
-	*/
 	protected IParser getParser(int visualID) {
 		switch (visualID) {
 		case PackageConcreteAdjNameEditPart.VISUAL_ID:
@@ -410,14 +340,6 @@ public class ConcretemodelParserProvider extends AbstractProvider implements IPa
 			return getAssociationAdjRoleTarget_6010Parser();
 		case AssociationAdjMultiplicityTargetClassEditPart.VISUAL_ID:
 			return getAssociationAdjMultiplicityTargetClass_6011Parser();
-		case GeneralizationAdjRoleSourceEditPart.VISUAL_ID:
-			return getGeneralizationAdjRoleSource_6012Parser();
-		case GeneralizationAdjMultiplicitySourceClassEditPart.VISUAL_ID:
-			return getGeneralizationAdjMultiplicitySourceClass_6013Parser();
-		case GeneralizationAdjRoleTargetEditPart.VISUAL_ID:
-			return getGeneralizationAdjRoleTarget_6014Parser();
-		case GeneralizationAdjMultiplicityTargetClassEditPart.VISUAL_ID:
-			return getGeneralizationAdjMultiplicityTargetClass_6015Parser();
 		}
 		return null;
 	}

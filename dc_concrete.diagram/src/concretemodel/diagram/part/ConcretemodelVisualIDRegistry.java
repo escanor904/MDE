@@ -268,20 +268,6 @@ public class ConcretemodelVisualIDRegistry {
 				return true;
 			}
 			break;
-		case GeneralizationAdjEditPart.VISUAL_ID:
-			if (GeneralizationAdjRoleSourceEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			if (GeneralizationAdjMultiplicitySourceClassEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			if (GeneralizationAdjRoleTargetEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			if (GeneralizationAdjMultiplicityTargetClassEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			break;
 		}
 		return false;
 	}
