@@ -61,14 +61,59 @@ public class ConcretemodelEditPartFactory implements EditPartFactory {
 			case ContainmentSdjEditPart.VISUAL_ID:
 				return new ContainmentSdjEditPart(view);
 
+			case ContainmentSdjRoleSourceEditPart.VISUAL_ID:
+				return new ContainmentSdjRoleSourceEditPart(view);
+
+			case ContainmentSdjMultiplicitySourceClassEditPart.VISUAL_ID:
+				return new ContainmentSdjMultiplicitySourceClassEditPart(view);
+
+			case ContainmentSdjRoleTargetEditPart.VISUAL_ID:
+				return new ContainmentSdjRoleTargetEditPart(view);
+
 			case SharingAdjEditPart.VISUAL_ID:
 				return new SharingAdjEditPart(view);
+
+			case SharingAdjRoleSourceEditPart.VISUAL_ID:
+				return new SharingAdjRoleSourceEditPart(view);
+
+			case SharingAdjMultiplicitySourceClassEditPart.VISUAL_ID:
+				return new SharingAdjMultiplicitySourceClassEditPart(view);
+
+			case SharingAdjRoleTargetEditPart.VISUAL_ID:
+				return new SharingAdjRoleTargetEditPart(view);
+
+			case SharingAdjMultiplicityTargetClassEditPart.VISUAL_ID:
+				return new SharingAdjMultiplicityTargetClassEditPart(view);
 
 			case AssociationAdjEditPart.VISUAL_ID:
 				return new AssociationAdjEditPart(view);
 
+			case AssociationAdjRoleSourceEditPart.VISUAL_ID:
+				return new AssociationAdjRoleSourceEditPart(view);
+
+			case AssociationAdjMultiplicitySourceClassEditPart.VISUAL_ID:
+				return new AssociationAdjMultiplicitySourceClassEditPart(view);
+
+			case AssociationAdjRoleTargetEditPart.VISUAL_ID:
+				return new AssociationAdjRoleTargetEditPart(view);
+
+			case AssociationAdjMultiplicityTargetClassEditPart.VISUAL_ID:
+				return new AssociationAdjMultiplicityTargetClassEditPart(view);
+
 			case GeneralizationAdjEditPart.VISUAL_ID:
 				return new GeneralizationAdjEditPart(view);
+
+			case GeneralizationAdjRoleSourceEditPart.VISUAL_ID:
+				return new GeneralizationAdjRoleSourceEditPart(view);
+
+			case GeneralizationAdjMultiplicitySourceClassEditPart.VISUAL_ID:
+				return new GeneralizationAdjMultiplicitySourceClassEditPart(view);
+
+			case GeneralizationAdjRoleTargetEditPart.VISUAL_ID:
+				return new GeneralizationAdjRoleTargetEditPart(view);
+
+			case GeneralizationAdjMultiplicityTargetClassEditPart.VISUAL_ID:
+				return new GeneralizationAdjMultiplicityTargetClassEditPart(view);
 
 			}
 		}

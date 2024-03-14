@@ -10,7 +10,9 @@
     <childNodes visualID="3001" editPartClassName="AttributeConcreteAdjEditPart" itemSemanticEditPolicyClassName="AttributeConcreteAdjItemSemanticEditPolicy" canonicalEditPolicyClassName="AttributeConcreteAdjCanonicalEditPolicy" graphicalNodeEditPolicyClassName="AttributeConcreteAdjGraphicalNodeEditPolicy" createCommandClassName="AttributeConcreteAdjCreateCommand" containers="//@diagram/@compartments.0">
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
       <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="AttributeConcreteAdjEditHelper"/>
-      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AttributeConcreteAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AttributeConcreteAdjFigure extends org.eclipse.draw2d.RoundedRectangle {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureAttributeConcreteAdjLabelFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AttributeConcreteAdjFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureAttributeConcreteAdjLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureAttributeConcreteAdjLabelFigure.setText(&quot;AttributeConcreteAdj&quot;);&#xA;&#xA;this.add(fFigureAttributeConcreteAdjLabelFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureAttributeConcreteAdjLabelFigure() {&#xA;&#x9;&#x9;return fFigureAttributeConcreteAdjLabelFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AttributeConcreteAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AttributeConcreteAdjFigure extends org.eclipse.draw2d.RoundedRectangle {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureAttributeConcreteAdjLabelFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AttributeConcreteAdjFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureAttributeConcreteAdjLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureAttributeConcreteAdjLabelFigure.setText(&quot;AttributeConcreteAdj&quot;);&#xA;&#xA;this.add(fFigureAttributeConcreteAdjLabelFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureAttributeConcreteAdjLabelFigure() {&#xA;&#x9;&#x9;return fFigureAttributeConcreteAdjLabelFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 255, 255, 128);&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:StyleAttributes" fixedBackground="true"/>
+      </viewmap>
       <modelFacet>
         <metaClass href="concrete.genmodel#//concretemodel/AttributeConcreteAdj"/>
         <containmentMetaFeature href="concrete.genmodel#//concretemodel/ClassConcreteAdj/lstAttributeConcreteAdj"/>
@@ -27,7 +29,9 @@
     <childNodes visualID="3002" editPartClassName="MethodConcreteAdjEditPart" itemSemanticEditPolicyClassName="MethodConcreteAdjItemSemanticEditPolicy" canonicalEditPolicyClassName="MethodConcreteAdjCanonicalEditPolicy" graphicalNodeEditPolicyClassName="MethodConcreteAdjGraphicalNodeEditPolicy" createCommandClassName="MethodConcreteAdjCreateCommand" containers="//@diagram/@compartments.1">
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
       <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="MethodConcreteAdjEditHelper"/>
-      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="MethodConcreteAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class MethodConcreteAdjFigure extends org.eclipse.draw2d.RoundedRectangle {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureMethodConcreteAdjLabelFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public MethodConcreteAdjFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureMethodConcreteAdjLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureMethodConcreteAdjLabelFigure.setText(&quot;MethodConcreteAdj&quot;);&#xA;&#xA;this.add(fFigureMethodConcreteAdjLabelFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureMethodConcreteAdjLabelFigure() {&#xA;&#x9;&#x9;return fFigureMethodConcreteAdjLabelFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="MethodConcreteAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class MethodConcreteAdjFigure extends org.eclipse.draw2d.RoundedRectangle {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureMethodConcreteAdjLabelFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public MethodConcreteAdjFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureMethodConcreteAdjLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureMethodConcreteAdjLabelFigure.setText(&quot;MethodConcreteAdj&quot;);&#xA;&#xA;this.add(fFigureMethodConcreteAdjLabelFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureMethodConcreteAdjLabelFigure() {&#xA;&#x9;&#x9;return fFigureMethodConcreteAdjLabelFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 255, 255, 128);&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:StyleAttributes" fixedBackground="true"/>
+      </viewmap>
       <modelFacet>
         <metaClass href="concrete.genmodel#//concretemodel/MethodConcreteAdj"/>
         <containmentMetaFeature href="concrete.genmodel#//concretemodel/ClassConcreteAdj/lstMethodConcreteAdj"/>
@@ -61,7 +65,9 @@
     <topLevelNodes visualID="2002" editPartClassName="ClassConcreteAdjEditPart" itemSemanticEditPolicyClassName="ClassConcreteAdjItemSemanticEditPolicy" canonicalEditPolicyClassName="ClassConcreteAdjCanonicalEditPolicy" compartments="//@diagram/@compartments.0 //@diagram/@compartments.1" graphicalNodeEditPolicyClassName="ClassConcreteAdjGraphicalNodeEditPolicy" createCommandClassName="ClassConcreteAdjCreateCommand">
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
       <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="ClassConcreteAdjEditHelper"/>
-      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ClassConcreteAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ClassConcreteAdjFigure extends org.eclipse.draw2d.RoundedRectangle {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClassConcreteAdjLabelFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fClassConcreteAdjLstAttributeConcreteAdjCompartmentFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fClassConcreteAdjLstMethodConcreteAdjCompartmentFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ClassConcreteAdjFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureClassConcreteAdjLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureClassConcreteAdjLabelFigure.setText(&quot;ClassConcreteAdj&quot;);&#xA;fFigureClassConcreteAdjLabelFigure.setMaximumSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(10000)&#xA;, getMapMode().DPtoLP(50)&#xA;));&#xA;&#xA;this.add(fFigureClassConcreteAdjLabelFigure);&#xA;&#xA;&#xA;&#xA;fClassConcreteAdjLstAttributeConcreteAdjCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fClassConcreteAdjLstAttributeConcreteAdjCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fClassConcreteAdjLstAttributeConcreteAdjCompartmentFigure);&#xA;&#xA;&#xA;&#xA;fClassConcreteAdjLstMethodConcreteAdjCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fClassConcreteAdjLstMethodConcreteAdjCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fClassConcreteAdjLstMethodConcreteAdjCompartmentFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClassConcreteAdjLabelFigure() {&#xA;&#x9;&#x9;return fFigureClassConcreteAdjLabelFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getClassConcreteAdjLstAttributeConcreteAdjCompartmentFigure() {&#xA;&#x9;&#x9;return fClassConcreteAdjLstAttributeConcreteAdjCompartmentFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getClassConcreteAdjLstMethodConcreteAdjCompartmentFigure() {&#xA;&#x9;&#x9;return fClassConcreteAdjLstMethodConcreteAdjCompartmentFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ClassConcreteAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ClassConcreteAdjFigure extends org.eclipse.draw2d.RoundedRectangle {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClassConcreteAdjLabelFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fClassConcreteAdjLstAttributeConcreteAdjCompartmentFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fClassConcreteAdjLstMethodConcreteAdjCompartmentFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ClassConcreteAdjFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureClassConcreteAdjLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureClassConcreteAdjLabelFigure.setText(&quot;ClassConcreteAdj&quot;);&#xA;fFigureClassConcreteAdjLabelFigure.setMaximumSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(10000)&#xA;, getMapMode().DPtoLP(50)&#xA;));&#xA;&#xA;this.add(fFigureClassConcreteAdjLabelFigure);&#xA;&#xA;&#xA;&#xA;fClassConcreteAdjLstAttributeConcreteAdjCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fClassConcreteAdjLstAttributeConcreteAdjCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fClassConcreteAdjLstAttributeConcreteAdjCompartmentFigure);&#xA;&#xA;&#xA;&#xA;fClassConcreteAdjLstMethodConcreteAdjCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fClassConcreteAdjLstMethodConcreteAdjCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fClassConcreteAdjLstMethodConcreteAdjCompartmentFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClassConcreteAdjLabelFigure() {&#xA;&#x9;&#x9;return fFigureClassConcreteAdjLabelFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getClassConcreteAdjLstAttributeConcreteAdjCompartmentFigure() {&#xA;&#x9;&#x9;return fClassConcreteAdjLstAttributeConcreteAdjCompartmentFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getClassConcreteAdjLstMethodConcreteAdjCompartmentFigure() {&#xA;&#x9;&#x9;return fClassConcreteAdjLstMethodConcreteAdjCompartmentFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 255, 255, 128);&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:StyleAttributes" fixedBackground="true"/>
+      </viewmap>
       <behaviour xsi:type="gmfgen:OpenDiagramBehaviour"/>
       <modelFacet>
         <metaClass href="concrete.genmodel#//concretemodel/ClassConcreteAdj"/>
@@ -79,7 +85,7 @@
     <links visualID="4001" editPartClassName="ContainmentSdjEditPart" itemSemanticEditPolicyClassName="ContainmentSdjItemSemanticEditPolicy" createCommandClassName="ContainmentSdjCreateCommand" reorientCommandClassName="ContainmentSdjReorientCommand">
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
       <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="ContainmentSdjEditHelper"/>
-      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ContainmentSdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ContainmentSdjFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ContainmentSdjFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;this.setLineStyle(org.eclipse.draw2d.Graphics.LINE_DOT);&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ContainmentSdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ContainmentSdjFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ContainmentSdjFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;&#xA;&#x9;&#x9;setTargetDecoration(createTargetDecoration());&#xA;&#x9;}&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RotatableDecoration createTargetDecoration() {&#xA;&#x9;&#x9;org.eclipse.draw2d.PolygonDecoration df = new org.eclipse.draw2d.PolygonDecoration();&#xA;df.setFill(true);&#xA;org.eclipse.draw2d.geometry.PointList pl = new org.eclipse.draw2d.geometry.PointList();&#xA;pl.addPoint(getMapMode().DPtoLP(-1)&#xA;, getMapMode().DPtoLP(1)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(0)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(-1)&#xA;, getMapMode().DPtoLP(-1)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(-2)&#xA;, getMapMode().DPtoLP(0)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(-1)&#xA;, getMapMode().DPtoLP(1)&#xA;);&#xA;df.setTemplate(pl);&#xA;df.setScale(getMapMode().DPtoLP(7)&#xA;, getMapMode().DPtoLP(3)&#xA;);&#xA;&#x9;&#x9;return df;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
       <modelFacet xsi:type="gmfgen:TypeLinkModelFacet">
         <metaClass href="concrete.genmodel#//concretemodel/ContainmentSdj"/>
         <containmentMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstRelationship"/>
@@ -87,11 +93,38 @@
         <sourceMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classSource"/>
         <targetMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classTarget"/>
       </modelFacet>
+      <labels visualID="6001" editPartClassName="ContainmentSdjRoleSourceEditPart" itemSemanticEditPolicyClassName="ContainmentSdjRoleSourceItemSemanticEditPolicy" alignment="TARGET">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ContainmentSdjroleSourceLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ContainmentSdjroleSourceLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ContainmentSdjroleSourceLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;roleSource&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" y="12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="concrete.genmodel#//concretemodel/RelationshipAdj/roleSource"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="6002" editPartClassName="ContainmentSdjMultiplicitySourceClassEditPart" itemSemanticEditPolicyClassName="ContainmentSdjMultiplicitySourceClassItemSemanticEditPolicy" alignment="TARGET">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ContainmentSdjmultiplicitySourceClassLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ContainmentSdjmultiplicitySourceClassLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ContainmentSdjmultiplicitySourceClassLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;multiplicitySourceClass&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="-20" y="-12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="concrete.genmodel#//concretemodel/RelationshipAdj/multiplicitySourceClass"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="6003" editPartClassName="ContainmentSdjRoleTargetEditPart" itemSemanticEditPolicyClassName="ContainmentSdjRoleTargetItemSemanticEditPolicy" alignment="SOURCE">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ContainmentSdjroleTargetLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ContainmentSdjroleTargetLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ContainmentSdjroleTargetLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;roleTarget&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="3" y="12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="concrete.genmodel#//concretemodel/RelationshipAdj/roleTarget"/>
+        </modelFacet>
+      </labels>
     </links>
     <links visualID="4003" editPartClassName="SharingAdjEditPart" itemSemanticEditPolicyClassName="SharingAdjItemSemanticEditPolicy" createCommandClassName="SharingAdjCreateCommand" reorientCommandClassName="SharingAdjReorientCommand">
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
       <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="SharingAdjEditHelper"/>
-      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="SharingAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class SharingAdjFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public SharingAdjFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;this.setLineStyle(org.eclipse.draw2d.Graphics.LINE_DOT);&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="SharingAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class SharingAdjFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public SharingAdjFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;&#xA;&#x9;&#x9;setTargetDecoration(createTargetDecoration());&#xA;&#x9;}&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RotatableDecoration createTargetDecoration() {&#xA;&#x9;&#x9;org.eclipse.draw2d.PolygonDecoration df = new org.eclipse.draw2d.PolygonDecoration();&#xA;df.setFill(true);&#xA;&#x9;df.setBackgroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;org.eclipse.draw2d.geometry.PointList pl = new org.eclipse.draw2d.geometry.PointList();&#xA;pl.addPoint(getMapMode().DPtoLP(-1)&#xA;, getMapMode().DPtoLP(1)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(0)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(-1)&#xA;, getMapMode().DPtoLP(-1)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(-2)&#xA;, getMapMode().DPtoLP(0)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(-1)&#xA;, getMapMode().DPtoLP(1)&#xA;);&#xA;df.setTemplate(pl);&#xA;df.setScale(getMapMode().DPtoLP(7)&#xA;, getMapMode().DPtoLP(3)&#xA;);&#xA;&#x9;&#x9;return df;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
       <modelFacet xsi:type="gmfgen:TypeLinkModelFacet">
         <metaClass href="concrete.genmodel#//concretemodel/SharingAdj"/>
         <containmentMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstRelationship"/>
@@ -99,11 +132,47 @@
         <sourceMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classSource"/>
         <targetMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classTarget"/>
       </modelFacet>
+      <labels visualID="6004" editPartClassName="SharingAdjRoleSourceEditPart" itemSemanticEditPolicyClassName="SharingAdjRoleSourceItemSemanticEditPolicy" alignment="TARGET">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="SharingAdjroleSourceLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class SharingAdjroleSourceLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public SharingAdjroleSourceLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;roleSource&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" y="12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="concrete.genmodel#//concretemodel/RelationshipAdj/roleSource"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="6005" editPartClassName="SharingAdjMultiplicitySourceClassEditPart" itemSemanticEditPolicyClassName="SharingAdjMultiplicitySourceClassItemSemanticEditPolicy" alignment="TARGET">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="SharingAdjmultiplicitySourceClassLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class SharingAdjmultiplicitySourceClassLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public SharingAdjmultiplicitySourceClassLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;multiplicitySourceClass&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="-20" y="-12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="concrete.genmodel#//concretemodel/RelationshipAdj/multiplicitySourceClass"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="6006" editPartClassName="SharingAdjRoleTargetEditPart" itemSemanticEditPolicyClassName="SharingAdjRoleTargetItemSemanticEditPolicy" alignment="SOURCE">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="SharingAdjroleTargetLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class SharingAdjroleTargetLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public SharingAdjroleTargetLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;roleTarget&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="3" y="12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="concrete.genmodel#//concretemodel/RelationshipAdj/roleTarget"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="6007" editPartClassName="SharingAdjMultiplicityTargetClassEditPart" itemSemanticEditPolicyClassName="SharingAdjMultiplicityTargetClassItemSemanticEditPolicy" alignment="SOURCE">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="SharingAdjmultiplicityTargetClassLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class SharingAdjmultiplicityTargetClassLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public SharingAdjmultiplicityTargetClassLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;multiplicityTargetClass&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="20" y="-12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="concrete.genmodel#//concretemodel/RelationshipAdj/multiplicityTargetClass"/>
+        </modelFacet>
+      </labels>
     </links>
     <links visualID="4005" editPartClassName="AssociationAdjEditPart" itemSemanticEditPolicyClassName="AssociationAdjItemSemanticEditPolicy" createCommandClassName="AssociationAdjCreateCommand" reorientCommandClassName="AssociationAdjReorientCommand">
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
       <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="AssociationAdjEditHelper"/>
-      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AssociationAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AssociationAdjFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AssociationAdjFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;this.setLineStyle(org.eclipse.draw2d.Graphics.LINE_DOT);&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AssociationAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AssociationAdjFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AssociationAdjFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
       <modelFacet xsi:type="gmfgen:TypeLinkModelFacet">
         <metaClass href="concrete.genmodel#//concretemodel/AssociationAdj"/>
         <containmentMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstRelationship"/>
@@ -111,11 +180,47 @@
         <sourceMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classSource"/>
         <targetMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classTarget"/>
       </modelFacet>
+      <labels visualID="6008" editPartClassName="AssociationAdjRoleSourceEditPart" itemSemanticEditPolicyClassName="AssociationAdjRoleSourceItemSemanticEditPolicy" alignment="TARGET">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AssociationAdjroleSourceLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AssociationAdjroleSourceLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AssociationAdjroleSourceLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;roleSource&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" y="12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="concrete.genmodel#//concretemodel/RelationshipAdj/roleSource"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="6009" editPartClassName="AssociationAdjMultiplicitySourceClassEditPart" itemSemanticEditPolicyClassName="AssociationAdjMultiplicitySourceClassItemSemanticEditPolicy" alignment="TARGET">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AssociationAdjmultiplicitySourceClassLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AssociationAdjmultiplicitySourceClassLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AssociationAdjmultiplicitySourceClassLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;multiplicitySourceClass&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="-20" y="-12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="concrete.genmodel#//concretemodel/RelationshipAdj/multiplicitySourceClass"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="6010" editPartClassName="AssociationAdjRoleTargetEditPart" itemSemanticEditPolicyClassName="AssociationAdjRoleTargetItemSemanticEditPolicy" alignment="SOURCE">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AssociationAdjroleTargetLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AssociationAdjroleTargetLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AssociationAdjroleTargetLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;roleTarget&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="3" y="12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="concrete.genmodel#//concretemodel/RelationshipAdj/roleTarget"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="6011" editPartClassName="AssociationAdjMultiplicityTargetClassEditPart" itemSemanticEditPolicyClassName="AssociationAdjMultiplicityTargetClassItemSemanticEditPolicy" alignment="SOURCE">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AssociationAdjmultiplicityTargetClassLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AssociationAdjmultiplicityTargetClassLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AssociationAdjmultiplicityTargetClassLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;multiplicityTargetClass&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="20" y="-12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="concrete.genmodel#//concretemodel/RelationshipAdj/multiplicityTargetClass"/>
+        </modelFacet>
+      </labels>
     </links>
     <links visualID="4007" editPartClassName="GeneralizationAdjEditPart" itemSemanticEditPolicyClassName="GeneralizationAdjItemSemanticEditPolicy" createCommandClassName="GeneralizationAdjCreateCommand" reorientCommandClassName="GeneralizationAdjReorientCommand">
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
       <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="GeneralizationAdjEditHelper"/>
-      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="GeneralizationAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class GeneralizationAdjFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public GeneralizationAdjFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;this.setLineStyle(org.eclipse.draw2d.Graphics.LINE_DOT);&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="GeneralizationAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class GeneralizationAdjFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public GeneralizationAdjFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;&#xA;&#x9;&#x9;setTargetDecoration(createTargetDecoration());&#xA;&#x9;}&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RotatableDecoration createTargetDecoration() {&#xA;&#x9;&#x9;org.eclipse.draw2d.PolylineDecoration df = new org.eclipse.draw2d.PolylineDecoration();&#xA;&#x9;&#x9;return df;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
       <modelFacet xsi:type="gmfgen:TypeLinkModelFacet">
         <metaClass href="concrete.genmodel#//concretemodel/GeneralizationAdj"/>
         <containmentMetaFeature href="concrete.genmodel#//concretemodel/ClassDiagramAdj/lstRelationship"/>
@@ -123,6 +228,42 @@
         <sourceMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classSource"/>
         <targetMetaFeature href="concrete.genmodel#//concretemodel/RelationshipAdj/classTarget"/>
       </modelFacet>
+      <labels visualID="6012" editPartClassName="GeneralizationAdjRoleSourceEditPart" itemSemanticEditPolicyClassName="GeneralizationAdjRoleSourceItemSemanticEditPolicy" alignment="TARGET">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="GeneralizationAdjroleSourceLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class GeneralizationAdjroleSourceLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public GeneralizationAdjroleSourceLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;roleSource&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" y="12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="concrete.genmodel#//concretemodel/RelationshipAdj/roleSource"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="6013" editPartClassName="GeneralizationAdjMultiplicitySourceClassEditPart" itemSemanticEditPolicyClassName="GeneralizationAdjMultiplicitySourceClassItemSemanticEditPolicy" alignment="TARGET">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="GeneralizationAdjmultiplicitySourceClassLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class GeneralizationAdjmultiplicitySourceClassLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public GeneralizationAdjmultiplicitySourceClassLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;multiplicitySourceClass&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="-20" y="-12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="concrete.genmodel#//concretemodel/RelationshipAdj/multiplicitySourceClass"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="6014" editPartClassName="GeneralizationAdjRoleTargetEditPart" itemSemanticEditPolicyClassName="GeneralizationAdjRoleTargetItemSemanticEditPolicy" alignment="SOURCE">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="GeneralizationAdjroleTargetLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class GeneralizationAdjroleTargetLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public GeneralizationAdjroleTargetLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;roleTarget&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="3" y="12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="concrete.genmodel#//concretemodel/RelationshipAdj/roleTarget"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="6015" editPartClassName="GeneralizationAdjMultiplicityTargetClassEditPart" itemSemanticEditPolicyClassName="GeneralizationAdjMultiplicityTargetClassItemSemanticEditPolicy" alignment="SOURCE">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="GeneralizationAdjmultiplicityTargetClassLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class GeneralizationAdjmultiplicityTargetClassLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public GeneralizationAdjmultiplicityTargetClassLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;multiplicityTargetClass&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="20" y="-12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="concrete.genmodel#//concretemodel/RelationshipAdj/multiplicityTargetClass"/>
+        </modelFacet>
+      </labels>
     </links>
     <compartments visualID="7001" editPartClassName="ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentEditPart" itemSemanticEditPolicyClassName="ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.0" title="ClassConcreteAdjLstAttributeConcreteAdjCompartment" needsTitle="false" node="//@diagram/@topLevelNodes.1" listLayout="false">
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
@@ -200,7 +341,7 @@
   </propertySheet>
   <domainGenModel href="concrete.genmodel#/"/>
   <labelParsers extensibleViaService="true">
-    <implementations xsi:type="gmfgen:PredefinedParser" uses="//@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet"/>
+    <implementations xsi:type="gmfgen:PredefinedParser" uses="//@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet //@diagram/@links.0/@labels.0/@modelFacet //@diagram/@links.0/@labels.1/@modelFacet //@diagram/@links.0/@labels.2/@modelFacet //@diagram/@links.1/@labels.0/@modelFacet //@diagram/@links.1/@labels.1/@modelFacet //@diagram/@links.1/@labels.2/@modelFacet //@diagram/@links.1/@labels.3/@modelFacet //@diagram/@links.2/@labels.0/@modelFacet //@diagram/@links.2/@labels.1/@modelFacet //@diagram/@links.2/@labels.2/@modelFacet //@diagram/@links.2/@labels.3/@modelFacet //@diagram/@links.3/@labels.0/@modelFacet //@diagram/@links.3/@labels.1/@modelFacet //@diagram/@links.3/@labels.2/@modelFacet //@diagram/@links.3/@labels.3/@modelFacet"/>
   </labelParsers>
   <contextMenus context="//@diagram">
     <items xsi:type="gmfgen:LoadResourceAction"/>

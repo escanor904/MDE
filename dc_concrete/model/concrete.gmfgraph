@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="ASCII"?>
 <gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="concretemodel">
   <figures name="Default">
+    <figures xsi:type="gmfgraph:PolygonDecoration" name="FilledRhomb">
+      <template x="-1" y="1"/>
+      <template/>
+      <template x="-1" y="-1"/>
+      <template x="-2"/>
+      <template x="-1" y="1"/>
+    </figures>
+    <figures xsi:type="gmfgraph:PolygonDecoration" name="Rhomb">
+      <backgroundColor xsi:type="gmfgraph:ConstantColor"/>
+      <template x="-1" y="1"/>
+      <template/>
+      <template x="-1" y="-1"/>
+      <template x="-2"/>
+      <template x="-1" y="1"/>
+    </figures>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="GeneralizationAdjFigureTargetDecoration"/>
     <descriptors name="PackageConcreteAdjFigure">
       <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="PackageConcreteAdjFigure">
         <border xsi:type="gmfgraph:MarginBorder">
@@ -12,6 +28,7 @@
     </descriptors>
     <descriptors name="ClassConcreteAdjFigure">
       <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ClassConcreteAdjFigure">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="255" green="255" blue="128"/>
         <border xsi:type="gmfgraph:MarginBorder">
           <insets top="5" left="5" bottom="5" right="5"/>
         </border>
@@ -27,6 +44,7 @@
     </descriptors>
     <descriptors name="MethodConcreteAdjFigure">
       <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="MethodConcreteAdjFigure">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="255" green="255" blue="128"/>
         <border xsi:type="gmfgraph:MarginBorder">
           <insets top="5" left="5" bottom="5" right="5"/>
         </border>
@@ -36,6 +54,7 @@
     </descriptors>
     <descriptors name="AttributeConcreteAdjFigure">
       <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AttributeConcreteAdjFigure">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="255" green="255" blue="128"/>
         <border xsi:type="gmfgraph:MarginBorder">
           <insets top="5" left="5" bottom="5" right="5"/>
         </border>
@@ -44,16 +63,61 @@
       <accessors accessor="getFigureAttributeConcreteAdjLabelFigure" figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors name="ContainmentSdjFigure">
-      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ContainmentSdjFigure" lineWidth="2" lineKind="LINE_DOT"/>
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ContainmentSdjFigure" lineWidth="2" targetDecoration="//@figures.0/@figures.0"/>
     </descriptors>
     <descriptors name="SharingAdjFigure">
-      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="SharingAdjFigure" lineWidth="2" lineKind="LINE_DOT"/>
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="SharingAdjFigure" lineWidth="2" targetDecoration="//@figures.0/@figures.1"/>
     </descriptors>
     <descriptors name="AssociationAdjFigure">
-      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="AssociationAdjFigure" lineWidth="2" lineKind="LINE_DOT"/>
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="AssociationAdjFigure" lineWidth="2"/>
     </descriptors>
     <descriptors name="GeneralizationAdjFigure">
-      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="GeneralizationAdjFigure" lineWidth="2" lineKind="LINE_DOT"/>
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="GeneralizationAdjFigure" lineWidth="2" targetDecoration="//@figures.0/@figures.2"/>
+    </descriptors>
+    <descriptors name="ContainmentSdjroleSourceLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="ContainmentSdjroleSourceLabel" text="roleSource"/>
+    </descriptors>
+    <descriptors name="ContainmentSdjmultiplicitySourceClassLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="ContainmentSdjmultiplicitySourceClassLabel" text="multiplicitySourceClass"/>
+    </descriptors>
+    <descriptors name="ContainmentSdjroleTargetLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="ContainmentSdjroleTargetLabel" text="roleTarget"/>
+    </descriptors>
+    <descriptors name="SharingAdjroleSourceLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="SharingAdjroleSourceLabel" text="roleSource"/>
+    </descriptors>
+    <descriptors name="SharingAdjmultiplicitySourceClassLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="SharingAdjmultiplicitySourceClassLabel" text="multiplicitySourceClass"/>
+    </descriptors>
+    <descriptors name="SharingAdjroleTargetLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="SharingAdjroleTargetLabel" text="roleTarget"/>
+    </descriptors>
+    <descriptors name="SharingAdjmultiplicityTargetClassLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="SharingAdjmultiplicityTargetClassLabel" text="multiplicityTargetClass"/>
+    </descriptors>
+    <descriptors name="AssociationAdjroleSourceLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="AssociationAdjroleSourceLabel" text="roleSource"/>
+    </descriptors>
+    <descriptors name="AssociationAdjmultiplicitySourceClassLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="AssociationAdjmultiplicitySourceClassLabel" text="multiplicitySourceClass"/>
+    </descriptors>
+    <descriptors name="AssociationAdjroleTargetLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="AssociationAdjroleTargetLabel" text="roleTarget"/>
+    </descriptors>
+    <descriptors name="AssociationAdjmultiplicityTargetClassLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="AssociationAdjmultiplicityTargetClassLabel" text="multiplicityTargetClass"/>
+    </descriptors>
+    <descriptors name="GeneralizationAdjroleSourceLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="GeneralizationAdjroleSourceLabel" text="roleSource"/>
+    </descriptors>
+    <descriptors name="GeneralizationAdjmultiplicitySourceClassLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="GeneralizationAdjmultiplicitySourceClassLabel" text="multiplicitySourceClass"/>
+    </descriptors>
+    <descriptors name="GeneralizationAdjroleTargetLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="GeneralizationAdjroleTargetLabel" text="roleTarget"/>
+    </descriptors>
+    <descriptors name="GeneralizationAdjmultiplicityTargetClassLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="GeneralizationAdjmultiplicityTargetClassLabel" text="multiplicityTargetClass"/>
     </descriptors>
   </figures>
   <nodes name="PackageConcreteAdj" figure="PackageConcreteAdjFigure"/>
@@ -70,4 +134,64 @@
   <labels name="ClassConcreteAdjLabel" figure="ClassConcreteAdjFigure" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
   <labels name="MethodConcreteAdjLabel" figure="MethodConcreteAdjFigure" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
   <labels name="AttributeConcreteAdjLabel" figure="AttributeConcreteAdjFigure" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
+  <labels name="ContainmentSdjroleSourceLabel" figure="ContainmentSdjroleSourceLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="END"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" y="12"/>
+  </labels>
+  <labels name="ContainmentSdjmultiplicitySourceClassLabel" figure="ContainmentSdjmultiplicitySourceClassLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="END"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="-20" y="-12"/>
+  </labels>
+  <labels name="ContainmentSdjroleTargetLabel" figure="ContainmentSdjroleTargetLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="3" y="12"/>
+  </labels>
+  <labels name="SharingAdjroleSourceLabel" figure="SharingAdjroleSourceLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="END"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" y="12"/>
+  </labels>
+  <labels name="SharingAdjmultiplicitySourceClassLabel" figure="SharingAdjmultiplicitySourceClassLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="END"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="-20" y="-12"/>
+  </labels>
+  <labels name="SharingAdjroleTargetLabel" figure="SharingAdjroleTargetLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="3" y="12"/>
+  </labels>
+  <labels name="SharingAdjmultiplicityTargetClassLabel" figure="SharingAdjmultiplicityTargetClassLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="20" y="-12"/>
+  </labels>
+  <labels name="AssociationAdjroleSourceLabel" figure="AssociationAdjroleSourceLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="END"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" y="12"/>
+  </labels>
+  <labels name="AssociationAdjmultiplicitySourceClassLabel" figure="AssociationAdjmultiplicitySourceClassLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="END"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="-20" y="-12"/>
+  </labels>
+  <labels name="AssociationAdjroleTargetLabel" figure="AssociationAdjroleTargetLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="3" y="12"/>
+  </labels>
+  <labels name="AssociationAdjmultiplicityTargetClassLabel" figure="AssociationAdjmultiplicityTargetClassLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="20" y="-12"/>
+  </labels>
+  <labels name="GeneralizationAdjroleSourceLabel" figure="GeneralizationAdjroleSourceLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="END"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" y="12"/>
+  </labels>
+  <labels name="GeneralizationAdjmultiplicitySourceClassLabel" figure="GeneralizationAdjmultiplicitySourceClassLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="END"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="-20" y="-12"/>
+  </labels>
+  <labels name="GeneralizationAdjroleTargetLabel" figure="GeneralizationAdjroleTargetLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="3" y="12"/>
+  </labels>
+  <labels name="GeneralizationAdjmultiplicityTargetClassLabel" figure="GeneralizationAdjmultiplicityTargetClassLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="20" y="-12"/>
+  </labels>
 </gmfgraph:Canvas>

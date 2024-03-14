@@ -102,6 +102,27 @@
   <links>
     <domainMetaElement
         href="concrete.ecore#//ContainmentSdj"/>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel
+          href="concrete.gmfgraph#ContainmentSdjroleSourceLabel"/>
+      <features
+          href="concrete.ecore#//RelationshipAdj/roleSource"/>
+    </labelMappings>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel
+          href="concrete.gmfgraph#ContainmentSdjmultiplicitySourceClassLabel"/>
+      <features
+          href="concrete.ecore#//RelationshipAdj/multiplicitySourceClass"/>
+    </labelMappings>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel
+          href="concrete.gmfgraph#ContainmentSdjroleTargetLabel"/>
+      <features
+          href="concrete.ecore#//RelationshipAdj/roleTarget"/>
+    </labelMappings>
     <containmentFeature
         href="concrete.ecore#//ClassDiagramAdj/lstRelationship"/>
     <tool
@@ -119,6 +140,34 @@
   <links>
     <domainMetaElement
         href="concrete.ecore#//SharingAdj"/>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel
+          href="concrete.gmfgraph#SharingAdjroleSourceLabel"/>
+      <features
+          href="concrete.ecore#//RelationshipAdj/roleSource"/>
+    </labelMappings>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel
+          href="concrete.gmfgraph#SharingAdjmultiplicitySourceClassLabel"/>
+      <features
+          href="concrete.ecore#//RelationshipAdj/multiplicitySourceClass"/>
+    </labelMappings>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel
+          href="concrete.gmfgraph#SharingAdjroleTargetLabel"/>
+      <features
+          href="concrete.ecore#//RelationshipAdj/roleTarget"/>
+    </labelMappings>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel
+          href="concrete.gmfgraph#SharingAdjmultiplicityTargetClassLabel"/>
+      <features
+          href="concrete.ecore#//RelationshipAdj/multiplicityTargetClass"/>
+    </labelMappings>
     <containmentFeature
         href="concrete.ecore#//ClassDiagramAdj/lstRelationship"/>
     <tool
@@ -136,6 +185,34 @@
   <links>
     <domainMetaElement
         href="concrete.ecore#//AssociationAdj"/>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel
+          href="concrete.gmfgraph#AssociationAdjroleSourceLabel"/>
+      <features
+          href="concrete.ecore#//RelationshipAdj/roleSource"/>
+    </labelMappings>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel
+          href="concrete.gmfgraph#AssociationAdjmultiplicitySourceClassLabel"/>
+      <features
+          href="concrete.ecore#//RelationshipAdj/multiplicitySourceClass"/>
+    </labelMappings>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel
+          href="concrete.gmfgraph#AssociationAdjroleTargetLabel"/>
+      <features
+          href="concrete.ecore#//RelationshipAdj/roleTarget"/>
+    </labelMappings>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel
+          href="concrete.gmfgraph#AssociationAdjmultiplicityTargetClassLabel"/>
+      <features
+          href="concrete.ecore#//RelationshipAdj/multiplicityTargetClass"/>
+    </labelMappings>
     <containmentFeature
         href="concrete.ecore#//ClassDiagramAdj/lstRelationship"/>
     <tool
@@ -153,6 +230,34 @@
   <links>
     <domainMetaElement
         href="concrete.ecore#//GeneralizationAdj"/>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel
+          href="concrete.gmfgraph#GeneralizationAdjroleSourceLabel"/>
+      <features
+          href="concrete.ecore#//RelationshipAdj/roleSource"/>
+    </labelMappings>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel
+          href="concrete.gmfgraph#GeneralizationAdjmultiplicitySourceClassLabel"/>
+      <features
+          href="concrete.ecore#//RelationshipAdj/multiplicitySourceClass"/>
+    </labelMappings>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel
+          href="concrete.gmfgraph#GeneralizationAdjroleTargetLabel"/>
+      <features
+          href="concrete.ecore#//RelationshipAdj/roleTarget"/>
+    </labelMappings>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel
+          href="concrete.gmfgraph#GeneralizationAdjmultiplicityTargetClassLabel"/>
+      <features
+          href="concrete.ecore#//RelationshipAdj/multiplicityTargetClass"/>
+    </labelMappings>
     <containmentFeature
         href="concrete.ecore#//ClassDiagramAdj/lstRelationship"/>
     <tool

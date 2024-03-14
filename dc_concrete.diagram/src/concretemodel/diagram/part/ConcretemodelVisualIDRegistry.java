@@ -13,6 +13,10 @@ import org.eclipse.gmf.tooling.runtime.structure.DiagramStructure;
 import concretemodel.ClassDiagramAdj;
 import concretemodel.ConcretemodelPackage;
 import concretemodel.diagram.edit.parts.AssociationAdjEditPart;
+import concretemodel.diagram.edit.parts.AssociationAdjMultiplicitySourceClassEditPart;
+import concretemodel.diagram.edit.parts.AssociationAdjMultiplicityTargetClassEditPart;
+import concretemodel.diagram.edit.parts.AssociationAdjRoleSourceEditPart;
+import concretemodel.diagram.edit.parts.AssociationAdjRoleTargetEditPart;
 import concretemodel.diagram.edit.parts.AttributeConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.AttributeConcreteAdjNameEditPart;
 import concretemodel.diagram.edit.parts.ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentEditPart;
@@ -21,12 +25,23 @@ import concretemodel.diagram.edit.parts.ClassConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.ClassConcreteAdjNameEditPart;
 import concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart;
 import concretemodel.diagram.edit.parts.ContainmentSdjEditPart;
+import concretemodel.diagram.edit.parts.ContainmentSdjMultiplicitySourceClassEditPart;
+import concretemodel.diagram.edit.parts.ContainmentSdjRoleSourceEditPart;
+import concretemodel.diagram.edit.parts.ContainmentSdjRoleTargetEditPart;
 import concretemodel.diagram.edit.parts.GeneralizationAdjEditPart;
+import concretemodel.diagram.edit.parts.GeneralizationAdjMultiplicitySourceClassEditPart;
+import concretemodel.diagram.edit.parts.GeneralizationAdjMultiplicityTargetClassEditPart;
+import concretemodel.diagram.edit.parts.GeneralizationAdjRoleSourceEditPart;
+import concretemodel.diagram.edit.parts.GeneralizationAdjRoleTargetEditPart;
 import concretemodel.diagram.edit.parts.MethodConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.MethodConcreteAdjMethodNameEditPart;
 import concretemodel.diagram.edit.parts.PackageConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.PackageConcreteAdjNameEditPart;
 import concretemodel.diagram.edit.parts.SharingAdjEditPart;
+import concretemodel.diagram.edit.parts.SharingAdjMultiplicitySourceClassEditPart;
+import concretemodel.diagram.edit.parts.SharingAdjMultiplicityTargetClassEditPart;
+import concretemodel.diagram.edit.parts.SharingAdjRoleSourceEditPart;
+import concretemodel.diagram.edit.parts.SharingAdjRoleTargetEditPart;
 
 /**
  * This registry is used to determine which type of visual object should be
@@ -211,6 +226,59 @@ public class ConcretemodelVisualIDRegistry {
 			break;
 		case ClassConcreteAdjClassConcreteAdjLstMethodConcreteAdjCompartmentEditPart.VISUAL_ID:
 			if (MethodConcreteAdjEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case ContainmentSdjEditPart.VISUAL_ID:
+			if (ContainmentSdjRoleSourceEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (ContainmentSdjMultiplicitySourceClassEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (ContainmentSdjRoleTargetEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case SharingAdjEditPart.VISUAL_ID:
+			if (SharingAdjRoleSourceEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (SharingAdjMultiplicitySourceClassEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (SharingAdjRoleTargetEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (SharingAdjMultiplicityTargetClassEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case AssociationAdjEditPart.VISUAL_ID:
+			if (AssociationAdjRoleSourceEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (AssociationAdjMultiplicitySourceClassEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (AssociationAdjRoleTargetEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (AssociationAdjMultiplicityTargetClassEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case GeneralizationAdjEditPart.VISUAL_ID:
+			if (GeneralizationAdjRoleSourceEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (GeneralizationAdjMultiplicitySourceClassEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (GeneralizationAdjRoleTargetEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (GeneralizationAdjMultiplicityTargetClassEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;

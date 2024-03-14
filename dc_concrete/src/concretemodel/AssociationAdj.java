@@ -10,7 +10,7 @@ package concretemodel;
  *
  *
  * @see concretemodel.ConcretemodelPackage#getAssociationAdj()
- * @model annotation="gmf.link source='classSource' target='classTarget' style='dot' width='2'"
+ * @model annotation="gmf.link source='classSource' target='classTarget' source.decoration='none' target.decoration='none' style='solid' width='2'"
  * @generated
  */
 public interface AssociationAdj extends RelationshipAdj {

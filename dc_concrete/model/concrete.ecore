@@ -43,7 +43,9 @@
     <eAnnotations source="gmf.link">
       <details key="source" value="classSource"/>
       <details key="target" value="classTarget"/>
-      <details key="style" value="dot"/>
+      <details key="source.decoration" value="none"/>
+      <details key="target.decoration" value="filledrhomb"/>
+      <details key="style" value="solid"/>
       <details key="width" value="2"/>
     </eAnnotations>
   </eClassifiers>
@@ -51,7 +53,9 @@
     <eAnnotations source="gmf.link">
       <details key="source" value="classSource"/>
       <details key="target" value="classTarget"/>
-      <details key="style" value="dot"/>
+      <details key="source.decoration" value="none"/>
+      <details key="target.decoration" value="rhomb"/>
+      <details key="style" value="solid"/>
       <details key="width" value="2"/>
     </eAnnotations>
   </eClassifiers>
@@ -59,7 +63,9 @@
     <eAnnotations source="gmf.link">
       <details key="source" value="classSource"/>
       <details key="target" value="classTarget"/>
-      <details key="style" value="dot"/>
+      <details key="source.decoration" value="none"/>
+      <details key="target.decoration" value="none"/>
+      <details key="style" value="solid"/>
       <details key="width" value="2"/>
     </eAnnotations>
   </eClassifiers>
@@ -67,13 +73,16 @@
     <eAnnotations source="gmf.link">
       <details key="source" value="classSource"/>
       <details key="target" value="classTarget"/>
-      <details key="style" value="dot"/>
+      <details key="source.decoration" value="none"/>
+      <details key="target.decoration" value="arrow"/>
+      <details key="style" value="solid"/>
       <details key="width" value="2"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ClassConcreteAdj">
     <eAnnotations source="gmf.node">
       <details key="label" value="name"/>
+      <details key="color" value="255,255,128"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="path" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -89,6 +98,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="MethodConcreteAdj">
     <eAnnotations source="gmf.node">
       <details key="label" value="methodName"/>
+      <details key="color" value="255,255,128"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="methodName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="body" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -112,6 +122,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="AttributeConcreteAdj">
     <eAnnotations source="gmf.node">
       <details key="label" value="name"/>
+      <details key="color" value="255,255,128"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>

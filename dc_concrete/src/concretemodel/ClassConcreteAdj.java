@@ -22,7 +22,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see concretemodel.ConcretemodelPackage#getClassConcreteAdj()
- * @model annotation="gmf.node label='name'"
+ * @model annotation="gmf.node label='name' color='255,255,128'"
  * @generated
  */
 public interface ClassConcreteAdj extends EObject {

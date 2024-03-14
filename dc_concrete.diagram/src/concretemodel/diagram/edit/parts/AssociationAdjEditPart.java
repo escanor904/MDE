@@ -68,7 +68,6 @@ public class AssociationAdjEditPart extends ConnectionNodeEditPart implements IT
 		 */
 		public AssociationAdjFigure() {
 			this.setLineWidth(2);
-			this.setLineStyle(Graphics.LINE_DOT);
 
 		}
 

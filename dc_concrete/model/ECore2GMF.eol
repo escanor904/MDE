@@ -1,0 +1,108 @@
+//Containment
+var association = ECore!EClass.all.selectOne(c|c.name = "ContainmentSdj");
+association.createLinkEndLabel("roleSource", true,true);
+association.createLinkEndLabel("multiplicitySourceClass", true, false);
+
+association.createLinkEndLabel("roleTarget", false,false);
+//Sharing
+var association = ECore!EClass.all.selectOne(c|c.name = "SharingAdj");
+association.createLinkEndLabel("roleSource", true,true);
+association.createLinkEndLabel("multiplicitySourceClass", true, false);
+
+association.createLinkEndLabel("roleTarget", false,false);
+association.createLinkEndLabel("multiplicityTargetClass",false, true);
+//Association
+var association = ECore!EClass.all.selectOne(c|c.name = "AssociationAdj");
+association.createLinkEndLabel("roleSource", true,true);
+association.createLinkEndLabel("multiplicitySourceClass", true, false);
+
+association.createLinkEndLabel("roleTarget", false,false);
+association.createLinkEndLabel("multiplicityTargetClass",false, true);
+//Generalization
+var association = ECore!EClass.all.selectOne(c|c.name = "GeneralizationAdj");
+association.createLinkEndLabel("roleSource", true,true);
+association.createLinkEndLabel("multiplicitySourceClass", true, false);
+
+association.createLinkEndLabel("roleTarget", false,false);
+association.createLinkEndLabel("multiplicityTargetClass",false, true);
+
+
+operation ECore!EClass createLinkEndLabel(attribute:String, source:Boolean, up:Boolean){
+	var endName;
+	if (source) {
+		endName = attribute;
+	}
+	else {
+		endName = attribute;
+	} 
+	
+	var labelName = self.name + endName + "Label";
+	
+	// Create the figure descriptor and the label
+	var labelFigureDescriptor = 
+		createFigureDescriptor(labelName + "Figure");
+	var label = new GmfGraph!Label;
+	label.name = labelName;
+	label.text = endName;
+	labelFigureDescriptor.actualFigure = label;
+	
+	// Create the diagram label
+	var diagramLabel = new GmfGraph!DiagramLabel;
+	diagramLabel.figure = labelFigureDescriptor;
+	diagramLabel.name = labelName;
+	diagramLabel.elementIcon = false;
+	GmfGraph!Canvas.all.first().labels.add(diagramLabel);
+	
+	// Specify if the label will be placed at the beginning/end of the link
+	var alignmentFacet = new GmfGraph!AlignmentFacet;
+	if (source){
+		alignmentFacet.alignment = GmfGraph!Alignment#END;
+	}
+	else {
+		alignmentFacet.alignment = GmfGraph!Alignment#BEGINNING;
+	}
+	diagramLabel.facets.add(alignmentFacet);
+	
+	// Specify how far the label should be from the line
+	var labelOffsetFacet = new GmfGraph!LabelOffsetFacet;
+	if(source){
+		if(up){
+			labelOffsetFacet.x =  0;
+			labelOffsetFacet.y =  12;
+		}else{
+			labelOffsetFacet.x =  -20;
+			labelOffsetFacet.y = -12;
+		}
+	}else{
+		if(up){
+			labelOffsetFacet.x =  20;
+			labelOffsetFacet.y = -12;
+		}else{
+			labelOffsetFacet.x =  3;
+			labelOffsetFacet.y =  12;
+		}
+	}
+	diagramLabel.facets.add(labelOffsetFacet);
+	
+	// Create the label/attribute mapping in the .gmfmap model
+	var featureLabelMapping = new GmfMap!FeatureLabelMapping;
+	featureLabelMapping.diagramLabel = diagramLabel;
+	
+	featureLabelMapping.features.add(self.eAllStructuralFeatures.
+		selectOne(sf|sf.name = attribute));
+		
+	featureLabelMapping.readOnly = false;
+	var linkMapping = GmfMap!LinkMapping.all.
+		selectOne(lm|lm.domainMetaElement = self);
+		
+	linkMapping.labelMappings.add(featureLabelMapping);
+
+}
+
+operation createFigureDescriptor(name : String) {
+	var figureDescriptor = new GmfGraph!FigureDescriptor;
+	figureDescriptor.name = name;
+	GmfGraph!FigureGallery.all.first().descriptors.add(figureDescriptor);
+	return figureDescriptor;
+}
+

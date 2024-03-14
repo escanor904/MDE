@@ -891,19 +891,22 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 		  (classConcreteAdjEClass, 
 		   source, 
 		   new String[] {
-			 "label", "name"
+			 "label", "name",
+			 "color", "255,255,128"
 		   });	
 		addAnnotation
 		  (methodConcreteAdjEClass, 
 		   source, 
 		   new String[] {
-			 "label", "methodName"
+			 "label", "methodName",
+			 "color", "255,255,128"
 		   });	
 		addAnnotation
 		  (attributeConcreteAdjEClass, 
 		   source, 
 		   new String[] {
-			 "label", "name"
+			 "label", "name",
+			 "color", "255,255,128"
 		   });
 	}
 
@@ -921,7 +924,9 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 		   new String[] {
 			 "source", "classSource",
 			 "target", "classTarget",
-			 "style", "dot",
+			 "source.decoration", "none",
+			 "target.decoration", "filledrhomb",
+			 "style", "solid",
 			 "width", "2"
 		   });	
 		addAnnotation
@@ -930,7 +935,9 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 		   new String[] {
 			 "source", "classSource",
 			 "target", "classTarget",
-			 "style", "dot",
+			 "source.decoration", "none",
+			 "target.decoration", "rhomb",
+			 "style", "solid",
 			 "width", "2"
 		   });	
 		addAnnotation
@@ -939,7 +946,9 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 		   new String[] {
 			 "source", "classSource",
 			 "target", "classTarget",
-			 "style", "dot",
+			 "source.decoration", "none",
+			 "target.decoration", "none",
+			 "style", "solid",
 			 "width", "2"
 		   });	
 		addAnnotation
@@ -948,7 +957,9 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 		   new String[] {
 			 "source", "classSource",
 			 "target", "classTarget",
-			 "style", "dot",
+			 "source.decoration", "none",
+			 "target.decoration", "arrow",
+			 "style", "solid",
 			 "width", "2"
 		   });
 	}

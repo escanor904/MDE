@@ -26,18 +26,22 @@ import concretemodel.ContainmentSdj;
 import concretemodel.GeneralizationAdj;
 import concretemodel.SharingAdj;
 import concretemodel.diagram.edit.parts.AssociationAdjEditPart;
+import concretemodel.diagram.edit.parts.AssociationAdjRoleSourceEditPart;
 import concretemodel.diagram.edit.parts.AttributeConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.AttributeConcreteAdjNameEditPart;
 import concretemodel.diagram.edit.parts.ClassConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.ClassConcreteAdjNameEditPart;
 import concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart;
 import concretemodel.diagram.edit.parts.ContainmentSdjEditPart;
+import concretemodel.diagram.edit.parts.ContainmentSdjRoleSourceEditPart;
 import concretemodel.diagram.edit.parts.GeneralizationAdjEditPart;
+import concretemodel.diagram.edit.parts.GeneralizationAdjRoleSourceEditPart;
 import concretemodel.diagram.edit.parts.MethodConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.MethodConcreteAdjMethodNameEditPart;
 import concretemodel.diagram.edit.parts.PackageConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.PackageConcreteAdjNameEditPart;
 import concretemodel.diagram.edit.parts.SharingAdjEditPart;
+import concretemodel.diagram.edit.parts.SharingAdjRoleSourceEditPart;
 import concretemodel.diagram.part.ConcretemodelDiagramEditorPlugin;
 import concretemodel.diagram.part.ConcretemodelVisualIDRegistry;
 import concretemodel.diagram.providers.ConcretemodelElementTypes;
@@ -294,12 +298,14 @@ public class ConcretemodelNavigatorLabelProvider extends LabelProvider
 	* @generated
 	*/
 	private String getContainmentSdj_4001Text(View view) {
-		ContainmentSdj domainModelElement = (ContainmentSdj) view.getElement();
-		if (domainModelElement != null) {
-			return domainModelElement.getRoleTarget();
+		IParser parser = ConcretemodelParserProvider.getParser(ConcretemodelElementTypes.ContainmentSdj_4001,
+				view.getElement() != null ? view.getElement() : view,
+				ConcretemodelVisualIDRegistry.getType(ContainmentSdjRoleSourceEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
 		} else {
-			ConcretemodelDiagramEditorPlugin.getInstance()
-					.logError("No domain element for view with visualID = " + 4001); //$NON-NLS-1$
+			ConcretemodelDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 6001); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -308,12 +314,14 @@ public class ConcretemodelNavigatorLabelProvider extends LabelProvider
 	* @generated
 	*/
 	private String getSharingAdj_4003Text(View view) {
-		SharingAdj domainModelElement = (SharingAdj) view.getElement();
-		if (domainModelElement != null) {
-			return domainModelElement.getRoleTarget();
+		IParser parser = ConcretemodelParserProvider.getParser(ConcretemodelElementTypes.SharingAdj_4003,
+				view.getElement() != null ? view.getElement() : view,
+				ConcretemodelVisualIDRegistry.getType(SharingAdjRoleSourceEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
 		} else {
-			ConcretemodelDiagramEditorPlugin.getInstance()
-					.logError("No domain element for view with visualID = " + 4003); //$NON-NLS-1$
+			ConcretemodelDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 6004); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -322,12 +330,14 @@ public class ConcretemodelNavigatorLabelProvider extends LabelProvider
 	* @generated
 	*/
 	private String getAssociationAdj_4005Text(View view) {
-		AssociationAdj domainModelElement = (AssociationAdj) view.getElement();
-		if (domainModelElement != null) {
-			return domainModelElement.getRoleTarget();
+		IParser parser = ConcretemodelParserProvider.getParser(ConcretemodelElementTypes.AssociationAdj_4005,
+				view.getElement() != null ? view.getElement() : view,
+				ConcretemodelVisualIDRegistry.getType(AssociationAdjRoleSourceEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
 		} else {
-			ConcretemodelDiagramEditorPlugin.getInstance()
-					.logError("No domain element for view with visualID = " + 4005); //$NON-NLS-1$
+			ConcretemodelDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 6008); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -336,12 +346,14 @@ public class ConcretemodelNavigatorLabelProvider extends LabelProvider
 	* @generated
 	*/
 	private String getGeneralizationAdj_4007Text(View view) {
-		GeneralizationAdj domainModelElement = (GeneralizationAdj) view.getElement();
-		if (domainModelElement != null) {
-			return domainModelElement.getRoleTarget();
+		IParser parser = ConcretemodelParserProvider.getParser(ConcretemodelElementTypes.GeneralizationAdj_4007,
+				view.getElement() != null ? view.getElement() : view,
+				ConcretemodelVisualIDRegistry.getType(GeneralizationAdjRoleSourceEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
 		} else {
-			ConcretemodelDiagramEditorPlugin.getInstance()
-					.logError("No domain element for view with visualID = " + 4007); //$NON-NLS-1$
+			ConcretemodelDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 6012); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}

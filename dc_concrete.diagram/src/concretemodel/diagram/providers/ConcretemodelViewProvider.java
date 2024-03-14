@@ -30,6 +30,7 @@ import org.eclipse.gmf.runtime.notation.DecorationNode;
 import org.eclipse.gmf.runtime.notation.Diagram;
 import org.eclipse.gmf.runtime.notation.Edge;
 import org.eclipse.gmf.runtime.notation.FontStyle;
+import org.eclipse.gmf.runtime.notation.Location;
 import org.eclipse.gmf.runtime.notation.MeasurementUnit;
 import org.eclipse.gmf.runtime.notation.Node;
 import org.eclipse.gmf.runtime.notation.NotationFactory;
@@ -46,6 +47,10 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.FontData;
 
 import concretemodel.diagram.edit.parts.AssociationAdjEditPart;
+import concretemodel.diagram.edit.parts.AssociationAdjMultiplicitySourceClassEditPart;
+import concretemodel.diagram.edit.parts.AssociationAdjMultiplicityTargetClassEditPart;
+import concretemodel.diagram.edit.parts.AssociationAdjRoleSourceEditPart;
+import concretemodel.diagram.edit.parts.AssociationAdjRoleTargetEditPart;
 import concretemodel.diagram.edit.parts.AttributeConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.AttributeConcreteAdjNameEditPart;
 import concretemodel.diagram.edit.parts.ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentEditPart;
@@ -54,12 +59,23 @@ import concretemodel.diagram.edit.parts.ClassConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.ClassConcreteAdjNameEditPart;
 import concretemodel.diagram.edit.parts.ClassDiagramAdjEditPart;
 import concretemodel.diagram.edit.parts.ContainmentSdjEditPart;
+import concretemodel.diagram.edit.parts.ContainmentSdjMultiplicitySourceClassEditPart;
+import concretemodel.diagram.edit.parts.ContainmentSdjRoleSourceEditPart;
+import concretemodel.diagram.edit.parts.ContainmentSdjRoleTargetEditPart;
 import concretemodel.diagram.edit.parts.GeneralizationAdjEditPart;
+import concretemodel.diagram.edit.parts.GeneralizationAdjMultiplicitySourceClassEditPart;
+import concretemodel.diagram.edit.parts.GeneralizationAdjMultiplicityTargetClassEditPart;
+import concretemodel.diagram.edit.parts.GeneralizationAdjRoleSourceEditPart;
+import concretemodel.diagram.edit.parts.GeneralizationAdjRoleTargetEditPart;
 import concretemodel.diagram.edit.parts.MethodConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.MethodConcreteAdjMethodNameEditPart;
 import concretemodel.diagram.edit.parts.PackageConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.PackageConcreteAdjNameEditPart;
 import concretemodel.diagram.edit.parts.SharingAdjEditPart;
+import concretemodel.diagram.edit.parts.SharingAdjMultiplicitySourceClassEditPart;
+import concretemodel.diagram.edit.parts.SharingAdjMultiplicityTargetClassEditPart;
+import concretemodel.diagram.edit.parts.SharingAdjRoleSourceEditPart;
+import concretemodel.diagram.edit.parts.SharingAdjRoleTargetEditPart;
 import concretemodel.diagram.part.ConcretemodelVisualIDRegistry;
 
 /**
@@ -90,10 +106,10 @@ public class ConcretemodelViewProvider extends AbstractProvider implements IView
 	*/
 	protected boolean provides(CreateViewForKindOperation op) {
 		/*
-				if (op.getViewKind() == Node.class)
-					return getNodeViewClass(op.getSemanticAdapter(), op.getContainerView(), op.getSemanticHint()) != null;
-				if (op.getViewKind() == Edge.class)
-					return getEdgeViewClass(op.getSemanticAdapter(), op.getContainerView(), op.getSemanticHint()) != null;
+		    if (op.getViewKind() == Node.class)
+		      return getNodeViewClass(op.getSemanticAdapter(), op.getContainerView(), op.getSemanticHint()) != null;
+		    if (op.getViewKind() == Edge.class)
+		      return getEdgeViewClass(op.getSemanticAdapter(), op.getContainerView(), op.getSemanticHint()) != null;
 		*/
 		return true;
 	}
@@ -292,7 +308,10 @@ public class ConcretemodelViewProvider extends AbstractProvider implements IView
 	*/
 	public Node createClassConcreteAdj_2002(EObject domainElement, View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
-		Shape node = NotationFactory.eINSTANCE.createShape();
+		Node node = NotationFactory.eINSTANCE.createNode();
+		node.getStyles().add(NotationFactory.eINSTANCE.createDescriptionStyle());
+		node.getStyles().add(NotationFactory.eINSTANCE.createFontStyle());
+		node.getStyles().add(NotationFactory.eINSTANCE.createLineStyle());
 		node.getStyles().add(NotationFactory.eINSTANCE.createHintedDiagramLinkStyle());
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
 		node.setType(ConcretemodelVisualIDRegistry.getType(ClassConcreteAdjEditPart.VISUAL_ID));
@@ -317,10 +336,6 @@ public class ConcretemodelViewProvider extends AbstractProvider implements IView
 					IPreferenceConstants.PREF_FONT_COLOR);
 			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB).intValue());
 		}
-		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(prefStore,
-				IPreferenceConstants.PREF_FILL_COLOR);
-		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
-				FigureUtilities.RGBToInteger(fillRGB));
 		Node label5004 = createLabel(node,
 				ConcretemodelVisualIDRegistry.getType(ClassConcreteAdjNameEditPart.VISUAL_ID));
 		createCompartment(node,
@@ -339,7 +354,10 @@ public class ConcretemodelViewProvider extends AbstractProvider implements IView
 	*/
 	public Node createAttributeConcreteAdj_3001(EObject domainElement, View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
-		Shape node = NotationFactory.eINSTANCE.createShape();
+		Node node = NotationFactory.eINSTANCE.createNode();
+		node.getStyles().add(NotationFactory.eINSTANCE.createDescriptionStyle());
+		node.getStyles().add(NotationFactory.eINSTANCE.createFontStyle());
+		node.getStyles().add(NotationFactory.eINSTANCE.createLineStyle());
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
 		node.setType(ConcretemodelVisualIDRegistry.getType(AttributeConcreteAdjEditPart.VISUAL_ID));
 		ViewUtil.insertChildView(containerView, node, index, persisted);
@@ -362,10 +380,6 @@ public class ConcretemodelViewProvider extends AbstractProvider implements IView
 					IPreferenceConstants.PREF_FONT_COLOR);
 			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB).intValue());
 		}
-		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(prefStore,
-				IPreferenceConstants.PREF_FILL_COLOR);
-		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
-				FigureUtilities.RGBToInteger(fillRGB));
 		Node label5002 = createLabel(node,
 				ConcretemodelVisualIDRegistry.getType(AttributeConcreteAdjNameEditPart.VISUAL_ID));
 		return node;
@@ -376,7 +390,10 @@ public class ConcretemodelViewProvider extends AbstractProvider implements IView
 	*/
 	public Node createMethodConcreteAdj_3002(EObject domainElement, View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
-		Shape node = NotationFactory.eINSTANCE.createShape();
+		Node node = NotationFactory.eINSTANCE.createNode();
+		node.getStyles().add(NotationFactory.eINSTANCE.createDescriptionStyle());
+		node.getStyles().add(NotationFactory.eINSTANCE.createFontStyle());
+		node.getStyles().add(NotationFactory.eINSTANCE.createLineStyle());
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
 		node.setType(ConcretemodelVisualIDRegistry.getType(MethodConcreteAdjEditPart.VISUAL_ID));
 		ViewUtil.insertChildView(containerView, node, index, persisted);
@@ -399,10 +416,6 @@ public class ConcretemodelViewProvider extends AbstractProvider implements IView
 					IPreferenceConstants.PREF_FONT_COLOR);
 			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB).intValue());
 		}
-		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(prefStore,
-				IPreferenceConstants.PREF_FILL_COLOR);
-		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
-				FigureUtilities.RGBToInteger(fillRGB));
 		Node label5003 = createLabel(node,
 				ConcretemodelVisualIDRegistry.getType(MethodConcreteAdjMethodNameEditPart.VISUAL_ID));
 		return node;
@@ -446,6 +459,24 @@ public class ConcretemodelViewProvider extends AbstractProvider implements IView
 		if (routing != null) {
 			ViewUtil.setStructuralFeatureValue(edge, NotationPackage.eINSTANCE.getRoutingStyle_Routing(), routing);
 		}
+		Node label6001 = createLabel(edge,
+				ConcretemodelVisualIDRegistry.getType(ContainmentSdjRoleSourceEditPart.VISUAL_ID));
+		label6001.setLayoutConstraint(NotationFactory.eINSTANCE.createLocation());
+		Location location6001 = (Location) label6001.getLayoutConstraint();
+		location6001.setX(0);
+		location6001.setY(12);
+		Node label6002 = createLabel(edge,
+				ConcretemodelVisualIDRegistry.getType(ContainmentSdjMultiplicitySourceClassEditPart.VISUAL_ID));
+		label6002.setLayoutConstraint(NotationFactory.eINSTANCE.createLocation());
+		Location location6002 = (Location) label6002.getLayoutConstraint();
+		location6002.setX(-20);
+		location6002.setY(-12);
+		Node label6003 = createLabel(edge,
+				ConcretemodelVisualIDRegistry.getType(ContainmentSdjRoleTargetEditPart.VISUAL_ID));
+		label6003.setLayoutConstraint(NotationFactory.eINSTANCE.createLocation());
+		Location location6003 = (Location) label6003.getLayoutConstraint();
+		location6003.setX(3);
+		location6003.setY(12);
 		return edge;
 	}
 
@@ -487,6 +518,30 @@ public class ConcretemodelViewProvider extends AbstractProvider implements IView
 		if (routing != null) {
 			ViewUtil.setStructuralFeatureValue(edge, NotationPackage.eINSTANCE.getRoutingStyle_Routing(), routing);
 		}
+		Node label6004 = createLabel(edge,
+				ConcretemodelVisualIDRegistry.getType(SharingAdjRoleSourceEditPart.VISUAL_ID));
+		label6004.setLayoutConstraint(NotationFactory.eINSTANCE.createLocation());
+		Location location6004 = (Location) label6004.getLayoutConstraint();
+		location6004.setX(0);
+		location6004.setY(12);
+		Node label6005 = createLabel(edge,
+				ConcretemodelVisualIDRegistry.getType(SharingAdjMultiplicitySourceClassEditPart.VISUAL_ID));
+		label6005.setLayoutConstraint(NotationFactory.eINSTANCE.createLocation());
+		Location location6005 = (Location) label6005.getLayoutConstraint();
+		location6005.setX(-20);
+		location6005.setY(-12);
+		Node label6006 = createLabel(edge,
+				ConcretemodelVisualIDRegistry.getType(SharingAdjRoleTargetEditPart.VISUAL_ID));
+		label6006.setLayoutConstraint(NotationFactory.eINSTANCE.createLocation());
+		Location location6006 = (Location) label6006.getLayoutConstraint();
+		location6006.setX(3);
+		location6006.setY(12);
+		Node label6007 = createLabel(edge,
+				ConcretemodelVisualIDRegistry.getType(SharingAdjMultiplicityTargetClassEditPart.VISUAL_ID));
+		label6007.setLayoutConstraint(NotationFactory.eINSTANCE.createLocation());
+		Location location6007 = (Location) label6007.getLayoutConstraint();
+		location6007.setX(20);
+		location6007.setY(-12);
 		return edge;
 	}
 
@@ -528,6 +583,30 @@ public class ConcretemodelViewProvider extends AbstractProvider implements IView
 		if (routing != null) {
 			ViewUtil.setStructuralFeatureValue(edge, NotationPackage.eINSTANCE.getRoutingStyle_Routing(), routing);
 		}
+		Node label6008 = createLabel(edge,
+				ConcretemodelVisualIDRegistry.getType(AssociationAdjRoleSourceEditPart.VISUAL_ID));
+		label6008.setLayoutConstraint(NotationFactory.eINSTANCE.createLocation());
+		Location location6008 = (Location) label6008.getLayoutConstraint();
+		location6008.setX(0);
+		location6008.setY(12);
+		Node label6009 = createLabel(edge,
+				ConcretemodelVisualIDRegistry.getType(AssociationAdjMultiplicitySourceClassEditPart.VISUAL_ID));
+		label6009.setLayoutConstraint(NotationFactory.eINSTANCE.createLocation());
+		Location location6009 = (Location) label6009.getLayoutConstraint();
+		location6009.setX(-20);
+		location6009.setY(-12);
+		Node label6010 = createLabel(edge,
+				ConcretemodelVisualIDRegistry.getType(AssociationAdjRoleTargetEditPart.VISUAL_ID));
+		label6010.setLayoutConstraint(NotationFactory.eINSTANCE.createLocation());
+		Location location6010 = (Location) label6010.getLayoutConstraint();
+		location6010.setX(3);
+		location6010.setY(12);
+		Node label6011 = createLabel(edge,
+				ConcretemodelVisualIDRegistry.getType(AssociationAdjMultiplicityTargetClassEditPart.VISUAL_ID));
+		label6011.setLayoutConstraint(NotationFactory.eINSTANCE.createLocation());
+		Location location6011 = (Location) label6011.getLayoutConstraint();
+		location6011.setX(20);
+		location6011.setY(-12);
 		return edge;
 	}
 
@@ -569,6 +648,30 @@ public class ConcretemodelViewProvider extends AbstractProvider implements IView
 		if (routing != null) {
 			ViewUtil.setStructuralFeatureValue(edge, NotationPackage.eINSTANCE.getRoutingStyle_Routing(), routing);
 		}
+		Node label6012 = createLabel(edge,
+				ConcretemodelVisualIDRegistry.getType(GeneralizationAdjRoleSourceEditPart.VISUAL_ID));
+		label6012.setLayoutConstraint(NotationFactory.eINSTANCE.createLocation());
+		Location location6012 = (Location) label6012.getLayoutConstraint();
+		location6012.setX(0);
+		location6012.setY(12);
+		Node label6013 = createLabel(edge,
+				ConcretemodelVisualIDRegistry.getType(GeneralizationAdjMultiplicitySourceClassEditPart.VISUAL_ID));
+		label6013.setLayoutConstraint(NotationFactory.eINSTANCE.createLocation());
+		Location location6013 = (Location) label6013.getLayoutConstraint();
+		location6013.setX(-20);
+		location6013.setY(-12);
+		Node label6014 = createLabel(edge,
+				ConcretemodelVisualIDRegistry.getType(GeneralizationAdjRoleTargetEditPart.VISUAL_ID));
+		label6014.setLayoutConstraint(NotationFactory.eINSTANCE.createLocation());
+		Location location6014 = (Location) label6014.getLayoutConstraint();
+		location6014.setX(3);
+		location6014.setY(12);
+		Node label6015 = createLabel(edge,
+				ConcretemodelVisualIDRegistry.getType(GeneralizationAdjMultiplicityTargetClassEditPart.VISUAL_ID));
+		label6015.setLayoutConstraint(NotationFactory.eINSTANCE.createLocation());
+		Location location6015 = (Location) label6015.getLayoutConstraint();
+		location6015.setX(20);
+		location6015.setY(-12);
 		return edge;
 	}
 

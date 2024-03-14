@@ -23,7 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see concretemodel.ConcretemodelPackage#getMethodConcreteAdj()
- * @model annotation="gmf.node label='methodName'"
+ * @model annotation="gmf.node label='methodName' color='255,255,128'"
  * @generated
  */
 public interface MethodConcreteAdj extends EObject {
