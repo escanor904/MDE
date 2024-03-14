@@ -24,4 +24,7 @@
 <fullyQualifiedTypeName name="concretemodel.RelationshipAdj"/>
 <fullyQualifiedTypeName name="abstractmodel.AbstractmodelFactory"/>
 <fullyQualifiedTypeName name="abstractmodel.ContainmentAdj"/>
+<fullyQualifiedTypeName name="abstractmodel.AssociationAdj"/>
+<fullyQualifiedTypeName name="abstractmodel.SharingAdj"/>
+<fullyQualifiedTypeName name="abstractmodel.GeneralizationAdj"/>
 </qualifiedTypeNameHistroy>
