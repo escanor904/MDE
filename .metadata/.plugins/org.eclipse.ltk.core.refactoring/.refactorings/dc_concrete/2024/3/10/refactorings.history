@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;dc_concrete/model/concrete(1).emf&apos; to &apos;concrete.emf&apos;" description="Rename resource &apos;concrete(1).emf&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="model/concrete(1).emf" name="concrete.emf" stamp="1709736068484" updateReferences="true"/>
-</session>

@@ -7,7 +7,7 @@ Bundle-ClassPath: .
 Bundle-Activator: concretemodel.diagram.part.ConcretemodelDiagramEditorPlugin
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Export-Package: concretemodel.diagram.edit.parts,
+Export-Package: concretemodel.diagram.edit.parts, 
  concretemodel.diagram.part,
  concretemodel.diagram.providers
 Require-Bundle: org.eclipse.core.runtime,

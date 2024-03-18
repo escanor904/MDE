@@ -13,8 +13,8 @@ import org.eclipse.gmf.runtime.diagram.ui.editparts.ITreeBranchEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
 import org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx;
 import org.eclipse.gmf.runtime.notation.View;
-
 import org.eclipse.swt.graphics.Color;
+
 import concretemodel.diagram.edit.policies.SharingAdjItemSemanticEditPolicy;
 
 /**
@@ -98,8 +98,8 @@ public class SharingAdjEditPart extends ConnectionNodeEditPart implements ITreeB
 	}
 
 	/**
-	* @generated
-	*/
+	 * @generated
+	 */
 	static final Color THIS_FORE = new Color(null, 0, 0, 0);
 
 }
