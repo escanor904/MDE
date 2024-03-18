@@ -47,6 +47,8 @@
       <details key="target.decoration" value="filledrhomb"/>
       <details key="style" value="solid"/>
       <details key="width" value="2"/>
+      <details key="color" value="0,0,0"/>
+      <details key="target.decorationSize" value="16"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SharingAdj" eSuperTypes="#//RelationshipAdj">
@@ -57,6 +59,8 @@
       <details key="target.decoration" value="rhomb"/>
       <details key="style" value="solid"/>
       <details key="width" value="2"/>
+      <details key="color" value="0,0,0"/>
+      <details key="target.decorationSize" value="16"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AssociationAdj" eSuperTypes="#//RelationshipAdj">
@@ -67,6 +71,7 @@
       <details key="target.decoration" value="none"/>
       <details key="style" value="solid"/>
       <details key="width" value="2"/>
+      <details key="color" value="0,0,0"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="GeneralizationAdj" eSuperTypes="#//RelationshipAdj">
@@ -77,6 +82,8 @@
       <details key="target.decoration" value="arrow"/>
       <details key="style" value="solid"/>
       <details key="width" value="2"/>
+      <details key="color" value="0,0,0"/>
+      <details key="target.decorationSize" value="16"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ClassConcreteAdj">

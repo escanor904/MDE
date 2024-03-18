@@ -927,7 +927,9 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 			 "source.decoration", "none",
 			 "target.decoration", "filledrhomb",
 			 "style", "solid",
-			 "width", "2"
+			 "width", "2",
+			 "color", "0,0,0",
+			 "target.decorationSize", "16"
 		   });	
 		addAnnotation
 		  (sharingAdjEClass, 
@@ -938,7 +940,9 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 			 "source.decoration", "none",
 			 "target.decoration", "rhomb",
 			 "style", "solid",
-			 "width", "2"
+			 "width", "2",
+			 "color", "0,0,0",
+			 "target.decorationSize", "16"
 		   });	
 		addAnnotation
 		  (associationAdjEClass, 
@@ -949,7 +953,8 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 			 "source.decoration", "none",
 			 "target.decoration", "none",
 			 "style", "solid",
-			 "width", "2"
+			 "width", "2",
+			 "color", "0,0,0"
 		   });	
 		addAnnotation
 		  (generalizationAdjEClass, 
@@ -960,7 +965,9 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 			 "source.decoration", "none",
 			 "target.decoration", "arrow",
 			 "style", "solid",
-			 "width", "2"
+			 "width", "2",
+			 "color", "0,0,0",
+			 "target.decorationSize", "16"
 		   });
 	}
 

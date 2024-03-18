@@ -63,16 +63,24 @@
       <accessors accessor="getFigureAttributeConcreteAdjLabelFigure" figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors name="ContainmentSdjFigure">
-      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ContainmentSdjFigure" lineWidth="2" targetDecoration="//@figures.0/@figures.0"/>
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ContainmentSdjFigure" lineWidth="2" targetDecoration="//@figures.0/@figures.0">
+        <foregroundColor xsi:type="gmfgraph:RGBColor"/>
+      </actualFigure>
     </descriptors>
     <descriptors name="SharingAdjFigure">
-      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="SharingAdjFigure" lineWidth="2" targetDecoration="//@figures.0/@figures.1"/>
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="SharingAdjFigure" lineWidth="2" targetDecoration="//@figures.0/@figures.1">
+        <foregroundColor xsi:type="gmfgraph:RGBColor"/>
+      </actualFigure>
     </descriptors>
     <descriptors name="AssociationAdjFigure">
-      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="AssociationAdjFigure" lineWidth="2"/>
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="AssociationAdjFigure" lineWidth="2">
+        <foregroundColor xsi:type="gmfgraph:RGBColor"/>
+      </actualFigure>
     </descriptors>
     <descriptors name="GeneralizationAdjFigure">
-      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="GeneralizationAdjFigure" lineWidth="2" targetDecoration="//@figures.0/@figures.2"/>
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="GeneralizationAdjFigure" lineWidth="2" targetDecoration="//@figures.0/@figures.2">
+        <foregroundColor xsi:type="gmfgraph:RGBColor"/>
+      </actualFigure>
     </descriptors>
     <descriptors name="ContainmentSdjroleSourceLabelFigure">
       <actualFigure xsi:type="gmfgraph:Label" name="ContainmentSdjroleSourceLabel" text="roleSource"/>

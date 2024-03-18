@@ -10,7 +10,7 @@ package concretemodel;
  *
  *
  * @see concretemodel.ConcretemodelPackage#getGeneralizationAdj()
- * @model annotation="gmf.link source='classSource' target='classTarget' source.decoration='none' target.decoration='arrow' style='solid' width='2'"
+ * @model annotation="gmf.link source='classSource' target='classTarget' source.decoration='none' target.decoration='arrow' style='solid' width='2' color='0,0,0' target.decorationSize='16'"
  * @generated
  */
 public interface GeneralizationAdj extends RelationshipAdj {

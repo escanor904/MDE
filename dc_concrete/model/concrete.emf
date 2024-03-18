@@ -39,21 +39,23 @@ abstract class RelationshipAdj{
 	ref ClassConcreteAdj classTarget;	
 }
 
-@gmf.link(source="classSource", target="classTarget", source.decoration="none", target.decoration = "filledrhomb", style="solid", width="2")
-class ContainmentSdj extends RelationshipAdj {	
+@gmf.link(source="classSource", target="classTarget", source.decoration="none", target.decoration = "filledrhomb", style="solid", width="2", color="0,0,0", target.decorationSize="16") // negro
+class ContainmentSdj extends RelationshipAdj { 
 }
 
-@gmf.link(source="classSource", target="classTarget", source.decoration="none", target.decoration = "rhomb", style="solid", width="2")
-class  SharingAdj extends RelationshipAdj {	
+@gmf.link(source="classSource", target="classTarget", source.decoration="none", target.decoration = "rhomb", style="solid", width="2", color="0,0,0", target.decorationSize="16") // negro
+class SharingAdj extends RelationshipAdj { 
 }
 
-@gmf.link(source="classSource", target="classTarget", source.decoration="none", target.decoration = "none", style="solid", width="2")
-class AssociationAdj extends RelationshipAdj {	
+@gmf.link(source="classSource", target="classTarget", source.decoration="none", target.decoration = "none", style="solid", width="2", color="0,0,0") // negro
+class AssociationAdj extends RelationshipAdj { 
 }
 
-@gmf.link(source="classSource", target="classTarget", source.decoration="none", target.decoration = "arrow", style="solid", width="2")
-class GeneralizationAdj extends RelationshipAdj {	
+@gmf.link(source="classSource", target="classTarget", source.decoration="none", target.decoration = "arrow", style="solid", width="2", color="0,0,0", target.decorationSize="16") // negro
+class GeneralizationAdj extends RelationshipAdj { 
 }
+
+
 
 
 @gmf.node(label="name", color="255,255,128")
