@@ -417,10 +417,12 @@ public class ModelFactoryModel {
 		packageRamPadre.getLstChildPackageAdj().add(newPaqueteAbstracta);
 	}
 
-	//
-	//
-	//
-	//
+	/**
+	 * obtiene el paquete padre
+	 * @param path
+	 * @param packageRaizRam
+	 * @return
+	 */
 	private PackageAdj obtenerPackagePadre(String path, PackageAdj packageRaizRam) {
 
 		char[] pathNotValidated = path.toCharArray();// src,main
