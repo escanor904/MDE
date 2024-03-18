@@ -5,7 +5,6 @@ package concretemodel.diagram.edit.parts;
 
 import org.eclipse.draw2d.ColorConstants;
 import org.eclipse.draw2d.Connection;
-import org.eclipse.draw2d.Graphics;
 import org.eclipse.draw2d.PolygonDecoration;
 import org.eclipse.draw2d.RotatableDecoration;
 import org.eclipse.draw2d.geometry.PointList;
@@ -77,8 +76,8 @@ public class SharingAdjEditPart extends ConnectionNodeEditPart implements ITreeB
 		}
 
 		/**
-		* @generated
-		*/
+		 * @generated
+		 */
 		private RotatableDecoration createTargetDecoration() {
 			PolygonDecoration df = new PolygonDecoration();
 			df.setFill(true);

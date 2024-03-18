@@ -63,10 +63,6 @@ import concretemodel.diagram.edit.parts.ContainmentSdjMultiplicitySourceClassEdi
 import concretemodel.diagram.edit.parts.ContainmentSdjRoleSourceEditPart;
 import concretemodel.diagram.edit.parts.ContainmentSdjRoleTargetEditPart;
 import concretemodel.diagram.edit.parts.GeneralizationAdjEditPart;
-import concretemodel.diagram.edit.parts.GeneralizationAdjMultiplicitySourceClassEditPart;
-import concretemodel.diagram.edit.parts.GeneralizationAdjMultiplicityTargetClassEditPart;
-import concretemodel.diagram.edit.parts.GeneralizationAdjRoleSourceEditPart;
-import concretemodel.diagram.edit.parts.GeneralizationAdjRoleTargetEditPart;
 import concretemodel.diagram.edit.parts.MethodConcreteAdjEditPart;
 import concretemodel.diagram.edit.parts.MethodConcreteAdjMethodNameEditPart;
 import concretemodel.diagram.edit.parts.PackageConcreteAdjEditPart;
@@ -341,11 +337,11 @@ public class ConcretemodelViewProvider extends AbstractProvider implements IView
 		createCompartment(node,
 				ConcretemodelVisualIDRegistry
 						.getType(ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentEditPart.VISUAL_ID),
-				true, false, false, false);
+				true, false, true, true);
 		createCompartment(node,
 				ConcretemodelVisualIDRegistry
 						.getType(ClassConcreteAdjClassConcreteAdjLstMethodConcreteAdjCompartmentEditPart.VISUAL_ID),
-				true, false, false, false);
+				true, false, true, true);
 		return node;
 	}
 

@@ -90,6 +90,7 @@ public interface ClassConcreteAdj extends EObject {
 	 * @return the value of the '<em>Lst Attribute Concrete Adj</em>' containment reference list.
 	 * @see concretemodel.ConcretemodelPackage#getClassConcreteAdj_LstAttributeConcreteAdj()
 	 * @model containment="true"
+	 *        annotation="gmf.compartment layout='list' collapsible='true'"
 	 * @generated
 	 */
 	EList<AttributeConcreteAdj> getLstAttributeConcreteAdj();
@@ -106,6 +107,7 @@ public interface ClassConcreteAdj extends EObject {
 	 * @return the value of the '<em>Lst Method Concrete Adj</em>' containment reference list.
 	 * @see concretemodel.ConcretemodelPackage#getClassConcreteAdj_LstMethodConcreteAdj()
 	 * @model containment="true"
+	 *        annotation="gmf.compartment layout='list' collapsible='true'"
 	 * @generated
 	 */
 	EList<MethodConcreteAdj> getLstMethodConcreteAdj();

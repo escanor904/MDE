@@ -976,11 +976,15 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 		  (getClassConcreteAdj_LstAttributeConcreteAdj(), 
 		   source, 
 		   new String[] {
+			 "layout", "list",
+			 "collapsible", "true"
 		   });	
 		addAnnotation
 		  (getClassConcreteAdj_LstMethodConcreteAdj(), 
 		   source, 
 		   new String[] {
+			 "layout", "list",
+			 "collapsible", "true"
 		   });
 	}
 

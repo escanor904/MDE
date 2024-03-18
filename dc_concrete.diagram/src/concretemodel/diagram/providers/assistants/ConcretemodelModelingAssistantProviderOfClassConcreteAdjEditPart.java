@@ -26,6 +26,18 @@ public class ConcretemodelModelingAssistantProviderOfClassConcreteAdjEditPart
 	*/
 	@Override
 
+	public List<IElementType> getTypesForPopupBar(IAdaptable host) {
+		List<IElementType> types = new ArrayList<IElementType>(2);
+		types.add(ConcretemodelElementTypes.AttributeConcreteAdj_3001);
+		types.add(ConcretemodelElementTypes.MethodConcreteAdj_3002);
+		return types;
+	}
+
+	/**
+	* @generated
+	*/
+	@Override
+
 	public List<IElementType> getRelTypesOnSource(IAdaptable source) {
 		IGraphicalEditPart sourceEditPart = (IGraphicalEditPart) source.getAdapter(IGraphicalEditPart.class);
 		return doGetRelTypesOnSource((ClassConcreteAdjEditPart) sourceEditPart);

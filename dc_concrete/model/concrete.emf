@@ -60,9 +60,9 @@ class GeneralizationAdj extends RelationshipAdj {
 class ClassConcreteAdj{
 	attr String name;
 	attr String path;
-	@gmf.compartment
+	@gmf.compartment(layout="list",collapsible="true")
 	val AttributeConcreteAdj [*] lstAttributeConcreteAdj;
-	@gmf.compartment
+	@gmf.compartment(layout="list",collapsible="true")
 	val MethodConcreteAdj [*] lstMethodConcreteAdj;
 }
 

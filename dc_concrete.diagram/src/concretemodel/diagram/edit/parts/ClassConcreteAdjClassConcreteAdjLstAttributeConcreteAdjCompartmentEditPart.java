@@ -4,10 +4,12 @@
 package concretemodel.diagram.edit.parts;
 
 import org.eclipse.draw2d.IFigure;
+import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.gef.EditPart;
 import org.eclipse.gef.EditPolicy;
 import org.eclipse.gef.Request;
 import org.eclipse.gmf.runtime.diagram.core.edithelpers.CreateElementRequestAdapter;
+import org.eclipse.gmf.runtime.diagram.ui.editparts.ListCompartmentEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeCompartmentEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.DragDropEditPolicy;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
@@ -30,7 +32,7 @@ import concretemodel.diagram.providers.ConcretemodelElementTypes;
  * @generated
  */
 public class ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentEditPart
-		extends ShapeCompartmentEditPart {
+		extends ListCompartmentEditPart {
 
 	/**
 	* @generated
@@ -42,6 +44,13 @@ public class ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentE
 	*/
 	public ClassConcreteAdjClassConcreteAdjLstAttributeConcreteAdjCompartmentEditPart(View view) {
 		super(view);
+	}
+
+	/**
+	* @generated
+	*/
+	protected boolean hasModelChildrenChanged(Notification evt) {
+		return false;
 	}
 
 	/**
