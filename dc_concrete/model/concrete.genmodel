@@ -17,6 +17,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//ProjectAdj/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//ProjectAdj/path"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//ProjectAdj/lstClassDiagramAdj"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//ProjectAdj/lstAttributeTypeConcreteAdj"/>
     </genClasses>
     <genClasses ecoreClass="concrete.ecore#//ClassDiagramAdj">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//ClassDiagramAdj/name"/>

@@ -175,7 +175,7 @@ public class ModelFactoryModel {
 			// creamos el paquete raiz por defecto
 			PackageAdj packageRaizAdj = AbstractmodelFactory.eINSTANCE.createPackageAdj();
 			packageRaizAdj.setName(projectAdjConcreta.getName());
-			packageRaizAdj.setPath("/" + projectAdjConcreta.getName());
+			packageRaizAdj.setPath(projectAdjConcreta.getPath());
 
 			proyectoAdjAbstracta.getLstPackageAdj().add(packageRaizAdj);
 
@@ -201,8 +201,11 @@ public class ModelFactoryModel {
 		saveAbstracta();
 	}
 
-	//
-	//
+	/**
+	 * Crea las relaciones hacia el modelo abstracto
+	 * @param relationAdjConcreta
+	 * @param packageRaizRam
+	 */
 	private void crearRelacion(RelationshipAdj relationAdjConcreta, abstractmodel.PackageAdj packageRaizRam) {
 		// relationAdjConcreta.
 		ClassConcreteAdj sourceConcreta = relationAdjConcreta.getClassSource();
@@ -342,8 +345,12 @@ public class ModelFactoryModel {
 
 	}
 
-	//
-	//
+	/**
+	 * Obtenemos una clase
+	 * @param claseABuscar
+	 * @param packageRaizRam
+	 * @return
+	 */
 	private abstractmodel.ClassAdj obtenerClase(ClassConcreteAdj claseABuscar,
 			abstractmodel.PackageAdj packageRaizRam) {
 
@@ -357,20 +364,28 @@ public class ModelFactoryModel {
 		return null;
 	}
 
-	//
-	//
-	//
-	//
+	/**
+	 * 
+	 * @param packageRaizAdj
+	 * @param classAdjConcreta
+	 */
 	private void crearClass(abstractmodel.PackageAdj packageRaizAdj, ClassConcreteAdj classAdjConcreta) {
 		abstractmodel.ClassAdj classAdjAbsracta = AbstractmodelFactory.eINSTANCE.createClassAdj();
-		// classAdjAbsracta.setDescription(classAdjConcreta.getDescription());
-		// classAdjAbsracta.setIsAbstract(classAdjConcreta.isIsAbstract());
+		
 		classAdjAbsracta.setName(classAdjConcreta.getName());
-		classAdjAbsracta.setPathPackage(classAdjConcreta.getPath());
+		//se concatena el nombre del paquete raiz para tener el path completo
+		classAdjAbsracta.setPathPackage(packageRaizAdj.getName()+"/"+classAdjConcreta.getPath());
 
-		abstractmodel.PackageAdj paquetePadre = obtenerPackagePadre(classAdjAbsracta.getPathPackage(), packageRaizAdj);
-		paquetePadre.getLstClassAdj().add(classAdjAbsracta);
-
+		//Verificamos si el path es vacio, colocamos las clases en el paquete raiz
+		if (classAdjConcreta.getPath() == null || classAdjConcreta.getPath().equals("")) {
+			packageRaizAdj.getLstClassAdj().add(classAdjAbsracta);
+		}
+		else {
+			//buscamos el paquete padre con el path de la clase concreta
+			abstractmodel.PackageAdj paquetePadre = obtenerPackagePadre(classAdjConcreta.getPath(), packageRaizAdj);
+			paquetePadre.getLstClassAdj().add(classAdjAbsracta);
+		}
+		
 		for (AttributeConcreteAdj attributeAdjConcreta : classAdjConcreta.getLstAttributeConcreteAdj()) {
 			abstractmodel.AttributeAdj attributeAdjAbstracta = AbstractmodelFactory.eINSTANCE.createAttributeAdj();
 			attributeAdjAbstracta.setName(attributeAdjConcreta.getName());
@@ -387,6 +402,72 @@ public class ModelFactoryModel {
 		}
 	}
 
+	
+	/**
+	 * Crea la estructuracion de paquetes
+	 * @param packageConcreta
+	 * @param packageRaizAdj
+	 */
+	private void crearPaquete(PackageConcreteAdj packageConcreta, PackageAdj packageRaizAdj) {
+
+		PackageAdj newPaqueteAbstracta = null;
+		newPaqueteAbstracta = AbstractmodelFactory.eINSTANCE.createPackageAdj();
+		newPaqueteAbstracta.setName(packageConcreta.getName());
+
+		if (packageConcreta.getPath() == null || packageConcreta.getPath().equals("")) {
+			newPaqueteAbstracta.setPath(packageRaizAdj.getName());
+			packageRaizAdj.getLstChildPackageAdj().add(newPaqueteAbstracta);
+		}
+		else {
+			PackageAdj packageAdjPadre = obtenerPackagePadre(packageConcreta.getPath(), packageRaizAdj);// src/main
+			newPaqueteAbstracta.setPath(packageAdjPadre.getPath() + "/" + packageAdjPadre.getName());
+			packageAdjPadre.getLstChildPackageAdj().add(newPaqueteAbstracta);
+		}
+	
+	}
+
+	/**
+	 * obtiene el paquete padre dado el path y el paquete raíz
+	 * @param path
+	 * @param packageRaizAdj
+	 * @return
+	 */
+	private PackageAdj obtenerPackagePadre(String path, PackageAdj packageRaizAdj) {
+
+		String[] pathArray = path.split("/");
+		PackageAdj padre   = packageRaizAdj;
+		
+		for (int j = 0; j < pathArray.length; j++) {
+			padre = obtenerPaquete(pathArray[j], padre);
+		}
+
+		return padre;
+	}
+
+	/**
+	 * crea (si no existe) y obtiene un paquete dado su nombre y el paquete padre (paquete que lo contiene)
+	 * @param nameP
+	 * @param packageParentAdj
+	 * @return
+	 */
+	private PackageAdj obtenerPaquete(String nameP, PackageAdj packageParentAdj) {
+
+		for (PackageAdj pac : packageParentAdj.getLstChildPackageAdj()) {
+			if (pac.getName().equalsIgnoreCase(nameP)) {
+				return pac;
+			}
+		}
+		
+		PackageAdj packageAdj = AbstractmodelFactory.eINSTANCE.createPackageAdj();
+		packageAdj.setName(nameP);
+		packageAdj.setPath(packageParentAdj.getPath() + "/" + packageParentAdj.getName());
+		packageParentAdj.getLstChildPackageAdj().add(packageAdj);
+		return packageAdj;
+	}
+	
+	
+	
+	
 	//
 	//
 	// // -------------------------------- Tranformacion M2T de parte abstracta a
@@ -405,77 +486,8 @@ public class ModelFactoryModel {
 	//
 	//
 	//
-	private void crearPaquete(PackageConcreteAdj packageConcreta, PackageAdj packageRaizRam) {
-
-		PackageAdj newPaqueteAbstracta = null;
-		newPaqueteAbstracta = AbstractmodelFactory.eINSTANCE.createPackageAdj();
-		newPaqueteAbstracta.setName(packageConcreta.getName());
-		// ? operador ternario que equivale a if-else
-		newPaqueteAbstracta.setPath(packageConcreta.getPath() == null ? "" : packageConcreta.getPath());
-
-		PackageAdj packageRamPadre = obtenerPackagePadre(packageConcreta.getPath(), packageRaizRam);// src/main
-		packageRamPadre.getLstChildPackageAdj().add(newPaqueteAbstracta);
-	}
-
-	/**
-	 * obtiene el paquete padre
-	 * @param path
-	 * @param packageRaizRam
-	 * @return
-	 */
-	private PackageAdj obtenerPackagePadre(String path, PackageAdj packageRaizRam) {
-
-		char[] pathNotValidated = path.toCharArray();// src,main
-		String[] pathArray = null;
-
-		// validamos la ruta
-		if (path.length() > 3) {
-			if (pathNotValidated[1] == ':' && pathNotValidated[2] == '/' && pathNotValidated[3] == '/') {
-				// corta el arreglo quitandole la parte de ":\\"
-				char[] nuevoPathArray = new char[pathNotValidated.length - 4];
-				System.arraycopy(pathNotValidated, 4, nuevoPathArray, 0, nuevoPathArray.length);
-				String nuevoPath = new String(nuevoPathArray);
-				pathArray = nuevoPath.split("/");
-
-			} else {
-				pathArray = path.split("/");
-			}
-
-		} else {
-
-			pathArray = path.split("/");
-		}
-
-		System.out.println(pathArray.toString());
-
-		PackageAdj padre = packageRaizRam;
-		for (int j = 0; j < pathArray.length; j++) {
-			padre = obtenerPaquete(pathArray[j], padre);
-		}
-
-		return padre;
-	}
-
-	//
-	//
-	//
-	//
-	private PackageAdj obtenerPaquete(String nameP, PackageAdj packageParentAdj) {
-
-		if (nameP.equals(packageParentAdj.getName())) {
-
-		}
-		for (PackageAdj pac : packageParentAdj.getLstChildPackageAdj()) {
-			if (pac.getName().equalsIgnoreCase(nameP)) {
-				return pac;
-			}
-		}
-		PackageAdj packageAdj2 = AbstractmodelFactory.eINSTANCE.createPackageAdj();
-		packageAdj2.setName(nameP);
-		packageAdj2.setPath(packageParentAdj.getPath() + "/" + packageParentAdj.getName());
-		packageParentAdj.getLstChildPackageAdj().add(packageAdj2);
-		return packageAdj2;
-	}
+	
+	
 	//
 	//
 	//

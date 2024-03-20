@@ -18,6 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link concretemodel.ProjectAdj#getName <em>Name</em>}</li>
  *   <li>{@link concretemodel.ProjectAdj#getPath <em>Path</em>}</li>
  *   <li>{@link concretemodel.ProjectAdj#getLstClassDiagramAdj <em>Lst Class Diagram Adj</em>}</li>
+ *   <li>{@link concretemodel.ProjectAdj#getLstAttributeTypeConcreteAdj <em>Lst Attribute Type Concrete Adj</em>}</li>
  * </ul>
  *
  * @see concretemodel.ConcretemodelPackage#getProjectAdj()
@@ -92,5 +93,21 @@ public interface ProjectAdj extends EObject {
 	 * @generated
 	 */
 	EList<ClassDiagramAdj> getLstClassDiagramAdj();
+
+	/**
+	 * Returns the value of the '<em><b>Lst Attribute Type Concrete Adj</b></em>' containment reference list.
+	 * The list contents are of type {@link concretemodel.AttributeTypeConcreteAdj}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Lst Attribute Type Concrete Adj</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Lst Attribute Type Concrete Adj</em>' containment reference list.
+	 * @see concretemodel.ConcretemodelPackage#getProjectAdj_LstAttributeTypeConcreteAdj()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<AttributeTypeConcreteAdj> getLstAttributeTypeConcreteAdj();
 
 } // ProjectAdj

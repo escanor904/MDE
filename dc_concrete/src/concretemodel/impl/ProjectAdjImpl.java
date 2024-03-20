@@ -2,6 +2,7 @@
  */
 package concretemodel.impl;
 
+import concretemodel.AttributeTypeConcreteAdj;
 import concretemodel.ClassDiagramAdj;
 import concretemodel.ConcretemodelPackage;
 import concretemodel.ProjectAdj;
@@ -33,6 +34,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link concretemodel.impl.ProjectAdjImpl#getName <em>Name</em>}</li>
  *   <li>{@link concretemodel.impl.ProjectAdjImpl#getPath <em>Path</em>}</li>
  *   <li>{@link concretemodel.impl.ProjectAdjImpl#getLstClassDiagramAdj <em>Lst Class Diagram Adj</em>}</li>
+ *   <li>{@link concretemodel.impl.ProjectAdjImpl#getLstAttributeTypeConcreteAdj <em>Lst Attribute Type Concrete Adj</em>}</li>
  * </ul>
  *
  * @generated
@@ -87,6 +89,16 @@ public class ProjectAdjImpl extends EObjectImpl implements ProjectAdj {
 	 * @ordered
 	 */
 	protected EList<ClassDiagramAdj> lstClassDiagramAdj;
+
+	/**
+	 * The cached value of the '{@link #getLstAttributeTypeConcreteAdj() <em>Lst Attribute Type Concrete Adj</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLstAttributeTypeConcreteAdj()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<AttributeTypeConcreteAdj> lstAttributeTypeConcreteAdj;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -166,11 +178,25 @@ public class ProjectAdjImpl extends EObjectImpl implements ProjectAdj {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<AttributeTypeConcreteAdj> getLstAttributeTypeConcreteAdj() {
+		if (lstAttributeTypeConcreteAdj == null) {
+			lstAttributeTypeConcreteAdj = new EObjectContainmentEList<AttributeTypeConcreteAdj>(AttributeTypeConcreteAdj.class, this, ConcretemodelPackage.PROJECT_ADJ__LST_ATTRIBUTE_TYPE_CONCRETE_ADJ);
+		}
+		return lstAttributeTypeConcreteAdj;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case ConcretemodelPackage.PROJECT_ADJ__LST_CLASS_DIAGRAM_ADJ:
 				return ((InternalEList<?>)getLstClassDiagramAdj()).basicRemove(otherEnd, msgs);
+			case ConcretemodelPackage.PROJECT_ADJ__LST_ATTRIBUTE_TYPE_CONCRETE_ADJ:
+				return ((InternalEList<?>)getLstAttributeTypeConcreteAdj()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -189,6 +215,8 @@ public class ProjectAdjImpl extends EObjectImpl implements ProjectAdj {
 				return getPath();
 			case ConcretemodelPackage.PROJECT_ADJ__LST_CLASS_DIAGRAM_ADJ:
 				return getLstClassDiagramAdj();
+			case ConcretemodelPackage.PROJECT_ADJ__LST_ATTRIBUTE_TYPE_CONCRETE_ADJ:
+				return getLstAttributeTypeConcreteAdj();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -212,6 +240,10 @@ public class ProjectAdjImpl extends EObjectImpl implements ProjectAdj {
 				getLstClassDiagramAdj().clear();
 				getLstClassDiagramAdj().addAll((Collection<? extends ClassDiagramAdj>)newValue);
 				return;
+			case ConcretemodelPackage.PROJECT_ADJ__LST_ATTRIBUTE_TYPE_CONCRETE_ADJ:
+				getLstAttributeTypeConcreteAdj().clear();
+				getLstAttributeTypeConcreteAdj().addAll((Collection<? extends AttributeTypeConcreteAdj>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -233,6 +265,9 @@ public class ProjectAdjImpl extends EObjectImpl implements ProjectAdj {
 			case ConcretemodelPackage.PROJECT_ADJ__LST_CLASS_DIAGRAM_ADJ:
 				getLstClassDiagramAdj().clear();
 				return;
+			case ConcretemodelPackage.PROJECT_ADJ__LST_ATTRIBUTE_TYPE_CONCRETE_ADJ:
+				getLstAttributeTypeConcreteAdj().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -251,6 +286,8 @@ public class ProjectAdjImpl extends EObjectImpl implements ProjectAdj {
 				return PATH_EDEFAULT == null ? path != null : !PATH_EDEFAULT.equals(path);
 			case ConcretemodelPackage.PROJECT_ADJ__LST_CLASS_DIAGRAM_ADJ:
 				return lstClassDiagramAdj != null && !lstClassDiagramAdj.isEmpty();
+			case ConcretemodelPackage.PROJECT_ADJ__LST_ATTRIBUTE_TYPE_CONCRETE_ADJ:
+				return lstAttributeTypeConcreteAdj != null && !lstAttributeTypeConcreteAdj.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

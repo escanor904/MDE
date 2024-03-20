@@ -260,6 +260,15 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getProjectAdj_LstAttributeTypeConcreteAdj() {
+		return (EReference)projectAdjEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getClassDiagramAdj() {
 		return classDiagramAdjEClass;
 	}
@@ -668,6 +677,7 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 		createEAttribute(projectAdjEClass, PROJECT_ADJ__NAME);
 		createEAttribute(projectAdjEClass, PROJECT_ADJ__PATH);
 		createEReference(projectAdjEClass, PROJECT_ADJ__LST_CLASS_DIAGRAM_ADJ);
+		createEReference(projectAdjEClass, PROJECT_ADJ__LST_ATTRIBUTE_TYPE_CONCRETE_ADJ);
 
 		classDiagramAdjEClass = createEClass(CLASS_DIAGRAM_ADJ);
 		createEAttribute(classDiagramAdjEClass, CLASS_DIAGRAM_ADJ__NAME);
@@ -767,6 +777,7 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 		initEAttribute(getProjectAdj_Name(), ecorePackage.getEString(), "name", null, 0, 1, ProjectAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProjectAdj_Path(), ecorePackage.getEString(), "path", null, 0, 1, ProjectAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProjectAdj_LstClassDiagramAdj(), this.getClassDiagramAdj(), null, "lstClassDiagramAdj", null, 0, -1, ProjectAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getProjectAdj_LstAttributeTypeConcreteAdj(), this.getAttributeTypeConcreteAdj(), null, "lstAttributeTypeConcreteAdj", null, 0, -1, ProjectAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(classDiagramAdjEClass, ClassDiagramAdj.class, "ClassDiagramAdj", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getClassDiagramAdj_Name(), ecorePackage.getEString(), "name", null, 0, 1, ClassDiagramAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

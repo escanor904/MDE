@@ -6,10 +6,11 @@ class ModelFactoryConcrete {
 	val ProjectAdj [*] listProjects;
 }
 
-class ProjectAdj{
+class ProjectAdj {
 	attr String name;
 	attr String path;
-	val ClassDiagramAdj [*] lstClassDiagramAdj;	
+	val ClassDiagramAdj [*] lstClassDiagramAdj;
+	val AttributeTypeConcreteAdj [*] lstAttributeTypeConcreteAdj;
 }
 
 

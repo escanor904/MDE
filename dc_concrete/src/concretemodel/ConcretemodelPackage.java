@@ -122,13 +122,22 @@ public interface ConcretemodelPackage extends EPackage {
 	int PROJECT_ADJ__LST_CLASS_DIAGRAM_ADJ = 2;
 
 	/**
+	 * The feature id for the '<em><b>Lst Attribute Type Concrete Adj</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT_ADJ__LST_ATTRIBUTE_TYPE_CONCRETE_ADJ = 3;
+
+	/**
 	 * The number of structural features of the '<em>Project Adj</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROJECT_ADJ_FEATURE_COUNT = 3;
+	int PROJECT_ADJ_FEATURE_COUNT = 4;
 
 	/**
 	 * The meta object id for the '{@link concretemodel.impl.ClassDiagramAdjImpl <em>Class Diagram Adj</em>}' class.
@@ -911,6 +920,17 @@ public interface ConcretemodelPackage extends EPackage {
 	EReference getProjectAdj_LstClassDiagramAdj();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link concretemodel.ProjectAdj#getLstAttributeTypeConcreteAdj <em>Lst Attribute Type Concrete Adj</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Lst Attribute Type Concrete Adj</em>'.
+	 * @see concretemodel.ProjectAdj#getLstAttributeTypeConcreteAdj()
+	 * @see #getProjectAdj()
+	 * @generated
+	 */
+	EReference getProjectAdj_LstAttributeTypeConcreteAdj();
+
+	/**
 	 * Returns the meta object for class '{@link concretemodel.ClassDiagramAdj <em>Class Diagram Adj</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1432,6 +1452,14 @@ public interface ConcretemodelPackage extends EPackage {
 		 * @generated
 		 */
 		EReference PROJECT_ADJ__LST_CLASS_DIAGRAM_ADJ = eINSTANCE.getProjectAdj_LstClassDiagramAdj();
+
+		/**
+		 * The meta object literal for the '<em><b>Lst Attribute Type Concrete Adj</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PROJECT_ADJ__LST_ATTRIBUTE_TYPE_CONCRETE_ADJ = eINSTANCE.getProjectAdj_LstAttributeTypeConcreteAdj();
 
 		/**
 		 * The meta object literal for the '{@link concretemodel.impl.ClassDiagramAdjImpl <em>Class Diagram Adj</em>}' class.

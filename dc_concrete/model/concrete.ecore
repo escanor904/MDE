@@ -11,6 +11,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="path" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="lstClassDiagramAdj" upperBound="-1"
         eType="#//ClassDiagramAdj" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstAttributeTypeConcreteAdj"
+        upperBound="-1" eType="#//AttributeTypeConcreteAdj" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ClassDiagramAdj">
     <eAnnotations source="gmf.diagram"/>
