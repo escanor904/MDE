@@ -18,7 +18,7 @@ public class AssociationAdjItemSemanticEditPolicy extends ConcretemodelBaseItemS
 	* @generated
 	*/
 	public AssociationAdjItemSemanticEditPolicy() {
-		super(ConcretemodelElementTypes.AssociationAdj_4005);
+		super(ConcretemodelElementTypes.AssociationAdj_4003);
 	}
 
 	/**

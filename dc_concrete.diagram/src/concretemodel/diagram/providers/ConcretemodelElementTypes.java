@@ -87,16 +87,16 @@ public class ConcretemodelElementTypes {
 	/**
 	* @generated
 	*/
-	public static final IElementType SharingAdj_4003 = getElementType("dc_concrete.diagram.SharingAdj_4003"); //$NON-NLS-1$
+	public static final IElementType SharingAdj_4002 = getElementType("dc_concrete.diagram.SharingAdj_4002"); //$NON-NLS-1$
 	/**
 	* @generated
 	*/
-	public static final IElementType AssociationAdj_4005 = getElementType("dc_concrete.diagram.AssociationAdj_4005"); //$NON-NLS-1$
+	public static final IElementType AssociationAdj_4003 = getElementType("dc_concrete.diagram.AssociationAdj_4003"); //$NON-NLS-1$
 	/**
 	* @generated
 	*/
-	public static final IElementType GeneralizationAdj_4007 = getElementType(
-			"dc_concrete.diagram.GeneralizationAdj_4007"); //$NON-NLS-1$
+	public static final IElementType GeneralizationAdj_4004 = getElementType(
+			"dc_concrete.diagram.GeneralizationAdj_4004"); //$NON-NLS-1$
 
 	/**
 	* @generated
@@ -148,11 +148,11 @@ public class ConcretemodelElementTypes {
 
 			elements.put(ContainmentSdj_4001, ConcretemodelPackage.eINSTANCE.getContainmentSdj());
 
-			elements.put(SharingAdj_4003, ConcretemodelPackage.eINSTANCE.getSharingAdj());
+			elements.put(SharingAdj_4002, ConcretemodelPackage.eINSTANCE.getSharingAdj());
 
-			elements.put(AssociationAdj_4005, ConcretemodelPackage.eINSTANCE.getAssociationAdj());
+			elements.put(AssociationAdj_4003, ConcretemodelPackage.eINSTANCE.getAssociationAdj());
 
-			elements.put(GeneralizationAdj_4007, ConcretemodelPackage.eINSTANCE.getGeneralizationAdj());
+			elements.put(GeneralizationAdj_4004, ConcretemodelPackage.eINSTANCE.getGeneralizationAdj());
 		}
 		return (ENamedElement) elements.get(type);
 	}
@@ -176,9 +176,9 @@ public class ConcretemodelElementTypes {
 			KNOWN_ELEMENT_TYPES.add(AttributeConcreteAdj_3001);
 			KNOWN_ELEMENT_TYPES.add(MethodConcreteAdj_3002);
 			KNOWN_ELEMENT_TYPES.add(ContainmentSdj_4001);
-			KNOWN_ELEMENT_TYPES.add(SharingAdj_4003);
-			KNOWN_ELEMENT_TYPES.add(AssociationAdj_4005);
-			KNOWN_ELEMENT_TYPES.add(GeneralizationAdj_4007);
+			KNOWN_ELEMENT_TYPES.add(SharingAdj_4002);
+			KNOWN_ELEMENT_TYPES.add(AssociationAdj_4003);
+			KNOWN_ELEMENT_TYPES.add(GeneralizationAdj_4004);
 		}
 		return KNOWN_ELEMENT_TYPES.contains(elementType);
 	}
@@ -201,11 +201,11 @@ public class ConcretemodelElementTypes {
 		case ContainmentSdjEditPart.VISUAL_ID:
 			return ContainmentSdj_4001;
 		case SharingAdjEditPart.VISUAL_ID:
-			return SharingAdj_4003;
+			return SharingAdj_4002;
 		case AssociationAdjEditPart.VISUAL_ID:
-			return AssociationAdj_4005;
+			return AssociationAdj_4003;
 		case GeneralizationAdjEditPart.VISUAL_ID:
-			return GeneralizationAdj_4007;
+			return GeneralizationAdj_4004;
 		}
 		return null;
 	}

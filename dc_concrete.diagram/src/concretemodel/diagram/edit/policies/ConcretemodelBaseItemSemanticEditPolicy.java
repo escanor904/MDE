@@ -323,25 +323,25 @@ public class ConcretemodelBaseItemSemanticEditPolicy extends SemanticEditPolicy 
 		/**
 		 * @generated
 		 */
-		public boolean canCreateSharingAdj_4003(ClassDiagramAdj container, ClassConcreteAdj source,
+		public boolean canCreateSharingAdj_4002(ClassDiagramAdj container, ClassConcreteAdj source,
 				ClassConcreteAdj target) {
-			return canExistSharingAdj_4003(container, null, source, target);
+			return canExistSharingAdj_4002(container, null, source, target);
 		}
 
 		/**
 		 * @generated
 		 */
-		public boolean canCreateAssociationAdj_4005(ClassDiagramAdj container, ClassConcreteAdj source,
+		public boolean canCreateAssociationAdj_4003(ClassDiagramAdj container, ClassConcreteAdj source,
 				ClassConcreteAdj target) {
-			return canExistAssociationAdj_4005(container, null, source, target);
+			return canExistAssociationAdj_4003(container, null, source, target);
 		}
 
 		/**
 		 * @generated
 		 */
-		public boolean canCreateGeneralizationAdj_4007(ClassDiagramAdj container, ClassConcreteAdj source,
+		public boolean canCreateGeneralizationAdj_4004(ClassDiagramAdj container, ClassConcreteAdj source,
 				ClassConcreteAdj target) {
-			return canExistGeneralizationAdj_4007(container, null, source, target);
+			return canExistGeneralizationAdj_4004(container, null, source, target);
 		}
 
 		/**
@@ -355,7 +355,7 @@ public class ConcretemodelBaseItemSemanticEditPolicy extends SemanticEditPolicy 
 		/**
 		* @generated
 		*/
-		public boolean canExistSharingAdj_4003(ClassDiagramAdj container, SharingAdj linkInstance,
+		public boolean canExistSharingAdj_4002(ClassDiagramAdj container, SharingAdj linkInstance,
 				ClassConcreteAdj source, ClassConcreteAdj target) {
 			return true;
 		}
@@ -363,7 +363,7 @@ public class ConcretemodelBaseItemSemanticEditPolicy extends SemanticEditPolicy 
 		/**
 		* @generated
 		*/
-		public boolean canExistAssociationAdj_4005(ClassDiagramAdj container, AssociationAdj linkInstance,
+		public boolean canExistAssociationAdj_4003(ClassDiagramAdj container, AssociationAdj linkInstance,
 				ClassConcreteAdj source, ClassConcreteAdj target) {
 			return true;
 		}
@@ -371,7 +371,7 @@ public class ConcretemodelBaseItemSemanticEditPolicy extends SemanticEditPolicy 
 		/**
 		* @generated
 		*/
-		public boolean canExistGeneralizationAdj_4007(ClassDiagramAdj container, GeneralizationAdj linkInstance,
+		public boolean canExistGeneralizationAdj_4004(ClassDiagramAdj container, GeneralizationAdj linkInstance,
 				ClassConcreteAdj source, ClassConcreteAdj target) {
 			return true;
 		}

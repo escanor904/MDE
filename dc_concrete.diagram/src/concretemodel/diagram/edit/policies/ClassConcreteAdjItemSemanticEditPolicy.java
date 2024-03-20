@@ -177,13 +177,13 @@ public class ClassConcreteAdjItemSemanticEditPolicy extends ConcretemodelBaseIte
 		if (ConcretemodelElementTypes.ContainmentSdj_4001 == req.getElementType()) {
 			return getGEFWrapper(new ContainmentSdjCreateCommand(req, req.getSource(), req.getTarget()));
 		}
-		if (ConcretemodelElementTypes.SharingAdj_4003 == req.getElementType()) {
+		if (ConcretemodelElementTypes.SharingAdj_4002 == req.getElementType()) {
 			return getGEFWrapper(new SharingAdjCreateCommand(req, req.getSource(), req.getTarget()));
 		}
-		if (ConcretemodelElementTypes.AssociationAdj_4005 == req.getElementType()) {
+		if (ConcretemodelElementTypes.AssociationAdj_4003 == req.getElementType()) {
 			return getGEFWrapper(new AssociationAdjCreateCommand(req, req.getSource(), req.getTarget()));
 		}
-		if (ConcretemodelElementTypes.GeneralizationAdj_4007 == req.getElementType()) {
+		if (ConcretemodelElementTypes.GeneralizationAdj_4004 == req.getElementType()) {
 			return getGEFWrapper(new GeneralizationAdjCreateCommand(req, req.getSource(), req.getTarget()));
 		}
 		return null;
@@ -196,13 +196,13 @@ public class ClassConcreteAdjItemSemanticEditPolicy extends ConcretemodelBaseIte
 		if (ConcretemodelElementTypes.ContainmentSdj_4001 == req.getElementType()) {
 			return getGEFWrapper(new ContainmentSdjCreateCommand(req, req.getSource(), req.getTarget()));
 		}
-		if (ConcretemodelElementTypes.SharingAdj_4003 == req.getElementType()) {
+		if (ConcretemodelElementTypes.SharingAdj_4002 == req.getElementType()) {
 			return getGEFWrapper(new SharingAdjCreateCommand(req, req.getSource(), req.getTarget()));
 		}
-		if (ConcretemodelElementTypes.AssociationAdj_4005 == req.getElementType()) {
+		if (ConcretemodelElementTypes.AssociationAdj_4003 == req.getElementType()) {
 			return getGEFWrapper(new AssociationAdjCreateCommand(req, req.getSource(), req.getTarget()));
 		}
-		if (ConcretemodelElementTypes.GeneralizationAdj_4007 == req.getElementType()) {
+		if (ConcretemodelElementTypes.GeneralizationAdj_4004 == req.getElementType()) {
 			return getGEFWrapper(new GeneralizationAdjCreateCommand(req, req.getSource(), req.getTarget()));
 		}
 		return null;

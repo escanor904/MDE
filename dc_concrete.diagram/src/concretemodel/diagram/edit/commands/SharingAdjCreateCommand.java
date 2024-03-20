@@ -71,7 +71,7 @@ public class SharingAdjCreateCommand extends EditElementCommand {
 		if (getContainer() == null) {
 			return false;
 		}
-		return ConcretemodelBaseItemSemanticEditPolicy.getLinkConstraints().canCreateSharingAdj_4003(getContainer(),
+		return ConcretemodelBaseItemSemanticEditPolicy.getLinkConstraints().canCreateSharingAdj_4002(getContainer(),
 				getSource(), getTarget());
 	}
 

@@ -2,6 +2,7 @@
  */
 package concretemodel.impl;
 
+import concretemodel.AccessModifier;
 import concretemodel.AttributeConcreteAdj;
 import concretemodel.AttributeTypeConcreteAdj;
 import concretemodel.ConcretemodelPackage;
@@ -24,6 +25,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <ul>
  *   <li>{@link concretemodel.impl.AttributeConcreteAdjImpl#getName <em>Name</em>}</li>
  *   <li>{@link concretemodel.impl.AttributeConcreteAdjImpl#getValue <em>Value</em>}</li>
+ *   <li>{@link concretemodel.impl.AttributeConcreteAdjImpl#getAccessModifier <em>Access Modifier</em>}</li>
  *   <li>{@link concretemodel.impl.AttributeConcreteAdjImpl#getAttributeTypeConcreteAdj <em>Attribute Type Concrete Adj</em>}</li>
  * </ul>
  *
@@ -69,6 +71,26 @@ public class AttributeConcreteAdjImpl extends EObjectImpl implements AttributeCo
 	 * @ordered
 	 */
 	protected String value = VALUE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getAccessModifier() <em>Access Modifier</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAccessModifier()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final AccessModifier ACCESS_MODIFIER_EDEFAULT = AccessModifier.PUBLIC;
+
+	/**
+	 * The cached value of the '{@link #getAccessModifier() <em>Access Modifier</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAccessModifier()
+	 * @generated
+	 * @ordered
+	 */
+	protected AccessModifier accessModifier = ACCESS_MODIFIER_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getAttributeTypeConcreteAdj() <em>Attribute Type Concrete Adj</em>}' reference.
@@ -146,6 +168,27 @@ public class AttributeConcreteAdjImpl extends EObjectImpl implements AttributeCo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public AccessModifier getAccessModifier() {
+		return accessModifier;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAccessModifier(AccessModifier newAccessModifier) {
+		AccessModifier oldAccessModifier = accessModifier;
+		accessModifier = newAccessModifier == null ? ACCESS_MODIFIER_EDEFAULT : newAccessModifier;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ConcretemodelPackage.ATTRIBUTE_CONCRETE_ADJ__ACCESS_MODIFIER, oldAccessModifier, accessModifier));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public AttributeTypeConcreteAdj getAttributeTypeConcreteAdj() {
 		if (attributeTypeConcreteAdj != null && attributeTypeConcreteAdj.eIsProxy()) {
 			InternalEObject oldAttributeTypeConcreteAdj = (InternalEObject)attributeTypeConcreteAdj;
@@ -191,6 +234,8 @@ public class AttributeConcreteAdjImpl extends EObjectImpl implements AttributeCo
 				return getName();
 			case ConcretemodelPackage.ATTRIBUTE_CONCRETE_ADJ__VALUE:
 				return getValue();
+			case ConcretemodelPackage.ATTRIBUTE_CONCRETE_ADJ__ACCESS_MODIFIER:
+				return getAccessModifier();
 			case ConcretemodelPackage.ATTRIBUTE_CONCRETE_ADJ__ATTRIBUTE_TYPE_CONCRETE_ADJ:
 				if (resolve) return getAttributeTypeConcreteAdj();
 				return basicGetAttributeTypeConcreteAdj();
@@ -211,6 +256,9 @@ public class AttributeConcreteAdjImpl extends EObjectImpl implements AttributeCo
 				return;
 			case ConcretemodelPackage.ATTRIBUTE_CONCRETE_ADJ__VALUE:
 				setValue((String)newValue);
+				return;
+			case ConcretemodelPackage.ATTRIBUTE_CONCRETE_ADJ__ACCESS_MODIFIER:
+				setAccessModifier((AccessModifier)newValue);
 				return;
 			case ConcretemodelPackage.ATTRIBUTE_CONCRETE_ADJ__ATTRIBUTE_TYPE_CONCRETE_ADJ:
 				setAttributeTypeConcreteAdj((AttributeTypeConcreteAdj)newValue);
@@ -233,6 +281,9 @@ public class AttributeConcreteAdjImpl extends EObjectImpl implements AttributeCo
 			case ConcretemodelPackage.ATTRIBUTE_CONCRETE_ADJ__VALUE:
 				setValue(VALUE_EDEFAULT);
 				return;
+			case ConcretemodelPackage.ATTRIBUTE_CONCRETE_ADJ__ACCESS_MODIFIER:
+				setAccessModifier(ACCESS_MODIFIER_EDEFAULT);
+				return;
 			case ConcretemodelPackage.ATTRIBUTE_CONCRETE_ADJ__ATTRIBUTE_TYPE_CONCRETE_ADJ:
 				setAttributeTypeConcreteAdj((AttributeTypeConcreteAdj)null);
 				return;
@@ -252,6 +303,8 @@ public class AttributeConcreteAdjImpl extends EObjectImpl implements AttributeCo
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case ConcretemodelPackage.ATTRIBUTE_CONCRETE_ADJ__VALUE:
 				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
+			case ConcretemodelPackage.ATTRIBUTE_CONCRETE_ADJ__ACCESS_MODIFIER:
+				return accessModifier != ACCESS_MODIFIER_EDEFAULT;
 			case ConcretemodelPackage.ATTRIBUTE_CONCRETE_ADJ__ATTRIBUTE_TYPE_CONCRETE_ADJ:
 				return attributeTypeConcreteAdj != null;
 		}
@@ -272,6 +325,8 @@ public class AttributeConcreteAdjImpl extends EObjectImpl implements AttributeCo
 		result.append(name);
 		result.append(", value: ");
 		result.append(value);
+		result.append(", accessModifier: ");
+		result.append(accessModifier);
 		result.append(')');
 		return result.toString();
 	}

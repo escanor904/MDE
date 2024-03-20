@@ -118,52 +118,6 @@ public class AbstractmodelItemProviderAdapterFactory extends AbstractmodelAdapte
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link abstractmodel.ClassTypeFactoryAdj} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ClassTypeFactoryAdjItemProvider classTypeFactoryAdjItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link abstractmodel.ClassTypeFactoryAdj}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createClassTypeFactoryAdjAdapter() {
-		if (classTypeFactoryAdjItemProvider == null) {
-			classTypeFactoryAdjItemProvider = new ClassTypeFactoryAdjItemProvider(this);
-		}
-
-		return classTypeFactoryAdjItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link abstractmodel.ClassTypeAdj} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ClassTypeAdjItemProvider classTypeAdjItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link abstractmodel.ClassTypeAdj}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createClassTypeAdjAdapter() {
-		if (classTypeAdjItemProvider == null) {
-			classTypeAdjItemProvider = new ClassTypeAdjItemProvider(this);
-		}
-
-		return classTypeAdjItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link abstractmodel.AttributeTypeFactoryAdj} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -517,8 +471,6 @@ public class AbstractmodelItemProviderAdapterFactory extends AbstractmodelAdapte
 	public void dispose() {
 		if (modelFactoryAbstractItemProvider != null) modelFactoryAbstractItemProvider.dispose();
 		if (projectAdjItemProvider != null) projectAdjItemProvider.dispose();
-		if (classTypeFactoryAdjItemProvider != null) classTypeFactoryAdjItemProvider.dispose();
-		if (classTypeAdjItemProvider != null) classTypeAdjItemProvider.dispose();
 		if (attributeTypeFactoryAdjItemProvider != null) attributeTypeFactoryAdjItemProvider.dispose();
 		if (attributeTypeAdjItemProvider != null) attributeTypeAdjItemProvider.dispose();
 		if (packageAdjItemProvider != null) packageAdjItemProvider.dispose();

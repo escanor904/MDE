@@ -63,6 +63,8 @@ class GeneralizationAdj extends RelationshipAdj {
 class ClassConcreteAdj{
 	attr String name;
 	attr String path;
+	attr AccessModifierClass accesModifierClass;
+	attr TypeClass tipeClass;
 	@gmf.compartment(layout="list",collapsible="true")
 	val AttributeConcreteAdj [*] lstAttributeConcreteAdj;
 	@gmf.compartment(layout="list",collapsible="true")
@@ -78,6 +80,7 @@ class MethodConcreteAdj{
 	val ParameterConcreteAdj [*] lstParameterConcreteAdj;
 }
 
+@gmf.node(label="name", color="255,255,128")
 class ParameterConcreteAdj{
 	attr String name;
 	ref AttributeTypeConcreteAdj AttributeTypeConcreteAdj; 
@@ -95,12 +98,34 @@ class AttributeTypeConcreteAdj{
 class AttributeConcreteAdj{
 	attr String name;
 	attr String value;
+	attr AccessModifier accessModifier;
 	ref AttributeTypeConcreteAdj attributeTypeConcreteAdj;
 }
 
 
 enum AccessModifier {	
-	PUBLIC=1;
-	PRIVATE=2;
-	PROTECTED=3;
+	public=1;
+	private=2;
+	protected=3;
+	static=4;
+	internal=5;
+	protected_internal=6;
 }
+
+enum AccessModifierClass {	
+	public=1;
+	internal=2;
+	protected=3;
+	protected_internal=4;
+	private=5;
+}
+
+enum TypeClass {	
+	regular=1;
+	abstrac=2;
+	sealed=3;
+	static=4;
+	generic=5;
+	
+}
+

@@ -85,6 +85,10 @@ public class ConcretemodelFactoryImpl extends EFactoryImpl implements Concretemo
 		switch (eDataType.getClassifierID()) {
 			case ConcretemodelPackage.ACCESS_MODIFIER:
 				return createAccessModifierFromString(eDataType, initialValue);
+			case ConcretemodelPackage.ACCESS_MODIFIER_CLASS:
+				return createAccessModifierClassFromString(eDataType, initialValue);
+			case ConcretemodelPackage.TYPE_CLASS:
+				return createTypeClassFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -100,6 +104,10 @@ public class ConcretemodelFactoryImpl extends EFactoryImpl implements Concretemo
 		switch (eDataType.getClassifierID()) {
 			case ConcretemodelPackage.ACCESS_MODIFIER:
 				return convertAccessModifierToString(eDataType, instanceValue);
+			case ConcretemodelPackage.ACCESS_MODIFIER_CLASS:
+				return convertAccessModifierClassToString(eDataType, instanceValue);
+			case ConcretemodelPackage.TYPE_CLASS:
+				return convertTypeClassToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -252,6 +260,46 @@ public class ConcretemodelFactoryImpl extends EFactoryImpl implements Concretemo
 	 * @generated
 	 */
 	public String convertAccessModifierToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AccessModifierClass createAccessModifierClassFromString(EDataType eDataType, String initialValue) {
+		AccessModifierClass result = AccessModifierClass.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertAccessModifierClassToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TypeClass createTypeClassFromString(EDataType eDataType, String initialValue) {
+		TypeClass result = TypeClass.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertTypeClassToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

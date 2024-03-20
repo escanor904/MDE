@@ -3,6 +3,7 @@
 package concretemodel.impl;
 
 import concretemodel.AccessModifier;
+import concretemodel.AccessModifierClass;
 import concretemodel.AssociationAdj;
 import concretemodel.AttributeConcreteAdj;
 import concretemodel.AttributeTypeConcreteAdj;
@@ -20,6 +21,7 @@ import concretemodel.ProjectAdj;
 import concretemodel.RelationshipAdj;
 import concretemodel.SharingAdj;
 
+import concretemodel.TypeClass;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
@@ -139,6 +141,20 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 	 * @generated
 	 */
 	private EEnum accessModifierEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum accessModifierClassEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum typeClassEEnum = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -467,8 +483,26 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getClassConcreteAdj_AccesModifierClass() {
+		return (EAttribute)classConcreteAdjEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getClassConcreteAdj_TipeClass() {
+		return (EAttribute)classConcreteAdjEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EReference getClassConcreteAdj_LstAttributeConcreteAdj() {
-		return (EReference)classConcreteAdjEClass.getEStructuralFeatures().get(2);
+		return (EReference)classConcreteAdjEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -477,7 +511,7 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 	 * @generated
 	 */
 	public EReference getClassConcreteAdj_LstMethodConcreteAdj() {
-		return (EReference)classConcreteAdjEClass.getEStructuralFeatures().get(3);
+		return (EReference)classConcreteAdjEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -629,8 +663,17 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getAttributeConcreteAdj_AccessModifier() {
+		return (EAttribute)attributeConcreteAdjEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EReference getAttributeConcreteAdj_AttributeTypeConcreteAdj() {
-		return (EReference)attributeConcreteAdjEClass.getEStructuralFeatures().get(2);
+		return (EReference)attributeConcreteAdjEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -640,6 +683,24 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 	 */
 	public EEnum getAccessModifier() {
 		return accessModifierEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getAccessModifierClass() {
+		return accessModifierClassEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getTypeClass() {
+		return typeClassEEnum;
 	}
 
 	/**
@@ -708,6 +769,8 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 		classConcreteAdjEClass = createEClass(CLASS_CONCRETE_ADJ);
 		createEAttribute(classConcreteAdjEClass, CLASS_CONCRETE_ADJ__NAME);
 		createEAttribute(classConcreteAdjEClass, CLASS_CONCRETE_ADJ__PATH);
+		createEAttribute(classConcreteAdjEClass, CLASS_CONCRETE_ADJ__ACCES_MODIFIER_CLASS);
+		createEAttribute(classConcreteAdjEClass, CLASS_CONCRETE_ADJ__TIPE_CLASS);
 		createEReference(classConcreteAdjEClass, CLASS_CONCRETE_ADJ__LST_ATTRIBUTE_CONCRETE_ADJ);
 		createEReference(classConcreteAdjEClass, CLASS_CONCRETE_ADJ__LST_METHOD_CONCRETE_ADJ);
 
@@ -730,10 +793,13 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 		attributeConcreteAdjEClass = createEClass(ATTRIBUTE_CONCRETE_ADJ);
 		createEAttribute(attributeConcreteAdjEClass, ATTRIBUTE_CONCRETE_ADJ__NAME);
 		createEAttribute(attributeConcreteAdjEClass, ATTRIBUTE_CONCRETE_ADJ__VALUE);
+		createEAttribute(attributeConcreteAdjEClass, ATTRIBUTE_CONCRETE_ADJ__ACCESS_MODIFIER);
 		createEReference(attributeConcreteAdjEClass, ATTRIBUTE_CONCRETE_ADJ__ATTRIBUTE_TYPE_CONCRETE_ADJ);
 
 		// Create enums
 		accessModifierEEnum = createEEnum(ACCESS_MODIFIER);
+		accessModifierClassEEnum = createEEnum(ACCESS_MODIFIER_CLASS);
+		typeClassEEnum = createEEnum(TYPE_CLASS);
 	}
 
 	/**
@@ -808,6 +874,8 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 		initEClass(classConcreteAdjEClass, ClassConcreteAdj.class, "ClassConcreteAdj", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getClassConcreteAdj_Name(), ecorePackage.getEString(), "name", null, 0, 1, ClassConcreteAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getClassConcreteAdj_Path(), ecorePackage.getEString(), "path", null, 0, 1, ClassConcreteAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getClassConcreteAdj_AccesModifierClass(), this.getAccessModifierClass(), "accesModifierClass", null, 0, 1, ClassConcreteAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getClassConcreteAdj_TipeClass(), this.getTypeClass(), "tipeClass", null, 0, 1, ClassConcreteAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getClassConcreteAdj_LstAttributeConcreteAdj(), this.getAttributeConcreteAdj(), null, "lstAttributeConcreteAdj", null, 0, -1, ClassConcreteAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getClassConcreteAdj_LstMethodConcreteAdj(), this.getMethodConcreteAdj(), null, "lstMethodConcreteAdj", null, 0, -1, ClassConcreteAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -830,6 +898,7 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 		initEClass(attributeConcreteAdjEClass, AttributeConcreteAdj.class, "AttributeConcreteAdj", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAttributeConcreteAdj_Name(), ecorePackage.getEString(), "name", null, 0, 1, AttributeConcreteAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttributeConcreteAdj_Value(), ecorePackage.getEString(), "value", null, 0, 1, AttributeConcreteAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAttributeConcreteAdj_AccessModifier(), this.getAccessModifier(), "accessModifier", null, 0, 1, AttributeConcreteAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAttributeConcreteAdj_AttributeTypeConcreteAdj(), this.getAttributeTypeConcreteAdj(), null, "attributeTypeConcreteAdj", null, 0, 1, AttributeConcreteAdj.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
@@ -837,6 +906,23 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 		addEEnumLiteral(accessModifierEEnum, AccessModifier.PUBLIC);
 		addEEnumLiteral(accessModifierEEnum, AccessModifier.PRIVATE);
 		addEEnumLiteral(accessModifierEEnum, AccessModifier.PROTECTED);
+		addEEnumLiteral(accessModifierEEnum, AccessModifier.STATIC);
+		addEEnumLiteral(accessModifierEEnum, AccessModifier.INTERNAL);
+		addEEnumLiteral(accessModifierEEnum, AccessModifier.PROTECTED_INTERNAL);
+
+		initEEnum(accessModifierClassEEnum, AccessModifierClass.class, "AccessModifierClass");
+		addEEnumLiteral(accessModifierClassEEnum, AccessModifierClass.PUBLIC);
+		addEEnumLiteral(accessModifierClassEEnum, AccessModifierClass.INTERNAL);
+		addEEnumLiteral(accessModifierClassEEnum, AccessModifierClass.PROTECTED);
+		addEEnumLiteral(accessModifierClassEEnum, AccessModifierClass.PROTECTED_INTERNAL);
+		addEEnumLiteral(accessModifierClassEEnum, AccessModifierClass.PRIVATE);
+
+		initEEnum(typeClassEEnum, TypeClass.class, "TypeClass");
+		addEEnumLiteral(typeClassEEnum, TypeClass.REGULAR);
+		addEEnumLiteral(typeClassEEnum, TypeClass.ABSTRAC);
+		addEEnumLiteral(typeClassEEnum, TypeClass.SEALED);
+		addEEnumLiteral(typeClassEEnum, TypeClass.STATIC);
+		addEEnumLiteral(typeClassEEnum, TypeClass.GENERIC);
 
 		// Create resource
 		createResource(eNS_URI);
@@ -910,6 +996,13 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 		   source, 
 		   new String[] {
 			 "label", "methodName",
+			 "color", "255,255,128"
+		   });	
+		addAnnotation
+		  (parameterConcreteAdjEClass, 
+		   source, 
+		   new String[] {
+			 "label", "name",
 			 "color", "255,255,128"
 		   });	
 		addAnnotation

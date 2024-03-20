@@ -10,14 +10,14 @@ import org.eclipse.emf.common.util.Enumerator;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the literals of the enumeration '<em><b>Access Modifier</b></em>',
+ * A representation of the literals of the enumeration '<em><b>Access Modifier Class</b></em>',
  * and utility methods for working with them.
  * <!-- end-user-doc -->
- * @see concretemodel.ConcretemodelPackage#getAccessModifier()
+ * @see concretemodel.ConcretemodelPackage#getAccessModifierClass()
  * @model
  * @generated
  */
-public enum AccessModifier implements Enumerator {
+public enum AccessModifierClass implements Enumerator {
 	/**
 	 * The '<em><b>Public</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -29,14 +29,14 @@ public enum AccessModifier implements Enumerator {
 	PUBLIC(1, "public", "public"),
 
 	/**
-	 * The '<em><b>Private</b></em>' literal object.
+	 * The '<em><b>Internal</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #PRIVATE_VALUE
+	 * @see #INTERNAL_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	PRIVATE(2, "private", "private"),
+	INTERNAL(2, "internal", "internal"),
 
 	/**
 	 * The '<em><b>Protected</b></em>' literal object.
@@ -46,23 +46,9 @@ public enum AccessModifier implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	PROTECTED(3, "protected", "protected"), /**
-	 * The '<em><b>Static</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #STATIC_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	STATIC(4, "static", "static"), /**
-	 * The '<em><b>Internal</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #INTERNAL_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	INTERNAL(5, "internal", "internal"), /**
+	PROTECTED(3, "protected", "protected"),
+
+	/**
 	 * The '<em><b>Protected internal</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -70,13 +56,23 @@ public enum AccessModifier implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	PROTECTED_INTERNAL(6, "protected_internal", "protected_internal");
+	PROTECTED_INTERNAL(4, "protected_internal", "protected_internal"),
+
+	/**
+	 * The '<em><b>Private</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #PRIVATE_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	PRIVATE(5, "private", "private");
 
 	/**
 	 * The '<em><b>Public</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>PUBLIC</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Public</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -86,51 +82,6 @@ public enum AccessModifier implements Enumerator {
 	 * @ordered
 	 */
 	public static final int PUBLIC_VALUE = 1;
-
-	/**
-	 * The '<em><b>Private</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>PRIVATE</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #PRIVATE
-	 * @model name="private"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int PRIVATE_VALUE = 2;
-
-	/**
-	 * The '<em><b>Protected</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>PROTECTED</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #PROTECTED
-	 * @model name="protected"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int PROTECTED_VALUE = 3;
-
-	/**
-	 * The '<em><b>Static</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of '<em><b>Static</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @see #STATIC
-	 * @model name="static"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int STATIC_VALUE = 4;
 
 	/**
 	 * The '<em><b>Internal</b></em>' literal value.
@@ -145,7 +96,22 @@ public enum AccessModifier implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int INTERNAL_VALUE = 5;
+	public static final int INTERNAL_VALUE = 2;
+
+	/**
+	 * The '<em><b>Protected</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Protected</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #PROTECTED
+	 * @model name="protected"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int PROTECTED_VALUE = 3;
 
 	/**
 	 * The '<em><b>Protected internal</b></em>' literal value.
@@ -160,43 +126,57 @@ public enum AccessModifier implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int PROTECTED_INTERNAL_VALUE = 6;
+	public static final int PROTECTED_INTERNAL_VALUE = 4;
 
 	/**
-	 * An array of all the '<em><b>Access Modifier</b></em>' enumerators.
+	 * The '<em><b>Private</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Private</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #PRIVATE
+	 * @model name="private"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int PRIVATE_VALUE = 5;
+
+	/**
+	 * An array of all the '<em><b>Access Modifier Class</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final AccessModifier[] VALUES_ARRAY =
-		new AccessModifier[] {
+	private static final AccessModifierClass[] VALUES_ARRAY =
+		new AccessModifierClass[] {
 			PUBLIC,
-			PRIVATE,
-			PROTECTED,
-			STATIC,
 			INTERNAL,
+			PROTECTED,
 			PROTECTED_INTERNAL,
+			PRIVATE,
 		};
 
 	/**
-	 * A public read-only list of all the '<em><b>Access Modifier</b></em>' enumerators.
+	 * A public read-only list of all the '<em><b>Access Modifier Class</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final List<AccessModifier> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
+	public static final List<AccessModifierClass> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>Access Modifier</b></em>' literal with the specified literal value.
+	 * Returns the '<em><b>Access Modifier Class</b></em>' literal with the specified literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param literal the literal.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static AccessModifier get(String literal) {
+	public static AccessModifierClass get(String literal) {
 		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			AccessModifier result = VALUES_ARRAY[i];
+			AccessModifierClass result = VALUES_ARRAY[i];
 			if (result.toString().equals(literal)) {
 				return result;
 			}
@@ -205,16 +185,16 @@ public enum AccessModifier implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>Access Modifier</b></em>' literal with the specified name.
+	 * Returns the '<em><b>Access Modifier Class</b></em>' literal with the specified name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param name the name.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static AccessModifier getByName(String name) {
+	public static AccessModifierClass getByName(String name) {
 		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-			AccessModifier result = VALUES_ARRAY[i];
+			AccessModifierClass result = VALUES_ARRAY[i];
 			if (result.getName().equals(name)) {
 				return result;
 			}
@@ -223,21 +203,20 @@ public enum AccessModifier implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>Access Modifier</b></em>' literal with the specified integer value.
+	 * Returns the '<em><b>Access Modifier Class</b></em>' literal with the specified integer value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the integer value.
 	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
-	public static AccessModifier get(int value) {
+	public static AccessModifierClass get(int value) {
 		switch (value) {
 			case PUBLIC_VALUE: return PUBLIC;
-			case PRIVATE_VALUE: return PRIVATE;
-			case PROTECTED_VALUE: return PROTECTED;
-			case STATIC_VALUE: return STATIC;
 			case INTERNAL_VALUE: return INTERNAL;
+			case PROTECTED_VALUE: return PROTECTED;
 			case PROTECTED_INTERNAL_VALUE: return PROTECTED_INTERNAL;
+			case PRIVATE_VALUE: return PRIVATE;
 		}
 		return null;
 	}
@@ -269,7 +248,7 @@ public enum AccessModifier implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private AccessModifier(int value, String name, String literal) {
+	private AccessModifierClass(int value, String name, String literal) {
 		this.value = value;
 		this.name = name;
 		this.literal = literal;
@@ -313,4 +292,4 @@ public enum AccessModifier implements Enumerator {
 		return literal;
 	}
 	
-} //AccessModifier
+} //AccessModifierClass

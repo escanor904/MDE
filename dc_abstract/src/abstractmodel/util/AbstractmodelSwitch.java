@@ -78,18 +78,6 @@ public class AbstractmodelSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case AbstractmodelPackage.CLASS_TYPE_FACTORY_ADJ: {
-				ClassTypeFactoryAdj classTypeFactoryAdj = (ClassTypeFactoryAdj)theEObject;
-				T result = caseClassTypeFactoryAdj(classTypeFactoryAdj);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case AbstractmodelPackage.CLASS_TYPE_ADJ: {
-				ClassTypeAdj classTypeAdj = (ClassTypeAdj)theEObject;
-				T result = caseClassTypeAdj(classTypeAdj);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case AbstractmodelPackage.ATTRIBUTE_TYPE_FACTORY_ADJ: {
 				AttributeTypeFactoryAdj attributeTypeFactoryAdj = (AttributeTypeFactoryAdj)theEObject;
 				T result = caseAttributeTypeFactoryAdj(attributeTypeFactoryAdj);
@@ -197,36 +185,6 @@ public class AbstractmodelSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseProjectAdj(ProjectAdj object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Class Type Factory Adj</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Class Type Factory Adj</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseClassTypeFactoryAdj(ClassTypeFactoryAdj object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Class Type Adj</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Class Type Adj</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseClassTypeAdj(ClassTypeAdj object) {
 		return null;
 	}
 

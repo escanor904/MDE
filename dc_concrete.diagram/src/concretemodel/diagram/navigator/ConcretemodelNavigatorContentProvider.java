@@ -348,10 +348,10 @@ public class ConcretemodelNavigatorContentProvider implements ICommonContentProv
 			LinkedList<ConcretemodelAbstractNavigatorItem> result = new LinkedList<ConcretemodelAbstractNavigatorItem>();
 			Edge sv = (Edge) view;
 			ConcretemodelNavigatorGroup target = new ConcretemodelNavigatorGroup(
-					Messages.NavigatorGroupName_SharingAdj_4003_target, "icons/linkTargetNavigatorGroup.gif", //$NON-NLS-1$
+					Messages.NavigatorGroupName_SharingAdj_4002_target, "icons/linkTargetNavigatorGroup.gif", //$NON-NLS-1$
 					parentElement);
 			ConcretemodelNavigatorGroup source = new ConcretemodelNavigatorGroup(
-					Messages.NavigatorGroupName_SharingAdj_4003_source, "icons/linkSourceNavigatorGroup.gif", //$NON-NLS-1$
+					Messages.NavigatorGroupName_SharingAdj_4002_source, "icons/linkSourceNavigatorGroup.gif", //$NON-NLS-1$
 					parentElement);
 			Collection<View> connectedViews;
 			connectedViews = getLinksTargetByType(Collections.singleton(sv),
@@ -373,10 +373,10 @@ public class ConcretemodelNavigatorContentProvider implements ICommonContentProv
 			LinkedList<ConcretemodelAbstractNavigatorItem> result = new LinkedList<ConcretemodelAbstractNavigatorItem>();
 			Edge sv = (Edge) view;
 			ConcretemodelNavigatorGroup target = new ConcretemodelNavigatorGroup(
-					Messages.NavigatorGroupName_AssociationAdj_4005_target, "icons/linkTargetNavigatorGroup.gif", //$NON-NLS-1$
+					Messages.NavigatorGroupName_AssociationAdj_4003_target, "icons/linkTargetNavigatorGroup.gif", //$NON-NLS-1$
 					parentElement);
 			ConcretemodelNavigatorGroup source = new ConcretemodelNavigatorGroup(
-					Messages.NavigatorGroupName_AssociationAdj_4005_source, "icons/linkSourceNavigatorGroup.gif", //$NON-NLS-1$
+					Messages.NavigatorGroupName_AssociationAdj_4003_source, "icons/linkSourceNavigatorGroup.gif", //$NON-NLS-1$
 					parentElement);
 			Collection<View> connectedViews;
 			connectedViews = getLinksTargetByType(Collections.singleton(sv),
@@ -398,10 +398,10 @@ public class ConcretemodelNavigatorContentProvider implements ICommonContentProv
 			LinkedList<ConcretemodelAbstractNavigatorItem> result = new LinkedList<ConcretemodelAbstractNavigatorItem>();
 			Edge sv = (Edge) view;
 			ConcretemodelNavigatorGroup target = new ConcretemodelNavigatorGroup(
-					Messages.NavigatorGroupName_GeneralizationAdj_4007_target, "icons/linkTargetNavigatorGroup.gif", //$NON-NLS-1$
+					Messages.NavigatorGroupName_GeneralizationAdj_4004_target, "icons/linkTargetNavigatorGroup.gif", //$NON-NLS-1$
 					parentElement);
 			ConcretemodelNavigatorGroup source = new ConcretemodelNavigatorGroup(
-					Messages.NavigatorGroupName_GeneralizationAdj_4007_source, "icons/linkSourceNavigatorGroup.gif", //$NON-NLS-1$
+					Messages.NavigatorGroupName_GeneralizationAdj_4004_source, "icons/linkSourceNavigatorGroup.gif", //$NON-NLS-1$
 					parentElement);
 			Collection<View> connectedViews;
 			connectedViews = getLinksTargetByType(Collections.singleton(sv),

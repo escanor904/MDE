@@ -65,7 +65,8 @@ public class ClassAdjItemProvider
 
 			addNamePropertyDescriptor(object);
 			addPathPackagePropertyDescriptor(object);
-			addClassTypeAdjPropertyDescriptor(object);
+			addClassTypePropertyDescriptor(object);
+			addAccesModifierClassPropertyDescriptor(object);
 			addLstInputRelationshipAdjPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
@@ -116,23 +117,45 @@ public class ClassAdjItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Class Type Adj feature.
+	 * This adds a property descriptor for the Class Type feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addClassTypeAdjPropertyDescriptor(Object object) {
+	protected void addClassTypePropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_ClassAdj_classTypeAdj_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_ClassAdj_classTypeAdj_feature", "_UI_ClassAdj_type"),
-				 AbstractmodelPackage.Literals.CLASS_ADJ__CLASS_TYPE_ADJ,
+				 getString("_UI_ClassAdj_classType_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ClassAdj_classType_feature", "_UI_ClassAdj_type"),
+				 AbstractmodelPackage.Literals.CLASS_ADJ__CLASS_TYPE,
 				 true,
 				 false,
-				 true,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
 				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Acces Modifier Class feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addAccesModifierClassPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_ClassAdj_accesModifierClass_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_ClassAdj_accesModifierClass_feature", "_UI_ClassAdj_type"),
+				 AbstractmodelPackage.Literals.CLASS_ADJ__ACCES_MODIFIER_CLASS,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -231,6 +254,8 @@ public class ClassAdjItemProvider
 		switch (notification.getFeatureID(ClassAdj.class)) {
 			case AbstractmodelPackage.CLASS_ADJ__NAME:
 			case AbstractmodelPackage.CLASS_ADJ__PATH_PACKAGE:
+			case AbstractmodelPackage.CLASS_ADJ__CLASS_TYPE:
+			case AbstractmodelPackage.CLASS_ADJ__ACCES_MODIFIER_CLASS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 			case AbstractmodelPackage.CLASS_ADJ__LST_ATTRIBUTE_ADJ:

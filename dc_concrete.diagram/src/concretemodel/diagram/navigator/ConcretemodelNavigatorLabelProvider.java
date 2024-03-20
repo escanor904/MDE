@@ -125,13 +125,13 @@ public class ConcretemodelNavigatorLabelProvider extends LabelProvider
 					ConcretemodelElementTypes.ContainmentSdj_4001);
 		case SharingAdjEditPart.VISUAL_ID:
 			return getImage("Navigator?Link?http://concretemodel?SharingAdj", //$NON-NLS-1$
-					ConcretemodelElementTypes.SharingAdj_4003);
+					ConcretemodelElementTypes.SharingAdj_4002);
 		case AssociationAdjEditPart.VISUAL_ID:
 			return getImage("Navigator?Link?http://concretemodel?AssociationAdj", //$NON-NLS-1$
-					ConcretemodelElementTypes.AssociationAdj_4005);
+					ConcretemodelElementTypes.AssociationAdj_4003);
 		case GeneralizationAdjEditPart.VISUAL_ID:
 			return getImage("Navigator?Link?http://concretemodel?GeneralizationAdj", //$NON-NLS-1$
-					ConcretemodelElementTypes.GeneralizationAdj_4007);
+					ConcretemodelElementTypes.GeneralizationAdj_4004);
 		}
 		return getImage("Navigator?UnknownElement", null); //$NON-NLS-1$
 	}
@@ -203,11 +203,11 @@ public class ConcretemodelNavigatorLabelProvider extends LabelProvider
 		case ContainmentSdjEditPart.VISUAL_ID:
 			return getContainmentSdj_4001Text(view);
 		case SharingAdjEditPart.VISUAL_ID:
-			return getSharingAdj_4003Text(view);
+			return getSharingAdj_4002Text(view);
 		case AssociationAdjEditPart.VISUAL_ID:
-			return getAssociationAdj_4005Text(view);
+			return getAssociationAdj_4003Text(view);
 		case GeneralizationAdjEditPart.VISUAL_ID:
-			return getGeneralizationAdj_4007Text(view);
+			return getGeneralizationAdj_4004Text(view);
 		}
 		return getUnknownElementText(view);
 	}
@@ -309,8 +309,8 @@ public class ConcretemodelNavigatorLabelProvider extends LabelProvider
 	/**
 	* @generated
 	*/
-	private String getSharingAdj_4003Text(View view) {
-		IParser parser = ConcretemodelParserProvider.getParser(ConcretemodelElementTypes.SharingAdj_4003,
+	private String getSharingAdj_4002Text(View view) {
+		IParser parser = ConcretemodelParserProvider.getParser(ConcretemodelElementTypes.SharingAdj_4002,
 				view.getElement() != null ? view.getElement() : view,
 				ConcretemodelVisualIDRegistry.getType(SharingAdjRoleSourceEditPart.VISUAL_ID));
 		if (parser != null) {
@@ -325,8 +325,8 @@ public class ConcretemodelNavigatorLabelProvider extends LabelProvider
 	/**
 	* @generated
 	*/
-	private String getAssociationAdj_4005Text(View view) {
-		IParser parser = ConcretemodelParserProvider.getParser(ConcretemodelElementTypes.AssociationAdj_4005,
+	private String getAssociationAdj_4003Text(View view) {
+		IParser parser = ConcretemodelParserProvider.getParser(ConcretemodelElementTypes.AssociationAdj_4003,
 				view.getElement() != null ? view.getElement() : view,
 				ConcretemodelVisualIDRegistry.getType(AssociationAdjRoleSourceEditPart.VISUAL_ID));
 		if (parser != null) {
@@ -341,13 +341,13 @@ public class ConcretemodelNavigatorLabelProvider extends LabelProvider
 	/**
 	* @generated
 	*/
-	private String getGeneralizationAdj_4007Text(View view) {
+	private String getGeneralizationAdj_4004Text(View view) {
 		GeneralizationAdj domainModelElement = (GeneralizationAdj) view.getElement();
 		if (domainModelElement != null) {
 			return domainModelElement.getRoleTarget();
 		} else {
 			ConcretemodelDiagramEditorPlugin.getInstance()
-					.logError("No domain element for view with visualID = " + 4007); //$NON-NLS-1$
+					.logError("No domain element for view with visualID = " + 4004); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}

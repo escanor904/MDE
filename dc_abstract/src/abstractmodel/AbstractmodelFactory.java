@@ -40,24 +40,6 @@ public interface AbstractmodelFactory extends EFactory {
 	ProjectAdj createProjectAdj();
 
 	/**
-	 * Returns a new object of class '<em>Class Type Factory Adj</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Class Type Factory Adj</em>'.
-	 * @generated
-	 */
-	ClassTypeFactoryAdj createClassTypeFactoryAdj();
-
-	/**
-	 * Returns a new object of class '<em>Class Type Adj</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Class Type Adj</em>'.
-	 * @generated
-	 */
-	ClassTypeAdj createClassTypeAdj();
-
-	/**
 	 * Returns a new object of class '<em>Attribute Type Factory Adj</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link concretemodel.AttributeConcreteAdj#getName <em>Name</em>}</li>
  *   <li>{@link concretemodel.AttributeConcreteAdj#getValue <em>Value</em>}</li>
+ *   <li>{@link concretemodel.AttributeConcreteAdj#getAccessModifier <em>Access Modifier</em>}</li>
  *   <li>{@link concretemodel.AttributeConcreteAdj#getAttributeTypeConcreteAdj <em>Attribute Type Concrete Adj</em>}</li>
  * </ul>
  *
@@ -74,6 +75,35 @@ public interface AttributeConcreteAdj extends EObject {
 	 * @generated
 	 */
 	void setValue(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Access Modifier</b></em>' attribute.
+	 * The literals are from the enumeration {@link concretemodel.AccessModifier}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Access Modifier</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Access Modifier</em>' attribute.
+	 * @see concretemodel.AccessModifier
+	 * @see #setAccessModifier(AccessModifier)
+	 * @see concretemodel.ConcretemodelPackage#getAttributeConcreteAdj_AccessModifier()
+	 * @model
+	 * @generated
+	 */
+	AccessModifier getAccessModifier();
+
+	/**
+	 * Sets the value of the '{@link concretemodel.AttributeConcreteAdj#getAccessModifier <em>Access Modifier</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Access Modifier</em>' attribute.
+	 * @see concretemodel.AccessModifier
+	 * @see #getAccessModifier()
+	 * @generated
+	 */
+	void setAccessModifier(AccessModifier value);
 
 	/**
 	 * Returns the value of the '<em><b>Attribute Type Concrete Adj</b></em>' reference.

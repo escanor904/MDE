@@ -59,8 +59,6 @@ public class AbstractmodelFactoryImpl extends EFactoryImpl implements Abstractmo
 		switch (eClass.getClassifierID()) {
 			case AbstractmodelPackage.MODEL_FACTORY_ABSTRACT: return createModelFactoryAbstract();
 			case AbstractmodelPackage.PROJECT_ADJ: return createProjectAdj();
-			case AbstractmodelPackage.CLASS_TYPE_FACTORY_ADJ: return createClassTypeFactoryAdj();
-			case AbstractmodelPackage.CLASS_TYPE_ADJ: return createClassTypeAdj();
 			case AbstractmodelPackage.ATTRIBUTE_TYPE_FACTORY_ADJ: return createAttributeTypeFactoryAdj();
 			case AbstractmodelPackage.ATTRIBUTE_TYPE_ADJ: return createAttributeTypeAdj();
 			case AbstractmodelPackage.PACKAGE_ADJ: return createPackageAdj();
@@ -125,26 +123,6 @@ public class AbstractmodelFactoryImpl extends EFactoryImpl implements Abstractmo
 	public ProjectAdj createProjectAdj() {
 		ProjectAdjImpl projectAdj = new ProjectAdjImpl();
 		return projectAdj;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ClassTypeFactoryAdj createClassTypeFactoryAdj() {
-		ClassTypeFactoryAdjImpl classTypeFactoryAdj = new ClassTypeFactoryAdjImpl();
-		return classTypeFactoryAdj;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ClassTypeAdj createClassTypeAdj() {
-		ClassTypeAdjImpl classTypeAdj = new ClassTypeAdjImpl();
-		return classTypeAdj;
 	}
 
 	/**

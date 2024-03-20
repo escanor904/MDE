@@ -72,7 +72,7 @@ public class GeneralizationAdjCreateCommand extends EditElementCommand {
 			return false;
 		}
 		return ConcretemodelBaseItemSemanticEditPolicy.getLinkConstraints()
-				.canCreateGeneralizationAdj_4007(getContainer(), getSource(), getTarget());
+				.canCreateGeneralizationAdj_4004(getContainer(), getSource(), getTarget());
 	}
 
 	/**

@@ -95,6 +95,8 @@
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="path" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accesModifierClass" eType="#//AccessModifierClass"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tipeClass" eType="#//TypeClass"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="lstAttributeConcreteAdj"
         upperBound="-1" eType="#//AttributeConcreteAdj" containment="true">
       <eAnnotations source="gmf.compartment">
@@ -123,6 +125,10 @@
         upperBound="-1" eType="#//ParameterConcreteAdj" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ParameterConcreteAdj">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="name"/>
+      <details key="color" value="255,255,128"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="AttributeTypeConcreteAdj"
         eType="#//AttributeTypeConcreteAdj"/>
@@ -141,12 +147,30 @@
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accessModifier" eType="#//AccessModifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="attributeTypeConcreteAdj"
         eType="#//AttributeTypeConcreteAdj"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="AccessModifier">
-    <eLiterals name="PUBLIC" value="1"/>
-    <eLiterals name="PRIVATE" value="2"/>
-    <eLiterals name="PROTECTED" value="3"/>
+    <eLiterals name="public" value="1"/>
+    <eLiterals name="private" value="2"/>
+    <eLiterals name="protected" value="3"/>
+    <eLiterals name="static" value="4"/>
+    <eLiterals name="internal" value="5"/>
+    <eLiterals name="protected_internal" value="6"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="AccessModifierClass">
+    <eLiterals name="public" value="1"/>
+    <eLiterals name="internal" value="2"/>
+    <eLiterals name="protected" value="3"/>
+    <eLiterals name="protected_internal" value="4"/>
+    <eLiterals name="private" value="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TypeClass">
+    <eLiterals name="regular" value="1"/>
+    <eLiterals name="abstrac" value="2"/>
+    <eLiterals name="sealed" value="3"/>
+    <eLiterals name="static" value="4"/>
+    <eLiterals name="generic" value="5"/>
   </eClassifiers>
 </ecore:EPackage>

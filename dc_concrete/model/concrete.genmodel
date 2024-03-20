@@ -6,9 +6,26 @@
   <foreignModel>concrete.emf</foreignModel>
   <genPackages prefix="Concretemodel" disposableProviderFactory="true" ecorePackage="concrete.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="concrete.ecore#//AccessModifier">
-      <genEnumLiterals ecoreEnumLiteral="concrete.ecore#//AccessModifier/PUBLIC"/>
-      <genEnumLiterals ecoreEnumLiteral="concrete.ecore#//AccessModifier/PRIVATE"/>
-      <genEnumLiterals ecoreEnumLiteral="concrete.ecore#//AccessModifier/PROTECTED"/>
+      <genEnumLiterals ecoreEnumLiteral="concrete.ecore#//AccessModifier/public"/>
+      <genEnumLiterals ecoreEnumLiteral="concrete.ecore#//AccessModifier/private"/>
+      <genEnumLiterals ecoreEnumLiteral="concrete.ecore#//AccessModifier/protected"/>
+      <genEnumLiterals ecoreEnumLiteral="concrete.ecore#//AccessModifier/static"/>
+      <genEnumLiterals ecoreEnumLiteral="concrete.ecore#//AccessModifier/internal"/>
+      <genEnumLiterals ecoreEnumLiteral="concrete.ecore#//AccessModifier/protected_internal"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="concrete.ecore#//AccessModifierClass">
+      <genEnumLiterals ecoreEnumLiteral="concrete.ecore#//AccessModifierClass/public"/>
+      <genEnumLiterals ecoreEnumLiteral="concrete.ecore#//AccessModifierClass/internal"/>
+      <genEnumLiterals ecoreEnumLiteral="concrete.ecore#//AccessModifierClass/protected"/>
+      <genEnumLiterals ecoreEnumLiteral="concrete.ecore#//AccessModifierClass/protected_internal"/>
+      <genEnumLiterals ecoreEnumLiteral="concrete.ecore#//AccessModifierClass/private"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="concrete.ecore#//TypeClass">
+      <genEnumLiterals ecoreEnumLiteral="concrete.ecore#//TypeClass/regular"/>
+      <genEnumLiterals ecoreEnumLiteral="concrete.ecore#//TypeClass/abstrac"/>
+      <genEnumLiterals ecoreEnumLiteral="concrete.ecore#//TypeClass/sealed"/>
+      <genEnumLiterals ecoreEnumLiteral="concrete.ecore#//TypeClass/static"/>
+      <genEnumLiterals ecoreEnumLiteral="concrete.ecore#//TypeClass/generic"/>
     </genEnums>
     <genClasses ecoreClass="concrete.ecore#//ModelFactoryConcrete">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//ModelFactoryConcrete/listProjects"/>
@@ -44,6 +61,8 @@
     <genClasses ecoreClass="concrete.ecore#//ClassConcreteAdj">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//ClassConcreteAdj/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//ClassConcreteAdj/path"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//ClassConcreteAdj/accesModifierClass"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//ClassConcreteAdj/tipeClass"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//ClassConcreteAdj/lstAttributeConcreteAdj"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference concrete.ecore#//ClassConcreteAdj/lstMethodConcreteAdj"/>
     </genClasses>
@@ -66,6 +85,7 @@
     <genClasses ecoreClass="concrete.ecore#//AttributeConcreteAdj">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//AttributeConcreteAdj/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//AttributeConcreteAdj/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute concrete.ecore#//AttributeConcreteAdj/accessModifier"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference concrete.ecore#//AttributeConcreteAdj/attributeTypeConcreteAdj"/>
     </genClasses>
   </genPackages>

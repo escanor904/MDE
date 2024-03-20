@@ -15,16 +15,8 @@
     <genClasses ecoreClass="abstract.ecore#//ProjectAdj">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstract.ecore#//ProjectAdj/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstract.ecore#//ProjectAdj/path"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstract.ecore#//ProjectAdj/classTypeFactoryAdj"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstract.ecore#//ProjectAdj/attributeTypeFactoryAdj"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstract.ecore#//ProjectAdj/lstPackageAdj"/>
-    </genClasses>
-    <genClasses ecoreClass="abstract.ecore#//ClassTypeFactoryAdj">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstract.ecore#//ClassTypeFactoryAdj/lstClassTypeAdj"/>
-    </genClasses>
-    <genClasses ecoreClass="abstract.ecore#//ClassTypeAdj">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstract.ecore#//ClassTypeAdj/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstract.ecore#//ClassTypeAdj/lstClassAdj"/>
     </genClasses>
     <genClasses ecoreClass="abstract.ecore#//AttributeTypeFactoryAdj">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstract.ecore#//AttributeTypeFactoryAdj/lstAttributeTypeAdj"/>
@@ -43,7 +35,8 @@
     <genClasses ecoreClass="abstract.ecore#//ClassAdj">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstract.ecore#//ClassAdj/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstract.ecore#//ClassAdj/pathPackage"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstract.ecore#//ClassAdj/classTypeAdj"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstract.ecore#//ClassAdj/classType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstract.ecore#//ClassAdj/accesModifierClass"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstract.ecore#//ClassAdj/lstAttributeAdj"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstract.ecore#//ClassAdj/lstMethodAdj"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstract.ecore#//ClassAdj/lstRelationShipAdj"/>

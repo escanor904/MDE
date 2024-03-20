@@ -18,7 +18,7 @@ public class GeneralizationAdjItemSemanticEditPolicy extends ConcretemodelBaseIt
 	* @generated
 	*/
 	public GeneralizationAdjItemSemanticEditPolicy() {
-		super(ConcretemodelElementTypes.GeneralizationAdj_4007);
+		super(ConcretemodelElementTypes.GeneralizationAdj_4004);
 	}
 
 	/**

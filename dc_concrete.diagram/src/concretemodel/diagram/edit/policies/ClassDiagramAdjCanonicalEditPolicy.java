@@ -308,21 +308,21 @@ public class ClassDiagramAdjCanonicalEditPolicy extends CanonicalEditPolicy {
 		}
 		case SharingAdjEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(ConcretemodelDiagramUpdater.getSharingAdj_4003ContainedLinks(view));
+				result.addAll(ConcretemodelDiagramUpdater.getSharingAdj_4002ContainedLinks(view));
 			}
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
 		}
 		case AssociationAdjEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(ConcretemodelDiagramUpdater.getAssociationAdj_4005ContainedLinks(view));
+				result.addAll(ConcretemodelDiagramUpdater.getAssociationAdj_4003ContainedLinks(view));
 			}
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
 		}
 		case GeneralizationAdjEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(ConcretemodelDiagramUpdater.getGeneralizationAdj_4007ContainedLinks(view));
+				result.addAll(ConcretemodelDiagramUpdater.getGeneralizationAdj_4004ContainedLinks(view));
 			}
 			domain2NotationMap.putView(view.getElement(), view);
 			break;

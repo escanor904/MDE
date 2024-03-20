@@ -8,21 +8,10 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProjectAdj">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="path" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="classTypeFactoryAdj" eType="#//ClassTypeFactoryAdj"
-        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="attributeTypeFactoryAdj"
         eType="#//AttributeTypeFactoryAdj" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="lstPackageAdj" upperBound="-1"
         eType="#//PackageAdj" containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ClassTypeFactoryAdj">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="lstClassTypeAdj" upperBound="-1"
-        eType="#//ClassTypeAdj" containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ClassTypeAdj">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="lstClassAdj" upperBound="-1"
-        eType="#//ClassAdj" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AttributeTypeFactoryAdj">
     <eStructuralFeatures xsi:type="ecore:EReference" name="lstAttributeTypeAdj" upperBound="-1"
@@ -46,7 +35,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="ClassAdj">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="pathPackage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="classTypeAdj" eType="#//ClassTypeAdj"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="classType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accesModifierClass" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="lstAttributeAdj" upperBound="-1"
         eType="#//AttributeAdj" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="lstMethodAdj" upperBound="-1"

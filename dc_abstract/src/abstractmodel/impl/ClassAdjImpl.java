@@ -5,7 +5,6 @@ package abstractmodel.impl;
 import abstractmodel.AbstractmodelPackage;
 import abstractmodel.AttributeAdj;
 import abstractmodel.ClassAdj;
-import abstractmodel.ClassTypeAdj;
 import abstractmodel.MethodAdj;
 import abstractmodel.RelationshipAdj;
 
@@ -36,7 +35,8 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link abstractmodel.impl.ClassAdjImpl#getName <em>Name</em>}</li>
  *   <li>{@link abstractmodel.impl.ClassAdjImpl#getPathPackage <em>Path Package</em>}</li>
- *   <li>{@link abstractmodel.impl.ClassAdjImpl#getClassTypeAdj <em>Class Type Adj</em>}</li>
+ *   <li>{@link abstractmodel.impl.ClassAdjImpl#getClassType <em>Class Type</em>}</li>
+ *   <li>{@link abstractmodel.impl.ClassAdjImpl#getAccesModifierClass <em>Acces Modifier Class</em>}</li>
  *   <li>{@link abstractmodel.impl.ClassAdjImpl#getLstAttributeAdj <em>Lst Attribute Adj</em>}</li>
  *   <li>{@link abstractmodel.impl.ClassAdjImpl#getLstMethodAdj <em>Lst Method Adj</em>}</li>
  *   <li>{@link abstractmodel.impl.ClassAdjImpl#getLstRelationShipAdj <em>Lst Relation Ship Adj</em>}</li>
@@ -87,14 +87,44 @@ public class ClassAdjImpl extends EObjectImpl implements ClassAdj {
 	protected String pathPackage = PATH_PACKAGE_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getClassTypeAdj() <em>Class Type Adj</em>}' reference.
+	 * The default value of the '{@link #getClassType() <em>Class Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getClassTypeAdj()
+	 * @see #getClassType()
 	 * @generated
 	 * @ordered
 	 */
-	protected ClassTypeAdj classTypeAdj;
+	protected static final String CLASS_TYPE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getClassType() <em>Class Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getClassType()
+	 * @generated
+	 * @ordered
+	 */
+	protected String classType = CLASS_TYPE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getAccesModifierClass() <em>Acces Modifier Class</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAccesModifierClass()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String ACCES_MODIFIER_CLASS_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getAccesModifierClass() <em>Acces Modifier Class</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAccesModifierClass()
+	 * @generated
+	 * @ordered
+	 */
+	protected String accesModifierClass = ACCES_MODIFIER_CLASS_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getLstAttributeAdj() <em>Lst Attribute Adj</em>}' containment reference list.
@@ -202,16 +232,8 @@ public class ClassAdjImpl extends EObjectImpl implements ClassAdj {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ClassTypeAdj getClassTypeAdj() {
-		if (classTypeAdj != null && classTypeAdj.eIsProxy()) {
-			InternalEObject oldClassTypeAdj = (InternalEObject)classTypeAdj;
-			classTypeAdj = (ClassTypeAdj)eResolveProxy(oldClassTypeAdj);
-			if (classTypeAdj != oldClassTypeAdj) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, AbstractmodelPackage.CLASS_ADJ__CLASS_TYPE_ADJ, oldClassTypeAdj, classTypeAdj));
-			}
-		}
-		return classTypeAdj;
+	public String getClassType() {
+		return classType;
 	}
 
 	/**
@@ -219,20 +241,32 @@ public class ClassAdjImpl extends EObjectImpl implements ClassAdj {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ClassTypeAdj basicGetClassTypeAdj() {
-		return classTypeAdj;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setClassTypeAdj(ClassTypeAdj newClassTypeAdj) {
-		ClassTypeAdj oldClassTypeAdj = classTypeAdj;
-		classTypeAdj = newClassTypeAdj;
+	public void setClassType(String newClassType) {
+		String oldClassType = classType;
+		classType = newClassType;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AbstractmodelPackage.CLASS_ADJ__CLASS_TYPE_ADJ, oldClassTypeAdj, classTypeAdj));
+			eNotify(new ENotificationImpl(this, Notification.SET, AbstractmodelPackage.CLASS_ADJ__CLASS_TYPE, oldClassType, classType));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getAccesModifierClass() {
+		return accesModifierClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAccesModifierClass(String newAccesModifierClass) {
+		String oldAccesModifierClass = accesModifierClass;
+		accesModifierClass = newAccesModifierClass;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AbstractmodelPackage.CLASS_ADJ__ACCES_MODIFIER_CLASS, oldAccesModifierClass, accesModifierClass));
 	}
 
 	/**
@@ -313,9 +347,10 @@ public class ClassAdjImpl extends EObjectImpl implements ClassAdj {
 				return getName();
 			case AbstractmodelPackage.CLASS_ADJ__PATH_PACKAGE:
 				return getPathPackage();
-			case AbstractmodelPackage.CLASS_ADJ__CLASS_TYPE_ADJ:
-				if (resolve) return getClassTypeAdj();
-				return basicGetClassTypeAdj();
+			case AbstractmodelPackage.CLASS_ADJ__CLASS_TYPE:
+				return getClassType();
+			case AbstractmodelPackage.CLASS_ADJ__ACCES_MODIFIER_CLASS:
+				return getAccesModifierClass();
 			case AbstractmodelPackage.CLASS_ADJ__LST_ATTRIBUTE_ADJ:
 				return getLstAttributeAdj();
 			case AbstractmodelPackage.CLASS_ADJ__LST_METHOD_ADJ:
@@ -343,8 +378,11 @@ public class ClassAdjImpl extends EObjectImpl implements ClassAdj {
 			case AbstractmodelPackage.CLASS_ADJ__PATH_PACKAGE:
 				setPathPackage((String)newValue);
 				return;
-			case AbstractmodelPackage.CLASS_ADJ__CLASS_TYPE_ADJ:
-				setClassTypeAdj((ClassTypeAdj)newValue);
+			case AbstractmodelPackage.CLASS_ADJ__CLASS_TYPE:
+				setClassType((String)newValue);
+				return;
+			case AbstractmodelPackage.CLASS_ADJ__ACCES_MODIFIER_CLASS:
+				setAccesModifierClass((String)newValue);
 				return;
 			case AbstractmodelPackage.CLASS_ADJ__LST_ATTRIBUTE_ADJ:
 				getLstAttributeAdj().clear();
@@ -380,8 +418,11 @@ public class ClassAdjImpl extends EObjectImpl implements ClassAdj {
 			case AbstractmodelPackage.CLASS_ADJ__PATH_PACKAGE:
 				setPathPackage(PATH_PACKAGE_EDEFAULT);
 				return;
-			case AbstractmodelPackage.CLASS_ADJ__CLASS_TYPE_ADJ:
-				setClassTypeAdj((ClassTypeAdj)null);
+			case AbstractmodelPackage.CLASS_ADJ__CLASS_TYPE:
+				setClassType(CLASS_TYPE_EDEFAULT);
+				return;
+			case AbstractmodelPackage.CLASS_ADJ__ACCES_MODIFIER_CLASS:
+				setAccesModifierClass(ACCES_MODIFIER_CLASS_EDEFAULT);
 				return;
 			case AbstractmodelPackage.CLASS_ADJ__LST_ATTRIBUTE_ADJ:
 				getLstAttributeAdj().clear();
@@ -411,8 +452,10 @@ public class ClassAdjImpl extends EObjectImpl implements ClassAdj {
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case AbstractmodelPackage.CLASS_ADJ__PATH_PACKAGE:
 				return PATH_PACKAGE_EDEFAULT == null ? pathPackage != null : !PATH_PACKAGE_EDEFAULT.equals(pathPackage);
-			case AbstractmodelPackage.CLASS_ADJ__CLASS_TYPE_ADJ:
-				return classTypeAdj != null;
+			case AbstractmodelPackage.CLASS_ADJ__CLASS_TYPE:
+				return CLASS_TYPE_EDEFAULT == null ? classType != null : !CLASS_TYPE_EDEFAULT.equals(classType);
+			case AbstractmodelPackage.CLASS_ADJ__ACCES_MODIFIER_CLASS:
+				return ACCES_MODIFIER_CLASS_EDEFAULT == null ? accesModifierClass != null : !ACCES_MODIFIER_CLASS_EDEFAULT.equals(accesModifierClass);
 			case AbstractmodelPackage.CLASS_ADJ__LST_ATTRIBUTE_ADJ:
 				return lstAttributeAdj != null && !lstAttributeAdj.isEmpty();
 			case AbstractmodelPackage.CLASS_ADJ__LST_METHOD_ADJ:
@@ -439,6 +482,10 @@ public class ClassAdjImpl extends EObjectImpl implements ClassAdj {
 		result.append(name);
 		result.append(", pathPackage: ");
 		result.append(pathPackage);
+		result.append(", classType: ");
+		result.append(classType);
+		result.append(", accesModifierClass: ");
+		result.append(accesModifierClass);
 		result.append(')');
 		return result.toString();
 	}

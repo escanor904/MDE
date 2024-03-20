@@ -74,7 +74,7 @@ public class GeneralizationAdjReorientCommand extends EditElementCommand {
 			return false;
 		}
 		ClassDiagramAdj container = (ClassDiagramAdj) getLink().eContainer();
-		return ConcretemodelBaseItemSemanticEditPolicy.getLinkConstraints().canExistGeneralizationAdj_4007(container,
+		return ConcretemodelBaseItemSemanticEditPolicy.getLinkConstraints().canExistGeneralizationAdj_4004(container,
 				getLink(), getNewSource(), target);
 	}
 
@@ -90,7 +90,7 @@ public class GeneralizationAdjReorientCommand extends EditElementCommand {
 			return false;
 		}
 		ClassDiagramAdj container = (ClassDiagramAdj) getLink().eContainer();
-		return ConcretemodelBaseItemSemanticEditPolicy.getLinkConstraints().canExistGeneralizationAdj_4007(container,
+		return ConcretemodelBaseItemSemanticEditPolicy.getLinkConstraints().canExistGeneralizationAdj_4004(container,
 				getLink(), source, getNewTarget());
 	}
 

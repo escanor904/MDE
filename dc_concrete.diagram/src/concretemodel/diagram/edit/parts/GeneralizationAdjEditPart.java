@@ -23,7 +23,7 @@ public class GeneralizationAdjEditPart extends ConnectionNodeEditPart implements
 	/**
 	* @generated
 	*/
-	public static final int VISUAL_ID = 4007;
+	public static final int VISUAL_ID = 4004;
 
 	/**
 	* @generated

@@ -39,6 +39,7 @@ public class ConcretemodelPaletteFactory {
 		paletteContainer.add(createClassConcreteAdj2CreationTool());
 		paletteContainer.add(createMethodConcreteAdj3CreationTool());
 		paletteContainer.add(createPackageConcreteAdj4CreationTool());
+		paletteContainer.add(createParameterConcreteAdj5CreationTool());
 		return paletteContainer;
 	}
 
@@ -115,12 +116,23 @@ public class ConcretemodelPaletteFactory {
 	/**
 	* @generated
 	*/
+	private ToolEntry createParameterConcreteAdj5CreationTool() {
+		ToolEntry entry = new ToolEntry(Messages.ParameterConcreteAdj5CreationTool_title,
+				Messages.ParameterConcreteAdj5CreationTool_desc, null, null) {
+		};
+		entry.setId("createParameterConcreteAdj5CreationTool"); //$NON-NLS-1$
+		return entry;
+	}
+
+	/**
+	* @generated
+	*/
 	private ToolEntry createAssociationAdj1CreationTool() {
 		DefaultLinkToolEntry entry = new DefaultLinkToolEntry(Messages.AssociationAdj1CreationTool_title,
 				Messages.AssociationAdj1CreationTool_desc,
-				Collections.singletonList(ConcretemodelElementTypes.AssociationAdj_4005));
+				Collections.singletonList(ConcretemodelElementTypes.AssociationAdj_4003));
 		entry.setId("createAssociationAdj1CreationTool"); //$NON-NLS-1$
-		entry.setSmallIcon(ConcretemodelElementTypes.getImageDescriptor(ConcretemodelElementTypes.AssociationAdj_4005));
+		entry.setSmallIcon(ConcretemodelElementTypes.getImageDescriptor(ConcretemodelElementTypes.AssociationAdj_4003));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -144,10 +156,10 @@ public class ConcretemodelPaletteFactory {
 	private ToolEntry createGeneralizationAdj3CreationTool() {
 		DefaultLinkToolEntry entry = new DefaultLinkToolEntry(Messages.GeneralizationAdj3CreationTool_title,
 				Messages.GeneralizationAdj3CreationTool_desc,
-				Collections.singletonList(ConcretemodelElementTypes.GeneralizationAdj_4007));
+				Collections.singletonList(ConcretemodelElementTypes.GeneralizationAdj_4004));
 		entry.setId("createGeneralizationAdj3CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(
-				ConcretemodelElementTypes.getImageDescriptor(ConcretemodelElementTypes.GeneralizationAdj_4007));
+				ConcretemodelElementTypes.getImageDescriptor(ConcretemodelElementTypes.GeneralizationAdj_4004));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -158,9 +170,9 @@ public class ConcretemodelPaletteFactory {
 	private ToolEntry createSharingAdj4CreationTool() {
 		DefaultLinkToolEntry entry = new DefaultLinkToolEntry(Messages.SharingAdj4CreationTool_title,
 				Messages.SharingAdj4CreationTool_desc,
-				Collections.singletonList(ConcretemodelElementTypes.SharingAdj_4003));
+				Collections.singletonList(ConcretemodelElementTypes.SharingAdj_4002));
 		entry.setId("createSharingAdj4CreationTool"); //$NON-NLS-1$
-		entry.setSmallIcon(ConcretemodelElementTypes.getImageDescriptor(ConcretemodelElementTypes.SharingAdj_4003));
+		entry.setSmallIcon(ConcretemodelElementTypes.getImageDescriptor(ConcretemodelElementTypes.SharingAdj_4002));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}

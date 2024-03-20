@@ -2,11 +2,13 @@
  */
 package concretemodel.impl;
 
+import concretemodel.AccessModifierClass;
 import concretemodel.AttributeConcreteAdj;
 import concretemodel.ClassConcreteAdj;
 import concretemodel.ConcretemodelPackage;
 import concretemodel.MethodConcreteAdj;
 
+import concretemodel.TypeClass;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -33,6 +35,8 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link concretemodel.impl.ClassConcreteAdjImpl#getName <em>Name</em>}</li>
  *   <li>{@link concretemodel.impl.ClassConcreteAdjImpl#getPath <em>Path</em>}</li>
+ *   <li>{@link concretemodel.impl.ClassConcreteAdjImpl#getAccesModifierClass <em>Acces Modifier Class</em>}</li>
+ *   <li>{@link concretemodel.impl.ClassConcreteAdjImpl#getTipeClass <em>Tipe Class</em>}</li>
  *   <li>{@link concretemodel.impl.ClassConcreteAdjImpl#getLstAttributeConcreteAdj <em>Lst Attribute Concrete Adj</em>}</li>
  *   <li>{@link concretemodel.impl.ClassConcreteAdjImpl#getLstMethodConcreteAdj <em>Lst Method Concrete Adj</em>}</li>
  * </ul>
@@ -79,6 +83,46 @@ public class ClassConcreteAdjImpl extends EObjectImpl implements ClassConcreteAd
 	 * @ordered
 	 */
 	protected String path = PATH_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getAccesModifierClass() <em>Acces Modifier Class</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAccesModifierClass()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final AccessModifierClass ACCES_MODIFIER_CLASS_EDEFAULT = AccessModifierClass.PUBLIC;
+
+	/**
+	 * The cached value of the '{@link #getAccesModifierClass() <em>Acces Modifier Class</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAccesModifierClass()
+	 * @generated
+	 * @ordered
+	 */
+	protected AccessModifierClass accesModifierClass = ACCES_MODIFIER_CLASS_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getTipeClass() <em>Tipe Class</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTipeClass()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final TypeClass TIPE_CLASS_EDEFAULT = TypeClass.REGULAR;
+
+	/**
+	 * The cached value of the '{@link #getTipeClass() <em>Tipe Class</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTipeClass()
+	 * @generated
+	 * @ordered
+	 */
+	protected TypeClass tipeClass = TIPE_CLASS_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getLstAttributeConcreteAdj() <em>Lst Attribute Concrete Adj</em>}' containment reference list.
@@ -166,6 +210,48 @@ public class ClassConcreteAdjImpl extends EObjectImpl implements ClassConcreteAd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public AccessModifierClass getAccesModifierClass() {
+		return accesModifierClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAccesModifierClass(AccessModifierClass newAccesModifierClass) {
+		AccessModifierClass oldAccesModifierClass = accesModifierClass;
+		accesModifierClass = newAccesModifierClass == null ? ACCES_MODIFIER_CLASS_EDEFAULT : newAccesModifierClass;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ConcretemodelPackage.CLASS_CONCRETE_ADJ__ACCES_MODIFIER_CLASS, oldAccesModifierClass, accesModifierClass));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TypeClass getTipeClass() {
+		return tipeClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTipeClass(TypeClass newTipeClass) {
+		TypeClass oldTipeClass = tipeClass;
+		tipeClass = newTipeClass == null ? TIPE_CLASS_EDEFAULT : newTipeClass;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ConcretemodelPackage.CLASS_CONCRETE_ADJ__TIPE_CLASS, oldTipeClass, tipeClass));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<AttributeConcreteAdj> getLstAttributeConcreteAdj() {
 		if (lstAttributeConcreteAdj == null) {
 			lstAttributeConcreteAdj = new EObjectContainmentEList<AttributeConcreteAdj>(AttributeConcreteAdj.class, this, ConcretemodelPackage.CLASS_CONCRETE_ADJ__LST_ATTRIBUTE_CONCRETE_ADJ);
@@ -213,6 +299,10 @@ public class ClassConcreteAdjImpl extends EObjectImpl implements ClassConcreteAd
 				return getName();
 			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__PATH:
 				return getPath();
+			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__ACCES_MODIFIER_CLASS:
+				return getAccesModifierClass();
+			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__TIPE_CLASS:
+				return getTipeClass();
 			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__LST_ATTRIBUTE_CONCRETE_ADJ:
 				return getLstAttributeConcreteAdj();
 			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__LST_METHOD_CONCRETE_ADJ:
@@ -235,6 +325,12 @@ public class ClassConcreteAdjImpl extends EObjectImpl implements ClassConcreteAd
 				return;
 			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__PATH:
 				setPath((String)newValue);
+				return;
+			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__ACCES_MODIFIER_CLASS:
+				setAccesModifierClass((AccessModifierClass)newValue);
+				return;
+			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__TIPE_CLASS:
+				setTipeClass((TypeClass)newValue);
 				return;
 			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__LST_ATTRIBUTE_CONCRETE_ADJ:
 				getLstAttributeConcreteAdj().clear();
@@ -262,6 +358,12 @@ public class ClassConcreteAdjImpl extends EObjectImpl implements ClassConcreteAd
 			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__PATH:
 				setPath(PATH_EDEFAULT);
 				return;
+			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__ACCES_MODIFIER_CLASS:
+				setAccesModifierClass(ACCES_MODIFIER_CLASS_EDEFAULT);
+				return;
+			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__TIPE_CLASS:
+				setTipeClass(TIPE_CLASS_EDEFAULT);
+				return;
 			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__LST_ATTRIBUTE_CONCRETE_ADJ:
 				getLstAttributeConcreteAdj().clear();
 				return;
@@ -284,6 +386,10 @@ public class ClassConcreteAdjImpl extends EObjectImpl implements ClassConcreteAd
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__PATH:
 				return PATH_EDEFAULT == null ? path != null : !PATH_EDEFAULT.equals(path);
+			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__ACCES_MODIFIER_CLASS:
+				return accesModifierClass != ACCES_MODIFIER_CLASS_EDEFAULT;
+			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__TIPE_CLASS:
+				return tipeClass != TIPE_CLASS_EDEFAULT;
 			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__LST_ATTRIBUTE_CONCRETE_ADJ:
 				return lstAttributeConcreteAdj != null && !lstAttributeConcreteAdj.isEmpty();
 			case ConcretemodelPackage.CLASS_CONCRETE_ADJ__LST_METHOD_CONCRETE_ADJ:
@@ -306,6 +412,10 @@ public class ClassConcreteAdjImpl extends EObjectImpl implements ClassConcreteAd
 		result.append(name);
 		result.append(", path: ");
 		result.append(path);
+		result.append(", accesModifierClass: ");
+		result.append(accesModifierClass);
+		result.append(", tipeClass: ");
+		result.append(tipeClass);
 		result.append(')');
 		return result.toString();
 	}

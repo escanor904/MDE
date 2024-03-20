@@ -17,6 +17,8 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link concretemodel.ClassConcreteAdj#getName <em>Name</em>}</li>
  *   <li>{@link concretemodel.ClassConcreteAdj#getPath <em>Path</em>}</li>
+ *   <li>{@link concretemodel.ClassConcreteAdj#getAccesModifierClass <em>Acces Modifier Class</em>}</li>
+ *   <li>{@link concretemodel.ClassConcreteAdj#getTipeClass <em>Tipe Class</em>}</li>
  *   <li>{@link concretemodel.ClassConcreteAdj#getLstAttributeConcreteAdj <em>Lst Attribute Concrete Adj</em>}</li>
  *   <li>{@link concretemodel.ClassConcreteAdj#getLstMethodConcreteAdj <em>Lst Method Concrete Adj</em>}</li>
  * </ul>
@@ -77,6 +79,64 @@ public interface ClassConcreteAdj extends EObject {
 	 * @generated
 	 */
 	void setPath(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Acces Modifier Class</b></em>' attribute.
+	 * The literals are from the enumeration {@link concretemodel.AccessModifierClass}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Acces Modifier Class</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Acces Modifier Class</em>' attribute.
+	 * @see concretemodel.AccessModifierClass
+	 * @see #setAccesModifierClass(AccessModifierClass)
+	 * @see concretemodel.ConcretemodelPackage#getClassConcreteAdj_AccesModifierClass()
+	 * @model
+	 * @generated
+	 */
+	AccessModifierClass getAccesModifierClass();
+
+	/**
+	 * Sets the value of the '{@link concretemodel.ClassConcreteAdj#getAccesModifierClass <em>Acces Modifier Class</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Acces Modifier Class</em>' attribute.
+	 * @see concretemodel.AccessModifierClass
+	 * @see #getAccesModifierClass()
+	 * @generated
+	 */
+	void setAccesModifierClass(AccessModifierClass value);
+
+	/**
+	 * Returns the value of the '<em><b>Tipe Class</b></em>' attribute.
+	 * The literals are from the enumeration {@link concretemodel.TypeClass}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Tipe Class</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Tipe Class</em>' attribute.
+	 * @see concretemodel.TypeClass
+	 * @see #setTipeClass(TypeClass)
+	 * @see concretemodel.ConcretemodelPackage#getClassConcreteAdj_TipeClass()
+	 * @model
+	 * @generated
+	 */
+	TypeClass getTipeClass();
+
+	/**
+	 * Sets the value of the '{@link concretemodel.ClassConcreteAdj#getTipeClass <em>Tipe Class</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Tipe Class</em>' attribute.
+	 * @see concretemodel.TypeClass
+	 * @see #getTipeClass()
+	 * @generated
+	 */
+	void setTipeClass(TypeClass value);
 
 	/**
 	 * Returns the value of the '<em><b>Lst Attribute Concrete Adj</b></em>' containment reference list.

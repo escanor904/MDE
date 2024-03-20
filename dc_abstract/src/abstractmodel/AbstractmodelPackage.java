@@ -113,22 +113,13 @@ public interface AbstractmodelPackage extends EPackage {
 	int PROJECT_ADJ__PATH = 1;
 
 	/**
-	 * The feature id for the '<em><b>Class Type Factory Adj</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT_ADJ__CLASS_TYPE_FACTORY_ADJ = 2;
-
-	/**
 	 * The feature id for the '<em><b>Attribute Type Factory Adj</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROJECT_ADJ__ATTRIBUTE_TYPE_FACTORY_ADJ = 3;
+	int PROJECT_ADJ__ATTRIBUTE_TYPE_FACTORY_ADJ = 2;
 
 	/**
 	 * The feature id for the '<em><b>Lst Package Adj</b></em>' containment reference list.
@@ -137,7 +128,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROJECT_ADJ__LST_PACKAGE_ADJ = 4;
+	int PROJECT_ADJ__LST_PACKAGE_ADJ = 3;
 
 	/**
 	 * The number of structural features of the '<em>Project Adj</em>' class.
@@ -146,72 +137,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROJECT_ADJ_FEATURE_COUNT = 5;
-
-	/**
-	 * The meta object id for the '{@link abstractmodel.impl.ClassTypeFactoryAdjImpl <em>Class Type Factory Adj</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see abstractmodel.impl.ClassTypeFactoryAdjImpl
-	 * @see abstractmodel.impl.AbstractmodelPackageImpl#getClassTypeFactoryAdj()
-	 * @generated
-	 */
-	int CLASS_TYPE_FACTORY_ADJ = 2;
-
-	/**
-	 * The feature id for the '<em><b>Lst Class Type Adj</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASS_TYPE_FACTORY_ADJ__LST_CLASS_TYPE_ADJ = 0;
-
-	/**
-	 * The number of structural features of the '<em>Class Type Factory Adj</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASS_TYPE_FACTORY_ADJ_FEATURE_COUNT = 1;
-
-	/**
-	 * The meta object id for the '{@link abstractmodel.impl.ClassTypeAdjImpl <em>Class Type Adj</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see abstractmodel.impl.ClassTypeAdjImpl
-	 * @see abstractmodel.impl.AbstractmodelPackageImpl#getClassTypeAdj()
-	 * @generated
-	 */
-	int CLASS_TYPE_ADJ = 3;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASS_TYPE_ADJ__NAME = 0;
-
-	/**
-	 * The feature id for the '<em><b>Lst Class Adj</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASS_TYPE_ADJ__LST_CLASS_ADJ = 1;
-
-	/**
-	 * The number of structural features of the '<em>Class Type Adj</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLASS_TYPE_ADJ_FEATURE_COUNT = 2;
+	int PROJECT_ADJ_FEATURE_COUNT = 4;
 
 	/**
 	 * The meta object id for the '{@link abstractmodel.impl.AttributeTypeFactoryAdjImpl <em>Attribute Type Factory Adj</em>}' class.
@@ -221,7 +147,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @see abstractmodel.impl.AbstractmodelPackageImpl#getAttributeTypeFactoryAdj()
 	 * @generated
 	 */
-	int ATTRIBUTE_TYPE_FACTORY_ADJ = 4;
+	int ATTRIBUTE_TYPE_FACTORY_ADJ = 2;
 
 	/**
 	 * The feature id for the '<em><b>Lst Attribute Type Adj</b></em>' containment reference list.
@@ -249,7 +175,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @see abstractmodel.impl.AbstractmodelPackageImpl#getAttributeTypeAdj()
 	 * @generated
 	 */
-	int ATTRIBUTE_TYPE_ADJ = 5;
+	int ATTRIBUTE_TYPE_ADJ = 3;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -295,7 +221,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @see abstractmodel.impl.AbstractmodelPackageImpl#getPackageAdj()
 	 * @generated
 	 */
-	int PACKAGE_ADJ = 6;
+	int PACKAGE_ADJ = 4;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -350,7 +276,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @see abstractmodel.impl.AbstractmodelPackageImpl#getClassAdj()
 	 * @generated
 	 */
-	int CLASS_ADJ = 7;
+	int CLASS_ADJ = 5;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -371,13 +297,22 @@ public interface AbstractmodelPackage extends EPackage {
 	int CLASS_ADJ__PATH_PACKAGE = 1;
 
 	/**
-	 * The feature id for the '<em><b>Class Type Adj</b></em>' reference.
+	 * The feature id for the '<em><b>Class Type</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_ADJ__CLASS_TYPE_ADJ = 2;
+	int CLASS_ADJ__CLASS_TYPE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Acces Modifier Class</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS_ADJ__ACCES_MODIFIER_CLASS = 3;
 
 	/**
 	 * The feature id for the '<em><b>Lst Attribute Adj</b></em>' containment reference list.
@@ -386,7 +321,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_ADJ__LST_ATTRIBUTE_ADJ = 3;
+	int CLASS_ADJ__LST_ATTRIBUTE_ADJ = 4;
 
 	/**
 	 * The feature id for the '<em><b>Lst Method Adj</b></em>' containment reference list.
@@ -395,7 +330,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_ADJ__LST_METHOD_ADJ = 4;
+	int CLASS_ADJ__LST_METHOD_ADJ = 5;
 
 	/**
 	 * The feature id for the '<em><b>Lst Relation Ship Adj</b></em>' containment reference list.
@@ -404,7 +339,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_ADJ__LST_RELATION_SHIP_ADJ = 5;
+	int CLASS_ADJ__LST_RELATION_SHIP_ADJ = 6;
 
 	/**
 	 * The feature id for the '<em><b>Lst Input Relationship Adj</b></em>' reference list.
@@ -413,7 +348,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_ADJ__LST_INPUT_RELATIONSHIP_ADJ = 6;
+	int CLASS_ADJ__LST_INPUT_RELATIONSHIP_ADJ = 7;
 
 	/**
 	 * The number of structural features of the '<em>Class Adj</em>' class.
@@ -422,7 +357,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_ADJ_FEATURE_COUNT = 7;
+	int CLASS_ADJ_FEATURE_COUNT = 8;
 
 	/**
 	 * The meta object id for the '{@link abstractmodel.impl.RelationshipAdjImpl <em>Relationship Adj</em>}' class.
@@ -432,7 +367,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @see abstractmodel.impl.AbstractmodelPackageImpl#getRelationshipAdj()
 	 * @generated
 	 */
-	int RELATIONSHIP_ADJ = 8;
+	int RELATIONSHIP_ADJ = 6;
 
 	/**
 	 * The feature id for the '<em><b>Role Target</b></em>' attribute.
@@ -496,7 +431,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @see abstractmodel.impl.AbstractmodelPackageImpl#getContainmentAdj()
 	 * @generated
 	 */
-	int CONTAINMENT_ADJ = 9;
+	int CONTAINMENT_ADJ = 7;
 
 	/**
 	 * The feature id for the '<em><b>Role Target</b></em>' attribute.
@@ -560,7 +495,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @see abstractmodel.impl.AbstractmodelPackageImpl#getSharingAdj()
 	 * @generated
 	 */
-	int SHARING_ADJ = 10;
+	int SHARING_ADJ = 8;
 
 	/**
 	 * The feature id for the '<em><b>Role Target</b></em>' attribute.
@@ -624,7 +559,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @see abstractmodel.impl.AbstractmodelPackageImpl#getAssociationAdj()
 	 * @generated
 	 */
-	int ASSOCIATION_ADJ = 11;
+	int ASSOCIATION_ADJ = 9;
 
 	/**
 	 * The feature id for the '<em><b>Role Target</b></em>' attribute.
@@ -688,7 +623,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @see abstractmodel.impl.AbstractmodelPackageImpl#getGeneralizationAdj()
 	 * @generated
 	 */
-	int GENERALIZATION_ADJ = 12;
+	int GENERALIZATION_ADJ = 10;
 
 	/**
 	 * The feature id for the '<em><b>Role Target</b></em>' attribute.
@@ -752,7 +687,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @see abstractmodel.impl.AbstractmodelPackageImpl#getAttributeAdj()
 	 * @generated
 	 */
-	int ATTRIBUTE_ADJ = 13;
+	int ATTRIBUTE_ADJ = 11;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -807,7 +742,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @see abstractmodel.impl.AbstractmodelPackageImpl#getMethodAdj()
 	 * @generated
 	 */
-	int METHOD_ADJ = 14;
+	int METHOD_ADJ = 12;
 
 	/**
 	 * The feature id for the '<em><b>Method Name</b></em>' attribute.
@@ -871,7 +806,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @see abstractmodel.impl.AbstractmodelPackageImpl#getParameterAdj()
 	 * @generated
 	 */
-	int PARAMETER_ADJ = 15;
+	int PARAMETER_ADJ = 13;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -908,7 +843,7 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @see abstractmodel.impl.AbstractmodelPackageImpl#getAccessModifier()
 	 * @generated
 	 */
-	int ACCESS_MODIFIER = 16;
+	int ACCESS_MODIFIER = 14;
 
 
 	/**
@@ -965,17 +900,6 @@ public interface AbstractmodelPackage extends EPackage {
 	EAttribute getProjectAdj_Path();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link abstractmodel.ProjectAdj#getClassTypeFactoryAdj <em>Class Type Factory Adj</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Class Type Factory Adj</em>'.
-	 * @see abstractmodel.ProjectAdj#getClassTypeFactoryAdj()
-	 * @see #getProjectAdj()
-	 * @generated
-	 */
-	EReference getProjectAdj_ClassTypeFactoryAdj();
-
-	/**
 	 * Returns the meta object for the containment reference '{@link abstractmodel.ProjectAdj#getAttributeTypeFactoryAdj <em>Attribute Type Factory Adj</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -996,59 +920,6 @@ public interface AbstractmodelPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getProjectAdj_LstPackageAdj();
-
-	/**
-	 * Returns the meta object for class '{@link abstractmodel.ClassTypeFactoryAdj <em>Class Type Factory Adj</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Class Type Factory Adj</em>'.
-	 * @see abstractmodel.ClassTypeFactoryAdj
-	 * @generated
-	 */
-	EClass getClassTypeFactoryAdj();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link abstractmodel.ClassTypeFactoryAdj#getLstClassTypeAdj <em>Lst Class Type Adj</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Lst Class Type Adj</em>'.
-	 * @see abstractmodel.ClassTypeFactoryAdj#getLstClassTypeAdj()
-	 * @see #getClassTypeFactoryAdj()
-	 * @generated
-	 */
-	EReference getClassTypeFactoryAdj_LstClassTypeAdj();
-
-	/**
-	 * Returns the meta object for class '{@link abstractmodel.ClassTypeAdj <em>Class Type Adj</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Class Type Adj</em>'.
-	 * @see abstractmodel.ClassTypeAdj
-	 * @generated
-	 */
-	EClass getClassTypeAdj();
-
-	/**
-	 * Returns the meta object for the attribute '{@link abstractmodel.ClassTypeAdj#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see abstractmodel.ClassTypeAdj#getName()
-	 * @see #getClassTypeAdj()
-	 * @generated
-	 */
-	EAttribute getClassTypeAdj_Name();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link abstractmodel.ClassTypeAdj#getLstClassAdj <em>Lst Class Adj</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Lst Class Adj</em>'.
-	 * @see abstractmodel.ClassTypeAdj#getLstClassAdj()
-	 * @see #getClassTypeAdj()
-	 * @generated
-	 */
-	EReference getClassTypeAdj_LstClassAdj();
 
 	/**
 	 * Returns the meta object for class '{@link abstractmodel.AttributeTypeFactoryAdj <em>Attribute Type Factory Adj</em>}'.
@@ -1201,15 +1072,26 @@ public interface AbstractmodelPackage extends EPackage {
 	EAttribute getClassAdj_PathPackage();
 
 	/**
-	 * Returns the meta object for the reference '{@link abstractmodel.ClassAdj#getClassTypeAdj <em>Class Type Adj</em>}'.
+	 * Returns the meta object for the attribute '{@link abstractmodel.ClassAdj#getClassType <em>Class Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Class Type Adj</em>'.
-	 * @see abstractmodel.ClassAdj#getClassTypeAdj()
+	 * @return the meta object for the attribute '<em>Class Type</em>'.
+	 * @see abstractmodel.ClassAdj#getClassType()
 	 * @see #getClassAdj()
 	 * @generated
 	 */
-	EReference getClassAdj_ClassTypeAdj();
+	EAttribute getClassAdj_ClassType();
+
+	/**
+	 * Returns the meta object for the attribute '{@link abstractmodel.ClassAdj#getAccesModifierClass <em>Acces Modifier Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Acces Modifier Class</em>'.
+	 * @see abstractmodel.ClassAdj#getAccesModifierClass()
+	 * @see #getClassAdj()
+	 * @generated
+	 */
+	EAttribute getClassAdj_AccesModifierClass();
 
 	/**
 	 * Returns the meta object for the containment reference list '{@link abstractmodel.ClassAdj#getLstAttributeAdj <em>Lst Attribute Adj</em>}'.
@@ -1588,14 +1470,6 @@ public interface AbstractmodelPackage extends EPackage {
 		EAttribute PROJECT_ADJ__PATH = eINSTANCE.getProjectAdj_Path();
 
 		/**
-		 * The meta object literal for the '<em><b>Class Type Factory Adj</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PROJECT_ADJ__CLASS_TYPE_FACTORY_ADJ = eINSTANCE.getProjectAdj_ClassTypeFactoryAdj();
-
-		/**
 		 * The meta object literal for the '<em><b>Attribute Type Factory Adj</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1610,50 +1484,6 @@ public interface AbstractmodelPackage extends EPackage {
 		 * @generated
 		 */
 		EReference PROJECT_ADJ__LST_PACKAGE_ADJ = eINSTANCE.getProjectAdj_LstPackageAdj();
-
-		/**
-		 * The meta object literal for the '{@link abstractmodel.impl.ClassTypeFactoryAdjImpl <em>Class Type Factory Adj</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see abstractmodel.impl.ClassTypeFactoryAdjImpl
-		 * @see abstractmodel.impl.AbstractmodelPackageImpl#getClassTypeFactoryAdj()
-		 * @generated
-		 */
-		EClass CLASS_TYPE_FACTORY_ADJ = eINSTANCE.getClassTypeFactoryAdj();
-
-		/**
-		 * The meta object literal for the '<em><b>Lst Class Type Adj</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CLASS_TYPE_FACTORY_ADJ__LST_CLASS_TYPE_ADJ = eINSTANCE.getClassTypeFactoryAdj_LstClassTypeAdj();
-
-		/**
-		 * The meta object literal for the '{@link abstractmodel.impl.ClassTypeAdjImpl <em>Class Type Adj</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see abstractmodel.impl.ClassTypeAdjImpl
-		 * @see abstractmodel.impl.AbstractmodelPackageImpl#getClassTypeAdj()
-		 * @generated
-		 */
-		EClass CLASS_TYPE_ADJ = eINSTANCE.getClassTypeAdj();
-
-		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute CLASS_TYPE_ADJ__NAME = eINSTANCE.getClassTypeAdj_Name();
-
-		/**
-		 * The meta object literal for the '<em><b>Lst Class Adj</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CLASS_TYPE_ADJ__LST_CLASS_ADJ = eINSTANCE.getClassTypeAdj_LstClassAdj();
 
 		/**
 		 * The meta object literal for the '{@link abstractmodel.impl.AttributeTypeFactoryAdjImpl <em>Attribute Type Factory Adj</em>}' class.
@@ -1776,12 +1606,20 @@ public interface AbstractmodelPackage extends EPackage {
 		EAttribute CLASS_ADJ__PATH_PACKAGE = eINSTANCE.getClassAdj_PathPackage();
 
 		/**
-		 * The meta object literal for the '<em><b>Class Type Adj</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Class Type</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CLASS_ADJ__CLASS_TYPE_ADJ = eINSTANCE.getClassAdj_ClassTypeAdj();
+		EAttribute CLASS_ADJ__CLASS_TYPE = eINSTANCE.getClassAdj_ClassType();
+
+		/**
+		 * The meta object literal for the '<em><b>Acces Modifier Class</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLASS_ADJ__ACCES_MODIFIER_CLASS = eINSTANCE.getClassAdj_AccesModifierClass();
 
 		/**
 		 * The meta object literal for the '<em><b>Lst Attribute Adj</b></em>' containment reference list feature.

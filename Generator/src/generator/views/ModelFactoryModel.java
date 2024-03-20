@@ -11,12 +11,19 @@ import java.util.List;
 
 import javax.swing.JOptionPane;
 
+import org.eclipse.emf.common.util.EList;
+
 import abstractmodel.AbstractmodelFactory;
 import abstractmodel.AbstractmodelPackage;
+import abstractmodel.AttributeAdj;
+import abstractmodel.AttributeTypeAdj;
+import abstractmodel.AttributeTypeFactoryAdj;
 import abstractmodel.ModelFactoryAbstract;
 import abstractmodel.PackageAdj;
 import abstractmodel.impl.AbstractmodelFactoryImpl;
+import abstractmodel.impl.AttributeAdjImpl;
 import concretemodel.AttributeConcreteAdj;
+import concretemodel.AttributeTypeConcreteAdj;
 import concretemodel.ClassConcreteAdj;
 import concretemodel.ClassDiagramAdj;
 import concretemodel.ConcretemodelFactory;
@@ -171,6 +178,10 @@ public class ModelFactoryModel {
 			proyectoAdjAbstracta.setName(projectAdjConcreta.getName());
 			proyectoAdjAbstracta.setPath(projectAdjConcreta.getPath());
 			modelFactoryAbstracta.getListProjects().add(proyectoAdjAbstracta);
+			abstractmodel.AttributeTypeFactoryAdj  atrAbstractmodelFactory= AbstractmodelFactory.eINSTANCE.createAttributeTypeFactoryAdj();
+			proyectoAdjAbstracta.setAttributeTypeFactoryAdj(atrAbstractmodelFactory);
+			
+			
 
 			// creamos el paquete raiz por defecto
 			PackageAdj packageRaizAdj = AbstractmodelFactory.eINSTANCE.createPackageAdj();
@@ -178,31 +189,71 @@ public class ModelFactoryModel {
 			packageRaizAdj.setPath(projectAdjConcreta.getPath());
 
 			proyectoAdjAbstracta.getLstPackageAdj().add(packageRaizAdj);
+			
+			for (AttributeTypeConcreteAdj attributeTypeConcreteAdj : projectAdjConcreta.getLstAttributeTypeConcreteAdj()) {
+				
+				crearTipoAtributo(attributeTypeConcreteAdj, proyectoAdjAbstracta.getAttributeTypeFactoryAdj().getLstAttributeTypeAdj());
+			}
 
 			// se recorren todos los diagramas y se crea el sistema de paquetes
 			for (ClassDiagramAdj diagrama : projectAdjConcreta.getLstClassDiagramAdj()) {
 
-				// va rrecorrer todos los paquetes de todos los diagramas
+				// va a recorrer todos los paquetes de todos los diagramas
 				// por cada paquete se crea un paquete
 				for (PackageConcreteAdj packageConcreta : diagrama.getLstPackageConcreteAdj()) {
 					crearPaquete(packageConcreta, packageRaizAdj);
 				}
 				for (ClassConcreteAdj classAdjConcreta : diagrama.getLstClassConcreteAdj()) {
-					crearClass(packageRaizAdj, classAdjConcreta);
+					crearClass(packageRaizAdj, classAdjConcreta, proyectoAdjAbstracta);
 				}
 				//
 				for (RelationshipAdj relationAdj : diagrama.getLstRelationship()) {
-					//System.out.println(relationAdj.getClass().getName());
+					// System.out.println(relationAdj.getClass().getName());
 					crearRelacion(relationAdj, packageRaizAdj);
 				}
 			}
+
+
 
 		}
 		saveAbstracta();
 	}
 
+
+
+ /**
+  * Este método crea los atributos si aún no existen
+  * @param attributeTypeConcreteAdj
+  * @param lstAttributeTypeAbstractaAdj
+  */
+	private void crearTipoAtributo(AttributeTypeConcreteAdj attributeTypeConcreteAdj,
+			EList<AttributeTypeAdj> lstAttributeTypeAbstractaAdj) {
+		// TODO Auto-generated method stub
+		
+			if (lstAttributeTypeAbstractaAdj.size()>0) {
+				for (AttributeTypeAdj attributeTypeAbstractaAdj : lstAttributeTypeAbstractaAdj) {
+					if (attributeTypeConcreteAdj.getName().equals(attributeTypeAbstractaAdj.getName())) {
+						break;
+					}
+				}
+				abstractmodel.AttributeTypeAdj atrAttributeTypeAdjNuevo = AbstractmodelFactory.eINSTANCE
+						.createAttributeTypeAdj();
+				atrAttributeTypeAdjNuevo.setName(attributeTypeConcreteAdj.getName());
+				lstAttributeTypeAbstractaAdj.add(atrAttributeTypeAdjNuevo);
+				
+			}else {
+				abstractmodel.AttributeTypeAdj atrAttributeTypeAdjNuevo = AbstractmodelFactory.eINSTANCE
+						.createAttributeTypeAdj();
+				atrAttributeTypeAdjNuevo.setName(attributeTypeConcreteAdj.getName());
+				lstAttributeTypeAbstractaAdj.add(atrAttributeTypeAdjNuevo);
+			}
+		
+	
+	}
+
 	/**
 	 * Crea las relaciones hacia el modelo abstracto
+	 * 
 	 * @param relationAdjConcreta
 	 * @param packageRaizRam
 	 */
@@ -285,10 +336,10 @@ public class ModelFactoryModel {
 
 		case "concretemodel.impl.GeneralizationAdjImpl":
 
-			//la multiplicidad para la generalización es la misma en todos los casos
+			// la multiplicidad para la generalización es la misma en todos los casos
 			relationAdjConcreta.setMultiplicitySourceClass("*");
 			relationAdjConcreta.setMultiplicityTargetClass("0");
-			
+
 			// Clase A - la Generalización es unidireccional
 			abstractmodel.GeneralizationAdj relationAdjAbstractaGeneralizationSource = AbstractmodelFactory.eINSTANCE
 					.createGeneralizationAdj();
@@ -299,9 +350,8 @@ public class ModelFactoryModel {
 			relationAdjAbstractaGeneralizationSource.setRoleSource(relationAdjConcreta.getRoleSource());
 			relationAdjAbstractaGeneralizationSource.setRoleTarget(relationAdjConcreta.getRoleTarget());
 			relationAdjAbstractaGeneralizationSource.setTargetClass(classAdjAbstractaTarget);
-			
+
 			classAdjAbstractaSource.getLstRelationShipAdj().add(relationAdjAbstractaGeneralizationSource);
-			
 
 			break;
 
@@ -347,6 +397,7 @@ public class ModelFactoryModel {
 
 	/**
 	 * Obtenemos una clase
+	 * 
 	 * @param claseABuscar
 	 * @param packageRaizRam
 	 * @return
@@ -368,43 +419,73 @@ public class ModelFactoryModel {
 	 * 
 	 * @param packageRaizAdj
 	 * @param classAdjConcreta
+	 * @param proyectoAdjAbstracta
 	 */
-	private void crearClass(abstractmodel.PackageAdj packageRaizAdj, ClassConcreteAdj classAdjConcreta) {
-		abstractmodel.ClassAdj classAdjAbsracta = AbstractmodelFactory.eINSTANCE.createClassAdj();
-		
-		classAdjAbsracta.setName(classAdjConcreta.getName());
-		//se concatena el nombre del paquete raiz para tener el path completo
-		classAdjAbsracta.setPathPackage(packageRaizAdj.getName()+"/"+classAdjConcreta.getPath());
+	private void crearClass(abstractmodel.PackageAdj packageRaizAdj, ClassConcreteAdj classAdjConcreta,
+			abstractmodel.ProjectAdj proyectoAdjAbstracta) {
+		abstractmodel.ClassAdj classAdjAbstracta = AbstractmodelFactory.eINSTANCE.createClassAdj();
 
-		//Verificamos si el path es vacio, colocamos las clases en el paquete raiz
-		if (classAdjConcreta.getPath() == null || classAdjConcreta.getPath().equals("")) {
-			packageRaizAdj.getLstClassAdj().add(classAdjAbsracta);
-		}
-		else {
-			//buscamos el paquete padre con el path de la clase concreta
-			abstractmodel.PackageAdj paquetePadre = obtenerPackagePadre(classAdjConcreta.getPath(), packageRaizAdj);
-			paquetePadre.getLstClassAdj().add(classAdjAbsracta);
-		}
+		classAdjAbstracta.setName(classAdjConcreta.getName());
+		// se concatena el nombre del paquete raiz para tener el path completo
+		classAdjAbstracta.setPathPackage(packageRaizAdj.getName() + "/" + classAdjConcreta.getPath());
+		classAdjAbstracta.setClassType(classAdjConcreta.getTipeClass().getName());
+		classAdjAbstracta.setAccesModifierClass(classAdjConcreta.getAccesModifierClass().getName());
 		
+		
+
+		// Verificamos si el path es vacio, colocamos las clases en el paquete raiz
+		if (classAdjConcreta.getPath() == null || classAdjConcreta.getPath().equals("")) {
+			packageRaizAdj.getLstClassAdj().add(classAdjAbstracta);
+		} else {
+			// buscamos el paquete padre con el path de la clase concreta
+			abstractmodel.PackageAdj paquetePadre = obtenerPackagePadre(classAdjConcreta.getPath(), packageRaizAdj);
+			paquetePadre.getLstClassAdj().add(classAdjAbstracta);
+		}
+
 		for (AttributeConcreteAdj attributeAdjConcreta : classAdjConcreta.getLstAttributeConcreteAdj()) {
 			abstractmodel.AttributeAdj attributeAdjAbstracta = AbstractmodelFactory.eINSTANCE.createAttributeAdj();
+			attributeAdjAbstracta.setAccesModifier(attributeAdjConcreta.getAccessModifier().getName());
 			attributeAdjAbstracta.setName(attributeAdjConcreta.getName());
-			attributeAdjAbstracta.setAttributeTypeAdj(null);
+			abstractmodel.AttributeTypeAdj tipoAtributo = buscarTipoAtributoPorNombre(attributeAdjConcreta.getAttributeTypeConcreteAdj().getName(),proyectoAdjAbstracta);
+			attributeAdjAbstracta.setAttributeTypeAdj(tipoAtributo);
 			attributeAdjAbstracta.setValor(attributeAdjConcreta.getValue());
-			classAdjAbsracta.getLstAttributeAdj().add(attributeAdjAbstracta);
+			classAdjAbstracta.getLstAttributeAdj().add(attributeAdjAbstracta);
 		}
 		for (MethodConcreteAdj methodAdjConcreta : classAdjConcreta.getLstMethodConcreteAdj()) {
 			abstractmodel.MethodAdj methodAdj = AbstractmodelFactory.eINSTANCE.createMethodAdj();
 			methodAdj.setMethodName(methodAdjConcreta.getMethodName());
 			methodAdj.setBody(methodAdjConcreta.getBody());
 			methodAdj.setReturnTypeAdj(methodAdjConcreta.getReturnType());
-			classAdjAbsracta.getLstMethodAdj().add(methodAdj);
+			classAdjAbstracta.getLstMethodAdj().add(methodAdj);
 		}
 	}
 
-	
+
+/**
+ * Esta clase me permite retornar el tipo de atributo en la abstracta, que tiene el mismo nombre que en la concreta
+ * @param name
+ * @param proyectoAdjAbstracta
+ * @return
+ */
+	private AttributeTypeAdj buscarTipoAtributoPorNombre(String name, abstractmodel.ProjectAdj proyectoAdjAbstracta) {
+		// TODO Auto-generated method stub
+		abstractmodel.AttributeTypeAdj tipoAtributo = AbstractmodelFactory.eINSTANCE.createAttributeTypeAdj();
+		
+		for (AttributeTypeAdj iterable_element : proyectoAdjAbstracta.getAttributeTypeFactoryAdj().getLstAttributeTypeAdj()) {
+			
+			if (iterable_element.getName().equals(name)) {
+				tipoAtributo=iterable_element;
+				break;
+			}
+		}
+		
+		return tipoAtributo;
+	}
+
+
 	/**
 	 * Crea la estructuracion de paquetes
+	 * 
 	 * @param packageConcreta
 	 * @param packageRaizAdj
 	 */
@@ -417,17 +498,17 @@ public class ModelFactoryModel {
 		if (packageConcreta.getPath() == null || packageConcreta.getPath().equals("")) {
 			newPaqueteAbstracta.setPath(packageRaizAdj.getName());
 			packageRaizAdj.getLstChildPackageAdj().add(newPaqueteAbstracta);
-		}
-		else {
+		} else {
 			PackageAdj packageAdjPadre = obtenerPackagePadre(packageConcreta.getPath(), packageRaizAdj);// src/main
 			newPaqueteAbstracta.setPath(packageAdjPadre.getPath() + "/" + packageAdjPadre.getName());
 			packageAdjPadre.getLstChildPackageAdj().add(newPaqueteAbstracta);
 		}
-	
+
 	}
 
 	/**
 	 * obtiene el paquete padre dado el path y el paquete raíz
+	 * 
 	 * @param path
 	 * @param packageRaizAdj
 	 * @return
@@ -435,8 +516,8 @@ public class ModelFactoryModel {
 	private PackageAdj obtenerPackagePadre(String path, PackageAdj packageRaizAdj) {
 
 		String[] pathArray = path.split("/");
-		PackageAdj padre   = packageRaizAdj;
-		
+		PackageAdj padre = packageRaizAdj;
+
 		for (int j = 0; j < pathArray.length; j++) {
 			padre = obtenerPaquete(pathArray[j], padre);
 		}
@@ -445,7 +526,9 @@ public class ModelFactoryModel {
 	}
 
 	/**
-	 * crea (si no existe) y obtiene un paquete dado su nombre y el paquete padre (paquete que lo contiene)
+	 * crea (si no existe) y obtiene un paquete dado su nombre y el paquete padre
+	 * (paquete que lo contiene)
+	 * 
 	 * @param nameP
 	 * @param packageParentAdj
 	 * @return
@@ -457,17 +540,14 @@ public class ModelFactoryModel {
 				return pac;
 			}
 		}
-		
+
 		PackageAdj packageAdj = AbstractmodelFactory.eINSTANCE.createPackageAdj();
 		packageAdj.setName(nameP);
 		packageAdj.setPath(packageParentAdj.getPath() + "/" + packageParentAdj.getName());
 		packageParentAdj.getLstChildPackageAdj().add(packageAdj);
 		return packageAdj;
 	}
-	
-	
-	
-	
+
 	//
 	//
 	// // -------------------------------- Tranformacion M2T de parte abstracta a
@@ -486,8 +566,7 @@ public class ModelFactoryModel {
 	//
 	//
 	//
-	
-	
+
 	//
 	//
 	//

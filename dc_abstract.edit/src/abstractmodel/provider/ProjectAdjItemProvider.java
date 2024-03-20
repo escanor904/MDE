@@ -125,7 +125,6 @@ public class ProjectAdjItemProvider
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(AbstractmodelPackage.Literals.PROJECT_ADJ__CLASS_TYPE_FACTORY_ADJ);
 			childrenFeatures.add(AbstractmodelPackage.Literals.PROJECT_ADJ__ATTRIBUTE_TYPE_FACTORY_ADJ);
 			childrenFeatures.add(AbstractmodelPackage.Literals.PROJECT_ADJ__LST_PACKAGE_ADJ);
 		}
@@ -187,7 +186,6 @@ public class ProjectAdjItemProvider
 			case AbstractmodelPackage.PROJECT_ADJ__PATH:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			case AbstractmodelPackage.PROJECT_ADJ__CLASS_TYPE_FACTORY_ADJ:
 			case AbstractmodelPackage.PROJECT_ADJ__ATTRIBUTE_TYPE_FACTORY_ADJ:
 			case AbstractmodelPackage.PROJECT_ADJ__LST_PACKAGE_ADJ:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
@@ -206,11 +204,6 @@ public class ProjectAdjItemProvider
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
-
-		newChildDescriptors.add
-			(createChildParameter
-				(AbstractmodelPackage.Literals.PROJECT_ADJ__CLASS_TYPE_FACTORY_ADJ,
-				 AbstractmodelFactory.eINSTANCE.createClassTypeFactoryAdj()));
 
 		newChildDescriptors.add
 			(createChildParameter

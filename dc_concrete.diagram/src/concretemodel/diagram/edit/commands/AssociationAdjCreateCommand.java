@@ -71,7 +71,7 @@ public class AssociationAdjCreateCommand extends EditElementCommand {
 		if (getContainer() == null) {
 			return false;
 		}
-		return ConcretemodelBaseItemSemanticEditPolicy.getLinkConstraints().canCreateAssociationAdj_4005(getContainer(),
+		return ConcretemodelBaseItemSemanticEditPolicy.getLinkConstraints().canCreateAssociationAdj_4003(getContainer(),
 				getSource(), getTarget());
 	}
 

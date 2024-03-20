@@ -51,7 +51,7 @@
         queryText="true"/>
   </linkTraces>
   <linkTraces
-      visualID="4003"
+      visualID="4002"
       queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://concretemodel' and _eClass_.name = 'SharingAdj')">
     <linkLabelTraces
         visualID="6004"
@@ -67,7 +67,7 @@
         queryText="true"/>
   </linkTraces>
   <linkTraces
-      visualID="4005"
+      visualID="4003"
       queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://concretemodel' and _eClass_.name = 'AssociationAdj')">
     <linkLabelTraces
         visualID="6008"
@@ -83,6 +83,6 @@
         queryText="true"/>
   </linkTraces>
   <linkTraces
-      visualID="4007"
+      visualID="4004"
       queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://concretemodel' and _eClass_.name = 'GeneralizationAdj')"/>
 </trace:TraceModel>

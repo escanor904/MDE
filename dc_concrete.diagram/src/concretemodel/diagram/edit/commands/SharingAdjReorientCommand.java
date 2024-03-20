@@ -74,7 +74,7 @@ public class SharingAdjReorientCommand extends EditElementCommand {
 			return false;
 		}
 		ClassDiagramAdj container = (ClassDiagramAdj) getLink().eContainer();
-		return ConcretemodelBaseItemSemanticEditPolicy.getLinkConstraints().canExistSharingAdj_4003(container,
+		return ConcretemodelBaseItemSemanticEditPolicy.getLinkConstraints().canExistSharingAdj_4002(container,
 				getLink(), getNewSource(), target);
 	}
 
@@ -90,7 +90,7 @@ public class SharingAdjReorientCommand extends EditElementCommand {
 			return false;
 		}
 		ClassDiagramAdj container = (ClassDiagramAdj) getLink().eContainer();
-		return ConcretemodelBaseItemSemanticEditPolicy.getLinkConstraints().canExistSharingAdj_4003(container,
+		return ConcretemodelBaseItemSemanticEditPolicy.getLinkConstraints().canExistSharingAdj_4002(container,
 				getLink(), source, getNewTarget());
 	}
 

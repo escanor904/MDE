@@ -49,9 +49,9 @@ public class ConcretemodelModelingAssistantProviderOfClassConcreteAdjEditPart
 	public List<IElementType> doGetRelTypesOnSource(ClassConcreteAdjEditPart source) {
 		List<IElementType> types = new ArrayList<IElementType>(4);
 		types.add(ConcretemodelElementTypes.ContainmentSdj_4001);
-		types.add(ConcretemodelElementTypes.SharingAdj_4003);
-		types.add(ConcretemodelElementTypes.AssociationAdj_4005);
-		types.add(ConcretemodelElementTypes.GeneralizationAdj_4007);
+		types.add(ConcretemodelElementTypes.SharingAdj_4002);
+		types.add(ConcretemodelElementTypes.AssociationAdj_4003);
+		types.add(ConcretemodelElementTypes.GeneralizationAdj_4004);
 		return types;
 	}
 
@@ -76,13 +76,13 @@ public class ConcretemodelModelingAssistantProviderOfClassConcreteAdjEditPart
 			types.add(ConcretemodelElementTypes.ContainmentSdj_4001);
 		}
 		if (targetEditPart instanceof ClassConcreteAdjEditPart) {
-			types.add(ConcretemodelElementTypes.SharingAdj_4003);
+			types.add(ConcretemodelElementTypes.SharingAdj_4002);
 		}
 		if (targetEditPart instanceof ClassConcreteAdjEditPart) {
-			types.add(ConcretemodelElementTypes.AssociationAdj_4005);
+			types.add(ConcretemodelElementTypes.AssociationAdj_4003);
 		}
 		if (targetEditPart instanceof ClassConcreteAdjEditPart) {
-			types.add(ConcretemodelElementTypes.GeneralizationAdj_4007);
+			types.add(ConcretemodelElementTypes.GeneralizationAdj_4004);
 		}
 		return types;
 	}
@@ -104,11 +104,11 @@ public class ConcretemodelModelingAssistantProviderOfClassConcreteAdjEditPart
 		List<IElementType> types = new ArrayList<IElementType>();
 		if (relationshipType == ConcretemodelElementTypes.ContainmentSdj_4001) {
 			types.add(ConcretemodelElementTypes.ClassConcreteAdj_2002);
-		} else if (relationshipType == ConcretemodelElementTypes.SharingAdj_4003) {
+		} else if (relationshipType == ConcretemodelElementTypes.SharingAdj_4002) {
 			types.add(ConcretemodelElementTypes.ClassConcreteAdj_2002);
-		} else if (relationshipType == ConcretemodelElementTypes.AssociationAdj_4005) {
+		} else if (relationshipType == ConcretemodelElementTypes.AssociationAdj_4003) {
 			types.add(ConcretemodelElementTypes.ClassConcreteAdj_2002);
-		} else if (relationshipType == ConcretemodelElementTypes.GeneralizationAdj_4007) {
+		} else if (relationshipType == ConcretemodelElementTypes.GeneralizationAdj_4004) {
 			types.add(ConcretemodelElementTypes.ClassConcreteAdj_2002);
 		}
 		return types;
@@ -130,9 +130,9 @@ public class ConcretemodelModelingAssistantProviderOfClassConcreteAdjEditPart
 	public List<IElementType> doGetRelTypesOnTarget(ClassConcreteAdjEditPart target) {
 		List<IElementType> types = new ArrayList<IElementType>(4);
 		types.add(ConcretemodelElementTypes.ContainmentSdj_4001);
-		types.add(ConcretemodelElementTypes.SharingAdj_4003);
-		types.add(ConcretemodelElementTypes.AssociationAdj_4005);
-		types.add(ConcretemodelElementTypes.GeneralizationAdj_4007);
+		types.add(ConcretemodelElementTypes.SharingAdj_4002);
+		types.add(ConcretemodelElementTypes.AssociationAdj_4003);
+		types.add(ConcretemodelElementTypes.GeneralizationAdj_4004);
 		return types;
 	}
 
@@ -153,11 +153,11 @@ public class ConcretemodelModelingAssistantProviderOfClassConcreteAdjEditPart
 		List<IElementType> types = new ArrayList<IElementType>();
 		if (relationshipType == ConcretemodelElementTypes.ContainmentSdj_4001) {
 			types.add(ConcretemodelElementTypes.ClassConcreteAdj_2002);
-		} else if (relationshipType == ConcretemodelElementTypes.SharingAdj_4003) {
+		} else if (relationshipType == ConcretemodelElementTypes.SharingAdj_4002) {
 			types.add(ConcretemodelElementTypes.ClassConcreteAdj_2002);
-		} else if (relationshipType == ConcretemodelElementTypes.AssociationAdj_4005) {
+		} else if (relationshipType == ConcretemodelElementTypes.AssociationAdj_4003) {
 			types.add(ConcretemodelElementTypes.ClassConcreteAdj_2002);
-		} else if (relationshipType == ConcretemodelElementTypes.GeneralizationAdj_4007) {
+		} else if (relationshipType == ConcretemodelElementTypes.GeneralizationAdj_4004) {
 			types.add(ConcretemodelElementTypes.ClassConcreteAdj_2002);
 		}
 		return types;

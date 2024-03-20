@@ -17,7 +17,8 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link abstractmodel.ClassAdj#getName <em>Name</em>}</li>
  *   <li>{@link abstractmodel.ClassAdj#getPathPackage <em>Path Package</em>}</li>
- *   <li>{@link abstractmodel.ClassAdj#getClassTypeAdj <em>Class Type Adj</em>}</li>
+ *   <li>{@link abstractmodel.ClassAdj#getClassType <em>Class Type</em>}</li>
+ *   <li>{@link abstractmodel.ClassAdj#getAccesModifierClass <em>Acces Modifier Class</em>}</li>
  *   <li>{@link abstractmodel.ClassAdj#getLstAttributeAdj <em>Lst Attribute Adj</em>}</li>
  *   <li>{@link abstractmodel.ClassAdj#getLstMethodAdj <em>Lst Method Adj</em>}</li>
  *   <li>{@link abstractmodel.ClassAdj#getLstRelationShipAdj <em>Lst Relation Ship Adj</em>}</li>
@@ -82,30 +83,56 @@ public interface ClassAdj extends EObject {
 	void setPathPackage(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Class Type Adj</b></em>' reference.
+	 * Returns the value of the '<em><b>Class Type</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Class Type Adj</em>' reference isn't clear,
+	 * If the meaning of the '<em>Class Type</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Class Type Adj</em>' reference.
-	 * @see #setClassTypeAdj(ClassTypeAdj)
-	 * @see abstractmodel.AbstractmodelPackage#getClassAdj_ClassTypeAdj()
+	 * @return the value of the '<em>Class Type</em>' attribute.
+	 * @see #setClassType(String)
+	 * @see abstractmodel.AbstractmodelPackage#getClassAdj_ClassType()
 	 * @model
 	 * @generated
 	 */
-	ClassTypeAdj getClassTypeAdj();
+	String getClassType();
 
 	/**
-	 * Sets the value of the '{@link abstractmodel.ClassAdj#getClassTypeAdj <em>Class Type Adj</em>}' reference.
+	 * Sets the value of the '{@link abstractmodel.ClassAdj#getClassType <em>Class Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Class Type Adj</em>' reference.
-	 * @see #getClassTypeAdj()
+	 * @param value the new value of the '<em>Class Type</em>' attribute.
+	 * @see #getClassType()
 	 * @generated
 	 */
-	void setClassTypeAdj(ClassTypeAdj value);
+	void setClassType(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Acces Modifier Class</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Acces Modifier Class</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Acces Modifier Class</em>' attribute.
+	 * @see #setAccesModifierClass(String)
+	 * @see abstractmodel.AbstractmodelPackage#getClassAdj_AccesModifierClass()
+	 * @model
+	 * @generated
+	 */
+	String getAccesModifierClass();
+
+	/**
+	 * Sets the value of the '{@link abstractmodel.ClassAdj#getAccesModifierClass <em>Acces Modifier Class</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Acces Modifier Class</em>' attribute.
+	 * @see #getAccesModifierClass()
+	 * @generated
+	 */
+	void setAccesModifierClass(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Lst Attribute Adj</b></em>' containment reference list.
@@ -160,7 +187,7 @@ public interface ClassAdj extends EObject {
 	 * The list contents are of type {@link abstractmodel.RelationshipAdj}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Lst Input Relationship Adj</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Lst Input Relationship Adj</em>' reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

@@ -247,13 +247,13 @@ public class ConcretemodelViewProvider extends AbstractProvider implements IView
 			return createContainmentSdj_4001(getSemanticElement(semanticAdapter), containerView, index, persisted,
 					preferencesHint);
 		case SharingAdjEditPart.VISUAL_ID:
-			return createSharingAdj_4003(getSemanticElement(semanticAdapter), containerView, index, persisted,
+			return createSharingAdj_4002(getSemanticElement(semanticAdapter), containerView, index, persisted,
 					preferencesHint);
 		case AssociationAdjEditPart.VISUAL_ID:
-			return createAssociationAdj_4005(getSemanticElement(semanticAdapter), containerView, index, persisted,
+			return createAssociationAdj_4003(getSemanticElement(semanticAdapter), containerView, index, persisted,
 					preferencesHint);
 		case GeneralizationAdjEditPart.VISUAL_ID:
-			return createGeneralizationAdj_4007(getSemanticElement(semanticAdapter), containerView, index, persisted,
+			return createGeneralizationAdj_4004(getSemanticElement(semanticAdapter), containerView, index, persisted,
 					preferencesHint);
 		}
 		// can never happen, provided #provides(CreateEdgeViewOperation) is correct
@@ -474,7 +474,7 @@ public class ConcretemodelViewProvider extends AbstractProvider implements IView
 	/**
 	* @generated
 	*/
-	public Edge createSharingAdj_4003(EObject domainElement, View containerView, int index, boolean persisted,
+	public Edge createSharingAdj_4002(EObject domainElement, View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
 		Edge edge = NotationFactory.eINSTANCE.createEdge();
 		edge.getStyles().add(NotationFactory.eINSTANCE.createRoutingStyle());
@@ -535,7 +535,7 @@ public class ConcretemodelViewProvider extends AbstractProvider implements IView
 	/**
 	* @generated
 	*/
-	public Edge createAssociationAdj_4005(EObject domainElement, View containerView, int index, boolean persisted,
+	public Edge createAssociationAdj_4003(EObject domainElement, View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
 		Edge edge = NotationFactory.eINSTANCE.createEdge();
 		edge.getStyles().add(NotationFactory.eINSTANCE.createRoutingStyle());
@@ -596,7 +596,7 @@ public class ConcretemodelViewProvider extends AbstractProvider implements IView
 	/**
 	* @generated
 	*/
-	public Edge createGeneralizationAdj_4007(EObject domainElement, View containerView, int index, boolean persisted,
+	public Edge createGeneralizationAdj_4004(EObject domainElement, View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
 		Edge edge = NotationFactory.eINSTANCE.createEdge();
 		edge.getStyles().add(NotationFactory.eINSTANCE.createRoutingStyle());

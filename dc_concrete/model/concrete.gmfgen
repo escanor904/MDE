@@ -123,7 +123,7 @@
         </modelFacet>
       </labels>
     </links>
-    <links visualID="4003" editPartClassName="SharingAdjEditPart" itemSemanticEditPolicyClassName="SharingAdjItemSemanticEditPolicy" createCommandClassName="SharingAdjCreateCommand" reorientCommandClassName="SharingAdjReorientCommand">
+    <links visualID="4002" editPartClassName="SharingAdjEditPart" itemSemanticEditPolicyClassName="SharingAdjItemSemanticEditPolicy" createCommandClassName="SharingAdjCreateCommand" reorientCommandClassName="SharingAdjReorientCommand">
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
       <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="SharingAdjEditHelper"/>
       <viewmap xsi:type="gmfgen:InnerClassViewmap" className="SharingAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class SharingAdjFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public SharingAdjFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;&#x9;this.setForegroundColor(THIS_FORE&#xA;);&#xA;&#xA;&#x9;&#x9;setTargetDecoration(createTargetDecoration());&#xA;&#x9;}&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RotatableDecoration createTargetDecoration() {&#xA;&#x9;&#x9;org.eclipse.draw2d.PolygonDecoration df = new org.eclipse.draw2d.PolygonDecoration();&#xA;df.setFill(true);&#xA;&#x9;df.setBackgroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;org.eclipse.draw2d.geometry.PointList pl = new org.eclipse.draw2d.geometry.PointList();&#xA;pl.addPoint(getMapMode().DPtoLP(-1)&#xA;, getMapMode().DPtoLP(1)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(0)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(-1)&#xA;, getMapMode().DPtoLP(-1)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(-2)&#xA;, getMapMode().DPtoLP(0)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(-1)&#xA;, getMapMode().DPtoLP(1)&#xA;);&#xA;df.setTemplate(pl);&#xA;df.setScale(getMapMode().DPtoLP(7)&#xA;, getMapMode().DPtoLP(3)&#xA;);&#xA;&#x9;&#x9;return df;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_FORE = new org.eclipse.swt.graphics.Color(null, 0, 0, 0);&#xA;&#xA;">
@@ -173,7 +173,7 @@
         </modelFacet>
       </labels>
     </links>
-    <links visualID="4005" editPartClassName="AssociationAdjEditPart" itemSemanticEditPolicyClassName="AssociationAdjItemSemanticEditPolicy" createCommandClassName="AssociationAdjCreateCommand" reorientCommandClassName="AssociationAdjReorientCommand">
+    <links visualID="4003" editPartClassName="AssociationAdjEditPart" itemSemanticEditPolicyClassName="AssociationAdjItemSemanticEditPolicy" createCommandClassName="AssociationAdjCreateCommand" reorientCommandClassName="AssociationAdjReorientCommand">
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
       <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="AssociationAdjEditHelper"/>
       <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AssociationAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AssociationAdjFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AssociationAdjFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;&#x9;this.setForegroundColor(THIS_FORE&#xA;);&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_FORE = new org.eclipse.swt.graphics.Color(null, 0, 0, 0);&#xA;&#xA;">
@@ -223,7 +223,7 @@
         </modelFacet>
       </labels>
     </links>
-    <links visualID="4007" editPartClassName="GeneralizationAdjEditPart" itemSemanticEditPolicyClassName="GeneralizationAdjItemSemanticEditPolicy" createCommandClassName="GeneralizationAdjCreateCommand" reorientCommandClassName="GeneralizationAdjReorientCommand">
+    <links visualID="4004" editPartClassName="GeneralizationAdjEditPart" itemSemanticEditPolicyClassName="GeneralizationAdjItemSemanticEditPolicy" createCommandClassName="GeneralizationAdjCreateCommand" reorientCommandClassName="GeneralizationAdjReorientCommand">
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
       <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="GeneralizationAdjEditHelper"/>
       <viewmap xsi:type="gmfgen:InnerClassViewmap" className="GeneralizationAdjFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class GeneralizationAdjFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public GeneralizationAdjFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;&#x9;this.setForegroundColor(THIS_FORE&#xA;);&#xA;&#xA;&#x9;&#x9;setTargetDecoration(createTargetDecoration());&#xA;&#x9;}&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RotatableDecoration createTargetDecoration() {&#xA;&#x9;&#x9;org.eclipse.draw2d.PolylineDecoration df = new org.eclipse.draw2d.PolylineDecoration();&#xA;&#x9;&#x9;return df;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_FORE = new org.eclipse.swt.graphics.Color(null, 0, 0, 0);&#xA;&#xA;">
@@ -251,6 +251,7 @@
         <entries xsi:type="gmfgen:ToolEntry" title="ClassConcreteAdj" description="Create new ClassConcreteAdj" genNodes="//@diagram/@topLevelNodes.1"/>
         <entries xsi:type="gmfgen:ToolEntry" title="MethodConcreteAdj" description="Create new MethodConcreteAdj" genNodes="//@diagram/@childNodes.1"/>
         <entries xsi:type="gmfgen:ToolEntry" title="PackageConcreteAdj" description="Create new PackageConcreteAdj" genNodes="//@diagram/@topLevelNodes.0"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="ParameterConcreteAdj" description="Create new ParameterConcreteAdj"/>
       </groups>
       <groups title="Connections" collapse="true">
         <entries xsi:type="gmfgen:ToolEntry" title="AssociationAdj" description="Create new AssociationAdj" genLinks="//@diagram/@links.2"/>

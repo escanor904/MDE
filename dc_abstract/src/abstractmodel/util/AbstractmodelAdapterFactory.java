@@ -76,14 +76,6 @@ public class AbstractmodelAdapterFactory extends AdapterFactoryImpl {
 				return createProjectAdjAdapter();
 			}
 			@Override
-			public Adapter caseClassTypeFactoryAdj(ClassTypeFactoryAdj object) {
-				return createClassTypeFactoryAdjAdapter();
-			}
-			@Override
-			public Adapter caseClassTypeAdj(ClassTypeAdj object) {
-				return createClassTypeAdjAdapter();
-			}
-			@Override
 			public Adapter caseAttributeTypeFactoryAdj(AttributeTypeFactoryAdj object) {
 				return createAttributeTypeFactoryAdjAdapter();
 			}
@@ -176,34 +168,6 @@ public class AbstractmodelAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createProjectAdjAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link abstractmodel.ClassTypeFactoryAdj <em>Class Type Factory Adj</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see abstractmodel.ClassTypeFactoryAdj
-	 * @generated
-	 */
-	public Adapter createClassTypeFactoryAdjAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link abstractmodel.ClassTypeAdj <em>Class Type Adj</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see abstractmodel.ClassTypeAdj
-	 * @generated
-	 */
-	public Adapter createClassTypeAdjAdapter() {
 		return null;
 	}
 

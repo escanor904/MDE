@@ -8,19 +8,8 @@ class ModelFactoryAbstract {
 class ProjectAdj{
     attr String name;
     attr String path;
-    val ClassTypeFactoryAdj classTypeFactoryAdj;
     val AttributeTypeFactoryAdj attributeTypeFactoryAdj;
     val PackageAdj [*] lstPackageAdj;       
-}
-
-class ClassTypeFactoryAdj{   
-    val   ClassTypeAdj [*] lstClassTypeAdj;   
-}
-
-class ClassTypeAdj{
-    attr String name;   
-    val ClassAdj [*] lstClassAdj;
-       
 }
 
 class AttributeTypeFactoryAdj{   
@@ -44,7 +33,8 @@ class PackageAdj  {
 class ClassAdj {
     attr String name;
     attr String pathPackage;
-    ref  ClassTypeAdj classTypeAdj;
+    attr String classType;
+    attr String accesModifierClass;
     val AttributeAdj [*] lstAttributeAdj;
     val MethodAdj [*] lstMethodAdj;
     val RelationshipAdj[*] lstRelationShipAdj;//lista de todas las relaciones que tiene la clase

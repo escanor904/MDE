@@ -4,7 +4,6 @@ package abstractmodel.impl;
 
 import abstractmodel.AbstractmodelPackage;
 import abstractmodel.AttributeTypeFactoryAdj;
-import abstractmodel.ClassTypeFactoryAdj;
 import abstractmodel.PackageAdj;
 import abstractmodel.ProjectAdj;
 
@@ -34,7 +33,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link abstractmodel.impl.ProjectAdjImpl#getName <em>Name</em>}</li>
  *   <li>{@link abstractmodel.impl.ProjectAdjImpl#getPath <em>Path</em>}</li>
- *   <li>{@link abstractmodel.impl.ProjectAdjImpl#getClassTypeFactoryAdj <em>Class Type Factory Adj</em>}</li>
  *   <li>{@link abstractmodel.impl.ProjectAdjImpl#getAttributeTypeFactoryAdj <em>Attribute Type Factory Adj</em>}</li>
  *   <li>{@link abstractmodel.impl.ProjectAdjImpl#getLstPackageAdj <em>Lst Package Adj</em>}</li>
  * </ul>
@@ -81,16 +79,6 @@ public class ProjectAdjImpl extends EObjectImpl implements ProjectAdj {
 	 * @ordered
 	 */
 	protected String path = PATH_EDEFAULT;
-
-	/**
-	 * The cached value of the '{@link #getClassTypeFactoryAdj() <em>Class Type Factory Adj</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getClassTypeFactoryAdj()
-	 * @generated
-	 * @ordered
-	 */
-	protected ClassTypeFactoryAdj classTypeFactoryAdj;
 
 	/**
 	 * The cached value of the '{@link #getAttributeTypeFactoryAdj() <em>Attribute Type Factory Adj</em>}' containment reference.
@@ -178,49 +166,6 @@ public class ProjectAdjImpl extends EObjectImpl implements ProjectAdj {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ClassTypeFactoryAdj getClassTypeFactoryAdj() {
-		return classTypeFactoryAdj;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetClassTypeFactoryAdj(ClassTypeFactoryAdj newClassTypeFactoryAdj, NotificationChain msgs) {
-		ClassTypeFactoryAdj oldClassTypeFactoryAdj = classTypeFactoryAdj;
-		classTypeFactoryAdj = newClassTypeFactoryAdj;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, AbstractmodelPackage.PROJECT_ADJ__CLASS_TYPE_FACTORY_ADJ, oldClassTypeFactoryAdj, newClassTypeFactoryAdj);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setClassTypeFactoryAdj(ClassTypeFactoryAdj newClassTypeFactoryAdj) {
-		if (newClassTypeFactoryAdj != classTypeFactoryAdj) {
-			NotificationChain msgs = null;
-			if (classTypeFactoryAdj != null)
-				msgs = ((InternalEObject)classTypeFactoryAdj).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - AbstractmodelPackage.PROJECT_ADJ__CLASS_TYPE_FACTORY_ADJ, null, msgs);
-			if (newClassTypeFactoryAdj != null)
-				msgs = ((InternalEObject)newClassTypeFactoryAdj).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - AbstractmodelPackage.PROJECT_ADJ__CLASS_TYPE_FACTORY_ADJ, null, msgs);
-			msgs = basicSetClassTypeFactoryAdj(newClassTypeFactoryAdj, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AbstractmodelPackage.PROJECT_ADJ__CLASS_TYPE_FACTORY_ADJ, newClassTypeFactoryAdj, newClassTypeFactoryAdj));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public AttributeTypeFactoryAdj getAttributeTypeFactoryAdj() {
 		return attributeTypeFactoryAdj;
 	}
@@ -279,8 +224,6 @@ public class ProjectAdjImpl extends EObjectImpl implements ProjectAdj {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case AbstractmodelPackage.PROJECT_ADJ__CLASS_TYPE_FACTORY_ADJ:
-				return basicSetClassTypeFactoryAdj(null, msgs);
 			case AbstractmodelPackage.PROJECT_ADJ__ATTRIBUTE_TYPE_FACTORY_ADJ:
 				return basicSetAttributeTypeFactoryAdj(null, msgs);
 			case AbstractmodelPackage.PROJECT_ADJ__LST_PACKAGE_ADJ:
@@ -301,8 +244,6 @@ public class ProjectAdjImpl extends EObjectImpl implements ProjectAdj {
 				return getName();
 			case AbstractmodelPackage.PROJECT_ADJ__PATH:
 				return getPath();
-			case AbstractmodelPackage.PROJECT_ADJ__CLASS_TYPE_FACTORY_ADJ:
-				return getClassTypeFactoryAdj();
 			case AbstractmodelPackage.PROJECT_ADJ__ATTRIBUTE_TYPE_FACTORY_ADJ:
 				return getAttributeTypeFactoryAdj();
 			case AbstractmodelPackage.PROJECT_ADJ__LST_PACKAGE_ADJ:
@@ -325,9 +266,6 @@ public class ProjectAdjImpl extends EObjectImpl implements ProjectAdj {
 				return;
 			case AbstractmodelPackage.PROJECT_ADJ__PATH:
 				setPath((String)newValue);
-				return;
-			case AbstractmodelPackage.PROJECT_ADJ__CLASS_TYPE_FACTORY_ADJ:
-				setClassTypeFactoryAdj((ClassTypeFactoryAdj)newValue);
 				return;
 			case AbstractmodelPackage.PROJECT_ADJ__ATTRIBUTE_TYPE_FACTORY_ADJ:
 				setAttributeTypeFactoryAdj((AttributeTypeFactoryAdj)newValue);
@@ -354,9 +292,6 @@ public class ProjectAdjImpl extends EObjectImpl implements ProjectAdj {
 			case AbstractmodelPackage.PROJECT_ADJ__PATH:
 				setPath(PATH_EDEFAULT);
 				return;
-			case AbstractmodelPackage.PROJECT_ADJ__CLASS_TYPE_FACTORY_ADJ:
-				setClassTypeFactoryAdj((ClassTypeFactoryAdj)null);
-				return;
 			case AbstractmodelPackage.PROJECT_ADJ__ATTRIBUTE_TYPE_FACTORY_ADJ:
 				setAttributeTypeFactoryAdj((AttributeTypeFactoryAdj)null);
 				return;
@@ -379,8 +314,6 @@ public class ProjectAdjImpl extends EObjectImpl implements ProjectAdj {
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case AbstractmodelPackage.PROJECT_ADJ__PATH:
 				return PATH_EDEFAULT == null ? path != null : !PATH_EDEFAULT.equals(path);
-			case AbstractmodelPackage.PROJECT_ADJ__CLASS_TYPE_FACTORY_ADJ:
-				return classTypeFactoryAdj != null;
 			case AbstractmodelPackage.PROJECT_ADJ__ATTRIBUTE_TYPE_FACTORY_ADJ:
 				return attributeTypeFactoryAdj != null;
 			case AbstractmodelPackage.PROJECT_ADJ__LST_PACKAGE_ADJ:

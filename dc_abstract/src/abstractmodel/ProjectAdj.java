@@ -17,7 +17,6 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link abstractmodel.ProjectAdj#getName <em>Name</em>}</li>
  *   <li>{@link abstractmodel.ProjectAdj#getPath <em>Path</em>}</li>
- *   <li>{@link abstractmodel.ProjectAdj#getClassTypeFactoryAdj <em>Class Type Factory Adj</em>}</li>
  *   <li>{@link abstractmodel.ProjectAdj#getAttributeTypeFactoryAdj <em>Attribute Type Factory Adj</em>}</li>
  *   <li>{@link abstractmodel.ProjectAdj#getLstPackageAdj <em>Lst Package Adj</em>}</li>
  * </ul>
@@ -78,32 +77,6 @@ public interface ProjectAdj extends EObject {
 	 * @generated
 	 */
 	void setPath(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Class Type Factory Adj</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Class Type Factory Adj</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Class Type Factory Adj</em>' containment reference.
-	 * @see #setClassTypeFactoryAdj(ClassTypeFactoryAdj)
-	 * @see abstractmodel.AbstractmodelPackage#getProjectAdj_ClassTypeFactoryAdj()
-	 * @model containment="true"
-	 * @generated
-	 */
-	ClassTypeFactoryAdj getClassTypeFactoryAdj();
-
-	/**
-	 * Sets the value of the '{@link abstractmodel.ProjectAdj#getClassTypeFactoryAdj <em>Class Type Factory Adj</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Class Type Factory Adj</em>' containment reference.
-	 * @see #getClassTypeFactoryAdj()
-	 * @generated
-	 */
-	void setClassTypeFactoryAdj(ClassTypeFactoryAdj value);
 
 	/**
 	 * Returns the value of the '<em><b>Attribute Type Factory Adj</b></em>' containment reference.

@@ -625,13 +625,31 @@ public interface ConcretemodelPackage extends EPackage {
 	int CLASS_CONCRETE_ADJ__PATH = 1;
 
 	/**
+	 * The feature id for the '<em><b>Acces Modifier Class</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS_CONCRETE_ADJ__ACCES_MODIFIER_CLASS = 2;
+
+	/**
+	 * The feature id for the '<em><b>Tipe Class</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS_CONCRETE_ADJ__TIPE_CLASS = 3;
+
+	/**
 	 * The feature id for the '<em><b>Lst Attribute Concrete Adj</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_CONCRETE_ADJ__LST_ATTRIBUTE_CONCRETE_ADJ = 2;
+	int CLASS_CONCRETE_ADJ__LST_ATTRIBUTE_CONCRETE_ADJ = 4;
 
 	/**
 	 * The feature id for the '<em><b>Lst Method Concrete Adj</b></em>' containment reference list.
@@ -640,7 +658,7 @@ public interface ConcretemodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_CONCRETE_ADJ__LST_METHOD_CONCRETE_ADJ = 3;
+	int CLASS_CONCRETE_ADJ__LST_METHOD_CONCRETE_ADJ = 5;
 
 	/**
 	 * The number of structural features of the '<em>Class Concrete Adj</em>' class.
@@ -649,7 +667,7 @@ public interface ConcretemodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_CONCRETE_ADJ_FEATURE_COUNT = 4;
+	int CLASS_CONCRETE_ADJ_FEATURE_COUNT = 6;
 
 	/**
 	 * The meta object id for the '{@link concretemodel.impl.MethodConcreteAdjImpl <em>Method Concrete Adj</em>}' class.
@@ -827,13 +845,22 @@ public interface ConcretemodelPackage extends EPackage {
 	int ATTRIBUTE_CONCRETE_ADJ__VALUE = 1;
 
 	/**
+	 * The feature id for the '<em><b>Access Modifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE_CONCRETE_ADJ__ACCESS_MODIFIER = 2;
+
+	/**
 	 * The feature id for the '<em><b>Attribute Type Concrete Adj</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ATTRIBUTE_CONCRETE_ADJ__ATTRIBUTE_TYPE_CONCRETE_ADJ = 2;
+	int ATTRIBUTE_CONCRETE_ADJ__ATTRIBUTE_TYPE_CONCRETE_ADJ = 3;
 
 	/**
 	 * The number of structural features of the '<em>Attribute Concrete Adj</em>' class.
@@ -842,7 +869,7 @@ public interface ConcretemodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ATTRIBUTE_CONCRETE_ADJ_FEATURE_COUNT = 3;
+	int ATTRIBUTE_CONCRETE_ADJ_FEATURE_COUNT = 4;
 
 	/**
 	 * The meta object id for the '{@link concretemodel.AccessModifier <em>Access Modifier</em>}' enum.
@@ -853,6 +880,27 @@ public interface ConcretemodelPackage extends EPackage {
 	 * @generated
 	 */
 	int ACCESS_MODIFIER = 14;
+
+
+	/**
+	 * The meta object id for the '{@link concretemodel.AccessModifierClass <em>Access Modifier Class</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see concretemodel.AccessModifierClass
+	 * @see concretemodel.impl.ConcretemodelPackageImpl#getAccessModifierClass()
+	 * @generated
+	 */
+	int ACCESS_MODIFIER_CLASS = 15;
+
+	/**
+	 * The meta object id for the '{@link concretemodel.TypeClass <em>Type Class</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see concretemodel.TypeClass
+	 * @see concretemodel.impl.ConcretemodelPackageImpl#getTypeClass()
+	 * @generated
+	 */
+	int TYPE_CLASS = 16;
 
 
 	/**
@@ -1165,6 +1213,28 @@ public interface ConcretemodelPackage extends EPackage {
 	EAttribute getClassConcreteAdj_Path();
 
 	/**
+	 * Returns the meta object for the attribute '{@link concretemodel.ClassConcreteAdj#getAccesModifierClass <em>Acces Modifier Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Acces Modifier Class</em>'.
+	 * @see concretemodel.ClassConcreteAdj#getAccesModifierClass()
+	 * @see #getClassConcreteAdj()
+	 * @generated
+	 */
+	EAttribute getClassConcreteAdj_AccesModifierClass();
+
+	/**
+	 * Returns the meta object for the attribute '{@link concretemodel.ClassConcreteAdj#getTipeClass <em>Tipe Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Tipe Class</em>'.
+	 * @see concretemodel.ClassConcreteAdj#getTipeClass()
+	 * @see #getClassConcreteAdj()
+	 * @generated
+	 */
+	EAttribute getClassConcreteAdj_TipeClass();
+
+	/**
 	 * Returns the meta object for the containment reference list '{@link concretemodel.ClassConcreteAdj#getLstAttributeConcreteAdj <em>Lst Attribute Concrete Adj</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1359,6 +1429,17 @@ public interface ConcretemodelPackage extends EPackage {
 	EAttribute getAttributeConcreteAdj_Value();
 
 	/**
+	 * Returns the meta object for the attribute '{@link concretemodel.AttributeConcreteAdj#getAccessModifier <em>Access Modifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Access Modifier</em>'.
+	 * @see concretemodel.AttributeConcreteAdj#getAccessModifier()
+	 * @see #getAttributeConcreteAdj()
+	 * @generated
+	 */
+	EAttribute getAttributeConcreteAdj_AccessModifier();
+
+	/**
 	 * Returns the meta object for the reference '{@link concretemodel.AttributeConcreteAdj#getAttributeTypeConcreteAdj <em>Attribute Type Concrete Adj</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1378,6 +1459,26 @@ public interface ConcretemodelPackage extends EPackage {
 	 * @generated
 	 */
 	EEnum getAccessModifier();
+
+	/**
+	 * Returns the meta object for enum '{@link concretemodel.AccessModifierClass <em>Access Modifier Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Access Modifier Class</em>'.
+	 * @see concretemodel.AccessModifierClass
+	 * @generated
+	 */
+	EEnum getAccessModifierClass();
+
+	/**
+	 * Returns the meta object for enum '{@link concretemodel.TypeClass <em>Type Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Type Class</em>'.
+	 * @see concretemodel.TypeClass
+	 * @generated
+	 */
+	EEnum getTypeClass();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -1654,6 +1755,22 @@ public interface ConcretemodelPackage extends EPackage {
 		EAttribute CLASS_CONCRETE_ADJ__PATH = eINSTANCE.getClassConcreteAdj_Path();
 
 		/**
+		 * The meta object literal for the '<em><b>Acces Modifier Class</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLASS_CONCRETE_ADJ__ACCES_MODIFIER_CLASS = eINSTANCE.getClassConcreteAdj_AccesModifierClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Tipe Class</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLASS_CONCRETE_ADJ__TIPE_CLASS = eINSTANCE.getClassConcreteAdj_TipeClass();
+
+		/**
 		 * The meta object literal for the '<em><b>Lst Attribute Concrete Adj</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1806,6 +1923,14 @@ public interface ConcretemodelPackage extends EPackage {
 		EAttribute ATTRIBUTE_CONCRETE_ADJ__VALUE = eINSTANCE.getAttributeConcreteAdj_Value();
 
 		/**
+		 * The meta object literal for the '<em><b>Access Modifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ATTRIBUTE_CONCRETE_ADJ__ACCESS_MODIFIER = eINSTANCE.getAttributeConcreteAdj_AccessModifier();
+
+		/**
 		 * The meta object literal for the '<em><b>Attribute Type Concrete Adj</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1822,6 +1947,26 @@ public interface ConcretemodelPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum ACCESS_MODIFIER = eINSTANCE.getAccessModifier();
+
+		/**
+		 * The meta object literal for the '{@link concretemodel.AccessModifierClass <em>Access Modifier Class</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see concretemodel.AccessModifierClass
+		 * @see concretemodel.impl.ConcretemodelPackageImpl#getAccessModifierClass()
+		 * @generated
+		 */
+		EEnum ACCESS_MODIFIER_CLASS = eINSTANCE.getAccessModifierClass();
+
+		/**
+		 * The meta object literal for the '{@link concretemodel.TypeClass <em>Type Class</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see concretemodel.TypeClass
+		 * @see concretemodel.impl.ConcretemodelPackageImpl#getTypeClass()
+		 * @generated
+		 */
+		EEnum TYPE_CLASS = eINSTANCE.getTypeClass();
 
 	}
 

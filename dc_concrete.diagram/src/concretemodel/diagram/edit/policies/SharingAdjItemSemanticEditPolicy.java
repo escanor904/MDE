@@ -18,7 +18,7 @@ public class SharingAdjItemSemanticEditPolicy extends ConcretemodelBaseItemSeman
 	* @generated
 	*/
 	public SharingAdjItemSemanticEditPolicy() {
-		super(ConcretemodelElementTypes.SharingAdj_4003);
+		super(ConcretemodelElementTypes.SharingAdj_4002);
 	}
 
 	/**
