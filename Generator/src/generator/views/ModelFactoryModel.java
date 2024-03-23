@@ -5,10 +5,12 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
 import org.eclipse.emf.common.util.EList;
@@ -18,6 +20,7 @@ import abstractmodel.AbstractmodelPackage;
 import abstractmodel.AttributeAdj;
 import abstractmodel.AttributeTypeAdj;
 import abstractmodel.AttributeTypeFactoryAdj;
+import abstractmodel.ClassAdj;
 import abstractmodel.ModelFactoryAbstract;
 import abstractmodel.PackageAdj;
 import abstractmodel.impl.AbstractmodelFactoryImpl;
@@ -54,6 +57,12 @@ public class ModelFactoryModel {
 	// Creacion de las factories
 	ModelFactoryConcrete modelFactoryConcreta = ConcretemodelFactory.eINSTANCE.createModelFactoryConcrete();
 	ModelFactoryAbstract modelFactoryAbstracta = AbstractmodelFactoryImpl.eINSTANCE.createModelFactoryAbstract();
+	
+	//Variable de la ruta del proyecto
+	private String rutaProyecto;
+	//Variable del nombre del proyecto
+	private String nombreProyecto;
+
 
 	public ModelFactoryModel() {
 		modelFactoryConcreta = loadConcreteModel();
@@ -165,17 +174,18 @@ public class ModelFactoryModel {
 	// */
 	public void transformationM2M() {
 
-		modelFactoryConcreta = loadConcreteModel();// el modelo oigen
+		modelFactoryConcreta = loadConcreteModel();// el modelo origen
 		modelFactoryAbstracta = loadAbstractaModel();// el modelo destino
 		modelFactoryAbstracta.getListProjects().clear();
-		//
-		//
+		
+		this.nombreProyecto = capturarNombreProyecto();
+	
 		for (ProjectAdj projectAdjConcreta : modelFactoryConcreta.getListProjects()) {
 
-			// por un proyecto de la concrera se crea uno en la abstracta
+			// por un proyecto de la concreta se crea uno en la abstracta
 
 			abstractmodel.ProjectAdj proyectoAdjAbstracta = AbstractmodelFactory.eINSTANCE.createProjectAdj();
-			proyectoAdjAbstracta.setName(projectAdjConcreta.getName());
+			proyectoAdjAbstracta.setName(getNombreProyecto());
 			proyectoAdjAbstracta.setPath(projectAdjConcreta.getPath());
 			modelFactoryAbstracta.getListProjects().add(proyectoAdjAbstracta);
 			abstractmodel.AttributeTypeFactoryAdj  atrAbstractmodelFactory= AbstractmodelFactory.eINSTANCE.createAttributeTypeFactoryAdj();
@@ -552,695 +562,304 @@ public class ModelFactoryModel {
 	//
 	// // -------------------------------- Tranformacion M2T de parte abstracta a
 	// archivos de texto -----------------------------------------------
-	//
-	// private TypeRam obtenerTipo(String nameType) {
-	//
-	// if(nameType.equals("String")) {
-	// TypeRam typeRam = AbstractaFactory.eINSTANCE.createTypeRam();
-	// typeRam.setName("String");
-	// return typeRam;
-	// }
-	// return null;
-	// }
-	//
-	//
-	//
-	//
 
-	//
-	//
-	//
-	//
-	// /**
-	// * Este metodo permite tranformar la parte abstacta del diagrama de clases a
-	// archivos de python
-	// */
-	// public void transformationM2T() {
-	//
-	// modelFactoryAbstracta = loadAbstractaModel();
-	//
-	// for (ProjectRam proyecto : modelFactoryAbstracta.getListProjects()) {
-	//
-	// createFolderWindows(proyecto.getPath(), proyecto.getName());
-	//
-	// for (abstracta.PackageRam paquete : proyecto.getListPackagesRam()) {
-	// createFolderWindows(paquete.getPath(), paquete.getName());
-	//
-	// for (abstracta.ClassRam clase : paquete.getListClassRam()) {
-	// generarClase(clase);
-	// }
-	//
-	// generarPaquete(paquete);
-	// }
-	// }
-	// }
-	//
-	//
-	// private void generarPaquete(abstracta.PackageRam paquete) {
-	// createFolderWindows(paquete.getPath(), paquete.getName());
-	//
-	// for (abstracta.ClassRam clase : paquete.getListClassRam()) {
-	// generarClase(clase);
-	// }
-	//
-	// for (abstracta.PackageRam paquetHijo : paquete.getListPackagesChildsRam()) {
-	// generarPaquete(paquetHijo);
-	// }
-	//
-	// }
-	//
-	//
-	//
-	//
-	// private void generarClase(abstracta.ClassRam clase) {
-	//
-	// StringBuilder cadenaClass = new StringBuilder();
-	// String abstractaCadena = (clase.isIsAbstract()?"abstract":"");
-	// String extendsCadena = crearCadenaExtends(clase);
-	//
-	// cadenaClass.append("package "+clase.getPathPackage().replace("/",".")+";\r\n"
-	// +
-	// "\r\n" +
-	// "import java.io.File;\r\n" +
-	// "\r\n" +
-	// "import java.io.FileWriter;\r\n" +
-	// "import java.io.IOException;\r\n" +
-	// "import java.io.PrintWriter;\r\n" +
-	// "import java.util.ArrayList;\r\n" +
-	// "import java.util.List;\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "public class "+clase.getName()+" {\r\n" +
-	// "\r\n" +
-	// " //
-	// --------------------------------------------------------------------------
-	// Singleton
-	// --------------------------------------------------------------------------\r\n"
-	// +
-	// "\r\n" +
-	// " // Clase estatica oculta. Tan solo se instanciara el singleton una vez\r\n"
-	// +
-	// " private static class SingletonHolder {\r\n" +
-	// " // El constructor de Singleton puede ser llamado desde aqui al ser
-	// protected\r\n" +
-	// " private final static ModelFactoryModel eINSTANCE = new
-	// ModelFactoryModel();\r\n" +
-	// " }\r\n" +
-	// "\r\n" +
-	// " // Metodo para obtener la instancia de nuestra clase\r\n" +
-	// " public static ModelFactoryModel getInstance() {\r\n" +
-	// " return SingletonHolder.eINSTANCE;\r\n" +
-	// " }\r\n" +
-	// "\r\n" +
-	// " //Creacion de las factories \r\n" +
-	// " ModelFactoryConcreta modelFactoryConcreta =
-	// ConcretaFactory.eINSTANCE.createModelFactoryConcreta();\r\n" +
-	// " ModelFactoryAbstract modelFactoryAbstracta =
-	// AbstractaFactory.eINSTANCE.createModelFactoryAbstract();\r\n" +
-	// "\r\n" +
-	// " public ModelFactoryModel() {\r\n" +
-	// " modelFactoryConcreta = loadConcretaModel();\r\n" +
-	// " modelFactoryAbstracta = loadAbstractaModel();\r\n" +
-	// " }\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// " // -----------------------------------------------------------------Load
-	// and Save ModelFactorys
-	// ---------------------------------------------------------------\r\n" +
-	// "\r\n" +
-	// " /**\r\n" +
-	// " * Este metodo permite cargar el modelfactoryspecific del diagrama de
-	// clases\r\n" +
-	// " * @return El modelFactorySpecific cargada\r\n" +
-	// " */\r\n" +
-	// " public ModelFactoryConcreta loadConcretaModel() {\r\n" +
-	// " ModelFactoryConcreta modelFactoryConcreta = null;\r\n" +
-	// " ConcretaPackage whoownmePackage = ConcretaPackage.eINSTANCE;\r\n" +
-	// " org.eclipse.emf.ecore.resource.ResourceSet resourceSet = new
-	// org.eclipse.emf.ecore.resource.impl.ResourceSetImpl();\r\n" +
-	// " org.eclipse.emf.common.util.URI uri = org.eclipse.emf.common.util.URI\r\n"
-	// +
-	// " .createURI(\"platform:/resource/test/src/model.concreta\");\r\n" +
-	// " org.eclipse.emf.ecore.resource.Resource resource =
-	// resourceSet.createResource(uri);\r\n" +
-	// " try {\r\n" +
-	// " resource.load(null);\r\n" +
-	// " modelFactoryConcreta = (ModelFactoryConcreta)
-	// resource.getContents().get(0);\r\n" +
-	// " System.out.println(\"loaded: \" + modelFactoryConcreta);\r\n" +
-	// " } catch (java.io.IOException e) {\r\n" +
-	// " System.out.println(\"failed to read \" + uri);\r\n" +
-	// " System.out.println(e);\r\n" +
-	// " }\r\n" +
-	// " return modelFactoryConcreta;\r\n" +
-	// " }\r\n" +
-	// "\r\n" +
-	// " /**\r\n" +
-	// " * Este metodo permite cargar el modelFactoryAbstract del diagrama de
-	// clases\r\n" +
-	// " * @return\r\n" +
-	// " */\r\n" +
-	// " public ModelFactoryAbstract loadAbstractaModel() {\r\n" +
-	// " ModelFactoryAbstract modelFactoryAbstracta = null;\r\n" +
-	// " AbstractaPackage whoownmePackage = AbstractaPackage.eINSTANCE;\r\n" +
-	// " org.eclipse.emf.ecore.resource.ResourceSet resourceSet = new
-	// org.eclipse.emf.ecore.resource.impl.ResourceSetImpl();\r\n" +
-	// " org.eclipse.emf.common.util.URI uri = org.eclipse.emf.common.util.URI\r\n"
-	// +
-	// " .createURI(\"platform:/resource/test/src/model.abstracta\");\r\n" +
-	// " org.eclipse.emf.ecore.resource.Resource resource =
-	// resourceSet.createResource(uri);\r\n" +
-	// " try {\r\n" +
-	// " resource.load(null);\r\n" +
-	// " modelFactoryAbstracta = (ModelFactoryAbstract)
-	// resource.getContents().get(0);\r\n" +
-	// " System.out.println(\"loaded: \" + modelFactoryAbstracta);\r\n" +
-	// " } catch (java.io.IOException e) {\r\n" +
-	// " System.out.println(\"failed to read \" + uri);\r\n" +
-	// " System.out.println(e);\r\n" +
-	// " }\r\n" +
-	// " return modelFactoryAbstracta;\r\n" +
-	// " }\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// " /**\r\n" +
-	// " * Este metodo permite guardar el ModelFactorySpecific del diagrama de
-	// clases\r\n" +
-	// " */\r\n" +
-	// " public void saveConcreta() {\r\n" +
-	// "\r\n" +
-	// " // EXISTEN 2 FORMAS DE GUARDAR EL RECURSO\r\n" +
-	// " org.eclipse.emf.common.util.URI uri = org.eclipse.emf.common.util.URI\r\n"
-	// +
-	// " .createURI(\"platform:/resource/test/src/model.concreta\");\r\n" +
-	// " org.eclipse.emf.ecore.resource.ResourceSet resourceSet = new
-	// org.eclipse.emf.ecore.resource.impl.ResourceSetImpl();\r\n" +
-	// "\r\n" +
-	// " org.eclipse.emf.ecore.resource.Resource resource =
-	// resourceSet.createResource(uri);\r\n" +
-	// " resource.getContents().add(modelFactoryConcreta);\r\n" +
-	// " try {\r\n" +
-	// " resource.save(java.util.Collections.EMPTY_MAP);\r\n" +
-	// " } catch (java.io.IOException e) {\r\n" +
-	// " // TO-DO Auto-generated catch block\r\n" +
-	// " e.printStackTrace();\r\n" +
-	// " }\r\n" +
-	// " }\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// " /**\r\n" +
-	// " * Este metodo permite guardar el ModelFactoryAbstract del diagrama de
-	// clases\r\n" +
-	// " */\r\n" +
-	// " public void saveAbstracta() {\r\n" +
-	// "\r\n" +
-	// " // EXISTEN 2 FORMAS DE GUARDAR EL RECURSO\r\n" +
-	// " org.eclipse.emf.common.util.URI uri = org.eclipse.emf.common.util.URI\r\n"
-	// +
-	// " .createURI(\"platform:/resource/test/src/model.abstracta\");\r\n" +
-	// " org.eclipse.emf.ecore.resource.ResourceSet resourceSet = new
-	// org.eclipse.emf.ecore.resource.impl.ResourceSetImpl();\r\n" +
-	// "\r\n" +
-	// " org.eclipse.emf.ecore.resource.Resource resource =
-	// resourceSet.createResource(uri);\r\n" +
-	// " resource.getContents().add(modelFactoryAbstracta);\r\n" +
-	// " try {\r\n" +
-	// " resource.save(java.util.Collections.EMPTY_MAP);\r\n" +
-	// " } catch (java.io.IOException e) {\r\n" +
-	// " // TO-DO Auto-generated catch block\r\n" +
-	// " e.printStackTrace();\r\n" +
-	// " }\r\n" +
-	// " }\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// " // ----------------------------------------- Tranformacion M2M de parte
-	// especifica a parte a abstracta
-	// -------------------------------------------\r\n" +
-	// "\r\n" +
-	// " /**\r\n" +
-	// " * Este metodo realiza la transformacion del modelo especifico a el
-	// modelo\r\n" +
-	// " * abstracto\r\n" +
-	// " */\r\n" +
-	// " public void transformationM2M() {\r\n" +
-	// "\r\n" +
-	// " modelFactoryConcreta = loadConcretaModel();// el modelo oigen\r\n" +
-	// " modelFactoryAbstracta = loadAbstractaModel();// el modelo destino\r\n" +
-	// " modelFactoryAbstracta.getListProjects().clear();\r\n" +
-	// " \r\n" +
-	// " \r\n" +
-	// " for (concreta.ProjectRam projectRamConcreta :
-	// modelFactoryConcreta.getListProjects()) {\r\n" +
-	// "\r\n" +
-	// " // por un proyecto de la concrera se crea uno en la abstracta\r\n" +
-	// " ProjectRam proyectoRamAbstracta =
-	// AbstractaFactory.eINSTANCE.createProjectRam();\r\n" +
-	// " proyectoRamAbstracta.setName(projectRamConcreta.getName());\r\n" +
-	// " proyectoRamAbstracta.setPath(projectRamConcreta.getPath());\r\n" +
-	// " modelFactoryAbstracta.getListProjects().add(proyectoRamAbstracta);\r\n" +
-	// " \r\n" +
-	// " abstracta.PackageRam packageRaizRam =
-	// AbstractaFactory.eINSTANCE.createPackageRam();\r\n" +
-	// " packageRaizRam.setName(projectRamConcreta.getName());\r\n" +
-	// " packageRaizRam.setPath(\"\");\r\n" +
-	// " proyectoRamAbstracta.getListPackagesRam().add(packageRaizRam);\r\n" +
-	// " \r\n" +
-	// " for (DiagramClassRam diagrama :
-	// projectRamConcreta.getListDiagramClassRam()) {\r\n" +
-	// " for (PackageRam packageConcreta : diagrama.getListPackageRam()) {\r\n" +
-	// " crearPaquete(packageConcreta,packageRaizRam);\r\n" +
-	// " }\r\n" +
-	// " for (ClassRam classRamConcreta : diagrama.getListClassRam()) {\r\n" +
-	// " crearClass(packageRaizRam, classRamConcreta);\r\n" +
-	// " }\r\n" +
-	// " \r\n" +
-	// " for (RelationRam relationRam : diagrama.getListRelationRam()) {\r\n" +
-	// " crearRelacion(relationRam,packageRaizRam);\r\n" +
-	// " }\r\n" +
-	// " }\r\n" +
-	// " \r\n" +
-	// " \r\n" +
-	// " }\r\n" +
-	// " saveAbstracta();\r\n" +
-	// " }\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// " private void crearRelacion(RelationRam relationRamConcreta,
-	// abstracta.PackageRam packageRaizRam) {\r\n" +
-	// " \r\n" +
-	// " ClassRam sourceConcreta = relationRamConcreta.getSource();\r\n" +
-	// " ClassRam targetConcret = relationRamConcreta.getTarget();\r\n" +
-	// " \r\n" +
-	// " abstracta.ClassRam classRamAbstractaSource =
-	// obtenerClase(sourceConcreta,packageRaizRam);\r\n" +
-	// " abstracta.ClassRam classRamAbstractaTarget =
-	// obtenerClase(targetConcret,packageRaizRam);\r\n" +
-	// " \r\n" +
-	// " abstracta.RelationRam relationRamAbstractaSource =
-	// AbstractaFactory.eINSTANCE.createRelationRam();\r\n" +
-	// " relationRamAbstractaSource.setSource(classRamAbstractaSource);\r\n" +
-	// " relationRamAbstractaSource.setTarget(classRamAbstractaTarget);\r\n" +
-	// " relationRamAbstractaSource.setRoleA(relationRamConcreta.getRoleA());\r\n" +
-	// " relationRamAbstractaSource.setRoleB(relationRamConcreta.getRoleB());\r\n" +
-	// " relationRamAbstractaSource.setMultA(relationRamConcreta.getMultA());\r\n" +
-	// " relationRamAbstractaSource.setMultB(relationRamConcreta.getMultB());\r\n" +
-	// "
-	// classRamAbstractaSource.getListRelationRamSalida().add(relationRamAbstractaSource);\r\n"
-	// +
-	// " \r\n" +
-	// " abstracta.RelationRam relationRamAbstractaTarget =
-	// AbstractaFactory.eINSTANCE.createRelationRam();\r\n" +
-	// " relationRamAbstractaSource.setSource(classRamAbstractaSource);\r\n" +
-	// " relationRamAbstractaSource.setTarget(classRamAbstractaTarget);\r\n" +
-	// " relationRamAbstractaSource.setRoleA(relationRamConcreta.getRoleB());\r\n" +
-	// " relationRamAbstractaSource.setRoleB(relationRamConcreta.getRoleA());\r\n" +
-	// " relationRamAbstractaSource.setMultA(relationRamConcreta.getMultB());\r\n" +
-	// " relationRamAbstractaSource.setMultB(relationRamConcreta.getMultA());\r\n" +
-	// "
-	// classRamAbstractaTarget.getListRelationRamSalida().add(relationRamAbstractaSource);\r\n"
-	// +
-	// " \r\n" +
-	// " }\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// " private abstracta.ClassRam obtenerClase(ClassRam claseABuscar,
-	// abstracta.PackageRam packageRaizRam) {\r\n" +
-	// "\r\n" +
-	// " abstracta.PackageRam packageRam =
-	// obtenerPackagePadre(claseABuscar.getPathPackage(), packageRaizRam);\r\n" +
-	// " \r\n" +
-	// " for (abstracta.ClassRam clase : packageRam.getListClassRam()) {\r\n" +
-	// " if(claseABuscar.getName().equals(clase.getName())) {\r\n" +
-	// " return clase;\r\n" +
-	// " }\r\n" +
-	// " }\r\n" +
-	// " return null;\r\n" +
-	// " }\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// " private void crearClass(abstracta.PackageRam packageRaizRam, ClassRam
-	// classRamConcreta) {\r\n" +
-	// " abstracta.ClassRam classRamAbsracta =
-	// AbstractaFactory.eINSTANCE.createClassRam();\r\n" +
-	// " classRamAbsracta.setDescription(classRamConcreta.getDescription());\r\n" +
-	// " classRamAbsracta.setIsAbstract(classRamConcreta.isIsAbstract());\r\n" +
-	// " classRamAbsracta.setName(classRamConcreta.getName());\r\n" +
-	// " classRamAbsracta.setPathPackage(classRamConcreta.getPathPackage());\r\n" +
-	// " \r\n" +
-	// " abstracta.PackageRam paquetePadre =
-	// obtenerPackagePadre(classRamAbsracta.getPathPackage(), packageRaizRam);\r\n"
-	// +
-	// " paquetePadre.getListClassRam().add(classRamAbsracta);\r\n" +
-	// " \r\n" +
-	// " for (AttributeRam attributeRamConcreta :
-	// classRamConcreta.getListAttributeRam()) {\r\n" +
-	// " abstracta.AttributeRam attributeRamAbstracta =
-	// AbstractaFactory.eINSTANCE.createAttributeRam();\r\n" +
-	// " attributeRamAbstracta.setName(attributeRamConcreta.getName());\r\n" +
-	// " attributeRamAbstracta.setTypeRam(null);\r\n" +
-	// " attributeRamAbstracta.setValue(attributeRamAbstracta.getValue());\r\n" +
-	// " classRamAbsracta.getListAttributeRam().add(attributeRamAbstracta);\r\n" +
-	// " }\r\n" +
-	// " for (MethodRam methodRamConcreta : classRamConcreta.getListMethodRam())
-	// {\r\n" +
-	// " abstracta.MethodRam methodRam =
-	// AbstractaFactory.eINSTANCE.createMethodRam();\r\n" +
-	// " methodRam.setName(methodRamConcreta.getName());\r\n" +
-	// " methodRam.setBody(methodRamConcreta.getBody());\r\n" +
-	// " methodRam.setReturnType(methodRamConcreta.getReturnType());\r\n" +
-	// " classRamAbsracta.getListMethodRam().add(methodRam);\r\n" +
-	// " }\r\n" +
-	// " }\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// " // -------------------------------- Tranformacion M2T de parte abstracta a
-	// archivos de texto -----------------------------------------------\r\n" +
-	// "\r\n" +
-	// " private TypeRam obtenerTipo(String nameType) {\r\n" +
-	// " \r\n" +
-	// " if(nameType.equals(\"String\")) {\r\n" +
-	// " TypeRam typeRam = AbstractaFactory.eINSTANCE.createTypeRam();\r\n" +
-	// " typeRam.setName(\"String\");\r\n" +
-	// " return typeRam;\r\n" +
-	// " }\r\n" +
-	// " return null;\r\n" +
-	// " }\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// " private void crearPaquete(PackageRam packageConcreta, abstracta.PackageRam
-	// packageRaizRam) {\r\n" +
-	// "\r\n" +
-	// " abstracta.PackageRam newPaqueteAbstracta = null;\r\n" +
-	// " newPaqueteAbstracta = AbstractaFactory.eINSTANCE.createPackageRam();\r\n" +
-	// " newPaqueteAbstracta.setName(packageConcreta.getName());\r\n" +
-	// " newPaqueteAbstracta.setPath(packageConcreta.getPath()==
-	// null?\"\":packageConcreta.getPath());\r\n" +
-	// "\r\n" +
-	// " abstracta.PackageRam packageRamPadre =
-	// obtenerPackagePadre(packageConcreta.getPath(),packageRaizRam);//src/main\r\n"
-	// +
-	// " packageRamPadre.getListPackagesChildsRam().add(newPaqueteAbstracta);\r\n" +
-	// " }\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// " private abstracta.PackageRam obtenerPackagePadre(String path,
-	// abstracta.PackageRam packageRaizRam) {\r\n" +
-	// " \r\n" +
-	// " \r\n" +
-	// " String[] pathArray = path.split(\"/\");//src,main\r\n" +
-	// " abstracta.PackageRam padre = packageRaizRam;\r\n" +
-	// " for (int j = 0; j < pathArray.length; j++) {\r\n" +
-	// " padre = obtenerPaquete(pathArray[j],padre);\r\n" +
-	// " }\r\n" +
-	// " \r\n" +
-	// " return padre;\r\n" +
-	// " }\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// " private abstracta.PackageRam obtenerPaquete(String
-	// nameP,abstracta.PackageRam packageParentRam) {\r\n" +
-	// " for (abstracta.PackageRam pac :
-	// packageParentRam.getListPackagesChildsRam()) {\r\n" +
-	// " if(pac.getName().equalsIgnoreCase(nameP)) {\r\n" +
-	// " return pac;\r\n" +
-	// " }\r\n" +
-	// " }\r\n" +
-	// " abstracta.PackageRam packageRam2 =
-	// AbstractaFactory.eINSTANCE.createPackageRam();\r\n" +
-	// " packageRam2.setName(nameP);\r\n" +
-	// "
-	// packageRam2.setPath(packageParentRam.getPath()+\"/\"+packageParentRam.getName());\r\n"
-	// +
-	// " packageParentRam.getListPackagesChildsRam().add(packageRam2);\r\n" +
-	// " return packageRam2;\r\n" +
-	// " }\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// " /**\r\n" +
-	// " * Este metodo permite tranformar la parte abstacta del diagrama de clases a
-	// archivos de python\r\n" +
-	// " */\r\n" +
-	// " public void transformationM2T() {\r\n" +
-	// "\r\n" +
-	// " modelFactoryAbstracta = loadAbstractaModel();\r\n" +
-	// " \r\n" +
-	// " for (ProjectRam proyecto : modelFactoryAbstracta.getListProjects()) {\r\n"
-	// +
-	// " \r\n" +
-	// " createFolderWindows(proyecto.getPath(), proyecto.getName());\r\n" +
-	// " \r\n" +
-	// " for (abstracta.PackageRam paquete : proyecto.getListPackagesRam()) {\r\n" +
-	// " createFolderWindows(paquete.getPath(), paquete.getName());\r\n" +
-	// " \r\n" +
-	// " for (abstracta.ClassRam clase : paquete.getListClassRam()) {\r\n" +
-	// " generarClase(clase);\r\n" +
-	// " }\r\n" +
-	// " }\r\n" +
-	// " }\r\n" +
-	// " }\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// " private void generarClase(abstracta.ClassRam clase) {\r\n" +
-	// " \r\n" +
-	// " StringBuilder cadenaClass = new StringBuilder();\r\n" +
-	// " String abstractaCadena = (clase.isIsAbstract()?\"abstract\":\"\");\r\n" +
-	// " String extendsCadena = crearCadenaExtends(clase);\r\n" +
-	// " \r\n" +
-	// " cadenaClass.append(\"\");\r\n" +
-	// "\r\n" +
-	// " createFileWindows(clase.getPathPackage(), clase.getName()+\".java\",
-	// cadenaClass.toString());\r\n" +
-	// " }\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// " private String crearCadenaExtends(abstracta.ClassRam clase) {\r\n" +
-	// " String cadena = \"\";\r\n" +
-	// " \r\n" +
-	// " for (int i = 0; i < clase.getListRelationRamSalida().size(); i++) {\r\n" +
-	// " cadena +=
-	// clase.getListRelationRamSalida().get(i).getTarget().getName();\r\n" +
-	// " break;\r\n" +
-	// " }\r\n" +
-	// " if(clase.getListRelationRamSalida().size() > 0) {\r\n" +
-	// " cadena = \"extends \"+cadena;\r\n" +
-	// " }\r\n" +
-	// " return cadena;\r\n" +
-	// " }\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// " /**\r\n" +
-	// " * Este metodo permite abrir un cuadro de dialogo para ingresar el nomber
-	// del proyecto\r\n" +
-	// " * @return el nombre del proyecto\r\n" +
-	// " */\r\n" +
-	// " public String ingresarInput() {\r\n" +
-	// " // Mostrar un cuadro de diálogo de entrada\r\n" +
-	// " String nameProject = JOptionPane.showInputDialog(\"Ingrese el nombre del
-	// projecto:\");\r\n" +
-	// "\r\n" +
-	// " // Comprobar si el usuario ingresó algo y mostrarlo\r\n" +
-	// " if (nameProject != null) {\r\n" +
-	// " return nameProject;\r\n" +
-	// " } else {\r\n" +
-	// " return \"newProject\";\r\n" +
-	// " }\r\n" +
-	// " }\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// " /**\r\n" +
-	// " * Este metodo permite crear una carpeta en el sistema de windows\r\n" +
-	// " * @param path\r\n" +
-	// " * @param nameFolder\r\n" +
-	// " */\r\n" +
-	// " private void createFolderWindows(String path, String nameFolder) {\r\n" +
-	// "\r\n" +
-	// " // Crea un objeto File que representa la carpeta\r\n" +
-	// " File newFolder = new File(path, nameFolder);\r\n" +
-	// "\r\n" +
-	// " // Verifica si la carpeta ya existe\r\n" +
-	// " if (!newFolder.exists()) {\r\n" +
-	// " // Intenta crear la carpeta\r\n" +
-	// " boolean creado = newFolder.mkdirs();\r\n" +
-	// " if (creado) {\r\n" +
-	// " System.out.println(\"La carpeta se creó exitosamente.\");\r\n" +
-	// " } else {\r\n" +
-	// " System.out.println(\"No se pudo crear la carpeta.\");\r\n" +
-	// " }\r\n" +
-	// " } else {\r\n" +
-	// " System.out.println(\"La carpeta ya existe.\");\r\n" +
-	// " }\r\n" +
-	// " }\r\n" +
-	// "\r\n" +
-	// " /**\r\n" +
-	// " * Este metodo permite crear un archivo en el sistema de windows\r\n" +
-	// " * @param path\r\n" +
-	// " * @param nameFile\r\n" +
-	// " * @param content\r\n" +
-	// " */\r\n" +
-	// " private void createFileWindows(String path, String nameFile, String
-	// content) {\r\n" +
-	// "\r\n" +
-	// " // Combinar la ruta y el nombre del archivo\r\n" +
-	// " String absolutePath = path + \"\\\\\" + nameFile + \".py\";\r\n" +
-	// "\r\n" +
-	// " try {\r\n" +
-	// " // Crear un objeto FileWriter para escribir en el archivo\r\n" +
-	// " FileWriter fileWriter = new FileWriter(absolutePath);\r\n" +
-	// "\r\n" +
-	// " // Crear un objeto PrintWriter para escribir en el archivo de manera
-	// más\r\n" +
-	// " // conveniente\r\n" +
-	// " PrintWriter printWriter = new PrintWriter(fileWriter);\r\n" +
-	// "\r\n" +
-	// " // Agregar contenido al archivo (por ejemplo, un programa Python
-	// simple)\r\n" +
-	// " printWriter.println(content);\r\n" +
-	// " printWriter.close();\r\n" +
-	// "\r\n" +
-	// " System.out.println(\"El archivo se creó exitosamente.\");\r\n" +
-	// " } catch (IOException e) {\r\n" +
-	// " System.out.println(\"Error al crear el archivo: \" + e.getMessage());\r\n"
-	// +
-	// " }\r\n" +
-	// " }\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "\r\n" +
-	// "}\r\n" +
-	// "");
-	//
-	// createFileWindows(clase.getPathPackage(), clase.getName()+".java",
-	// cadenaClass.toString());
-	// }
-	//
-	//
-	//
-	//
-	// private String crearCadenaExtends(abstracta.ClassRam clase) {
-	// String cadena = "";
-	//
-	// for (int i = 0; i < clase.getListRelationRamSalida().size(); i++) {
-	// cadena += clase.getListRelationRamSalida().get(i).getTarget().getName();
-	// break;
-	// }
-	// if(clase.getListRelationRamSalida().size() > 0) {
-	// cadena = "extends "+cadena;
-	// }
-	// return cadena;
-	// }
-	//
-	//
-	//
-	//
-	// /**
-	// * Este metodo permite abrir un cuadro de dialogo para ingresar el nomber del
-	// proyecto
-	// * @return el nombre del proyecto
-	// */
-	// public String ingresarInput() {
-	// // Mostrar un cuadro de diálogo de entrada
-	// String nameProject = JOptionPane.showInputDialog("Ingrese el nombre del
-	// projecto:");
-	//
-	// // Comprobar si el usuario ingresó algo y mostrarlo
-	// if (nameProject != null) {
-	// return nameProject;
-	// } else {
-	// return "newProject";
-	// }
-	// }
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	// /**
-	// * Este metodo permite crear una carpeta en el sistema de windows
-	// * @param path
-	// * @param nameFolder
-	// */
-	// private void createFolderWindows(String path, String nameFolder) {
-	//
-	// // Crea un objeto File que representa la carpeta
-	// File newFolder = new File(path, nameFolder);
-	//
-	// // Verifica si la carpeta ya existe
-	// if (!newFolder.exists()) {
-	// // Intenta crear la carpeta
-	// boolean creado = newFolder.mkdirs();
-	// if (creado) {
-	// System.out.println("La carpeta se creó exitosamente.");
-	// } else {
-	// System.out.println("No se pudo crear la carpeta.");
-	// }
-	// } else {
-	// System.out.println("La carpeta ya existe.");
-	// }
-	// }
-	//
-	// /**
-	// * Este metodo permite crear un archivo en el sistema de windows
-	// * @param path
-	// * @param nameFile
-	// * @param content
-	// */
-	// private void createFileWindows(String path, String nameFile, String content)
-	// {
-	//
-	// // Combinar la ruta y el nombre del archivo
-	// String absolutePath = path + "\\" + nameFile + ".py";
-	//
-	// try {
-	// // Crear un objeto FileWriter para escribir en el archivo
-	// FileWriter fileWriter = new FileWriter(absolutePath);
-	//
-	// // Crear un objeto PrintWriter para escribir en el archivo de manera más
-	// // conveniente
-	// PrintWriter printWriter = new PrintWriter(fileWriter);
-	//
-	// // Agregar contenido al archivo (por ejemplo, un programa Python simple)
-	// printWriter.println(content);
-	// printWriter.close();
-	//
-	// System.out.println("El archivo se creó exitosamente.");
-	// } catch (IOException e) {
-	// System.out.println("Error al crear el archivo: " + e.getMessage());
-	// }
-	// }
-	//
+	
+	/**
+	* Este metodo permite tranformar la parte abstacta del diagrama de clases a
+	 archivos de python
+	 * @throws Exception 
+	*/
+	public void transformationM2T() throws Exception {
+		//Captura de la ruta absoluta del proyecto
+		this.rutaProyecto = capturarRutaProyecto();
+		//Carga del modelFactoryAbstracta
+		modelFactoryAbstracta = loadAbstractaModel();
+
+		for (abstractmodel.ProjectAdj proyecto : modelFactoryAbstracta.getListProjects()) {
+
+			createFolderWindows(rutaProyecto, proyecto.getName());
+
+			for (abstractmodel.PackageAdj paquete : proyecto.getLstPackageAdj()) {
+				if (paquete.getPath() == null || paquete.getPath().equals("")) {
+					createFolderWindows(rutaProyecto+"\\"+proyecto.getName(), paquete.getName());
+				}
+				else {
+					createFolderWindows(rutaProyecto+"\\"+paquete.getPath(), paquete.getName());
+				}
+
+				for (abstractmodel.ClassAdj clase : paquete.getLstClassAdj()) {
+					generarClase(clase);
+				}
+
+				for (abstractmodel.PackageAdj paqueteHijo : paquete.getLstChildPackageAdj()) {
+					generarPaquete(paqueteHijo);
+				}
+			}
+		}
+	}
+	
+
+	/**
+	 * Método recursivo para generar paquetes en los directorios, estos a su vez
+	 * crean los paquetes de los paquetes hijos
+	 * @param paquete hijo
+	 */
+	private void generarPaquete(abstractmodel.PackageAdj paquete) {
+		createFolderWindows(rutaProyecto+"\\"+paquete.getPath(), paquete.getName());
+
+		for (abstractmodel.ClassAdj clase : paquete.getLstClassAdj()) {
+			generarClase(clase);
+		}
+
+		for (abstractmodel.PackageAdj paquetHijo : paquete.getLstChildPackageAdj()) {
+			generarPaquete(paquetHijo);
+		}
+
+	}
+	
+	
+	
+	/**
+	 * Método para la generación de la clase
+	 * @param clase
+	 */
+	 private void generarClase(abstractmodel.ClassAdj clase) {
+	
+	 StringBuilder cadenaClass = new StringBuilder();
+	 String extendsCadena = crearCadenaExtends(clase);
+
+	 cadenaClass.append(
+					 "using System;\r\n" +
+					 "\r\n" +
+					 	"namespace "+getNombreProyecto() + "\r\n" +
+					 	"{ \r\n" +
+					 	"\tpublic class "+clase.getName()+" "+extendsCadena
+					  + "\r\n\t{" +
+					  	"\r\n" + "\t\t" +
+					  		crearCadenaAtributos(clase)
+					  				+ "\r\n \t\t" +
+					  		crearCadenaRelaciones(clase)
+					 	+ "\r\n" +
+					 	"\r\n \t\t" +
+					 	"public "+clase.getName() +" ()" + "\r\n\t\t" +
+					 	"{"+ "\r\n\t\t" +
+					 	"\t //Empty Constructor" + "\r\n\t\t" +
+					 	"}"+
+					 	
+					   
+						"\r\n" +
+						"\r\n" +
+					   "\t}" +
+					   "\r\n" +
+					 "\r\n" +
+				    "}"
+
+	 );
+	 
+	 createFileWindows(rutaProyecto+"\\"+clase.getPathPackage(), clase.getName(), cadenaClass);
+
+	 }
+	
+	
+	
+	/**
+	 * Crea la cadena para los atributos de las relaciones
+	 * @param clase
+	 * @return
+	 */
+	private StringBuilder crearCadenaRelaciones(ClassAdj clase) {
+		StringBuilder atributosRelaciones = new StringBuilder();
+		
+		for (abstractmodel.RelationshipAdj relationshipAdj : clase.getLstRelationShipAdj()) {
+			if (!(relationshipAdj instanceof abstractmodel.GeneralizationAdj)) {
+			
+			atributosRelaciones.append(
+					"private "+obtenerTipoAtributoRelacion(relationshipAdj)+" "+relationshipAdj.getRoleTarget()+";\r\n"
+					
+					);
+			}
+		}
+		
+		return atributosRelaciones;
+	}
+
+	/**
+	 * Metod para obtener el tipo de atributo de la relacion:
+	 *  Si es multiplicidad uno, se coloca el nombre de la clase,
+	 *  si es multiplicidad *, se agrega una lista
+	 * @param relationshipAdj
+	 * @return
+	 */
+	private String obtenerTipoAtributoRelacion(abstractmodel.RelationshipAdj relationshipAdj) {
+		
+		if (relationshipAdj.getMultiplicityTargetClass() != null) {
+			if (relationshipAdj.getMultiplicityTargetClass().equals("*")) {
+				return "List<"+relationshipAdj.getTargetClass().getName()+">";
+			}
+		}
+		
+		return relationshipAdj.getTargetClass().getName();
+	}
+
+	
+	
+	/**
+	 * Crea la cadena de atributos de la clase creados desde el diagrama
+	 * @param clase
+	 * @return
+	 */
+	private StringBuilder crearCadenaAtributos(ClassAdj clase) {
+		StringBuilder atributos = new StringBuilder();
+		
+		for (abstractmodel.AttributeAdj attribute : clase.getLstAttributeAdj()) {
+			atributos.append(
+					"private "+attribute.getAttributeTypeAdj().getName()+" "+attribute.getName()+";\\r\\n"
+					
+					);
+		}
+		
+		return atributos;
+	}
+
+	/**
+	 * Metodo que obtiene la palabra extends que la clase dada
+	 * tenga una relacion de generalizacion
+	 * @param clase
+	 * @return
+	 */
+	private String crearCadenaExtends(ClassAdj clase) {
+		
+		for (abstractmodel.RelationshipAdj relationshipAdj: clase.getLstRelationShipAdj()) {
+			if (relationshipAdj instanceof abstractmodel.GeneralizationAdj) {
+				return " : "+relationshipAdj.getTargetClass().getName()+" ";
+			}
+		}
+		return "";
+	}
+	
+	
+	
+	
+	
+	
+	//---------------------------------------------------INPUTS
+	
+	
+
+	/**
+	 * Este metodo permite abrir un cuadro de dialogo para ingresar el nombre del
+	 proyecto
+	 * @return el nombre del proyecto
+	 */
+	public String capturarNombreProyecto() {
+		// Mostrar un cuadro de diálogo de entrada
+		String nameProject = JOptionPane.showInputDialog("Ingrese el nombre del proyecto:");
+
+		// Comprobar si el usuario ingresó algo y mostrarlo
+		if (nameProject != null) {
+			return nameProject;
+		} else {
+			return "newProject";
+		}
+	}
+	
+	
+	/**
+	 * Metodo para capturar la ruta absoluta del proyecto
+	 * @return
+	 * @throws Exception
+	 */
+	private String capturarRutaProyecto() throws Exception{
+		JFileChooser chooser = new JFileChooser();
+		chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+
+		int opcion = chooser.showSaveDialog(null); // Muestra la ventana de selección
+		
+		if (opcion == JFileChooser.APPROVE_OPTION) {
+            File archivo = chooser.getSelectedFile(); // Obtiene la ruta seleccionada por el usuario
+            return archivo.getAbsolutePath();
+		}
+		else {
+			throw new Exception("OPERACION CANCELADA");
+		}
+		
+	}
+	
+	
+	//-------------------------------------------------------FOLDERS Y ARCHIVOS
+	
+	/**
+	 * Este metodo permite crear una carpeta en el sistema de windows
+	 * @param path
+	 * @param nameFolder
+	 */
+	private void createFolderWindows(String path, String nameFolder) {
+
+		// Crea un objeto File que representa la carpeta
+		File newFolder = new File(path, nameFolder);
+
+		// Verifica si la carpeta ya existe
+		if (!newFolder.exists()) {
+			// Intenta crear la carpeta
+			boolean creado = newFolder.mkdirs();
+			if (creado) {
+				System.out.println("La carpeta se creó exitosamente.");
+			} else {
+				System.out.println("No se pudo crear la carpeta.");
+			}
+		} else {
+			System.out.println("La carpeta ya existe.");
+		}
+	}
+	
+	 /**
+	 * Este metodo permite crear un archivo en el sistema de windows
+	 * @param path
+	 * @param nameFile
+	 * @param content
+	 */
+	private void createFileWindows(String path, String nameFile, StringBuilder content)
+	{
+
+		// Combinar la ruta y el nombre del archivo
+		String absolutePath = path + "\\" + nameFile + ".cs";
+
+		try {
+			// Crear un objeto FileWriter para escribir en el archivo
+			FileWriter fileWriter = new FileWriter(absolutePath);
+
+			// Crear un objeto PrintWriter para escribir en el archivo de manera más
+			// conveniente
+			PrintWriter printWriter = new PrintWriter(fileWriter);
+
+			// Agregar contenido al archivo (por ejemplo, un programa Python simple)
+			printWriter.println(content);
+			printWriter.close();
+
+			System.out.println("El archivo se creó exitosamente.");
+		} catch (IOException e) {
+			System.out.println("Error al crear el archivo: " + e.getMessage());
+		}
+	}
+	
+	
+	//-----------------------------------------GETTERS Y SETTERS DE VARIABLES UTILES DE LA CLASE
+	
+	
+	public String getRutaProyecto() {
+		return rutaProyecto;
+	}
+
+	public void setRutaProyecto(String rutaProyecto) {
+		this.rutaProyecto = rutaProyecto;
+	}
+	
+	public String getNombreProyecto() {
+		return nombreProyecto;
+	}
+
+	public void setNombreProyecto(String nombreProyecto) {
+		this.nombreProyecto = nombreProyecto;
+	}
 
 }

@@ -11,6 +11,8 @@ import org.eclipse.ui.*;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.SWT;
 import javax.inject.Inject;
+import javax.swing.JOptionPane;
+
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.wb.swt.SWTResourceManager;
 
@@ -105,7 +107,12 @@ public class GeneratorModels extends ViewPart {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				ModelFactoryModel mfm = ModelFactoryModel.getInstance();
-				//mfm.transformationM2T();
+				try {
+					mfm.transformationM2T();
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					System.out.println(e1.getMessage());
+				}
 			}
 		});
 		btnGenerateCodeJava.setBounds(79, 31, 362, 25);
