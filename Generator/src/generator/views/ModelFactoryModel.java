@@ -172,20 +172,22 @@ public class ModelFactoryModel {
 	// * Este metodo realiza la transformacion del modelo especifico a el modelo
 	// * abstracto
 	// */
-	public void transformationM2M() {
+	public void transformationM2M() throws Exception {
 
 		modelFactoryConcreta = loadConcreteModel();// el modelo origen
 		modelFactoryAbstracta = loadAbstractaModel();// el modelo destino
 		modelFactoryAbstracta.getListProjects().clear();
 		
-		this.nombreProyecto = capturarNombreProyecto();
 	
 		for (ProjectAdj projectAdjConcreta : modelFactoryConcreta.getListProjects()) {
+			
+			//Captura nombre de proyecto
+			this.nombreProyecto = capturarNombreProyecto();
+			projectAdjConcreta.setName(getNombreProyecto());
 
 			// por un proyecto de la concreta se crea uno en la abstracta
-
 			abstractmodel.ProjectAdj proyectoAdjAbstracta = AbstractmodelFactory.eINSTANCE.createProjectAdj();
-			proyectoAdjAbstracta.setName(getNombreProyecto());
+			proyectoAdjAbstracta.setName(projectAdjConcreta.getName());
 			proyectoAdjAbstracta.setPath(projectAdjConcreta.getPath());
 			modelFactoryAbstracta.getListProjects().add(proyectoAdjAbstracta);
 			abstractmodel.AttributeTypeFactoryAdj  atrAbstractmodelFactory= AbstractmodelFactory.eINSTANCE.createAttributeTypeFactoryAdj();
@@ -626,9 +628,11 @@ public class ModelFactoryModel {
 	 private void generarClase(abstractmodel.ClassAdj clase) {
 	
 	 StringBuilder cadenaClass = new StringBuilder();
-	 String extendsCadena = crearCadenaExtends(clase);
+	 String extendsCadena = crearCadenaHerencia(clase);
 
 	 cadenaClass.append(
+			 		 "//codigo generado por el equipo maravilla" +
+			 		 "\r\n" +
 					 "using System;\r\n" +
 					 "\r\n" +
 					 	"namespace "+getNombreProyecto() + "\r\n" +
@@ -644,8 +648,9 @@ public class ModelFactoryModel {
 					 	"public "+clase.getName() +" ()" + "\r\n\t\t" +
 					 	"{"+ "\r\n\t\t" +
 					 	"\t //Empty Constructor" + "\r\n\t\t" +
-					 	"}"+
-					 	
+					 	"}"+ "\r\n" +
+					 	"\r\n" +
+					 	crearCadenaGettersSettersToString(clase) + "\r\n\t\t" +
 					   
 						"\r\n" +
 						"\r\n" +
@@ -662,10 +667,75 @@ public class ModelFactoryModel {
 	
 	
 	
+	 /**
+	  * Metodo para crear la cadena de los getters, setters y toString de los
+	  * atributos de la clase
+	  * @param clase
+	  * @return cadena getters, setters y toString
+	  */
+	private StringBuilder crearCadenaGettersSettersToString(ClassAdj clase) {
+		StringBuilder gettersSetters = new StringBuilder();
+		StringBuilder toString = new StringBuilder();
+		toString.append("\"" +clase.getName() + " [");
+		
+		for (abstractmodel.AttributeAdj attribute : clase.getLstAttributeAdj()) {
+			String atributoConvertido = attribute.getName().substring(0, 1).toUpperCase() + attribute.getName().substring(1);
+			
+			gettersSetters.append("\t\tpublic "+attribute.getAttributeTypeAdj().getName()+" get"+atributoConvertido+"()\r\n\t\t"
+					+ "{\r\n\t\t\t"
+					+ "return "+attribute.getName()+";"
+					+"\r\n\t\t}"
+					+"\r\n"
+					+"\r\n\t\t"
+					
+					+"public void set"+atributoConvertido+"("+attribute.getAttributeTypeAdj().getName()+" "+attribute.getName()+")\r\n\t\t"
+					+ "{\r\n\t\t\t"
+					+ "this."+attribute.getName()+" = "+attribute.getName()+";"
+					+"\r\n\t\t}"
+					+"\r\n"
+					+"\r\n"
+					);
+			toString.append(attribute.getName()+"=\" + "+attribute.getName()+" + \"");
+		}
+		
+		for (abstractmodel.RelationshipAdj relationshipAdj : clase.getLstRelationShipAdj()) {
+			if (!(relationshipAdj instanceof abstractmodel.GeneralizationAdj)) {
+				String atributoConvertido = relationshipAdj.getRoleTarget().substring(0, 1).toUpperCase() + relationshipAdj.getRoleTarget().substring(1);
+				
+				gettersSetters.append("\t\tpublic "+obtenerTipoAtributoRelacion(relationshipAdj)+" get"+atributoConvertido+"()\r\n\t\t"
+						+ "{\r\n\t\t\t"
+						+ "return "+relationshipAdj.getRoleTarget()+";"
+						+"\r\n\t\t}"
+						+"\r\n"
+						+"\r\n\t\t"
+						
+						+"public void set"+atributoConvertido+"("+obtenerTipoAtributoRelacion(relationshipAdj)+" "+relationshipAdj.getRoleTarget()+")\r\n\t\t"
+						+ "{\r\n\t\t\t"
+						+ "this."+relationshipAdj.getRoleTarget()+" = "+relationshipAdj.getRoleTarget()+";"
+						+"\r\n\t\t}"
+						+"\r\n"
+						+"\r\n"
+						);
+				
+				toString.append(relationshipAdj.getRoleTarget()+"=\" + "+relationshipAdj.getRoleTarget()+" + \"");
+			}
+		}
+		
+		toString.append("]\";");
+		
+		gettersSetters.append("\t\tpublic override string ToString()\r\n\t\t"
+				+ "{\r\n\t\t\t"
+				+ "return "+toString
+				+"\r\n\t\t}"
+				);
+		
+		return gettersSetters;
+	}
+
 	/**
 	 * Crea la cadena para los atributos de las relaciones
 	 * @param clase
-	 * @return
+	 * @return cadena de atributos de relaciones
 	 */
 	private StringBuilder crearCadenaRelaciones(ClassAdj clase) {
 		StringBuilder atributosRelaciones = new StringBuilder();
@@ -674,7 +744,7 @@ public class ModelFactoryModel {
 			if (!(relationshipAdj instanceof abstractmodel.GeneralizationAdj)) {
 			
 			atributosRelaciones.append(
-					"private "+obtenerTipoAtributoRelacion(relationshipAdj)+" "+relationshipAdj.getRoleTarget()+";\r\n"
+					"private "+obtenerTipoAtributoRelacion(relationshipAdj)+" "+relationshipAdj.getRoleTarget()+";\r\n\t\t"
 					
 					);
 			}
@@ -688,14 +758,13 @@ public class ModelFactoryModel {
 	 *  Si es multiplicidad uno, se coloca el nombre de la clase,
 	 *  si es multiplicidad *, se agrega una lista
 	 * @param relationshipAdj
-	 * @return
+	 * @return cadena tipo de atributo de relacion
 	 */
 	private String obtenerTipoAtributoRelacion(abstractmodel.RelationshipAdj relationshipAdj) {
 		
 		if (relationshipAdj.getMultiplicityTargetClass() != null) {
-			if (relationshipAdj.getMultiplicityTargetClass().equals("*")) {
+			if (relationshipAdj.getMultiplicityTargetClass().equals("*"))
 				return "List<"+relationshipAdj.getTargetClass().getName()+">";
-			}
 		}
 		
 		return relationshipAdj.getTargetClass().getName();
@@ -706,28 +775,33 @@ public class ModelFactoryModel {
 	/**
 	 * Crea la cadena de atributos de la clase creados desde el diagrama
 	 * @param clase
-	 * @return
+	 * @return cadena de atributos propios de la clase
 	 */
 	private StringBuilder crearCadenaAtributos(ClassAdj clase) {
 		StringBuilder atributos = new StringBuilder();
 		
 		for (abstractmodel.AttributeAdj attribute : clase.getLstAttributeAdj()) {
-			atributos.append(
-					"private "+attribute.getAttributeTypeAdj().getName()+" "+attribute.getName()+";\\r\\n"
-					
-					);
+			atributos.append("private "+attribute.getAttributeTypeAdj().getName()+" "+attribute.getName());
+			
+			if (attribute.getValor() != null) {
+				if (!attribute.getValor().equals(""))
+					atributos.append(" = "+attribute.getValor());
+			}
+			
+			atributos.append(";");
+			
 		}
 		
 		return atributos;
 	}
 
 	/**
-	 * Metodo que obtiene la palabra extends que la clase dada
+	 * Metodo que obtiene la cadena de herencia que la clase dada
 	 * tenga una relacion de generalizacion
 	 * @param clase
-	 * @return
+	 * @return cadena de herencia
 	 */
-	private String crearCadenaExtends(ClassAdj clase) {
+	private String crearCadenaHerencia(ClassAdj clase) {
 		
 		for (abstractmodel.RelationshipAdj relationshipAdj: clase.getLstRelationShipAdj()) {
 			if (relationshipAdj instanceof abstractmodel.GeneralizationAdj) {
@@ -750,16 +824,20 @@ public class ModelFactoryModel {
 	 * Este metodo permite abrir un cuadro de dialogo para ingresar el nombre del
 	 proyecto
 	 * @return el nombre del proyecto
+	 * @throws Exception 
 	 */
-	public String capturarNombreProyecto() {
+	public String capturarNombreProyecto() throws Exception {
 		// Mostrar un cuadro de diálogo de entrada
 		String nameProject = JOptionPane.showInputDialog("Ingrese el nombre del proyecto:");
 
 		// Comprobar si el usuario ingresó algo y mostrarlo
 		if (nameProject != null) {
-			return nameProject;
-		} else {
+			if (!nameProject.equals(""))
+				return nameProject;
 			return "newProject";
+			
+		} else {
+			throw new Exception("OPERACION CANCELADA");
 		}
 	}
 	
@@ -861,5 +939,12 @@ public class ModelFactoryModel {
 	public void setNombreProyecto(String nombreProyecto) {
 		this.nombreProyecto = nombreProyecto;
 	}
+
+	@Override
+	public String toString() {
+		return "ModelFactoryModel [rutaProyecto=" + rutaProyecto + ", nombreProyecto=" + nombreProyecto + "]";
+	}
+	
+	
 
 }

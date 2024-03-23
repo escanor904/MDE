@@ -87,11 +87,16 @@ public class GeneratorModels extends ViewPart {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				ModelFactoryModel mfm = ModelFactoryModel.getInstance();
-				mfm.transformationM2M();
+				try {
+					mfm.transformationM2M();
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					JOptionPane.showMessageDialog(null, e1.getMessage());
+				}
 			}
 		});
 		btnNewButton.setBounds(78, 36, 369, 25);
-		btnNewButton.setText("Generate Model");
+		btnNewButton.setText("Generate Transformation Model to Model");
 		
 		Group group_1 = new Group(parent, SWT.NONE);
 		group_1.setBounds(22, 177, 531, 82);
@@ -100,7 +105,7 @@ public class GeneratorModels extends ViewPart {
 		lblTransformacionModelTo.setFont(SWTResourceManager.getFont("Segoe UI", 9, SWT.BOLD));
 		lblTransformacionModelTo.setForeground(SWTResourceManager.getColor(0, 0, 128));
 		lblTransformacionModelTo.setBounds(10, 0, 235, 15);
-		lblTransformacionModelTo.setText("Transformacion Model To Text(M2T)");
+		lblTransformacionModelTo.setText("Transformacion Model To Text (M2T)");
 		
 		Button btnGenerateCodeJava = new Button(group_1, SWT.NONE);
 		btnGenerateCodeJava.addSelectionListener(new SelectionAdapter() {
@@ -111,12 +116,12 @@ public class GeneratorModels extends ViewPart {
 					mfm.transformationM2T();
 				} catch (Exception e1) {
 					// TODO Auto-generated catch block
-					System.out.println(e1.getMessage());
+					JOptionPane.showMessageDialog(null, e1.getMessage());
 				}
 			}
 		});
 		btnGenerateCodeJava.setBounds(79, 31, 362, 25);
-		btnGenerateCodeJava.setText("Generate Code Java");
+		btnGenerateCodeJava.setText("Generate C# Code");
 		// TODO Auto-generated method stub
 		
 	}
