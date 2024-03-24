@@ -639,7 +639,7 @@ public class ModelFactoryModel {
 					 	"{ \r\n" +
 					 	"\tpublic class "+clase.getName()+" "+extendsCadena
 					  + "\r\n\t{" +
-					  	"\r\n" + "\t\t" +
+					  	"\r\n" +
 					  		crearCadenaAtributos(clase)
 					  				+ "\r\n \t\t" +
 					  		crearCadenaRelaciones(clase)
@@ -781,14 +781,14 @@ public class ModelFactoryModel {
 		StringBuilder atributos = new StringBuilder();
 		
 		for (abstractmodel.AttributeAdj attribute : clase.getLstAttributeAdj()) {
-			atributos.append("private "+attribute.getAttributeTypeAdj().getName()+" "+attribute.getName());
+			atributos.append("\t\tprivate "+attribute.getAttributeTypeAdj().getName()+" "+attribute.getName());
 			
 			if (attribute.getValor() != null) {
 				if (!attribute.getValor().equals(""))
 					atributos.append(" = "+attribute.getValor());
 			}
 			
-			atributos.append(";");
+			atributos.append(";\r\n");
 			
 		}
 		
