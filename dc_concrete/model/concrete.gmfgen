@@ -251,7 +251,6 @@
         <entries xsi:type="gmfgen:ToolEntry" title="ClassConcreteAdj" description="Create new ClassConcreteAdj" genNodes="//@diagram/@topLevelNodes.1"/>
         <entries xsi:type="gmfgen:ToolEntry" title="MethodConcreteAdj" description="Create new MethodConcreteAdj" genNodes="//@diagram/@childNodes.1"/>
         <entries xsi:type="gmfgen:ToolEntry" title="PackageConcreteAdj" description="Create new PackageConcreteAdj" genNodes="//@diagram/@topLevelNodes.0"/>
-        <entries xsi:type="gmfgen:ToolEntry" title="ParameterConcreteAdj" description="Create new ParameterConcreteAdj"/>
       </groups>
       <groups title="Connections" collapse="true">
         <entries xsi:type="gmfgen:ToolEntry" title="AssociationAdj" description="Create new AssociationAdj" genLinks="//@diagram/@links.2"/>

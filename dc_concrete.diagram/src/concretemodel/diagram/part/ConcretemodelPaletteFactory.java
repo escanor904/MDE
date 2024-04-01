@@ -39,7 +39,6 @@ public class ConcretemodelPaletteFactory {
 		paletteContainer.add(createClassConcreteAdj2CreationTool());
 		paletteContainer.add(createMethodConcreteAdj3CreationTool());
 		paletteContainer.add(createPackageConcreteAdj4CreationTool());
-		paletteContainer.add(createParameterConcreteAdj5CreationTool());
 		return paletteContainer;
 	}
 
@@ -110,17 +109,6 @@ public class ConcretemodelPaletteFactory {
 		entry.setSmallIcon(
 				ConcretemodelElementTypes.getImageDescriptor(ConcretemodelElementTypes.PackageConcreteAdj_2001));
 		entry.setLargeIcon(entry.getSmallIcon());
-		return entry;
-	}
-
-	/**
-	* @generated
-	*/
-	private ToolEntry createParameterConcreteAdj5CreationTool() {
-		ToolEntry entry = new ToolEntry(Messages.ParameterConcreteAdj5CreationTool_title,
-				Messages.ParameterConcreteAdj5CreationTool_desc, null, null) {
-		};
-		entry.setId("createParameterConcreteAdj5CreationTool"); //$NON-NLS-1$
 		return entry;
 	}
 

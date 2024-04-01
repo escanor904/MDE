@@ -125,10 +125,6 @@
         upperBound="-1" eType="#//ParameterConcreteAdj" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ParameterConcreteAdj">
-    <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
-      <details key="color" value="255,255,128"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="AttributeTypeConcreteAdj"
         eType="#//AttributeTypeConcreteAdj"/>

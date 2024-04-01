@@ -80,7 +80,6 @@ class MethodConcreteAdj{
 	val ParameterConcreteAdj [*] lstParameterConcreteAdj;
 }
 
-@gmf.node(label="name", color="255,255,128")
 class ParameterConcreteAdj{
 	attr String name;
 	ref AttributeTypeConcreteAdj AttributeTypeConcreteAdj; 

@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see concretemodel.ConcretemodelPackage#getParameterConcreteAdj()
- * @model annotation="gmf.node label='name' color='255,255,128'"
+ * @model
  * @generated
  */
 public interface ParameterConcreteAdj extends EObject {

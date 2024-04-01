@@ -296,16 +296,6 @@ public class Messages extends NLS {
 	/**
 	* @generated
 	*/
-	public static String ParameterConcreteAdj5CreationTool_title;
-
-	/**
-	* @generated
-	*/
-	public static String ParameterConcreteAdj5CreationTool_desc;
-
-	/**
-	* @generated
-	*/
 	public static String AssociationAdj1CreationTool_title;
 
 	/**

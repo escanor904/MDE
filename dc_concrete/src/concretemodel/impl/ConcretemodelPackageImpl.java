@@ -999,13 +999,6 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 			 "color", "255,255,128"
 		   });	
 		addAnnotation
-		  (parameterConcreteAdjEClass, 
-		   source, 
-		   new String[] {
-			 "label", "name",
-			 "color", "255,255,128"
-		   });	
-		addAnnotation
 		  (attributeConcreteAdjEClass, 
 		   source, 
 		   new String[] {
