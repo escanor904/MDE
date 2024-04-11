@@ -889,3 +889,8 @@ org.w3c.dom.events,3.0.0.draft20060413_v201105210656,file:/C:/Eclipse/2.%20Epsil
 org.w3c.dom.smil,1.0.1.v200903091627,file:/C:/Eclipse/2.%20Epsilon/epsilon%20modeling/plugins/org.w3c.dom.smil_1.0.1.v200903091627.jar,4,false
 org.w3c.dom.svg,1.1.0.v201011041433,file:/C:/Eclipse/2.%20Epsilon/epsilon%20modeling/plugins/org.w3c.dom.svg_1.1.0.v201011041433.jar,4,false
 org.yaml.snakeyaml,1.27.0.v20201111-1638,file:/C:/Eclipse/2.%20Epsilon/epsilon%20modeling/plugins/org.yaml.snakeyaml_1.27.0.v20201111-1638.jar,4,false
+uidiagram,0.1.0.qualifier,file:/C:/td/ws_class_epsilon/dc/dc/uidiagram/,4,false
+uidiagram.diagram,1.0.0.qualifier,file:/C:/td/ws_class_epsilon/dc/dc/uidiagram.diagram/,4,false
+uidiagram.edit,1.0.0.qualifier,file:/C:/td/ws_class_epsilon/dc/dc/uidiagram.edit/,4,false
+uidiagram.editor,1.0.0.qualifier,file:/C:/td/ws_class_epsilon/dc/dc/uidiagram.editor/,4,false
+uidiagram.tests,1.0.0.qualifier,file:/C:/td/ws_class_epsilon/dc/dc/uidiagram.tests/,4,false

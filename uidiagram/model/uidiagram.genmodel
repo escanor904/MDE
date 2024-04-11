@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="" modelDirectory="/uidiagram/src" modelPluginID="uidiagram"
+    modelName="Uidiagram" importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0"
+    copyrightFields="false">
+  <foreignModel>uidiagram.emf</foreignModel>
+  <genPackages prefix="Uidiagram" disposableProviderFactory="true" ecorePackage="uidiagram.ecore#/">
+    <genClasses ecoreClass="uidiagram.ecore#//ModelFactoryUI">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uidiagram.ecore#//ModelFactoryUI/lstProjectUI"/>
+    </genClasses>
+    <genClasses ecoreClass="uidiagram.ecore#//ProjectUI">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uidiagram.ecore#//ProjectUI/lstDiagramUI"/>
+    </genClasses>
+    <genClasses ecoreClass="uidiagram.ecore#//UIDiagram">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uidiagram.ecore#//UIDiagram/form"/>
+    </genClasses>
+    <genClasses ecoreClass="uidiagram.ecore#//FormUI">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//FormUI/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uidiagram.ecore#//FormUI/lstAdjWidget"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="uidiagram.ecore#//AdjWidget">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjWidget/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjWidget/variable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjWidget/text"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjWidget/positionX"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjWidget/positionY"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjWidget/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjWidget/height"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjWidget/background"/>
+    </genClasses>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjLabel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjLabel/font"/>
+    </genClasses>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjCheckBox">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjCheckBox/font"/>
+    </genClasses>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjButton">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjButton/font"/>
+    </genClasses>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjListBox">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjListBox/font"/>
+    </genClasses>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjDatepicker">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjDatepicker/font"/>
+    </genClasses>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjTextBox">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjTextBox/font"/>
+    </genClasses>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjCheckedListBox">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjCheckedListBox/font"/>
+    </genClasses>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjLinkLabel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjLinkLabel/font"/>
+    </genClasses>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjRichTextBox">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjRichTextBox/font"/>
+    </genClasses>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjTreeView">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjTreeView/font"/>
+    </genClasses>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjPropertyGrid">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjPropertyGrid/font"/>
+    </genClasses>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjProgressBar">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjProgressBar/font"/>
+    </genClasses>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjDataGridView">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uidiagram.ecore#//AdjDataGridView/lstAdjDataGridViewTextBoxColumn"/>
+    </genClasses>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjDataGridViewTextBoxColumn">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjDataGridViewTextBoxColumn/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjDataGridViewTextBoxColumn/variable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjDataGridViewTextBoxColumn/value"/>
+    </genClasses>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjPanel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjPanel/font"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uidiagram.ecore#//AdjPanel/lstAdjWidget"/>
+    </genClasses>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjGroupBox">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjGroupBox/font"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uidiagram.ecore#//AdjGroupBox/lstAdjWidget"/>
+    </genClasses>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjMenuStrip">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjMenuStrip/font"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uidiagram.ecore#//AdjMenuStrip/lstAdjWidget"/>
+    </genClasses>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjToolStrip">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjToolStrip/font"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uidiagram.ecore#//AdjToolStrip/lstAdjWidget"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

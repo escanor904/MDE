@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated uidiagram -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="uidiagram.presentation.UidiagramModelWizardID"
+            name="%_UI_UidiagramModelWizard_label"
+            class="uidiagram.presentation.UidiagramModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/UidiagramModelFile.gif">
+         <description>%_UI_UidiagramModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated uidiagram -->
+      <editor
+            id="uidiagram.presentation.UidiagramEditorID"
+            name="%_UI_UidiagramEditor_label"
+            icon="icons/full/obj16/UidiagramModelFile.gif"
+            extensions="uidiagram"
+            class="uidiagram.presentation.UidiagramEditor"
+            contributorClass="uidiagram.presentation.UidiagramActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
