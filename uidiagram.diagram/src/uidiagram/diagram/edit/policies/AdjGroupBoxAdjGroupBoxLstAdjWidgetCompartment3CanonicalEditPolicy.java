@@ -28,20 +28,18 @@ import uidiagram.UidiagramPackage;
 import uidiagram.diagram.edit.parts.AdjButton3EditPart;
 import uidiagram.diagram.edit.parts.AdjCheckBox3EditPart;
 import uidiagram.diagram.edit.parts.AdjCheckedListBox3EditPart;
-import uidiagram.diagram.edit.parts.AdjDataGridView3EditPart;
-import uidiagram.diagram.edit.parts.AdjDatepicker3EditPart;
-import uidiagram.diagram.edit.parts.AdjGroupBox3EditPart;
+import uidiagram.diagram.edit.parts.AdjComboBox3EditPart;
+import uidiagram.diagram.edit.parts.AdjDateTimePicker3EditPart;
+import uidiagram.diagram.edit.parts.AdjGroupBox2EditPart;
 import uidiagram.diagram.edit.parts.AdjLabel3EditPart;
 import uidiagram.diagram.edit.parts.AdjLinkLabel3EditPart;
 import uidiagram.diagram.edit.parts.AdjListBox3EditPart;
-import uidiagram.diagram.edit.parts.AdjMenuStrip2EditPart;
+import uidiagram.diagram.edit.parts.AdjListView3EditPart;
 import uidiagram.diagram.edit.parts.AdjPanel3EditPart;
-import uidiagram.diagram.edit.parts.AdjProgressBar3EditPart;
-import uidiagram.diagram.edit.parts.AdjPropertyGrid3EditPart;
+import uidiagram.diagram.edit.parts.AdjPictureBox3EditPart;
+import uidiagram.diagram.edit.parts.AdjRadioButton3EditPart;
 import uidiagram.diagram.edit.parts.AdjRichTextBox3EditPart;
 import uidiagram.diagram.edit.parts.AdjTextBox3EditPart;
-import uidiagram.diagram.edit.parts.AdjToolStrip2EditPart;
-import uidiagram.diagram.edit.parts.AdjTreeView3EditPart;
 import uidiagram.diagram.part.UidiagramDiagramUpdater;
 import uidiagram.diagram.part.UidiagramNodeDescriptor;
 import uidiagram.diagram.part.UidiagramVisualIDRegistry;
@@ -79,7 +77,7 @@ public class AdjGroupBoxAdjGroupBoxLstAdjWidgetCompartment3CanonicalEditPolicy e
 		View viewObject = (View) getHost().getModel();
 		LinkedList<EObject> result = new LinkedList<EObject>();
 		List<UidiagramNodeDescriptor> childDescriptors = UidiagramDiagramUpdater
-				.getAdjGroupBoxAdjGroupBoxLstAdjWidgetCompartment_7016SemanticChildren(viewObject);
+				.getAdjGroupBoxAdjGroupBoxLstAdjWidgetCompartment_7024SemanticChildren(viewObject);
 		for (UidiagramNodeDescriptor d : childDescriptors) {
 			result.add(d.getModelElement());
 		}
@@ -103,19 +101,17 @@ public class AdjGroupBoxAdjGroupBoxLstAdjWidgetCompartment3CanonicalEditPolicy e
 		case AdjCheckBox3EditPart.VISUAL_ID:
 		case AdjButton3EditPart.VISUAL_ID:
 		case AdjListBox3EditPart.VISUAL_ID:
-		case AdjDatepicker3EditPart.VISUAL_ID:
+		case AdjDateTimePicker3EditPart.VISUAL_ID:
 		case AdjTextBox3EditPart.VISUAL_ID:
 		case AdjCheckedListBox3EditPart.VISUAL_ID:
 		case AdjLinkLabel3EditPart.VISUAL_ID:
 		case AdjRichTextBox3EditPart.VISUAL_ID:
-		case AdjTreeView3EditPart.VISUAL_ID:
-		case AdjPropertyGrid3EditPart.VISUAL_ID:
-		case AdjProgressBar3EditPart.VISUAL_ID:
-		case AdjDataGridView3EditPart.VISUAL_ID:
+		case AdjComboBox3EditPart.VISUAL_ID:
+		case AdjRadioButton3EditPart.VISUAL_ID:
+		case AdjPictureBox3EditPart.VISUAL_ID:
+		case AdjListView3EditPart.VISUAL_ID:
 		case AdjPanel3EditPart.VISUAL_ID:
-		case AdjGroupBox3EditPart.VISUAL_ID:
-		case AdjMenuStrip2EditPart.VISUAL_ID:
-		case AdjToolStrip2EditPart.VISUAL_ID:
+		case AdjGroupBox2EditPart.VISUAL_ID:
 			return true;
 		}
 		return false;
@@ -130,7 +126,7 @@ public class AdjGroupBoxAdjGroupBoxLstAdjWidgetCompartment3CanonicalEditPolicy e
 		}
 		LinkedList<IAdaptable> createdViews = new LinkedList<IAdaptable>();
 		List<UidiagramNodeDescriptor> childDescriptors = UidiagramDiagramUpdater
-				.getAdjGroupBoxAdjGroupBoxLstAdjWidgetCompartment_7016SemanticChildren((View) getHost().getModel());
+				.getAdjGroupBoxAdjGroupBoxLstAdjWidgetCompartment_7024SemanticChildren((View) getHost().getModel());
 		LinkedList<View> orphaned = new LinkedList<View>();
 		// we care to check only views we recognize as ours
 		LinkedList<View> knownViewChildren = new LinkedList<View>();

@@ -258,7 +258,7 @@
          </object>
          <context viewClass="org.eclipse.gmf.runtime.notation.Node" containerViews="referencing-diagrams"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="Uidiagram"/>
-         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2001,3001,3002,3003,3004,3005,3006,3007,3008,3009,3010,3011,3012,3013,3014,3015,3016,3017,3018,3019,3020,3021,3022,3023,3024,3025,3026,3027,3028,3029,3030,3031,3032,3033,3034,3035,3036,3037,3038,3039,3040,3041,3042,3043,3044,3045,3046,3047,3048,3049,3050,3051,3052,3053,3054,3055,3056,3057,3058,3059,3060,3061,3062,3063,3064,3065,3066,3067,3068,3069,3070,3071,3072,3073,3074,3075,3076,3077,3078,3079,3080,3081,3082,3083,3084,3085,3086"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2001,3001,3002,3003,3004,3098,3006,3007,3008,3009,3087,3099,3100,3092,3093,3015,3016,3017,3018,3019,3101,3021,3022,3023,3024,3088,3102,3103,3094,3029,3030,3031,3032,3033,3034,3104,3036,3037,3038,3039,3089,3105,3106,3095,3044,3076,3084"/>
       </viewProvider>
    </extension>
 
@@ -270,16 +270,16 @@
             <method name="getType()" value="Uidiagram"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-nodes">
-            <method name="getType()" value="2001,3001,3002,3003,3004,3005,3006,3007,3008,3009,3010,3011,3012,3013,3014,3015,3016,3017,3018,3019,3020,3021,3022,3023,3024,3025,3026,3027,3028,3029,3030,3031,3032,3033,3034,3035,3036,3037,3038,3039,3040,3041,3042,3043,3044,3045,3046,3047,3048,3049,3050,3051,3052,3053,3054,3055,3056,3057,3058,3059,3060,3061,3062,3063,3064,3065,3066,3067,3068,3069,3070,3071,3072,3073,3074,3075,3076,3077,3078,3079,3080,3081,3082,3083,3084,3085,3086"/>
+            <method name="getType()" value="2001,3001,3002,3003,3004,3098,3006,3007,3008,3009,3087,3099,3100,3092,3093,3015,3016,3017,3018,3019,3101,3021,3022,3023,3024,3088,3102,3103,3094,3029,3030,3031,3032,3033,3034,3104,3036,3037,3038,3039,3089,3105,3106,3095,3044,3076,3084"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
             <method name="getType()" value=""/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-labels">
-            <method name="getType()" value="5087,5001,5002,5003,5004,5005,5006,5007,5008,5009,5010,5011,5012,5014,5013,5083,5015,5016,5017,5018,5019,5020,5021,5022,5023,5024,5025,5026,5027,5082,5081,5028,5029,5030,5031,5032,5033,5034,5035,5036,5037,5038,5039,5040,5080,5079,5041,5042,5043,5044,5045,5046,5047,5048,5049,5050,5051,5052,5053,5078,5077,5054,5055,5056,5057,5058,5059,5060,5061,5062,5063,5064,5065,5066,5067,5076,5075,5074,5073,5072,5071,5070,5069,5068,5084,5085,5086"/>
+            <method name="getType()" value="5087,5001,5002,5003,5004,5099,5006,5007,5008,5009,5088,5100,5101,5094,5093,5083,5015,5016,5017,5018,5102,5020,5021,5022,5023,5089,5103,5104,5095,5082,5081,5028,5029,5030,5031,5105,5033,5034,5035,5036,5090,5106,5107,5096,5080,5075,5084"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-compartments">
-            <method name="getType()" value="7001,7002,7003,7004,7005,7006,7007,7008,7009,7010,7011,7012,7013,7014,7015,7016,7017,7018,7019,7020,7021,7022,7023,7024,7025,7026"/>
+            <method name="getType()" value="7001,7027,7003,7028,7005,7006,7029,7008,7016,7024"/>
          </object>
          <context views="generated-diagram,generated-nodes,generated-links,generated-labels,generated-compartments"/>
       </editpartProvider>
@@ -318,10 +318,10 @@
          <object class="uidiagram.diagram.edit.parts.AdjListBoxEditPart" id="AdjListBox_3004"/>
          <context elements="AdjListBox_3004"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjDatepickerEditPart">
+            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjDateTimePickerEditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjDatepickerEditPart" id="AdjDatepicker_3005"/>
-         <context elements="AdjDatepicker_3005"/>
+         <object class="uidiagram.diagram.edit.parts.AdjDateTimePickerEditPart" id="AdjDateTimePicker_3098"/>
+         <context elements="AdjDateTimePicker_3098"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjTextBoxEditPart">
          <Priority name="Lowest"/>
@@ -343,30 +343,30 @@
          <object class="uidiagram.diagram.edit.parts.AdjRichTextBoxEditPart" id="AdjRichTextBox_3009"/>
          <context elements="AdjRichTextBox_3009"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjTreeViewEditPart">
+            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjComboBoxEditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjTreeViewEditPart" id="AdjTreeView_3010"/>
-         <context elements="AdjTreeView_3010"/>
+         <object class="uidiagram.diagram.edit.parts.AdjComboBoxEditPart" id="AdjComboBox_3087"/>
+         <context elements="AdjComboBox_3087"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjPropertyGridEditPart">
+            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjRadioButtonEditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjPropertyGridEditPart" id="AdjPropertyGrid_3011"/>
-         <context elements="AdjPropertyGrid_3011"/>
+         <object class="uidiagram.diagram.edit.parts.AdjRadioButtonEditPart" id="AdjRadioButton_3099"/>
+         <context elements="AdjRadioButton_3099"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjProgressBarEditPart">
+            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjPictureBoxEditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjProgressBarEditPart" id="AdjProgressBar_3012"/>
-         <context elements="AdjProgressBar_3012"/>
+         <object class="uidiagram.diagram.edit.parts.AdjPictureBoxEditPart" id="AdjPictureBox_3100"/>
+         <context elements="AdjPictureBox_3100"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjDataGridViewEditPart">
+            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjListViewEditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjDataGridViewEditPart" id="AdjDataGridView_3013"/>
-         <context elements="AdjDataGridView_3013"/>
+         <object class="uidiagram.diagram.edit.parts.AdjListViewEditPart" id="AdjListView_3092"/>
+         <context elements="AdjListView_3092"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjDataGridViewTextBoxColumnEditPart">
+            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjListViewColumnEditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjDataGridViewTextBoxColumnEditPart" id="AdjDataGridViewTextBoxColumn_3014"/>
-         <context elements="AdjDataGridViewTextBoxColumn_3014"/>
+         <object class="uidiagram.diagram.edit.parts.AdjListViewColumnEditPart" id="AdjListViewColumn_3093"/>
+         <context elements="AdjListViewColumn_3093"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjPanelEditPart">
          <Priority name="Lowest"/>
@@ -393,10 +393,10 @@
          <object class="uidiagram.diagram.edit.parts.AdjListBox2EditPart" id="AdjListBox_3019"/>
          <context elements="AdjListBox_3019"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjDatepicker2EditPart">
+            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjDateTimePicker2EditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjDatepicker2EditPart" id="AdjDatepicker_3020"/>
-         <context elements="AdjDatepicker_3020"/>
+         <object class="uidiagram.diagram.edit.parts.AdjDateTimePicker2EditPart" id="AdjDateTimePicker_3101"/>
+         <context elements="AdjDateTimePicker_3101"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjTextBox2EditPart">
          <Priority name="Lowest"/>
@@ -418,25 +418,25 @@
          <object class="uidiagram.diagram.edit.parts.AdjRichTextBox2EditPart" id="AdjRichTextBox_3024"/>
          <context elements="AdjRichTextBox_3024"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjTreeView2EditPart">
+            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjComboBox2EditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjTreeView2EditPart" id="AdjTreeView_3025"/>
-         <context elements="AdjTreeView_3025"/>
+         <object class="uidiagram.diagram.edit.parts.AdjComboBox2EditPart" id="AdjComboBox_3088"/>
+         <context elements="AdjComboBox_3088"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjPropertyGrid2EditPart">
+            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjRadioButton2EditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjPropertyGrid2EditPart" id="AdjPropertyGrid_3026"/>
-         <context elements="AdjPropertyGrid_3026"/>
+         <object class="uidiagram.diagram.edit.parts.AdjRadioButton2EditPart" id="AdjRadioButton_3102"/>
+         <context elements="AdjRadioButton_3102"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjProgressBar2EditPart">
+            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjPictureBox2EditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjProgressBar2EditPart" id="AdjProgressBar_3027"/>
-         <context elements="AdjProgressBar_3027"/>
+         <object class="uidiagram.diagram.edit.parts.AdjPictureBox2EditPart" id="AdjPictureBox_3103"/>
+         <context elements="AdjPictureBox_3103"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjDataGridView2EditPart">
+            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjListView2EditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjDataGridView2EditPart" id="AdjDataGridView_3028"/>
-         <context elements="AdjDataGridView_3028"/>
+         <object class="uidiagram.diagram.edit.parts.AdjListView2EditPart" id="AdjListView_3094"/>
+         <context elements="AdjListView_3094"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjPanel2EditPart">
          <Priority name="Lowest"/>
@@ -468,10 +468,10 @@
          <object class="uidiagram.diagram.edit.parts.AdjListBox3EditPart" id="AdjListBox_3034"/>
          <context elements="AdjListBox_3034"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjDatepicker3EditPart">
+            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjDateTimePicker3EditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjDatepicker3EditPart" id="AdjDatepicker_3035"/>
-         <context elements="AdjDatepicker_3035"/>
+         <object class="uidiagram.diagram.edit.parts.AdjDateTimePicker3EditPart" id="AdjDateTimePicker_3104"/>
+         <context elements="AdjDateTimePicker_3104"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjTextBox3EditPart">
          <Priority name="Lowest"/>
@@ -493,240 +493,40 @@
          <object class="uidiagram.diagram.edit.parts.AdjRichTextBox3EditPart" id="AdjRichTextBox_3039"/>
          <context elements="AdjRichTextBox_3039"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjTreeView3EditPart">
+            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjComboBox3EditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjTreeView3EditPart" id="AdjTreeView_3040"/>
-         <context elements="AdjTreeView_3040"/>
+         <object class="uidiagram.diagram.edit.parts.AdjComboBox3EditPart" id="AdjComboBox_3089"/>
+         <context elements="AdjComboBox_3089"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjPropertyGrid3EditPart">
+            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjRadioButton3EditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjPropertyGrid3EditPart" id="AdjPropertyGrid_3041"/>
-         <context elements="AdjPropertyGrid_3041"/>
+         <object class="uidiagram.diagram.edit.parts.AdjRadioButton3EditPart" id="AdjRadioButton_3105"/>
+         <context elements="AdjRadioButton_3105"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjProgressBar3EditPart">
+            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjPictureBox3EditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjProgressBar3EditPart" id="AdjProgressBar_3042"/>
-         <context elements="AdjProgressBar_3042"/>
+         <object class="uidiagram.diagram.edit.parts.AdjPictureBox3EditPart" id="AdjPictureBox_3106"/>
+         <context elements="AdjPictureBox_3106"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjDataGridView3EditPart">
+            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjListView3EditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjDataGridView3EditPart" id="AdjDataGridView_3043"/>
-         <context elements="AdjDataGridView_3043"/>
+         <object class="uidiagram.diagram.edit.parts.AdjListView3EditPart" id="AdjListView_3095"/>
+         <context elements="AdjListView_3095"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjPanel3EditPart">
          <Priority name="Lowest"/>
          <object class="uidiagram.diagram.edit.parts.AdjPanel3EditPart" id="AdjPanel_3044"/>
          <context elements="AdjPanel_3044"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjMenuStripEditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjMenuStripEditPart" id="AdjMenuStrip_3045"/>
-         <context elements="AdjMenuStrip_3045"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjLabel4EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjLabel4EditPart" id="AdjLabel_3046"/>
-         <context elements="AdjLabel_3046"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjCheckBox4EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjCheckBox4EditPart" id="AdjCheckBox_3047"/>
-         <context elements="AdjCheckBox_3047"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjButton4EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjButton4EditPart" id="AdjButton_3048"/>
-         <context elements="AdjButton_3048"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjListBox4EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjListBox4EditPart" id="AdjListBox_3049"/>
-         <context elements="AdjListBox_3049"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjDatepicker4EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjDatepicker4EditPart" id="AdjDatepicker_3050"/>
-         <context elements="AdjDatepicker_3050"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjTextBox4EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjTextBox4EditPart" id="AdjTextBox_3051"/>
-         <context elements="AdjTextBox_3051"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjCheckedListBox4EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjCheckedListBox4EditPart" id="AdjCheckedListBox_3052"/>
-         <context elements="AdjCheckedListBox_3052"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjLinkLabel4EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjLinkLabel4EditPart" id="AdjLinkLabel_3053"/>
-         <context elements="AdjLinkLabel_3053"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjRichTextBox4EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjRichTextBox4EditPart" id="AdjRichTextBox_3054"/>
-         <context elements="AdjRichTextBox_3054"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjTreeView4EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjTreeView4EditPart" id="AdjTreeView_3055"/>
-         <context elements="AdjTreeView_3055"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjPropertyGrid4EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjPropertyGrid4EditPart" id="AdjPropertyGrid_3056"/>
-         <context elements="AdjPropertyGrid_3056"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjProgressBar4EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjProgressBar4EditPart" id="AdjProgressBar_3057"/>
-         <context elements="AdjProgressBar_3057"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjDataGridView4EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjDataGridView4EditPart" id="AdjDataGridView_3058"/>
-         <context elements="AdjDataGridView_3058"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjPanel4EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjPanel4EditPart" id="AdjPanel_3059"/>
-         <context elements="AdjPanel_3059"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjToolStripEditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjToolStripEditPart" id="AdjToolStrip_3060"/>
-         <context elements="AdjToolStrip_3060"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjLabel5EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjLabel5EditPart" id="AdjLabel_3061"/>
-         <context elements="AdjLabel_3061"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjCheckBox5EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjCheckBox5EditPart" id="AdjCheckBox_3062"/>
-         <context elements="AdjCheckBox_3062"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjButton5EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjButton5EditPart" id="AdjButton_3063"/>
-         <context elements="AdjButton_3063"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjListBox5EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjListBox5EditPart" id="AdjListBox_3064"/>
-         <context elements="AdjListBox_3064"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjDatepicker5EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjDatepicker5EditPart" id="AdjDatepicker_3065"/>
-         <context elements="AdjDatepicker_3065"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjTextBox5EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjTextBox5EditPart" id="AdjTextBox_3066"/>
-         <context elements="AdjTextBox_3066"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjCheckedListBox5EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjCheckedListBox5EditPart" id="AdjCheckedListBox_3067"/>
-         <context elements="AdjCheckedListBox_3067"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjLinkLabel5EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjLinkLabel5EditPart" id="AdjLinkLabel_3068"/>
-         <context elements="AdjLinkLabel_3068"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjRichTextBox5EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjRichTextBox5EditPart" id="AdjRichTextBox_3069"/>
-         <context elements="AdjRichTextBox_3069"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjTreeView5EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjTreeView5EditPart" id="AdjTreeView_3070"/>
-         <context elements="AdjTreeView_3070"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjPropertyGrid5EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjPropertyGrid5EditPart" id="AdjPropertyGrid_3071"/>
-         <context elements="AdjPropertyGrid_3071"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjProgressBar5EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjProgressBar5EditPart" id="AdjProgressBar_3072"/>
-         <context elements="AdjProgressBar_3072"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjDataGridView5EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjDataGridView5EditPart" id="AdjDataGridView_3073"/>
-         <context elements="AdjDataGridView_3073"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjPanel5EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjPanel5EditPart" id="AdjPanel_3074"/>
-         <context elements="AdjPanel_3074"/>
-      </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjGroupBox2EditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjGroupBox2EditPart" id="AdjGroupBox_3075"/>
-         <context elements="AdjGroupBox_3075"/>
+         <object class="uidiagram.diagram.edit.parts.AdjGroupBox2EditPart" id="AdjGroupBox_3076"/>
+         <context elements="AdjGroupBox_3076"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjGroupBox3EditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjGroupBox3EditPart" id="AdjGroupBox_3076"/>
-         <context elements="AdjGroupBox_3076"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjMenuStrip2EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjMenuStrip2EditPart" id="AdjMenuStrip_3077"/>
-         <context elements="AdjMenuStrip_3077"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjGroupBox4EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjGroupBox4EditPart" id="AdjGroupBox_3078"/>
-         <context elements="AdjGroupBox_3078"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjToolStrip2EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjToolStrip2EditPart" id="AdjToolStrip_3079"/>
-         <context elements="AdjToolStrip_3079"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjMenuStrip3EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjMenuStrip3EditPart" id="AdjMenuStrip_3080"/>
-         <context elements="AdjMenuStrip_3080"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjMenuStrip4EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjMenuStrip4EditPart" id="AdjMenuStrip_3081"/>
-         <context elements="AdjMenuStrip_3081"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjToolStrip3EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjToolStrip3EditPart" id="AdjToolStrip_3082"/>
-         <context elements="AdjToolStrip_3082"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjToolStrip4EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjToolStrip4EditPart" id="AdjToolStrip_3083"/>
-         <context elements="AdjToolStrip_3083"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjGroupBox5EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjGroupBox5EditPart" id="AdjGroupBox_3084"/>
+         <object class="uidiagram.diagram.edit.parts.AdjGroupBox3EditPart" id="AdjGroupBox_3084"/>
          <context elements="AdjGroupBox_3084"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjMenuStrip5EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjMenuStrip5EditPart" id="AdjMenuStrip_3085"/>
-         <context elements="AdjMenuStrip_3085"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjToolStrip5EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjToolStrip5EditPart" id="AdjToolStrip_3086"/>
-         <context elements="AdjToolStrip_3086"/>
       </modelingAssistantProvider>
       
    </extension>
@@ -821,12 +621,12 @@
       </metamodel>
       <metamodel nsURI="uidiagram">
          <metamodelType
-               id="uidiagram.diagram.AdjDatepicker_3005"
-               name="%metatype.name.AdjDatepicker_3005"
+               id="uidiagram.diagram.AdjDateTimePicker_3098"
+               name="%metatype.name.AdjDateTimePicker_3098"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="AdjDatepicker"
-               edithelper="uidiagram.diagram.edit.helpers.AdjDatepickerEditHelper">
-            <param name="semanticHint" value="3005"/>
+               eclass="AdjDateTimePicker"
+               edithelper="uidiagram.diagram.edit.helpers.AdjDateTimePickerEditHelper">
+            <param name="semanticHint" value="3098"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="uidiagram">
@@ -871,52 +671,52 @@
       </metamodel>
       <metamodel nsURI="uidiagram">
          <metamodelType
-               id="uidiagram.diagram.AdjTreeView_3010"
-               name="%metatype.name.AdjTreeView_3010"
+               id="uidiagram.diagram.AdjComboBox_3087"
+               name="%metatype.name.AdjComboBox_3087"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="AdjTreeView"
-               edithelper="uidiagram.diagram.edit.helpers.AdjTreeViewEditHelper">
-            <param name="semanticHint" value="3010"/>
+               eclass="AdjComboBox"
+               edithelper="uidiagram.diagram.edit.helpers.AdjComboBoxEditHelper">
+            <param name="semanticHint" value="3087"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="uidiagram">
          <metamodelType
-               id="uidiagram.diagram.AdjPropertyGrid_3011"
-               name="%metatype.name.AdjPropertyGrid_3011"
+               id="uidiagram.diagram.AdjRadioButton_3099"
+               name="%metatype.name.AdjRadioButton_3099"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="AdjPropertyGrid"
-               edithelper="uidiagram.diagram.edit.helpers.AdjPropertyGridEditHelper">
-            <param name="semanticHint" value="3011"/>
+               eclass="AdjRadioButton"
+               edithelper="uidiagram.diagram.edit.helpers.AdjRadioButtonEditHelper">
+            <param name="semanticHint" value="3099"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="uidiagram">
          <metamodelType
-               id="uidiagram.diagram.AdjProgressBar_3012"
-               name="%metatype.name.AdjProgressBar_3012"
+               id="uidiagram.diagram.AdjPictureBox_3100"
+               name="%metatype.name.AdjPictureBox_3100"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="AdjProgressBar"
-               edithelper="uidiagram.diagram.edit.helpers.AdjProgressBarEditHelper">
-            <param name="semanticHint" value="3012"/>
+               eclass="AdjPictureBox"
+               edithelper="uidiagram.diagram.edit.helpers.AdjPictureBoxEditHelper">
+            <param name="semanticHint" value="3100"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="uidiagram">
          <metamodelType
-               id="uidiagram.diagram.AdjDataGridView_3013"
-               name="%metatype.name.AdjDataGridView_3013"
+               id="uidiagram.diagram.AdjListView_3092"
+               name="%metatype.name.AdjListView_3092"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="AdjDataGridView"
-               edithelper="uidiagram.diagram.edit.helpers.AdjDataGridViewEditHelper">
-            <param name="semanticHint" value="3013"/>
+               eclass="AdjListView"
+               edithelper="uidiagram.diagram.edit.helpers.AdjListViewEditHelper">
+            <param name="semanticHint" value="3092"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="uidiagram">
          <metamodelType
-               id="uidiagram.diagram.AdjDataGridViewTextBoxColumn_3014"
-               name="%metatype.name.AdjDataGridViewTextBoxColumn_3014"
+               id="uidiagram.diagram.AdjListViewColumn_3093"
+               name="%metatype.name.AdjListViewColumn_3093"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="AdjDataGridViewTextBoxColumn"
-               edithelper="uidiagram.diagram.edit.helpers.AdjDataGridViewTextBoxColumnEditHelper">
-            <param name="semanticHint" value="3014"/>
+               eclass="AdjListViewColumn"
+               edithelper="uidiagram.diagram.edit.helpers.AdjListViewColumnEditHelper">
+            <param name="semanticHint" value="3093"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="uidiagram">
@@ -967,11 +767,11 @@
       </metamodel>
       <metamodel nsURI="uidiagram">
          <specializationType
-               id="uidiagram.diagram.AdjDatepicker_3020"
-               name="%metatype.name.AdjDatepicker_3020"
+               id="uidiagram.diagram.AdjDateTimePicker_3101"
+               name="%metatype.name.AdjDateTimePicker_3101"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjDatepicker_3005"/>
-            <param name="semanticHint" value="3020"/>
+            <specializes id="uidiagram.diagram.AdjDateTimePicker_3098"/>
+            <param name="semanticHint" value="3101"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="uidiagram">
@@ -1012,38 +812,38 @@
       </metamodel>
       <metamodel nsURI="uidiagram">
          <specializationType
-               id="uidiagram.diagram.AdjTreeView_3025"
-               name="%metatype.name.AdjTreeView_3025"
+               id="uidiagram.diagram.AdjComboBox_3088"
+               name="%metatype.name.AdjComboBox_3088"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjTreeView_3010"/>
-            <param name="semanticHint" value="3025"/>
+            <specializes id="uidiagram.diagram.AdjComboBox_3087"/>
+            <param name="semanticHint" value="3088"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="uidiagram">
          <specializationType
-               id="uidiagram.diagram.AdjPropertyGrid_3026"
-               name="%metatype.name.AdjPropertyGrid_3026"
+               id="uidiagram.diagram.AdjRadioButton_3102"
+               name="%metatype.name.AdjRadioButton_3102"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjPropertyGrid_3011"/>
-            <param name="semanticHint" value="3026"/>
+            <specializes id="uidiagram.diagram.AdjRadioButton_3099"/>
+            <param name="semanticHint" value="3102"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="uidiagram">
          <specializationType
-               id="uidiagram.diagram.AdjProgressBar_3027"
-               name="%metatype.name.AdjProgressBar_3027"
+               id="uidiagram.diagram.AdjPictureBox_3103"
+               name="%metatype.name.AdjPictureBox_3103"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjProgressBar_3012"/>
-            <param name="semanticHint" value="3027"/>
+            <specializes id="uidiagram.diagram.AdjPictureBox_3100"/>
+            <param name="semanticHint" value="3103"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="uidiagram">
          <specializationType
-               id="uidiagram.diagram.AdjDataGridView_3028"
-               name="%metatype.name.AdjDataGridView_3028"
+               id="uidiagram.diagram.AdjListView_3094"
+               name="%metatype.name.AdjListView_3094"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjDataGridView_3013"/>
-            <param name="semanticHint" value="3028"/>
+            <specializes id="uidiagram.diagram.AdjListView_3092"/>
+            <param name="semanticHint" value="3094"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="uidiagram">
@@ -1103,11 +903,11 @@
       </metamodel>
       <metamodel nsURI="uidiagram">
          <specializationType
-               id="uidiagram.diagram.AdjDatepicker_3035"
-               name="%metatype.name.AdjDatepicker_3035"
+               id="uidiagram.diagram.AdjDateTimePicker_3104"
+               name="%metatype.name.AdjDateTimePicker_3104"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjDatepicker_3005"/>
-            <param name="semanticHint" value="3035"/>
+            <specializes id="uidiagram.diagram.AdjDateTimePicker_3098"/>
+            <param name="semanticHint" value="3104"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="uidiagram">
@@ -1148,38 +948,38 @@
       </metamodel>
       <metamodel nsURI="uidiagram">
          <specializationType
-               id="uidiagram.diagram.AdjTreeView_3040"
-               name="%metatype.name.AdjTreeView_3040"
+               id="uidiagram.diagram.AdjComboBox_3089"
+               name="%metatype.name.AdjComboBox_3089"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjTreeView_3010"/>
-            <param name="semanticHint" value="3040"/>
+            <specializes id="uidiagram.diagram.AdjComboBox_3087"/>
+            <param name="semanticHint" value="3089"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="uidiagram">
          <specializationType
-               id="uidiagram.diagram.AdjPropertyGrid_3041"
-               name="%metatype.name.AdjPropertyGrid_3041"
+               id="uidiagram.diagram.AdjRadioButton_3105"
+               name="%metatype.name.AdjRadioButton_3105"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjPropertyGrid_3011"/>
-            <param name="semanticHint" value="3041"/>
+            <specializes id="uidiagram.diagram.AdjRadioButton_3099"/>
+            <param name="semanticHint" value="3105"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="uidiagram">
          <specializationType
-               id="uidiagram.diagram.AdjProgressBar_3042"
-               name="%metatype.name.AdjProgressBar_3042"
+               id="uidiagram.diagram.AdjPictureBox_3106"
+               name="%metatype.name.AdjPictureBox_3106"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjProgressBar_3012"/>
-            <param name="semanticHint" value="3042"/>
+            <specializes id="uidiagram.diagram.AdjPictureBox_3100"/>
+            <param name="semanticHint" value="3106"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="uidiagram">
          <specializationType
-               id="uidiagram.diagram.AdjDataGridView_3043"
-               name="%metatype.name.AdjDataGridView_3043"
+               id="uidiagram.diagram.AdjListView_3095"
+               name="%metatype.name.AdjListView_3095"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjDataGridView_3013"/>
-            <param name="semanticHint" value="3043"/>
+            <specializes id="uidiagram.diagram.AdjListView_3092"/>
+            <param name="semanticHint" value="3095"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="uidiagram">
@@ -1189,287 +989,6 @@
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
             <specializes id="uidiagram.diagram.AdjPanel_3015"/>
             <param name="semanticHint" value="3044"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <metamodelType
-               id="uidiagram.diagram.AdjMenuStrip_3045"
-               name="%metatype.name.AdjMenuStrip_3045"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="AdjMenuStrip"
-               edithelper="uidiagram.diagram.edit.helpers.AdjMenuStripEditHelper">
-            <param name="semanticHint" value="3045"/>
-         </metamodelType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjLabel_3046"
-               name="%metatype.name.AdjLabel_3046"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjLabel_3001"/>
-            <param name="semanticHint" value="3046"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjCheckBox_3047"
-               name="%metatype.name.AdjCheckBox_3047"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjCheckBox_3002"/>
-            <param name="semanticHint" value="3047"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjButton_3048"
-               name="%metatype.name.AdjButton_3048"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjButton_3003"/>
-            <param name="semanticHint" value="3048"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjListBox_3049"
-               name="%metatype.name.AdjListBox_3049"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjListBox_3004"/>
-            <param name="semanticHint" value="3049"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjDatepicker_3050"
-               name="%metatype.name.AdjDatepicker_3050"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjDatepicker_3005"/>
-            <param name="semanticHint" value="3050"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjTextBox_3051"
-               name="%metatype.name.AdjTextBox_3051"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjTextBox_3006"/>
-            <param name="semanticHint" value="3051"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjCheckedListBox_3052"
-               name="%metatype.name.AdjCheckedListBox_3052"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjCheckedListBox_3007"/>
-            <param name="semanticHint" value="3052"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjLinkLabel_3053"
-               name="%metatype.name.AdjLinkLabel_3053"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjLinkLabel_3008"/>
-            <param name="semanticHint" value="3053"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjRichTextBox_3054"
-               name="%metatype.name.AdjRichTextBox_3054"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjRichTextBox_3009"/>
-            <param name="semanticHint" value="3054"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjTreeView_3055"
-               name="%metatype.name.AdjTreeView_3055"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjTreeView_3010"/>
-            <param name="semanticHint" value="3055"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjPropertyGrid_3056"
-               name="%metatype.name.AdjPropertyGrid_3056"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjPropertyGrid_3011"/>
-            <param name="semanticHint" value="3056"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjProgressBar_3057"
-               name="%metatype.name.AdjProgressBar_3057"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjProgressBar_3012"/>
-            <param name="semanticHint" value="3057"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjDataGridView_3058"
-               name="%metatype.name.AdjDataGridView_3058"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjDataGridView_3013"/>
-            <param name="semanticHint" value="3058"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjPanel_3059"
-               name="%metatype.name.AdjPanel_3059"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjPanel_3015"/>
-            <param name="semanticHint" value="3059"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <metamodelType
-               id="uidiagram.diagram.AdjToolStrip_3060"
-               name="%metatype.name.AdjToolStrip_3060"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="AdjToolStrip"
-               edithelper="uidiagram.diagram.edit.helpers.AdjToolStripEditHelper">
-            <param name="semanticHint" value="3060"/>
-         </metamodelType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjLabel_3061"
-               name="%metatype.name.AdjLabel_3061"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjLabel_3001"/>
-            <param name="semanticHint" value="3061"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjCheckBox_3062"
-               name="%metatype.name.AdjCheckBox_3062"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjCheckBox_3002"/>
-            <param name="semanticHint" value="3062"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjButton_3063"
-               name="%metatype.name.AdjButton_3063"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjButton_3003"/>
-            <param name="semanticHint" value="3063"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjListBox_3064"
-               name="%metatype.name.AdjListBox_3064"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjListBox_3004"/>
-            <param name="semanticHint" value="3064"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjDatepicker_3065"
-               name="%metatype.name.AdjDatepicker_3065"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjDatepicker_3005"/>
-            <param name="semanticHint" value="3065"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjTextBox_3066"
-               name="%metatype.name.AdjTextBox_3066"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjTextBox_3006"/>
-            <param name="semanticHint" value="3066"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjCheckedListBox_3067"
-               name="%metatype.name.AdjCheckedListBox_3067"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjCheckedListBox_3007"/>
-            <param name="semanticHint" value="3067"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjLinkLabel_3068"
-               name="%metatype.name.AdjLinkLabel_3068"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjLinkLabel_3008"/>
-            <param name="semanticHint" value="3068"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjRichTextBox_3069"
-               name="%metatype.name.AdjRichTextBox_3069"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjRichTextBox_3009"/>
-            <param name="semanticHint" value="3069"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjTreeView_3070"
-               name="%metatype.name.AdjTreeView_3070"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjTreeView_3010"/>
-            <param name="semanticHint" value="3070"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjPropertyGrid_3071"
-               name="%metatype.name.AdjPropertyGrid_3071"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjPropertyGrid_3011"/>
-            <param name="semanticHint" value="3071"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjProgressBar_3072"
-               name="%metatype.name.AdjProgressBar_3072"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjProgressBar_3012"/>
-            <param name="semanticHint" value="3072"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjDataGridView_3073"
-               name="%metatype.name.AdjDataGridView_3073"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjDataGridView_3013"/>
-            <param name="semanticHint" value="3073"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjPanel_3074"
-               name="%metatype.name.AdjPanel_3074"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjPanel_3015"/>
-            <param name="semanticHint" value="3074"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjGroupBox_3075"
-               name="%metatype.name.AdjGroupBox_3075"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjGroupBox_3030"/>
-            <param name="semanticHint" value="3075"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="uidiagram">
@@ -1483,92 +1002,11 @@
       </metamodel>
       <metamodel nsURI="uidiagram">
          <specializationType
-               id="uidiagram.diagram.AdjMenuStrip_3077"
-               name="%metatype.name.AdjMenuStrip_3077"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjMenuStrip_3045"/>
-            <param name="semanticHint" value="3077"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjGroupBox_3078"
-               name="%metatype.name.AdjGroupBox_3078"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjGroupBox_3030"/>
-            <param name="semanticHint" value="3078"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjToolStrip_3079"
-               name="%metatype.name.AdjToolStrip_3079"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjToolStrip_3060"/>
-            <param name="semanticHint" value="3079"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjMenuStrip_3080"
-               name="%metatype.name.AdjMenuStrip_3080"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjMenuStrip_3045"/>
-            <param name="semanticHint" value="3080"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjMenuStrip_3081"
-               name="%metatype.name.AdjMenuStrip_3081"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjMenuStrip_3045"/>
-            <param name="semanticHint" value="3081"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjToolStrip_3082"
-               name="%metatype.name.AdjToolStrip_3082"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjToolStrip_3060"/>
-            <param name="semanticHint" value="3082"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjToolStrip_3083"
-               name="%metatype.name.AdjToolStrip_3083"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjToolStrip_3060"/>
-            <param name="semanticHint" value="3083"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
                id="uidiagram.diagram.AdjGroupBox_3084"
                name="%metatype.name.AdjGroupBox_3084"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
             <specializes id="uidiagram.diagram.AdjGroupBox_3030"/>
             <param name="semanticHint" value="3084"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjMenuStrip_3085"
-               name="%metatype.name.AdjMenuStrip_3085"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjMenuStrip_3045"/>
-            <param name="semanticHint" value="3085"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="uidiagram">
-         <specializationType
-               id="uidiagram.diagram.AdjToolStrip_3086"
-               name="%metatype.name.AdjToolStrip_3086"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjToolStrip_3060"/>
-            <param name="semanticHint" value="3086"/>
          </specializationType>
       </metamodel>
    </extension>
@@ -1589,88 +1027,48 @@
          <elementType ref="uidiagram.diagram.AdjCheckBox_3002"/>
          <elementType ref="uidiagram.diagram.AdjButton_3003"/>
          <elementType ref="uidiagram.diagram.AdjListBox_3004"/>
-         <elementType ref="uidiagram.diagram.AdjDatepicker_3005"/>
+         <elementType ref="uidiagram.diagram.AdjDateTimePicker_3098"/>
          <elementType ref="uidiagram.diagram.AdjTextBox_3006"/>
          <elementType ref="uidiagram.diagram.AdjCheckedListBox_3007"/>
          <elementType ref="uidiagram.diagram.AdjLinkLabel_3008"/>
          <elementType ref="uidiagram.diagram.AdjRichTextBox_3009"/>
-         <elementType ref="uidiagram.diagram.AdjTreeView_3010"/>
-         <elementType ref="uidiagram.diagram.AdjPropertyGrid_3011"/>
-         <elementType ref="uidiagram.diagram.AdjProgressBar_3012"/>
-         <elementType ref="uidiagram.diagram.AdjDataGridView_3013"/>
-         <elementType ref="uidiagram.diagram.AdjDataGridViewTextBoxColumn_3014"/>
+         <elementType ref="uidiagram.diagram.AdjComboBox_3087"/>
+         <elementType ref="uidiagram.diagram.AdjRadioButton_3099"/>
+         <elementType ref="uidiagram.diagram.AdjPictureBox_3100"/>
+         <elementType ref="uidiagram.diagram.AdjListView_3092"/>
+         <elementType ref="uidiagram.diagram.AdjListViewColumn_3093"/>
          <elementType ref="uidiagram.diagram.AdjPanel_3015"/>
          <elementType ref="uidiagram.diagram.AdjLabel_3016"/>
          <elementType ref="uidiagram.diagram.AdjCheckBox_3017"/>
          <elementType ref="uidiagram.diagram.AdjButton_3018"/>
          <elementType ref="uidiagram.diagram.AdjListBox_3019"/>
-         <elementType ref="uidiagram.diagram.AdjDatepicker_3020"/>
+         <elementType ref="uidiagram.diagram.AdjDateTimePicker_3101"/>
          <elementType ref="uidiagram.diagram.AdjTextBox_3021"/>
          <elementType ref="uidiagram.diagram.AdjCheckedListBox_3022"/>
          <elementType ref="uidiagram.diagram.AdjLinkLabel_3023"/>
          <elementType ref="uidiagram.diagram.AdjRichTextBox_3024"/>
-         <elementType ref="uidiagram.diagram.AdjTreeView_3025"/>
-         <elementType ref="uidiagram.diagram.AdjPropertyGrid_3026"/>
-         <elementType ref="uidiagram.diagram.AdjProgressBar_3027"/>
-         <elementType ref="uidiagram.diagram.AdjDataGridView_3028"/>
+         <elementType ref="uidiagram.diagram.AdjComboBox_3088"/>
+         <elementType ref="uidiagram.diagram.AdjRadioButton_3102"/>
+         <elementType ref="uidiagram.diagram.AdjPictureBox_3103"/>
+         <elementType ref="uidiagram.diagram.AdjListView_3094"/>
          <elementType ref="uidiagram.diagram.AdjPanel_3029"/>
          <elementType ref="uidiagram.diagram.AdjGroupBox_3030"/>
          <elementType ref="uidiagram.diagram.AdjLabel_3031"/>
          <elementType ref="uidiagram.diagram.AdjCheckBox_3032"/>
          <elementType ref="uidiagram.diagram.AdjButton_3033"/>
          <elementType ref="uidiagram.diagram.AdjListBox_3034"/>
-         <elementType ref="uidiagram.diagram.AdjDatepicker_3035"/>
+         <elementType ref="uidiagram.diagram.AdjDateTimePicker_3104"/>
          <elementType ref="uidiagram.diagram.AdjTextBox_3036"/>
          <elementType ref="uidiagram.diagram.AdjCheckedListBox_3037"/>
          <elementType ref="uidiagram.diagram.AdjLinkLabel_3038"/>
          <elementType ref="uidiagram.diagram.AdjRichTextBox_3039"/>
-         <elementType ref="uidiagram.diagram.AdjTreeView_3040"/>
-         <elementType ref="uidiagram.diagram.AdjPropertyGrid_3041"/>
-         <elementType ref="uidiagram.diagram.AdjProgressBar_3042"/>
-         <elementType ref="uidiagram.diagram.AdjDataGridView_3043"/>
+         <elementType ref="uidiagram.diagram.AdjComboBox_3089"/>
+         <elementType ref="uidiagram.diagram.AdjRadioButton_3105"/>
+         <elementType ref="uidiagram.diagram.AdjPictureBox_3106"/>
+         <elementType ref="uidiagram.diagram.AdjListView_3095"/>
          <elementType ref="uidiagram.diagram.AdjPanel_3044"/>
-         <elementType ref="uidiagram.diagram.AdjMenuStrip_3045"/>
-         <elementType ref="uidiagram.diagram.AdjLabel_3046"/>
-         <elementType ref="uidiagram.diagram.AdjCheckBox_3047"/>
-         <elementType ref="uidiagram.diagram.AdjButton_3048"/>
-         <elementType ref="uidiagram.diagram.AdjListBox_3049"/>
-         <elementType ref="uidiagram.diagram.AdjDatepicker_3050"/>
-         <elementType ref="uidiagram.diagram.AdjTextBox_3051"/>
-         <elementType ref="uidiagram.diagram.AdjCheckedListBox_3052"/>
-         <elementType ref="uidiagram.diagram.AdjLinkLabel_3053"/>
-         <elementType ref="uidiagram.diagram.AdjRichTextBox_3054"/>
-         <elementType ref="uidiagram.diagram.AdjTreeView_3055"/>
-         <elementType ref="uidiagram.diagram.AdjPropertyGrid_3056"/>
-         <elementType ref="uidiagram.diagram.AdjProgressBar_3057"/>
-         <elementType ref="uidiagram.diagram.AdjDataGridView_3058"/>
-         <elementType ref="uidiagram.diagram.AdjPanel_3059"/>
-         <elementType ref="uidiagram.diagram.AdjToolStrip_3060"/>
-         <elementType ref="uidiagram.diagram.AdjLabel_3061"/>
-         <elementType ref="uidiagram.diagram.AdjCheckBox_3062"/>
-         <elementType ref="uidiagram.diagram.AdjButton_3063"/>
-         <elementType ref="uidiagram.diagram.AdjListBox_3064"/>
-         <elementType ref="uidiagram.diagram.AdjDatepicker_3065"/>
-         <elementType ref="uidiagram.diagram.AdjTextBox_3066"/>
-         <elementType ref="uidiagram.diagram.AdjCheckedListBox_3067"/>
-         <elementType ref="uidiagram.diagram.AdjLinkLabel_3068"/>
-         <elementType ref="uidiagram.diagram.AdjRichTextBox_3069"/>
-         <elementType ref="uidiagram.diagram.AdjTreeView_3070"/>
-         <elementType ref="uidiagram.diagram.AdjPropertyGrid_3071"/>
-         <elementType ref="uidiagram.diagram.AdjProgressBar_3072"/>
-         <elementType ref="uidiagram.diagram.AdjDataGridView_3073"/>
-         <elementType ref="uidiagram.diagram.AdjPanel_3074"/>
-         <elementType ref="uidiagram.diagram.AdjGroupBox_3075"/>
          <elementType ref="uidiagram.diagram.AdjGroupBox_3076"/>
-         <elementType ref="uidiagram.diagram.AdjMenuStrip_3077"/>
-         <elementType ref="uidiagram.diagram.AdjGroupBox_3078"/>
-         <elementType ref="uidiagram.diagram.AdjToolStrip_3079"/>
-         <elementType ref="uidiagram.diagram.AdjMenuStrip_3080"/>
-         <elementType ref="uidiagram.diagram.AdjMenuStrip_3081"/>
-         <elementType ref="uidiagram.diagram.AdjToolStrip_3082"/>
-         <elementType ref="uidiagram.diagram.AdjToolStrip_3083"/>
          <elementType ref="uidiagram.diagram.AdjGroupBox_3084"/>
-         <elementType ref="uidiagram.diagram.AdjMenuStrip_3085"/>
-         <elementType ref="uidiagram.diagram.AdjToolStrip_3086"/>
          <advice ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>
       </binding>
    </extension>

@@ -115,12 +115,12 @@ public interface AdjWidget extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Position X</em>' attribute.
-	 * @see #setPositionX(String)
+	 * @see #setPositionX(Integer)
 	 * @see uidiagram.UidiagramPackage#getAdjWidget_PositionX()
 	 * @model
 	 * @generated
 	 */
-	String getPositionX();
+	Integer getPositionX();
 
 	/**
 	 * Sets the value of the '{@link uidiagram.AdjWidget#getPositionX <em>Position X</em>}' attribute.
@@ -130,7 +130,7 @@ public interface AdjWidget extends EObject {
 	 * @see #getPositionX()
 	 * @generated
 	 */
-	void setPositionX(String value);
+	void setPositionX(Integer value);
 
 	/**
 	 * Returns the value of the '<em><b>Position Y</b></em>' attribute.
@@ -141,12 +141,12 @@ public interface AdjWidget extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Position Y</em>' attribute.
-	 * @see #setPositionY(String)
+	 * @see #setPositionY(Integer)
 	 * @see uidiagram.UidiagramPackage#getAdjWidget_PositionY()
 	 * @model
 	 * @generated
 	 */
-	String getPositionY();
+	Integer getPositionY();
 
 	/**
 	 * Sets the value of the '{@link uidiagram.AdjWidget#getPositionY <em>Position Y</em>}' attribute.
@@ -156,7 +156,7 @@ public interface AdjWidget extends EObject {
 	 * @see #getPositionY()
 	 * @generated
 	 */
-	void setPositionY(String value);
+	void setPositionY(Integer value);
 
 	/**
 	 * Returns the value of the '<em><b>Width</b></em>' attribute.
@@ -167,12 +167,12 @@ public interface AdjWidget extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Width</em>' attribute.
-	 * @see #setWidth(String)
+	 * @see #setWidth(Integer)
 	 * @see uidiagram.UidiagramPackage#getAdjWidget_Width()
 	 * @model
 	 * @generated
 	 */
-	String getWidth();
+	Integer getWidth();
 
 	/**
 	 * Sets the value of the '{@link uidiagram.AdjWidget#getWidth <em>Width</em>}' attribute.
@@ -182,7 +182,7 @@ public interface AdjWidget extends EObject {
 	 * @see #getWidth()
 	 * @generated
 	 */
-	void setWidth(String value);
+	void setWidth(Integer value);
 
 	/**
 	 * Returns the value of the '<em><b>Height</b></em>' attribute.
@@ -193,12 +193,12 @@ public interface AdjWidget extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Height</em>' attribute.
-	 * @see #setHeight(String)
+	 * @see #setHeight(Integer)
 	 * @see uidiagram.UidiagramPackage#getAdjWidget_Height()
 	 * @model
 	 * @generated
 	 */
-	String getHeight();
+	Integer getHeight();
 
 	/**
 	 * Sets the value of the '{@link uidiagram.AdjWidget#getHeight <em>Height</em>}' attribute.
@@ -208,7 +208,7 @@ public interface AdjWidget extends EObject {
 	 * @see #getHeight()
 	 * @generated
 	 */
-	void setHeight(String value);
+	void setHeight(Integer value);
 
 	/**
 	 * Returns the value of the '<em><b>Background</b></em>' attribute.
@@ -219,12 +219,12 @@ public interface AdjWidget extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Background</em>' attribute.
-	 * @see #setBackground(String)
+	 * @see #setBackground(Integer)
 	 * @see uidiagram.UidiagramPackage#getAdjWidget_Background()
 	 * @model
 	 * @generated
 	 */
-	String getBackground();
+	Integer getBackground();
 
 	/**
 	 * Sets the value of the '{@link uidiagram.AdjWidget#getBackground <em>Background</em>}' attribute.
@@ -234,6 +234,6 @@ public interface AdjWidget extends EObject {
 	 * @see #getBackground()
 	 * @generated
 	 */
-	void setBackground(String value);
+	void setBackground(Integer value);
 
 } // AdjWidget

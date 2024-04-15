@@ -281,82 +281,82 @@ public class Messages extends NLS {
 	/**
 	* @generated
 	*/
-	public static String AdjDataGridView4CreationTool_title;
+	public static String AdjComboBox4CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String AdjDataGridView4CreationTool_desc;
+	public static String AdjComboBox4CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String AdjDataGridViewTextBoxColumn5CreationTool_title;
+	public static String AdjDateTimePicker5CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String AdjDataGridViewTextBoxColumn5CreationTool_desc;
+	public static String AdjDateTimePicker5CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String AdjDatepicker6CreationTool_title;
+	public static String AdjGroupBox6CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String AdjDatepicker6CreationTool_desc;
+	public static String AdjGroupBox6CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String AdjGroupBox7CreationTool_title;
+	public static String AdjLabel7CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String AdjGroupBox7CreationTool_desc;
+	public static String AdjLabel7CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String AdjLabel8CreationTool_title;
+	public static String AdjLinkLabel8CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String AdjLabel8CreationTool_desc;
+	public static String AdjLinkLabel8CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String AdjLinkLabel9CreationTool_title;
+	public static String AdjListBox9CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String AdjLinkLabel9CreationTool_desc;
+	public static String AdjListBox9CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String AdjListBox10CreationTool_title;
+	public static String AdjListView10CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String AdjListBox10CreationTool_desc;
+	public static String AdjListView10CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String AdjMenuStrip11CreationTool_title;
+	public static String AdjListViewColumn11CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String AdjMenuStrip11CreationTool_desc;
+	public static String AdjListViewColumn11CreationTool_desc;
 
 	/**
 	* @generated
@@ -371,22 +371,22 @@ public class Messages extends NLS {
 	/**
 	* @generated
 	*/
-	public static String AdjProgressBar13CreationTool_title;
+	public static String AdjPictureBox13CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String AdjProgressBar13CreationTool_desc;
+	public static String AdjPictureBox13CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String AdjPropertyGrid14CreationTool_title;
+	public static String AdjRadioButton14CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String AdjPropertyGrid14CreationTool_desc;
+	public static String AdjRadioButton14CreationTool_desc;
 
 	/**
 	* @generated
@@ -411,32 +411,12 @@ public class Messages extends NLS {
 	/**
 	* @generated
 	*/
-	public static String AdjToolStrip17CreationTool_title;
+	public static String FormUI17CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String AdjToolStrip17CreationTool_desc;
-
-	/**
-	* @generated
-	*/
-	public static String AdjTreeView18CreationTool_title;
-
-	/**
-	* @generated
-	*/
-	public static String AdjTreeView18CreationTool_desc;
-
-	/**
-	* @generated
-	*/
-	public static String FormUI19CreationTool_title;
-
-	/**
-	* @generated
-	*/
-	public static String FormUI19CreationTool_desc;
+	public static String FormUI17CreationTool_desc;
 
 	/**
 	* @generated
@@ -446,7 +426,7 @@ public class Messages extends NLS {
 	/**
 	* @generated
 	*/
-	public static String AdjDataGridViewAdjDataGridViewLstAdjDataGridViewTextBoxColumnCompartmentEditPart_title;
+	public static String AdjListViewAdjListViewLstAdjListViewColumnCompartmentEditPart_title;
 
 	/**
 	* @generated
@@ -456,7 +436,7 @@ public class Messages extends NLS {
 	/**
 	* @generated
 	*/
-	public static String AdjDataGridViewAdjDataGridViewLstAdjDataGridViewTextBoxColumnCompartment2EditPart_title;
+	public static String AdjListViewAdjListViewLstAdjListViewColumnCompartment2EditPart_title;
 
 	/**
 	* @generated
@@ -471,42 +451,12 @@ public class Messages extends NLS {
 	/**
 	* @generated
 	*/
-	public static String AdjDataGridViewAdjDataGridViewLstAdjDataGridViewTextBoxColumnCompartment3EditPart_title;
+	public static String AdjListViewAdjListViewLstAdjListViewColumnCompartment3EditPart_title;
 
 	/**
 	* @generated
 	*/
 	public static String AdjPanelAdjPanelLstAdjWidgetCompartment3EditPart_title;
-
-	/**
-	* @generated
-	*/
-	public static String AdjMenuStripAdjMenuStripLstAdjWidgetCompartmentEditPart_title;
-
-	/**
-	* @generated
-	*/
-	public static String AdjDataGridViewAdjDataGridViewLstAdjDataGridViewTextBoxColumnCompartment4EditPart_title;
-
-	/**
-	* @generated
-	*/
-	public static String AdjPanelAdjPanelLstAdjWidgetCompartment4EditPart_title;
-
-	/**
-	* @generated
-	*/
-	public static String AdjToolStripAdjToolStripLstAdjWidgetCompartmentEditPart_title;
-
-	/**
-	* @generated
-	*/
-	public static String AdjDataGridViewAdjDataGridViewLstAdjDataGridViewTextBoxColumnCompartment5EditPart_title;
-
-	/**
-	* @generated
-	*/
-	public static String AdjPanelAdjPanelLstAdjWidgetCompartment5EditPart_title;
 
 	/**
 	* @generated
@@ -517,56 +467,6 @@ public class Messages extends NLS {
 	* @generated
 	*/
 	public static String AdjGroupBoxAdjGroupBoxLstAdjWidgetCompartment3EditPart_title;
-
-	/**
-	* @generated
-	*/
-	public static String AdjMenuStripAdjMenuStripLstAdjWidgetCompartment2EditPart_title;
-
-	/**
-	* @generated
-	*/
-	public static String AdjGroupBoxAdjGroupBoxLstAdjWidgetCompartment4EditPart_title;
-
-	/**
-	* @generated
-	*/
-	public static String AdjToolStripAdjToolStripLstAdjWidgetCompartment2EditPart_title;
-
-	/**
-	* @generated
-	*/
-	public static String AdjMenuStripAdjMenuStripLstAdjWidgetCompartment3EditPart_title;
-
-	/**
-	* @generated
-	*/
-	public static String AdjMenuStripAdjMenuStripLstAdjWidgetCompartment4EditPart_title;
-
-	/**
-	* @generated
-	*/
-	public static String AdjToolStripAdjToolStripLstAdjWidgetCompartment3EditPart_title;
-
-	/**
-	* @generated
-	*/
-	public static String AdjToolStripAdjToolStripLstAdjWidgetCompartment4EditPart_title;
-
-	/**
-	* @generated
-	*/
-	public static String AdjGroupBoxAdjGroupBoxLstAdjWidgetCompartment5EditPart_title;
-
-	/**
-	* @generated
-	*/
-	public static String AdjMenuStripAdjMenuStripLstAdjWidgetCompartment5EditPart_title;
-
-	/**
-	* @generated
-	*/
-	public static String AdjToolStripAdjToolStripLstAdjWidgetCompartment5EditPart_title;
 
 	/**
 	* @generated

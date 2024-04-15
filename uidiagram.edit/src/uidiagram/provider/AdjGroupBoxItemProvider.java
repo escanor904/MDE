@@ -187,7 +187,7 @@ public class AdjGroupBoxItemProvider extends AdjWidgetItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UidiagramPackage.Literals.ADJ_GROUP_BOX__LST_ADJ_WIDGET,
-				 UidiagramFactory.eINSTANCE.createAdjDatepicker()));
+				 UidiagramFactory.eINSTANCE.createAdjDateTimePicker()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -212,22 +212,22 @@ public class AdjGroupBoxItemProvider extends AdjWidgetItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UidiagramPackage.Literals.ADJ_GROUP_BOX__LST_ADJ_WIDGET,
-				 UidiagramFactory.eINSTANCE.createAdjTreeView()));
+				 UidiagramFactory.eINSTANCE.createAdjComboBox()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UidiagramPackage.Literals.ADJ_GROUP_BOX__LST_ADJ_WIDGET,
-				 UidiagramFactory.eINSTANCE.createAdjPropertyGrid()));
+				 UidiagramFactory.eINSTANCE.createAdjRadioButton()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UidiagramPackage.Literals.ADJ_GROUP_BOX__LST_ADJ_WIDGET,
-				 UidiagramFactory.eINSTANCE.createAdjProgressBar()));
+				 UidiagramFactory.eINSTANCE.createAdjPictureBox()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UidiagramPackage.Literals.ADJ_GROUP_BOX__LST_ADJ_WIDGET,
-				 UidiagramFactory.eINSTANCE.createAdjDataGridView()));
+				 UidiagramFactory.eINSTANCE.createAdjListView()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -238,16 +238,6 @@ public class AdjGroupBoxItemProvider extends AdjWidgetItemProvider {
 			(createChildParameter
 				(UidiagramPackage.Literals.ADJ_GROUP_BOX__LST_ADJ_WIDGET,
 				 UidiagramFactory.eINSTANCE.createAdjGroupBox()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UidiagramPackage.Literals.ADJ_GROUP_BOX__LST_ADJ_WIDGET,
-				 UidiagramFactory.eINSTANCE.createAdjMenuStrip()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UidiagramPackage.Literals.ADJ_GROUP_BOX__LST_ADJ_WIDGET,
-				 UidiagramFactory.eINSTANCE.createAdjToolStrip()));
 	}
 
 }

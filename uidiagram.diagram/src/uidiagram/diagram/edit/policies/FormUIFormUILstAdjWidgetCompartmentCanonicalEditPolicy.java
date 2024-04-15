@@ -28,20 +28,18 @@ import uidiagram.UidiagramPackage;
 import uidiagram.diagram.edit.parts.AdjButtonEditPart;
 import uidiagram.diagram.edit.parts.AdjCheckBoxEditPart;
 import uidiagram.diagram.edit.parts.AdjCheckedListBoxEditPart;
-import uidiagram.diagram.edit.parts.AdjDataGridViewEditPart;
-import uidiagram.diagram.edit.parts.AdjDatepickerEditPart;
-import uidiagram.diagram.edit.parts.AdjGroupBox5EditPart;
+import uidiagram.diagram.edit.parts.AdjComboBoxEditPart;
+import uidiagram.diagram.edit.parts.AdjDateTimePickerEditPart;
+import uidiagram.diagram.edit.parts.AdjGroupBox3EditPart;
 import uidiagram.diagram.edit.parts.AdjLabelEditPart;
 import uidiagram.diagram.edit.parts.AdjLinkLabelEditPart;
 import uidiagram.diagram.edit.parts.AdjListBoxEditPart;
-import uidiagram.diagram.edit.parts.AdjMenuStrip5EditPart;
+import uidiagram.diagram.edit.parts.AdjListViewEditPart;
 import uidiagram.diagram.edit.parts.AdjPanelEditPart;
-import uidiagram.diagram.edit.parts.AdjProgressBarEditPart;
-import uidiagram.diagram.edit.parts.AdjPropertyGridEditPart;
+import uidiagram.diagram.edit.parts.AdjPictureBoxEditPart;
+import uidiagram.diagram.edit.parts.AdjRadioButtonEditPart;
 import uidiagram.diagram.edit.parts.AdjRichTextBoxEditPart;
 import uidiagram.diagram.edit.parts.AdjTextBoxEditPart;
-import uidiagram.diagram.edit.parts.AdjToolStrip5EditPart;
-import uidiagram.diagram.edit.parts.AdjTreeViewEditPart;
 import uidiagram.diagram.part.UidiagramDiagramUpdater;
 import uidiagram.diagram.part.UidiagramNodeDescriptor;
 import uidiagram.diagram.part.UidiagramVisualIDRegistry;
@@ -103,19 +101,17 @@ public class FormUIFormUILstAdjWidgetCompartmentCanonicalEditPolicy extends Cano
 		case AdjCheckBoxEditPart.VISUAL_ID:
 		case AdjButtonEditPart.VISUAL_ID:
 		case AdjListBoxEditPart.VISUAL_ID:
-		case AdjDatepickerEditPart.VISUAL_ID:
+		case AdjDateTimePickerEditPart.VISUAL_ID:
 		case AdjTextBoxEditPart.VISUAL_ID:
 		case AdjCheckedListBoxEditPart.VISUAL_ID:
 		case AdjLinkLabelEditPart.VISUAL_ID:
 		case AdjRichTextBoxEditPart.VISUAL_ID:
-		case AdjTreeViewEditPart.VISUAL_ID:
-		case AdjPropertyGridEditPart.VISUAL_ID:
-		case AdjProgressBarEditPart.VISUAL_ID:
-		case AdjDataGridViewEditPart.VISUAL_ID:
+		case AdjComboBoxEditPart.VISUAL_ID:
+		case AdjRadioButtonEditPart.VISUAL_ID:
+		case AdjPictureBoxEditPart.VISUAL_ID:
+		case AdjListViewEditPart.VISUAL_ID:
 		case AdjPanelEditPart.VISUAL_ID:
-		case AdjGroupBox5EditPart.VISUAL_ID:
-		case AdjMenuStrip5EditPart.VISUAL_ID:
-		case AdjToolStrip5EditPart.VISUAL_ID:
+		case AdjGroupBox3EditPart.VISUAL_ID:
 			return true;
 		}
 		return false;

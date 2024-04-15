@@ -60,7 +60,7 @@ public class AdjGroupBoxName3EditPart extends CompartmentEditPart implements ITe
 	/**
 	* @generated
 	*/
-	public static final int VISUAL_ID = 5075;
+	public static final int VISUAL_ID = 5084;
 
 	/**
 	* @generated
@@ -295,7 +295,7 @@ public class AdjGroupBoxName3EditPart extends CompartmentEditPart implements ITe
 	*/
 	public IParser getParser() {
 		if (parser == null) {
-			parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjGroupBox_3076, getParserElement(),
+			parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjGroupBox_3084, getParserElement(),
 					UidiagramVisualIDRegistry.getType(uidiagram.diagram.edit.parts.AdjGroupBoxName3EditPart.VISUAL_ID));
 		}
 		return parser;

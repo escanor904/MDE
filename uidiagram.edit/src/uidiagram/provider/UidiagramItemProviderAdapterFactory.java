@@ -256,26 +256,26 @@ public class UidiagramItemProviderAdapterFactory extends UidiagramAdapterFactory
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link uidiagram.AdjDatepicker} instances.
+	 * This keeps track of the one adapter used for all {@link uidiagram.AdjDateTimePicker} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AdjDatepickerItemProvider adjDatepickerItemProvider;
+	protected AdjDateTimePickerItemProvider adjDateTimePickerItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link uidiagram.AdjDatepicker}.
+	 * This creates an adapter for a {@link uidiagram.AdjDateTimePicker}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createAdjDatepickerAdapter() {
-		if (adjDatepickerItemProvider == null) {
-			adjDatepickerItemProvider = new AdjDatepickerItemProvider(this);
+	public Adapter createAdjDateTimePickerAdapter() {
+		if (adjDateTimePickerItemProvider == null) {
+			adjDateTimePickerItemProvider = new AdjDateTimePickerItemProvider(this);
 		}
 
-		return adjDatepickerItemProvider;
+		return adjDateTimePickerItemProvider;
 	}
 
 	/**
@@ -371,118 +371,118 @@ public class UidiagramItemProviderAdapterFactory extends UidiagramAdapterFactory
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link uidiagram.AdjTreeView} instances.
+	 * This keeps track of the one adapter used for all {@link uidiagram.AdjComboBox} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AdjTreeViewItemProvider adjTreeViewItemProvider;
+	protected AdjComboBoxItemProvider adjComboBoxItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link uidiagram.AdjTreeView}.
+	 * This creates an adapter for a {@link uidiagram.AdjComboBox}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createAdjTreeViewAdapter() {
-		if (adjTreeViewItemProvider == null) {
-			adjTreeViewItemProvider = new AdjTreeViewItemProvider(this);
+	public Adapter createAdjComboBoxAdapter() {
+		if (adjComboBoxItemProvider == null) {
+			adjComboBoxItemProvider = new AdjComboBoxItemProvider(this);
 		}
 
-		return adjTreeViewItemProvider;
+		return adjComboBoxItemProvider;
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link uidiagram.AdjPropertyGrid} instances.
+	 * This keeps track of the one adapter used for all {@link uidiagram.AdjRadioButton} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AdjPropertyGridItemProvider adjPropertyGridItemProvider;
+	protected AdjRadioButtonItemProvider adjRadioButtonItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link uidiagram.AdjPropertyGrid}.
+	 * This creates an adapter for a {@link uidiagram.AdjRadioButton}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createAdjPropertyGridAdapter() {
-		if (adjPropertyGridItemProvider == null) {
-			adjPropertyGridItemProvider = new AdjPropertyGridItemProvider(this);
+	public Adapter createAdjRadioButtonAdapter() {
+		if (adjRadioButtonItemProvider == null) {
+			adjRadioButtonItemProvider = new AdjRadioButtonItemProvider(this);
 		}
 
-		return adjPropertyGridItemProvider;
+		return adjRadioButtonItemProvider;
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link uidiagram.AdjProgressBar} instances.
+	 * This keeps track of the one adapter used for all {@link uidiagram.AdjPictureBox} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AdjProgressBarItemProvider adjProgressBarItemProvider;
+	protected AdjPictureBoxItemProvider adjPictureBoxItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link uidiagram.AdjProgressBar}.
+	 * This creates an adapter for a {@link uidiagram.AdjPictureBox}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createAdjProgressBarAdapter() {
-		if (adjProgressBarItemProvider == null) {
-			adjProgressBarItemProvider = new AdjProgressBarItemProvider(this);
+	public Adapter createAdjPictureBoxAdapter() {
+		if (adjPictureBoxItemProvider == null) {
+			adjPictureBoxItemProvider = new AdjPictureBoxItemProvider(this);
 		}
 
-		return adjProgressBarItemProvider;
+		return adjPictureBoxItemProvider;
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link uidiagram.AdjDataGridView} instances.
+	 * This keeps track of the one adapter used for all {@link uidiagram.AdjListView} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AdjDataGridViewItemProvider adjDataGridViewItemProvider;
+	protected AdjListViewItemProvider adjListViewItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link uidiagram.AdjDataGridView}.
+	 * This creates an adapter for a {@link uidiagram.AdjListView}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createAdjDataGridViewAdapter() {
-		if (adjDataGridViewItemProvider == null) {
-			adjDataGridViewItemProvider = new AdjDataGridViewItemProvider(this);
+	public Adapter createAdjListViewAdapter() {
+		if (adjListViewItemProvider == null) {
+			adjListViewItemProvider = new AdjListViewItemProvider(this);
 		}
 
-		return adjDataGridViewItemProvider;
+		return adjListViewItemProvider;
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link uidiagram.AdjDataGridViewTextBoxColumn} instances.
+	 * This keeps track of the one adapter used for all {@link uidiagram.AdjListViewColumn} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AdjDataGridViewTextBoxColumnItemProvider adjDataGridViewTextBoxColumnItemProvider;
+	protected AdjListViewColumnItemProvider adjListViewColumnItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link uidiagram.AdjDataGridViewTextBoxColumn}.
+	 * This creates an adapter for a {@link uidiagram.AdjListViewColumn}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createAdjDataGridViewTextBoxColumnAdapter() {
-		if (adjDataGridViewTextBoxColumnItemProvider == null) {
-			adjDataGridViewTextBoxColumnItemProvider = new AdjDataGridViewTextBoxColumnItemProvider(this);
+	public Adapter createAdjListViewColumnAdapter() {
+		if (adjListViewColumnItemProvider == null) {
+			adjListViewColumnItemProvider = new AdjListViewColumnItemProvider(this);
 		}
 
-		return adjDataGridViewTextBoxColumnItemProvider;
+		return adjListViewColumnItemProvider;
 	}
 
 	/**
@@ -529,52 +529,6 @@ public class UidiagramItemProviderAdapterFactory extends UidiagramAdapterFactory
 		}
 
 		return adjGroupBoxItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uidiagram.AdjMenuStrip} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected AdjMenuStripItemProvider adjMenuStripItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uidiagram.AdjMenuStrip}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createAdjMenuStripAdapter() {
-		if (adjMenuStripItemProvider == null) {
-			adjMenuStripItemProvider = new AdjMenuStripItemProvider(this);
-		}
-
-		return adjMenuStripItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uidiagram.AdjToolStrip} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected AdjToolStripItemProvider adjToolStripItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uidiagram.AdjToolStrip}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createAdjToolStripAdapter() {
-		if (adjToolStripItemProvider == null) {
-			adjToolStripItemProvider = new AdjToolStripItemProvider(this);
-		}
-
-		return adjToolStripItemProvider;
 	}
 
 	/**
@@ -684,20 +638,18 @@ public class UidiagramItemProviderAdapterFactory extends UidiagramAdapterFactory
 		if (adjCheckBoxItemProvider != null) adjCheckBoxItemProvider.dispose();
 		if (adjButtonItemProvider != null) adjButtonItemProvider.dispose();
 		if (adjListBoxItemProvider != null) adjListBoxItemProvider.dispose();
-		if (adjDatepickerItemProvider != null) adjDatepickerItemProvider.dispose();
+		if (adjDateTimePickerItemProvider != null) adjDateTimePickerItemProvider.dispose();
 		if (adjTextBoxItemProvider != null) adjTextBoxItemProvider.dispose();
 		if (adjCheckedListBoxItemProvider != null) adjCheckedListBoxItemProvider.dispose();
 		if (adjLinkLabelItemProvider != null) adjLinkLabelItemProvider.dispose();
 		if (adjRichTextBoxItemProvider != null) adjRichTextBoxItemProvider.dispose();
-		if (adjTreeViewItemProvider != null) adjTreeViewItemProvider.dispose();
-		if (adjPropertyGridItemProvider != null) adjPropertyGridItemProvider.dispose();
-		if (adjProgressBarItemProvider != null) adjProgressBarItemProvider.dispose();
-		if (adjDataGridViewItemProvider != null) adjDataGridViewItemProvider.dispose();
-		if (adjDataGridViewTextBoxColumnItemProvider != null) adjDataGridViewTextBoxColumnItemProvider.dispose();
+		if (adjComboBoxItemProvider != null) adjComboBoxItemProvider.dispose();
+		if (adjRadioButtonItemProvider != null) adjRadioButtonItemProvider.dispose();
+		if (adjPictureBoxItemProvider != null) adjPictureBoxItemProvider.dispose();
+		if (adjListViewItemProvider != null) adjListViewItemProvider.dispose();
+		if (adjListViewColumnItemProvider != null) adjListViewColumnItemProvider.dispose();
 		if (adjPanelItemProvider != null) adjPanelItemProvider.dispose();
 		if (adjGroupBoxItemProvider != null) adjGroupBoxItemProvider.dispose();
-		if (adjMenuStripItemProvider != null) adjMenuStripItemProvider.dispose();
-		if (adjToolStripItemProvider != null) adjToolStripItemProvider.dispose();
 	}
 
 }

@@ -26,12 +26,11 @@ abstract class AdjWidget {
 	attr String name;
 	attr String variable;
 	attr String text;
-	attr String positionX;
-	attr String positionY;
-	attr String width;
-	attr String height;
-	attr String background;
-	
+	attr Integer positionX;
+	attr Integer positionY;
+	attr Integer width;
+	attr Integer height;
+	attr Integer background;
 }
 
 
@@ -58,7 +57,7 @@ class AdjListBox extends AdjWidget {
 }
 
 @gmf.node(label = "name")
-class AdjDatepicker extends AdjWidget {
+class AdjDateTimePicker extends AdjWidget {
 	attr String font;
 }
 
@@ -83,28 +82,27 @@ class AdjRichTextBox extends AdjWidget {
 }
 
 @gmf.node(label = "name")
-class AdjTreeView extends AdjWidget {
+class AdjComboBox extends AdjWidget {
 	attr String font;
 }
 
 @gmf.node(label = "name")
-class AdjPropertyGrid extends AdjWidget {
+class AdjRadioButton extends AdjWidget {
 	attr String font;
 }
 
 @gmf.node(label = "name")
-class AdjProgressBar extends AdjWidget {
-	attr String font;
+class AdjPictureBox extends AdjWidget {
 }
 
 @gmf.node(label = "name")
-class AdjDataGridView extends AdjWidget {
+class AdjListView extends AdjWidget {
 	@gmf.compartment
-	val AdjDataGridViewTextBoxColumn[*] lstAdjDataGridViewTextBoxColumn;
+	val AdjListViewColumn[*] lstAdjListViewColumn;
 }
 
 @gmf.node(label = "name")
-class AdjDataGridViewTextBoxColumn {
+class AdjListViewColumn {
 	attr String name;
 	attr String variable;
 	attr String value;
@@ -121,20 +119,6 @@ class AdjPanel extends AdjWidget {
 
 @gmf.node(label = "name")
 class AdjGroupBox extends AdjWidget {
-	attr String font;
-	@gmf.compartment
-	val AdjWidget[*] lstAdjWidget;
-}
-
-@gmf.node(label = "name")
-class AdjMenuStrip extends AdjWidget {
-	attr String font;
-	@gmf.compartment
-	val AdjWidget[*] lstAdjWidget;
-}
-
-@gmf.node(label = "name")
-class AdjToolStrip extends AdjWidget {
 	attr String font;
 	@gmf.compartment
 	val AdjWidget[*] lstAdjWidget;

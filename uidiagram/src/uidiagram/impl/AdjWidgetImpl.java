@@ -101,7 +101,7 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String POSITION_X_EDEFAULT = null;
+	protected static final Integer POSITION_X_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getPositionX() <em>Position X</em>}' attribute.
@@ -111,7 +111,7 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * @generated
 	 * @ordered
 	 */
-	protected String positionX = POSITION_X_EDEFAULT;
+	protected Integer positionX = POSITION_X_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getPositionY() <em>Position Y</em>}' attribute.
@@ -121,7 +121,7 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String POSITION_Y_EDEFAULT = null;
+	protected static final Integer POSITION_Y_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getPositionY() <em>Position Y</em>}' attribute.
@@ -131,7 +131,7 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * @generated
 	 * @ordered
 	 */
-	protected String positionY = POSITION_Y_EDEFAULT;
+	protected Integer positionY = POSITION_Y_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getWidth() <em>Width</em>}' attribute.
@@ -141,7 +141,7 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String WIDTH_EDEFAULT = null;
+	protected static final Integer WIDTH_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getWidth() <em>Width</em>}' attribute.
@@ -151,7 +151,7 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * @generated
 	 * @ordered
 	 */
-	protected String width = WIDTH_EDEFAULT;
+	protected Integer width = WIDTH_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getHeight() <em>Height</em>}' attribute.
@@ -161,7 +161,7 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String HEIGHT_EDEFAULT = null;
+	protected static final Integer HEIGHT_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getHeight() <em>Height</em>}' attribute.
@@ -171,7 +171,7 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * @generated
 	 * @ordered
 	 */
-	protected String height = HEIGHT_EDEFAULT;
+	protected Integer height = HEIGHT_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getBackground() <em>Background</em>}' attribute.
@@ -181,7 +181,7 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String BACKGROUND_EDEFAULT = null;
+	protected static final Integer BACKGROUND_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getBackground() <em>Background</em>}' attribute.
@@ -191,7 +191,7 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * @generated
 	 * @ordered
 	 */
-	protected String background = BACKGROUND_EDEFAULT;
+	protected Integer background = BACKGROUND_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -280,7 +280,7 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getPositionX() {
+	public Integer getPositionX() {
 		return positionX;
 	}
 
@@ -289,8 +289,8 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPositionX(String newPositionX) {
-		String oldPositionX = positionX;
+	public void setPositionX(Integer newPositionX) {
+		Integer oldPositionX = positionX;
 		positionX = newPositionX;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.ADJ_WIDGET__POSITION_X, oldPositionX, positionX));
@@ -301,7 +301,7 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getPositionY() {
+	public Integer getPositionY() {
 		return positionY;
 	}
 
@@ -310,8 +310,8 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPositionY(String newPositionY) {
-		String oldPositionY = positionY;
+	public void setPositionY(Integer newPositionY) {
+		Integer oldPositionY = positionY;
 		positionY = newPositionY;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.ADJ_WIDGET__POSITION_Y, oldPositionY, positionY));
@@ -322,7 +322,7 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getWidth() {
+	public Integer getWidth() {
 		return width;
 	}
 
@@ -331,8 +331,8 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setWidth(String newWidth) {
-		String oldWidth = width;
+	public void setWidth(Integer newWidth) {
+		Integer oldWidth = width;
 		width = newWidth;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.ADJ_WIDGET__WIDTH, oldWidth, width));
@@ -343,7 +343,7 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getHeight() {
+	public Integer getHeight() {
 		return height;
 	}
 
@@ -352,8 +352,8 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHeight(String newHeight) {
-		String oldHeight = height;
+	public void setHeight(Integer newHeight) {
+		Integer oldHeight = height;
 		height = newHeight;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.ADJ_WIDGET__HEIGHT, oldHeight, height));
@@ -364,7 +364,7 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getBackground() {
+	public Integer getBackground() {
 		return background;
 	}
 
@@ -373,8 +373,8 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBackground(String newBackground) {
-		String oldBackground = background;
+	public void setBackground(Integer newBackground) {
+		Integer oldBackground = background;
 		background = newBackground;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.ADJ_WIDGET__BACKGROUND, oldBackground, background));
@@ -426,19 +426,19 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 				setText((String)newValue);
 				return;
 			case UidiagramPackage.ADJ_WIDGET__POSITION_X:
-				setPositionX((String)newValue);
+				setPositionX((Integer)newValue);
 				return;
 			case UidiagramPackage.ADJ_WIDGET__POSITION_Y:
-				setPositionY((String)newValue);
+				setPositionY((Integer)newValue);
 				return;
 			case UidiagramPackage.ADJ_WIDGET__WIDTH:
-				setWidth((String)newValue);
+				setWidth((Integer)newValue);
 				return;
 			case UidiagramPackage.ADJ_WIDGET__HEIGHT:
-				setHeight((String)newValue);
+				setHeight((Integer)newValue);
 				return;
 			case UidiagramPackage.ADJ_WIDGET__BACKGROUND:
-				setBackground((String)newValue);
+				setBackground((Integer)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);

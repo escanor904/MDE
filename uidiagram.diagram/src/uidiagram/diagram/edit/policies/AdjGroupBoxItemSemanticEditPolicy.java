@@ -18,21 +18,19 @@ import org.eclipse.gmf.runtime.notation.View;
 import uidiagram.diagram.edit.parts.AdjButton3EditPart;
 import uidiagram.diagram.edit.parts.AdjCheckBox3EditPart;
 import uidiagram.diagram.edit.parts.AdjCheckedListBox3EditPart;
-import uidiagram.diagram.edit.parts.AdjDataGridView3EditPart;
-import uidiagram.diagram.edit.parts.AdjDatepicker3EditPart;
-import uidiagram.diagram.edit.parts.AdjGroupBox3EditPart;
+import uidiagram.diagram.edit.parts.AdjComboBox3EditPart;
+import uidiagram.diagram.edit.parts.AdjDateTimePicker3EditPart;
+import uidiagram.diagram.edit.parts.AdjGroupBox2EditPart;
 import uidiagram.diagram.edit.parts.AdjGroupBoxAdjGroupBoxLstAdjWidgetCompartmentEditPart;
 import uidiagram.diagram.edit.parts.AdjLabel3EditPart;
 import uidiagram.diagram.edit.parts.AdjLinkLabel3EditPart;
 import uidiagram.diagram.edit.parts.AdjListBox3EditPart;
-import uidiagram.diagram.edit.parts.AdjMenuStrip2EditPart;
+import uidiagram.diagram.edit.parts.AdjListView3EditPart;
 import uidiagram.diagram.edit.parts.AdjPanel3EditPart;
-import uidiagram.diagram.edit.parts.AdjProgressBar3EditPart;
-import uidiagram.diagram.edit.parts.AdjPropertyGrid3EditPart;
+import uidiagram.diagram.edit.parts.AdjPictureBox3EditPart;
+import uidiagram.diagram.edit.parts.AdjRadioButton3EditPart;
 import uidiagram.diagram.edit.parts.AdjRichTextBox3EditPart;
 import uidiagram.diagram.edit.parts.AdjTextBox3EditPart;
-import uidiagram.diagram.edit.parts.AdjToolStrip2EditPart;
-import uidiagram.diagram.edit.parts.AdjTreeView3EditPart;
 import uidiagram.diagram.part.UidiagramVisualIDRegistry;
 import uidiagram.diagram.providers.UidiagramElementTypes;
 
@@ -104,7 +102,7 @@ public class AdjGroupBoxItemSemanticEditPolicy extends UidiagramBaseItemSemantic
 						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 
 						// cmd.add(new org.eclipse.gmf.runtime.diagram.core.commands.DeleteCommand(getEditingDomain(), cnode));
 						break;
-					case AdjDatepicker3EditPart.VISUAL_ID:
+					case AdjDateTimePicker3EditPart.VISUAL_ID:
 						cmd.add(new DestroyElementCommand(
 								new DestroyElementRequest(getEditingDomain(), cnode.getElement(), false))); // directlyOwned: true
 						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 
@@ -134,25 +132,25 @@ public class AdjGroupBoxItemSemanticEditPolicy extends UidiagramBaseItemSemantic
 						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 
 						// cmd.add(new org.eclipse.gmf.runtime.diagram.core.commands.DeleteCommand(getEditingDomain(), cnode));
 						break;
-					case AdjTreeView3EditPart.VISUAL_ID:
+					case AdjComboBox3EditPart.VISUAL_ID:
 						cmd.add(new DestroyElementCommand(
 								new DestroyElementRequest(getEditingDomain(), cnode.getElement(), false))); // directlyOwned: true
 						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 
 						// cmd.add(new org.eclipse.gmf.runtime.diagram.core.commands.DeleteCommand(getEditingDomain(), cnode));
 						break;
-					case AdjPropertyGrid3EditPart.VISUAL_ID:
+					case AdjRadioButton3EditPart.VISUAL_ID:
 						cmd.add(new DestroyElementCommand(
 								new DestroyElementRequest(getEditingDomain(), cnode.getElement(), false))); // directlyOwned: true
 						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 
 						// cmd.add(new org.eclipse.gmf.runtime.diagram.core.commands.DeleteCommand(getEditingDomain(), cnode));
 						break;
-					case AdjProgressBar3EditPart.VISUAL_ID:
+					case AdjPictureBox3EditPart.VISUAL_ID:
 						cmd.add(new DestroyElementCommand(
 								new DestroyElementRequest(getEditingDomain(), cnode.getElement(), false))); // directlyOwned: true
 						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 
 						// cmd.add(new org.eclipse.gmf.runtime.diagram.core.commands.DeleteCommand(getEditingDomain(), cnode));
 						break;
-					case AdjDataGridView3EditPart.VISUAL_ID:
+					case AdjListView3EditPart.VISUAL_ID:
 						cmd.add(new DestroyElementCommand(
 								new DestroyElementRequest(getEditingDomain(), cnode.getElement(), false))); // directlyOwned: true
 						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 
@@ -164,19 +162,7 @@ public class AdjGroupBoxItemSemanticEditPolicy extends UidiagramBaseItemSemantic
 						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 
 						// cmd.add(new org.eclipse.gmf.runtime.diagram.core.commands.DeleteCommand(getEditingDomain(), cnode));
 						break;
-					case AdjGroupBox3EditPart.VISUAL_ID:
-						cmd.add(new DestroyElementCommand(
-								new DestroyElementRequest(getEditingDomain(), cnode.getElement(), false))); // directlyOwned: true
-						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 
-						// cmd.add(new org.eclipse.gmf.runtime.diagram.core.commands.DeleteCommand(getEditingDomain(), cnode));
-						break;
-					case AdjMenuStrip2EditPart.VISUAL_ID:
-						cmd.add(new DestroyElementCommand(
-								new DestroyElementRequest(getEditingDomain(), cnode.getElement(), false))); // directlyOwned: true
-						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 
-						// cmd.add(new org.eclipse.gmf.runtime.diagram.core.commands.DeleteCommand(getEditingDomain(), cnode));
-						break;
-					case AdjToolStrip2EditPart.VISUAL_ID:
+					case AdjGroupBox2EditPart.VISUAL_ID:
 						cmd.add(new DestroyElementCommand(
 								new DestroyElementRequest(getEditingDomain(), cnode.getElement(), false))); // directlyOwned: true
 						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 

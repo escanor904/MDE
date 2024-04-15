@@ -39,8 +39,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="AdjDataGridView"
-          description="Create new AdjDataGridView">
+          title="AdjComboBox"
+          description="Create new AdjComboBox">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -48,17 +48,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="AdjDataGridViewTextBoxColumn"
-          description="Create new AdjDataGridViewTextBoxColumn">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="AdjDatepicker"
-          description="Create new AdjDatepicker">
+          title="AdjDateTimePicker"
+          description="Create new AdjDateTimePicker">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -102,8 +93,17 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="AdjMenuStrip"
-          description="Create new AdjMenuStrip">
+          title="AdjListView"
+          description="Create new AdjListView">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="AdjListViewColumn"
+          description="Create new AdjListViewColumn">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -120,8 +120,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="AdjProgressBar"
-          description="Create new AdjProgressBar">
+          title="AdjPictureBox"
+          description="Create new AdjPictureBox">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -129,8 +129,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="AdjPropertyGrid"
-          description="Create new AdjPropertyGrid">
+          title="AdjRadioButton"
+          description="Create new AdjRadioButton">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -149,24 +149,6 @@
           xsi:type="gmftool:CreationTool"
           title="AdjTextBox"
           description="Create new AdjTextBox">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="AdjToolStrip"
-          description="Create new AdjToolStrip">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="AdjTreeView"
-          description="Create new AdjTreeView">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon

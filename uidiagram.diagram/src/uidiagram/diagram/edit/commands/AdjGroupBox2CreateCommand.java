@@ -16,7 +16,6 @@ import org.eclipse.gmf.runtime.emf.type.core.requests.CreateElementRequest;
 import org.eclipse.gmf.runtime.notation.View;
 
 import uidiagram.AdjGroupBox;
-import uidiagram.AdjToolStrip;
 import uidiagram.UidiagramFactory;
 
 /**
@@ -57,7 +56,7 @@ public class AdjGroupBox2CreateCommand extends EditElementCommand {
 	protected CommandResult doExecuteWithResult(IProgressMonitor monitor, IAdaptable info) throws ExecutionException {
 		AdjGroupBox newElement = UidiagramFactory.eINSTANCE.createAdjGroupBox();
 
-		AdjToolStrip owner = (AdjToolStrip) getElementToEdit();
+		AdjGroupBox owner = (AdjGroupBox) getElementToEdit();
 		owner.getLstAdjWidget().add(newElement);
 
 		doConfigure(newElement, monitor, info);

@@ -202,7 +202,7 @@ public class FormUIItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(UidiagramPackage.Literals.FORM_UI__LST_ADJ_WIDGET,
-				 UidiagramFactory.eINSTANCE.createAdjDatepicker()));
+				 UidiagramFactory.eINSTANCE.createAdjDateTimePicker()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -227,22 +227,22 @@ public class FormUIItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(UidiagramPackage.Literals.FORM_UI__LST_ADJ_WIDGET,
-				 UidiagramFactory.eINSTANCE.createAdjTreeView()));
+				 UidiagramFactory.eINSTANCE.createAdjComboBox()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UidiagramPackage.Literals.FORM_UI__LST_ADJ_WIDGET,
-				 UidiagramFactory.eINSTANCE.createAdjPropertyGrid()));
+				 UidiagramFactory.eINSTANCE.createAdjRadioButton()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UidiagramPackage.Literals.FORM_UI__LST_ADJ_WIDGET,
-				 UidiagramFactory.eINSTANCE.createAdjProgressBar()));
+				 UidiagramFactory.eINSTANCE.createAdjPictureBox()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UidiagramPackage.Literals.FORM_UI__LST_ADJ_WIDGET,
-				 UidiagramFactory.eINSTANCE.createAdjDataGridView()));
+				 UidiagramFactory.eINSTANCE.createAdjListView()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -253,16 +253,6 @@ public class FormUIItemProvider
 			(createChildParameter
 				(UidiagramPackage.Literals.FORM_UI__LST_ADJ_WIDGET,
 				 UidiagramFactory.eINSTANCE.createAdjGroupBox()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UidiagramPackage.Literals.FORM_UI__LST_ADJ_WIDGET,
-				 UidiagramFactory.eINSTANCE.createAdjMenuStrip()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UidiagramPackage.Literals.FORM_UI__LST_ADJ_WIDGET,
-				 UidiagramFactory.eINSTANCE.createAdjToolStrip()));
 	}
 
 	/**

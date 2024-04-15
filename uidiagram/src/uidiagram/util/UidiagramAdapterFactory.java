@@ -104,8 +104,8 @@ public class UidiagramAdapterFactory extends AdapterFactoryImpl {
 				return createAdjListBoxAdapter();
 			}
 			@Override
-			public Adapter caseAdjDatepicker(AdjDatepicker object) {
-				return createAdjDatepickerAdapter();
+			public Adapter caseAdjDateTimePicker(AdjDateTimePicker object) {
+				return createAdjDateTimePickerAdapter();
 			}
 			@Override
 			public Adapter caseAdjTextBox(AdjTextBox object) {
@@ -124,24 +124,24 @@ public class UidiagramAdapterFactory extends AdapterFactoryImpl {
 				return createAdjRichTextBoxAdapter();
 			}
 			@Override
-			public Adapter caseAdjTreeView(AdjTreeView object) {
-				return createAdjTreeViewAdapter();
+			public Adapter caseAdjComboBox(AdjComboBox object) {
+				return createAdjComboBoxAdapter();
 			}
 			@Override
-			public Adapter caseAdjPropertyGrid(AdjPropertyGrid object) {
-				return createAdjPropertyGridAdapter();
+			public Adapter caseAdjRadioButton(AdjRadioButton object) {
+				return createAdjRadioButtonAdapter();
 			}
 			@Override
-			public Adapter caseAdjProgressBar(AdjProgressBar object) {
-				return createAdjProgressBarAdapter();
+			public Adapter caseAdjPictureBox(AdjPictureBox object) {
+				return createAdjPictureBoxAdapter();
 			}
 			@Override
-			public Adapter caseAdjDataGridView(AdjDataGridView object) {
-				return createAdjDataGridViewAdapter();
+			public Adapter caseAdjListView(AdjListView object) {
+				return createAdjListViewAdapter();
 			}
 			@Override
-			public Adapter caseAdjDataGridViewTextBoxColumn(AdjDataGridViewTextBoxColumn object) {
-				return createAdjDataGridViewTextBoxColumnAdapter();
+			public Adapter caseAdjListViewColumn(AdjListViewColumn object) {
+				return createAdjListViewColumnAdapter();
 			}
 			@Override
 			public Adapter caseAdjPanel(AdjPanel object) {
@@ -150,14 +150,6 @@ public class UidiagramAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseAdjGroupBox(AdjGroupBox object) {
 				return createAdjGroupBoxAdapter();
-			}
-			@Override
-			public Adapter caseAdjMenuStrip(AdjMenuStrip object) {
-				return createAdjMenuStripAdapter();
-			}
-			@Override
-			public Adapter caseAdjToolStrip(AdjToolStrip object) {
-				return createAdjToolStripAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -306,16 +298,16 @@ public class UidiagramAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link uidiagram.AdjDatepicker <em>Adj Datepicker</em>}'.
+	 * Creates a new adapter for an object of class '{@link uidiagram.AdjDateTimePicker <em>Adj Date Time Picker</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see uidiagram.AdjDatepicker
+	 * @see uidiagram.AdjDateTimePicker
 	 * @generated
 	 */
-	public Adapter createAdjDatepickerAdapter() {
+	public Adapter createAdjDateTimePickerAdapter() {
 		return null;
 	}
 
@@ -376,72 +368,72 @@ public class UidiagramAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link uidiagram.AdjTreeView <em>Adj Tree View</em>}'.
+	 * Creates a new adapter for an object of class '{@link uidiagram.AdjComboBox <em>Adj Combo Box</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see uidiagram.AdjTreeView
+	 * @see uidiagram.AdjComboBox
 	 * @generated
 	 */
-	public Adapter createAdjTreeViewAdapter() {
+	public Adapter createAdjComboBoxAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link uidiagram.AdjPropertyGrid <em>Adj Property Grid</em>}'.
+	 * Creates a new adapter for an object of class '{@link uidiagram.AdjRadioButton <em>Adj Radio Button</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see uidiagram.AdjPropertyGrid
+	 * @see uidiagram.AdjRadioButton
 	 * @generated
 	 */
-	public Adapter createAdjPropertyGridAdapter() {
+	public Adapter createAdjRadioButtonAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link uidiagram.AdjProgressBar <em>Adj Progress Bar</em>}'.
+	 * Creates a new adapter for an object of class '{@link uidiagram.AdjPictureBox <em>Adj Picture Box</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see uidiagram.AdjProgressBar
+	 * @see uidiagram.AdjPictureBox
 	 * @generated
 	 */
-	public Adapter createAdjProgressBarAdapter() {
+	public Adapter createAdjPictureBoxAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link uidiagram.AdjDataGridView <em>Adj Data Grid View</em>}'.
+	 * Creates a new adapter for an object of class '{@link uidiagram.AdjListView <em>Adj List View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see uidiagram.AdjDataGridView
+	 * @see uidiagram.AdjListView
 	 * @generated
 	 */
-	public Adapter createAdjDataGridViewAdapter() {
+	public Adapter createAdjListViewAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link uidiagram.AdjDataGridViewTextBoxColumn <em>Adj Data Grid View Text Box Column</em>}'.
+	 * Creates a new adapter for an object of class '{@link uidiagram.AdjListViewColumn <em>Adj List View Column</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see uidiagram.AdjDataGridViewTextBoxColumn
+	 * @see uidiagram.AdjListViewColumn
 	 * @generated
 	 */
-	public Adapter createAdjDataGridViewTextBoxColumnAdapter() {
+	public Adapter createAdjListViewColumnAdapter() {
 		return null;
 	}
 
@@ -470,34 +462,6 @@ public class UidiagramAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createAdjGroupBoxAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link uidiagram.AdjMenuStrip <em>Adj Menu Strip</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see uidiagram.AdjMenuStrip
-	 * @generated
-	 */
-	public Adapter createAdjMenuStripAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link uidiagram.AdjToolStrip <em>Adj Tool Strip</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see uidiagram.AdjToolStrip
-	 * @generated
-	 */
-	public Adapter createAdjToolStripAdapter() {
 		return null;
 	}
 

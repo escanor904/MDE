@@ -39,7 +39,7 @@ public class AdjGroupBox3EditPart extends ShapeNodeEditPart {
 	/**
 	* @generated
 	*/
-	public static final int VISUAL_ID = 3076;
+	public static final int VISUAL_ID = 3084;
 
 	/**
 	* @generated

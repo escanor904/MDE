@@ -124,10 +124,10 @@ public class UidiagramSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case UidiagramPackage.ADJ_DATEPICKER: {
-				AdjDatepicker adjDatepicker = (AdjDatepicker)theEObject;
-				T result = caseAdjDatepicker(adjDatepicker);
-				if (result == null) result = caseAdjWidget(adjDatepicker);
+			case UidiagramPackage.ADJ_DATE_TIME_PICKER: {
+				AdjDateTimePicker adjDateTimePicker = (AdjDateTimePicker)theEObject;
+				T result = caseAdjDateTimePicker(adjDateTimePicker);
+				if (result == null) result = caseAdjWidget(adjDateTimePicker);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -159,37 +159,37 @@ public class UidiagramSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case UidiagramPackage.ADJ_TREE_VIEW: {
-				AdjTreeView adjTreeView = (AdjTreeView)theEObject;
-				T result = caseAdjTreeView(adjTreeView);
-				if (result == null) result = caseAdjWidget(adjTreeView);
+			case UidiagramPackage.ADJ_COMBO_BOX: {
+				AdjComboBox adjComboBox = (AdjComboBox)theEObject;
+				T result = caseAdjComboBox(adjComboBox);
+				if (result == null) result = caseAdjWidget(adjComboBox);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case UidiagramPackage.ADJ_PROPERTY_GRID: {
-				AdjPropertyGrid adjPropertyGrid = (AdjPropertyGrid)theEObject;
-				T result = caseAdjPropertyGrid(adjPropertyGrid);
-				if (result == null) result = caseAdjWidget(adjPropertyGrid);
+			case UidiagramPackage.ADJ_RADIO_BUTTON: {
+				AdjRadioButton adjRadioButton = (AdjRadioButton)theEObject;
+				T result = caseAdjRadioButton(adjRadioButton);
+				if (result == null) result = caseAdjWidget(adjRadioButton);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case UidiagramPackage.ADJ_PROGRESS_BAR: {
-				AdjProgressBar adjProgressBar = (AdjProgressBar)theEObject;
-				T result = caseAdjProgressBar(adjProgressBar);
-				if (result == null) result = caseAdjWidget(adjProgressBar);
+			case UidiagramPackage.ADJ_PICTURE_BOX: {
+				AdjPictureBox adjPictureBox = (AdjPictureBox)theEObject;
+				T result = caseAdjPictureBox(adjPictureBox);
+				if (result == null) result = caseAdjWidget(adjPictureBox);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case UidiagramPackage.ADJ_DATA_GRID_VIEW: {
-				AdjDataGridView adjDataGridView = (AdjDataGridView)theEObject;
-				T result = caseAdjDataGridView(adjDataGridView);
-				if (result == null) result = caseAdjWidget(adjDataGridView);
+			case UidiagramPackage.ADJ_LIST_VIEW: {
+				AdjListView adjListView = (AdjListView)theEObject;
+				T result = caseAdjListView(adjListView);
+				if (result == null) result = caseAdjWidget(adjListView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case UidiagramPackage.ADJ_DATA_GRID_VIEW_TEXT_BOX_COLUMN: {
-				AdjDataGridViewTextBoxColumn adjDataGridViewTextBoxColumn = (AdjDataGridViewTextBoxColumn)theEObject;
-				T result = caseAdjDataGridViewTextBoxColumn(adjDataGridViewTextBoxColumn);
+			case UidiagramPackage.ADJ_LIST_VIEW_COLUMN: {
+				AdjListViewColumn adjListViewColumn = (AdjListViewColumn)theEObject;
+				T result = caseAdjListViewColumn(adjListViewColumn);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -204,20 +204,6 @@ public class UidiagramSwitch<T> extends Switch<T> {
 				AdjGroupBox adjGroupBox = (AdjGroupBox)theEObject;
 				T result = caseAdjGroupBox(adjGroupBox);
 				if (result == null) result = caseAdjWidget(adjGroupBox);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case UidiagramPackage.ADJ_MENU_STRIP: {
-				AdjMenuStrip adjMenuStrip = (AdjMenuStrip)theEObject;
-				T result = caseAdjMenuStrip(adjMenuStrip);
-				if (result == null) result = caseAdjWidget(adjMenuStrip);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case UidiagramPackage.ADJ_TOOL_STRIP: {
-				AdjToolStrip adjToolStrip = (AdjToolStrip)theEObject;
-				T result = caseAdjToolStrip(adjToolStrip);
-				if (result == null) result = caseAdjWidget(adjToolStrip);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -361,17 +347,17 @@ public class UidiagramSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Adj Datepicker</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Adj Date Time Picker</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Adj Datepicker</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Adj Date Time Picker</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAdjDatepicker(AdjDatepicker object) {
+	public T caseAdjDateTimePicker(AdjDateTimePicker object) {
 		return null;
 	}
 
@@ -436,77 +422,77 @@ public class UidiagramSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Adj Tree View</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Adj Combo Box</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Adj Tree View</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Adj Combo Box</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAdjTreeView(AdjTreeView object) {
+	public T caseAdjComboBox(AdjComboBox object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Adj Property Grid</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Adj Radio Button</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Adj Property Grid</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Adj Radio Button</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAdjPropertyGrid(AdjPropertyGrid object) {
+	public T caseAdjRadioButton(AdjRadioButton object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Adj Progress Bar</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Adj Picture Box</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Adj Progress Bar</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Adj Picture Box</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAdjProgressBar(AdjProgressBar object) {
+	public T caseAdjPictureBox(AdjPictureBox object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Adj Data Grid View</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Adj List View</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Adj Data Grid View</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Adj List View</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAdjDataGridView(AdjDataGridView object) {
+	public T caseAdjListView(AdjListView object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Adj Data Grid View Text Box Column</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Adj List View Column</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Adj Data Grid View Text Box Column</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Adj List View Column</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAdjDataGridViewTextBoxColumn(AdjDataGridViewTextBoxColumn object) {
+	public T caseAdjListViewColumn(AdjListViewColumn object) {
 		return null;
 	}
 
@@ -537,36 +523,6 @@ public class UidiagramSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseAdjGroupBox(AdjGroupBox object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Adj Menu Strip</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Adj Menu Strip</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAdjMenuStrip(AdjMenuStrip object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Adj Tool Strip</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Adj Tool Strip</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAdjToolStrip(AdjToolStrip object) {
 		return null;
 	}
 

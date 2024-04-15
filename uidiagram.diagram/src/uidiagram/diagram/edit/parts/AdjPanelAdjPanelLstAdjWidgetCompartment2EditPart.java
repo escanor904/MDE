@@ -103,7 +103,7 @@ public class AdjPanelAdjPanelLstAdjWidgetCompartment2EditPart extends ShapeCompa
 			if (type == UidiagramElementTypes.AdjListBox_3019) {
 				return this;
 			}
-			if (type == UidiagramElementTypes.AdjDatepicker_3020) {
+			if (type == UidiagramElementTypes.AdjDateTimePicker_3101) {
 				return this;
 			}
 			if (type == UidiagramElementTypes.AdjTextBox_3021) {
@@ -118,28 +118,22 @@ public class AdjPanelAdjPanelLstAdjWidgetCompartment2EditPart extends ShapeCompa
 			if (type == UidiagramElementTypes.AdjRichTextBox_3024) {
 				return this;
 			}
-			if (type == UidiagramElementTypes.AdjTreeView_3025) {
+			if (type == UidiagramElementTypes.AdjComboBox_3088) {
 				return this;
 			}
-			if (type == UidiagramElementTypes.AdjPropertyGrid_3026) {
+			if (type == UidiagramElementTypes.AdjRadioButton_3102) {
 				return this;
 			}
-			if (type == UidiagramElementTypes.AdjProgressBar_3027) {
+			if (type == UidiagramElementTypes.AdjPictureBox_3103) {
 				return this;
 			}
-			if (type == UidiagramElementTypes.AdjDataGridView_3028) {
+			if (type == UidiagramElementTypes.AdjListView_3094) {
 				return this;
 			}
 			if (type == UidiagramElementTypes.AdjPanel_3029) {
 				return this;
 			}
 			if (type == UidiagramElementTypes.AdjGroupBox_3030) {
-				return this;
-			}
-			if (type == UidiagramElementTypes.AdjMenuStrip_3045) {
-				return this;
-			}
-			if (type == UidiagramElementTypes.AdjToolStrip_3060) {
 				return this;
 			}
 			return getParent().getTargetEditPart(request);

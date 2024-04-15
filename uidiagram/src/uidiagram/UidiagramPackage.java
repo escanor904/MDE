@@ -668,14 +668,14 @@ public interface UidiagramPackage extends EPackage {
 	int ADJ_LIST_BOX_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link uidiagram.impl.AdjDatepickerImpl <em>Adj Datepicker</em>}' class.
+	 * The meta object id for the '{@link uidiagram.impl.AdjDateTimePickerImpl <em>Adj Date Time Picker</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see uidiagram.impl.AdjDatepickerImpl
-	 * @see uidiagram.impl.UidiagramPackageImpl#getAdjDatepicker()
+	 * @see uidiagram.impl.AdjDateTimePickerImpl
+	 * @see uidiagram.impl.UidiagramPackageImpl#getAdjDateTimePicker()
 	 * @generated
 	 */
-	int ADJ_DATEPICKER = 9;
+	int ADJ_DATE_TIME_PICKER = 9;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -684,7 +684,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATEPICKER__NAME = ADJ_WIDGET__NAME;
+	int ADJ_DATE_TIME_PICKER__NAME = ADJ_WIDGET__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Variable</b></em>' attribute.
@@ -693,7 +693,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATEPICKER__VARIABLE = ADJ_WIDGET__VARIABLE;
+	int ADJ_DATE_TIME_PICKER__VARIABLE = ADJ_WIDGET__VARIABLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -702,7 +702,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATEPICKER__TEXT = ADJ_WIDGET__TEXT;
+	int ADJ_DATE_TIME_PICKER__TEXT = ADJ_WIDGET__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Position X</b></em>' attribute.
@@ -711,7 +711,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATEPICKER__POSITION_X = ADJ_WIDGET__POSITION_X;
+	int ADJ_DATE_TIME_PICKER__POSITION_X = ADJ_WIDGET__POSITION_X;
 
 	/**
 	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
@@ -720,7 +720,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATEPICKER__POSITION_Y = ADJ_WIDGET__POSITION_Y;
+	int ADJ_DATE_TIME_PICKER__POSITION_Y = ADJ_WIDGET__POSITION_Y;
 
 	/**
 	 * The feature id for the '<em><b>Width</b></em>' attribute.
@@ -729,7 +729,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATEPICKER__WIDTH = ADJ_WIDGET__WIDTH;
+	int ADJ_DATE_TIME_PICKER__WIDTH = ADJ_WIDGET__WIDTH;
 
 	/**
 	 * The feature id for the '<em><b>Height</b></em>' attribute.
@@ -738,7 +738,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATEPICKER__HEIGHT = ADJ_WIDGET__HEIGHT;
+	int ADJ_DATE_TIME_PICKER__HEIGHT = ADJ_WIDGET__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background</b></em>' attribute.
@@ -747,7 +747,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATEPICKER__BACKGROUND = ADJ_WIDGET__BACKGROUND;
+	int ADJ_DATE_TIME_PICKER__BACKGROUND = ADJ_WIDGET__BACKGROUND;
 
 	/**
 	 * The feature id for the '<em><b>Font</b></em>' attribute.
@@ -756,16 +756,16 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATEPICKER__FONT = ADJ_WIDGET_FEATURE_COUNT + 0;
+	int ADJ_DATE_TIME_PICKER__FONT = ADJ_WIDGET_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of structural features of the '<em>Adj Datepicker</em>' class.
+	 * The number of structural features of the '<em>Adj Date Time Picker</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATEPICKER_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
+	int ADJ_DATE_TIME_PICKER_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.AdjTextBoxImpl <em>Adj Text Box</em>}' class.
@@ -1168,14 +1168,14 @@ public interface UidiagramPackage extends EPackage {
 	int ADJ_RICH_TEXT_BOX_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link uidiagram.impl.AdjTreeViewImpl <em>Adj Tree View</em>}' class.
+	 * The meta object id for the '{@link uidiagram.impl.AdjComboBoxImpl <em>Adj Combo Box</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see uidiagram.impl.AdjTreeViewImpl
-	 * @see uidiagram.impl.UidiagramPackageImpl#getAdjTreeView()
+	 * @see uidiagram.impl.AdjComboBoxImpl
+	 * @see uidiagram.impl.UidiagramPackageImpl#getAdjComboBox()
 	 * @generated
 	 */
-	int ADJ_TREE_VIEW = 14;
+	int ADJ_COMBO_BOX = 14;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1184,7 +1184,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_TREE_VIEW__NAME = ADJ_WIDGET__NAME;
+	int ADJ_COMBO_BOX__NAME = ADJ_WIDGET__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Variable</b></em>' attribute.
@@ -1193,7 +1193,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_TREE_VIEW__VARIABLE = ADJ_WIDGET__VARIABLE;
+	int ADJ_COMBO_BOX__VARIABLE = ADJ_WIDGET__VARIABLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -1202,7 +1202,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_TREE_VIEW__TEXT = ADJ_WIDGET__TEXT;
+	int ADJ_COMBO_BOX__TEXT = ADJ_WIDGET__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Position X</b></em>' attribute.
@@ -1211,7 +1211,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_TREE_VIEW__POSITION_X = ADJ_WIDGET__POSITION_X;
+	int ADJ_COMBO_BOX__POSITION_X = ADJ_WIDGET__POSITION_X;
 
 	/**
 	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
@@ -1220,7 +1220,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_TREE_VIEW__POSITION_Y = ADJ_WIDGET__POSITION_Y;
+	int ADJ_COMBO_BOX__POSITION_Y = ADJ_WIDGET__POSITION_Y;
 
 	/**
 	 * The feature id for the '<em><b>Width</b></em>' attribute.
@@ -1229,7 +1229,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_TREE_VIEW__WIDTH = ADJ_WIDGET__WIDTH;
+	int ADJ_COMBO_BOX__WIDTH = ADJ_WIDGET__WIDTH;
 
 	/**
 	 * The feature id for the '<em><b>Height</b></em>' attribute.
@@ -1238,7 +1238,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_TREE_VIEW__HEIGHT = ADJ_WIDGET__HEIGHT;
+	int ADJ_COMBO_BOX__HEIGHT = ADJ_WIDGET__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background</b></em>' attribute.
@@ -1247,7 +1247,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_TREE_VIEW__BACKGROUND = ADJ_WIDGET__BACKGROUND;
+	int ADJ_COMBO_BOX__BACKGROUND = ADJ_WIDGET__BACKGROUND;
 
 	/**
 	 * The feature id for the '<em><b>Font</b></em>' attribute.
@@ -1256,26 +1256,26 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_TREE_VIEW__FONT = ADJ_WIDGET_FEATURE_COUNT + 0;
+	int ADJ_COMBO_BOX__FONT = ADJ_WIDGET_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of structural features of the '<em>Adj Tree View</em>' class.
+	 * The number of structural features of the '<em>Adj Combo Box</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_TREE_VIEW_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
+	int ADJ_COMBO_BOX_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link uidiagram.impl.AdjPropertyGridImpl <em>Adj Property Grid</em>}' class.
+	 * The meta object id for the '{@link uidiagram.impl.AdjRadioButtonImpl <em>Adj Radio Button</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see uidiagram.impl.AdjPropertyGridImpl
-	 * @see uidiagram.impl.UidiagramPackageImpl#getAdjPropertyGrid()
+	 * @see uidiagram.impl.AdjRadioButtonImpl
+	 * @see uidiagram.impl.UidiagramPackageImpl#getAdjRadioButton()
 	 * @generated
 	 */
-	int ADJ_PROPERTY_GRID = 15;
+	int ADJ_RADIO_BUTTON = 15;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1284,7 +1284,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_PROPERTY_GRID__NAME = ADJ_WIDGET__NAME;
+	int ADJ_RADIO_BUTTON__NAME = ADJ_WIDGET__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Variable</b></em>' attribute.
@@ -1293,7 +1293,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_PROPERTY_GRID__VARIABLE = ADJ_WIDGET__VARIABLE;
+	int ADJ_RADIO_BUTTON__VARIABLE = ADJ_WIDGET__VARIABLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -1302,7 +1302,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_PROPERTY_GRID__TEXT = ADJ_WIDGET__TEXT;
+	int ADJ_RADIO_BUTTON__TEXT = ADJ_WIDGET__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Position X</b></em>' attribute.
@@ -1311,7 +1311,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_PROPERTY_GRID__POSITION_X = ADJ_WIDGET__POSITION_X;
+	int ADJ_RADIO_BUTTON__POSITION_X = ADJ_WIDGET__POSITION_X;
 
 	/**
 	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
@@ -1320,7 +1320,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_PROPERTY_GRID__POSITION_Y = ADJ_WIDGET__POSITION_Y;
+	int ADJ_RADIO_BUTTON__POSITION_Y = ADJ_WIDGET__POSITION_Y;
 
 	/**
 	 * The feature id for the '<em><b>Width</b></em>' attribute.
@@ -1329,7 +1329,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_PROPERTY_GRID__WIDTH = ADJ_WIDGET__WIDTH;
+	int ADJ_RADIO_BUTTON__WIDTH = ADJ_WIDGET__WIDTH;
 
 	/**
 	 * The feature id for the '<em><b>Height</b></em>' attribute.
@@ -1338,7 +1338,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_PROPERTY_GRID__HEIGHT = ADJ_WIDGET__HEIGHT;
+	int ADJ_RADIO_BUTTON__HEIGHT = ADJ_WIDGET__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background</b></em>' attribute.
@@ -1347,7 +1347,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_PROPERTY_GRID__BACKGROUND = ADJ_WIDGET__BACKGROUND;
+	int ADJ_RADIO_BUTTON__BACKGROUND = ADJ_WIDGET__BACKGROUND;
 
 	/**
 	 * The feature id for the '<em><b>Font</b></em>' attribute.
@@ -1356,26 +1356,26 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_PROPERTY_GRID__FONT = ADJ_WIDGET_FEATURE_COUNT + 0;
+	int ADJ_RADIO_BUTTON__FONT = ADJ_WIDGET_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of structural features of the '<em>Adj Property Grid</em>' class.
+	 * The number of structural features of the '<em>Adj Radio Button</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_PROPERTY_GRID_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
+	int ADJ_RADIO_BUTTON_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link uidiagram.impl.AdjProgressBarImpl <em>Adj Progress Bar</em>}' class.
+	 * The meta object id for the '{@link uidiagram.impl.AdjPictureBoxImpl <em>Adj Picture Box</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see uidiagram.impl.AdjProgressBarImpl
-	 * @see uidiagram.impl.UidiagramPackageImpl#getAdjProgressBar()
+	 * @see uidiagram.impl.AdjPictureBoxImpl
+	 * @see uidiagram.impl.UidiagramPackageImpl#getAdjPictureBox()
 	 * @generated
 	 */
-	int ADJ_PROGRESS_BAR = 16;
+	int ADJ_PICTURE_BOX = 16;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1384,7 +1384,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_PROGRESS_BAR__NAME = ADJ_WIDGET__NAME;
+	int ADJ_PICTURE_BOX__NAME = ADJ_WIDGET__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Variable</b></em>' attribute.
@@ -1393,7 +1393,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_PROGRESS_BAR__VARIABLE = ADJ_WIDGET__VARIABLE;
+	int ADJ_PICTURE_BOX__VARIABLE = ADJ_WIDGET__VARIABLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -1402,7 +1402,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_PROGRESS_BAR__TEXT = ADJ_WIDGET__TEXT;
+	int ADJ_PICTURE_BOX__TEXT = ADJ_WIDGET__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Position X</b></em>' attribute.
@@ -1411,7 +1411,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_PROGRESS_BAR__POSITION_X = ADJ_WIDGET__POSITION_X;
+	int ADJ_PICTURE_BOX__POSITION_X = ADJ_WIDGET__POSITION_X;
 
 	/**
 	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
@@ -1420,7 +1420,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_PROGRESS_BAR__POSITION_Y = ADJ_WIDGET__POSITION_Y;
+	int ADJ_PICTURE_BOX__POSITION_Y = ADJ_WIDGET__POSITION_Y;
 
 	/**
 	 * The feature id for the '<em><b>Width</b></em>' attribute.
@@ -1429,7 +1429,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_PROGRESS_BAR__WIDTH = ADJ_WIDGET__WIDTH;
+	int ADJ_PICTURE_BOX__WIDTH = ADJ_WIDGET__WIDTH;
 
 	/**
 	 * The feature id for the '<em><b>Height</b></em>' attribute.
@@ -1438,7 +1438,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_PROGRESS_BAR__HEIGHT = ADJ_WIDGET__HEIGHT;
+	int ADJ_PICTURE_BOX__HEIGHT = ADJ_WIDGET__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background</b></em>' attribute.
@@ -1447,35 +1447,26 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_PROGRESS_BAR__BACKGROUND = ADJ_WIDGET__BACKGROUND;
+	int ADJ_PICTURE_BOX__BACKGROUND = ADJ_WIDGET__BACKGROUND;
 
 	/**
-	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * The number of structural features of the '<em>Adj Picture Box</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_PROGRESS_BAR__FONT = ADJ_WIDGET_FEATURE_COUNT + 0;
+	int ADJ_PICTURE_BOX_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of structural features of the '<em>Adj Progress Bar</em>' class.
+	 * The meta object id for the '{@link uidiagram.impl.AdjListViewImpl <em>Adj List View</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_PROGRESS_BAR_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
-
-	/**
-	 * The meta object id for the '{@link uidiagram.impl.AdjDataGridViewImpl <em>Adj Data Grid View</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see uidiagram.impl.AdjDataGridViewImpl
-	 * @see uidiagram.impl.UidiagramPackageImpl#getAdjDataGridView()
+	 * @see uidiagram.impl.AdjListViewImpl
+	 * @see uidiagram.impl.UidiagramPackageImpl#getAdjListView()
 	 * @generated
 	 */
-	int ADJ_DATA_GRID_VIEW = 17;
+	int ADJ_LIST_VIEW = 17;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1484,7 +1475,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATA_GRID_VIEW__NAME = ADJ_WIDGET__NAME;
+	int ADJ_LIST_VIEW__NAME = ADJ_WIDGET__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Variable</b></em>' attribute.
@@ -1493,7 +1484,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATA_GRID_VIEW__VARIABLE = ADJ_WIDGET__VARIABLE;
+	int ADJ_LIST_VIEW__VARIABLE = ADJ_WIDGET__VARIABLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -1502,7 +1493,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATA_GRID_VIEW__TEXT = ADJ_WIDGET__TEXT;
+	int ADJ_LIST_VIEW__TEXT = ADJ_WIDGET__TEXT;
 
 	/**
 	 * The feature id for the '<em><b>Position X</b></em>' attribute.
@@ -1511,7 +1502,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATA_GRID_VIEW__POSITION_X = ADJ_WIDGET__POSITION_X;
+	int ADJ_LIST_VIEW__POSITION_X = ADJ_WIDGET__POSITION_X;
 
 	/**
 	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
@@ -1520,7 +1511,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATA_GRID_VIEW__POSITION_Y = ADJ_WIDGET__POSITION_Y;
+	int ADJ_LIST_VIEW__POSITION_Y = ADJ_WIDGET__POSITION_Y;
 
 	/**
 	 * The feature id for the '<em><b>Width</b></em>' attribute.
@@ -1529,7 +1520,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATA_GRID_VIEW__WIDTH = ADJ_WIDGET__WIDTH;
+	int ADJ_LIST_VIEW__WIDTH = ADJ_WIDGET__WIDTH;
 
 	/**
 	 * The feature id for the '<em><b>Height</b></em>' attribute.
@@ -1538,7 +1529,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATA_GRID_VIEW__HEIGHT = ADJ_WIDGET__HEIGHT;
+	int ADJ_LIST_VIEW__HEIGHT = ADJ_WIDGET__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background</b></em>' attribute.
@@ -1547,35 +1538,35 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATA_GRID_VIEW__BACKGROUND = ADJ_WIDGET__BACKGROUND;
+	int ADJ_LIST_VIEW__BACKGROUND = ADJ_WIDGET__BACKGROUND;
 
 	/**
-	 * The feature id for the '<em><b>Lst Adj Data Grid View Text Box Column</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Lst Adj List View Column</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATA_GRID_VIEW__LST_ADJ_DATA_GRID_VIEW_TEXT_BOX_COLUMN = ADJ_WIDGET_FEATURE_COUNT + 0;
+	int ADJ_LIST_VIEW__LST_ADJ_LIST_VIEW_COLUMN = ADJ_WIDGET_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of structural features of the '<em>Adj Data Grid View</em>' class.
+	 * The number of structural features of the '<em>Adj List View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATA_GRID_VIEW_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
+	int ADJ_LIST_VIEW_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link uidiagram.impl.AdjDataGridViewTextBoxColumnImpl <em>Adj Data Grid View Text Box Column</em>}' class.
+	 * The meta object id for the '{@link uidiagram.impl.AdjListViewColumnImpl <em>Adj List View Column</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see uidiagram.impl.AdjDataGridViewTextBoxColumnImpl
-	 * @see uidiagram.impl.UidiagramPackageImpl#getAdjDataGridViewTextBoxColumn()
+	 * @see uidiagram.impl.AdjListViewColumnImpl
+	 * @see uidiagram.impl.UidiagramPackageImpl#getAdjListViewColumn()
 	 * @generated
 	 */
-	int ADJ_DATA_GRID_VIEW_TEXT_BOX_COLUMN = 18;
+	int ADJ_LIST_VIEW_COLUMN = 18;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1584,7 +1575,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATA_GRID_VIEW_TEXT_BOX_COLUMN__NAME = 0;
+	int ADJ_LIST_VIEW_COLUMN__NAME = 0;
 
 	/**
 	 * The feature id for the '<em><b>Variable</b></em>' attribute.
@@ -1593,7 +1584,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATA_GRID_VIEW_TEXT_BOX_COLUMN__VARIABLE = 1;
+	int ADJ_LIST_VIEW_COLUMN__VARIABLE = 1;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -1602,16 +1593,16 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATA_GRID_VIEW_TEXT_BOX_COLUMN__VALUE = 2;
+	int ADJ_LIST_VIEW_COLUMN__VALUE = 2;
 
 	/**
-	 * The number of structural features of the '<em>Adj Data Grid View Text Box Column</em>' class.
+	 * The number of structural features of the '<em>Adj List View Column</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATA_GRID_VIEW_TEXT_BOX_COLUMN_FEATURE_COUNT = 3;
+	int ADJ_LIST_VIEW_COLUMN_FEATURE_COUNT = 3;
 
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.AdjPanelImpl <em>Adj Panel</em>}' class.
@@ -1830,224 +1821,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int ADJ_GROUP_BOX_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 2;
-
-	/**
-	 * The meta object id for the '{@link uidiagram.impl.AdjMenuStripImpl <em>Adj Menu Strip</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see uidiagram.impl.AdjMenuStripImpl
-	 * @see uidiagram.impl.UidiagramPackageImpl#getAdjMenuStrip()
-	 * @generated
-	 */
-	int ADJ_MENU_STRIP = 21;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_MENU_STRIP__NAME = ADJ_WIDGET__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Variable</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_MENU_STRIP__VARIABLE = ADJ_WIDGET__VARIABLE;
-
-	/**
-	 * The feature id for the '<em><b>Text</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_MENU_STRIP__TEXT = ADJ_WIDGET__TEXT;
-
-	/**
-	 * The feature id for the '<em><b>Position X</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_MENU_STRIP__POSITION_X = ADJ_WIDGET__POSITION_X;
-
-	/**
-	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_MENU_STRIP__POSITION_Y = ADJ_WIDGET__POSITION_Y;
-
-	/**
-	 * The feature id for the '<em><b>Width</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_MENU_STRIP__WIDTH = ADJ_WIDGET__WIDTH;
-
-	/**
-	 * The feature id for the '<em><b>Height</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_MENU_STRIP__HEIGHT = ADJ_WIDGET__HEIGHT;
-
-	/**
-	 * The feature id for the '<em><b>Background</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_MENU_STRIP__BACKGROUND = ADJ_WIDGET__BACKGROUND;
-
-	/**
-	 * The feature id for the '<em><b>Font</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_MENU_STRIP__FONT = ADJ_WIDGET_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Lst Adj Widget</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_MENU_STRIP__LST_ADJ_WIDGET = ADJ_WIDGET_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of structural features of the '<em>Adj Menu Strip</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_MENU_STRIP_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 2;
-
-	/**
-	 * The meta object id for the '{@link uidiagram.impl.AdjToolStripImpl <em>Adj Tool Strip</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see uidiagram.impl.AdjToolStripImpl
-	 * @see uidiagram.impl.UidiagramPackageImpl#getAdjToolStrip()
-	 * @generated
-	 */
-	int ADJ_TOOL_STRIP = 22;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_TOOL_STRIP__NAME = ADJ_WIDGET__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Variable</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_TOOL_STRIP__VARIABLE = ADJ_WIDGET__VARIABLE;
-
-	/**
-	 * The feature id for the '<em><b>Text</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_TOOL_STRIP__TEXT = ADJ_WIDGET__TEXT;
-
-	/**
-	 * The feature id for the '<em><b>Position X</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_TOOL_STRIP__POSITION_X = ADJ_WIDGET__POSITION_X;
-
-	/**
-	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_TOOL_STRIP__POSITION_Y = ADJ_WIDGET__POSITION_Y;
-
-	/**
-	 * The feature id for the '<em><b>Width</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_TOOL_STRIP__WIDTH = ADJ_WIDGET__WIDTH;
-
-	/**
-	 * The feature id for the '<em><b>Height</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_TOOL_STRIP__HEIGHT = ADJ_WIDGET__HEIGHT;
-
-	/**
-	 * The feature id for the '<em><b>Background</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_TOOL_STRIP__BACKGROUND = ADJ_WIDGET__BACKGROUND;
-
-	/**
-	 * The feature id for the '<em><b>Font</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_TOOL_STRIP__FONT = ADJ_WIDGET_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Lst Adj Widget</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_TOOL_STRIP__LST_ADJ_WIDGET = ADJ_WIDGET_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of structural features of the '<em>Adj Tool Strip</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_TOOL_STRIP_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 2;
 
 
 	/**
@@ -2328,25 +2101,25 @@ public interface UidiagramPackage extends EPackage {
 	EAttribute getAdjListBox_Font();
 
 	/**
-	 * Returns the meta object for class '{@link uidiagram.AdjDatepicker <em>Adj Datepicker</em>}'.
+	 * Returns the meta object for class '{@link uidiagram.AdjDateTimePicker <em>Adj Date Time Picker</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Adj Datepicker</em>'.
-	 * @see uidiagram.AdjDatepicker
+	 * @return the meta object for class '<em>Adj Date Time Picker</em>'.
+	 * @see uidiagram.AdjDateTimePicker
 	 * @generated
 	 */
-	EClass getAdjDatepicker();
+	EClass getAdjDateTimePicker();
 
 	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjDatepicker#getFont <em>Font</em>}'.
+	 * Returns the meta object for the attribute '{@link uidiagram.AdjDateTimePicker#getFont <em>Font</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Font</em>'.
-	 * @see uidiagram.AdjDatepicker#getFont()
-	 * @see #getAdjDatepicker()
+	 * @see uidiagram.AdjDateTimePicker#getFont()
+	 * @see #getAdjDateTimePicker()
 	 * @generated
 	 */
-	EAttribute getAdjDatepicker_Font();
+	EAttribute getAdjDateTimePicker_Font();
 
 	/**
 	 * Returns the meta object for class '{@link uidiagram.AdjTextBox <em>Adj Text Box</em>}'.
@@ -2433,131 +2206,120 @@ public interface UidiagramPackage extends EPackage {
 	EAttribute getAdjRichTextBox_Font();
 
 	/**
-	 * Returns the meta object for class '{@link uidiagram.AdjTreeView <em>Adj Tree View</em>}'.
+	 * Returns the meta object for class '{@link uidiagram.AdjComboBox <em>Adj Combo Box</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Adj Tree View</em>'.
-	 * @see uidiagram.AdjTreeView
+	 * @return the meta object for class '<em>Adj Combo Box</em>'.
+	 * @see uidiagram.AdjComboBox
 	 * @generated
 	 */
-	EClass getAdjTreeView();
+	EClass getAdjComboBox();
 
 	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjTreeView#getFont <em>Font</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Font</em>'.
-	 * @see uidiagram.AdjTreeView#getFont()
-	 * @see #getAdjTreeView()
-	 * @generated
-	 */
-	EAttribute getAdjTreeView_Font();
-
-	/**
-	 * Returns the meta object for class '{@link uidiagram.AdjPropertyGrid <em>Adj Property Grid</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Adj Property Grid</em>'.
-	 * @see uidiagram.AdjPropertyGrid
-	 * @generated
-	 */
-	EClass getAdjPropertyGrid();
-
-	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjPropertyGrid#getFont <em>Font</em>}'.
+	 * Returns the meta object for the attribute '{@link uidiagram.AdjComboBox#getFont <em>Font</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Font</em>'.
-	 * @see uidiagram.AdjPropertyGrid#getFont()
-	 * @see #getAdjPropertyGrid()
+	 * @see uidiagram.AdjComboBox#getFont()
+	 * @see #getAdjComboBox()
 	 * @generated
 	 */
-	EAttribute getAdjPropertyGrid_Font();
+	EAttribute getAdjComboBox_Font();
 
 	/**
-	 * Returns the meta object for class '{@link uidiagram.AdjProgressBar <em>Adj Progress Bar</em>}'.
+	 * Returns the meta object for class '{@link uidiagram.AdjRadioButton <em>Adj Radio Button</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Adj Progress Bar</em>'.
-	 * @see uidiagram.AdjProgressBar
+	 * @return the meta object for class '<em>Adj Radio Button</em>'.
+	 * @see uidiagram.AdjRadioButton
 	 * @generated
 	 */
-	EClass getAdjProgressBar();
+	EClass getAdjRadioButton();
 
 	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjProgressBar#getFont <em>Font</em>}'.
+	 * Returns the meta object for the attribute '{@link uidiagram.AdjRadioButton#getFont <em>Font</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Font</em>'.
-	 * @see uidiagram.AdjProgressBar#getFont()
-	 * @see #getAdjProgressBar()
+	 * @see uidiagram.AdjRadioButton#getFont()
+	 * @see #getAdjRadioButton()
 	 * @generated
 	 */
-	EAttribute getAdjProgressBar_Font();
+	EAttribute getAdjRadioButton_Font();
 
 	/**
-	 * Returns the meta object for class '{@link uidiagram.AdjDataGridView <em>Adj Data Grid View</em>}'.
+	 * Returns the meta object for class '{@link uidiagram.AdjPictureBox <em>Adj Picture Box</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Adj Data Grid View</em>'.
-	 * @see uidiagram.AdjDataGridView
+	 * @return the meta object for class '<em>Adj Picture Box</em>'.
+	 * @see uidiagram.AdjPictureBox
 	 * @generated
 	 */
-	EClass getAdjDataGridView();
+	EClass getAdjPictureBox();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link uidiagram.AdjDataGridView#getLstAdjDataGridViewTextBoxColumn <em>Lst Adj Data Grid View Text Box Column</em>}'.
+	 * Returns the meta object for class '{@link uidiagram.AdjListView <em>Adj List View</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Lst Adj Data Grid View Text Box Column</em>'.
-	 * @see uidiagram.AdjDataGridView#getLstAdjDataGridViewTextBoxColumn()
-	 * @see #getAdjDataGridView()
+	 * @return the meta object for class '<em>Adj List View</em>'.
+	 * @see uidiagram.AdjListView
 	 * @generated
 	 */
-	EReference getAdjDataGridView_LstAdjDataGridViewTextBoxColumn();
+	EClass getAdjListView();
 
 	/**
-	 * Returns the meta object for class '{@link uidiagram.AdjDataGridViewTextBoxColumn <em>Adj Data Grid View Text Box Column</em>}'.
+	 * Returns the meta object for the containment reference list '{@link uidiagram.AdjListView#getLstAdjListViewColumn <em>Lst Adj List View Column</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Adj Data Grid View Text Box Column</em>'.
-	 * @see uidiagram.AdjDataGridViewTextBoxColumn
+	 * @return the meta object for the containment reference list '<em>Lst Adj List View Column</em>'.
+	 * @see uidiagram.AdjListView#getLstAdjListViewColumn()
+	 * @see #getAdjListView()
 	 * @generated
 	 */
-	EClass getAdjDataGridViewTextBoxColumn();
+	EReference getAdjListView_LstAdjListViewColumn();
 
 	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjDataGridViewTextBoxColumn#getName <em>Name</em>}'.
+	 * Returns the meta object for class '{@link uidiagram.AdjListViewColumn <em>Adj List View Column</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Adj List View Column</em>'.
+	 * @see uidiagram.AdjListViewColumn
+	 * @generated
+	 */
+	EClass getAdjListViewColumn();
+
+	/**
+	 * Returns the meta object for the attribute '{@link uidiagram.AdjListViewColumn#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see uidiagram.AdjDataGridViewTextBoxColumn#getName()
-	 * @see #getAdjDataGridViewTextBoxColumn()
+	 * @see uidiagram.AdjListViewColumn#getName()
+	 * @see #getAdjListViewColumn()
 	 * @generated
 	 */
-	EAttribute getAdjDataGridViewTextBoxColumn_Name();
+	EAttribute getAdjListViewColumn_Name();
 
 	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjDataGridViewTextBoxColumn#getVariable <em>Variable</em>}'.
+	 * Returns the meta object for the attribute '{@link uidiagram.AdjListViewColumn#getVariable <em>Variable</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Variable</em>'.
-	 * @see uidiagram.AdjDataGridViewTextBoxColumn#getVariable()
-	 * @see #getAdjDataGridViewTextBoxColumn()
+	 * @see uidiagram.AdjListViewColumn#getVariable()
+	 * @see #getAdjListViewColumn()
 	 * @generated
 	 */
-	EAttribute getAdjDataGridViewTextBoxColumn_Variable();
+	EAttribute getAdjListViewColumn_Variable();
 
 	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjDataGridViewTextBoxColumn#getValue <em>Value</em>}'.
+	 * Returns the meta object for the attribute '{@link uidiagram.AdjListViewColumn#getValue <em>Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Value</em>'.
-	 * @see uidiagram.AdjDataGridViewTextBoxColumn#getValue()
-	 * @see #getAdjDataGridViewTextBoxColumn()
+	 * @see uidiagram.AdjListViewColumn#getValue()
+	 * @see #getAdjListViewColumn()
 	 * @generated
 	 */
-	EAttribute getAdjDataGridViewTextBoxColumn_Value();
+	EAttribute getAdjListViewColumn_Value();
 
 	/**
 	 * Returns the meta object for class '{@link uidiagram.AdjPanel <em>Adj Panel</em>}'.
@@ -2622,70 +2384,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getAdjGroupBox_LstAdjWidget();
-
-	/**
-	 * Returns the meta object for class '{@link uidiagram.AdjMenuStrip <em>Adj Menu Strip</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Adj Menu Strip</em>'.
-	 * @see uidiagram.AdjMenuStrip
-	 * @generated
-	 */
-	EClass getAdjMenuStrip();
-
-	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjMenuStrip#getFont <em>Font</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Font</em>'.
-	 * @see uidiagram.AdjMenuStrip#getFont()
-	 * @see #getAdjMenuStrip()
-	 * @generated
-	 */
-	EAttribute getAdjMenuStrip_Font();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link uidiagram.AdjMenuStrip#getLstAdjWidget <em>Lst Adj Widget</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Lst Adj Widget</em>'.
-	 * @see uidiagram.AdjMenuStrip#getLstAdjWidget()
-	 * @see #getAdjMenuStrip()
-	 * @generated
-	 */
-	EReference getAdjMenuStrip_LstAdjWidget();
-
-	/**
-	 * Returns the meta object for class '{@link uidiagram.AdjToolStrip <em>Adj Tool Strip</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Adj Tool Strip</em>'.
-	 * @see uidiagram.AdjToolStrip
-	 * @generated
-	 */
-	EClass getAdjToolStrip();
-
-	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjToolStrip#getFont <em>Font</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Font</em>'.
-	 * @see uidiagram.AdjToolStrip#getFont()
-	 * @see #getAdjToolStrip()
-	 * @generated
-	 */
-	EAttribute getAdjToolStrip_Font();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link uidiagram.AdjToolStrip#getLstAdjWidget <em>Lst Adj Widget</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Lst Adj Widget</em>'.
-	 * @see uidiagram.AdjToolStrip#getLstAdjWidget()
-	 * @see #getAdjToolStrip()
-	 * @generated
-	 */
-	EReference getAdjToolStrip_LstAdjWidget();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -2936,14 +2634,14 @@ public interface UidiagramPackage extends EPackage {
 		EAttribute ADJ_LIST_BOX__FONT = eINSTANCE.getAdjListBox_Font();
 
 		/**
-		 * The meta object literal for the '{@link uidiagram.impl.AdjDatepickerImpl <em>Adj Datepicker</em>}' class.
+		 * The meta object literal for the '{@link uidiagram.impl.AdjDateTimePickerImpl <em>Adj Date Time Picker</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see uidiagram.impl.AdjDatepickerImpl
-		 * @see uidiagram.impl.UidiagramPackageImpl#getAdjDatepicker()
+		 * @see uidiagram.impl.AdjDateTimePickerImpl
+		 * @see uidiagram.impl.UidiagramPackageImpl#getAdjDateTimePicker()
 		 * @generated
 		 */
-		EClass ADJ_DATEPICKER = eINSTANCE.getAdjDatepicker();
+		EClass ADJ_DATE_TIME_PICKER = eINSTANCE.getAdjDateTimePicker();
 
 		/**
 		 * The meta object literal for the '<em><b>Font</b></em>' attribute feature.
@@ -2951,7 +2649,7 @@ public interface UidiagramPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ADJ_DATEPICKER__FONT = eINSTANCE.getAdjDatepicker_Font();
+		EAttribute ADJ_DATE_TIME_PICKER__FONT = eINSTANCE.getAdjDateTimePicker_Font();
 
 		/**
 		 * The meta object literal for the '{@link uidiagram.impl.AdjTextBoxImpl <em>Adj Text Box</em>}' class.
@@ -3026,14 +2724,14 @@ public interface UidiagramPackage extends EPackage {
 		EAttribute ADJ_RICH_TEXT_BOX__FONT = eINSTANCE.getAdjRichTextBox_Font();
 
 		/**
-		 * The meta object literal for the '{@link uidiagram.impl.AdjTreeViewImpl <em>Adj Tree View</em>}' class.
+		 * The meta object literal for the '{@link uidiagram.impl.AdjComboBoxImpl <em>Adj Combo Box</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see uidiagram.impl.AdjTreeViewImpl
-		 * @see uidiagram.impl.UidiagramPackageImpl#getAdjTreeView()
+		 * @see uidiagram.impl.AdjComboBoxImpl
+		 * @see uidiagram.impl.UidiagramPackageImpl#getAdjComboBox()
 		 * @generated
 		 */
-		EClass ADJ_TREE_VIEW = eINSTANCE.getAdjTreeView();
+		EClass ADJ_COMBO_BOX = eINSTANCE.getAdjComboBox();
 
 		/**
 		 * The meta object literal for the '<em><b>Font</b></em>' attribute feature.
@@ -3041,35 +2739,17 @@ public interface UidiagramPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ADJ_TREE_VIEW__FONT = eINSTANCE.getAdjTreeView_Font();
+		EAttribute ADJ_COMBO_BOX__FONT = eINSTANCE.getAdjComboBox_Font();
 
 		/**
-		 * The meta object literal for the '{@link uidiagram.impl.AdjPropertyGridImpl <em>Adj Property Grid</em>}' class.
+		 * The meta object literal for the '{@link uidiagram.impl.AdjRadioButtonImpl <em>Adj Radio Button</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see uidiagram.impl.AdjPropertyGridImpl
-		 * @see uidiagram.impl.UidiagramPackageImpl#getAdjPropertyGrid()
+		 * @see uidiagram.impl.AdjRadioButtonImpl
+		 * @see uidiagram.impl.UidiagramPackageImpl#getAdjRadioButton()
 		 * @generated
 		 */
-		EClass ADJ_PROPERTY_GRID = eINSTANCE.getAdjPropertyGrid();
-
-		/**
-		 * The meta object literal for the '<em><b>Font</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute ADJ_PROPERTY_GRID__FONT = eINSTANCE.getAdjPropertyGrid_Font();
-
-		/**
-		 * The meta object literal for the '{@link uidiagram.impl.AdjProgressBarImpl <em>Adj Progress Bar</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see uidiagram.impl.AdjProgressBarImpl
-		 * @see uidiagram.impl.UidiagramPackageImpl#getAdjProgressBar()
-		 * @generated
-		 */
-		EClass ADJ_PROGRESS_BAR = eINSTANCE.getAdjProgressBar();
+		EClass ADJ_RADIO_BUTTON = eINSTANCE.getAdjRadioButton();
 
 		/**
 		 * The meta object literal for the '<em><b>Font</b></em>' attribute feature.
@@ -3077,35 +2757,45 @@ public interface UidiagramPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ADJ_PROGRESS_BAR__FONT = eINSTANCE.getAdjProgressBar_Font();
+		EAttribute ADJ_RADIO_BUTTON__FONT = eINSTANCE.getAdjRadioButton_Font();
 
 		/**
-		 * The meta object literal for the '{@link uidiagram.impl.AdjDataGridViewImpl <em>Adj Data Grid View</em>}' class.
+		 * The meta object literal for the '{@link uidiagram.impl.AdjPictureBoxImpl <em>Adj Picture Box</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see uidiagram.impl.AdjDataGridViewImpl
-		 * @see uidiagram.impl.UidiagramPackageImpl#getAdjDataGridView()
+		 * @see uidiagram.impl.AdjPictureBoxImpl
+		 * @see uidiagram.impl.UidiagramPackageImpl#getAdjPictureBox()
 		 * @generated
 		 */
-		EClass ADJ_DATA_GRID_VIEW = eINSTANCE.getAdjDataGridView();
+		EClass ADJ_PICTURE_BOX = eINSTANCE.getAdjPictureBox();
 
 		/**
-		 * The meta object literal for the '<em><b>Lst Adj Data Grid View Text Box Column</b></em>' containment reference list feature.
+		 * The meta object literal for the '{@link uidiagram.impl.AdjListViewImpl <em>Adj List View</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
+		 * @see uidiagram.impl.AdjListViewImpl
+		 * @see uidiagram.impl.UidiagramPackageImpl#getAdjListView()
 		 * @generated
 		 */
-		EReference ADJ_DATA_GRID_VIEW__LST_ADJ_DATA_GRID_VIEW_TEXT_BOX_COLUMN = eINSTANCE.getAdjDataGridView_LstAdjDataGridViewTextBoxColumn();
+		EClass ADJ_LIST_VIEW = eINSTANCE.getAdjListView();
 
 		/**
-		 * The meta object literal for the '{@link uidiagram.impl.AdjDataGridViewTextBoxColumnImpl <em>Adj Data Grid View Text Box Column</em>}' class.
+		 * The meta object literal for the '<em><b>Lst Adj List View Column</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see uidiagram.impl.AdjDataGridViewTextBoxColumnImpl
-		 * @see uidiagram.impl.UidiagramPackageImpl#getAdjDataGridViewTextBoxColumn()
 		 * @generated
 		 */
-		EClass ADJ_DATA_GRID_VIEW_TEXT_BOX_COLUMN = eINSTANCE.getAdjDataGridViewTextBoxColumn();
+		EReference ADJ_LIST_VIEW__LST_ADJ_LIST_VIEW_COLUMN = eINSTANCE.getAdjListView_LstAdjListViewColumn();
+
+		/**
+		 * The meta object literal for the '{@link uidiagram.impl.AdjListViewColumnImpl <em>Adj List View Column</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see uidiagram.impl.AdjListViewColumnImpl
+		 * @see uidiagram.impl.UidiagramPackageImpl#getAdjListViewColumn()
+		 * @generated
+		 */
+		EClass ADJ_LIST_VIEW_COLUMN = eINSTANCE.getAdjListViewColumn();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
@@ -3113,7 +2803,7 @@ public interface UidiagramPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ADJ_DATA_GRID_VIEW_TEXT_BOX_COLUMN__NAME = eINSTANCE.getAdjDataGridViewTextBoxColumn_Name();
+		EAttribute ADJ_LIST_VIEW_COLUMN__NAME = eINSTANCE.getAdjListViewColumn_Name();
 
 		/**
 		 * The meta object literal for the '<em><b>Variable</b></em>' attribute feature.
@@ -3121,7 +2811,7 @@ public interface UidiagramPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ADJ_DATA_GRID_VIEW_TEXT_BOX_COLUMN__VARIABLE = eINSTANCE.getAdjDataGridViewTextBoxColumn_Variable();
+		EAttribute ADJ_LIST_VIEW_COLUMN__VARIABLE = eINSTANCE.getAdjListViewColumn_Variable();
 
 		/**
 		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
@@ -3129,7 +2819,7 @@ public interface UidiagramPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ADJ_DATA_GRID_VIEW_TEXT_BOX_COLUMN__VALUE = eINSTANCE.getAdjDataGridViewTextBoxColumn_Value();
+		EAttribute ADJ_LIST_VIEW_COLUMN__VALUE = eINSTANCE.getAdjListViewColumn_Value();
 
 		/**
 		 * The meta object literal for the '{@link uidiagram.impl.AdjPanelImpl <em>Adj Panel</em>}' class.
@@ -3182,58 +2872,6 @@ public interface UidiagramPackage extends EPackage {
 		 * @generated
 		 */
 		EReference ADJ_GROUP_BOX__LST_ADJ_WIDGET = eINSTANCE.getAdjGroupBox_LstAdjWidget();
-
-		/**
-		 * The meta object literal for the '{@link uidiagram.impl.AdjMenuStripImpl <em>Adj Menu Strip</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see uidiagram.impl.AdjMenuStripImpl
-		 * @see uidiagram.impl.UidiagramPackageImpl#getAdjMenuStrip()
-		 * @generated
-		 */
-		EClass ADJ_MENU_STRIP = eINSTANCE.getAdjMenuStrip();
-
-		/**
-		 * The meta object literal for the '<em><b>Font</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute ADJ_MENU_STRIP__FONT = eINSTANCE.getAdjMenuStrip_Font();
-
-		/**
-		 * The meta object literal for the '<em><b>Lst Adj Widget</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ADJ_MENU_STRIP__LST_ADJ_WIDGET = eINSTANCE.getAdjMenuStrip_LstAdjWidget();
-
-		/**
-		 * The meta object literal for the '{@link uidiagram.impl.AdjToolStripImpl <em>Adj Tool Strip</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see uidiagram.impl.AdjToolStripImpl
-		 * @see uidiagram.impl.UidiagramPackageImpl#getAdjToolStrip()
-		 * @generated
-		 */
-		EClass ADJ_TOOL_STRIP = eINSTANCE.getAdjToolStrip();
-
-		/**
-		 * The meta object literal for the '<em><b>Font</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute ADJ_TOOL_STRIP__FONT = eINSTANCE.getAdjToolStrip_Font();
-
-		/**
-		 * The meta object literal for the '<em><b>Lst Adj Widget</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ADJ_TOOL_STRIP__LST_ADJ_WIDGET = eINSTANCE.getAdjToolStrip_LstAdjWidget();
 
 	}
 

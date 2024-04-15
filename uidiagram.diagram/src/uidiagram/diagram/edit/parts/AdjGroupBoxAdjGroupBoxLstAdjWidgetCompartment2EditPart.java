@@ -34,7 +34,7 @@ public class AdjGroupBoxAdjGroupBoxLstAdjWidgetCompartment2EditPart extends Shap
 	/**
 	* @generated
 	*/
-	public static final int VISUAL_ID = 7015;
+	public static final int VISUAL_ID = 7016;
 
 	/**
 	* @generated
@@ -103,7 +103,7 @@ public class AdjGroupBoxAdjGroupBoxLstAdjWidgetCompartment2EditPart extends Shap
 			if (type == UidiagramElementTypes.AdjListBox_3034) {
 				return this;
 			}
-			if (type == UidiagramElementTypes.AdjDatepicker_3035) {
+			if (type == UidiagramElementTypes.AdjDateTimePicker_3104) {
 				return this;
 			}
 			if (type == UidiagramElementTypes.AdjTextBox_3036) {
@@ -118,28 +118,22 @@ public class AdjGroupBoxAdjGroupBoxLstAdjWidgetCompartment2EditPart extends Shap
 			if (type == UidiagramElementTypes.AdjRichTextBox_3039) {
 				return this;
 			}
-			if (type == UidiagramElementTypes.AdjTreeView_3040) {
+			if (type == UidiagramElementTypes.AdjComboBox_3089) {
 				return this;
 			}
-			if (type == UidiagramElementTypes.AdjPropertyGrid_3041) {
+			if (type == UidiagramElementTypes.AdjRadioButton_3105) {
 				return this;
 			}
-			if (type == UidiagramElementTypes.AdjProgressBar_3042) {
+			if (type == UidiagramElementTypes.AdjPictureBox_3106) {
 				return this;
 			}
-			if (type == UidiagramElementTypes.AdjDataGridView_3043) {
+			if (type == UidiagramElementTypes.AdjListView_3095) {
 				return this;
 			}
 			if (type == UidiagramElementTypes.AdjPanel_3044) {
 				return this;
 			}
 			if (type == UidiagramElementTypes.AdjGroupBox_3076) {
-				return this;
-			}
-			if (type == UidiagramElementTypes.AdjMenuStrip_3077) {
-				return this;
-			}
-			if (type == UidiagramElementTypes.AdjToolStrip_3079) {
 				return this;
 			}
 			return getParent().getTargetEditPart(request);

@@ -21,7 +21,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="uidiagram.gmftool#//@palette/@tools.0/@tools.18"/>
+          href="uidiagram.gmftool#//@palette/@tools.0/@tools.16"/>
       <diagramNode
           href="uidiagram.gmfgraph#FormUI"/>
       <children
@@ -40,7 +40,7 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="uidiagram.gmftool#//@palette/@tools.0/@tools.7"/>
+              href="uidiagram.gmftool#//@palette/@tools.0/@tools.6"/>
           <diagramNode
               href="uidiagram.gmfgraph#AdjLabel"/>
         </ownedChild>
@@ -103,7 +103,7 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="uidiagram.gmftool#//@palette/@tools.0/@tools.9"/>
+              href="uidiagram.gmftool#//@palette/@tools.0/@tools.8"/>
           <diagramNode
               href="uidiagram.gmfgraph#AdjListBox"/>
         </ownedChild>
@@ -114,19 +114,19 @@
             href="uidiagram.ecore#//FormUI/lstAdjWidget"/>
         <ownedChild>
           <domainMetaElement
-              href="uidiagram.ecore#//AdjDatepicker"/>
+              href="uidiagram.ecore#//AdjDateTimePicker"/>
           <labelMappings
               xsi:type="gmfmap:FeatureLabelMapping">
             <diagramLabel
-                href="uidiagram.gmfgraph#AdjDatepickerLabel"/>
+                href="uidiagram.gmfgraph#AdjDateTimePickerLabel"/>
             <features
                 href="uidiagram.ecore#//AdjWidget/name"/>
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="uidiagram.gmftool#//@palette/@tools.0/@tools.5"/>
+              href="uidiagram.gmftool#//@palette/@tools.0/@tools.4"/>
           <diagramNode
-              href="uidiagram.gmfgraph#AdjDatepicker"/>
+              href="uidiagram.gmfgraph#AdjDateTimePicker"/>
         </ownedChild>
       </children>
       <children
@@ -187,7 +187,7 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="uidiagram.gmftool#//@palette/@tools.0/@tools.8"/>
+              href="uidiagram.gmftool#//@palette/@tools.0/@tools.7"/>
           <diagramNode
               href="uidiagram.gmfgraph#AdjLinkLabel"/>
         </ownedChild>
@@ -219,19 +219,19 @@
             href="uidiagram.ecore#//FormUI/lstAdjWidget"/>
         <ownedChild>
           <domainMetaElement
-              href="uidiagram.ecore#//AdjTreeView"/>
+              href="uidiagram.ecore#//AdjComboBox"/>
           <labelMappings
               xsi:type="gmfmap:FeatureLabelMapping">
             <diagramLabel
-                href="uidiagram.gmfgraph#AdjTreeViewLabel"/>
+                href="uidiagram.gmfgraph#AdjComboBoxLabel"/>
             <features
                 href="uidiagram.ecore#//AdjWidget/name"/>
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="uidiagram.gmftool#//@palette/@tools.0/@tools.17"/>
+              href="uidiagram.gmftool#//@palette/@tools.0/@tools.3"/>
           <diagramNode
-              href="uidiagram.gmfgraph#AdjTreeView"/>
+              href="uidiagram.gmfgraph#AdjComboBox"/>
         </ownedChild>
       </children>
       <children
@@ -240,11 +240,11 @@
             href="uidiagram.ecore#//FormUI/lstAdjWidget"/>
         <ownedChild>
           <domainMetaElement
-              href="uidiagram.ecore#//AdjPropertyGrid"/>
+              href="uidiagram.ecore#//AdjRadioButton"/>
           <labelMappings
               xsi:type="gmfmap:FeatureLabelMapping">
             <diagramLabel
-                href="uidiagram.gmfgraph#AdjPropertyGridLabel"/>
+                href="uidiagram.gmfgraph#AdjRadioButtonLabel"/>
             <features
                 href="uidiagram.ecore#//AdjWidget/name"/>
           </labelMappings>
@@ -252,7 +252,7 @@
               xsi:type="gmftool:CreationTool"
               href="uidiagram.gmftool#//@palette/@tools.0/@tools.13"/>
           <diagramNode
-              href="uidiagram.gmfgraph#AdjPropertyGrid"/>
+              href="uidiagram.gmfgraph#AdjRadioButton"/>
         </ownedChild>
       </children>
       <children
@@ -261,11 +261,11 @@
             href="uidiagram.ecore#//FormUI/lstAdjWidget"/>
         <ownedChild>
           <domainMetaElement
-              href="uidiagram.ecore#//AdjProgressBar"/>
+              href="uidiagram.ecore#//AdjPictureBox"/>
           <labelMappings
               xsi:type="gmfmap:FeatureLabelMapping">
             <diagramLabel
-                href="uidiagram.gmfgraph#AdjProgressBarLabel"/>
+                href="uidiagram.gmfgraph#AdjPictureBoxLabel"/>
             <features
                 href="uidiagram.ecore#//AdjWidget/name"/>
           </labelMappings>
@@ -273,7 +273,7 @@
               xsi:type="gmftool:CreationTool"
               href="uidiagram.gmftool#//@palette/@tools.0/@tools.12"/>
           <diagramNode
-              href="uidiagram.gmfgraph#AdjProgressBar"/>
+              href="uidiagram.gmfgraph#AdjPictureBox"/>
         </ownedChild>
       </children>
       <children
@@ -283,44 +283,44 @@
         <ownedChild
             relatedDiagrams="//@diagram">
           <domainMetaElement
-              href="uidiagram.ecore#//AdjDataGridView"/>
+              href="uidiagram.ecore#//AdjListView"/>
           <labelMappings
               xsi:type="gmfmap:FeatureLabelMapping">
             <diagramLabel
-                href="uidiagram.gmfgraph#AdjDataGridViewLabel"/>
+                href="uidiagram.gmfgraph#AdjListViewLabel"/>
             <features
                 href="uidiagram.ecore#//AdjWidget/name"/>
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="uidiagram.gmftool#//@palette/@tools.0/@tools.3"/>
+              href="uidiagram.gmftool#//@palette/@tools.0/@tools.9"/>
           <diagramNode
-              href="uidiagram.gmfgraph#AdjDataGridView"/>
+              href="uidiagram.gmfgraph#AdjListView"/>
           <children
               compartment="//@nodes.0/@ownedChild/@children.12/@ownedChild/@compartments.0">
             <containmentFeature
-                href="uidiagram.ecore#//AdjDataGridView/lstAdjDataGridViewTextBoxColumn"/>
+                href="uidiagram.ecore#//AdjListView/lstAdjListViewColumn"/>
             <ownedChild>
               <domainMetaElement
-                  href="uidiagram.ecore#//AdjDataGridViewTextBoxColumn"/>
+                  href="uidiagram.ecore#//AdjListViewColumn"/>
               <labelMappings
                   xsi:type="gmfmap:FeatureLabelMapping">
                 <diagramLabel
-                    href="uidiagram.gmfgraph#AdjDataGridViewTextBoxColumnLabel"/>
+                    href="uidiagram.gmfgraph#AdjListViewColumnLabel"/>
                 <features
-                    href="uidiagram.ecore#//AdjDataGridViewTextBoxColumn/name"/>
+                    href="uidiagram.ecore#//AdjListViewColumn/name"/>
               </labelMappings>
               <tool
                   xsi:type="gmftool:CreationTool"
-                  href="uidiagram.gmftool#//@palette/@tools.0/@tools.4"/>
+                  href="uidiagram.gmftool#//@palette/@tools.0/@tools.10"/>
               <diagramNode
-                  href="uidiagram.gmfgraph#AdjDataGridViewTextBoxColumn"/>
+                  href="uidiagram.gmfgraph#AdjListViewColumn"/>
             </ownedChild>
           </children>
           <compartments
               children="//@nodes.0/@ownedChild/@children.12/@ownedChild/@children.0">
             <compartment
-                href="uidiagram.gmfgraph#AdjDataGridViewLstAdjDataGridViewTextBoxColumnCompartment"/>
+                href="uidiagram.gmfgraph#AdjListViewLstAdjListViewColumnCompartment"/>
           </compartments>
         </ownedChild>
       </children>
@@ -434,20 +434,8 @@
             <containmentFeature
                 href="uidiagram.ecore#//AdjPanel/lstAdjWidget"/>
           </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.13/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.15/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjPanel/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.13/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.16/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjPanel/lstAdjWidget"/>
-          </children>
           <compartments
-              children="//@nodes.0/@ownedChild/@children.13/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.5 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.6 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.7 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.8 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.9 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.10 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.11 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.12 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.13 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.14 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.15 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.16">
+              children="//@nodes.0/@ownedChild/@children.13/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.5 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.6 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.7 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.8 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.9 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.10 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.11 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.12 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.13 //@nodes.0/@ownedChild/@children.13/@ownedChild/@children.14">
             <compartment
                 href="uidiagram.gmfgraph#AdjPanelLstAdjWidgetCompartment"/>
           </compartments>
@@ -470,7 +458,7 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="uidiagram.gmftool#//@palette/@tools.0/@tools.6"/>
+              href="uidiagram.gmftool#//@palette/@tools.0/@tools.5"/>
           <diagramNode
               href="uidiagram.gmfgraph#AdjGroupBox"/>
           <children
@@ -563,285 +551,15 @@
             <containmentFeature
                 href="uidiagram.ecore#//AdjGroupBox/lstAdjWidget"/>
           </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.14/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.15/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjGroupBox/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.14/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.16/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjGroupBox/lstAdjWidget"/>
-          </children>
           <compartments
-              children="//@nodes.0/@ownedChild/@children.14/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.5 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.6 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.7 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.8 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.9 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.10 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.11 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.12 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.13 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.14 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.15 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.16">
+              children="//@nodes.0/@ownedChild/@children.14/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.5 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.6 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.7 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.8 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.9 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.10 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.11 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.12 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.13 //@nodes.0/@ownedChild/@children.14/@ownedChild/@children.14">
             <compartment
                 href="uidiagram.gmfgraph#AdjGroupBoxLstAdjWidgetCompartment"/>
           </compartments>
         </ownedChild>
       </children>
-      <children
-          compartment="//@nodes.0/@ownedChild/@compartments.0">
-        <containmentFeature
-            href="uidiagram.ecore#//FormUI/lstAdjWidget"/>
-        <ownedChild
-            relatedDiagrams="//@diagram">
-          <domainMetaElement
-              href="uidiagram.ecore#//AdjMenuStrip"/>
-          <labelMappings
-              xsi:type="gmfmap:FeatureLabelMapping">
-            <diagramLabel
-                href="uidiagram.gmfgraph#AdjMenuStripLabel"/>
-            <features
-                href="uidiagram.ecore#//AdjWidget/name"/>
-          </labelMappings>
-          <tool
-              xsi:type="gmftool:CreationTool"
-              href="uidiagram.gmftool#//@palette/@tools.0/@tools.10"/>
-          <diagramNode
-              href="uidiagram.gmfgraph#AdjMenuStrip"/>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.15/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjMenuStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.15/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.1/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjMenuStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.15/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.2/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjMenuStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.15/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.3/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjMenuStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.15/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.4/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjMenuStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.15/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.5/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjMenuStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.15/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.6/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjMenuStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.15/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.7/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjMenuStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.15/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.8/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjMenuStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.15/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.9/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjMenuStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.15/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.10/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjMenuStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.15/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.11/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjMenuStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.15/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.12/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjMenuStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.15/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.13/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjMenuStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.15/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.14/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjMenuStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.15/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.15/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjMenuStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.15/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.16/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjMenuStrip/lstAdjWidget"/>
-          </children>
-          <compartments
-              children="//@nodes.0/@ownedChild/@children.15/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.15/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.15/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.15/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.15/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.15/@ownedChild/@children.5 //@nodes.0/@ownedChild/@children.15/@ownedChild/@children.6 //@nodes.0/@ownedChild/@children.15/@ownedChild/@children.7 //@nodes.0/@ownedChild/@children.15/@ownedChild/@children.8 //@nodes.0/@ownedChild/@children.15/@ownedChild/@children.9 //@nodes.0/@ownedChild/@children.15/@ownedChild/@children.10 //@nodes.0/@ownedChild/@children.15/@ownedChild/@children.11 //@nodes.0/@ownedChild/@children.15/@ownedChild/@children.12 //@nodes.0/@ownedChild/@children.15/@ownedChild/@children.13 //@nodes.0/@ownedChild/@children.15/@ownedChild/@children.14 //@nodes.0/@ownedChild/@children.15/@ownedChild/@children.15 //@nodes.0/@ownedChild/@children.15/@ownedChild/@children.16">
-            <compartment
-                href="uidiagram.gmfgraph#AdjMenuStripLstAdjWidgetCompartment"/>
-          </compartments>
-        </ownedChild>
-      </children>
-      <children
-          compartment="//@nodes.0/@ownedChild/@compartments.0">
-        <containmentFeature
-            href="uidiagram.ecore#//FormUI/lstAdjWidget"/>
-        <ownedChild
-            relatedDiagrams="//@diagram">
-          <domainMetaElement
-              href="uidiagram.ecore#//AdjToolStrip"/>
-          <labelMappings
-              xsi:type="gmfmap:FeatureLabelMapping">
-            <diagramLabel
-                href="uidiagram.gmfgraph#AdjToolStripLabel"/>
-            <features
-                href="uidiagram.ecore#//AdjWidget/name"/>
-          </labelMappings>
-          <tool
-              xsi:type="gmftool:CreationTool"
-              href="uidiagram.gmftool#//@palette/@tools.0/@tools.16"/>
-          <diagramNode
-              href="uidiagram.gmfgraph#AdjToolStrip"/>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.16/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjToolStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.16/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.1/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjToolStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.16/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.2/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjToolStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.16/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.3/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjToolStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.16/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.4/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjToolStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.16/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.5/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjToolStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.16/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.6/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjToolStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.16/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.7/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjToolStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.16/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.8/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjToolStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.16/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.9/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjToolStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.16/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.10/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjToolStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.16/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.11/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjToolStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.16/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.12/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjToolStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.16/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.13/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjToolStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.16/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.14/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjToolStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.16/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.15/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjToolStrip/lstAdjWidget"/>
-          </children>
-          <children
-              compartment="//@nodes.0/@ownedChild/@children.16/@ownedChild/@compartments.0"
-              referencedChild="//@nodes.0/@ownedChild/@children.16/@ownedChild">
-            <containmentFeature
-                href="uidiagram.ecore#//AdjToolStrip/lstAdjWidget"/>
-          </children>
-          <compartments
-              children="//@nodes.0/@ownedChild/@children.16/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.16/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.16/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.16/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.16/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.16/@ownedChild/@children.5 //@nodes.0/@ownedChild/@children.16/@ownedChild/@children.6 //@nodes.0/@ownedChild/@children.16/@ownedChild/@children.7 //@nodes.0/@ownedChild/@children.16/@ownedChild/@children.8 //@nodes.0/@ownedChild/@children.16/@ownedChild/@children.9 //@nodes.0/@ownedChild/@children.16/@ownedChild/@children.10 //@nodes.0/@ownedChild/@children.16/@ownedChild/@children.11 //@nodes.0/@ownedChild/@children.16/@ownedChild/@children.12 //@nodes.0/@ownedChild/@children.16/@ownedChild/@children.13 //@nodes.0/@ownedChild/@children.16/@ownedChild/@children.14 //@nodes.0/@ownedChild/@children.16/@ownedChild/@children.15 //@nodes.0/@ownedChild/@children.16/@ownedChild/@children.16">
-            <compartment
-                href="uidiagram.gmfgraph#AdjToolStripLstAdjWidgetCompartment"/>
-          </compartments>
-        </ownedChild>
-      </children>
       <compartments
-          children="//@nodes.0/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.5 //@nodes.0/@ownedChild/@children.6 //@nodes.0/@ownedChild/@children.7 //@nodes.0/@ownedChild/@children.8 //@nodes.0/@ownedChild/@children.9 //@nodes.0/@ownedChild/@children.10 //@nodes.0/@ownedChild/@children.11 //@nodes.0/@ownedChild/@children.12 //@nodes.0/@ownedChild/@children.13 //@nodes.0/@ownedChild/@children.14 //@nodes.0/@ownedChild/@children.15 //@nodes.0/@ownedChild/@children.16">
+          children="//@nodes.0/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.5 //@nodes.0/@ownedChild/@children.6 //@nodes.0/@ownedChild/@children.7 //@nodes.0/@ownedChild/@children.8 //@nodes.0/@ownedChild/@children.9 //@nodes.0/@ownedChild/@children.10 //@nodes.0/@ownedChild/@children.11 //@nodes.0/@ownedChild/@children.12 //@nodes.0/@ownedChild/@children.13 //@nodes.0/@ownedChild/@children.14">
         <compartment
             href="uidiagram.gmfgraph#FormUILstAdjWidgetCompartment"/>
       </compartments>

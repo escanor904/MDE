@@ -94,13 +94,13 @@ public interface UidiagramFactory extends EFactory {
 	AdjListBox createAdjListBox();
 
 	/**
-	 * Returns a new object of class '<em>Adj Datepicker</em>'.
+	 * Returns a new object of class '<em>Adj Date Time Picker</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Adj Datepicker</em>'.
+	 * @return a new object of class '<em>Adj Date Time Picker</em>'.
 	 * @generated
 	 */
-	AdjDatepicker createAdjDatepicker();
+	AdjDateTimePicker createAdjDateTimePicker();
 
 	/**
 	 * Returns a new object of class '<em>Adj Text Box</em>'.
@@ -139,49 +139,49 @@ public interface UidiagramFactory extends EFactory {
 	AdjRichTextBox createAdjRichTextBox();
 
 	/**
-	 * Returns a new object of class '<em>Adj Tree View</em>'.
+	 * Returns a new object of class '<em>Adj Combo Box</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Adj Tree View</em>'.
+	 * @return a new object of class '<em>Adj Combo Box</em>'.
 	 * @generated
 	 */
-	AdjTreeView createAdjTreeView();
+	AdjComboBox createAdjComboBox();
 
 	/**
-	 * Returns a new object of class '<em>Adj Property Grid</em>'.
+	 * Returns a new object of class '<em>Adj Radio Button</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Adj Property Grid</em>'.
+	 * @return a new object of class '<em>Adj Radio Button</em>'.
 	 * @generated
 	 */
-	AdjPropertyGrid createAdjPropertyGrid();
+	AdjRadioButton createAdjRadioButton();
 
 	/**
-	 * Returns a new object of class '<em>Adj Progress Bar</em>'.
+	 * Returns a new object of class '<em>Adj Picture Box</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Adj Progress Bar</em>'.
+	 * @return a new object of class '<em>Adj Picture Box</em>'.
 	 * @generated
 	 */
-	AdjProgressBar createAdjProgressBar();
+	AdjPictureBox createAdjPictureBox();
 
 	/**
-	 * Returns a new object of class '<em>Adj Data Grid View</em>'.
+	 * Returns a new object of class '<em>Adj List View</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Adj Data Grid View</em>'.
+	 * @return a new object of class '<em>Adj List View</em>'.
 	 * @generated
 	 */
-	AdjDataGridView createAdjDataGridView();
+	AdjListView createAdjListView();
 
 	/**
-	 * Returns a new object of class '<em>Adj Data Grid View Text Box Column</em>'.
+	 * Returns a new object of class '<em>Adj List View Column</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Adj Data Grid View Text Box Column</em>'.
+	 * @return a new object of class '<em>Adj List View Column</em>'.
 	 * @generated
 	 */
-	AdjDataGridViewTextBoxColumn createAdjDataGridViewTextBoxColumn();
+	AdjListViewColumn createAdjListViewColumn();
 
 	/**
 	 * Returns a new object of class '<em>Adj Panel</em>'.
@@ -200,24 +200,6 @@ public interface UidiagramFactory extends EFactory {
 	 * @generated
 	 */
 	AdjGroupBox createAdjGroupBox();
-
-	/**
-	 * Returns a new object of class '<em>Adj Menu Strip</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Adj Menu Strip</em>'.
-	 * @generated
-	 */
-	AdjMenuStrip createAdjMenuStrip();
-
-	/**
-	 * Returns a new object of class '<em>Adj Tool Strip</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Adj Tool Strip</em>'.
-	 * @generated
-	 */
-	AdjToolStrip createAdjToolStrip();
 
 	/**
 	 * Returns the package supported by this factory.

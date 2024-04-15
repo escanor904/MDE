@@ -28,11 +28,11 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="variable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="positionX" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="positionY" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="width" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="height" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="background" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="positionX" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="positionY" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="width" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="height" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="background" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdjLabel" eSuperTypes="#//AdjWidget">
     <eAnnotations source="gmf.node">
@@ -58,7 +58,7 @@
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="font" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AdjDatepicker" eSuperTypes="#//AdjWidget">
+  <eClassifiers xsi:type="ecore:EClass" name="AdjDateTimePicker" eSuperTypes="#//AdjWidget">
     <eAnnotations source="gmf.node">
       <details key="label" value="name"/>
     </eAnnotations>
@@ -88,34 +88,33 @@
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="font" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AdjTreeView" eSuperTypes="#//AdjWidget">
+  <eClassifiers xsi:type="ecore:EClass" name="AdjComboBox" eSuperTypes="#//AdjWidget">
     <eAnnotations source="gmf.node">
       <details key="label" value="name"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="font" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AdjPropertyGrid" eSuperTypes="#//AdjWidget">
+  <eClassifiers xsi:type="ecore:EClass" name="AdjRadioButton" eSuperTypes="#//AdjWidget">
     <eAnnotations source="gmf.node">
       <details key="label" value="name"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="font" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AdjProgressBar" eSuperTypes="#//AdjWidget">
+  <eClassifiers xsi:type="ecore:EClass" name="AdjPictureBox" eSuperTypes="#//AdjWidget">
     <eAnnotations source="gmf.node">
       <details key="label" value="name"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="font" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AdjDataGridView" eSuperTypes="#//AdjWidget">
+  <eClassifiers xsi:type="ecore:EClass" name="AdjListView" eSuperTypes="#//AdjWidget">
     <eAnnotations source="gmf.node">
       <details key="label" value="name"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="lstAdjDataGridViewTextBoxColumn"
-        upperBound="-1" eType="#//AdjDataGridViewTextBoxColumn" containment="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lstAdjListViewColumn" upperBound="-1"
+        eType="#//AdjListViewColumn" containment="true">
       <eAnnotations source="gmf.compartment"/>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AdjDataGridViewTextBoxColumn">
+  <eClassifiers xsi:type="ecore:EClass" name="AdjListViewColumn">
     <eAnnotations source="gmf.node">
       <details key="label" value="name"/>
     </eAnnotations>
@@ -134,26 +133,6 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdjGroupBox" eSuperTypes="#//AdjWidget">
-    <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
-    </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="font" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="lstAdjWidget" upperBound="-1"
-        eType="#//AdjWidget" containment="true">
-      <eAnnotations source="gmf.compartment"/>
-    </eStructuralFeatures>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AdjMenuStrip" eSuperTypes="#//AdjWidget">
-    <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
-    </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="font" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="lstAdjWidget" upperBound="-1"
-        eType="#//AdjWidget" containment="true">
-      <eAnnotations source="gmf.compartment"/>
-    </eStructuralFeatures>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AdjToolStrip" eSuperTypes="#//AdjWidget">
     <eAnnotations source="gmf.node">
       <details key="label" value="name"/>
     </eAnnotations>

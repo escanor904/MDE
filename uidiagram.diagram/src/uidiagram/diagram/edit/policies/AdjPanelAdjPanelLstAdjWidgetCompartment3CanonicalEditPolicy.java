@@ -28,20 +28,18 @@ import uidiagram.UidiagramPackage;
 import uidiagram.diagram.edit.parts.AdjButton2EditPart;
 import uidiagram.diagram.edit.parts.AdjCheckBox2EditPart;
 import uidiagram.diagram.edit.parts.AdjCheckedListBox2EditPart;
-import uidiagram.diagram.edit.parts.AdjDataGridView2EditPart;
-import uidiagram.diagram.edit.parts.AdjDatepicker2EditPart;
+import uidiagram.diagram.edit.parts.AdjComboBox2EditPart;
+import uidiagram.diagram.edit.parts.AdjDateTimePicker2EditPart;
 import uidiagram.diagram.edit.parts.AdjGroupBoxEditPart;
 import uidiagram.diagram.edit.parts.AdjLabel2EditPart;
 import uidiagram.diagram.edit.parts.AdjLinkLabel2EditPart;
 import uidiagram.diagram.edit.parts.AdjListBox2EditPart;
-import uidiagram.diagram.edit.parts.AdjMenuStripEditPart;
+import uidiagram.diagram.edit.parts.AdjListView2EditPart;
 import uidiagram.diagram.edit.parts.AdjPanel2EditPart;
-import uidiagram.diagram.edit.parts.AdjProgressBar2EditPart;
-import uidiagram.diagram.edit.parts.AdjPropertyGrid2EditPart;
+import uidiagram.diagram.edit.parts.AdjPictureBox2EditPart;
+import uidiagram.diagram.edit.parts.AdjRadioButton2EditPart;
 import uidiagram.diagram.edit.parts.AdjRichTextBox2EditPart;
 import uidiagram.diagram.edit.parts.AdjTextBox2EditPart;
-import uidiagram.diagram.edit.parts.AdjToolStripEditPart;
-import uidiagram.diagram.edit.parts.AdjTreeView2EditPart;
 import uidiagram.diagram.part.UidiagramDiagramUpdater;
 import uidiagram.diagram.part.UidiagramNodeDescriptor;
 import uidiagram.diagram.part.UidiagramVisualIDRegistry;
@@ -103,19 +101,17 @@ public class AdjPanelAdjPanelLstAdjWidgetCompartment3CanonicalEditPolicy extends
 		case AdjCheckBox2EditPart.VISUAL_ID:
 		case AdjButton2EditPart.VISUAL_ID:
 		case AdjListBox2EditPart.VISUAL_ID:
-		case AdjDatepicker2EditPart.VISUAL_ID:
+		case AdjDateTimePicker2EditPart.VISUAL_ID:
 		case AdjTextBox2EditPart.VISUAL_ID:
 		case AdjCheckedListBox2EditPart.VISUAL_ID:
 		case AdjLinkLabel2EditPart.VISUAL_ID:
 		case AdjRichTextBox2EditPart.VISUAL_ID:
-		case AdjTreeView2EditPart.VISUAL_ID:
-		case AdjPropertyGrid2EditPart.VISUAL_ID:
-		case AdjProgressBar2EditPart.VISUAL_ID:
-		case AdjDataGridView2EditPart.VISUAL_ID:
+		case AdjComboBox2EditPart.VISUAL_ID:
+		case AdjRadioButton2EditPart.VISUAL_ID:
+		case AdjPictureBox2EditPart.VISUAL_ID:
+		case AdjListView2EditPart.VISUAL_ID:
 		case AdjPanel2EditPart.VISUAL_ID:
 		case AdjGroupBoxEditPart.VISUAL_ID:
-		case AdjMenuStripEditPart.VISUAL_ID:
-		case AdjToolStripEditPart.VISUAL_ID:
 			return true;
 		}
 		return false;

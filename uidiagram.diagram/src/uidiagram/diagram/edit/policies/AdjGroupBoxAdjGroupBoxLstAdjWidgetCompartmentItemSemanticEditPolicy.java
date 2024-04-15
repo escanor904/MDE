@@ -9,20 +9,18 @@ import org.eclipse.gmf.runtime.emf.type.core.requests.CreateElementRequest;
 import uidiagram.diagram.edit.commands.AdjButton3CreateCommand;
 import uidiagram.diagram.edit.commands.AdjCheckBox3CreateCommand;
 import uidiagram.diagram.edit.commands.AdjCheckedListBox3CreateCommand;
-import uidiagram.diagram.edit.commands.AdjDataGridView3CreateCommand;
-import uidiagram.diagram.edit.commands.AdjDatepicker3CreateCommand;
-import uidiagram.diagram.edit.commands.AdjGroupBox3CreateCommand;
+import uidiagram.diagram.edit.commands.AdjComboBox3CreateCommand;
+import uidiagram.diagram.edit.commands.AdjDateTimePicker3CreateCommand;
+import uidiagram.diagram.edit.commands.AdjGroupBox2CreateCommand;
 import uidiagram.diagram.edit.commands.AdjLabel3CreateCommand;
 import uidiagram.diagram.edit.commands.AdjLinkLabel3CreateCommand;
 import uidiagram.diagram.edit.commands.AdjListBox3CreateCommand;
-import uidiagram.diagram.edit.commands.AdjMenuStrip2CreateCommand;
+import uidiagram.diagram.edit.commands.AdjListView3CreateCommand;
 import uidiagram.diagram.edit.commands.AdjPanel3CreateCommand;
-import uidiagram.diagram.edit.commands.AdjProgressBar3CreateCommand;
-import uidiagram.diagram.edit.commands.AdjPropertyGrid3CreateCommand;
+import uidiagram.diagram.edit.commands.AdjPictureBox3CreateCommand;
+import uidiagram.diagram.edit.commands.AdjRadioButton3CreateCommand;
 import uidiagram.diagram.edit.commands.AdjRichTextBox3CreateCommand;
 import uidiagram.diagram.edit.commands.AdjTextBox3CreateCommand;
-import uidiagram.diagram.edit.commands.AdjToolStrip2CreateCommand;
-import uidiagram.diagram.edit.commands.AdjTreeView3CreateCommand;
 import uidiagram.diagram.providers.UidiagramElementTypes;
 
 /**
@@ -54,8 +52,8 @@ public class AdjGroupBoxAdjGroupBoxLstAdjWidgetCompartmentItemSemanticEditPolicy
 		if (UidiagramElementTypes.AdjListBox_3034 == req.getElementType()) {
 			return getGEFWrapper(new AdjListBox3CreateCommand(req));
 		}
-		if (UidiagramElementTypes.AdjDatepicker_3035 == req.getElementType()) {
-			return getGEFWrapper(new AdjDatepicker3CreateCommand(req));
+		if (UidiagramElementTypes.AdjDateTimePicker_3104 == req.getElementType()) {
+			return getGEFWrapper(new AdjDateTimePicker3CreateCommand(req));
 		}
 		if (UidiagramElementTypes.AdjTextBox_3036 == req.getElementType()) {
 			return getGEFWrapper(new AdjTextBox3CreateCommand(req));
@@ -69,29 +67,23 @@ public class AdjGroupBoxAdjGroupBoxLstAdjWidgetCompartmentItemSemanticEditPolicy
 		if (UidiagramElementTypes.AdjRichTextBox_3039 == req.getElementType()) {
 			return getGEFWrapper(new AdjRichTextBox3CreateCommand(req));
 		}
-		if (UidiagramElementTypes.AdjTreeView_3040 == req.getElementType()) {
-			return getGEFWrapper(new AdjTreeView3CreateCommand(req));
+		if (UidiagramElementTypes.AdjComboBox_3089 == req.getElementType()) {
+			return getGEFWrapper(new AdjComboBox3CreateCommand(req));
 		}
-		if (UidiagramElementTypes.AdjPropertyGrid_3041 == req.getElementType()) {
-			return getGEFWrapper(new AdjPropertyGrid3CreateCommand(req));
+		if (UidiagramElementTypes.AdjRadioButton_3105 == req.getElementType()) {
+			return getGEFWrapper(new AdjRadioButton3CreateCommand(req));
 		}
-		if (UidiagramElementTypes.AdjProgressBar_3042 == req.getElementType()) {
-			return getGEFWrapper(new AdjProgressBar3CreateCommand(req));
+		if (UidiagramElementTypes.AdjPictureBox_3106 == req.getElementType()) {
+			return getGEFWrapper(new AdjPictureBox3CreateCommand(req));
 		}
-		if (UidiagramElementTypes.AdjDataGridView_3043 == req.getElementType()) {
-			return getGEFWrapper(new AdjDataGridView3CreateCommand(req));
+		if (UidiagramElementTypes.AdjListView_3095 == req.getElementType()) {
+			return getGEFWrapper(new AdjListView3CreateCommand(req));
 		}
 		if (UidiagramElementTypes.AdjPanel_3044 == req.getElementType()) {
 			return getGEFWrapper(new AdjPanel3CreateCommand(req));
 		}
 		if (UidiagramElementTypes.AdjGroupBox_3076 == req.getElementType()) {
-			return getGEFWrapper(new AdjGroupBox3CreateCommand(req));
-		}
-		if (UidiagramElementTypes.AdjMenuStrip_3077 == req.getElementType()) {
-			return getGEFWrapper(new AdjMenuStrip2CreateCommand(req));
-		}
-		if (UidiagramElementTypes.AdjToolStrip_3079 == req.getElementType()) {
-			return getGEFWrapper(new AdjToolStrip2CreateCommand(req));
+			return getGEFWrapper(new AdjGroupBox2CreateCommand(req));
 		}
 		return super.getCreateCommand(req);
 	}

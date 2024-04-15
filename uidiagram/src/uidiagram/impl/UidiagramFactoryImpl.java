@@ -64,20 +64,18 @@ public class UidiagramFactoryImpl extends EFactoryImpl implements UidiagramFacto
 			case UidiagramPackage.ADJ_CHECK_BOX: return createAdjCheckBox();
 			case UidiagramPackage.ADJ_BUTTON: return createAdjButton();
 			case UidiagramPackage.ADJ_LIST_BOX: return createAdjListBox();
-			case UidiagramPackage.ADJ_DATEPICKER: return createAdjDatepicker();
+			case UidiagramPackage.ADJ_DATE_TIME_PICKER: return createAdjDateTimePicker();
 			case UidiagramPackage.ADJ_TEXT_BOX: return createAdjTextBox();
 			case UidiagramPackage.ADJ_CHECKED_LIST_BOX: return createAdjCheckedListBox();
 			case UidiagramPackage.ADJ_LINK_LABEL: return createAdjLinkLabel();
 			case UidiagramPackage.ADJ_RICH_TEXT_BOX: return createAdjRichTextBox();
-			case UidiagramPackage.ADJ_TREE_VIEW: return createAdjTreeView();
-			case UidiagramPackage.ADJ_PROPERTY_GRID: return createAdjPropertyGrid();
-			case UidiagramPackage.ADJ_PROGRESS_BAR: return createAdjProgressBar();
-			case UidiagramPackage.ADJ_DATA_GRID_VIEW: return createAdjDataGridView();
-			case UidiagramPackage.ADJ_DATA_GRID_VIEW_TEXT_BOX_COLUMN: return createAdjDataGridViewTextBoxColumn();
+			case UidiagramPackage.ADJ_COMBO_BOX: return createAdjComboBox();
+			case UidiagramPackage.ADJ_RADIO_BUTTON: return createAdjRadioButton();
+			case UidiagramPackage.ADJ_PICTURE_BOX: return createAdjPictureBox();
+			case UidiagramPackage.ADJ_LIST_VIEW: return createAdjListView();
+			case UidiagramPackage.ADJ_LIST_VIEW_COLUMN: return createAdjListViewColumn();
 			case UidiagramPackage.ADJ_PANEL: return createAdjPanel();
 			case UidiagramPackage.ADJ_GROUP_BOX: return createAdjGroupBox();
-			case UidiagramPackage.ADJ_MENU_STRIP: return createAdjMenuStrip();
-			case UidiagramPackage.ADJ_TOOL_STRIP: return createAdjToolStrip();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -168,9 +166,9 @@ public class UidiagramFactoryImpl extends EFactoryImpl implements UidiagramFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AdjDatepicker createAdjDatepicker() {
-		AdjDatepickerImpl adjDatepicker = new AdjDatepickerImpl();
-		return adjDatepicker;
+	public AdjDateTimePicker createAdjDateTimePicker() {
+		AdjDateTimePickerImpl adjDateTimePicker = new AdjDateTimePickerImpl();
+		return adjDateTimePicker;
 	}
 
 	/**
@@ -218,9 +216,9 @@ public class UidiagramFactoryImpl extends EFactoryImpl implements UidiagramFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AdjTreeView createAdjTreeView() {
-		AdjTreeViewImpl adjTreeView = new AdjTreeViewImpl();
-		return adjTreeView;
+	public AdjComboBox createAdjComboBox() {
+		AdjComboBoxImpl adjComboBox = new AdjComboBoxImpl();
+		return adjComboBox;
 	}
 
 	/**
@@ -228,9 +226,9 @@ public class UidiagramFactoryImpl extends EFactoryImpl implements UidiagramFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AdjPropertyGrid createAdjPropertyGrid() {
-		AdjPropertyGridImpl adjPropertyGrid = new AdjPropertyGridImpl();
-		return adjPropertyGrid;
+	public AdjRadioButton createAdjRadioButton() {
+		AdjRadioButtonImpl adjRadioButton = new AdjRadioButtonImpl();
+		return adjRadioButton;
 	}
 
 	/**
@@ -238,9 +236,9 @@ public class UidiagramFactoryImpl extends EFactoryImpl implements UidiagramFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AdjProgressBar createAdjProgressBar() {
-		AdjProgressBarImpl adjProgressBar = new AdjProgressBarImpl();
-		return adjProgressBar;
+	public AdjPictureBox createAdjPictureBox() {
+		AdjPictureBoxImpl adjPictureBox = new AdjPictureBoxImpl();
+		return adjPictureBox;
 	}
 
 	/**
@@ -248,9 +246,9 @@ public class UidiagramFactoryImpl extends EFactoryImpl implements UidiagramFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AdjDataGridView createAdjDataGridView() {
-		AdjDataGridViewImpl adjDataGridView = new AdjDataGridViewImpl();
-		return adjDataGridView;
+	public AdjListView createAdjListView() {
+		AdjListViewImpl adjListView = new AdjListViewImpl();
+		return adjListView;
 	}
 
 	/**
@@ -258,9 +256,9 @@ public class UidiagramFactoryImpl extends EFactoryImpl implements UidiagramFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AdjDataGridViewTextBoxColumn createAdjDataGridViewTextBoxColumn() {
-		AdjDataGridViewTextBoxColumnImpl adjDataGridViewTextBoxColumn = new AdjDataGridViewTextBoxColumnImpl();
-		return adjDataGridViewTextBoxColumn;
+	public AdjListViewColumn createAdjListViewColumn() {
+		AdjListViewColumnImpl adjListViewColumn = new AdjListViewColumnImpl();
+		return adjListViewColumn;
 	}
 
 	/**
@@ -281,26 +279,6 @@ public class UidiagramFactoryImpl extends EFactoryImpl implements UidiagramFacto
 	public AdjGroupBox createAdjGroupBox() {
 		AdjGroupBoxImpl adjGroupBox = new AdjGroupBoxImpl();
 		return adjGroupBox;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AdjMenuStrip createAdjMenuStrip() {
-		AdjMenuStripImpl adjMenuStrip = new AdjMenuStripImpl();
-		return adjMenuStrip;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AdjToolStrip createAdjToolStrip() {
-		AdjToolStripImpl adjToolStrip = new AdjToolStripImpl();
-		return adjToolStrip;
 	}
 
 	/**

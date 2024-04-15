@@ -50,14 +50,14 @@
       </actualFigure>
       <accessors accessor="getFigureAdjListBoxLabelFigure" figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
     </descriptors>
-    <descriptors name="AdjDatepickerFigure">
-      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AdjDatepickerFigure">
+    <descriptors name="AdjDateTimePickerFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AdjDateTimePickerFigure">
         <border xsi:type="gmfgraph:MarginBorder">
           <insets top="5" left="5" bottom="5" right="5"/>
         </border>
-        <children xsi:type="gmfgraph:Label" name="AdjDatepickerLabelFigure" text="AdjDatepicker"/>
+        <children xsi:type="gmfgraph:Label" name="AdjDateTimePickerLabelFigure" text="AdjDateTimePicker"/>
       </actualFigure>
-      <accessors accessor="getFigureAdjDatepickerLabelFigure" figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
+      <accessors accessor="getFigureAdjDateTimePickerLabelFigure" figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors name="AdjTextBoxFigure">
       <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AdjTextBoxFigure">
@@ -95,54 +95,54 @@
       </actualFigure>
       <accessors accessor="getFigureAdjRichTextBoxLabelFigure" figure="//@figures.0/@descriptors.9/@actualFigure/@children.0"/>
     </descriptors>
-    <descriptors name="AdjTreeViewFigure">
-      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AdjTreeViewFigure">
+    <descriptors name="AdjComboBoxFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AdjComboBoxFigure">
         <border xsi:type="gmfgraph:MarginBorder">
           <insets top="5" left="5" bottom="5" right="5"/>
         </border>
-        <children xsi:type="gmfgraph:Label" name="AdjTreeViewLabelFigure" text="AdjTreeView"/>
+        <children xsi:type="gmfgraph:Label" name="AdjComboBoxLabelFigure" text="AdjComboBox"/>
       </actualFigure>
-      <accessors accessor="getFigureAdjTreeViewLabelFigure" figure="//@figures.0/@descriptors.10/@actualFigure/@children.0"/>
+      <accessors accessor="getFigureAdjComboBoxLabelFigure" figure="//@figures.0/@descriptors.10/@actualFigure/@children.0"/>
     </descriptors>
-    <descriptors name="AdjPropertyGridFigure">
-      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AdjPropertyGridFigure">
+    <descriptors name="AdjRadioButtonFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AdjRadioButtonFigure">
         <border xsi:type="gmfgraph:MarginBorder">
           <insets top="5" left="5" bottom="5" right="5"/>
         </border>
-        <children xsi:type="gmfgraph:Label" name="AdjPropertyGridLabelFigure" text="AdjPropertyGrid"/>
+        <children xsi:type="gmfgraph:Label" name="AdjRadioButtonLabelFigure" text="AdjRadioButton"/>
       </actualFigure>
-      <accessors accessor="getFigureAdjPropertyGridLabelFigure" figure="//@figures.0/@descriptors.11/@actualFigure/@children.0"/>
+      <accessors accessor="getFigureAdjRadioButtonLabelFigure" figure="//@figures.0/@descriptors.11/@actualFigure/@children.0"/>
     </descriptors>
-    <descriptors name="AdjProgressBarFigure">
-      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AdjProgressBarFigure">
+    <descriptors name="AdjPictureBoxFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AdjPictureBoxFigure">
         <border xsi:type="gmfgraph:MarginBorder">
           <insets top="5" left="5" bottom="5" right="5"/>
         </border>
-        <children xsi:type="gmfgraph:Label" name="AdjProgressBarLabelFigure" text="AdjProgressBar"/>
+        <children xsi:type="gmfgraph:Label" name="AdjPictureBoxLabelFigure" text="AdjPictureBox"/>
       </actualFigure>
-      <accessors accessor="getFigureAdjProgressBarLabelFigure" figure="//@figures.0/@descriptors.12/@actualFigure/@children.0"/>
+      <accessors accessor="getFigureAdjPictureBoxLabelFigure" figure="//@figures.0/@descriptors.12/@actualFigure/@children.0"/>
     </descriptors>
-    <descriptors name="AdjDataGridViewFigure">
-      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AdjDataGridViewFigure">
+    <descriptors name="AdjListViewFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AdjListViewFigure">
         <border xsi:type="gmfgraph:MarginBorder">
           <insets top="5" left="5" bottom="5" right="5"/>
         </border>
-        <children xsi:type="gmfgraph:Label" name="AdjDataGridViewLabelFigure" text="AdjDataGridView">
+        <children xsi:type="gmfgraph:Label" name="AdjListViewLabelFigure" text="AdjListView">
           <maximumSize dx="10000" dy="50"/>
         </children>
-        <children xsi:type="gmfgraph:Rectangle" name="AdjDataGridViewLstAdjDataGridViewTextBoxColumnCompartmentFigure" outline="false"/>
+        <children xsi:type="gmfgraph:Rectangle" name="AdjListViewLstAdjListViewColumnCompartmentFigure" outline="false"/>
       </actualFigure>
-      <accessors accessor="getFigureAdjDataGridViewLabelFigure" figure="//@figures.0/@descriptors.13/@actualFigure/@children.0"/>
-      <accessors accessor="getAdjDataGridViewLstAdjDataGridViewTextBoxColumnCompartmentFigure" figure="//@figures.0/@descriptors.13/@actualFigure/@children.1"/>
+      <accessors accessor="getFigureAdjListViewLabelFigure" figure="//@figures.0/@descriptors.13/@actualFigure/@children.0"/>
+      <accessors accessor="getAdjListViewLstAdjListViewColumnCompartmentFigure" figure="//@figures.0/@descriptors.13/@actualFigure/@children.1"/>
     </descriptors>
-    <descriptors name="AdjDataGridViewTextBoxColumnFigure">
-      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AdjDataGridViewTextBoxColumnFigure">
+    <descriptors name="AdjListViewColumnFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AdjListViewColumnFigure">
         <border xsi:type="gmfgraph:MarginBorder">
           <insets top="5" left="5" bottom="5" right="5"/>
         </border>
-        <children xsi:type="gmfgraph:Label" name="AdjDataGridViewTextBoxColumnLabelFigure" text="AdjDataGridViewTextBoxColumn"/>
+        <children xsi:type="gmfgraph:Label" name="AdjListViewColumnLabelFigure" text="AdjListViewColumn"/>
       </actualFigure>
-      <accessors accessor="getFigureAdjDataGridViewTextBoxColumnLabelFigure" figure="//@figures.0/@descriptors.14/@actualFigure/@children.0"/>
+      <accessors accessor="getFigureAdjListViewColumnLabelFigure" figure="//@figures.0/@descriptors.14/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors name="AdjPanelFigure">
       <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AdjPanelFigure">
@@ -170,75 +170,43 @@
       <accessors accessor="getFigureAdjGroupBoxLabelFigure" figure="//@figures.0/@descriptors.16/@actualFigure/@children.0"/>
       <accessors accessor="getAdjGroupBoxLstAdjWidgetCompartmentFigure" figure="//@figures.0/@descriptors.16/@actualFigure/@children.1"/>
     </descriptors>
-    <descriptors name="AdjMenuStripFigure">
-      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AdjMenuStripFigure">
-        <border xsi:type="gmfgraph:MarginBorder">
-          <insets top="5" left="5" bottom="5" right="5"/>
-        </border>
-        <children xsi:type="gmfgraph:Label" name="AdjMenuStripLabelFigure" text="AdjMenuStrip">
-          <maximumSize dx="10000" dy="50"/>
-        </children>
-        <children xsi:type="gmfgraph:Rectangle" name="AdjMenuStripLstAdjWidgetCompartmentFigure" outline="false"/>
-      </actualFigure>
-      <accessors accessor="getFigureAdjMenuStripLabelFigure" figure="//@figures.0/@descriptors.17/@actualFigure/@children.0"/>
-      <accessors accessor="getAdjMenuStripLstAdjWidgetCompartmentFigure" figure="//@figures.0/@descriptors.17/@actualFigure/@children.1"/>
-    </descriptors>
-    <descriptors name="AdjToolStripFigure">
-      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AdjToolStripFigure">
-        <border xsi:type="gmfgraph:MarginBorder">
-          <insets top="5" left="5" bottom="5" right="5"/>
-        </border>
-        <children xsi:type="gmfgraph:Label" name="AdjToolStripLabelFigure" text="AdjToolStrip">
-          <maximumSize dx="10000" dy="50"/>
-        </children>
-        <children xsi:type="gmfgraph:Rectangle" name="AdjToolStripLstAdjWidgetCompartmentFigure" outline="false"/>
-      </actualFigure>
-      <accessors accessor="getFigureAdjToolStripLabelFigure" figure="//@figures.0/@descriptors.18/@actualFigure/@children.0"/>
-      <accessors accessor="getAdjToolStripLstAdjWidgetCompartmentFigure" figure="//@figures.0/@descriptors.18/@actualFigure/@children.1"/>
-    </descriptors>
   </figures>
   <nodes name="FormUI" figure="FormUIFigure"/>
   <nodes name="AdjLabel" figure="AdjLabelFigure"/>
   <nodes name="AdjCheckBox" figure="AdjCheckBoxFigure"/>
   <nodes name="AdjButton" figure="AdjButtonFigure"/>
   <nodes name="AdjListBox" figure="AdjListBoxFigure"/>
-  <nodes name="AdjDatepicker" figure="AdjDatepickerFigure"/>
+  <nodes name="AdjDateTimePicker" figure="AdjDateTimePickerFigure"/>
   <nodes name="AdjTextBox" figure="AdjTextBoxFigure"/>
   <nodes name="AdjCheckedListBox" figure="AdjCheckedListBoxFigure"/>
   <nodes name="AdjLinkLabel" figure="AdjLinkLabelFigure"/>
   <nodes name="AdjRichTextBox" figure="AdjRichTextBoxFigure"/>
-  <nodes name="AdjTreeView" figure="AdjTreeViewFigure"/>
-  <nodes name="AdjPropertyGrid" figure="AdjPropertyGridFigure"/>
-  <nodes name="AdjProgressBar" figure="AdjProgressBarFigure"/>
-  <nodes name="AdjDataGridView" figure="AdjDataGridViewFigure"/>
-  <nodes name="AdjDataGridViewTextBoxColumn" figure="AdjDataGridViewTextBoxColumnFigure"/>
+  <nodes name="AdjComboBox" figure="AdjComboBoxFigure"/>
+  <nodes name="AdjRadioButton" figure="AdjRadioButtonFigure"/>
+  <nodes name="AdjPictureBox" figure="AdjPictureBoxFigure"/>
+  <nodes name="AdjListView" figure="AdjListViewFigure"/>
+  <nodes name="AdjListViewColumn" figure="AdjListViewColumnFigure"/>
   <nodes name="AdjPanel" figure="AdjPanelFigure"/>
   <nodes name="AdjGroupBox" figure="AdjGroupBoxFigure"/>
-  <nodes name="AdjMenuStrip" figure="AdjMenuStripFigure"/>
-  <nodes name="AdjToolStrip" figure="AdjToolStripFigure"/>
   <compartments name="FormUILstAdjWidgetCompartment" figure="FormUIFigure" collapsible="true" accessor="//@figures.0/@descriptors.0/@accessors.1"/>
-  <compartments name="AdjDataGridViewLstAdjDataGridViewTextBoxColumnCompartment" figure="AdjDataGridViewFigure" collapsible="true" accessor="//@figures.0/@descriptors.13/@accessors.1"/>
+  <compartments name="AdjListViewLstAdjListViewColumnCompartment" figure="AdjListViewFigure" collapsible="true" accessor="//@figures.0/@descriptors.13/@accessors.1"/>
   <compartments name="AdjPanelLstAdjWidgetCompartment" figure="AdjPanelFigure" collapsible="true" accessor="//@figures.0/@descriptors.15/@accessors.1"/>
   <compartments name="AdjGroupBoxLstAdjWidgetCompartment" figure="AdjGroupBoxFigure" collapsible="true" accessor="//@figures.0/@descriptors.16/@accessors.1"/>
-  <compartments name="AdjMenuStripLstAdjWidgetCompartment" figure="AdjMenuStripFigure" collapsible="true" accessor="//@figures.0/@descriptors.17/@accessors.1"/>
-  <compartments name="AdjToolStripLstAdjWidgetCompartment" figure="AdjToolStripFigure" collapsible="true" accessor="//@figures.0/@descriptors.18/@accessors.1"/>
   <labels name="FormUILabel" figure="FormUIFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
   <labels name="AdjLabelLabel" figure="AdjLabelFigure" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
   <labels name="AdjCheckBoxLabel" figure="AdjCheckBoxFigure" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
   <labels name="AdjButtonLabel" figure="AdjButtonFigure" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
   <labels name="AdjListBoxLabel" figure="AdjListBoxFigure" accessor="//@figures.0/@descriptors.4/@accessors.0"/>
-  <labels name="AdjDatepickerLabel" figure="AdjDatepickerFigure" accessor="//@figures.0/@descriptors.5/@accessors.0"/>
+  <labels name="AdjDateTimePickerLabel" figure="AdjDateTimePickerFigure" accessor="//@figures.0/@descriptors.5/@accessors.0"/>
   <labels name="AdjTextBoxLabel" figure="AdjTextBoxFigure" accessor="//@figures.0/@descriptors.6/@accessors.0"/>
   <labels name="AdjCheckedListBoxLabel" figure="AdjCheckedListBoxFigure" accessor="//@figures.0/@descriptors.7/@accessors.0"/>
   <labels name="AdjLinkLabelLabel" figure="AdjLinkLabelFigure" accessor="//@figures.0/@descriptors.8/@accessors.0"/>
   <labels name="AdjRichTextBoxLabel" figure="AdjRichTextBoxFigure" accessor="//@figures.0/@descriptors.9/@accessors.0"/>
-  <labels name="AdjTreeViewLabel" figure="AdjTreeViewFigure" accessor="//@figures.0/@descriptors.10/@accessors.0"/>
-  <labels name="AdjPropertyGridLabel" figure="AdjPropertyGridFigure" accessor="//@figures.0/@descriptors.11/@accessors.0"/>
-  <labels name="AdjProgressBarLabel" figure="AdjProgressBarFigure" accessor="//@figures.0/@descriptors.12/@accessors.0"/>
-  <labels name="AdjDataGridViewLabel" figure="AdjDataGridViewFigure" accessor="//@figures.0/@descriptors.13/@accessors.0"/>
-  <labels name="AdjDataGridViewTextBoxColumnLabel" figure="AdjDataGridViewTextBoxColumnFigure" accessor="//@figures.0/@descriptors.14/@accessors.0"/>
+  <labels name="AdjComboBoxLabel" figure="AdjComboBoxFigure" accessor="//@figures.0/@descriptors.10/@accessors.0"/>
+  <labels name="AdjRadioButtonLabel" figure="AdjRadioButtonFigure" accessor="//@figures.0/@descriptors.11/@accessors.0"/>
+  <labels name="AdjPictureBoxLabel" figure="AdjPictureBoxFigure" accessor="//@figures.0/@descriptors.12/@accessors.0"/>
+  <labels name="AdjListViewLabel" figure="AdjListViewFigure" accessor="//@figures.0/@descriptors.13/@accessors.0"/>
+  <labels name="AdjListViewColumnLabel" figure="AdjListViewColumnFigure" accessor="//@figures.0/@descriptors.14/@accessors.0"/>
   <labels name="AdjPanelLabel" figure="AdjPanelFigure" accessor="//@figures.0/@descriptors.15/@accessors.0"/>
   <labels name="AdjGroupBoxLabel" figure="AdjGroupBoxFigure" accessor="//@figures.0/@descriptors.16/@accessors.0"/>
-  <labels name="AdjMenuStripLabel" figure="AdjMenuStripFigure" accessor="//@figures.0/@descriptors.17/@accessors.0"/>
-  <labels name="AdjToolStripLabel" figure="AdjToolStripFigure" accessor="//@figures.0/@descriptors.18/@accessors.0"/>
 </gmfgraph:Canvas>
