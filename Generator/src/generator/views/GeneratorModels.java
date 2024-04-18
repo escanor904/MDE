@@ -80,7 +80,7 @@ public class GeneratorModels extends ViewPart {
 		lblTransformationModelTo.setFont(SWTResourceManager.getFont("Segoe UI", 9, SWT.BOLD));
 		lblTransformationModelTo.setForeground(SWTResourceManager.getColor(0, 0, 128));
 		lblTransformationModelTo.setBounds(10, 0, 219, 24);
-		lblTransformationModelTo.setText("Transformation Model to Model (M2M)");
+		lblTransformationModelTo.setText("Model to Model (M2M) Transformation ");
 		
 		Button btnNewButton = new Button(group, SWT.NONE);
 		btnNewButton.addSelectionListener(new SelectionAdapter() {
@@ -96,7 +96,7 @@ public class GeneratorModels extends ViewPart {
 			}
 		});
 		btnNewButton.setBounds(78, 36, 369, 25);
-		btnNewButton.setText("Generate Transformation Model to Model");
+		btnNewButton.setText("Generate Model to Model Transformation ");
 		
 		Group group_1 = new Group(parent, SWT.NONE);
 		group_1.setBounds(22, 177, 531, 82);
@@ -105,7 +105,7 @@ public class GeneratorModels extends ViewPart {
 		lblTransformacionModelTo.setFont(SWTResourceManager.getFont("Segoe UI", 9, SWT.BOLD));
 		lblTransformacionModelTo.setForeground(SWTResourceManager.getColor(0, 0, 128));
 		lblTransformacionModelTo.setBounds(10, 0, 235, 15);
-		lblTransformacionModelTo.setText("Transformacion Model To Text (M2T)");
+		lblTransformacionModelTo.setText("Model To Text (M2T) Transformation");
 		
 		Button btnGenerateCodeJava = new Button(group_1, SWT.NONE);
 		btnGenerateCodeJava.addSelectionListener(new SelectionAdapter() {
@@ -122,6 +122,26 @@ public class GeneratorModels extends ViewPart {
 		});
 		btnGenerateCodeJava.setBounds(79, 31, 362, 25);
 		btnGenerateCodeJava.setText("Generate C# Code");
+		
+		Group group_1_1 = new Group(parent, SWT.NONE);
+		group_1_1.setBounds(22, 279, 531, 82);
+		
+		Label lblTransformationModelUi = new Label(group_1_1, SWT.NONE);
+		lblTransformationModelUi.setText("Model UI To Text Transformation ");
+		lblTransformationModelUi.setForeground(SWTResourceManager.getColor(0, 0, 128));
+		lblTransformationModelUi.setFont(SWTResourceManager.getFont("Segoe UI", 9, SWT.BOLD));
+		lblTransformationModelUi.setBounds(10, 0, 235, 15);
+		
+		Button btnGenerateCUi = new Button(group_1_1, SWT.NONE);
+		btnGenerateCUi.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				ModelFactoryModel mfm = ModelFactoryModel.getInstance();
+				mfm.transformationM2TUIDiagram();
+			}
+		});
+		btnGenerateCUi.setText("Generate C# UI");
+		btnGenerateCUi.setBounds(79, 31, 362, 25);
 		// TODO Auto-generated method stub
 		
 	}

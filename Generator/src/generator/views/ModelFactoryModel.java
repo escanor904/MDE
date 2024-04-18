@@ -36,6 +36,9 @@ import concretemodel.ModelFactoryConcrete;
 import concretemodel.PackageConcreteAdj;
 import concretemodel.ProjectAdj;
 import concretemodel.RelationshipAdj;
+import uidiagram.ModelFactoryUI;
+import uidiagram.UidiagramFactory;
+import uidiagram.UidiagramPackage;
 
 public class ModelFactoryModel {
 
@@ -57,6 +60,7 @@ public class ModelFactoryModel {
 	// Creacion de las factories
 	ModelFactoryConcrete modelFactoryConcreta = ConcretemodelFactory.eINSTANCE.createModelFactoryConcrete();
 	ModelFactoryAbstract modelFactoryAbstracta = AbstractmodelFactoryImpl.eINSTANCE.createModelFactoryAbstract();
+	ModelFactoryUI modelFactoryUIDiagram = UidiagramFactory.eINSTANCE.createModelFactoryUI();
 	
 	//Variable de la ruta del proyecto
 	private String rutaProyecto;
@@ -67,7 +71,10 @@ public class ModelFactoryModel {
 	public ModelFactoryModel() {
 		modelFactoryConcreta = loadConcreteModel();
 		modelFactoryAbstracta = loadAbstractaModel();
+		modelFactoryUIDiagram = loadUIDiagramModel();
 	}
+	
+	
 
 	// -----------------------------------------------------------------Load and
 	// Save ModelFactorys
@@ -118,6 +125,31 @@ public class ModelFactoryModel {
 		}
 		return modelFactoryAbstracta;
 	}
+	
+	
+	/**
+	 * Este metodo permite cargar el modelFactoryUI del diagrama de clases
+	 * @return
+	 */
+	private ModelFactoryUI loadUIDiagramModel() {
+		ModelFactoryUI modelFactoryUI = null;
+		UidiagramPackage whoownmePackage = UidiagramPackage.eINSTANCE;
+		org.eclipse.emf.ecore.resource.ResourceSet resourceSet = new org.eclipse.emf.ecore.resource.impl.ResourceSetImpl();
+		org.eclipse.emf.common.util.URI uri = org.eclipse.emf.common.util.URI
+				.createURI("platform:/resource/test/src/model.uidiagram");
+		org.eclipse.emf.ecore.resource.Resource resource = resourceSet.createResource(uri);
+		try {
+			resource.load(null);
+			modelFactoryUI = (ModelFactoryUI) resource.getContents().get(0);
+			System.out.println("loaded: " + modelFactoryUI);
+		} catch (java.io.IOException e) {
+			System.out.println("failed to read " + uri);
+			System.out.println(e);
+		}
+		return modelFactoryUI;
+	}
+	
+	
 
 	/**
 	 * Este metodo permite guardar el ModelFactorySpecific del diagrama de clases
@@ -139,12 +171,12 @@ public class ModelFactoryModel {
 		}
 	}
 
-	//
-	//
-	//
-	// /**
-	// * Este metodo permite guardar el ModelFactoryAbstract del diagrama de clases
-	// */
+	
+	
+	
+	 /**
+	 * Este metodo permite guardar el ModelFactoryAbstract del diagrama de clases
+	 */
 	public void saveAbstracta() {
 
 		// EXISTEN 2 FORMAS DE GUARDAR EL RECURSO
@@ -161,17 +193,36 @@ public class ModelFactoryModel {
 			e.printStackTrace();
 		}
 	}
+	
+	/**
+	 * 
+	 */
+	public void saveUIDiagram() {
 
-	//
-	//
-	//
-	// // ----------------------------------------- Tranformacion M2M de parte
-	// especifica a parte a abstracta -------------------------------------------
-	//
-	// /**
-	// * Este metodo realiza la transformacion del modelo especifico a el modelo
-	// * abstracto
-	// */
+		// EXISTEN 2 FORMAS DE GUARDAR EL RECURSO
+		org.eclipse.emf.common.util.URI uri = org.eclipse.emf.common.util.URI
+				.createURI("platform:/resource/test/src/model.uidiagram");
+		org.eclipse.emf.ecore.resource.ResourceSet resourceSet = new org.eclipse.emf.ecore.resource.impl.ResourceSetImpl();
+
+		org.eclipse.emf.ecore.resource.Resource resource = resourceSet.createResource(uri);
+		resource.getContents().add(modelFactoryUIDiagram);
+		try {
+			resource.save(java.util.Collections.EMPTY_MAP);
+		} catch (java.io.IOException e) {
+			// TO-DO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	
+	
+	// ----------------------------------------- Tranformacion M2M de parte especifica a parte a abstracta -------------------------------------------
+	
+	
+	/**
+	 * Este metodo realiza la transformacion del modelo especifico a el modelo
+	 * abstracto
+	 */
 	public void transformationM2M() throws Exception {
 
 		modelFactoryConcreta = loadConcreteModel();// el modelo origen
@@ -560,10 +611,8 @@ public class ModelFactoryModel {
 		return packageAdj;
 	}
 
-	//
-	//
-	// // -------------------------------- Tranformacion M2T de parte abstracta a
-	// archivos de texto -----------------------------------------------
+	
+	// -------------------------------- Tranformacion M2T de parte abstracta a archivos de texto -----------------------------------------------
 
 	
 	/**
@@ -812,7 +861,16 @@ public class ModelFactoryModel {
 	}
 	
 	
+	// -------------------------------- Tranformacion M2T de parte de la UIDiagram a archivos de texto -----------------------------------------------
 	
+	
+	public void transformationM2TUIDiagram() {
+		modelFactoryUIDiagram = loadUIDiagramModel();
+		
+		
+		
+		saveUIDiagram();
+	}
 	
 	
 	

@@ -6,5 +6,6 @@ Bundle-Version: 1.0.0.qualifier
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.ui,
  dc_abstract;bundle-version="0.1.0",
- dc_concrete;bundle-version="0.1.0"
+ dc_concrete;bundle-version="0.1.0",
+ uidiagram;bundle-version="0.1.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
