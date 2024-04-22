@@ -352,7 +352,7 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAdjWidget_Variable() {
+	public EAttribute getAdjWidget_Text() {
 		return (EAttribute)adjWidgetEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -361,7 +361,7 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAdjWidget_Text() {
+	public EAttribute getAdjWidget_PositionX() {
 		return (EAttribute)adjWidgetEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -370,7 +370,7 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAdjWidget_PositionX() {
+	public EAttribute getAdjWidget_PositionY() {
 		return (EAttribute)adjWidgetEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -379,7 +379,7 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAdjWidget_PositionY() {
+	public EAttribute getAdjWidget_Width() {
 		return (EAttribute)adjWidgetEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -388,7 +388,7 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAdjWidget_Width() {
+	public EAttribute getAdjWidget_Height() {
 		return (EAttribute)adjWidgetEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -397,7 +397,7 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAdjWidget_Height() {
+	public EAttribute getAdjWidget_Background() {
 		return (EAttribute)adjWidgetEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -406,8 +406,35 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAdjWidget_Background() {
+	public EAttribute getAdjWidget_FontName() {
 		return (EAttribute)adjWidgetEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAdjWidget_FontSize() {
+		return (EAttribute)adjWidgetEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAdjWidget_Bold() {
+		return (EAttribute)adjWidgetEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAdjWidget_Italic() {
+		return (EAttribute)adjWidgetEClass.getEStructuralFeatures().get(10);
 	}
 
 	/**
@@ -424,26 +451,8 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAdjLabel_Font() {
-		return (EAttribute)adjLabelEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getAdjCheckBox() {
 		return adjCheckBoxEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getAdjCheckBox_Font() {
-		return (EAttribute)adjCheckBoxEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -460,26 +469,8 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAdjButton_Font() {
-		return (EAttribute)adjButtonEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getAdjListBox() {
 		return adjListBoxEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getAdjListBox_Font() {
-		return (EAttribute)adjListBoxEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -496,26 +487,8 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAdjDateTimePicker_Font() {
-		return (EAttribute)adjDateTimePickerEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getAdjTextBox() {
 		return adjTextBoxEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getAdjTextBox_Font() {
-		return (EAttribute)adjTextBoxEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -532,26 +505,8 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAdjCheckedListBox_Font() {
-		return (EAttribute)adjCheckedListBoxEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getAdjLinkLabel() {
 		return adjLinkLabelEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getAdjLinkLabel_Font() {
-		return (EAttribute)adjLinkLabelEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -568,15 +523,6 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAdjRichTextBox_Font() {
-		return (EAttribute)adjRichTextBoxEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getAdjComboBox() {
 		return adjComboBoxEClass;
 	}
@@ -586,26 +532,8 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAdjComboBox_Font() {
-		return (EAttribute)adjComboBoxEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getAdjRadioButton() {
 		return adjRadioButtonEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getAdjRadioButton_Font() {
-		return (EAttribute)adjRadioButtonEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -667,7 +595,7 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAdjListViewColumn_Value() {
+	public EAttribute getAdjListViewColumn_Text() {
 		return (EAttribute)adjListViewColumnEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -685,17 +613,8 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAdjPanel_Font() {
-		return (EAttribute)adjPanelEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EReference getAdjPanel_LstAdjWidget() {
-		return (EReference)adjPanelEClass.getEStructuralFeatures().get(1);
+		return (EReference)adjPanelEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -712,17 +631,8 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAdjGroupBox_Font() {
-		return (EAttribute)adjGroupBoxEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EReference getAdjGroupBox_LstAdjWidget() {
-		return (EReference)adjGroupBoxEClass.getEStructuralFeatures().get(1);
+		return (EReference)adjGroupBoxEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -768,46 +678,38 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 
 		adjWidgetEClass = createEClass(ADJ_WIDGET);
 		createEAttribute(adjWidgetEClass, ADJ_WIDGET__NAME);
-		createEAttribute(adjWidgetEClass, ADJ_WIDGET__VARIABLE);
 		createEAttribute(adjWidgetEClass, ADJ_WIDGET__TEXT);
 		createEAttribute(adjWidgetEClass, ADJ_WIDGET__POSITION_X);
 		createEAttribute(adjWidgetEClass, ADJ_WIDGET__POSITION_Y);
 		createEAttribute(adjWidgetEClass, ADJ_WIDGET__WIDTH);
 		createEAttribute(adjWidgetEClass, ADJ_WIDGET__HEIGHT);
 		createEAttribute(adjWidgetEClass, ADJ_WIDGET__BACKGROUND);
+		createEAttribute(adjWidgetEClass, ADJ_WIDGET__FONT_NAME);
+		createEAttribute(adjWidgetEClass, ADJ_WIDGET__FONT_SIZE);
+		createEAttribute(adjWidgetEClass, ADJ_WIDGET__BOLD);
+		createEAttribute(adjWidgetEClass, ADJ_WIDGET__ITALIC);
 
 		adjLabelEClass = createEClass(ADJ_LABEL);
-		createEAttribute(adjLabelEClass, ADJ_LABEL__FONT);
 
 		adjCheckBoxEClass = createEClass(ADJ_CHECK_BOX);
-		createEAttribute(adjCheckBoxEClass, ADJ_CHECK_BOX__FONT);
 
 		adjButtonEClass = createEClass(ADJ_BUTTON);
-		createEAttribute(adjButtonEClass, ADJ_BUTTON__FONT);
 
 		adjListBoxEClass = createEClass(ADJ_LIST_BOX);
-		createEAttribute(adjListBoxEClass, ADJ_LIST_BOX__FONT);
 
 		adjDateTimePickerEClass = createEClass(ADJ_DATE_TIME_PICKER);
-		createEAttribute(adjDateTimePickerEClass, ADJ_DATE_TIME_PICKER__FONT);
 
 		adjTextBoxEClass = createEClass(ADJ_TEXT_BOX);
-		createEAttribute(adjTextBoxEClass, ADJ_TEXT_BOX__FONT);
 
 		adjCheckedListBoxEClass = createEClass(ADJ_CHECKED_LIST_BOX);
-		createEAttribute(adjCheckedListBoxEClass, ADJ_CHECKED_LIST_BOX__FONT);
 
 		adjLinkLabelEClass = createEClass(ADJ_LINK_LABEL);
-		createEAttribute(adjLinkLabelEClass, ADJ_LINK_LABEL__FONT);
 
 		adjRichTextBoxEClass = createEClass(ADJ_RICH_TEXT_BOX);
-		createEAttribute(adjRichTextBoxEClass, ADJ_RICH_TEXT_BOX__FONT);
 
 		adjComboBoxEClass = createEClass(ADJ_COMBO_BOX);
-		createEAttribute(adjComboBoxEClass, ADJ_COMBO_BOX__FONT);
 
 		adjRadioButtonEClass = createEClass(ADJ_RADIO_BUTTON);
-		createEAttribute(adjRadioButtonEClass, ADJ_RADIO_BUTTON__FONT);
 
 		adjPictureBoxEClass = createEClass(ADJ_PICTURE_BOX);
 
@@ -817,14 +719,12 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 		adjListViewColumnEClass = createEClass(ADJ_LIST_VIEW_COLUMN);
 		createEAttribute(adjListViewColumnEClass, ADJ_LIST_VIEW_COLUMN__NAME);
 		createEAttribute(adjListViewColumnEClass, ADJ_LIST_VIEW_COLUMN__VARIABLE);
-		createEAttribute(adjListViewColumnEClass, ADJ_LIST_VIEW_COLUMN__VALUE);
+		createEAttribute(adjListViewColumnEClass, ADJ_LIST_VIEW_COLUMN__TEXT);
 
 		adjPanelEClass = createEClass(ADJ_PANEL);
-		createEAttribute(adjPanelEClass, ADJ_PANEL__FONT);
 		createEReference(adjPanelEClass, ADJ_PANEL__LST_ADJ_WIDGET);
 
 		adjGroupBoxEClass = createEClass(ADJ_GROUP_BOX);
-		createEAttribute(adjGroupBoxEClass, ADJ_GROUP_BOX__FONT);
 		createEReference(adjGroupBoxEClass, ADJ_GROUP_BOX__LST_ADJ_WIDGET);
 	}
 
@@ -888,46 +788,38 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 
 		initEClass(adjWidgetEClass, AdjWidget.class, "AdjWidget", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAdjWidget_Name(), ecorePackage.getEString(), "name", null, 0, 1, AdjWidget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getAdjWidget_Variable(), ecorePackage.getEString(), "variable", null, 0, 1, AdjWidget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAdjWidget_Text(), ecorePackage.getEString(), "text", null, 0, 1, AdjWidget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAdjWidget_PositionX(), ecorePackage.getEIntegerObject(), "positionX", null, 0, 1, AdjWidget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAdjWidget_PositionY(), ecorePackage.getEIntegerObject(), "positionY", null, 0, 1, AdjWidget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAdjWidget_Width(), ecorePackage.getEIntegerObject(), "width", null, 0, 1, AdjWidget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAdjWidget_Height(), ecorePackage.getEIntegerObject(), "height", null, 0, 1, AdjWidget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getAdjWidget_Background(), ecorePackage.getEIntegerObject(), "background", null, 0, 1, AdjWidget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAdjWidget_Background(), ecorePackage.getEString(), "background", null, 0, 1, AdjWidget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAdjWidget_FontName(), ecorePackage.getEString(), "fontName", null, 0, 1, AdjWidget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAdjWidget_FontSize(), ecorePackage.getEIntegerObject(), "fontSize", null, 0, 1, AdjWidget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAdjWidget_Bold(), ecorePackage.getEBooleanObject(), "bold", null, 0, 1, AdjWidget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAdjWidget_Italic(), ecorePackage.getEBooleanObject(), "italic", null, 0, 1, AdjWidget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(adjLabelEClass, AdjLabel.class, "AdjLabel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getAdjLabel_Font(), ecorePackage.getEString(), "font", null, 0, 1, AdjLabel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(adjCheckBoxEClass, AdjCheckBox.class, "AdjCheckBox", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getAdjCheckBox_Font(), ecorePackage.getEString(), "font", null, 0, 1, AdjCheckBox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(adjButtonEClass, AdjButton.class, "AdjButton", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getAdjButton_Font(), ecorePackage.getEString(), "font", null, 0, 1, AdjButton.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(adjListBoxEClass, AdjListBox.class, "AdjListBox", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getAdjListBox_Font(), ecorePackage.getEString(), "font", null, 0, 1, AdjListBox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(adjDateTimePickerEClass, AdjDateTimePicker.class, "AdjDateTimePicker", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getAdjDateTimePicker_Font(), ecorePackage.getEString(), "font", null, 0, 1, AdjDateTimePicker.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(adjTextBoxEClass, AdjTextBox.class, "AdjTextBox", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getAdjTextBox_Font(), ecorePackage.getEString(), "font", null, 0, 1, AdjTextBox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(adjCheckedListBoxEClass, AdjCheckedListBox.class, "AdjCheckedListBox", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getAdjCheckedListBox_Font(), ecorePackage.getEString(), "font", null, 0, 1, AdjCheckedListBox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(adjLinkLabelEClass, AdjLinkLabel.class, "AdjLinkLabel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getAdjLinkLabel_Font(), ecorePackage.getEString(), "font", null, 0, 1, AdjLinkLabel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(adjRichTextBoxEClass, AdjRichTextBox.class, "AdjRichTextBox", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getAdjRichTextBox_Font(), ecorePackage.getEString(), "font", null, 0, 1, AdjRichTextBox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(adjComboBoxEClass, AdjComboBox.class, "AdjComboBox", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getAdjComboBox_Font(), ecorePackage.getEString(), "font", null, 0, 1, AdjComboBox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(adjRadioButtonEClass, AdjRadioButton.class, "AdjRadioButton", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getAdjRadioButton_Font(), ecorePackage.getEString(), "font", null, 0, 1, AdjRadioButton.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(adjPictureBoxEClass, AdjPictureBox.class, "AdjPictureBox", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -937,14 +829,12 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 		initEClass(adjListViewColumnEClass, AdjListViewColumn.class, "AdjListViewColumn", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAdjListViewColumn_Name(), ecorePackage.getEString(), "name", null, 0, 1, AdjListViewColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAdjListViewColumn_Variable(), ecorePackage.getEString(), "variable", null, 0, 1, AdjListViewColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getAdjListViewColumn_Value(), ecorePackage.getEString(), "value", null, 0, 1, AdjListViewColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAdjListViewColumn_Text(), ecorePackage.getEString(), "text", null, 0, 1, AdjListViewColumn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(adjPanelEClass, AdjPanel.class, "AdjPanel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getAdjPanel_Font(), ecorePackage.getEString(), "font", null, 0, 1, AdjPanel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAdjPanel_LstAdjWidget(), this.getAdjWidget(), null, "lstAdjWidget", null, 0, -1, AdjPanel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(adjGroupBoxEClass, AdjGroupBox.class, "AdjGroupBox", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getAdjGroupBox_Font(), ecorePackage.getEString(), "font", null, 0, 1, AdjGroupBox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAdjGroupBox_LstAdjWidget(), this.getAdjWidget(), null, "lstAdjWidget", null, 0, -1, AdjGroupBox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource

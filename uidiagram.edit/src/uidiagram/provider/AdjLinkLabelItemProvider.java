@@ -9,13 +9,9 @@ import java.util.List;
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
 
-import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.ViewerNotification;
 
 import uidiagram.AdjLinkLabel;
-import uidiagram.UidiagramPackage;
 
 /**
  * This is the item provider adapter for a {@link uidiagram.AdjLinkLabel} object.
@@ -45,31 +41,8 @@ public class AdjLinkLabelItemProvider extends AdjWidgetItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addFontPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Font feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addFontPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_AdjLinkLabel_font_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_AdjLinkLabel_font_feature", "_UI_AdjLinkLabel_type"),
-				 UidiagramPackage.Literals.ADJ_LINK_LABEL__FONT,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -108,12 +81,6 @@ public class AdjLinkLabelItemProvider extends AdjWidgetItemProvider {
 	@Override
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
-
-		switch (notification.getFeatureID(AdjLinkLabel.class)) {
-			case UidiagramPackage.ADJ_LINK_LABEL__FONT:
-				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
-				return;
-		}
 		super.notifyChanged(notification);
 	}
 

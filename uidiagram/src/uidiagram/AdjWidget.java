@@ -14,13 +14,16 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link uidiagram.AdjWidget#getName <em>Name</em>}</li>
- *   <li>{@link uidiagram.AdjWidget#getVariable <em>Variable</em>}</li>
  *   <li>{@link uidiagram.AdjWidget#getText <em>Text</em>}</li>
  *   <li>{@link uidiagram.AdjWidget#getPositionX <em>Position X</em>}</li>
  *   <li>{@link uidiagram.AdjWidget#getPositionY <em>Position Y</em>}</li>
  *   <li>{@link uidiagram.AdjWidget#getWidth <em>Width</em>}</li>
  *   <li>{@link uidiagram.AdjWidget#getHeight <em>Height</em>}</li>
  *   <li>{@link uidiagram.AdjWidget#getBackground <em>Background</em>}</li>
+ *   <li>{@link uidiagram.AdjWidget#getFontName <em>Font Name</em>}</li>
+ *   <li>{@link uidiagram.AdjWidget#getFontSize <em>Font Size</em>}</li>
+ *   <li>{@link uidiagram.AdjWidget#getBold <em>Bold</em>}</li>
+ *   <li>{@link uidiagram.AdjWidget#getItalic <em>Italic</em>}</li>
  * </ul>
  *
  * @see uidiagram.UidiagramPackage#getAdjWidget()
@@ -53,32 +56,6 @@ public interface AdjWidget extends EObject {
 	 * @generated
 	 */
 	void setName(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Variable</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Variable</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Variable</em>' attribute.
-	 * @see #setVariable(String)
-	 * @see uidiagram.UidiagramPackage#getAdjWidget_Variable()
-	 * @model
-	 * @generated
-	 */
-	String getVariable();
-
-	/**
-	 * Sets the value of the '{@link uidiagram.AdjWidget#getVariable <em>Variable</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Variable</em>' attribute.
-	 * @see #getVariable()
-	 * @generated
-	 */
-	void setVariable(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Text</b></em>' attribute.
@@ -219,12 +196,12 @@ public interface AdjWidget extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Background</em>' attribute.
-	 * @see #setBackground(Integer)
+	 * @see #setBackground(String)
 	 * @see uidiagram.UidiagramPackage#getAdjWidget_Background()
 	 * @model
 	 * @generated
 	 */
-	Integer getBackground();
+	String getBackground();
 
 	/**
 	 * Sets the value of the '{@link uidiagram.AdjWidget#getBackground <em>Background</em>}' attribute.
@@ -234,6 +211,110 @@ public interface AdjWidget extends EObject {
 	 * @see #getBackground()
 	 * @generated
 	 */
-	void setBackground(Integer value);
+	void setBackground(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Font Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Font Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Font Name</em>' attribute.
+	 * @see #setFontName(String)
+	 * @see uidiagram.UidiagramPackage#getAdjWidget_FontName()
+	 * @model
+	 * @generated
+	 */
+	String getFontName();
+
+	/**
+	 * Sets the value of the '{@link uidiagram.AdjWidget#getFontName <em>Font Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Font Name</em>' attribute.
+	 * @see #getFontName()
+	 * @generated
+	 */
+	void setFontName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Font Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Font Size</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Font Size</em>' attribute.
+	 * @see #setFontSize(Integer)
+	 * @see uidiagram.UidiagramPackage#getAdjWidget_FontSize()
+	 * @model
+	 * @generated
+	 */
+	Integer getFontSize();
+
+	/**
+	 * Sets the value of the '{@link uidiagram.AdjWidget#getFontSize <em>Font Size</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Font Size</em>' attribute.
+	 * @see #getFontSize()
+	 * @generated
+	 */
+	void setFontSize(Integer value);
+
+	/**
+	 * Returns the value of the '<em><b>Bold</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Bold</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Bold</em>' attribute.
+	 * @see #setBold(Boolean)
+	 * @see uidiagram.UidiagramPackage#getAdjWidget_Bold()
+	 * @model
+	 * @generated
+	 */
+	Boolean getBold();
+
+	/**
+	 * Sets the value of the '{@link uidiagram.AdjWidget#getBold <em>Bold</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Bold</em>' attribute.
+	 * @see #getBold()
+	 * @generated
+	 */
+	void setBold(Boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Italic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Italic</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Italic</em>' attribute.
+	 * @see #setItalic(Boolean)
+	 * @see uidiagram.UidiagramPackage#getAdjWidget_Italic()
+	 * @model
+	 * @generated
+	 */
+	Boolean getItalic();
+
+	/**
+	 * Sets the value of the '{@link uidiagram.AdjWidget#getItalic <em>Italic</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Italic</em>' attribute.
+	 * @see #getItalic()
+	 * @generated
+	 */
+	void setItalic(Boolean value);
 
 } // AdjWidget

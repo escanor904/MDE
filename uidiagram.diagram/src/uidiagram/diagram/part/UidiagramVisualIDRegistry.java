@@ -1196,12 +1196,12 @@ public class UidiagramVisualIDRegistry {
 		case AdjListViewColumnEditPart.VISUAL_ID:
 		case AdjDateTimePickerEditPart.VISUAL_ID:
 		case AdjRadioButtonEditPart.VISUAL_ID:
-		case AdjPictureBoxEditPart.VISUAL_ID:
 		case AdjDateTimePicker2EditPart.VISUAL_ID:
 		case AdjRadioButton2EditPart.VISUAL_ID:
-		case AdjPictureBox2EditPart.VISUAL_ID:
 		case AdjDateTimePicker3EditPart.VISUAL_ID:
 		case AdjRadioButton3EditPart.VISUAL_ID:
+		case AdjPictureBoxEditPart.VISUAL_ID:
+		case AdjPictureBox2EditPart.VISUAL_ID:
 		case AdjPictureBox3EditPart.VISUAL_ID:
 			return true;
 		default:

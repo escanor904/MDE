@@ -10,7 +10,6 @@ import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
 import org.eclipse.draw2d.geometry.Dimension;
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.ecore.impl.EAttributeImpl;
 import org.eclipse.gef.EditPart;
 import org.eclipse.gef.EditPolicy;
 import org.eclipse.gef.Request;
@@ -295,8 +294,6 @@ public class AdjButtonEditPart extends ShapeNodeEditPart {
 
 	}
 	
-	
-	
 	/**
 	 * Metodo para capturar los eventos del diagrama UIDiagram
 	 */
@@ -306,6 +303,7 @@ public class AdjButtonEditPart extends ShapeNodeEditPart {
 			
 			//Verificamos si la instancia es de dimensiones
 			if (arg0.getNotifier() instanceof BoundsImpl) {
+
 				BoundsImpl notifier = (BoundsImpl) arg0.getNotifier();
 				// for my special coordinate mapping i also need the node,
 				// so i save it in this variable ...
@@ -325,11 +323,29 @@ public class AdjButtonEditPart extends ShapeNodeEditPart {
 					model.setHeight(notifier.getHeight());
 
 				}
-
+				model.setText(model.getName());
 				model.setPositionX(notifier.getX());
 				model.setPositionY(notifier.getY());
 			}
 			
+			//Verificamos si la instancia es del tipo de letra
+			if (arg0.getNotifier() instanceof ShapeImpl) {
+
+				ShapeImpl fontStyleImpl = (ShapeImpl) arg0.getNotifier();
+				int fontHeight = fontStyleImpl.getFontHeight();
+				String fontName = fontStyleImpl.getFontName();
+				boolean bold = fontStyleImpl.isBold();
+				boolean italic = fontStyleImpl.isItalic();
+				NodeImpl node = (NodeImpl) this.getModel();
+				AdjWidget model = (AdjWidget) node.getElement();
+				
+				model.setText(model.getName());
+				model.setBold(bold);
+				model.setItalic(italic);
+				model.setFontName(fontName);
+				model.setFontSize(fontHeight);
+			}
+
 		}
 		super.handleNotificationEvent(arg0);
 	}

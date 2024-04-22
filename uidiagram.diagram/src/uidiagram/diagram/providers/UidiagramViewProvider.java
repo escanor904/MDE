@@ -277,7 +277,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 		case AdjRadioButtonEditPart.VISUAL_ID:
 			return createAdjRadioButton_3099(domainElement, containerView, index, persisted, preferencesHint);
 		case AdjPictureBoxEditPart.VISUAL_ID:
-			return createAdjPictureBox_3100(domainElement, containerView, index, persisted, preferencesHint);
+			return createAdjPictureBox_3106(domainElement, containerView, index, persisted, preferencesHint);
 		case AdjListViewEditPart.VISUAL_ID:
 			return createAdjListView_3092(domainElement, containerView, index, persisted, preferencesHint);
 		case AdjListViewColumnEditPart.VISUAL_ID:
@@ -307,7 +307,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 		case AdjRadioButton2EditPart.VISUAL_ID:
 			return createAdjRadioButton_3102(domainElement, containerView, index, persisted, preferencesHint);
 		case AdjPictureBox2EditPart.VISUAL_ID:
-			return createAdjPictureBox_3103(domainElement, containerView, index, persisted, preferencesHint);
+			return createAdjPictureBox_3107(domainElement, containerView, index, persisted, preferencesHint);
 		case AdjListView2EditPart.VISUAL_ID:
 			return createAdjListView_3094(domainElement, containerView, index, persisted, preferencesHint);
 		case AdjPanel2EditPart.VISUAL_ID:
@@ -337,7 +337,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 		case AdjRadioButton3EditPart.VISUAL_ID:
 			return createAdjRadioButton_3105(domainElement, containerView, index, persisted, preferencesHint);
 		case AdjPictureBox3EditPart.VISUAL_ID:
-			return createAdjPictureBox_3106(domainElement, containerView, index, persisted, preferencesHint);
+			return createAdjPictureBox_3108(domainElement, containerView, index, persisted, preferencesHint);
 		case AdjListView3EditPart.VISUAL_ID:
 			return createAdjListView_3095(domainElement, containerView, index, persisted, preferencesHint);
 		case AdjPanel3EditPart.VISUAL_ID:
@@ -804,7 +804,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 	/**
 	* @generated
 	*/
-	public Node createAdjPictureBox_3100(EObject domainElement, View containerView, int index, boolean persisted,
+	public Node createAdjPictureBox_3106(EObject domainElement, View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
 		Shape node = NotationFactory.eINSTANCE.createShape();
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
@@ -833,7 +833,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5101 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjPictureBoxNameEditPart.VISUAL_ID));
+		Node label5107 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjPictureBoxNameEditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1353,7 +1353,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 	/**
 	* @generated
 	*/
-	public Node createAdjPictureBox_3103(EObject domainElement, View containerView, int index, boolean persisted,
+	public Node createAdjPictureBox_3107(EObject domainElement, View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
 		Shape node = NotationFactory.eINSTANCE.createShape();
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
@@ -1382,7 +1382,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5104 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjPictureBoxName2EditPart.VISUAL_ID));
+		Node label5108 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjPictureBoxName2EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1906,7 +1906,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 	/**
 	* @generated
 	*/
-	public Node createAdjPictureBox_3106(EObject domainElement, View containerView, int index, boolean persisted,
+	public Node createAdjPictureBox_3108(EObject domainElement, View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
 		Shape node = NotationFactory.eINSTANCE.createShape();
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
@@ -1935,7 +1935,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5107 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjPictureBoxName3EditPart.VISUAL_ID));
+		Node label5109 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjPictureBoxName3EditPart.VISUAL_ID));
 		return node;
 	}
 

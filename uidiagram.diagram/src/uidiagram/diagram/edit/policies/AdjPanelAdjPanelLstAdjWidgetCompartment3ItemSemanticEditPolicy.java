@@ -73,7 +73,7 @@ public class AdjPanelAdjPanelLstAdjWidgetCompartment3ItemSemanticEditPolicy
 		if (UidiagramElementTypes.AdjRadioButton_3102 == req.getElementType()) {
 			return getGEFWrapper(new AdjRadioButton2CreateCommand(req));
 		}
-		if (UidiagramElementTypes.AdjPictureBox_3103 == req.getElementType()) {
+		if (UidiagramElementTypes.AdjPictureBox_3107 == req.getElementType()) {
 			return getGEFWrapper(new AdjPictureBox2CreateCommand(req));
 		}
 		if (UidiagramElementTypes.AdjListView_3094 == req.getElementType()) {

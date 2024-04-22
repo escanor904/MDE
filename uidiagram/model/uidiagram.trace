@@ -314,13 +314,6 @@
         queryText="true"/>
   </childNodeTraces>
   <childNodeTraces
-      visualID="3100"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'uidiagram' and _eClass_.name = 'AdjPictureBox') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'uidiagram' and _eClass_.name = 'FormUI') and _containmentMF_.name = 'lstAdjWidget')">
-    <nodeLabelTraces
-        visualID="5101"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
       visualID="3101"
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'uidiagram' and _eClass_.name = 'AdjDateTimePicker') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'uidiagram' and _eClass_.name = 'AdjPanel') and _containmentMF_.name = 'lstAdjWidget')">
     <nodeLabelTraces
@@ -332,13 +325,6 @@
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'uidiagram' and _eClass_.name = 'AdjRadioButton') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'uidiagram' and _eClass_.name = 'AdjPanel') and _containmentMF_.name = 'lstAdjWidget')">
     <nodeLabelTraces
         visualID="5103"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
-      visualID="3103"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'uidiagram' and _eClass_.name = 'AdjPictureBox') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'uidiagram' and _eClass_.name = 'AdjPanel') and _containmentMF_.name = 'lstAdjWidget')">
-    <nodeLabelTraces
-        visualID="5104"
         queryText="true"/>
   </childNodeTraces>
   <childNodeTraces
@@ -357,9 +343,23 @@
   </childNodeTraces>
   <childNodeTraces
       visualID="3106"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'uidiagram' and _eClass_.name = 'AdjPictureBox') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'uidiagram' and _eClass_.name = 'AdjGroupBox') and _containmentMF_.name = 'lstAdjWidget')">
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'uidiagram' and _eClass_.name = 'AdjPictureBox') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'uidiagram' and _eClass_.name = 'FormUI') and _containmentMF_.name = 'lstAdjWidget')">
     <nodeLabelTraces
         visualID="5107"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3107"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'uidiagram' and _eClass_.name = 'AdjPictureBox') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'uidiagram' and _eClass_.name = 'AdjPanel') and _containmentMF_.name = 'lstAdjWidget')">
+    <nodeLabelTraces
+        visualID="5108"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3108"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'uidiagram' and _eClass_.name = 'AdjPictureBox') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'uidiagram' and _eClass_.name = 'AdjGroupBox') and _containmentMF_.name = 'lstAdjWidget')">
+    <nodeLabelTraces
+        visualID="5109"
         queryText="true"/>
   </childNodeTraces>
 </trace:TraceModel>

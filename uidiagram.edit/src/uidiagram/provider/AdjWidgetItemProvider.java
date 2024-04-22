@@ -61,13 +61,16 @@ public class AdjWidgetItemProvider
 			super.getPropertyDescriptors(object);
 
 			addNamePropertyDescriptor(object);
-			addVariablePropertyDescriptor(object);
 			addTextPropertyDescriptor(object);
 			addPositionXPropertyDescriptor(object);
 			addPositionYPropertyDescriptor(object);
 			addWidthPropertyDescriptor(object);
 			addHeightPropertyDescriptor(object);
 			addBackgroundPropertyDescriptor(object);
+			addFontNamePropertyDescriptor(object);
+			addFontSizePropertyDescriptor(object);
+			addBoldPropertyDescriptor(object);
+			addItalicPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -86,28 +89,6 @@ public class AdjWidgetItemProvider
 				 getString("_UI_AdjWidget_name_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_AdjWidget_name_feature", "_UI_AdjWidget_type"),
 				 UidiagramPackage.Literals.ADJ_WIDGET__NAME,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Variable feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addVariablePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_AdjWidget_variable_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_AdjWidget_variable_feature", "_UI_AdjWidget_type"),
-				 UidiagramPackage.Literals.ADJ_WIDGET__VARIABLE,
 				 true,
 				 false,
 				 false,
@@ -249,6 +230,94 @@ public class AdjWidgetItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Font Name feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addFontNamePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_AdjWidget_fontName_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_AdjWidget_fontName_feature", "_UI_AdjWidget_type"),
+				 UidiagramPackage.Literals.ADJ_WIDGET__FONT_NAME,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Font Size feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addFontSizePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_AdjWidget_fontSize_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_AdjWidget_fontSize_feature", "_UI_AdjWidget_type"),
+				 UidiagramPackage.Literals.ADJ_WIDGET__FONT_SIZE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Bold feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addBoldPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_AdjWidget_bold_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_AdjWidget_bold_feature", "_UI_AdjWidget_type"),
+				 UidiagramPackage.Literals.ADJ_WIDGET__BOLD,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Italic feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addItalicPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_AdjWidget_italic_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_AdjWidget_italic_feature", "_UI_AdjWidget_type"),
+				 UidiagramPackage.Literals.ADJ_WIDGET__ITALIC,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This returns the label text for the adapted class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -276,13 +345,16 @@ public class AdjWidgetItemProvider
 
 		switch (notification.getFeatureID(AdjWidget.class)) {
 			case UidiagramPackage.ADJ_WIDGET__NAME:
-			case UidiagramPackage.ADJ_WIDGET__VARIABLE:
 			case UidiagramPackage.ADJ_WIDGET__TEXT:
 			case UidiagramPackage.ADJ_WIDGET__POSITION_X:
 			case UidiagramPackage.ADJ_WIDGET__POSITION_Y:
 			case UidiagramPackage.ADJ_WIDGET__WIDTH:
 			case UidiagramPackage.ADJ_WIDGET__HEIGHT:
 			case UidiagramPackage.ADJ_WIDGET__BACKGROUND:
+			case UidiagramPackage.ADJ_WIDGET__FONT_NAME:
+			case UidiagramPackage.ADJ_WIDGET__FONT_SIZE:
+			case UidiagramPackage.ADJ_WIDGET__BOLD:
+			case UidiagramPackage.ADJ_WIDGET__ITALIC:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

@@ -60,7 +60,7 @@ public class AdjPictureBoxNameEditPart extends CompartmentEditPart implements IT
 	/**
 	* @generated
 	*/
-	public static final int VISUAL_ID = 5101;
+	public static final int VISUAL_ID = 5107;
 
 	/**
 	* @generated
@@ -295,7 +295,7 @@ public class AdjPictureBoxNameEditPart extends CompartmentEditPart implements IT
 	*/
 	public IParser getParser() {
 		if (parser == null) {
-			parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjPictureBox_3100, getParserElement(),
+			parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjPictureBox_3106, getParserElement(),
 					UidiagramVisualIDRegistry
 							.getType(uidiagram.diagram.edit.parts.AdjPictureBoxNameEditPart.VISUAL_ID));
 		}

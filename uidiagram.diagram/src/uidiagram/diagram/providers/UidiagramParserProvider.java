@@ -279,18 +279,18 @@ public class UidiagramParserProvider extends AbstractProvider implements IParser
 	/**
 	* @generated
 	*/
-	private IParser adjPictureBoxName_5101Parser;
+	private IParser adjPictureBoxName_5107Parser;
 
 	/**
 	* @generated
 	*/
-	private IParser getAdjPictureBoxName_5101Parser() {
-		if (adjPictureBoxName_5101Parser == null) {
+	private IParser getAdjPictureBoxName_5107Parser() {
+		if (adjPictureBoxName_5107Parser == null) {
 			EAttribute[] features = new EAttribute[] { UidiagramPackage.eINSTANCE.getAdjWidget_Name() };
 			MessageFormatParser parser = new MessageFormatParser(features);
-			adjPictureBoxName_5101Parser = parser;
+			adjPictureBoxName_5107Parser = parser;
 		}
-		return adjPictureBoxName_5101Parser;
+		return adjPictureBoxName_5107Parser;
 	}
 
 	/**
@@ -534,18 +534,18 @@ public class UidiagramParserProvider extends AbstractProvider implements IParser
 	/**
 	* @generated
 	*/
-	private IParser adjPictureBoxName_5104Parser;
+	private IParser adjPictureBoxName_5108Parser;
 
 	/**
 	* @generated
 	*/
-	private IParser getAdjPictureBoxName_5104Parser() {
-		if (adjPictureBoxName_5104Parser == null) {
+	private IParser getAdjPictureBoxName_5108Parser() {
+		if (adjPictureBoxName_5108Parser == null) {
 			EAttribute[] features = new EAttribute[] { UidiagramPackage.eINSTANCE.getAdjWidget_Name() };
 			MessageFormatParser parser = new MessageFormatParser(features);
-			adjPictureBoxName_5104Parser = parser;
+			adjPictureBoxName_5108Parser = parser;
 		}
-		return adjPictureBoxName_5104Parser;
+		return adjPictureBoxName_5108Parser;
 	}
 
 	/**
@@ -789,18 +789,18 @@ public class UidiagramParserProvider extends AbstractProvider implements IParser
 	/**
 	* @generated
 	*/
-	private IParser adjPictureBoxName_5107Parser;
+	private IParser adjPictureBoxName_5109Parser;
 
 	/**
 	* @generated
 	*/
-	private IParser getAdjPictureBoxName_5107Parser() {
-		if (adjPictureBoxName_5107Parser == null) {
+	private IParser getAdjPictureBoxName_5109Parser() {
+		if (adjPictureBoxName_5109Parser == null) {
 			EAttribute[] features = new EAttribute[] { UidiagramPackage.eINSTANCE.getAdjWidget_Name() };
 			MessageFormatParser parser = new MessageFormatParser(features);
-			adjPictureBoxName_5107Parser = parser;
+			adjPictureBoxName_5109Parser = parser;
 		}
-		return adjPictureBoxName_5107Parser;
+		return adjPictureBoxName_5109Parser;
 	}
 
 	/**
@@ -901,7 +901,7 @@ public class UidiagramParserProvider extends AbstractProvider implements IParser
 		case AdjRadioButtonNameEditPart.VISUAL_ID:
 			return getAdjRadioButtonName_5100Parser();
 		case AdjPictureBoxNameEditPart.VISUAL_ID:
-			return getAdjPictureBoxName_5101Parser();
+			return getAdjPictureBoxName_5107Parser();
 		case AdjListViewNameEditPart.VISUAL_ID:
 			return getAdjListViewName_5094Parser();
 		case AdjListViewColumnNameEditPart.VISUAL_ID:
@@ -931,7 +931,7 @@ public class UidiagramParserProvider extends AbstractProvider implements IParser
 		case AdjRadioButtonName2EditPart.VISUAL_ID:
 			return getAdjRadioButtonName_5103Parser();
 		case AdjPictureBoxName2EditPart.VISUAL_ID:
-			return getAdjPictureBoxName_5104Parser();
+			return getAdjPictureBoxName_5108Parser();
 		case AdjListViewName2EditPart.VISUAL_ID:
 			return getAdjListViewName_5095Parser();
 		case AdjPanelName2EditPart.VISUAL_ID:
@@ -961,7 +961,7 @@ public class UidiagramParserProvider extends AbstractProvider implements IParser
 		case AdjRadioButtonName3EditPart.VISUAL_ID:
 			return getAdjRadioButtonName_5106Parser();
 		case AdjPictureBoxName3EditPart.VISUAL_ID:
-			return getAdjPictureBoxName_5107Parser();
+			return getAdjPictureBoxName_5109Parser();
 		case AdjListViewName3EditPart.VISUAL_ID:
 			return getAdjListViewName_5096Parser();
 		case AdjPanelName3EditPart.VISUAL_ID:

@@ -152,7 +152,7 @@ public class UidiagramElementTypes {
 	/**
 	* @generated
 	*/
-	public static final IElementType AdjPictureBox_3100 = getElementType("uidiagram.diagram.AdjPictureBox_3100"); //$NON-NLS-1$
+	public static final IElementType AdjPictureBox_3106 = getElementType("uidiagram.diagram.AdjPictureBox_3106"); //$NON-NLS-1$
 	/**
 	* @generated
 	*/
@@ -215,7 +215,7 @@ public class UidiagramElementTypes {
 	/**
 	* @generated
 	*/
-	public static final IElementType AdjPictureBox_3103 = getElementType("uidiagram.diagram.AdjPictureBox_3103"); //$NON-NLS-1$
+	public static final IElementType AdjPictureBox_3107 = getElementType("uidiagram.diagram.AdjPictureBox_3107"); //$NON-NLS-1$
 	/**
 	* @generated
 	*/
@@ -277,7 +277,7 @@ public class UidiagramElementTypes {
 	/**
 	* @generated
 	*/
-	public static final IElementType AdjPictureBox_3106 = getElementType("uidiagram.diagram.AdjPictureBox_3106"); //$NON-NLS-1$
+	public static final IElementType AdjPictureBox_3108 = getElementType("uidiagram.diagram.AdjPictureBox_3108"); //$NON-NLS-1$
 	/**
 	* @generated
 	*/
@@ -359,7 +359,7 @@ public class UidiagramElementTypes {
 
 			elements.put(AdjRadioButton_3099, UidiagramPackage.eINSTANCE.getAdjRadioButton());
 
-			elements.put(AdjPictureBox_3100, UidiagramPackage.eINSTANCE.getAdjPictureBox());
+			elements.put(AdjPictureBox_3106, UidiagramPackage.eINSTANCE.getAdjPictureBox());
 
 			elements.put(AdjListView_3092, UidiagramPackage.eINSTANCE.getAdjListView());
 
@@ -389,7 +389,7 @@ public class UidiagramElementTypes {
 
 			elements.put(AdjRadioButton_3102, UidiagramPackage.eINSTANCE.getAdjRadioButton());
 
-			elements.put(AdjPictureBox_3103, UidiagramPackage.eINSTANCE.getAdjPictureBox());
+			elements.put(AdjPictureBox_3107, UidiagramPackage.eINSTANCE.getAdjPictureBox());
 
 			elements.put(AdjListView_3094, UidiagramPackage.eINSTANCE.getAdjListView());
 
@@ -419,7 +419,7 @@ public class UidiagramElementTypes {
 
 			elements.put(AdjRadioButton_3105, UidiagramPackage.eINSTANCE.getAdjRadioButton());
 
-			elements.put(AdjPictureBox_3106, UidiagramPackage.eINSTANCE.getAdjPictureBox());
+			elements.put(AdjPictureBox_3108, UidiagramPackage.eINSTANCE.getAdjPictureBox());
 
 			elements.put(AdjListView_3095, UidiagramPackage.eINSTANCE.getAdjListView());
 
@@ -458,7 +458,7 @@ public class UidiagramElementTypes {
 			KNOWN_ELEMENT_TYPES.add(AdjRichTextBox_3009);
 			KNOWN_ELEMENT_TYPES.add(AdjComboBox_3087);
 			KNOWN_ELEMENT_TYPES.add(AdjRadioButton_3099);
-			KNOWN_ELEMENT_TYPES.add(AdjPictureBox_3100);
+			KNOWN_ELEMENT_TYPES.add(AdjPictureBox_3106);
 			KNOWN_ELEMENT_TYPES.add(AdjListView_3092);
 			KNOWN_ELEMENT_TYPES.add(AdjListViewColumn_3093);
 			KNOWN_ELEMENT_TYPES.add(AdjPanel_3015);
@@ -473,7 +473,7 @@ public class UidiagramElementTypes {
 			KNOWN_ELEMENT_TYPES.add(AdjRichTextBox_3024);
 			KNOWN_ELEMENT_TYPES.add(AdjComboBox_3088);
 			KNOWN_ELEMENT_TYPES.add(AdjRadioButton_3102);
-			KNOWN_ELEMENT_TYPES.add(AdjPictureBox_3103);
+			KNOWN_ELEMENT_TYPES.add(AdjPictureBox_3107);
 			KNOWN_ELEMENT_TYPES.add(AdjListView_3094);
 			KNOWN_ELEMENT_TYPES.add(AdjPanel_3029);
 			KNOWN_ELEMENT_TYPES.add(AdjGroupBox_3030);
@@ -488,7 +488,7 @@ public class UidiagramElementTypes {
 			KNOWN_ELEMENT_TYPES.add(AdjRichTextBox_3039);
 			KNOWN_ELEMENT_TYPES.add(AdjComboBox_3089);
 			KNOWN_ELEMENT_TYPES.add(AdjRadioButton_3105);
-			KNOWN_ELEMENT_TYPES.add(AdjPictureBox_3106);
+			KNOWN_ELEMENT_TYPES.add(AdjPictureBox_3108);
 			KNOWN_ELEMENT_TYPES.add(AdjListView_3095);
 			KNOWN_ELEMENT_TYPES.add(AdjPanel_3044);
 			KNOWN_ELEMENT_TYPES.add(AdjGroupBox_3076);
@@ -529,7 +529,7 @@ public class UidiagramElementTypes {
 		case AdjRadioButtonEditPart.VISUAL_ID:
 			return AdjRadioButton_3099;
 		case AdjPictureBoxEditPart.VISUAL_ID:
-			return AdjPictureBox_3100;
+			return AdjPictureBox_3106;
 		case AdjListViewEditPart.VISUAL_ID:
 			return AdjListView_3092;
 		case AdjListViewColumnEditPart.VISUAL_ID:
@@ -559,7 +559,7 @@ public class UidiagramElementTypes {
 		case AdjRadioButton2EditPart.VISUAL_ID:
 			return AdjRadioButton_3102;
 		case AdjPictureBox2EditPart.VISUAL_ID:
-			return AdjPictureBox_3103;
+			return AdjPictureBox_3107;
 		case AdjListView2EditPart.VISUAL_ID:
 			return AdjListView_3094;
 		case AdjPanel2EditPart.VISUAL_ID:
@@ -589,7 +589,7 @@ public class UidiagramElementTypes {
 		case AdjRadioButton3EditPart.VISUAL_ID:
 			return AdjRadioButton_3105;
 		case AdjPictureBox3EditPart.VISUAL_ID:
-			return AdjPictureBox_3106;
+			return AdjPictureBox_3108;
 		case AdjListView3EditPart.VISUAL_ID:
 			return AdjListView_3095;
 		case AdjPanel3EditPart.VISUAL_ID:

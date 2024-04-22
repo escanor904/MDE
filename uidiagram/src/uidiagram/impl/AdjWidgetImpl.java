@@ -21,13 +21,16 @@ import uidiagram.UidiagramPackage;
  * </p>
  * <ul>
  *   <li>{@link uidiagram.impl.AdjWidgetImpl#getName <em>Name</em>}</li>
- *   <li>{@link uidiagram.impl.AdjWidgetImpl#getVariable <em>Variable</em>}</li>
  *   <li>{@link uidiagram.impl.AdjWidgetImpl#getText <em>Text</em>}</li>
  *   <li>{@link uidiagram.impl.AdjWidgetImpl#getPositionX <em>Position X</em>}</li>
  *   <li>{@link uidiagram.impl.AdjWidgetImpl#getPositionY <em>Position Y</em>}</li>
  *   <li>{@link uidiagram.impl.AdjWidgetImpl#getWidth <em>Width</em>}</li>
  *   <li>{@link uidiagram.impl.AdjWidgetImpl#getHeight <em>Height</em>}</li>
  *   <li>{@link uidiagram.impl.AdjWidgetImpl#getBackground <em>Background</em>}</li>
+ *   <li>{@link uidiagram.impl.AdjWidgetImpl#getFontName <em>Font Name</em>}</li>
+ *   <li>{@link uidiagram.impl.AdjWidgetImpl#getFontSize <em>Font Size</em>}</li>
+ *   <li>{@link uidiagram.impl.AdjWidgetImpl#getBold <em>Bold</em>}</li>
+ *   <li>{@link uidiagram.impl.AdjWidgetImpl#getItalic <em>Italic</em>}</li>
  * </ul>
  *
  * @generated
@@ -52,26 +55,6 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * @ordered
 	 */
 	protected String name = NAME_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getVariable() <em>Variable</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getVariable()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VARIABLE_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getVariable() <em>Variable</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getVariable()
-	 * @generated
-	 * @ordered
-	 */
-	protected String variable = VARIABLE_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getText() <em>Text</em>}' attribute.
@@ -181,7 +164,7 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Integer BACKGROUND_EDEFAULT = null;
+	protected static final String BACKGROUND_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getBackground() <em>Background</em>}' attribute.
@@ -191,7 +174,87 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * @generated
 	 * @ordered
 	 */
-	protected Integer background = BACKGROUND_EDEFAULT;
+	protected String background = BACKGROUND_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getFontName() <em>Font Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFontName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String FONT_NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getFontName() <em>Font Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFontName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String fontName = FONT_NAME_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getFontSize() <em>Font Size</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFontSize()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Integer FONT_SIZE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getFontSize() <em>Font Size</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFontSize()
+	 * @generated
+	 * @ordered
+	 */
+	protected Integer fontSize = FONT_SIZE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getBold() <em>Bold</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBold()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Boolean BOLD_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getBold() <em>Bold</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBold()
+	 * @generated
+	 * @ordered
+	 */
+	protected Boolean bold = BOLD_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getItalic() <em>Italic</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getItalic()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Boolean ITALIC_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getItalic() <em>Italic</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getItalic()
+	 * @generated
+	 * @ordered
+	 */
+	protected Boolean italic = ITALIC_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -231,27 +294,6 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 		name = newName;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.ADJ_WIDGET__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getVariable() {
-		return variable;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setVariable(String newVariable) {
-		String oldVariable = variable;
-		variable = newVariable;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.ADJ_WIDGET__VARIABLE, oldVariable, variable));
 	}
 
 	/**
@@ -364,7 +406,7 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Integer getBackground() {
+	public String getBackground() {
 		return background;
 	}
 
@@ -373,11 +415,95 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBackground(Integer newBackground) {
-		Integer oldBackground = background;
+	public void setBackground(String newBackground) {
+		String oldBackground = background;
 		background = newBackground;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.ADJ_WIDGET__BACKGROUND, oldBackground, background));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getFontName() {
+		return fontName;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setFontName(String newFontName) {
+		String oldFontName = fontName;
+		fontName = newFontName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.ADJ_WIDGET__FONT_NAME, oldFontName, fontName));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Integer getFontSize() {
+		return fontSize;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setFontSize(Integer newFontSize) {
+		Integer oldFontSize = fontSize;
+		fontSize = newFontSize;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.ADJ_WIDGET__FONT_SIZE, oldFontSize, fontSize));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Boolean getBold() {
+		return bold;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setBold(Boolean newBold) {
+		Boolean oldBold = bold;
+		bold = newBold;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.ADJ_WIDGET__BOLD, oldBold, bold));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Boolean getItalic() {
+		return italic;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setItalic(Boolean newItalic) {
+		Boolean oldItalic = italic;
+		italic = newItalic;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.ADJ_WIDGET__ITALIC, oldItalic, italic));
 	}
 
 	/**
@@ -390,8 +516,6 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 		switch (featureID) {
 			case UidiagramPackage.ADJ_WIDGET__NAME:
 				return getName();
-			case UidiagramPackage.ADJ_WIDGET__VARIABLE:
-				return getVariable();
 			case UidiagramPackage.ADJ_WIDGET__TEXT:
 				return getText();
 			case UidiagramPackage.ADJ_WIDGET__POSITION_X:
@@ -404,6 +528,14 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 				return getHeight();
 			case UidiagramPackage.ADJ_WIDGET__BACKGROUND:
 				return getBackground();
+			case UidiagramPackage.ADJ_WIDGET__FONT_NAME:
+				return getFontName();
+			case UidiagramPackage.ADJ_WIDGET__FONT_SIZE:
+				return getFontSize();
+			case UidiagramPackage.ADJ_WIDGET__BOLD:
+				return getBold();
+			case UidiagramPackage.ADJ_WIDGET__ITALIC:
+				return getItalic();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -418,9 +550,6 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 		switch (featureID) {
 			case UidiagramPackage.ADJ_WIDGET__NAME:
 				setName((String)newValue);
-				return;
-			case UidiagramPackage.ADJ_WIDGET__VARIABLE:
-				setVariable((String)newValue);
 				return;
 			case UidiagramPackage.ADJ_WIDGET__TEXT:
 				setText((String)newValue);
@@ -438,7 +567,19 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 				setHeight((Integer)newValue);
 				return;
 			case UidiagramPackage.ADJ_WIDGET__BACKGROUND:
-				setBackground((Integer)newValue);
+				setBackground((String)newValue);
+				return;
+			case UidiagramPackage.ADJ_WIDGET__FONT_NAME:
+				setFontName((String)newValue);
+				return;
+			case UidiagramPackage.ADJ_WIDGET__FONT_SIZE:
+				setFontSize((Integer)newValue);
+				return;
+			case UidiagramPackage.ADJ_WIDGET__BOLD:
+				setBold((Boolean)newValue);
+				return;
+			case UidiagramPackage.ADJ_WIDGET__ITALIC:
+				setItalic((Boolean)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -454,9 +595,6 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 		switch (featureID) {
 			case UidiagramPackage.ADJ_WIDGET__NAME:
 				setName(NAME_EDEFAULT);
-				return;
-			case UidiagramPackage.ADJ_WIDGET__VARIABLE:
-				setVariable(VARIABLE_EDEFAULT);
 				return;
 			case UidiagramPackage.ADJ_WIDGET__TEXT:
 				setText(TEXT_EDEFAULT);
@@ -476,6 +614,18 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 			case UidiagramPackage.ADJ_WIDGET__BACKGROUND:
 				setBackground(BACKGROUND_EDEFAULT);
 				return;
+			case UidiagramPackage.ADJ_WIDGET__FONT_NAME:
+				setFontName(FONT_NAME_EDEFAULT);
+				return;
+			case UidiagramPackage.ADJ_WIDGET__FONT_SIZE:
+				setFontSize(FONT_SIZE_EDEFAULT);
+				return;
+			case UidiagramPackage.ADJ_WIDGET__BOLD:
+				setBold(BOLD_EDEFAULT);
+				return;
+			case UidiagramPackage.ADJ_WIDGET__ITALIC:
+				setItalic(ITALIC_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -490,8 +640,6 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 		switch (featureID) {
 			case UidiagramPackage.ADJ_WIDGET__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case UidiagramPackage.ADJ_WIDGET__VARIABLE:
-				return VARIABLE_EDEFAULT == null ? variable != null : !VARIABLE_EDEFAULT.equals(variable);
 			case UidiagramPackage.ADJ_WIDGET__TEXT:
 				return TEXT_EDEFAULT == null ? text != null : !TEXT_EDEFAULT.equals(text);
 			case UidiagramPackage.ADJ_WIDGET__POSITION_X:
@@ -504,6 +652,14 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 				return HEIGHT_EDEFAULT == null ? height != null : !HEIGHT_EDEFAULT.equals(height);
 			case UidiagramPackage.ADJ_WIDGET__BACKGROUND:
 				return BACKGROUND_EDEFAULT == null ? background != null : !BACKGROUND_EDEFAULT.equals(background);
+			case UidiagramPackage.ADJ_WIDGET__FONT_NAME:
+				return FONT_NAME_EDEFAULT == null ? fontName != null : !FONT_NAME_EDEFAULT.equals(fontName);
+			case UidiagramPackage.ADJ_WIDGET__FONT_SIZE:
+				return FONT_SIZE_EDEFAULT == null ? fontSize != null : !FONT_SIZE_EDEFAULT.equals(fontSize);
+			case UidiagramPackage.ADJ_WIDGET__BOLD:
+				return BOLD_EDEFAULT == null ? bold != null : !BOLD_EDEFAULT.equals(bold);
+			case UidiagramPackage.ADJ_WIDGET__ITALIC:
+				return ITALIC_EDEFAULT == null ? italic != null : !ITALIC_EDEFAULT.equals(italic);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -520,8 +676,6 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (name: ");
 		result.append(name);
-		result.append(", variable: ");
-		result.append(variable);
 		result.append(", text: ");
 		result.append(text);
 		result.append(", positionX: ");
@@ -534,6 +688,14 @@ public abstract class AdjWidgetImpl extends EObjectImpl implements AdjWidget {
 		result.append(height);
 		result.append(", background: ");
 		result.append(background);
+		result.append(", fontName: ");
+		result.append(fontName);
+		result.append(", fontSize: ");
+		result.append(fontSize);
+		result.append(", bold: ");
+		result.append(bold);
+		result.append(", italic: ");
+		result.append(italic);
 		result.append(')');
 		return result.toString();
 	}

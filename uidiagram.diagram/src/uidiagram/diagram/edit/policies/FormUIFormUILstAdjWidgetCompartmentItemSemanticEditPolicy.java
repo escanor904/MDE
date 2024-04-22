@@ -72,7 +72,7 @@ public class FormUIFormUILstAdjWidgetCompartmentItemSemanticEditPolicy extends U
 		if (UidiagramElementTypes.AdjRadioButton_3099 == req.getElementType()) {
 			return getGEFWrapper(new AdjRadioButtonCreateCommand(req));
 		}
-		if (UidiagramElementTypes.AdjPictureBox_3100 == req.getElementType()) {
+		if (UidiagramElementTypes.AdjPictureBox_3106 == req.getElementType()) {
 			return getGEFWrapper(new AdjPictureBoxCreateCommand(req));
 		}
 		if (UidiagramElementTypes.AdjListView_3092 == req.getElementType()) {

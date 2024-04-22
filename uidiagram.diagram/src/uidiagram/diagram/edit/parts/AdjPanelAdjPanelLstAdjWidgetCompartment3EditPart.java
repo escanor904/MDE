@@ -124,7 +124,7 @@ public class AdjPanelAdjPanelLstAdjWidgetCompartment3EditPart extends ShapeCompa
 			if (type == UidiagramElementTypes.AdjRadioButton_3102) {
 				return this;
 			}
-			if (type == UidiagramElementTypes.AdjPictureBox_3103) {
+			if (type == UidiagramElementTypes.AdjPictureBox_3107) {
 				return this;
 			}
 			if (type == UidiagramElementTypes.AdjListView_3094) {

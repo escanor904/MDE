@@ -11,9 +11,7 @@ import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EStructuralFeature;
 
-import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 import uidiagram.AdjGroupBox;
@@ -48,31 +46,8 @@ public class AdjGroupBoxItemProvider extends AdjWidgetItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addFontPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Font feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addFontPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_AdjGroupBox_font_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_AdjGroupBox_font_feature", "_UI_AdjGroupBox_type"),
-				 UidiagramPackage.Literals.ADJ_GROUP_BOX__FONT,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -143,9 +118,6 @@ public class AdjGroupBoxItemProvider extends AdjWidgetItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(AdjGroupBox.class)) {
-			case UidiagramPackage.ADJ_GROUP_BOX__FONT:
-				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
-				return;
 			case UidiagramPackage.ADJ_GROUP_BOX__LST_ADJ_WIDGET:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;

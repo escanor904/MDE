@@ -15,7 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link uidiagram.AdjListViewColumn#getName <em>Name</em>}</li>
  *   <li>{@link uidiagram.AdjListViewColumn#getVariable <em>Variable</em>}</li>
- *   <li>{@link uidiagram.AdjListViewColumn#getValue <em>Value</em>}</li>
+ *   <li>{@link uidiagram.AdjListViewColumn#getText <em>Text</em>}</li>
  * </ul>
  *
  * @see uidiagram.UidiagramPackage#getAdjListViewColumn()
@@ -76,29 +76,29 @@ public interface AdjListViewColumn extends EObject {
 	void setVariable(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Value</b></em>' attribute.
+	 * Returns the value of the '<em><b>Text</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Value</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Text</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Value</em>' attribute.
-	 * @see #setValue(String)
-	 * @see uidiagram.UidiagramPackage#getAdjListViewColumn_Value()
+	 * @return the value of the '<em>Text</em>' attribute.
+	 * @see #setText(String)
+	 * @see uidiagram.UidiagramPackage#getAdjListViewColumn_Text()
 	 * @model
 	 * @generated
 	 */
-	String getValue();
+	String getText();
 
 	/**
-	 * Sets the value of the '{@link uidiagram.AdjListViewColumn#getValue <em>Value</em>}' attribute.
+	 * Sets the value of the '{@link uidiagram.AdjListViewColumn#getText <em>Text</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Value</em>' attribute.
-	 * @see #getValue()
+	 * @param value the new value of the '<em>Text</em>' attribute.
+	 * @see #getText()
 	 * @generated
 	 */
-	void setValue(String value);
+	void setText(String value);
 
 } // AdjListViewColumn

@@ -812,7 +812,7 @@ public class UidiagramDiagramUpdater {
 		case AdjRadioButtonEditPart.VISUAL_ID:
 			return getAdjRadioButton_3099ContainedLinks(view);
 		case AdjPictureBoxEditPart.VISUAL_ID:
-			return getAdjPictureBox_3100ContainedLinks(view);
+			return getAdjPictureBox_3106ContainedLinks(view);
 		case AdjListViewEditPart.VISUAL_ID:
 			return getAdjListView_3092ContainedLinks(view);
 		case AdjListViewColumnEditPart.VISUAL_ID:
@@ -842,7 +842,7 @@ public class UidiagramDiagramUpdater {
 		case AdjRadioButton2EditPart.VISUAL_ID:
 			return getAdjRadioButton_3102ContainedLinks(view);
 		case AdjPictureBox2EditPart.VISUAL_ID:
-			return getAdjPictureBox_3103ContainedLinks(view);
+			return getAdjPictureBox_3107ContainedLinks(view);
 		case AdjListView2EditPart.VISUAL_ID:
 			return getAdjListView_3094ContainedLinks(view);
 		case AdjPanel2EditPart.VISUAL_ID:
@@ -872,7 +872,7 @@ public class UidiagramDiagramUpdater {
 		case AdjRadioButton3EditPart.VISUAL_ID:
 			return getAdjRadioButton_3105ContainedLinks(view);
 		case AdjPictureBox3EditPart.VISUAL_ID:
-			return getAdjPictureBox_3106ContainedLinks(view);
+			return getAdjPictureBox_3108ContainedLinks(view);
 		case AdjListView3EditPart.VISUAL_ID:
 			return getAdjListView_3095ContainedLinks(view);
 		case AdjPanel3EditPart.VISUAL_ID:
@@ -915,7 +915,7 @@ public class UidiagramDiagramUpdater {
 		case AdjRadioButtonEditPart.VISUAL_ID:
 			return getAdjRadioButton_3099IncomingLinks(view);
 		case AdjPictureBoxEditPart.VISUAL_ID:
-			return getAdjPictureBox_3100IncomingLinks(view);
+			return getAdjPictureBox_3106IncomingLinks(view);
 		case AdjListViewEditPart.VISUAL_ID:
 			return getAdjListView_3092IncomingLinks(view);
 		case AdjListViewColumnEditPart.VISUAL_ID:
@@ -945,7 +945,7 @@ public class UidiagramDiagramUpdater {
 		case AdjRadioButton2EditPart.VISUAL_ID:
 			return getAdjRadioButton_3102IncomingLinks(view);
 		case AdjPictureBox2EditPart.VISUAL_ID:
-			return getAdjPictureBox_3103IncomingLinks(view);
+			return getAdjPictureBox_3107IncomingLinks(view);
 		case AdjListView2EditPart.VISUAL_ID:
 			return getAdjListView_3094IncomingLinks(view);
 		case AdjPanel2EditPart.VISUAL_ID:
@@ -975,7 +975,7 @@ public class UidiagramDiagramUpdater {
 		case AdjRadioButton3EditPart.VISUAL_ID:
 			return getAdjRadioButton_3105IncomingLinks(view);
 		case AdjPictureBox3EditPart.VISUAL_ID:
-			return getAdjPictureBox_3106IncomingLinks(view);
+			return getAdjPictureBox_3108IncomingLinks(view);
 		case AdjListView3EditPart.VISUAL_ID:
 			return getAdjListView_3095IncomingLinks(view);
 		case AdjPanel3EditPart.VISUAL_ID:
@@ -1018,7 +1018,7 @@ public class UidiagramDiagramUpdater {
 		case AdjRadioButtonEditPart.VISUAL_ID:
 			return getAdjRadioButton_3099OutgoingLinks(view);
 		case AdjPictureBoxEditPart.VISUAL_ID:
-			return getAdjPictureBox_3100OutgoingLinks(view);
+			return getAdjPictureBox_3106OutgoingLinks(view);
 		case AdjListViewEditPart.VISUAL_ID:
 			return getAdjListView_3092OutgoingLinks(view);
 		case AdjListViewColumnEditPart.VISUAL_ID:
@@ -1048,7 +1048,7 @@ public class UidiagramDiagramUpdater {
 		case AdjRadioButton2EditPart.VISUAL_ID:
 			return getAdjRadioButton_3102OutgoingLinks(view);
 		case AdjPictureBox2EditPart.VISUAL_ID:
-			return getAdjPictureBox_3103OutgoingLinks(view);
+			return getAdjPictureBox_3107OutgoingLinks(view);
 		case AdjListView2EditPart.VISUAL_ID:
 			return getAdjListView_3094OutgoingLinks(view);
 		case AdjPanel2EditPart.VISUAL_ID:
@@ -1078,7 +1078,7 @@ public class UidiagramDiagramUpdater {
 		case AdjRadioButton3EditPart.VISUAL_ID:
 			return getAdjRadioButton_3105OutgoingLinks(view);
 		case AdjPictureBox3EditPart.VISUAL_ID:
-			return getAdjPictureBox_3106OutgoingLinks(view);
+			return getAdjPictureBox_3108OutgoingLinks(view);
 		case AdjListView3EditPart.VISUAL_ID:
 			return getAdjListView_3095OutgoingLinks(view);
 		case AdjPanel3EditPart.VISUAL_ID:
@@ -1185,7 +1185,7 @@ public class UidiagramDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<UidiagramLinkDescriptor> getAdjPictureBox_3100ContainedLinks(View view) {
+	public static List<UidiagramLinkDescriptor> getAdjPictureBox_3106ContainedLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -1290,7 +1290,7 @@ public class UidiagramDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<UidiagramLinkDescriptor> getAdjPictureBox_3103ContainedLinks(View view) {
+	public static List<UidiagramLinkDescriptor> getAdjPictureBox_3107ContainedLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -1395,7 +1395,7 @@ public class UidiagramDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<UidiagramLinkDescriptor> getAdjPictureBox_3106ContainedLinks(View view) {
+	public static List<UidiagramLinkDescriptor> getAdjPictureBox_3108ContainedLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -1514,7 +1514,7 @@ public class UidiagramDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<UidiagramLinkDescriptor> getAdjPictureBox_3100IncomingLinks(View view) {
+	public static List<UidiagramLinkDescriptor> getAdjPictureBox_3106IncomingLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -1619,7 +1619,7 @@ public class UidiagramDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<UidiagramLinkDescriptor> getAdjPictureBox_3103IncomingLinks(View view) {
+	public static List<UidiagramLinkDescriptor> getAdjPictureBox_3107IncomingLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -1724,7 +1724,7 @@ public class UidiagramDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<UidiagramLinkDescriptor> getAdjPictureBox_3106IncomingLinks(View view) {
+	public static List<UidiagramLinkDescriptor> getAdjPictureBox_3108IncomingLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -1843,7 +1843,7 @@ public class UidiagramDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<UidiagramLinkDescriptor> getAdjPictureBox_3100OutgoingLinks(View view) {
+	public static List<UidiagramLinkDescriptor> getAdjPictureBox_3106OutgoingLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -1948,7 +1948,7 @@ public class UidiagramDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<UidiagramLinkDescriptor> getAdjPictureBox_3103OutgoingLinks(View view) {
+	public static List<UidiagramLinkDescriptor> getAdjPictureBox_3107OutgoingLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -2053,7 +2053,7 @@ public class UidiagramDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<UidiagramLinkDescriptor> getAdjPictureBox_3106OutgoingLinks(View view) {
+	public static List<UidiagramLinkDescriptor> getAdjPictureBox_3108OutgoingLinks(View view) {
 		return Collections.emptyList();
 	}
 

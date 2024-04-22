@@ -263,20 +263,20 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 			return getImage("Navigator?Node?uidiagram?AdjDateTimePicker", UidiagramElementTypes.AdjDateTimePicker_3098); //$NON-NLS-1$
 		case AdjRadioButtonEditPart.VISUAL_ID:
 			return getImage("Navigator?Node?uidiagram?AdjRadioButton", UidiagramElementTypes.AdjRadioButton_3099); //$NON-NLS-1$
-		case AdjPictureBoxEditPart.VISUAL_ID:
-			return getImage("Navigator?Node?uidiagram?AdjPictureBox", UidiagramElementTypes.AdjPictureBox_3100); //$NON-NLS-1$
 		case AdjDateTimePicker2EditPart.VISUAL_ID:
 			return getImage("Navigator?Node?uidiagram?AdjDateTimePicker", UidiagramElementTypes.AdjDateTimePicker_3101); //$NON-NLS-1$
 		case AdjRadioButton2EditPart.VISUAL_ID:
 			return getImage("Navigator?Node?uidiagram?AdjRadioButton", UidiagramElementTypes.AdjRadioButton_3102); //$NON-NLS-1$
-		case AdjPictureBox2EditPart.VISUAL_ID:
-			return getImage("Navigator?Node?uidiagram?AdjPictureBox", UidiagramElementTypes.AdjPictureBox_3103); //$NON-NLS-1$
 		case AdjDateTimePicker3EditPart.VISUAL_ID:
 			return getImage("Navigator?Node?uidiagram?AdjDateTimePicker", UidiagramElementTypes.AdjDateTimePicker_3104); //$NON-NLS-1$
 		case AdjRadioButton3EditPart.VISUAL_ID:
 			return getImage("Navigator?Node?uidiagram?AdjRadioButton", UidiagramElementTypes.AdjRadioButton_3105); //$NON-NLS-1$
-		case AdjPictureBox3EditPart.VISUAL_ID:
+		case AdjPictureBoxEditPart.VISUAL_ID:
 			return getImage("Navigator?Node?uidiagram?AdjPictureBox", UidiagramElementTypes.AdjPictureBox_3106); //$NON-NLS-1$
+		case AdjPictureBox2EditPart.VISUAL_ID:
+			return getImage("Navigator?Node?uidiagram?AdjPictureBox", UidiagramElementTypes.AdjPictureBox_3107); //$NON-NLS-1$
+		case AdjPictureBox3EditPart.VISUAL_ID:
+			return getImage("Navigator?Node?uidiagram?AdjPictureBox", UidiagramElementTypes.AdjPictureBox_3108); //$NON-NLS-1$
 		}
 		return getImage("Navigator?UnknownElement", null); //$NON-NLS-1$
 	}
@@ -417,20 +417,20 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 			return getAdjDateTimePicker_3098Text(view);
 		case AdjRadioButtonEditPart.VISUAL_ID:
 			return getAdjRadioButton_3099Text(view);
-		case AdjPictureBoxEditPart.VISUAL_ID:
-			return getAdjPictureBox_3100Text(view);
 		case AdjDateTimePicker2EditPart.VISUAL_ID:
 			return getAdjDateTimePicker_3101Text(view);
 		case AdjRadioButton2EditPart.VISUAL_ID:
 			return getAdjRadioButton_3102Text(view);
-		case AdjPictureBox2EditPart.VISUAL_ID:
-			return getAdjPictureBox_3103Text(view);
 		case AdjDateTimePicker3EditPart.VISUAL_ID:
 			return getAdjDateTimePicker_3104Text(view);
 		case AdjRadioButton3EditPart.VISUAL_ID:
 			return getAdjRadioButton_3105Text(view);
-		case AdjPictureBox3EditPart.VISUAL_ID:
+		case AdjPictureBoxEditPart.VISUAL_ID:
 			return getAdjPictureBox_3106Text(view);
+		case AdjPictureBox2EditPart.VISUAL_ID:
+			return getAdjPictureBox_3107Text(view);
+		case AdjPictureBox3EditPart.VISUAL_ID:
+			return getAdjPictureBox_3108Text(view);
 		}
 		return getUnknownElementText(view);
 	}
@@ -1085,22 +1085,6 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	/**
 	* @generated
 	*/
-	private String getAdjPictureBox_3100Text(View view) {
-		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjPictureBox_3100,
-				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjPictureBoxNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			UidiagramDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 5101); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	* @generated
-	*/
 	private String getAdjDateTimePicker_3101Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjDateTimePicker_3101,
 				view.getElement() != null ? view.getElement() : view,
@@ -1126,22 +1110,6 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 					ParserOptions.NONE.intValue());
 		} else {
 			UidiagramDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 5103); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	* @generated
-	*/
-	private String getAdjPictureBox_3103Text(View view) {
-		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjPictureBox_3103,
-				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjPictureBoxName2EditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			UidiagramDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 5104); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -1184,12 +1152,44 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjPictureBox_3106Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjPictureBox_3106,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjPictureBoxName3EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjPictureBoxNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
 		} else {
 			UidiagramDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 5107); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	* @generated
+	*/
+	private String getAdjPictureBox_3107Text(View view) {
+		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjPictureBox_3107,
+				view.getElement() != null ? view.getElement() : view,
+				UidiagramVisualIDRegistry.getType(AdjPictureBoxName2EditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			UidiagramDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 5108); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	* @generated
+	*/
+	private String getAdjPictureBox_3108Text(View view) {
+		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjPictureBox_3108,
+				view.getElement() != null ? view.getElement() : view,
+				UidiagramVisualIDRegistry.getType(AdjPictureBoxName3EditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			UidiagramDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 5109); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}

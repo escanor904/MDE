@@ -123,7 +123,7 @@ public class FormUIFormUILstAdjWidgetCompartmentEditPart extends ShapeCompartmen
 			if (type == UidiagramElementTypes.AdjRadioButton_3099) {
 				return this;
 			}
-			if (type == UidiagramElementTypes.AdjPictureBox_3100) {
+			if (type == UidiagramElementTypes.AdjPictureBox_3106) {
 				return this;
 			}
 			if (type == UidiagramElementTypes.AdjListView_3092) {

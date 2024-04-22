@@ -22,7 +22,7 @@ import uidiagram.UidiagramPackage;
  * <ul>
  *   <li>{@link uidiagram.impl.AdjListViewColumnImpl#getName <em>Name</em>}</li>
  *   <li>{@link uidiagram.impl.AdjListViewColumnImpl#getVariable <em>Variable</em>}</li>
- *   <li>{@link uidiagram.impl.AdjListViewColumnImpl#getValue <em>Value</em>}</li>
+ *   <li>{@link uidiagram.impl.AdjListViewColumnImpl#getText <em>Text</em>}</li>
  * </ul>
  *
  * @generated
@@ -69,24 +69,24 @@ public class AdjListViewColumnImpl extends EObjectImpl implements AdjListViewCol
 	protected String variable = VARIABLE_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
+	 * The default value of the '{@link #getText() <em>Text</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getValue()
+	 * @see #getText()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALUE_EDEFAULT = null;
+	protected static final String TEXT_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
+	 * The cached value of the '{@link #getText() <em>Text</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getValue()
+	 * @see #getText()
 	 * @generated
 	 * @ordered
 	 */
-	protected String value = VALUE_EDEFAULT;
+	protected String text = TEXT_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -154,8 +154,8 @@ public class AdjListViewColumnImpl extends EObjectImpl implements AdjListViewCol
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getValue() {
-		return value;
+	public String getText() {
+		return text;
 	}
 
 	/**
@@ -163,11 +163,11 @@ public class AdjListViewColumnImpl extends EObjectImpl implements AdjListViewCol
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(String newValue) {
-		String oldValue = value;
-		value = newValue;
+	public void setText(String newText) {
+		String oldText = text;
+		text = newText;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.ADJ_LIST_VIEW_COLUMN__VALUE, oldValue, value));
+			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.ADJ_LIST_VIEW_COLUMN__TEXT, oldText, text));
 	}
 
 	/**
@@ -182,8 +182,8 @@ public class AdjListViewColumnImpl extends EObjectImpl implements AdjListViewCol
 				return getName();
 			case UidiagramPackage.ADJ_LIST_VIEW_COLUMN__VARIABLE:
 				return getVariable();
-			case UidiagramPackage.ADJ_LIST_VIEW_COLUMN__VALUE:
-				return getValue();
+			case UidiagramPackage.ADJ_LIST_VIEW_COLUMN__TEXT:
+				return getText();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -202,8 +202,8 @@ public class AdjListViewColumnImpl extends EObjectImpl implements AdjListViewCol
 			case UidiagramPackage.ADJ_LIST_VIEW_COLUMN__VARIABLE:
 				setVariable((String)newValue);
 				return;
-			case UidiagramPackage.ADJ_LIST_VIEW_COLUMN__VALUE:
-				setValue((String)newValue);
+			case UidiagramPackage.ADJ_LIST_VIEW_COLUMN__TEXT:
+				setText((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -223,8 +223,8 @@ public class AdjListViewColumnImpl extends EObjectImpl implements AdjListViewCol
 			case UidiagramPackage.ADJ_LIST_VIEW_COLUMN__VARIABLE:
 				setVariable(VARIABLE_EDEFAULT);
 				return;
-			case UidiagramPackage.ADJ_LIST_VIEW_COLUMN__VALUE:
-				setValue(VALUE_EDEFAULT);
+			case UidiagramPackage.ADJ_LIST_VIEW_COLUMN__TEXT:
+				setText(TEXT_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -242,8 +242,8 @@ public class AdjListViewColumnImpl extends EObjectImpl implements AdjListViewCol
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case UidiagramPackage.ADJ_LIST_VIEW_COLUMN__VARIABLE:
 				return VARIABLE_EDEFAULT == null ? variable != null : !VARIABLE_EDEFAULT.equals(variable);
-			case UidiagramPackage.ADJ_LIST_VIEW_COLUMN__VALUE:
-				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
+			case UidiagramPackage.ADJ_LIST_VIEW_COLUMN__TEXT:
+				return TEXT_EDEFAULT == null ? text != null : !TEXT_EDEFAULT.equals(text);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -262,8 +262,8 @@ public class AdjListViewColumnImpl extends EObjectImpl implements AdjListViewCol
 		result.append(name);
 		result.append(", variable: ");
 		result.append(variable);
-		result.append(", value: ");
-		result.append(value);
+		result.append(", text: ");
+		result.append(text);
 		result.append(')');
 		return result.toString();
 	}

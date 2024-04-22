@@ -124,7 +124,7 @@ public class AdjGroupBoxAdjGroupBoxLstAdjWidgetCompartmentEditPart extends Shape
 			if (type == UidiagramElementTypes.AdjRadioButton_3105) {
 				return this;
 			}
-			if (type == UidiagramElementTypes.AdjPictureBox_3106) {
+			if (type == UidiagramElementTypes.AdjPictureBox_3108) {
 				return this;
 			}
 			if (type == UidiagramElementTypes.AdjListView_3095) {

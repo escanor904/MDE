@@ -24,13 +24,16 @@ class FormUI {
 
 abstract class AdjWidget {
 	attr String name;
-	attr String variable;
 	attr String text;
 	attr Integer positionX;
 	attr Integer positionY;
 	attr Integer width;
 	attr Integer height;
-	attr Integer background;
+	attr String background;
+	attr String fontName;
+	attr Integer fontSize;
+	attr Boolean bold;
+	attr Boolean italic;
 }
 
 
@@ -38,57 +41,46 @@ abstract class AdjWidget {
 
 @gmf.node(label = "name")
 class AdjLabel extends AdjWidget {
-	attr String font;
 }
 
 @gmf.node(label = "name")
 class AdjCheckBox extends AdjWidget {
-	attr String font;
 }
 
 @gmf.node(label = "name")
 class AdjButton extends AdjWidget {
-	attr String font;
 }
 
 @gmf.node(label = "name")
 class AdjListBox extends AdjWidget {
-	attr String font;
 }
 
 @gmf.node(label = "name")
 class AdjDateTimePicker extends AdjWidget {
-	attr String font;
 }
 
 @gmf.node(label = "name")
 class AdjTextBox extends AdjWidget {
-	attr String font;
 }
 
 @gmf.node(label = "name")
 class AdjCheckedListBox extends AdjWidget {
-	attr String font;
 }
 
 @gmf.node(label = "name")
 class AdjLinkLabel extends AdjWidget {
-	attr String font;
 }
 
 @gmf.node(label = "name")
 class AdjRichTextBox extends AdjWidget {
-	attr String font;
 }
 
 @gmf.node(label = "name")
 class AdjComboBox extends AdjWidget {
-	attr String font;
 }
 
 @gmf.node(label = "name")
 class AdjRadioButton extends AdjWidget {
-	attr String font;
 }
 
 @gmf.node(label = "name")
@@ -105,21 +97,21 @@ class AdjListView extends AdjWidget {
 class AdjListViewColumn {
 	attr String name;
 	attr String variable;
-	attr String value;
+	attr String text;
 }
+
+
 
 //GRUPOS
 
 @gmf.node(label = "name")
 class AdjPanel extends AdjWidget {
-	attr String font;
 	@gmf.compartment
 	val AdjWidget[*] lstAdjWidget;
 }
 
 @gmf.node(label = "name")
 class AdjGroupBox extends AdjWidget {
-	attr String font;
 	@gmf.compartment
 	val AdjWidget[*] lstAdjWidget;
 }

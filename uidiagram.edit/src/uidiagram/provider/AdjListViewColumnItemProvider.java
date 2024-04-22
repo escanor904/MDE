@@ -62,7 +62,7 @@ public class AdjListViewColumnItemProvider
 
 			addNamePropertyDescriptor(object);
 			addVariablePropertyDescriptor(object);
-			addValuePropertyDescriptor(object);
+			addTextPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -112,19 +112,19 @@ public class AdjListViewColumnItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Value feature.
+	 * This adds a property descriptor for the Text feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addValuePropertyDescriptor(Object object) {
+	protected void addTextPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_AdjListViewColumn_value_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_AdjListViewColumn_value_feature", "_UI_AdjListViewColumn_type"),
-				 UidiagramPackage.Literals.ADJ_LIST_VIEW_COLUMN__VALUE,
+				 getString("_UI_AdjListViewColumn_text_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_AdjListViewColumn_text_feature", "_UI_AdjListViewColumn_type"),
+				 UidiagramPackage.Literals.ADJ_LIST_VIEW_COLUMN__TEXT,
 				 true,
 				 false,
 				 false,
@@ -173,7 +173,7 @@ public class AdjListViewColumnItemProvider
 		switch (notification.getFeatureID(AdjListViewColumn.class)) {
 			case UidiagramPackage.ADJ_LIST_VIEW_COLUMN__NAME:
 			case UidiagramPackage.ADJ_LIST_VIEW_COLUMN__VARIABLE:
-			case UidiagramPackage.ADJ_LIST_VIEW_COLUMN__VALUE:
+			case UidiagramPackage.ADJ_LIST_VIEW_COLUMN__TEXT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

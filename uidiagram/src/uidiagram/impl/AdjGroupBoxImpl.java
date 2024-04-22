@@ -4,15 +4,12 @@ package uidiagram.impl;
 
 import java.util.Collection;
 
-import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
@@ -29,33 +26,12 @@ import uidiagram.UidiagramPackage;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link uidiagram.impl.AdjGroupBoxImpl#getFont <em>Font</em>}</li>
  *   <li>{@link uidiagram.impl.AdjGroupBoxImpl#getLstAdjWidget <em>Lst Adj Widget</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class AdjGroupBoxImpl extends AdjWidgetImpl implements AdjGroupBox {
-	/**
-	 * The default value of the '{@link #getFont() <em>Font</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getFont()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String FONT_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getFont() <em>Font</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getFont()
-	 * @generated
-	 * @ordered
-	 */
-	protected String font = FONT_EDEFAULT;
-
 	/**
 	 * The cached value of the '{@link #getLstAdjWidget() <em>Lst Adj Widget</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -83,27 +59,6 @@ public class AdjGroupBoxImpl extends AdjWidgetImpl implements AdjGroupBox {
 	@Override
 	protected EClass eStaticClass() {
 		return UidiagramPackage.Literals.ADJ_GROUP_BOX;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getFont() {
-		return font;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setFont(String newFont) {
-		String oldFont = font;
-		font = newFont;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.ADJ_GROUP_BOX__FONT, oldFont, font));
 	}
 
 	/**
@@ -140,8 +95,6 @@ public class AdjGroupBoxImpl extends AdjWidgetImpl implements AdjGroupBox {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case UidiagramPackage.ADJ_GROUP_BOX__FONT:
-				return getFont();
 			case UidiagramPackage.ADJ_GROUP_BOX__LST_ADJ_WIDGET:
 				return getLstAdjWidget();
 		}
@@ -157,9 +110,6 @@ public class AdjGroupBoxImpl extends AdjWidgetImpl implements AdjGroupBox {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case UidiagramPackage.ADJ_GROUP_BOX__FONT:
-				setFont((String)newValue);
-				return;
 			case UidiagramPackage.ADJ_GROUP_BOX__LST_ADJ_WIDGET:
 				getLstAdjWidget().clear();
 				getLstAdjWidget().addAll((Collection<? extends AdjWidget>)newValue);
@@ -176,9 +126,6 @@ public class AdjGroupBoxImpl extends AdjWidgetImpl implements AdjGroupBox {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case UidiagramPackage.ADJ_GROUP_BOX__FONT:
-				setFont(FONT_EDEFAULT);
-				return;
 			case UidiagramPackage.ADJ_GROUP_BOX__LST_ADJ_WIDGET:
 				getLstAdjWidget().clear();
 				return;
@@ -194,28 +141,10 @@ public class AdjGroupBoxImpl extends AdjWidgetImpl implements AdjGroupBox {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case UidiagramPackage.ADJ_GROUP_BOX__FONT:
-				return FONT_EDEFAULT == null ? font != null : !FONT_EDEFAULT.equals(font);
 			case UidiagramPackage.ADJ_GROUP_BOX__LST_ADJ_WIDGET:
 				return lstAdjWidget != null && !lstAdjWidget.isEmpty();
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) return super.toString();
-
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (font: ");
-		result.append(font);
-		result.append(')');
-		return result.toString();
 	}
 
 } //AdjGroupBoxImpl

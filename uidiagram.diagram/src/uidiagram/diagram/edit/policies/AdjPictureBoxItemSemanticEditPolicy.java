@@ -22,7 +22,7 @@ public class AdjPictureBoxItemSemanticEditPolicy extends UidiagramBaseItemSemant
 	* @generated
 	*/
 	public AdjPictureBoxItemSemanticEditPolicy() {
-		super(UidiagramElementTypes.AdjPictureBox_3100);
+		super(UidiagramElementTypes.AdjPictureBox_3106);
 	}
 
 	/**

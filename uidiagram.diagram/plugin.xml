@@ -258,7 +258,7 @@
          </object>
          <context viewClass="org.eclipse.gmf.runtime.notation.Node" containerViews="referencing-diagrams"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="Uidiagram"/>
-         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2001,3001,3002,3003,3004,3098,3006,3007,3008,3009,3087,3099,3100,3092,3093,3015,3016,3017,3018,3019,3101,3021,3022,3023,3024,3088,3102,3103,3094,3029,3030,3031,3032,3033,3034,3104,3036,3037,3038,3039,3089,3105,3106,3095,3044,3076,3084"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2001,3001,3002,3003,3004,3098,3006,3007,3008,3009,3087,3099,3106,3092,3093,3015,3016,3017,3018,3019,3101,3021,3022,3023,3024,3088,3102,3107,3094,3029,3030,3031,3032,3033,3034,3104,3036,3037,3038,3039,3089,3105,3108,3095,3044,3076,3084"/>
       </viewProvider>
    </extension>
 
@@ -270,13 +270,13 @@
             <method name="getType()" value="Uidiagram"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-nodes">
-            <method name="getType()" value="2001,3001,3002,3003,3004,3098,3006,3007,3008,3009,3087,3099,3100,3092,3093,3015,3016,3017,3018,3019,3101,3021,3022,3023,3024,3088,3102,3103,3094,3029,3030,3031,3032,3033,3034,3104,3036,3037,3038,3039,3089,3105,3106,3095,3044,3076,3084"/>
+            <method name="getType()" value="2001,3001,3002,3003,3004,3098,3006,3007,3008,3009,3087,3099,3106,3092,3093,3015,3016,3017,3018,3019,3101,3021,3022,3023,3024,3088,3102,3107,3094,3029,3030,3031,3032,3033,3034,3104,3036,3037,3038,3039,3089,3105,3108,3095,3044,3076,3084"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
             <method name="getType()" value=""/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-labels">
-            <method name="getType()" value="5087,5001,5002,5003,5004,5099,5006,5007,5008,5009,5088,5100,5101,5094,5093,5083,5015,5016,5017,5018,5102,5020,5021,5022,5023,5089,5103,5104,5095,5082,5081,5028,5029,5030,5031,5105,5033,5034,5035,5036,5090,5106,5107,5096,5080,5075,5084"/>
+            <method name="getType()" value="5087,5001,5002,5003,5004,5099,5006,5007,5008,5009,5088,5100,5107,5094,5093,5083,5015,5016,5017,5018,5102,5020,5021,5022,5023,5089,5103,5108,5095,5082,5081,5028,5029,5030,5031,5105,5033,5034,5035,5036,5090,5106,5109,5096,5080,5075,5084"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-compartments">
             <method name="getType()" value="7001,7027,7003,7028,7005,7006,7029,7008,7016,7024"/>
@@ -355,8 +355,8 @@
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjPictureBoxEditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjPictureBoxEditPart" id="AdjPictureBox_3100"/>
-         <context elements="AdjPictureBox_3100"/>
+         <object class="uidiagram.diagram.edit.parts.AdjPictureBoxEditPart" id="AdjPictureBox_3106"/>
+         <context elements="AdjPictureBox_3106"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjListViewEditPart">
          <Priority name="Lowest"/>
@@ -430,8 +430,8 @@
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjPictureBox2EditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjPictureBox2EditPart" id="AdjPictureBox_3103"/>
-         <context elements="AdjPictureBox_3103"/>
+         <object class="uidiagram.diagram.edit.parts.AdjPictureBox2EditPart" id="AdjPictureBox_3107"/>
+         <context elements="AdjPictureBox_3107"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjListView2EditPart">
          <Priority name="Lowest"/>
@@ -505,8 +505,8 @@
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjPictureBox3EditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.AdjPictureBox3EditPart" id="AdjPictureBox_3106"/>
-         <context elements="AdjPictureBox_3106"/>
+         <object class="uidiagram.diagram.edit.parts.AdjPictureBox3EditPart" id="AdjPictureBox_3108"/>
+         <context elements="AdjPictureBox_3108"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfAdjListView3EditPart">
          <Priority name="Lowest"/>
@@ -691,12 +691,12 @@
       </metamodel>
       <metamodel nsURI="uidiagram">
          <metamodelType
-               id="uidiagram.diagram.AdjPictureBox_3100"
-               name="%metatype.name.AdjPictureBox_3100"
+               id="uidiagram.diagram.AdjPictureBox_3106"
+               name="%metatype.name.AdjPictureBox_3106"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="AdjPictureBox"
                edithelper="uidiagram.diagram.edit.helpers.AdjPictureBoxEditHelper">
-            <param name="semanticHint" value="3100"/>
+            <param name="semanticHint" value="3106"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="uidiagram">
@@ -830,11 +830,11 @@
       </metamodel>
       <metamodel nsURI="uidiagram">
          <specializationType
-               id="uidiagram.diagram.AdjPictureBox_3103"
-               name="%metatype.name.AdjPictureBox_3103"
+               id="uidiagram.diagram.AdjPictureBox_3107"
+               name="%metatype.name.AdjPictureBox_3107"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjPictureBox_3100"/>
-            <param name="semanticHint" value="3103"/>
+            <specializes id="uidiagram.diagram.AdjPictureBox_3106"/>
+            <param name="semanticHint" value="3107"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="uidiagram">
@@ -966,11 +966,11 @@
       </metamodel>
       <metamodel nsURI="uidiagram">
          <specializationType
-               id="uidiagram.diagram.AdjPictureBox_3106"
-               name="%metatype.name.AdjPictureBox_3106"
+               id="uidiagram.diagram.AdjPictureBox_3108"
+               name="%metatype.name.AdjPictureBox_3108"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.AdjPictureBox_3100"/>
-            <param name="semanticHint" value="3106"/>
+            <specializes id="uidiagram.diagram.AdjPictureBox_3106"/>
+            <param name="semanticHint" value="3108"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="uidiagram">
@@ -1034,7 +1034,7 @@
          <elementType ref="uidiagram.diagram.AdjRichTextBox_3009"/>
          <elementType ref="uidiagram.diagram.AdjComboBox_3087"/>
          <elementType ref="uidiagram.diagram.AdjRadioButton_3099"/>
-         <elementType ref="uidiagram.diagram.AdjPictureBox_3100"/>
+         <elementType ref="uidiagram.diagram.AdjPictureBox_3106"/>
          <elementType ref="uidiagram.diagram.AdjListView_3092"/>
          <elementType ref="uidiagram.diagram.AdjListViewColumn_3093"/>
          <elementType ref="uidiagram.diagram.AdjPanel_3015"/>
@@ -1049,7 +1049,7 @@
          <elementType ref="uidiagram.diagram.AdjRichTextBox_3024"/>
          <elementType ref="uidiagram.diagram.AdjComboBox_3088"/>
          <elementType ref="uidiagram.diagram.AdjRadioButton_3102"/>
-         <elementType ref="uidiagram.diagram.AdjPictureBox_3103"/>
+         <elementType ref="uidiagram.diagram.AdjPictureBox_3107"/>
          <elementType ref="uidiagram.diagram.AdjListView_3094"/>
          <elementType ref="uidiagram.diagram.AdjPanel_3029"/>
          <elementType ref="uidiagram.diagram.AdjGroupBox_3030"/>
@@ -1064,7 +1064,7 @@
          <elementType ref="uidiagram.diagram.AdjRichTextBox_3039"/>
          <elementType ref="uidiagram.diagram.AdjComboBox_3089"/>
          <elementType ref="uidiagram.diagram.AdjRadioButton_3105"/>
-         <elementType ref="uidiagram.diagram.AdjPictureBox_3106"/>
+         <elementType ref="uidiagram.diagram.AdjPictureBox_3108"/>
          <elementType ref="uidiagram.diagram.AdjListView_3095"/>
          <elementType ref="uidiagram.diagram.AdjPanel_3044"/>
          <elementType ref="uidiagram.diagram.AdjGroupBox_3076"/>

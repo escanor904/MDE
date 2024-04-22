@@ -249,13 +249,13 @@ public class UidiagramPaletteFactory {
 	*/
 	private ToolEntry createAdjPictureBox13CreationTool() {
 		ArrayList<IElementType> types = new ArrayList<IElementType>(3);
-		types.add(UidiagramElementTypes.AdjPictureBox_3100);
-		types.add(UidiagramElementTypes.AdjPictureBox_3103);
 		types.add(UidiagramElementTypes.AdjPictureBox_3106);
+		types.add(UidiagramElementTypes.AdjPictureBox_3107);
+		types.add(UidiagramElementTypes.AdjPictureBox_3108);
 		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(Messages.AdjPictureBox13CreationTool_title,
 				Messages.AdjPictureBox13CreationTool_desc, types);
 		entry.setId("createAdjPictureBox13CreationTool"); //$NON-NLS-1$
-		entry.setSmallIcon(UidiagramElementTypes.getImageDescriptor(UidiagramElementTypes.AdjPictureBox_3100));
+		entry.setSmallIcon(UidiagramElementTypes.getImageDescriptor(UidiagramElementTypes.AdjPictureBox_3106));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}

@@ -73,7 +73,7 @@ public class AdjGroupBoxAdjGroupBoxLstAdjWidgetCompartment3ItemSemanticEditPolic
 		if (UidiagramElementTypes.AdjRadioButton_3105 == req.getElementType()) {
 			return getGEFWrapper(new AdjRadioButton3CreateCommand(req));
 		}
-		if (UidiagramElementTypes.AdjPictureBox_3106 == req.getElementType()) {
+		if (UidiagramElementTypes.AdjPictureBox_3108 == req.getElementType()) {
 			return getGEFWrapper(new AdjPictureBox3CreateCommand(req));
 		}
 		if (UidiagramElementTypes.AdjListView_3095 == req.getElementType()) {

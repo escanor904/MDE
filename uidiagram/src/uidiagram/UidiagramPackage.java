@@ -196,22 +196,13 @@ public interface UidiagramPackage extends EPackage {
 	int ADJ_WIDGET__NAME = 0;
 
 	/**
-	 * The feature id for the '<em><b>Variable</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_WIDGET__VARIABLE = 1;
-
-	/**
 	 * The feature id for the '<em><b>Text</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_WIDGET__TEXT = 2;
+	int ADJ_WIDGET__TEXT = 1;
 
 	/**
 	 * The feature id for the '<em><b>Position X</b></em>' attribute.
@@ -220,7 +211,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_WIDGET__POSITION_X = 3;
+	int ADJ_WIDGET__POSITION_X = 2;
 
 	/**
 	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
@@ -229,7 +220,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_WIDGET__POSITION_Y = 4;
+	int ADJ_WIDGET__POSITION_Y = 3;
 
 	/**
 	 * The feature id for the '<em><b>Width</b></em>' attribute.
@@ -238,7 +229,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_WIDGET__WIDTH = 5;
+	int ADJ_WIDGET__WIDTH = 4;
 
 	/**
 	 * The feature id for the '<em><b>Height</b></em>' attribute.
@@ -247,7 +238,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_WIDGET__HEIGHT = 6;
+	int ADJ_WIDGET__HEIGHT = 5;
 
 	/**
 	 * The feature id for the '<em><b>Background</b></em>' attribute.
@@ -256,7 +247,43 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_WIDGET__BACKGROUND = 7;
+	int ADJ_WIDGET__BACKGROUND = 6;
+
+	/**
+	 * The feature id for the '<em><b>Font Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_WIDGET__FONT_NAME = 7;
+
+	/**
+	 * The feature id for the '<em><b>Font Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_WIDGET__FONT_SIZE = 8;
+
+	/**
+	 * The feature id for the '<em><b>Bold</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_WIDGET__BOLD = 9;
+
+	/**
+	 * The feature id for the '<em><b>Italic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_WIDGET__ITALIC = 10;
 
 	/**
 	 * The number of structural features of the '<em>Adj Widget</em>' class.
@@ -265,7 +292,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_WIDGET_FEATURE_COUNT = 8;
+	int ADJ_WIDGET_FEATURE_COUNT = 11;
 
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.AdjLabelImpl <em>Adj Label</em>}' class.
@@ -285,15 +312,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int ADJ_LABEL__NAME = ADJ_WIDGET__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Variable</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_LABEL__VARIABLE = ADJ_WIDGET__VARIABLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -350,13 +368,40 @@ public interface UidiagramPackage extends EPackage {
 	int ADJ_LABEL__BACKGROUND = ADJ_WIDGET__BACKGROUND;
 
 	/**
-	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * The feature id for the '<em><b>Font Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_LABEL__FONT = ADJ_WIDGET_FEATURE_COUNT + 0;
+	int ADJ_LABEL__FONT_NAME = ADJ_WIDGET__FONT_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Font Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_LABEL__FONT_SIZE = ADJ_WIDGET__FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Bold</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_LABEL__BOLD = ADJ_WIDGET__BOLD;
+
+	/**
+	 * The feature id for the '<em><b>Italic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_LABEL__ITALIC = ADJ_WIDGET__ITALIC;
 
 	/**
 	 * The number of structural features of the '<em>Adj Label</em>' class.
@@ -365,7 +410,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_LABEL_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
+	int ADJ_LABEL_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.AdjCheckBoxImpl <em>Adj Check Box</em>}' class.
@@ -385,15 +430,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int ADJ_CHECK_BOX__NAME = ADJ_WIDGET__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Variable</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_CHECK_BOX__VARIABLE = ADJ_WIDGET__VARIABLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -450,13 +486,40 @@ public interface UidiagramPackage extends EPackage {
 	int ADJ_CHECK_BOX__BACKGROUND = ADJ_WIDGET__BACKGROUND;
 
 	/**
-	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * The feature id for the '<em><b>Font Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_CHECK_BOX__FONT = ADJ_WIDGET_FEATURE_COUNT + 0;
+	int ADJ_CHECK_BOX__FONT_NAME = ADJ_WIDGET__FONT_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Font Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_CHECK_BOX__FONT_SIZE = ADJ_WIDGET__FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Bold</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_CHECK_BOX__BOLD = ADJ_WIDGET__BOLD;
+
+	/**
+	 * The feature id for the '<em><b>Italic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_CHECK_BOX__ITALIC = ADJ_WIDGET__ITALIC;
 
 	/**
 	 * The number of structural features of the '<em>Adj Check Box</em>' class.
@@ -465,7 +528,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_CHECK_BOX_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
+	int ADJ_CHECK_BOX_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.AdjButtonImpl <em>Adj Button</em>}' class.
@@ -485,15 +548,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int ADJ_BUTTON__NAME = ADJ_WIDGET__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Variable</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_BUTTON__VARIABLE = ADJ_WIDGET__VARIABLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -550,13 +604,40 @@ public interface UidiagramPackage extends EPackage {
 	int ADJ_BUTTON__BACKGROUND = ADJ_WIDGET__BACKGROUND;
 
 	/**
-	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * The feature id for the '<em><b>Font Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_BUTTON__FONT = ADJ_WIDGET_FEATURE_COUNT + 0;
+	int ADJ_BUTTON__FONT_NAME = ADJ_WIDGET__FONT_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Font Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_BUTTON__FONT_SIZE = ADJ_WIDGET__FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Bold</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_BUTTON__BOLD = ADJ_WIDGET__BOLD;
+
+	/**
+	 * The feature id for the '<em><b>Italic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_BUTTON__ITALIC = ADJ_WIDGET__ITALIC;
 
 	/**
 	 * The number of structural features of the '<em>Adj Button</em>' class.
@@ -565,7 +646,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_BUTTON_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
+	int ADJ_BUTTON_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.AdjListBoxImpl <em>Adj List Box</em>}' class.
@@ -585,15 +666,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int ADJ_LIST_BOX__NAME = ADJ_WIDGET__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Variable</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_LIST_BOX__VARIABLE = ADJ_WIDGET__VARIABLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -650,13 +722,40 @@ public interface UidiagramPackage extends EPackage {
 	int ADJ_LIST_BOX__BACKGROUND = ADJ_WIDGET__BACKGROUND;
 
 	/**
-	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * The feature id for the '<em><b>Font Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_LIST_BOX__FONT = ADJ_WIDGET_FEATURE_COUNT + 0;
+	int ADJ_LIST_BOX__FONT_NAME = ADJ_WIDGET__FONT_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Font Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_LIST_BOX__FONT_SIZE = ADJ_WIDGET__FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Bold</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_LIST_BOX__BOLD = ADJ_WIDGET__BOLD;
+
+	/**
+	 * The feature id for the '<em><b>Italic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_LIST_BOX__ITALIC = ADJ_WIDGET__ITALIC;
 
 	/**
 	 * The number of structural features of the '<em>Adj List Box</em>' class.
@@ -665,7 +764,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_LIST_BOX_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
+	int ADJ_LIST_BOX_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.AdjDateTimePickerImpl <em>Adj Date Time Picker</em>}' class.
@@ -685,15 +784,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int ADJ_DATE_TIME_PICKER__NAME = ADJ_WIDGET__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Variable</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_DATE_TIME_PICKER__VARIABLE = ADJ_WIDGET__VARIABLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -750,13 +840,40 @@ public interface UidiagramPackage extends EPackage {
 	int ADJ_DATE_TIME_PICKER__BACKGROUND = ADJ_WIDGET__BACKGROUND;
 
 	/**
-	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * The feature id for the '<em><b>Font Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATE_TIME_PICKER__FONT = ADJ_WIDGET_FEATURE_COUNT + 0;
+	int ADJ_DATE_TIME_PICKER__FONT_NAME = ADJ_WIDGET__FONT_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Font Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_DATE_TIME_PICKER__FONT_SIZE = ADJ_WIDGET__FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Bold</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_DATE_TIME_PICKER__BOLD = ADJ_WIDGET__BOLD;
+
+	/**
+	 * The feature id for the '<em><b>Italic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_DATE_TIME_PICKER__ITALIC = ADJ_WIDGET__ITALIC;
 
 	/**
 	 * The number of structural features of the '<em>Adj Date Time Picker</em>' class.
@@ -765,7 +882,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_DATE_TIME_PICKER_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
+	int ADJ_DATE_TIME_PICKER_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.AdjTextBoxImpl <em>Adj Text Box</em>}' class.
@@ -785,15 +902,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int ADJ_TEXT_BOX__NAME = ADJ_WIDGET__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Variable</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_TEXT_BOX__VARIABLE = ADJ_WIDGET__VARIABLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -850,13 +958,40 @@ public interface UidiagramPackage extends EPackage {
 	int ADJ_TEXT_BOX__BACKGROUND = ADJ_WIDGET__BACKGROUND;
 
 	/**
-	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * The feature id for the '<em><b>Font Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_TEXT_BOX__FONT = ADJ_WIDGET_FEATURE_COUNT + 0;
+	int ADJ_TEXT_BOX__FONT_NAME = ADJ_WIDGET__FONT_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Font Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_TEXT_BOX__FONT_SIZE = ADJ_WIDGET__FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Bold</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_TEXT_BOX__BOLD = ADJ_WIDGET__BOLD;
+
+	/**
+	 * The feature id for the '<em><b>Italic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_TEXT_BOX__ITALIC = ADJ_WIDGET__ITALIC;
 
 	/**
 	 * The number of structural features of the '<em>Adj Text Box</em>' class.
@@ -865,7 +1000,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_TEXT_BOX_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
+	int ADJ_TEXT_BOX_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.AdjCheckedListBoxImpl <em>Adj Checked List Box</em>}' class.
@@ -885,15 +1020,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int ADJ_CHECKED_LIST_BOX__NAME = ADJ_WIDGET__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Variable</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_CHECKED_LIST_BOX__VARIABLE = ADJ_WIDGET__VARIABLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -950,13 +1076,40 @@ public interface UidiagramPackage extends EPackage {
 	int ADJ_CHECKED_LIST_BOX__BACKGROUND = ADJ_WIDGET__BACKGROUND;
 
 	/**
-	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * The feature id for the '<em><b>Font Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_CHECKED_LIST_BOX__FONT = ADJ_WIDGET_FEATURE_COUNT + 0;
+	int ADJ_CHECKED_LIST_BOX__FONT_NAME = ADJ_WIDGET__FONT_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Font Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_CHECKED_LIST_BOX__FONT_SIZE = ADJ_WIDGET__FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Bold</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_CHECKED_LIST_BOX__BOLD = ADJ_WIDGET__BOLD;
+
+	/**
+	 * The feature id for the '<em><b>Italic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_CHECKED_LIST_BOX__ITALIC = ADJ_WIDGET__ITALIC;
 
 	/**
 	 * The number of structural features of the '<em>Adj Checked List Box</em>' class.
@@ -965,7 +1118,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_CHECKED_LIST_BOX_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
+	int ADJ_CHECKED_LIST_BOX_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.AdjLinkLabelImpl <em>Adj Link Label</em>}' class.
@@ -985,15 +1138,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int ADJ_LINK_LABEL__NAME = ADJ_WIDGET__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Variable</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_LINK_LABEL__VARIABLE = ADJ_WIDGET__VARIABLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -1050,13 +1194,40 @@ public interface UidiagramPackage extends EPackage {
 	int ADJ_LINK_LABEL__BACKGROUND = ADJ_WIDGET__BACKGROUND;
 
 	/**
-	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * The feature id for the '<em><b>Font Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_LINK_LABEL__FONT = ADJ_WIDGET_FEATURE_COUNT + 0;
+	int ADJ_LINK_LABEL__FONT_NAME = ADJ_WIDGET__FONT_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Font Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_LINK_LABEL__FONT_SIZE = ADJ_WIDGET__FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Bold</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_LINK_LABEL__BOLD = ADJ_WIDGET__BOLD;
+
+	/**
+	 * The feature id for the '<em><b>Italic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_LINK_LABEL__ITALIC = ADJ_WIDGET__ITALIC;
 
 	/**
 	 * The number of structural features of the '<em>Adj Link Label</em>' class.
@@ -1065,7 +1236,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_LINK_LABEL_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
+	int ADJ_LINK_LABEL_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.AdjRichTextBoxImpl <em>Adj Rich Text Box</em>}' class.
@@ -1085,15 +1256,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int ADJ_RICH_TEXT_BOX__NAME = ADJ_WIDGET__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Variable</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_RICH_TEXT_BOX__VARIABLE = ADJ_WIDGET__VARIABLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -1150,13 +1312,40 @@ public interface UidiagramPackage extends EPackage {
 	int ADJ_RICH_TEXT_BOX__BACKGROUND = ADJ_WIDGET__BACKGROUND;
 
 	/**
-	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * The feature id for the '<em><b>Font Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_RICH_TEXT_BOX__FONT = ADJ_WIDGET_FEATURE_COUNT + 0;
+	int ADJ_RICH_TEXT_BOX__FONT_NAME = ADJ_WIDGET__FONT_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Font Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_RICH_TEXT_BOX__FONT_SIZE = ADJ_WIDGET__FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Bold</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_RICH_TEXT_BOX__BOLD = ADJ_WIDGET__BOLD;
+
+	/**
+	 * The feature id for the '<em><b>Italic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_RICH_TEXT_BOX__ITALIC = ADJ_WIDGET__ITALIC;
 
 	/**
 	 * The number of structural features of the '<em>Adj Rich Text Box</em>' class.
@@ -1165,7 +1354,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_RICH_TEXT_BOX_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
+	int ADJ_RICH_TEXT_BOX_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.AdjComboBoxImpl <em>Adj Combo Box</em>}' class.
@@ -1185,15 +1374,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int ADJ_COMBO_BOX__NAME = ADJ_WIDGET__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Variable</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_COMBO_BOX__VARIABLE = ADJ_WIDGET__VARIABLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -1250,13 +1430,40 @@ public interface UidiagramPackage extends EPackage {
 	int ADJ_COMBO_BOX__BACKGROUND = ADJ_WIDGET__BACKGROUND;
 
 	/**
-	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * The feature id for the '<em><b>Font Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_COMBO_BOX__FONT = ADJ_WIDGET_FEATURE_COUNT + 0;
+	int ADJ_COMBO_BOX__FONT_NAME = ADJ_WIDGET__FONT_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Font Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_COMBO_BOX__FONT_SIZE = ADJ_WIDGET__FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Bold</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_COMBO_BOX__BOLD = ADJ_WIDGET__BOLD;
+
+	/**
+	 * The feature id for the '<em><b>Italic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_COMBO_BOX__ITALIC = ADJ_WIDGET__ITALIC;
 
 	/**
 	 * The number of structural features of the '<em>Adj Combo Box</em>' class.
@@ -1265,7 +1472,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_COMBO_BOX_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
+	int ADJ_COMBO_BOX_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.AdjRadioButtonImpl <em>Adj Radio Button</em>}' class.
@@ -1285,15 +1492,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int ADJ_RADIO_BUTTON__NAME = ADJ_WIDGET__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Variable</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_RADIO_BUTTON__VARIABLE = ADJ_WIDGET__VARIABLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -1350,13 +1548,40 @@ public interface UidiagramPackage extends EPackage {
 	int ADJ_RADIO_BUTTON__BACKGROUND = ADJ_WIDGET__BACKGROUND;
 
 	/**
-	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * The feature id for the '<em><b>Font Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_RADIO_BUTTON__FONT = ADJ_WIDGET_FEATURE_COUNT + 0;
+	int ADJ_RADIO_BUTTON__FONT_NAME = ADJ_WIDGET__FONT_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Font Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_RADIO_BUTTON__FONT_SIZE = ADJ_WIDGET__FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Bold</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_RADIO_BUTTON__BOLD = ADJ_WIDGET__BOLD;
+
+	/**
+	 * The feature id for the '<em><b>Italic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_RADIO_BUTTON__ITALIC = ADJ_WIDGET__ITALIC;
 
 	/**
 	 * The number of structural features of the '<em>Adj Radio Button</em>' class.
@@ -1365,7 +1590,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_RADIO_BUTTON_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
+	int ADJ_RADIO_BUTTON_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.AdjPictureBoxImpl <em>Adj Picture Box</em>}' class.
@@ -1385,15 +1610,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int ADJ_PICTURE_BOX__NAME = ADJ_WIDGET__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Variable</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_PICTURE_BOX__VARIABLE = ADJ_WIDGET__VARIABLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -1450,6 +1666,42 @@ public interface UidiagramPackage extends EPackage {
 	int ADJ_PICTURE_BOX__BACKGROUND = ADJ_WIDGET__BACKGROUND;
 
 	/**
+	 * The feature id for the '<em><b>Font Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_PICTURE_BOX__FONT_NAME = ADJ_WIDGET__FONT_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Font Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_PICTURE_BOX__FONT_SIZE = ADJ_WIDGET__FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Bold</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_PICTURE_BOX__BOLD = ADJ_WIDGET__BOLD;
+
+	/**
+	 * The feature id for the '<em><b>Italic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_PICTURE_BOX__ITALIC = ADJ_WIDGET__ITALIC;
+
+	/**
 	 * The number of structural features of the '<em>Adj Picture Box</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1476,15 +1728,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int ADJ_LIST_VIEW__NAME = ADJ_WIDGET__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Variable</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_LIST_VIEW__VARIABLE = ADJ_WIDGET__VARIABLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -1541,6 +1784,42 @@ public interface UidiagramPackage extends EPackage {
 	int ADJ_LIST_VIEW__BACKGROUND = ADJ_WIDGET__BACKGROUND;
 
 	/**
+	 * The feature id for the '<em><b>Font Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_LIST_VIEW__FONT_NAME = ADJ_WIDGET__FONT_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Font Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_LIST_VIEW__FONT_SIZE = ADJ_WIDGET__FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Bold</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_LIST_VIEW__BOLD = ADJ_WIDGET__BOLD;
+
+	/**
+	 * The feature id for the '<em><b>Italic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_LIST_VIEW__ITALIC = ADJ_WIDGET__ITALIC;
+
+	/**
 	 * The feature id for the '<em><b>Lst Adj List View Column</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1587,13 +1866,13 @@ public interface UidiagramPackage extends EPackage {
 	int ADJ_LIST_VIEW_COLUMN__VARIABLE = 1;
 
 	/**
-	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * The feature id for the '<em><b>Text</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_LIST_VIEW_COLUMN__VALUE = 2;
+	int ADJ_LIST_VIEW_COLUMN__TEXT = 2;
 
 	/**
 	 * The number of structural features of the '<em>Adj List View Column</em>' class.
@@ -1622,15 +1901,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int ADJ_PANEL__NAME = ADJ_WIDGET__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Variable</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_PANEL__VARIABLE = ADJ_WIDGET__VARIABLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -1687,13 +1957,40 @@ public interface UidiagramPackage extends EPackage {
 	int ADJ_PANEL__BACKGROUND = ADJ_WIDGET__BACKGROUND;
 
 	/**
-	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * The feature id for the '<em><b>Font Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_PANEL__FONT = ADJ_WIDGET_FEATURE_COUNT + 0;
+	int ADJ_PANEL__FONT_NAME = ADJ_WIDGET__FONT_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Font Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_PANEL__FONT_SIZE = ADJ_WIDGET__FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Bold</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_PANEL__BOLD = ADJ_WIDGET__BOLD;
+
+	/**
+	 * The feature id for the '<em><b>Italic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_PANEL__ITALIC = ADJ_WIDGET__ITALIC;
 
 	/**
 	 * The feature id for the '<em><b>Lst Adj Widget</b></em>' containment reference list.
@@ -1702,7 +1999,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_PANEL__LST_ADJ_WIDGET = ADJ_WIDGET_FEATURE_COUNT + 1;
+	int ADJ_PANEL__LST_ADJ_WIDGET = ADJ_WIDGET_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Adj Panel</em>' class.
@@ -1711,7 +2008,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_PANEL_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 2;
+	int ADJ_PANEL_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.AdjGroupBoxImpl <em>Adj Group Box</em>}' class.
@@ -1731,15 +2028,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int ADJ_GROUP_BOX__NAME = ADJ_WIDGET__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Variable</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADJ_GROUP_BOX__VARIABLE = ADJ_WIDGET__VARIABLE;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -1796,13 +2084,40 @@ public interface UidiagramPackage extends EPackage {
 	int ADJ_GROUP_BOX__BACKGROUND = ADJ_WIDGET__BACKGROUND;
 
 	/**
-	 * The feature id for the '<em><b>Font</b></em>' attribute.
+	 * The feature id for the '<em><b>Font Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_GROUP_BOX__FONT = ADJ_WIDGET_FEATURE_COUNT + 0;
+	int ADJ_GROUP_BOX__FONT_NAME = ADJ_WIDGET__FONT_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Font Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_GROUP_BOX__FONT_SIZE = ADJ_WIDGET__FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Bold</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_GROUP_BOX__BOLD = ADJ_WIDGET__BOLD;
+
+	/**
+	 * The feature id for the '<em><b>Italic</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADJ_GROUP_BOX__ITALIC = ADJ_WIDGET__ITALIC;
 
 	/**
 	 * The feature id for the '<em><b>Lst Adj Widget</b></em>' containment reference list.
@@ -1811,7 +2126,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_GROUP_BOX__LST_ADJ_WIDGET = ADJ_WIDGET_FEATURE_COUNT + 1;
+	int ADJ_GROUP_BOX__LST_ADJ_WIDGET = ADJ_WIDGET_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Adj Group Box</em>' class.
@@ -1820,7 +2135,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADJ_GROUP_BOX_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 2;
+	int ADJ_GROUP_BOX_FEATURE_COUNT = ADJ_WIDGET_FEATURE_COUNT + 1;
 
 
 	/**
@@ -1940,17 +2255,6 @@ public interface UidiagramPackage extends EPackage {
 	EAttribute getAdjWidget_Name();
 
 	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjWidget#getVariable <em>Variable</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Variable</em>'.
-	 * @see uidiagram.AdjWidget#getVariable()
-	 * @see #getAdjWidget()
-	 * @generated
-	 */
-	EAttribute getAdjWidget_Variable();
-
-	/**
 	 * Returns the meta object for the attribute '{@link uidiagram.AdjWidget#getText <em>Text</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2017,6 +2321,50 @@ public interface UidiagramPackage extends EPackage {
 	EAttribute getAdjWidget_Background();
 
 	/**
+	 * Returns the meta object for the attribute '{@link uidiagram.AdjWidget#getFontName <em>Font Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Font Name</em>'.
+	 * @see uidiagram.AdjWidget#getFontName()
+	 * @see #getAdjWidget()
+	 * @generated
+	 */
+	EAttribute getAdjWidget_FontName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link uidiagram.AdjWidget#getFontSize <em>Font Size</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Font Size</em>'.
+	 * @see uidiagram.AdjWidget#getFontSize()
+	 * @see #getAdjWidget()
+	 * @generated
+	 */
+	EAttribute getAdjWidget_FontSize();
+
+	/**
+	 * Returns the meta object for the attribute '{@link uidiagram.AdjWidget#getBold <em>Bold</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Bold</em>'.
+	 * @see uidiagram.AdjWidget#getBold()
+	 * @see #getAdjWidget()
+	 * @generated
+	 */
+	EAttribute getAdjWidget_Bold();
+
+	/**
+	 * Returns the meta object for the attribute '{@link uidiagram.AdjWidget#getItalic <em>Italic</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Italic</em>'.
+	 * @see uidiagram.AdjWidget#getItalic()
+	 * @see #getAdjWidget()
+	 * @generated
+	 */
+	EAttribute getAdjWidget_Italic();
+
+	/**
 	 * Returns the meta object for class '{@link uidiagram.AdjLabel <em>Adj Label</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2025,17 +2373,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getAdjLabel();
-
-	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjLabel#getFont <em>Font</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Font</em>'.
-	 * @see uidiagram.AdjLabel#getFont()
-	 * @see #getAdjLabel()
-	 * @generated
-	 */
-	EAttribute getAdjLabel_Font();
 
 	/**
 	 * Returns the meta object for class '{@link uidiagram.AdjCheckBox <em>Adj Check Box</em>}'.
@@ -2048,17 +2385,6 @@ public interface UidiagramPackage extends EPackage {
 	EClass getAdjCheckBox();
 
 	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjCheckBox#getFont <em>Font</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Font</em>'.
-	 * @see uidiagram.AdjCheckBox#getFont()
-	 * @see #getAdjCheckBox()
-	 * @generated
-	 */
-	EAttribute getAdjCheckBox_Font();
-
-	/**
 	 * Returns the meta object for class '{@link uidiagram.AdjButton <em>Adj Button</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2067,17 +2393,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getAdjButton();
-
-	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjButton#getFont <em>Font</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Font</em>'.
-	 * @see uidiagram.AdjButton#getFont()
-	 * @see #getAdjButton()
-	 * @generated
-	 */
-	EAttribute getAdjButton_Font();
 
 	/**
 	 * Returns the meta object for class '{@link uidiagram.AdjListBox <em>Adj List Box</em>}'.
@@ -2090,17 +2405,6 @@ public interface UidiagramPackage extends EPackage {
 	EClass getAdjListBox();
 
 	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjListBox#getFont <em>Font</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Font</em>'.
-	 * @see uidiagram.AdjListBox#getFont()
-	 * @see #getAdjListBox()
-	 * @generated
-	 */
-	EAttribute getAdjListBox_Font();
-
-	/**
 	 * Returns the meta object for class '{@link uidiagram.AdjDateTimePicker <em>Adj Date Time Picker</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2109,17 +2413,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getAdjDateTimePicker();
-
-	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjDateTimePicker#getFont <em>Font</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Font</em>'.
-	 * @see uidiagram.AdjDateTimePicker#getFont()
-	 * @see #getAdjDateTimePicker()
-	 * @generated
-	 */
-	EAttribute getAdjDateTimePicker_Font();
 
 	/**
 	 * Returns the meta object for class '{@link uidiagram.AdjTextBox <em>Adj Text Box</em>}'.
@@ -2132,17 +2425,6 @@ public interface UidiagramPackage extends EPackage {
 	EClass getAdjTextBox();
 
 	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjTextBox#getFont <em>Font</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Font</em>'.
-	 * @see uidiagram.AdjTextBox#getFont()
-	 * @see #getAdjTextBox()
-	 * @generated
-	 */
-	EAttribute getAdjTextBox_Font();
-
-	/**
 	 * Returns the meta object for class '{@link uidiagram.AdjCheckedListBox <em>Adj Checked List Box</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2151,17 +2433,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getAdjCheckedListBox();
-
-	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjCheckedListBox#getFont <em>Font</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Font</em>'.
-	 * @see uidiagram.AdjCheckedListBox#getFont()
-	 * @see #getAdjCheckedListBox()
-	 * @generated
-	 */
-	EAttribute getAdjCheckedListBox_Font();
 
 	/**
 	 * Returns the meta object for class '{@link uidiagram.AdjLinkLabel <em>Adj Link Label</em>}'.
@@ -2174,17 +2445,6 @@ public interface UidiagramPackage extends EPackage {
 	EClass getAdjLinkLabel();
 
 	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjLinkLabel#getFont <em>Font</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Font</em>'.
-	 * @see uidiagram.AdjLinkLabel#getFont()
-	 * @see #getAdjLinkLabel()
-	 * @generated
-	 */
-	EAttribute getAdjLinkLabel_Font();
-
-	/**
 	 * Returns the meta object for class '{@link uidiagram.AdjRichTextBox <em>Adj Rich Text Box</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2193,17 +2453,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getAdjRichTextBox();
-
-	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjRichTextBox#getFont <em>Font</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Font</em>'.
-	 * @see uidiagram.AdjRichTextBox#getFont()
-	 * @see #getAdjRichTextBox()
-	 * @generated
-	 */
-	EAttribute getAdjRichTextBox_Font();
 
 	/**
 	 * Returns the meta object for class '{@link uidiagram.AdjComboBox <em>Adj Combo Box</em>}'.
@@ -2216,17 +2465,6 @@ public interface UidiagramPackage extends EPackage {
 	EClass getAdjComboBox();
 
 	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjComboBox#getFont <em>Font</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Font</em>'.
-	 * @see uidiagram.AdjComboBox#getFont()
-	 * @see #getAdjComboBox()
-	 * @generated
-	 */
-	EAttribute getAdjComboBox_Font();
-
-	/**
 	 * Returns the meta object for class '{@link uidiagram.AdjRadioButton <em>Adj Radio Button</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2235,17 +2473,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getAdjRadioButton();
-
-	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjRadioButton#getFont <em>Font</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Font</em>'.
-	 * @see uidiagram.AdjRadioButton#getFont()
-	 * @see #getAdjRadioButton()
-	 * @generated
-	 */
-	EAttribute getAdjRadioButton_Font();
 
 	/**
 	 * Returns the meta object for class '{@link uidiagram.AdjPictureBox <em>Adj Picture Box</em>}'.
@@ -2311,15 +2538,15 @@ public interface UidiagramPackage extends EPackage {
 	EAttribute getAdjListViewColumn_Variable();
 
 	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjListViewColumn#getValue <em>Value</em>}'.
+	 * Returns the meta object for the attribute '{@link uidiagram.AdjListViewColumn#getText <em>Text</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Value</em>'.
-	 * @see uidiagram.AdjListViewColumn#getValue()
+	 * @return the meta object for the attribute '<em>Text</em>'.
+	 * @see uidiagram.AdjListViewColumn#getText()
 	 * @see #getAdjListViewColumn()
 	 * @generated
 	 */
-	EAttribute getAdjListViewColumn_Value();
+	EAttribute getAdjListViewColumn_Text();
 
 	/**
 	 * Returns the meta object for class '{@link uidiagram.AdjPanel <em>Adj Panel</em>}'.
@@ -2330,17 +2557,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getAdjPanel();
-
-	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjPanel#getFont <em>Font</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Font</em>'.
-	 * @see uidiagram.AdjPanel#getFont()
-	 * @see #getAdjPanel()
-	 * @generated
-	 */
-	EAttribute getAdjPanel_Font();
 
 	/**
 	 * Returns the meta object for the containment reference list '{@link uidiagram.AdjPanel#getLstAdjWidget <em>Lst Adj Widget</em>}'.
@@ -2362,17 +2578,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getAdjGroupBox();
-
-	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.AdjGroupBox#getFont <em>Font</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Font</em>'.
-	 * @see uidiagram.AdjGroupBox#getFont()
-	 * @see #getAdjGroupBox()
-	 * @generated
-	 */
-	EAttribute getAdjGroupBox_Font();
 
 	/**
 	 * Returns the meta object for the containment reference list '{@link uidiagram.AdjGroupBox#getLstAdjWidget <em>Lst Adj Widget</em>}'.
@@ -2506,14 +2711,6 @@ public interface UidiagramPackage extends EPackage {
 		EAttribute ADJ_WIDGET__NAME = eINSTANCE.getAdjWidget_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>Variable</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute ADJ_WIDGET__VARIABLE = eINSTANCE.getAdjWidget_Variable();
-
-		/**
 		 * The meta object literal for the '<em><b>Text</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2562,6 +2759,38 @@ public interface UidiagramPackage extends EPackage {
 		EAttribute ADJ_WIDGET__BACKGROUND = eINSTANCE.getAdjWidget_Background();
 
 		/**
+		 * The meta object literal for the '<em><b>Font Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ADJ_WIDGET__FONT_NAME = eINSTANCE.getAdjWidget_FontName();
+
+		/**
+		 * The meta object literal for the '<em><b>Font Size</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ADJ_WIDGET__FONT_SIZE = eINSTANCE.getAdjWidget_FontSize();
+
+		/**
+		 * The meta object literal for the '<em><b>Bold</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ADJ_WIDGET__BOLD = eINSTANCE.getAdjWidget_Bold();
+
+		/**
+		 * The meta object literal for the '<em><b>Italic</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ADJ_WIDGET__ITALIC = eINSTANCE.getAdjWidget_Italic();
+
+		/**
 		 * The meta object literal for the '{@link uidiagram.impl.AdjLabelImpl <em>Adj Label</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2570,14 +2799,6 @@ public interface UidiagramPackage extends EPackage {
 		 * @generated
 		 */
 		EClass ADJ_LABEL = eINSTANCE.getAdjLabel();
-
-		/**
-		 * The meta object literal for the '<em><b>Font</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute ADJ_LABEL__FONT = eINSTANCE.getAdjLabel_Font();
 
 		/**
 		 * The meta object literal for the '{@link uidiagram.impl.AdjCheckBoxImpl <em>Adj Check Box</em>}' class.
@@ -2590,14 +2811,6 @@ public interface UidiagramPackage extends EPackage {
 		EClass ADJ_CHECK_BOX = eINSTANCE.getAdjCheckBox();
 
 		/**
-		 * The meta object literal for the '<em><b>Font</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute ADJ_CHECK_BOX__FONT = eINSTANCE.getAdjCheckBox_Font();
-
-		/**
 		 * The meta object literal for the '{@link uidiagram.impl.AdjButtonImpl <em>Adj Button</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2606,14 +2819,6 @@ public interface UidiagramPackage extends EPackage {
 		 * @generated
 		 */
 		EClass ADJ_BUTTON = eINSTANCE.getAdjButton();
-
-		/**
-		 * The meta object literal for the '<em><b>Font</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute ADJ_BUTTON__FONT = eINSTANCE.getAdjButton_Font();
 
 		/**
 		 * The meta object literal for the '{@link uidiagram.impl.AdjListBoxImpl <em>Adj List Box</em>}' class.
@@ -2626,14 +2831,6 @@ public interface UidiagramPackage extends EPackage {
 		EClass ADJ_LIST_BOX = eINSTANCE.getAdjListBox();
 
 		/**
-		 * The meta object literal for the '<em><b>Font</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute ADJ_LIST_BOX__FONT = eINSTANCE.getAdjListBox_Font();
-
-		/**
 		 * The meta object literal for the '{@link uidiagram.impl.AdjDateTimePickerImpl <em>Adj Date Time Picker</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2642,14 +2839,6 @@ public interface UidiagramPackage extends EPackage {
 		 * @generated
 		 */
 		EClass ADJ_DATE_TIME_PICKER = eINSTANCE.getAdjDateTimePicker();
-
-		/**
-		 * The meta object literal for the '<em><b>Font</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute ADJ_DATE_TIME_PICKER__FONT = eINSTANCE.getAdjDateTimePicker_Font();
 
 		/**
 		 * The meta object literal for the '{@link uidiagram.impl.AdjTextBoxImpl <em>Adj Text Box</em>}' class.
@@ -2662,14 +2851,6 @@ public interface UidiagramPackage extends EPackage {
 		EClass ADJ_TEXT_BOX = eINSTANCE.getAdjTextBox();
 
 		/**
-		 * The meta object literal for the '<em><b>Font</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute ADJ_TEXT_BOX__FONT = eINSTANCE.getAdjTextBox_Font();
-
-		/**
 		 * The meta object literal for the '{@link uidiagram.impl.AdjCheckedListBoxImpl <em>Adj Checked List Box</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2678,14 +2859,6 @@ public interface UidiagramPackage extends EPackage {
 		 * @generated
 		 */
 		EClass ADJ_CHECKED_LIST_BOX = eINSTANCE.getAdjCheckedListBox();
-
-		/**
-		 * The meta object literal for the '<em><b>Font</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute ADJ_CHECKED_LIST_BOX__FONT = eINSTANCE.getAdjCheckedListBox_Font();
 
 		/**
 		 * The meta object literal for the '{@link uidiagram.impl.AdjLinkLabelImpl <em>Adj Link Label</em>}' class.
@@ -2698,14 +2871,6 @@ public interface UidiagramPackage extends EPackage {
 		EClass ADJ_LINK_LABEL = eINSTANCE.getAdjLinkLabel();
 
 		/**
-		 * The meta object literal for the '<em><b>Font</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute ADJ_LINK_LABEL__FONT = eINSTANCE.getAdjLinkLabel_Font();
-
-		/**
 		 * The meta object literal for the '{@link uidiagram.impl.AdjRichTextBoxImpl <em>Adj Rich Text Box</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2714,14 +2879,6 @@ public interface UidiagramPackage extends EPackage {
 		 * @generated
 		 */
 		EClass ADJ_RICH_TEXT_BOX = eINSTANCE.getAdjRichTextBox();
-
-		/**
-		 * The meta object literal for the '<em><b>Font</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute ADJ_RICH_TEXT_BOX__FONT = eINSTANCE.getAdjRichTextBox_Font();
 
 		/**
 		 * The meta object literal for the '{@link uidiagram.impl.AdjComboBoxImpl <em>Adj Combo Box</em>}' class.
@@ -2734,14 +2891,6 @@ public interface UidiagramPackage extends EPackage {
 		EClass ADJ_COMBO_BOX = eINSTANCE.getAdjComboBox();
 
 		/**
-		 * The meta object literal for the '<em><b>Font</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute ADJ_COMBO_BOX__FONT = eINSTANCE.getAdjComboBox_Font();
-
-		/**
 		 * The meta object literal for the '{@link uidiagram.impl.AdjRadioButtonImpl <em>Adj Radio Button</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2750,14 +2899,6 @@ public interface UidiagramPackage extends EPackage {
 		 * @generated
 		 */
 		EClass ADJ_RADIO_BUTTON = eINSTANCE.getAdjRadioButton();
-
-		/**
-		 * The meta object literal for the '<em><b>Font</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute ADJ_RADIO_BUTTON__FONT = eINSTANCE.getAdjRadioButton_Font();
 
 		/**
 		 * The meta object literal for the '{@link uidiagram.impl.AdjPictureBoxImpl <em>Adj Picture Box</em>}' class.
@@ -2814,12 +2955,12 @@ public interface UidiagramPackage extends EPackage {
 		EAttribute ADJ_LIST_VIEW_COLUMN__VARIABLE = eINSTANCE.getAdjListViewColumn_Variable();
 
 		/**
-		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Text</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ADJ_LIST_VIEW_COLUMN__VALUE = eINSTANCE.getAdjListViewColumn_Value();
+		EAttribute ADJ_LIST_VIEW_COLUMN__TEXT = eINSTANCE.getAdjListViewColumn_Text();
 
 		/**
 		 * The meta object literal for the '{@link uidiagram.impl.AdjPanelImpl <em>Adj Panel</em>}' class.
@@ -2830,14 +2971,6 @@ public interface UidiagramPackage extends EPackage {
 		 * @generated
 		 */
 		EClass ADJ_PANEL = eINSTANCE.getAdjPanel();
-
-		/**
-		 * The meta object literal for the '<em><b>Font</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute ADJ_PANEL__FONT = eINSTANCE.getAdjPanel_Font();
 
 		/**
 		 * The meta object literal for the '<em><b>Lst Adj Widget</b></em>' containment reference list feature.
@@ -2856,14 +2989,6 @@ public interface UidiagramPackage extends EPackage {
 		 * @generated
 		 */
 		EClass ADJ_GROUP_BOX = eINSTANCE.getAdjGroupBox();
-
-		/**
-		 * The meta object literal for the '<em><b>Font</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute ADJ_GROUP_BOX__FONT = eINSTANCE.getAdjGroupBox_Font();
 
 		/**
 		 * The meta object literal for the '<em><b>Lst Adj Widget</b></em>' containment reference list feature.

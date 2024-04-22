@@ -20,47 +20,28 @@
     </genClasses>
     <genClasses image="false" ecoreClass="uidiagram.ecore#//AdjWidget">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjWidget/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjWidget/variable"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjWidget/text"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjWidget/positionX"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjWidget/positionY"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjWidget/width"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjWidget/height"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjWidget/background"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjWidget/fontName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjWidget/fontSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjWidget/bold"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjWidget/italic"/>
     </genClasses>
-    <genClasses ecoreClass="uidiagram.ecore#//AdjLabel">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjLabel/font"/>
-    </genClasses>
-    <genClasses ecoreClass="uidiagram.ecore#//AdjCheckBox">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjCheckBox/font"/>
-    </genClasses>
-    <genClasses ecoreClass="uidiagram.ecore#//AdjButton">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjButton/font"/>
-    </genClasses>
-    <genClasses ecoreClass="uidiagram.ecore#//AdjListBox">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjListBox/font"/>
-    </genClasses>
-    <genClasses ecoreClass="uidiagram.ecore#//AdjDateTimePicker">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjDateTimePicker/font"/>
-    </genClasses>
-    <genClasses ecoreClass="uidiagram.ecore#//AdjTextBox">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjTextBox/font"/>
-    </genClasses>
-    <genClasses ecoreClass="uidiagram.ecore#//AdjCheckedListBox">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjCheckedListBox/font"/>
-    </genClasses>
-    <genClasses ecoreClass="uidiagram.ecore#//AdjLinkLabel">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjLinkLabel/font"/>
-    </genClasses>
-    <genClasses ecoreClass="uidiagram.ecore#//AdjRichTextBox">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjRichTextBox/font"/>
-    </genClasses>
-    <genClasses ecoreClass="uidiagram.ecore#//AdjComboBox">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjComboBox/font"/>
-    </genClasses>
-    <genClasses ecoreClass="uidiagram.ecore#//AdjRadioButton">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjRadioButton/font"/>
-    </genClasses>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjLabel"/>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjCheckBox"/>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjButton"/>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjListBox"/>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjDateTimePicker"/>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjTextBox"/>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjCheckedListBox"/>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjLinkLabel"/>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjRichTextBox"/>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjComboBox"/>
+    <genClasses ecoreClass="uidiagram.ecore#//AdjRadioButton"/>
     <genClasses ecoreClass="uidiagram.ecore#//AdjPictureBox"/>
     <genClasses ecoreClass="uidiagram.ecore#//AdjListView">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uidiagram.ecore#//AdjListView/lstAdjListViewColumn"/>
@@ -68,14 +49,12 @@
     <genClasses ecoreClass="uidiagram.ecore#//AdjListViewColumn">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjListViewColumn/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjListViewColumn/variable"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjListViewColumn/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjListViewColumn/text"/>
     </genClasses>
     <genClasses ecoreClass="uidiagram.ecore#//AdjPanel">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjPanel/font"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uidiagram.ecore#//AdjPanel/lstAdjWidget"/>
     </genClasses>
     <genClasses ecoreClass="uidiagram.ecore#//AdjGroupBox">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uidiagram.ecore#//AdjGroupBox/font"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference uidiagram.ecore#//AdjGroupBox/lstAdjWidget"/>
     </genClasses>
   </genPackages>
