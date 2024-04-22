@@ -820,7 +820,7 @@
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
       <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFormUILstAdjWidgetCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
     </compartments>
-    <compartments visualID="7027" editPartClassName="AdjListViewAdjListViewLstAdjListViewColumnCompartmentEditPart" itemSemanticEditPolicyClassName="AdjListViewAdjListViewLstAdjListViewColumnCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="AdjListViewAdjListViewLstAdjListViewColumnCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.13" title="AdjListViewLstAdjListViewColumnCompartment" needsTitle="false" node="//@diagram/@childNodes.12" listLayout="false">
+    <compartments visualID="7027" editPartClassName="AdjListViewAdjListViewLstAdjListViewColumnCompartmentEditPart" itemSemanticEditPolicyClassName="AdjListViewAdjListViewLstAdjListViewColumnCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="AdjListViewAdjListViewLstAdjListViewColumnCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.13" title="AdjListViewLstAdjListViewColumnCompartment" needsTitle="false" node="//@diagram/@childNodes.12">
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
       <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getAdjListViewLstAdjListViewColumnCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
     </compartments>
@@ -828,7 +828,7 @@
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
       <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getAdjPanelLstAdjWidgetCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
     </compartments>
-    <compartments visualID="7028" editPartClassName="AdjListViewAdjListViewLstAdjListViewColumnCompartment2EditPart" itemSemanticEditPolicyClassName="AdjListViewAdjListViewLstAdjListViewColumnCompartment2ItemSemanticEditPolicy" canonicalEditPolicyClassName="AdjListViewAdjListViewLstAdjListViewColumnCompartment2CanonicalEditPolicy" childNodes="//@diagram/@childNodes.13" title="AdjListViewLstAdjListViewColumnCompartment" needsTitle="false" node="//@diagram/@childNodes.27" listLayout="false">
+    <compartments visualID="7028" editPartClassName="AdjListViewAdjListViewLstAdjListViewColumnCompartment2EditPart" itemSemanticEditPolicyClassName="AdjListViewAdjListViewLstAdjListViewColumnCompartment2ItemSemanticEditPolicy" canonicalEditPolicyClassName="AdjListViewAdjListViewLstAdjListViewColumnCompartment2CanonicalEditPolicy" childNodes="//@diagram/@childNodes.13" title="AdjListViewLstAdjListViewColumnCompartment" needsTitle="false" node="//@diagram/@childNodes.27">
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
       <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getAdjListViewLstAdjListViewColumnCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
     </compartments>
@@ -840,7 +840,7 @@
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
       <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getAdjGroupBoxLstAdjWidgetCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
     </compartments>
-    <compartments visualID="7029" editPartClassName="AdjListViewAdjListViewLstAdjListViewColumnCompartment3EditPart" itemSemanticEditPolicyClassName="AdjListViewAdjListViewLstAdjListViewColumnCompartment3ItemSemanticEditPolicy" canonicalEditPolicyClassName="AdjListViewAdjListViewLstAdjListViewColumnCompartment3CanonicalEditPolicy" childNodes="//@diagram/@childNodes.13" title="AdjListViewLstAdjListViewColumnCompartment" needsTitle="false" node="//@diagram/@childNodes.42" listLayout="false">
+    <compartments visualID="7029" editPartClassName="AdjListViewAdjListViewLstAdjListViewColumnCompartment3EditPart" itemSemanticEditPolicyClassName="AdjListViewAdjListViewLstAdjListViewColumnCompartment3ItemSemanticEditPolicy" canonicalEditPolicyClassName="AdjListViewAdjListViewLstAdjListViewColumnCompartment3CanonicalEditPolicy" childNodes="//@diagram/@childNodes.13" title="AdjListViewLstAdjListViewColumnCompartment" needsTitle="false" node="//@diagram/@childNodes.42">
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
       <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getAdjListViewLstAdjListViewColumnCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
     </compartments>

@@ -33,6 +33,7 @@ public interface AdjListView extends AdjWidget {
 	 * @return the value of the '<em>Lst Adj List View Column</em>' containment reference list.
 	 * @see uidiagram.UidiagramPackage#getAdjListView_LstAdjListViewColumn()
 	 * @model containment="true"
+	 *        annotation="gmf.compartment layout='list' collapsible='true'"
 	 * @generated
 	 */
 	EList<AdjListViewColumn> getLstAdjListViewColumn();

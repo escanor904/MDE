@@ -350,4 +350,5 @@ public class AdjButtonEditPart extends ShapeNodeEditPart {
 		super.handleNotificationEvent(arg0);
 	}
 
+
 }

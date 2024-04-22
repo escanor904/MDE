@@ -993,6 +993,8 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 		  (getAdjListView_LstAdjListViewColumn(), 
 		   source, 
 		   new String[] {
+			 "layout", "list",
+			 "collapsible", "true"
 		   });	
 		addAnnotation
 		  (getAdjPanel_LstAdjWidget(), 

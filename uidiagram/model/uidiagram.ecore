@@ -103,7 +103,10 @@
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="lstAdjListViewColumn" upperBound="-1"
         eType="#//AdjListViewColumn" containment="true">
-      <eAnnotations source="gmf.compartment"/>
+      <eAnnotations source="gmf.compartment">
+        <details key="layout" value="list"/>
+        <details key="collapsible" value="true"/>
+      </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdjListViewColumn">

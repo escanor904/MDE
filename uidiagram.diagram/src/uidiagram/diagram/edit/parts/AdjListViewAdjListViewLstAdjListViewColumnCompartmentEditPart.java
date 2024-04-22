@@ -4,11 +4,13 @@
 package uidiagram.diagram.edit.parts;
 
 import org.eclipse.draw2d.IFigure;
+import org.eclipse.draw2d.geometry.Insets;
+import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.gef.EditPart;
 import org.eclipse.gef.EditPolicy;
 import org.eclipse.gef.Request;
 import org.eclipse.gmf.runtime.diagram.core.edithelpers.CreateElementRequestAdapter;
-import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeCompartmentEditPart;
+import org.eclipse.gmf.runtime.diagram.ui.editparts.ListCompartmentEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.DragDropEditPolicy;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.ResizableCompartmentEditPolicy;
@@ -29,7 +31,7 @@ import uidiagram.diagram.providers.UidiagramElementTypes;
 /**
  * @generated
  */
-public class AdjListViewAdjListViewLstAdjListViewColumnCompartmentEditPart extends ShapeCompartmentEditPart {
+public class AdjListViewAdjListViewLstAdjListViewColumnCompartmentEditPart extends ListCompartmentEditPart {
 
 	/**
 	* @generated
@@ -46,18 +48,39 @@ public class AdjListViewAdjListViewLstAdjListViewColumnCompartmentEditPart exten
 	/**
 	* @generated
 	*/
-	public String getCompartmentName() {
-		return Messages.AdjListViewAdjListViewLstAdjListViewColumnCompartmentEditPart_title;
+	protected boolean hasModelChildrenChanged(Notification evt) {
+		return false;
 	}
 
 	/**
 	* @generated
 	*/
-	public IFigure createFigure() {
-		ResizableCompartmentFigure result = (ResizableCompartmentFigure) super.createFigure();
-		result.setTitleVisibility(false);
-		return result;
+	public String getCompartmentName() {
+		return Messages.AdjListViewAdjListViewLstAdjListViewColumnCompartmentEditPart_title;
 	}
+
+	/**
+	    * @generated
+	    */
+	    public IFigure createFigure() {
+	        ResizableCompartmentFigure result = (ResizableCompartmentFigure) super.createFigure();
+	        result.setTitleVisibility(false);
+	       
+	         // Fix the margins
+	        Insets insets = result.getContentPane().getInsets();
+	        insets.top = -2;
+	        insets.bottom = 3;
+	        insets.left = 0;
+	        insets.right = 0;
+	        // Layout behavior modification : data must be represented horizontally
+	        ConstrainedToolbarLayout layoutMgr = (ConstrainedToolbarLayout) result.getContentPane().getLayoutManager();
+	        layoutMgr.setVertical(false);
+	        layoutMgr.setStretchMajorAxis(false); // uses all the avalaible space
+	        layoutMgr.setStretchMinorAxis(true); // uses all the avalaible space
+	        layoutMgr.setSpacing(-1);
+	        return result;
+	   
+	    }
 
 	/**
 	* @generated

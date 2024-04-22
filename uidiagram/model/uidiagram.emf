@@ -89,7 +89,7 @@ class AdjPictureBox extends AdjWidget {
 
 @gmf.node(label = "name")
 class AdjListView extends AdjWidget {
-	@gmf.compartment
+	@gmf.compartment(layout="list",collapsible="true")
 	val AdjListViewColumn[*] lstAdjListViewColumn;
 }
 

@@ -874,7 +874,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 		createCompartment(node,
 				UidiagramVisualIDRegistry
 						.getType(AdjListViewAdjListViewLstAdjListViewColumnCompartmentEditPart.VISUAL_ID),
-				true, false, false, false);
+				true, false, true, true);
 		return node;
 	}
 
@@ -1423,7 +1423,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 		createCompartment(node,
 				UidiagramVisualIDRegistry
 						.getType(AdjListViewAdjListViewLstAdjListViewColumnCompartment2EditPart.VISUAL_ID),
-				true, false, false, false);
+				true, false, true, true);
 		return node;
 	}
 
@@ -1976,7 +1976,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 		createCompartment(node,
 				UidiagramVisualIDRegistry
 						.getType(AdjListViewAdjListViewLstAdjListViewColumnCompartment3EditPart.VISUAL_ID),
-				true, false, false, false);
+				true, false, true, true);
 		return node;
 	}
 
