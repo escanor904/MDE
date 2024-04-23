@@ -105,10 +105,10 @@ public class PropertiesLabel extends Dialog {
 				textStyle.setText("Normal");
 			}else {
 				if (model.getBold() == true && model.getItalic() == false) {
-					textStyle.setText("Normal");
+					textStyle.setText("Bold");
 				}
 				if (model.getBold() == false && model.getItalic() == true) {
-					textStyle.setText("Normal");
+					textStyle.setText("Italic");
 				}
 			}
 		
@@ -132,7 +132,7 @@ public class PropertiesLabel extends Dialog {
 		GridData gd_lblDeta = new GridData(SWT.FILL, SWT.CENTER, true, false, 5, 1);
 		gd_lblDeta.widthHint = 157;
 		lblDeta.setLayoutData(gd_lblDeta);
-		lblDeta.setText("Properties Button");
+		lblDeta.setText("Properties AdjLabel");
 		
 		Label label = new Label(container, SWT.SEPARATOR | SWT.HORIZONTAL);
 		label.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 5, 1));
@@ -203,7 +203,7 @@ public class PropertiesLabel extends Dialog {
 		
 		Label lblNewLabel_2 = new Label(container, SWT.NONE);
 		lblNewLabel_2.setFont(SWTResourceManager.getFont("Segoe UI", 9, SWT.NORMAL));
-		lblNewLabel_2.setForeground(SWTResourceManager.getColor(SWT.COLOR_BLUE));
+		lblNewLabel_2.setForeground(SWTResourceManager.getColor(SWT.COLOR_BLACK));
 		lblNewLabel_2.setText("FontSize:");
 		
 		textFontS = new Text(container, SWT.BORDER);
