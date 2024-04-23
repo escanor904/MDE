@@ -112,8 +112,8 @@ public class AdjGroupBox2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean addFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjGroupBoxName2EditPart) {
-			((AdjGroupBoxName2EditPart) childEditPart).setLabel(getPrimaryShape().getFigureAdjGroupBoxLabelFigure());
+		if (childEditPart instanceof AdjGroupBoxText2EditPart) {
+			((AdjGroupBoxText2EditPart) childEditPart).setLabel(getPrimaryShape().getFigureAdjGroupBoxLabelFigure());
 			return true;
 		}
 		if (childEditPart instanceof AdjGroupBoxAdjGroupBoxLstAdjWidgetCompartment2EditPart) {
@@ -129,7 +129,7 @@ public class AdjGroupBox2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean removeFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjGroupBoxName2EditPart) {
+		if (childEditPart instanceof AdjGroupBoxText2EditPart) {
 			return true;
 		}
 		if (childEditPart instanceof AdjGroupBoxAdjGroupBoxLstAdjWidgetCompartment2EditPart) {
@@ -260,7 +260,7 @@ public class AdjGroupBox2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	public EditPart getPrimaryChildEditPart() {
-		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjGroupBoxName2EditPart.VISUAL_ID));
+		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjGroupBoxText2EditPart.VISUAL_ID));
 	}
 
 	/**

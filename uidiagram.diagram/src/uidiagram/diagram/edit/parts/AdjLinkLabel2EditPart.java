@@ -110,8 +110,8 @@ public class AdjLinkLabel2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean addFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjLinkLabelName2EditPart) {
-			((AdjLinkLabelName2EditPart) childEditPart).setLabel(getPrimaryShape().getFigureAdjLinkLabelLabelFigure());
+		if (childEditPart instanceof AdjLinkLabelText2EditPart) {
+			((AdjLinkLabelText2EditPart) childEditPart).setLabel(getPrimaryShape().getFigureAdjLinkLabelLabelFigure());
 			return true;
 		}
 		return false;
@@ -121,7 +121,7 @@ public class AdjLinkLabel2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean removeFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjLinkLabelName2EditPart) {
+		if (childEditPart instanceof AdjLinkLabelText2EditPart) {
 			return true;
 		}
 		return false;
@@ -244,7 +244,7 @@ public class AdjLinkLabel2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	public EditPart getPrimaryChildEditPart() {
-		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjLinkLabelName2EditPart.VISUAL_ID));
+		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjLinkLabelText2EditPart.VISUAL_ID));
 	}
 
 	/**

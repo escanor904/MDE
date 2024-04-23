@@ -110,8 +110,8 @@ public class AdjDateTimePicker2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean addFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjDateTimePickerName2EditPart) {
-			((AdjDateTimePickerName2EditPart) childEditPart)
+		if (childEditPart instanceof AdjDateTimePickerText2EditPart) {
+			((AdjDateTimePickerText2EditPart) childEditPart)
 					.setLabel(getPrimaryShape().getFigureAdjDateTimePickerLabelFigure());
 			return true;
 		}
@@ -122,7 +122,7 @@ public class AdjDateTimePicker2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean removeFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjDateTimePickerName2EditPart) {
+		if (childEditPart instanceof AdjDateTimePickerText2EditPart) {
 			return true;
 		}
 		return false;
@@ -245,7 +245,7 @@ public class AdjDateTimePicker2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	public EditPart getPrimaryChildEditPart() {
-		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjDateTimePickerName2EditPart.VISUAL_ID));
+		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjDateTimePickerText2EditPart.VISUAL_ID));
 	}
 
 	/**

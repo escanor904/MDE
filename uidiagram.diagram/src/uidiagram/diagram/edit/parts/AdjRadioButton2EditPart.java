@@ -110,8 +110,8 @@ public class AdjRadioButton2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean addFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjRadioButtonName2EditPart) {
-			((AdjRadioButtonName2EditPart) childEditPart)
+		if (childEditPart instanceof AdjRadioButtonText2EditPart) {
+			((AdjRadioButtonText2EditPart) childEditPart)
 					.setLabel(getPrimaryShape().getFigureAdjRadioButtonLabelFigure());
 			return true;
 		}
@@ -122,7 +122,7 @@ public class AdjRadioButton2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean removeFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjRadioButtonName2EditPart) {
+		if (childEditPart instanceof AdjRadioButtonText2EditPart) {
 			return true;
 		}
 		return false;
@@ -245,7 +245,7 @@ public class AdjRadioButton2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	public EditPart getPrimaryChildEditPart() {
-		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjRadioButtonName2EditPart.VISUAL_ID));
+		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjRadioButtonText2EditPart.VISUAL_ID));
 	}
 
 	/**

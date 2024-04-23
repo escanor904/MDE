@@ -110,8 +110,8 @@ public class AdjCheckedListBox3EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean addFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjCheckedListBoxName3EditPart) {
-			((AdjCheckedListBoxName3EditPart) childEditPart)
+		if (childEditPart instanceof AdjCheckedListBoxText3EditPart) {
+			((AdjCheckedListBoxText3EditPart) childEditPart)
 					.setLabel(getPrimaryShape().getFigureAdjCheckedListBoxLabelFigure());
 			return true;
 		}
@@ -122,7 +122,7 @@ public class AdjCheckedListBox3EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean removeFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjCheckedListBoxName3EditPart) {
+		if (childEditPart instanceof AdjCheckedListBoxText3EditPart) {
 			return true;
 		}
 		return false;
@@ -245,7 +245,7 @@ public class AdjCheckedListBox3EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	public EditPart getPrimaryChildEditPart() {
-		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjCheckedListBoxName3EditPart.VISUAL_ID));
+		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjCheckedListBoxText3EditPart.VISUAL_ID));
 	}
 
 	/**

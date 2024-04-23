@@ -10,7 +10,7 @@ package uidiagram;
  *
  *
  * @see uidiagram.UidiagramPackage#getAdjDateTimePicker()
- * @model annotation="gmf.node label='name'"
+ * @model annotation="gmf.node label='text'"
  * @generated
  */
 public interface AdjDateTimePicker extends AdjWidget {

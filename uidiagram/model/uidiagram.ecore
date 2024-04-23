@@ -39,67 +39,67 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdjLabel" eSuperTypes="#//AdjWidget">
     <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
+      <details key="label" value="text"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdjCheckBox" eSuperTypes="#//AdjWidget">
     <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
+      <details key="label" value="text"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdjButton" eSuperTypes="#//AdjWidget">
     <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
+      <details key="label" value="text"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdjListBox" eSuperTypes="#//AdjWidget">
     <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
+      <details key="label" value="text"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdjDateTimePicker" eSuperTypes="#//AdjWidget">
     <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
+      <details key="label" value="text"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdjTextBox" eSuperTypes="#//AdjWidget">
     <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
+      <details key="label" value="text"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdjCheckedListBox" eSuperTypes="#//AdjWidget">
     <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
+      <details key="label" value="text"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdjLinkLabel" eSuperTypes="#//AdjWidget">
     <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
+      <details key="label" value="text"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdjRichTextBox" eSuperTypes="#//AdjWidget">
     <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
+      <details key="label" value="text"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdjComboBox" eSuperTypes="#//AdjWidget">
     <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
+      <details key="label" value="text"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdjRadioButton" eSuperTypes="#//AdjWidget">
     <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
+      <details key="label" value="text"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdjPictureBox" eSuperTypes="#//AdjWidget">
     <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
+      <details key="label" value="text"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdjListView" eSuperTypes="#//AdjWidget">
     <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
+      <details key="label" value="text"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="lstAdjListViewColumn" upperBound="-1"
         eType="#//AdjListViewColumn" containment="true">
@@ -111,7 +111,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdjListViewColumn">
     <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
+      <details key="label" value="text"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="variable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -119,7 +119,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdjPanel" eSuperTypes="#//AdjWidget">
     <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
+      <details key="label" value="text"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="lstAdjWidget" upperBound="-1"
         eType="#//AdjWidget" containment="true">
@@ -128,7 +128,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdjGroupBox" eSuperTypes="#//AdjWidget">
     <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
+      <details key="label" value="text"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="lstAdjWidget" upperBound="-1"
         eType="#//AdjWidget" containment="true">

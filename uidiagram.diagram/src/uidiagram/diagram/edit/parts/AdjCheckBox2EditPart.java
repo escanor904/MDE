@@ -110,8 +110,8 @@ public class AdjCheckBox2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean addFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjCheckBoxName2EditPart) {
-			((AdjCheckBoxName2EditPart) childEditPart).setLabel(getPrimaryShape().getFigureAdjCheckBoxLabelFigure());
+		if (childEditPart instanceof AdjCheckBoxText2EditPart) {
+			((AdjCheckBoxText2EditPart) childEditPart).setLabel(getPrimaryShape().getFigureAdjCheckBoxLabelFigure());
 			return true;
 		}
 		return false;
@@ -121,7 +121,7 @@ public class AdjCheckBox2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean removeFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjCheckBoxName2EditPart) {
+		if (childEditPart instanceof AdjCheckBoxText2EditPart) {
 			return true;
 		}
 		return false;
@@ -244,7 +244,7 @@ public class AdjCheckBox2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	public EditPart getPrimaryChildEditPart() {
-		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjCheckBoxName2EditPart.VISUAL_ID));
+		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjCheckBoxText2EditPart.VISUAL_ID));
 	}
 
 	/**

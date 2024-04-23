@@ -10,7 +10,7 @@ package uidiagram;
  *
  *
  * @see uidiagram.UidiagramPackage#getAdjLinkLabel()
- * @model annotation="gmf.node label='name'"
+ * @model annotation="gmf.node label='text'"
  * @generated
  */
 public interface AdjLinkLabel extends AdjWidget {

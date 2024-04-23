@@ -7,7 +7,7 @@ Bundle-ClassPath: .
 Bundle-Activator: uidiagram.diagram.part.UidiagramDiagramEditorPlugin
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Export-Package: uidiagram.diagram.edit.parts, 
+Export-Package: uidiagram.diagram.edit.parts,
  uidiagram.diagram.part,
  uidiagram.diagram.providers
 Require-Bundle: org.eclipse.core.runtime,

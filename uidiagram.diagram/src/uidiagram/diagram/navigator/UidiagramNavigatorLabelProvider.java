@@ -20,6 +20,7 @@ import org.eclipse.ui.IMemento;
 import org.eclipse.ui.navigator.ICommonContentExtensionSite;
 import org.eclipse.ui.navigator.ICommonLabelProvider;
 
+import uidiagram.diagram.edit.parts.*;
 import uidiagram.diagram.edit.parts.AdjButton2EditPart;
 import uidiagram.diagram.edit.parts.AdjButton3EditPart;
 import uidiagram.diagram.edit.parts.AdjButtonEditPart;
@@ -464,7 +465,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjLabel_3001Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjLabel_3001,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjLabelNameEditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjLabelTextEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -480,7 +481,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjCheckBox_3002Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjCheckBox_3002,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjCheckBoxNameEditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjCheckBoxTextEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -496,7 +497,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjButton_3003Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjButton_3003,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjButtonNameEditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjButtonTextEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -512,7 +513,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjListBox_3004Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjListBox_3004,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjListBoxNameEditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjListBoxTextEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -528,7 +529,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjTextBox_3006Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjTextBox_3006,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjTextBoxNameEditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjTextBoxTextEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -544,7 +545,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjCheckedListBox_3007Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjCheckedListBox_3007,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjCheckedListBoxNameEditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjCheckedListBoxTextEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -560,7 +561,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjLinkLabel_3008Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjLinkLabel_3008,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjLinkLabelNameEditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjLinkLabelTextEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -576,7 +577,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjRichTextBox_3009Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjRichTextBox_3009,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjRichTextBoxNameEditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjRichTextBoxTextEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -592,7 +593,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjPanel_3015Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjPanel_3015,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjPanelNameEditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjPanelTextEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -608,7 +609,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjLabel_3016Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjLabel_3016,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjLabelName2EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjLabelText2EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -624,7 +625,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjCheckBox_3017Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjCheckBox_3017,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjCheckBoxName2EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjCheckBoxText2EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -640,7 +641,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjButton_3018Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjButton_3018,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjButtonName2EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjButtonText2EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -656,7 +657,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjListBox_3019Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjListBox_3019,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjListBoxName2EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjListBoxText2EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -672,7 +673,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjTextBox_3021Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjTextBox_3021,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjTextBoxName2EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjTextBoxText2EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -688,7 +689,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjCheckedListBox_3022Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjCheckedListBox_3022,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjCheckedListBoxName2EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjCheckedListBoxText2EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -704,7 +705,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjLinkLabel_3023Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjLinkLabel_3023,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjLinkLabelName2EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjLinkLabelText2EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -720,7 +721,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjRichTextBox_3024Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjRichTextBox_3024,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjRichTextBoxName2EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjRichTextBoxText2EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -736,7 +737,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjPanel_3029Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjPanel_3029,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjPanelName2EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjPanelText2EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -752,7 +753,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjGroupBox_3030Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjGroupBox_3030,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjGroupBoxNameEditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjGroupBoxTextEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -768,7 +769,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjLabel_3031Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjLabel_3031,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjLabelName3EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjLabelText3EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -784,7 +785,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjCheckBox_3032Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjCheckBox_3032,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjCheckBoxName3EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjCheckBoxText3EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -800,7 +801,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjButton_3033Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjButton_3033,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjButtonName3EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjButtonText3EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -816,7 +817,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjListBox_3034Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjListBox_3034,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjListBoxName3EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjListBoxText3EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -832,7 +833,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjTextBox_3036Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjTextBox_3036,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjTextBoxName3EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjTextBoxText3EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -848,7 +849,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjCheckedListBox_3037Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjCheckedListBox_3037,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjCheckedListBoxName3EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjCheckedListBoxText3EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -864,7 +865,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjLinkLabel_3038Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjLinkLabel_3038,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjLinkLabelName3EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjLinkLabelText3EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -880,7 +881,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjRichTextBox_3039Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjRichTextBox_3039,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjRichTextBoxName3EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjRichTextBoxText3EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -896,7 +897,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjPanel_3044Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjPanel_3044,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjPanelName3EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjPanelText3EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -912,7 +913,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjGroupBox_3076Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjGroupBox_3076,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjGroupBoxName2EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjGroupBoxText2EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -928,7 +929,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjGroupBox_3084Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjGroupBox_3084,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjGroupBoxName3EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjGroupBoxText3EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -944,7 +945,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjComboBox_3087Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjComboBox_3087,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjComboBoxNameEditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjComboBoxTextEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -960,7 +961,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjComboBox_3088Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjComboBox_3088,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjComboBoxName2EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjComboBoxText2EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -976,7 +977,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjComboBox_3089Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjComboBox_3089,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjComboBoxName3EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjComboBoxText3EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -992,7 +993,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjListView_3092Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjListView_3092,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjListViewNameEditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjListViewTextEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -1008,7 +1009,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjListViewColumn_3093Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjListViewColumn_3093,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjListViewColumnNameEditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjListViewColumnTextEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -1024,7 +1025,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjListView_3094Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjListView_3094,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjListViewName2EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjListViewText2EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -1040,7 +1041,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjListView_3095Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjListView_3095,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjListViewName3EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjListViewText3EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -1056,7 +1057,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjDateTimePicker_3098Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjDateTimePicker_3098,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjDateTimePickerNameEditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjDateTimePickerTextEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -1072,7 +1073,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjRadioButton_3099Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjRadioButton_3099,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjRadioButtonNameEditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjRadioButtonTextEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -1088,7 +1089,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjDateTimePicker_3101Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjDateTimePicker_3101,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjDateTimePickerName2EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjDateTimePickerText2EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -1104,7 +1105,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjRadioButton_3102Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjRadioButton_3102,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjRadioButtonName2EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjRadioButtonText2EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -1120,7 +1121,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjDateTimePicker_3104Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjDateTimePicker_3104,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjDateTimePickerName3EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjDateTimePickerText3EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -1136,7 +1137,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjRadioButton_3105Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjRadioButton_3105,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjRadioButtonName3EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjRadioButtonText3EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -1152,7 +1153,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjPictureBox_3106Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjPictureBox_3106,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjPictureBoxNameEditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjPictureBoxTextEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -1168,7 +1169,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjPictureBox_3107Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjPictureBox_3107,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjPictureBoxName2EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjPictureBoxText2EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
@@ -1184,7 +1185,7 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 	private String getAdjPictureBox_3108Text(View view) {
 		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.AdjPictureBox_3108,
 				view.getElement() != null ? view.getElement() : view,
-				UidiagramVisualIDRegistry.getType(AdjPictureBoxName3EditPart.VISUAL_ID));
+				UidiagramVisualIDRegistry.getType(AdjPictureBoxText3EditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());

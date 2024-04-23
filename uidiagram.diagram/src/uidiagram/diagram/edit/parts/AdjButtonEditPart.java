@@ -115,8 +115,8 @@ public class AdjButtonEditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean addFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjButtonNameEditPart) {
-			((AdjButtonNameEditPart) childEditPart).setLabel(getPrimaryShape().getFigureAdjButtonLabelFigure());
+		if (childEditPart instanceof AdjButtonTextEditPart) {
+			((AdjButtonTextEditPart) childEditPart).setLabel(getPrimaryShape().getFigureAdjButtonLabelFigure());
 			return true;
 		}
 		return false;
@@ -126,7 +126,7 @@ public class AdjButtonEditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean removeFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjButtonNameEditPart) {
+		if (childEditPart instanceof AdjButtonTextEditPart) {
 			return true;
 		}
 		return false;
@@ -249,7 +249,7 @@ public class AdjButtonEditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	public EditPart getPrimaryChildEditPart() {
-		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjButtonNameEditPart.VISUAL_ID));
+		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjButtonTextEditPart.VISUAL_ID));
 	}
 
 	/**
@@ -293,14 +293,14 @@ public class AdjButtonEditPart extends ShapeNodeEditPart {
 		}
 
 	}
-	
+
 	/**
 	 * Metodo para capturar los eventos del diagrama UIDiagram
 	 */
 	protected void handleNotificationEvent(Notification arg0) {
 		// SET was the type i need
 		if (arg0.getEventType() == Notification.SET) {
-			
+
 			//Verificamos si la instancia es de dimensiones
 			if (arg0.getNotifier() instanceof BoundsImpl) {
 
@@ -327,7 +327,7 @@ public class AdjButtonEditPart extends ShapeNodeEditPart {
 				model.setPositionX(notifier.getX());
 				model.setPositionY(notifier.getY());
 			}
-			
+
 			//Verificamos si la instancia es del tipo de letra
 			if (arg0.getNotifier() instanceof ShapeImpl) {
 
@@ -338,7 +338,7 @@ public class AdjButtonEditPart extends ShapeNodeEditPart {
 				boolean italic = fontStyleImpl.isItalic();
 				NodeImpl node = (NodeImpl) this.getModel();
 				AdjWidget model = (AdjWidget) node.getElement();
-				
+
 				model.setText(model.getName());
 				model.setBold(bold);
 				model.setItalic(italic);
@@ -349,6 +349,5 @@ public class AdjButtonEditPart extends ShapeNodeEditPart {
 		}
 		super.handleNotificationEvent(arg0);
 	}
-
 
 }

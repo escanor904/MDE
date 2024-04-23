@@ -501,67 +501,67 @@ public class UidiagramVisualIDRegistry {
 			}
 			break;
 		case AdjLabelEditPart.VISUAL_ID:
-			if (AdjLabelNameEditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjLabelTextEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjCheckBoxEditPart.VISUAL_ID:
-			if (AdjCheckBoxNameEditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjCheckBoxTextEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjButtonEditPart.VISUAL_ID:
-			if (AdjButtonNameEditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjButtonTextEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjListBoxEditPart.VISUAL_ID:
-			if (AdjListBoxNameEditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjListBoxTextEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjDateTimePickerEditPart.VISUAL_ID:
-			if (AdjDateTimePickerNameEditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjDateTimePickerTextEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjTextBoxEditPart.VISUAL_ID:
-			if (AdjTextBoxNameEditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjTextBoxTextEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjCheckedListBoxEditPart.VISUAL_ID:
-			if (AdjCheckedListBoxNameEditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjCheckedListBoxTextEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjLinkLabelEditPart.VISUAL_ID:
-			if (AdjLinkLabelNameEditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjLinkLabelTextEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjRichTextBoxEditPart.VISUAL_ID:
-			if (AdjRichTextBoxNameEditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjRichTextBoxTextEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjComboBoxEditPart.VISUAL_ID:
-			if (AdjComboBoxNameEditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjComboBoxTextEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjRadioButtonEditPart.VISUAL_ID:
-			if (AdjRadioButtonNameEditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjRadioButtonTextEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjPictureBoxEditPart.VISUAL_ID:
-			if (AdjPictureBoxNameEditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjPictureBoxTextEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjListViewEditPart.VISUAL_ID:
-			if (AdjListViewNameEditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjListViewTextEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (AdjListViewAdjListViewLstAdjListViewColumnCompartmentEditPart.VISUAL_ID == nodeVisualID) {
@@ -569,12 +569,12 @@ public class UidiagramVisualIDRegistry {
 			}
 			break;
 		case AdjListViewColumnEditPart.VISUAL_ID:
-			if (AdjListViewColumnNameEditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjListViewColumnTextEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjPanelEditPart.VISUAL_ID:
-			if (AdjPanelNameEditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjPanelTextEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (AdjPanelAdjPanelLstAdjWidgetCompartmentEditPart.VISUAL_ID == nodeVisualID) {
@@ -582,67 +582,67 @@ public class UidiagramVisualIDRegistry {
 			}
 			break;
 		case AdjLabel2EditPart.VISUAL_ID:
-			if (AdjLabelName2EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjLabelText2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjCheckBox2EditPart.VISUAL_ID:
-			if (AdjCheckBoxName2EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjCheckBoxText2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjButton2EditPart.VISUAL_ID:
-			if (AdjButtonName2EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjButtonText2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjListBox2EditPart.VISUAL_ID:
-			if (AdjListBoxName2EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjListBoxText2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjDateTimePicker2EditPart.VISUAL_ID:
-			if (AdjDateTimePickerName2EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjDateTimePickerText2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjTextBox2EditPart.VISUAL_ID:
-			if (AdjTextBoxName2EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjTextBoxText2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjCheckedListBox2EditPart.VISUAL_ID:
-			if (AdjCheckedListBoxName2EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjCheckedListBoxText2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjLinkLabel2EditPart.VISUAL_ID:
-			if (AdjLinkLabelName2EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjLinkLabelText2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjRichTextBox2EditPart.VISUAL_ID:
-			if (AdjRichTextBoxName2EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjRichTextBoxText2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjComboBox2EditPart.VISUAL_ID:
-			if (AdjComboBoxName2EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjComboBoxText2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjRadioButton2EditPart.VISUAL_ID:
-			if (AdjRadioButtonName2EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjRadioButtonText2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjPictureBox2EditPart.VISUAL_ID:
-			if (AdjPictureBoxName2EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjPictureBoxText2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjListView2EditPart.VISUAL_ID:
-			if (AdjListViewName2EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjListViewText2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (AdjListViewAdjListViewLstAdjListViewColumnCompartment2EditPart.VISUAL_ID == nodeVisualID) {
@@ -650,7 +650,7 @@ public class UidiagramVisualIDRegistry {
 			}
 			break;
 		case AdjPanel2EditPart.VISUAL_ID:
-			if (AdjPanelName2EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjPanelText2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (AdjPanelAdjPanelLstAdjWidgetCompartment2EditPart.VISUAL_ID == nodeVisualID) {
@@ -658,7 +658,7 @@ public class UidiagramVisualIDRegistry {
 			}
 			break;
 		case AdjGroupBoxEditPart.VISUAL_ID:
-			if (AdjGroupBoxNameEditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjGroupBoxTextEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (AdjGroupBoxAdjGroupBoxLstAdjWidgetCompartmentEditPart.VISUAL_ID == nodeVisualID) {
@@ -666,67 +666,67 @@ public class UidiagramVisualIDRegistry {
 			}
 			break;
 		case AdjLabel3EditPart.VISUAL_ID:
-			if (AdjLabelName3EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjLabelText3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjCheckBox3EditPart.VISUAL_ID:
-			if (AdjCheckBoxName3EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjCheckBoxText3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjButton3EditPart.VISUAL_ID:
-			if (AdjButtonName3EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjButtonText3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjListBox3EditPart.VISUAL_ID:
-			if (AdjListBoxName3EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjListBoxText3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjDateTimePicker3EditPart.VISUAL_ID:
-			if (AdjDateTimePickerName3EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjDateTimePickerText3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjTextBox3EditPart.VISUAL_ID:
-			if (AdjTextBoxName3EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjTextBoxText3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjCheckedListBox3EditPart.VISUAL_ID:
-			if (AdjCheckedListBoxName3EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjCheckedListBoxText3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjLinkLabel3EditPart.VISUAL_ID:
-			if (AdjLinkLabelName3EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjLinkLabelText3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjRichTextBox3EditPart.VISUAL_ID:
-			if (AdjRichTextBoxName3EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjRichTextBoxText3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjComboBox3EditPart.VISUAL_ID:
-			if (AdjComboBoxName3EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjComboBoxText3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjRadioButton3EditPart.VISUAL_ID:
-			if (AdjRadioButtonName3EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjRadioButtonText3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjPictureBox3EditPart.VISUAL_ID:
-			if (AdjPictureBoxName3EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjPictureBoxText3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
 		case AdjListView3EditPart.VISUAL_ID:
-			if (AdjListViewName3EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjListViewText3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (AdjListViewAdjListViewLstAdjListViewColumnCompartment3EditPart.VISUAL_ID == nodeVisualID) {
@@ -734,7 +734,7 @@ public class UidiagramVisualIDRegistry {
 			}
 			break;
 		case AdjPanel3EditPart.VISUAL_ID:
-			if (AdjPanelName3EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjPanelText3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (AdjPanelAdjPanelLstAdjWidgetCompartment3EditPart.VISUAL_ID == nodeVisualID) {
@@ -742,7 +742,7 @@ public class UidiagramVisualIDRegistry {
 			}
 			break;
 		case AdjGroupBox2EditPart.VISUAL_ID:
-			if (AdjGroupBoxName2EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjGroupBoxText2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (AdjGroupBoxAdjGroupBoxLstAdjWidgetCompartment2EditPart.VISUAL_ID == nodeVisualID) {
@@ -750,7 +750,7 @@ public class UidiagramVisualIDRegistry {
 			}
 			break;
 		case AdjGroupBox3EditPart.VISUAL_ID:
-			if (AdjGroupBoxName3EditPart.VISUAL_ID == nodeVisualID) {
+			if (AdjGroupBoxText3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (AdjGroupBoxAdjGroupBoxLstAdjWidgetCompartment3EditPart.VISUAL_ID == nodeVisualID) {

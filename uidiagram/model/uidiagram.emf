@@ -39,61 +39,61 @@ abstract class AdjWidget {
 
 //Tipos de AdjWidget
 
-@gmf.node(label = "name")
+@gmf.node(label = "text")
 class AdjLabel extends AdjWidget {
 }
 
-@gmf.node(label = "name")
+@gmf.node(label = "text")
 class AdjCheckBox extends AdjWidget {
 }
 
-@gmf.node(label = "name")
+@gmf.node(label = "text")
 class AdjButton extends AdjWidget {
 }
 
-@gmf.node(label = "name")
+@gmf.node(label = "text")
 class AdjListBox extends AdjWidget {
 }
 
-@gmf.node(label = "name")
+@gmf.node(label = "text")
 class AdjDateTimePicker extends AdjWidget {
 }
 
-@gmf.node(label = "name")
+@gmf.node(label = "text")
 class AdjTextBox extends AdjWidget {
 }
 
-@gmf.node(label = "name")
+@gmf.node(label = "text")
 class AdjCheckedListBox extends AdjWidget {
 }
 
-@gmf.node(label = "name")
+@gmf.node(label = "text")
 class AdjLinkLabel extends AdjWidget {
 }
 
-@gmf.node(label = "name")
+@gmf.node(label = "text")
 class AdjRichTextBox extends AdjWidget {
 }
 
-@gmf.node(label = "name")
+@gmf.node(label = "text")
 class AdjComboBox extends AdjWidget {
 }
 
-@gmf.node(label = "name")
+@gmf.node(label = "text")
 class AdjRadioButton extends AdjWidget {
 }
 
-@gmf.node(label = "name")
+@gmf.node(label = "text")
 class AdjPictureBox extends AdjWidget {
 }
 
-@gmf.node(label = "name")
+@gmf.node(label = "text")
 class AdjListView extends AdjWidget {
 	@gmf.compartment(layout="list",collapsible="true")
 	val AdjListViewColumn[*] lstAdjListViewColumn;
 }
 
-@gmf.node(label = "name")
+@gmf.node(label = "text")
 class AdjListViewColumn {
 	attr String name;
 	attr String variable;
@@ -104,13 +104,13 @@ class AdjListViewColumn {
 
 //GRUPOS
 
-@gmf.node(label = "name")
+@gmf.node(label = "text")
 class AdjPanel extends AdjWidget {
 	@gmf.compartment
 	val AdjWidget[*] lstAdjWidget;
 }
 
-@gmf.node(label = "name")
+@gmf.node(label = "text")
 class AdjGroupBox extends AdjWidget {
 	@gmf.compartment
 	val AdjWidget[*] lstAdjWidget;

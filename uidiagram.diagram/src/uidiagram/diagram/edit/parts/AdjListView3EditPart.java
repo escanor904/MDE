@@ -119,8 +119,8 @@ public class AdjListView3EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean addFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjListViewName3EditPart) {
-			((AdjListViewName3EditPart) childEditPart).setLabel(getPrimaryShape().getFigureAdjListViewLabelFigure());
+		if (childEditPart instanceof AdjListViewText3EditPart) {
+			((AdjListViewText3EditPart) childEditPart).setLabel(getPrimaryShape().getFigureAdjListViewLabelFigure());
 			return true;
 		}
 		if (childEditPart instanceof AdjListViewAdjListViewLstAdjListViewColumnCompartment3EditPart) {
@@ -136,7 +136,7 @@ public class AdjListView3EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean removeFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjListViewName3EditPart) {
+		if (childEditPart instanceof AdjListViewText3EditPart) {
 			return true;
 		}
 		if (childEditPart instanceof AdjListViewAdjListViewLstAdjListViewColumnCompartment3EditPart) {
@@ -267,7 +267,7 @@ public class AdjListView3EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	public EditPart getPrimaryChildEditPart() {
-		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjListViewName3EditPart.VISUAL_ID));
+		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjListViewText3EditPart.VISUAL_ID));
 	}
 
 	/**

@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  *
  * @see uidiagram.UidiagramPackage#getAdjListView()
- * @model annotation="gmf.node label='name'"
+ * @model annotation="gmf.node label='text'"
  * @generated
  */
 public interface AdjListView extends AdjWidget {

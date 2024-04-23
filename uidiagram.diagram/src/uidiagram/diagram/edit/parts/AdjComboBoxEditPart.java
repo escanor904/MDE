@@ -110,8 +110,8 @@ public class AdjComboBoxEditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean addFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjComboBoxNameEditPart) {
-			((AdjComboBoxNameEditPart) childEditPart).setLabel(getPrimaryShape().getFigureAdjComboBoxLabelFigure());
+		if (childEditPart instanceof AdjComboBoxTextEditPart) {
+			((AdjComboBoxTextEditPart) childEditPart).setLabel(getPrimaryShape().getFigureAdjComboBoxLabelFigure());
 			return true;
 		}
 		return false;
@@ -121,7 +121,7 @@ public class AdjComboBoxEditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean removeFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjComboBoxNameEditPart) {
+		if (childEditPart instanceof AdjComboBoxTextEditPart) {
 			return true;
 		}
 		return false;
@@ -244,7 +244,7 @@ public class AdjComboBoxEditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	public EditPart getPrimaryChildEditPart() {
-		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjComboBoxNameEditPart.VISUAL_ID));
+		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjComboBoxTextEditPart.VISUAL_ID));
 	}
 
 	/**

@@ -36,7 +36,7 @@
             <diagramLabel
                 href="uidiagram.gmfgraph#AdjLabelLabel"/>
             <features
-                href="uidiagram.ecore#//AdjWidget/name"/>
+                href="uidiagram.ecore#//AdjWidget/text"/>
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
@@ -57,7 +57,7 @@
             <diagramLabel
                 href="uidiagram.gmfgraph#AdjCheckBoxLabel"/>
             <features
-                href="uidiagram.ecore#//AdjWidget/name"/>
+                href="uidiagram.ecore#//AdjWidget/text"/>
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
@@ -78,7 +78,7 @@
             <diagramLabel
                 href="uidiagram.gmfgraph#AdjButtonLabel"/>
             <features
-                href="uidiagram.ecore#//AdjWidget/name"/>
+                href="uidiagram.ecore#//AdjWidget/text"/>
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
@@ -99,7 +99,7 @@
             <diagramLabel
                 href="uidiagram.gmfgraph#AdjListBoxLabel"/>
             <features
-                href="uidiagram.ecore#//AdjWidget/name"/>
+                href="uidiagram.ecore#//AdjWidget/text"/>
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
@@ -120,7 +120,7 @@
             <diagramLabel
                 href="uidiagram.gmfgraph#AdjDateTimePickerLabel"/>
             <features
-                href="uidiagram.ecore#//AdjWidget/name"/>
+                href="uidiagram.ecore#//AdjWidget/text"/>
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
@@ -141,7 +141,7 @@
             <diagramLabel
                 href="uidiagram.gmfgraph#AdjTextBoxLabel"/>
             <features
-                href="uidiagram.ecore#//AdjWidget/name"/>
+                href="uidiagram.ecore#//AdjWidget/text"/>
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
@@ -162,7 +162,7 @@
             <diagramLabel
                 href="uidiagram.gmfgraph#AdjCheckedListBoxLabel"/>
             <features
-                href="uidiagram.ecore#//AdjWidget/name"/>
+                href="uidiagram.ecore#//AdjWidget/text"/>
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
@@ -183,7 +183,7 @@
             <diagramLabel
                 href="uidiagram.gmfgraph#AdjLinkLabelLabel"/>
             <features
-                href="uidiagram.ecore#//AdjWidget/name"/>
+                href="uidiagram.ecore#//AdjWidget/text"/>
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
@@ -204,7 +204,7 @@
             <diagramLabel
                 href="uidiagram.gmfgraph#AdjRichTextBoxLabel"/>
             <features
-                href="uidiagram.ecore#//AdjWidget/name"/>
+                href="uidiagram.ecore#//AdjWidget/text"/>
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
@@ -225,7 +225,7 @@
             <diagramLabel
                 href="uidiagram.gmfgraph#AdjComboBoxLabel"/>
             <features
-                href="uidiagram.ecore#//AdjWidget/name"/>
+                href="uidiagram.ecore#//AdjWidget/text"/>
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
@@ -246,7 +246,7 @@
             <diagramLabel
                 href="uidiagram.gmfgraph#AdjRadioButtonLabel"/>
             <features
-                href="uidiagram.ecore#//AdjWidget/name"/>
+                href="uidiagram.ecore#//AdjWidget/text"/>
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
@@ -267,7 +267,7 @@
             <diagramLabel
                 href="uidiagram.gmfgraph#AdjPictureBoxLabel"/>
             <features
-                href="uidiagram.ecore#//AdjWidget/name"/>
+                href="uidiagram.ecore#//AdjWidget/text"/>
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
@@ -289,7 +289,7 @@
             <diagramLabel
                 href="uidiagram.gmfgraph#AdjListViewLabel"/>
             <features
-                href="uidiagram.ecore#//AdjWidget/name"/>
+                href="uidiagram.ecore#//AdjWidget/text"/>
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
@@ -308,7 +308,7 @@
                 <diagramLabel
                     href="uidiagram.gmfgraph#AdjListViewColumnLabel"/>
                 <features
-                    href="uidiagram.ecore#//AdjListViewColumn/name"/>
+                    href="uidiagram.ecore#//AdjListViewColumn/text"/>
               </labelMappings>
               <tool
                   xsi:type="gmftool:CreationTool"
@@ -337,7 +337,7 @@
             <diagramLabel
                 href="uidiagram.gmfgraph#AdjPanelLabel"/>
             <features
-                href="uidiagram.ecore#//AdjWidget/name"/>
+                href="uidiagram.ecore#//AdjWidget/text"/>
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
@@ -454,7 +454,7 @@
             <diagramLabel
                 href="uidiagram.gmfgraph#AdjGroupBoxLabel"/>
             <features
-                href="uidiagram.ecore#//AdjWidget/name"/>
+                href="uidiagram.ecore#//AdjWidget/text"/>
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"

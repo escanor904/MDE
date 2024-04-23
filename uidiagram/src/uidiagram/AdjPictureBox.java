@@ -10,7 +10,7 @@ package uidiagram;
  *
  *
  * @see uidiagram.UidiagramPackage#getAdjPictureBox()
- * @model annotation="gmf.node label='name'"
+ * @model annotation="gmf.node label='text'"
  * @generated
  */
 public interface AdjPictureBox extends AdjWidget {

@@ -882,97 +882,97 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 		  (adjLabelEClass, 
 		   source, 
 		   new String[] {
-			 "label", "name"
+			 "label", "text"
 		   });	
 		addAnnotation
 		  (adjCheckBoxEClass, 
 		   source, 
 		   new String[] {
-			 "label", "name"
+			 "label", "text"
 		   });	
 		addAnnotation
 		  (adjButtonEClass, 
 		   source, 
 		   new String[] {
-			 "label", "name"
+			 "label", "text"
 		   });	
 		addAnnotation
 		  (adjListBoxEClass, 
 		   source, 
 		   new String[] {
-			 "label", "name"
+			 "label", "text"
 		   });	
 		addAnnotation
 		  (adjDateTimePickerEClass, 
 		   source, 
 		   new String[] {
-			 "label", "name"
+			 "label", "text"
 		   });	
 		addAnnotation
 		  (adjTextBoxEClass, 
 		   source, 
 		   new String[] {
-			 "label", "name"
+			 "label", "text"
 		   });	
 		addAnnotation
 		  (adjCheckedListBoxEClass, 
 		   source, 
 		   new String[] {
-			 "label", "name"
+			 "label", "text"
 		   });	
 		addAnnotation
 		  (adjLinkLabelEClass, 
 		   source, 
 		   new String[] {
-			 "label", "name"
+			 "label", "text"
 		   });	
 		addAnnotation
 		  (adjRichTextBoxEClass, 
 		   source, 
 		   new String[] {
-			 "label", "name"
+			 "label", "text"
 		   });	
 		addAnnotation
 		  (adjComboBoxEClass, 
 		   source, 
 		   new String[] {
-			 "label", "name"
+			 "label", "text"
 		   });	
 		addAnnotation
 		  (adjRadioButtonEClass, 
 		   source, 
 		   new String[] {
-			 "label", "name"
+			 "label", "text"
 		   });	
 		addAnnotation
 		  (adjPictureBoxEClass, 
 		   source, 
 		   new String[] {
-			 "label", "name"
+			 "label", "text"
 		   });	
 		addAnnotation
 		  (adjListViewEClass, 
 		   source, 
 		   new String[] {
-			 "label", "name"
+			 "label", "text"
 		   });	
 		addAnnotation
 		  (adjListViewColumnEClass, 
 		   source, 
 		   new String[] {
-			 "label", "name"
+			 "label", "text"
 		   });	
 		addAnnotation
 		  (adjPanelEClass, 
 		   source, 
 		   new String[] {
-			 "label", "name"
+			 "label", "text"
 		   });	
 		addAnnotation
 		  (adjGroupBoxEClass, 
 		   source, 
 		   new String[] {
-			 "label", "name"
+			 "label", "text"
 		   });
 	}
 

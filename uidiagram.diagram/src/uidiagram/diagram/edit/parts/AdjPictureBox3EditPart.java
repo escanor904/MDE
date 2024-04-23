@@ -110,8 +110,8 @@ public class AdjPictureBox3EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean addFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjPictureBoxName3EditPart) {
-			((AdjPictureBoxName3EditPart) childEditPart)
+		if (childEditPart instanceof AdjPictureBoxText3EditPart) {
+			((AdjPictureBoxText3EditPart) childEditPart)
 					.setLabel(getPrimaryShape().getFigureAdjPictureBoxLabelFigure());
 			return true;
 		}
@@ -122,7 +122,7 @@ public class AdjPictureBox3EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean removeFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjPictureBoxName3EditPart) {
+		if (childEditPart instanceof AdjPictureBoxText3EditPart) {
 			return true;
 		}
 		return false;
@@ -245,7 +245,7 @@ public class AdjPictureBox3EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	public EditPart getPrimaryChildEditPart() {
-		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjPictureBoxName3EditPart.VISUAL_ID));
+		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjPictureBoxText3EditPart.VISUAL_ID));
 	}
 
 	/**

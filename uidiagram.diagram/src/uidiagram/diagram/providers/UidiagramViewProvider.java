@@ -70,10 +70,10 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 	*/
 	protected boolean provides(CreateViewForKindOperation op) {
 		/*
-				if (op.getViewKind() == Node.class)
-					return getNodeViewClass(op.getSemanticAdapter(), op.getContainerView(), op.getSemanticHint()) != null;
-				if (op.getViewKind() == Edge.class)
-					return getEdgeViewClass(op.getSemanticAdapter(), op.getContainerView(), op.getSemanticHint()) != null;
+		    if (op.getViewKind() == Node.class)
+		      return getNodeViewClass(op.getSemanticAdapter(), op.getContainerView(), op.getSemanticHint()) != null;
+		    if (op.getViewKind() == Edge.class)
+		      return getEdgeViewClass(op.getSemanticAdapter(), op.getContainerView(), op.getSemanticHint()) != null;
 		*/
 		return true;
 	}
@@ -437,7 +437,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5001 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjLabelNameEditPart.VISUAL_ID));
+		Node label5001 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjLabelTextEditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -473,7 +473,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5002 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjCheckBoxNameEditPart.VISUAL_ID));
+		Node label5002 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjCheckBoxTextEditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -509,7 +509,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5003 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjButtonNameEditPart.VISUAL_ID));
+		Node label5003 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjButtonTextEditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -545,7 +545,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5004 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjListBoxNameEditPart.VISUAL_ID));
+		Node label5004 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjListBoxTextEditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -581,7 +581,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5099 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjDateTimePickerNameEditPart.VISUAL_ID));
+		Node label5099 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjDateTimePickerTextEditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -617,7 +617,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5006 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjTextBoxNameEditPart.VISUAL_ID));
+		Node label5006 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjTextBoxTextEditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -653,7 +653,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5007 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjCheckedListBoxNameEditPart.VISUAL_ID));
+		Node label5007 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjCheckedListBoxTextEditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -689,7 +689,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5008 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjLinkLabelNameEditPart.VISUAL_ID));
+		Node label5008 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjLinkLabelTextEditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -725,7 +725,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5009 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjRichTextBoxNameEditPart.VISUAL_ID));
+		Node label5009 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjRichTextBoxTextEditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -761,7 +761,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5088 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjComboBoxNameEditPart.VISUAL_ID));
+		Node label5088 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjComboBoxTextEditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -797,7 +797,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5100 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjRadioButtonNameEditPart.VISUAL_ID));
+		Node label5100 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjRadioButtonTextEditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -833,7 +833,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5107 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjPictureBoxNameEditPart.VISUAL_ID));
+		Node label5107 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjPictureBoxTextEditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -870,7 +870,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5094 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjListViewNameEditPart.VISUAL_ID));
+		Node label5094 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjListViewTextEditPart.VISUAL_ID));
 		createCompartment(node,
 				UidiagramVisualIDRegistry
 						.getType(AdjListViewAdjListViewLstAdjListViewColumnCompartmentEditPart.VISUAL_ID),
@@ -910,7 +910,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5093 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjListViewColumnNameEditPart.VISUAL_ID));
+		Node label5093 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjListViewColumnTextEditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -947,7 +947,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5083 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjPanelNameEditPart.VISUAL_ID));
+		Node label5083 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjPanelTextEditPart.VISUAL_ID));
 		createCompartment(node,
 				UidiagramVisualIDRegistry.getType(AdjPanelAdjPanelLstAdjWidgetCompartmentEditPart.VISUAL_ID), true,
 				false, false, false);
@@ -986,7 +986,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5015 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjLabelName2EditPart.VISUAL_ID));
+		Node label5015 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjLabelText2EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1022,7 +1022,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5016 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjCheckBoxName2EditPart.VISUAL_ID));
+		Node label5016 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjCheckBoxText2EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1058,7 +1058,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5017 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjButtonName2EditPart.VISUAL_ID));
+		Node label5017 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjButtonText2EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1094,7 +1094,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5018 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjListBoxName2EditPart.VISUAL_ID));
+		Node label5018 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjListBoxText2EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1130,7 +1130,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5102 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjDateTimePickerName2EditPart.VISUAL_ID));
+		Node label5102 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjDateTimePickerText2EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1166,7 +1166,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5020 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjTextBoxName2EditPart.VISUAL_ID));
+		Node label5020 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjTextBoxText2EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1202,7 +1202,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5021 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjCheckedListBoxName2EditPart.VISUAL_ID));
+		Node label5021 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjCheckedListBoxText2EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1238,7 +1238,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5022 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjLinkLabelName2EditPart.VISUAL_ID));
+		Node label5022 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjLinkLabelText2EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1274,7 +1274,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5023 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjRichTextBoxName2EditPart.VISUAL_ID));
+		Node label5023 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjRichTextBoxText2EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1310,7 +1310,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5089 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjComboBoxName2EditPart.VISUAL_ID));
+		Node label5089 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjComboBoxText2EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1346,7 +1346,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5103 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjRadioButtonName2EditPart.VISUAL_ID));
+		Node label5103 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjRadioButtonText2EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1382,7 +1382,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5108 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjPictureBoxName2EditPart.VISUAL_ID));
+		Node label5108 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjPictureBoxText2EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1419,7 +1419,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5095 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjListViewName2EditPart.VISUAL_ID));
+		Node label5095 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjListViewText2EditPart.VISUAL_ID));
 		createCompartment(node,
 				UidiagramVisualIDRegistry
 						.getType(AdjListViewAdjListViewLstAdjListViewColumnCompartment2EditPart.VISUAL_ID),
@@ -1460,7 +1460,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5082 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjPanelName2EditPart.VISUAL_ID));
+		Node label5082 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjPanelText2EditPart.VISUAL_ID));
 		createCompartment(node,
 				UidiagramVisualIDRegistry.getType(AdjPanelAdjPanelLstAdjWidgetCompartment2EditPart.VISUAL_ID), true,
 				false, false, false);
@@ -1500,7 +1500,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5081 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjGroupBoxNameEditPart.VISUAL_ID));
+		Node label5081 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjGroupBoxTextEditPart.VISUAL_ID));
 		createCompartment(node,
 				UidiagramVisualIDRegistry.getType(AdjGroupBoxAdjGroupBoxLstAdjWidgetCompartmentEditPart.VISUAL_ID),
 				true, false, false, false);
@@ -1539,7 +1539,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5028 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjLabelName3EditPart.VISUAL_ID));
+		Node label5028 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjLabelText3EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1575,7 +1575,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5029 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjCheckBoxName3EditPart.VISUAL_ID));
+		Node label5029 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjCheckBoxText3EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1611,7 +1611,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5030 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjButtonName3EditPart.VISUAL_ID));
+		Node label5030 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjButtonText3EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1647,7 +1647,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5031 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjListBoxName3EditPart.VISUAL_ID));
+		Node label5031 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjListBoxText3EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1683,7 +1683,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5105 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjDateTimePickerName3EditPart.VISUAL_ID));
+		Node label5105 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjDateTimePickerText3EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1719,7 +1719,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5033 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjTextBoxName3EditPart.VISUAL_ID));
+		Node label5033 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjTextBoxText3EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1755,7 +1755,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5034 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjCheckedListBoxName3EditPart.VISUAL_ID));
+		Node label5034 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjCheckedListBoxText3EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1791,7 +1791,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5035 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjLinkLabelName3EditPart.VISUAL_ID));
+		Node label5035 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjLinkLabelText3EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1827,7 +1827,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5036 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjRichTextBoxName3EditPart.VISUAL_ID));
+		Node label5036 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjRichTextBoxText3EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1863,7 +1863,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5090 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjComboBoxName3EditPart.VISUAL_ID));
+		Node label5090 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjComboBoxText3EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1899,7 +1899,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5106 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjRadioButtonName3EditPart.VISUAL_ID));
+		Node label5106 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjRadioButtonText3EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1935,7 +1935,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5109 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjPictureBoxName3EditPart.VISUAL_ID));
+		Node label5109 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjPictureBoxText3EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -1972,7 +1972,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5096 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjListViewName3EditPart.VISUAL_ID));
+		Node label5096 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjListViewText3EditPart.VISUAL_ID));
 		createCompartment(node,
 				UidiagramVisualIDRegistry
 						.getType(AdjListViewAdjListViewLstAdjListViewColumnCompartment3EditPart.VISUAL_ID),
@@ -2013,7 +2013,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5080 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjPanelName3EditPart.VISUAL_ID));
+		Node label5080 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjPanelText3EditPart.VISUAL_ID));
 		createCompartment(node,
 				UidiagramVisualIDRegistry.getType(AdjPanelAdjPanelLstAdjWidgetCompartment3EditPart.VISUAL_ID), true,
 				false, false, false);
@@ -2053,7 +2053,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5075 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjGroupBoxName2EditPart.VISUAL_ID));
+		Node label5075 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjGroupBoxText2EditPart.VISUAL_ID));
 		createCompartment(node,
 				UidiagramVisualIDRegistry.getType(AdjGroupBoxAdjGroupBoxLstAdjWidgetCompartment2EditPart.VISUAL_ID),
 				true, false, false, false);
@@ -2093,7 +2093,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				IPreferenceConstants.PREF_FILL_COLOR);
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
-		Node label5084 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjGroupBoxName3EditPart.VISUAL_ID));
+		Node label5084 = createLabel(node, UidiagramVisualIDRegistry.getType(AdjGroupBoxText3EditPart.VISUAL_ID));
 		createCompartment(node,
 				UidiagramVisualIDRegistry.getType(AdjGroupBoxAdjGroupBoxLstAdjWidgetCompartment3EditPart.VISUAL_ID),
 				true, false, false, false);

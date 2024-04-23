@@ -63,6 +63,8 @@ public class AdjLabel3EditPart extends ShapeNodeEditPart {
 		super.createDefaultEditPolicies();
 		installEditPolicy(EditPolicyRoles.SEMANTIC_ROLE, new AdjLabel3ItemSemanticEditPolicy());
 		installEditPolicy(EditPolicy.LAYOUT_ROLE, createLayoutEditPolicy());
+		
+		installEditPolicy(EditPolicyRoles.OPEN_ROLE, new MyOpenEditPolicyPropertiesEdit());
 		// XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
 		// removeEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.CONNECTION_HANDLES_ROLE);
 	}
@@ -110,8 +112,8 @@ public class AdjLabel3EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean addFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjLabelName3EditPart) {
-			((AdjLabelName3EditPart) childEditPart).setLabel(getPrimaryShape().getFigureAdjLabelLabelFigure());
+		if (childEditPart instanceof AdjLabelText3EditPart) {
+			((AdjLabelText3EditPart) childEditPart).setLabel(getPrimaryShape().getFigureAdjLabelLabelFigure());
 			return true;
 		}
 		return false;
@@ -121,7 +123,7 @@ public class AdjLabel3EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean removeFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjLabelName3EditPart) {
+		if (childEditPart instanceof AdjLabelText3EditPart) {
 			return true;
 		}
 		return false;
@@ -244,7 +246,7 @@ public class AdjLabel3EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	public EditPart getPrimaryChildEditPart() {
-		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjLabelName3EditPart.VISUAL_ID));
+		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjLabelText3EditPart.VISUAL_ID));
 	}
 
 	/**

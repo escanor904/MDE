@@ -16,11 +16,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5001" editPartClassName="AdjLabelNameEditPart" itemSemanticEditPolicyClassName="AdjLabelNameItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5001" editPartClassName="AdjLabelTextEditPart" itemSemanticEditPolicyClassName="AdjLabelTextItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjLabelLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -33,11 +33,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5002" editPartClassName="AdjCheckBoxNameEditPart" itemSemanticEditPolicyClassName="AdjCheckBoxNameItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5002" editPartClassName="AdjCheckBoxTextEditPart" itemSemanticEditPolicyClassName="AdjCheckBoxTextItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjCheckBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -50,11 +50,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5003" editPartClassName="AdjButtonNameEditPart" itemSemanticEditPolicyClassName="AdjButtonNameItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5003" editPartClassName="AdjButtonTextEditPart" itemSemanticEditPolicyClassName="AdjButtonTextItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjButtonLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -67,11 +67,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5004" editPartClassName="AdjListBoxNameEditPart" itemSemanticEditPolicyClassName="AdjListBoxNameItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5004" editPartClassName="AdjListBoxTextEditPart" itemSemanticEditPolicyClassName="AdjListBoxTextItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjListBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -84,11 +84,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5099" editPartClassName="AdjDateTimePickerNameEditPart" itemSemanticEditPolicyClassName="AdjDateTimePickerNameItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5099" editPartClassName="AdjDateTimePickerTextEditPart" itemSemanticEditPolicyClassName="AdjDateTimePickerTextItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjDateTimePickerLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -101,11 +101,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5006" editPartClassName="AdjTextBoxNameEditPart" itemSemanticEditPolicyClassName="AdjTextBoxNameItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5006" editPartClassName="AdjTextBoxTextEditPart" itemSemanticEditPolicyClassName="AdjTextBoxTextItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjTextBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -118,11 +118,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5007" editPartClassName="AdjCheckedListBoxNameEditPart" itemSemanticEditPolicyClassName="AdjCheckedListBoxNameItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5007" editPartClassName="AdjCheckedListBoxTextEditPart" itemSemanticEditPolicyClassName="AdjCheckedListBoxTextItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjCheckedListBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -135,11 +135,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5008" editPartClassName="AdjLinkLabelNameEditPart" itemSemanticEditPolicyClassName="AdjLinkLabelNameItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5008" editPartClassName="AdjLinkLabelTextEditPart" itemSemanticEditPolicyClassName="AdjLinkLabelTextItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjLinkLabelLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -152,11 +152,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5009" editPartClassName="AdjRichTextBoxNameEditPart" itemSemanticEditPolicyClassName="AdjRichTextBoxNameItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5009" editPartClassName="AdjRichTextBoxTextEditPart" itemSemanticEditPolicyClassName="AdjRichTextBoxTextItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjRichTextBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -169,11 +169,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5088" editPartClassName="AdjComboBoxNameEditPart" itemSemanticEditPolicyClassName="AdjComboBoxNameItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5088" editPartClassName="AdjComboBoxTextEditPart" itemSemanticEditPolicyClassName="AdjComboBoxTextItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjComboBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -186,11 +186,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5100" editPartClassName="AdjRadioButtonNameEditPart" itemSemanticEditPolicyClassName="AdjRadioButtonNameItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5100" editPartClassName="AdjRadioButtonTextEditPart" itemSemanticEditPolicyClassName="AdjRadioButtonTextItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjRadioButtonLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -203,11 +203,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5107" editPartClassName="AdjPictureBoxNameEditPart" itemSemanticEditPolicyClassName="AdjPictureBoxNameItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5107" editPartClassName="AdjPictureBoxTextEditPart" itemSemanticEditPolicyClassName="AdjPictureBoxTextItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjPictureBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -221,11 +221,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5094" editPartClassName="AdjListViewNameEditPart" itemSemanticEditPolicyClassName="AdjListViewNameItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5094" editPartClassName="AdjListViewTextEditPart" itemSemanticEditPolicyClassName="AdjListViewTextItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjListViewLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -238,11 +238,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjListView/lstAdjListViewColumn"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjListView/lstAdjListViewColumn"/>
       </modelFacet>
-      <labels visualID="5093" editPartClassName="AdjListViewColumnNameEditPart" itemSemanticEditPolicyClassName="AdjListViewColumnNameItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5093" editPartClassName="AdjListViewColumnTextEditPart" itemSemanticEditPolicyClassName="AdjListViewColumnTextItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjListViewColumnLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjListViewColumn/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjListViewColumn/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -256,11 +256,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5083" editPartClassName="AdjPanelNameEditPart" itemSemanticEditPolicyClassName="AdjPanelNameItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5083" editPartClassName="AdjPanelTextEditPart" itemSemanticEditPolicyClassName="AdjPanelTextItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjPanelLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -273,11 +273,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5015" editPartClassName="AdjLabelName2EditPart" itemSemanticEditPolicyClassName="AdjLabelName2ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5015" editPartClassName="AdjLabelText2EditPart" itemSemanticEditPolicyClassName="AdjLabelText2ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjLabelLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -290,11 +290,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5016" editPartClassName="AdjCheckBoxName2EditPart" itemSemanticEditPolicyClassName="AdjCheckBoxName2ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5016" editPartClassName="AdjCheckBoxText2EditPart" itemSemanticEditPolicyClassName="AdjCheckBoxText2ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjCheckBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -307,11 +307,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5017" editPartClassName="AdjButtonName2EditPart" itemSemanticEditPolicyClassName="AdjButtonName2ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5017" editPartClassName="AdjButtonText2EditPart" itemSemanticEditPolicyClassName="AdjButtonText2ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjButtonLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -324,11 +324,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5018" editPartClassName="AdjListBoxName2EditPart" itemSemanticEditPolicyClassName="AdjListBoxName2ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5018" editPartClassName="AdjListBoxText2EditPart" itemSemanticEditPolicyClassName="AdjListBoxText2ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjListBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -341,11 +341,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5102" editPartClassName="AdjDateTimePickerName2EditPart" itemSemanticEditPolicyClassName="AdjDateTimePickerName2ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5102" editPartClassName="AdjDateTimePickerText2EditPart" itemSemanticEditPolicyClassName="AdjDateTimePickerText2ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjDateTimePickerLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -358,11 +358,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5020" editPartClassName="AdjTextBoxName2EditPart" itemSemanticEditPolicyClassName="AdjTextBoxName2ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5020" editPartClassName="AdjTextBoxText2EditPart" itemSemanticEditPolicyClassName="AdjTextBoxText2ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjTextBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -375,11 +375,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5021" editPartClassName="AdjCheckedListBoxName2EditPart" itemSemanticEditPolicyClassName="AdjCheckedListBoxName2ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5021" editPartClassName="AdjCheckedListBoxText2EditPart" itemSemanticEditPolicyClassName="AdjCheckedListBoxText2ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjCheckedListBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -392,11 +392,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5022" editPartClassName="AdjLinkLabelName2EditPart" itemSemanticEditPolicyClassName="AdjLinkLabelName2ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5022" editPartClassName="AdjLinkLabelText2EditPart" itemSemanticEditPolicyClassName="AdjLinkLabelText2ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjLinkLabelLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -409,11 +409,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5023" editPartClassName="AdjRichTextBoxName2EditPart" itemSemanticEditPolicyClassName="AdjRichTextBoxName2ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5023" editPartClassName="AdjRichTextBoxText2EditPart" itemSemanticEditPolicyClassName="AdjRichTextBoxText2ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjRichTextBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -426,11 +426,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5089" editPartClassName="AdjComboBoxName2EditPart" itemSemanticEditPolicyClassName="AdjComboBoxName2ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5089" editPartClassName="AdjComboBoxText2EditPart" itemSemanticEditPolicyClassName="AdjComboBoxText2ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjComboBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -443,11 +443,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5103" editPartClassName="AdjRadioButtonName2EditPart" itemSemanticEditPolicyClassName="AdjRadioButtonName2ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5103" editPartClassName="AdjRadioButtonText2EditPart" itemSemanticEditPolicyClassName="AdjRadioButtonText2ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjRadioButtonLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -460,11 +460,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5108" editPartClassName="AdjPictureBoxName2EditPart" itemSemanticEditPolicyClassName="AdjPictureBoxName2ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5108" editPartClassName="AdjPictureBoxText2EditPart" itemSemanticEditPolicyClassName="AdjPictureBoxText2ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjPictureBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -478,11 +478,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5095" editPartClassName="AdjListViewName2EditPart" itemSemanticEditPolicyClassName="AdjListViewName2ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5095" editPartClassName="AdjListViewText2EditPart" itemSemanticEditPolicyClassName="AdjListViewText2ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjListViewLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -496,11 +496,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5082" editPartClassName="AdjPanelName2EditPart" itemSemanticEditPolicyClassName="AdjPanelName2ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5082" editPartClassName="AdjPanelText2EditPart" itemSemanticEditPolicyClassName="AdjPanelText2ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjPanelLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -514,11 +514,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjPanel/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5081" editPartClassName="AdjGroupBoxNameEditPart" itemSemanticEditPolicyClassName="AdjGroupBoxNameItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5081" editPartClassName="AdjGroupBoxTextEditPart" itemSemanticEditPolicyClassName="AdjGroupBoxTextItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjGroupBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -531,11 +531,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5028" editPartClassName="AdjLabelName3EditPart" itemSemanticEditPolicyClassName="AdjLabelName3ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5028" editPartClassName="AdjLabelText3EditPart" itemSemanticEditPolicyClassName="AdjLabelText3ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjLabelLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -548,11 +548,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5029" editPartClassName="AdjCheckBoxName3EditPart" itemSemanticEditPolicyClassName="AdjCheckBoxName3ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5029" editPartClassName="AdjCheckBoxText3EditPart" itemSemanticEditPolicyClassName="AdjCheckBoxText3ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjCheckBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -565,11 +565,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5030" editPartClassName="AdjButtonName3EditPart" itemSemanticEditPolicyClassName="AdjButtonName3ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5030" editPartClassName="AdjButtonText3EditPart" itemSemanticEditPolicyClassName="AdjButtonText3ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjButtonLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -582,11 +582,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5031" editPartClassName="AdjListBoxName3EditPart" itemSemanticEditPolicyClassName="AdjListBoxName3ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5031" editPartClassName="AdjListBoxText3EditPart" itemSemanticEditPolicyClassName="AdjListBoxText3ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjListBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -599,11 +599,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5105" editPartClassName="AdjDateTimePickerName3EditPart" itemSemanticEditPolicyClassName="AdjDateTimePickerName3ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5105" editPartClassName="AdjDateTimePickerText3EditPart" itemSemanticEditPolicyClassName="AdjDateTimePickerText3ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjDateTimePickerLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -616,11 +616,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5033" editPartClassName="AdjTextBoxName3EditPart" itemSemanticEditPolicyClassName="AdjTextBoxName3ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5033" editPartClassName="AdjTextBoxText3EditPart" itemSemanticEditPolicyClassName="AdjTextBoxText3ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjTextBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -633,11 +633,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5034" editPartClassName="AdjCheckedListBoxName3EditPart" itemSemanticEditPolicyClassName="AdjCheckedListBoxName3ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5034" editPartClassName="AdjCheckedListBoxText3EditPart" itemSemanticEditPolicyClassName="AdjCheckedListBoxText3ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjCheckedListBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -650,11 +650,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5035" editPartClassName="AdjLinkLabelName3EditPart" itemSemanticEditPolicyClassName="AdjLinkLabelName3ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5035" editPartClassName="AdjLinkLabelText3EditPart" itemSemanticEditPolicyClassName="AdjLinkLabelText3ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjLinkLabelLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -667,11 +667,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5036" editPartClassName="AdjRichTextBoxName3EditPart" itemSemanticEditPolicyClassName="AdjRichTextBoxName3ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5036" editPartClassName="AdjRichTextBoxText3EditPart" itemSemanticEditPolicyClassName="AdjRichTextBoxText3ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjRichTextBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -684,11 +684,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5090" editPartClassName="AdjComboBoxName3EditPart" itemSemanticEditPolicyClassName="AdjComboBoxName3ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5090" editPartClassName="AdjComboBoxText3EditPart" itemSemanticEditPolicyClassName="AdjComboBoxText3ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjComboBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -701,11 +701,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5106" editPartClassName="AdjRadioButtonName3EditPart" itemSemanticEditPolicyClassName="AdjRadioButtonName3ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5106" editPartClassName="AdjRadioButtonText3EditPart" itemSemanticEditPolicyClassName="AdjRadioButtonText3ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjRadioButtonLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -718,11 +718,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5109" editPartClassName="AdjPictureBoxName3EditPart" itemSemanticEditPolicyClassName="AdjPictureBoxName3ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5109" editPartClassName="AdjPictureBoxText3EditPart" itemSemanticEditPolicyClassName="AdjPictureBoxText3ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjPictureBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -736,11 +736,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5096" editPartClassName="AdjListViewName3EditPart" itemSemanticEditPolicyClassName="AdjListViewName3ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5096" editPartClassName="AdjListViewText3EditPart" itemSemanticEditPolicyClassName="AdjListViewText3ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjListViewLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -754,11 +754,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5080" editPartClassName="AdjPanelName3EditPart" itemSemanticEditPolicyClassName="AdjPanelName3ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5080" editPartClassName="AdjPanelText3EditPart" itemSemanticEditPolicyClassName="AdjPanelText3ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjPanelLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -772,11 +772,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/AdjGroupBox/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5075" editPartClassName="AdjGroupBoxName2EditPart" itemSemanticEditPolicyClassName="AdjGroupBoxName2ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5075" editPartClassName="AdjGroupBoxText2EditPart" itemSemanticEditPolicyClassName="AdjGroupBoxText2ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjGroupBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>
@@ -790,11 +790,11 @@
         <containmentMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
         <childMetaFeature href="uidiagram.genmodel#//uidiagram/FormUI/lstAdjWidget"/>
       </modelFacet>
-      <labels visualID="5084" editPartClassName="AdjGroupBoxName3EditPart" itemSemanticEditPolicyClassName="AdjGroupBoxName3ItemSemanticEditPolicy" elementIcon="true">
+      <labels visualID="5084" editPartClassName="AdjGroupBoxText3EditPart" itemSemanticEditPolicyClassName="AdjGroupBoxText3ItemSemanticEditPolicy" elementIcon="true">
         <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAdjGroupBoxLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
         <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
-          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/name"/>
+          <metaFeatures href="uidiagram.genmodel#//uidiagram/AdjWidget/text"/>
         </modelFacet>
       </labels>
     </childNodes>

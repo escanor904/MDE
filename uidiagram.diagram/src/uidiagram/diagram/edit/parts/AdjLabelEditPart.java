@@ -9,6 +9,7 @@ import org.eclipse.draw2d.RoundedRectangle;
 import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
 import org.eclipse.draw2d.geometry.Dimension;
+import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.gef.EditPart;
 import org.eclipse.gef.EditPolicy;
 import org.eclipse.gef.Request;
@@ -24,8 +25,12 @@ import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
 import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
 import org.eclipse.gmf.runtime.notation.View;
+import org.eclipse.gmf.runtime.notation.impl.BoundsImpl;
+import org.eclipse.gmf.runtime.notation.impl.NodeImpl;
+import org.eclipse.gmf.runtime.notation.impl.ShapeImpl;
 import org.eclipse.swt.graphics.Color;
 
+import uidiagram.AdjWidget;
 import uidiagram.diagram.edit.policies.AdjLabelItemSemanticEditPolicy;
 import uidiagram.diagram.part.UidiagramVisualIDRegistry;
 
@@ -63,6 +68,8 @@ public class AdjLabelEditPart extends ShapeNodeEditPart {
 		super.createDefaultEditPolicies();
 		installEditPolicy(EditPolicyRoles.SEMANTIC_ROLE, new AdjLabelItemSemanticEditPolicy());
 		installEditPolicy(EditPolicy.LAYOUT_ROLE, createLayoutEditPolicy());
+		
+		installEditPolicy(EditPolicyRoles.OPEN_ROLE, new MyOpenEditPolicyPropertiesEdit());
 		// XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
 		// removeEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.CONNECTION_HANDLES_ROLE);
 	}
@@ -110,8 +117,8 @@ public class AdjLabelEditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean addFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjLabelNameEditPart) {
-			((AdjLabelNameEditPart) childEditPart).setLabel(getPrimaryShape().getFigureAdjLabelLabelFigure());
+		if (childEditPart instanceof AdjLabelTextEditPart) {
+			((AdjLabelTextEditPart) childEditPart).setLabel(getPrimaryShape().getFigureAdjLabelLabelFigure());
 			return true;
 		}
 		return false;
@@ -121,7 +128,7 @@ public class AdjLabelEditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean removeFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjLabelNameEditPart) {
+		if (childEditPart instanceof AdjLabelTextEditPart) {
 			return true;
 		}
 		return false;
@@ -244,7 +251,7 @@ public class AdjLabelEditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	public EditPart getPrimaryChildEditPart() {
-		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjLabelNameEditPart.VISUAL_ID));
+		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjLabelTextEditPart.VISUAL_ID));
 	}
 
 	/**
@@ -287,6 +294,62 @@ public class AdjLabelEditPart extends ShapeNodeEditPart {
 			return fFigureAdjLabelLabelFigure;
 		}
 
+	}
+
+	/**
+	 * Metodo para capturar los eventos del diagrama UIDiagram
+	 */
+	protected void handleNotificationEvent(Notification arg0) {
+		// SET was the type i need
+		if (arg0.getEventType() == Notification.SET) {
+
+			//Verificamos si la instancia es de dimensiones
+			if (arg0.getNotifier() instanceof BoundsImpl) {
+
+				BoundsImpl notifier = (BoundsImpl) arg0.getNotifier();
+				// for my special coordinate mapping i also need the node,
+				// so i save it in this variable ...
+				NodeImpl node = (NodeImpl) this.getModel();
+				// get the corresponding FieldLabel Object from the model
+				AdjWidget model = (AdjWidget) node.getElement();
+
+				if (notifier.getWidth() == -1) {
+					model.setWidth(120);
+				} else {
+					model.setWidth(notifier.getWidth());
+
+				}
+				if (notifier.getHeight() == -1) {
+					model.setHeight(24);
+				} else {
+					model.setHeight(notifier.getHeight());
+
+				}
+				model.setName(model.getText());
+				model.setPositionX(notifier.getX());
+				model.setPositionY(notifier.getY());
+			}
+
+			//Verificamos si la instancia es del tipo de letra
+			if (arg0.getNotifier() instanceof ShapeImpl) {
+
+				ShapeImpl fontStyleImpl = (ShapeImpl) arg0.getNotifier();
+				int fontHeight = fontStyleImpl.getFontHeight();
+				String fontName = fontStyleImpl.getFontName();
+				boolean bold = fontStyleImpl.isBold();
+				boolean italic = fontStyleImpl.isItalic();
+				NodeImpl node = (NodeImpl) this.getModel();
+				AdjWidget model = (AdjWidget) node.getElement();
+
+				model.setName(model.getText());
+				model.setBold(bold);
+				model.setItalic(italic);
+				model.setFontName(fontName);
+				model.setFontSize(fontHeight);
+			}
+
+		}
+		super.handleNotificationEvent(arg0);
 	}
 
 }

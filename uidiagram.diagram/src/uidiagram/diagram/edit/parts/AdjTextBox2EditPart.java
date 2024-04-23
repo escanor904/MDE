@@ -110,8 +110,8 @@ public class AdjTextBox2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean addFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjTextBoxName2EditPart) {
-			((AdjTextBoxName2EditPart) childEditPart).setLabel(getPrimaryShape().getFigureAdjTextBoxLabelFigure());
+		if (childEditPart instanceof AdjTextBoxText2EditPart) {
+			((AdjTextBoxText2EditPart) childEditPart).setLabel(getPrimaryShape().getFigureAdjTextBoxLabelFigure());
 			return true;
 		}
 		return false;
@@ -121,7 +121,7 @@ public class AdjTextBox2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean removeFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof AdjTextBoxName2EditPart) {
+		if (childEditPart instanceof AdjTextBoxText2EditPart) {
 			return true;
 		}
 		return false;
@@ -244,7 +244,7 @@ public class AdjTextBox2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	public EditPart getPrimaryChildEditPart() {
-		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjTextBoxName2EditPart.VISUAL_ID));
+		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(AdjTextBoxText2EditPart.VISUAL_ID));
 	}
 
 	/**
