@@ -37,6 +37,7 @@ import concretemodel.PackageConcreteAdj;
 import concretemodel.ProjectAdj;
 import concretemodel.RelationshipAdj;
 import uidiagram.ModelFactoryUI;
+import uidiagram.ProjectUI;
 import uidiagram.UidiagramFactory;
 import uidiagram.UidiagramPackage;
 
@@ -863,22 +864,75 @@ public class ModelFactoryModel {
 	
 	// -------------------------------- Tranformacion M2T de parte de la UIDiagram a archivos de texto -----------------------------------------------
 	
-	
-	public void transformationM2TUIDiagram() {
+	/**
+	 * Transformación model to text de la UI
+	 * @throws Exception
+	 */
+	public void transformationM2TUIDiagram() throws Exception {
 		modelFactoryUIDiagram = loadUIDiagramModel();
+		this.rutaProyecto = capturarRutaProyecto();
+		int i = 1;
 		
-		
+		for (ProjectUI projectUI : modelFactoryUIDiagram.getLstProjectUI()) {
+			createFolderWindows(rutaProyecto, "UI_"+i);
+			generarArchivoUI(projectUI, i);
+			i++;
+		}
 		
 		
 		saveUIDiagram();
 	}
 	
 	
+	/**
+	 * Método para generar el archivo de la UI, dado el projectUI y el contador
+	 * @param projectUI
+	 * @param i
+	 */
+	private void generarArchivoUI(ProjectUI projectUI, int i) {
+		StringBuilder uiClassText = new StringBuilder();
+		
+		uiClassText.append(
+						"//codigo generado por el equipo maravilla" +
+						"\r\n" +
+						"namespace WindowsFormsApp" + i + "\r\n" +
+						"{ \r\n" +
+						"\tpartial class Form" + i + " "
+						+ "\r\n\t{"
+						+ "\r\n\t\tprivate System.ComponentModel.IContainer components = null;" +
+						"\r\n\r\n" +
+						"		protected override void Dispose(bool disposing)\r\n" + 
+						"        {\r\n" + 
+						"            if (disposing && (components != null))\r\n" + 
+						"            {\r\n" + 
+						"                components.Dispose();\r\n" + 
+						"            }\r\n" + 
+						"\r\n" + 
+						"            base.Dispose(disposing);\r\n" + 
+						"        }" + "\r\n\r\n" +
+						"		//-------------------Component Initialization" +
+						"\r\n" +
+						"		private void InitializeComponent()\r\n" + 
+						"        {" +
+						"\r\n" + 
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						"\r\n" + 
+						"        }" +
+						"\r\n" + 
+						"		//-------------------Component Declaration"
+				);
+	}
 	
 	//---------------------------------------------------INPUTS
 	
-	
-
 	/**
 	 * Este metodo permite abrir un cuadro de dialogo para ingresar el nombre del
 	 proyecto

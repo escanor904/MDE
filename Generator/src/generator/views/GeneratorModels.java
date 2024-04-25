@@ -137,7 +137,12 @@ public class GeneratorModels extends ViewPart {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				ModelFactoryModel mfm = ModelFactoryModel.getInstance();
-				mfm.transformationM2TUIDiagram();
+				try {
+					mfm.transformationM2TUIDiagram();
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					JOptionPane.showMessageDialog(null, e1.getMessage());
+				}
 			}
 		});
 		btnGenerateCUi.setText("Generate C# UI");
