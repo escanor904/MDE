@@ -293,7 +293,7 @@ public class AdjLinkLabelEditPart extends ShapeNodeEditPart {
 		}
 
 	}
-	
+
 	/**
 	 * Metodo para capturar los eventos del diagrama UIDiagram
 	 */

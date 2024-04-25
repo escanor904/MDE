@@ -267,6 +267,7 @@ public class AdjButton2EditPart extends ShapeNodeEditPart {
 		 */
 		public AdjButtonFigure() {
 			this.setCornerDimensions(new Dimension(getMapMode().DPtoLP(8), getMapMode().DPtoLP(8)));
+			this.setBackgroundColor(THIS_BACK);
 			this.setBorder(new MarginBorder(getMapMode().DPtoLP(5), getMapMode().DPtoLP(5), getMapMode().DPtoLP(5),
 					getMapMode().DPtoLP(5)));
 			createContents();
@@ -293,7 +294,12 @@ public class AdjButton2EditPart extends ShapeNodeEditPart {
 		}
 
 	}
-	
+
+	/**
+	* @generated
+	*/
+	static final Color THIS_BACK = new Color(null, 234, 236, 238);
+
 	/**
 	 * Metodo para capturar los eventos del diagrama UIDiagram
 	 */

@@ -336,5 +336,5 @@ public class FormUIEditPart extends ShapeNodeEditPart {
 		}
 
 	}
-	
+
 }

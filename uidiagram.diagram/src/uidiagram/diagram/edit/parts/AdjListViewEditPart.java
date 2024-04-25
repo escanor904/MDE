@@ -351,7 +351,7 @@ public class AdjListViewEditPart extends ShapeNodeEditPart {
 		}
 
 	}
-	
+
 	/**
 	 * Metodo para capturar los eventos del diagrama UIDiagram
 	 */

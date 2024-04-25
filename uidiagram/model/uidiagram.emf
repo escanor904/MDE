@@ -47,7 +47,7 @@ class AdjLabel extends AdjWidget {
 class AdjCheckBox extends AdjWidget {
 }
 
-@gmf.node(label = "text")
+@gmf.node(label = "text", figure = "rounded", color = "234,236,238")
 class AdjButton extends AdjWidget {
 }
 

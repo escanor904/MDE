@@ -65,21 +65,7 @@ public class AdjListViewAdjListViewLstAdjListViewColumnCompartment3EditPart exte
 	public IFigure createFigure() {
 		ResizableCompartmentFigure result = (ResizableCompartmentFigure) super.createFigure();
 		result.setTitleVisibility(false);
-
-		// Fix the margins
-		Insets insets = result.getContentPane().getInsets();
-		insets.top = -2;
-		insets.bottom = 3;
-		insets.left = 0;
-		insets.right = 0;
-		// Layout behavior modification : data must be represented horizontally
-		ConstrainedToolbarLayout layoutMgr = (ConstrainedToolbarLayout) result.getContentPane().getLayoutManager();
-		layoutMgr.setVertical(false);
-		layoutMgr.setStretchMajorAxis(false); // uses all the avalaible space
-		layoutMgr.setStretchMinorAxis(true); // uses all the avalaible space
-		layoutMgr.setSpacing(-1);
 		return result;
-
 	}
 
 	/**

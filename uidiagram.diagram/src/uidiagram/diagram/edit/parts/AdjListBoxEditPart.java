@@ -293,7 +293,7 @@ public class AdjListBoxEditPart extends ShapeNodeEditPart {
 		}
 
 	}
-	
+
 	/**
 	 * Metodo para capturar los eventos del diagrama UIDiagram
 	 */

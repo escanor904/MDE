@@ -50,6 +50,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="AdjButton" eSuperTypes="#//AdjWidget">
     <eAnnotations source="gmf.node">
       <details key="label" value="text"/>
+      <details key="figure" value="rounded"/>
+      <details key="color" value="234,236,238"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdjListBox" eSuperTypes="#//AdjWidget">

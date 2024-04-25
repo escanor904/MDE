@@ -293,7 +293,7 @@ public class AdjTextBox2EditPart extends ShapeNodeEditPart {
 		}
 
 	}
-	
+
 	/**
 	 * Metodo para capturar los eventos del diagrama UIDiagram
 	 */

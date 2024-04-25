@@ -894,7 +894,9 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 		  (adjButtonEClass, 
 		   source, 
 		   new String[] {
-			 "label", "text"
+			 "label", "text",
+			 "figure", "rounded",
+			 "color", "234,236,238"
 		   });	
 		addAnnotation
 		  (adjListBoxEClass, 

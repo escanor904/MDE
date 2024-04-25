@@ -10,7 +10,7 @@ package uidiagram;
  *
  *
  * @see uidiagram.UidiagramPackage#getAdjButton()
- * @model annotation="gmf.node label='text'"
+ * @model annotation="gmf.node label='text' figure='rounded' color='234,236,238'"
  * @generated
  */
 public interface AdjButton extends AdjWidget {

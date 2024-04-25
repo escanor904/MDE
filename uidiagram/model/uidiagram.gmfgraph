@@ -34,6 +34,7 @@
     </descriptors>
     <descriptors name="AdjButtonFigure">
       <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AdjButtonFigure">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="234" green="236" blue="238"/>
         <border xsi:type="gmfgraph:MarginBorder">
           <insets top="5" left="5" bottom="5" right="5"/>
         </border>

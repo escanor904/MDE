@@ -294,7 +294,7 @@ public class AdjCheckedListBox3EditPart extends ShapeNodeEditPart {
 		}
 
 	}
-	
+
 	/**
 	 * Metodo para capturar los eventos del diagrama UIDiagram
 	 */

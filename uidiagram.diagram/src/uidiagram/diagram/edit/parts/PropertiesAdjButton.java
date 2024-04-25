@@ -1,5 +1,6 @@
 package uidiagram.diagram.edit.parts;
 
+
 import java.awt.Color;
 
 import javax.swing.JColorChooser;
@@ -18,6 +19,8 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.wb.swt.SWTResourceManager;
+
+import uidiagram.AdjButton;
 import uidiagram.AdjLabel;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.widgets.Button;
@@ -25,7 +28,7 @@ import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 
-public class PropertiesLabel extends Dialog {
+public class PropertiesAdjButton extends Dialog {
 	private Text textName;
 	private Text textText;
 	private Text textPX;
@@ -36,7 +39,7 @@ public class PropertiesLabel extends Dialog {
 	private Text textFontN;
 	private Text textFontS;
 	private Combo comboStyle;
-	private AdjLabel model;
+	private AdjButton model;
 	private TransactionalEditingDomain domain;
 	private EditPart editpart;
 	private Text textStyle;
@@ -48,7 +51,7 @@ public class PropertiesLabel extends Dialog {
 	 * @param domain 
 	 * @param model 
 	 */
-	public PropertiesLabel(Shell parentShell, uidiagram.AdjLabel model, TransactionalEditingDomain domain, EditPart editpart) {
+	public PropertiesAdjButton(Shell parentShell, uidiagram.AdjButton model, TransactionalEditingDomain domain, EditPart editpart) {
 		super(parentShell);
 		this.model = model;
 		this.domain = domain;
@@ -132,7 +135,7 @@ public class PropertiesLabel extends Dialog {
 		GridData gd_lblDeta = new GridData(SWT.FILL, SWT.CENTER, true, false, 5, 1);
 		gd_lblDeta.widthHint = 157;
 		lblDeta.setLayoutData(gd_lblDeta);
-		lblDeta.setText("Properties AdjLabel");
+		lblDeta.setText("Properties AdjButton");
 		
 		Label label = new Label(container, SWT.SEPARATOR | SWT.HORIZONTAL);
 		label.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 5, 1));
@@ -269,10 +272,10 @@ public class PropertiesLabel extends Dialog {
 	 */
 	 public class ChangeOPerationDialogCommand extends RecordingCommand{
 
-	        private uidiagram.AdjLabel modelElementWidget; 
+	        private uidiagram.AdjButton modelElementWidget; 
 	        String evento = new String();
 	        TransactionalEditingDomain transactionalEditingDomain2;
-	        public ChangeOPerationDialogCommand(TransactionalEditingDomain transactionalEditingDomain,uidiagram.AdjLabel modelElementWidget,String event) {
+	        public ChangeOPerationDialogCommand(TransactionalEditingDomain transactionalEditingDomain,uidiagram.AdjButton modelElementWidget,String event) {
 	            super(transactionalEditingDomain);
 	            this.modelElementWidget = modelElementWidget;
 	            this.evento = event;
