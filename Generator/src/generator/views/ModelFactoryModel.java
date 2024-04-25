@@ -36,8 +36,10 @@ import concretemodel.ModelFactoryConcrete;
 import concretemodel.PackageConcreteAdj;
 import concretemodel.ProjectAdj;
 import concretemodel.RelationshipAdj;
+import uidiagram.FormUI;
 import uidiagram.ModelFactoryUI;
 import uidiagram.ProjectUI;
+import uidiagram.UIDiagram;
 import uidiagram.UidiagramFactory;
 import uidiagram.UidiagramPackage;
 
@@ -869,35 +871,37 @@ public class ModelFactoryModel {
 	 * @throws Exception
 	 */
 	public void transformationM2TUIDiagram() throws Exception {
-		modelFactoryUIDiagram = loadUIDiagramModel();
+		
 		this.rutaProyecto = capturarRutaProyecto();
-		int i = 1;
+		modelFactoryUIDiagram = loadUIDiagramModel();
 		
 		for (ProjectUI projectUI : modelFactoryUIDiagram.getLstProjectUI()) {
-			createFolderWindows(rutaProyecto, "UI_"+i);
-			generarArchivoUI(projectUI, i);
-			i++;
+			String projectName = capturarNombreProyecto();
+			//createFolderWindows(rutaProyecto, "UI_"+projectName);
+			
+			for (UIDiagram uiDiagram : projectUI.getLstDiagramUI()) {
+				generarArchivoUI(uiDiagram.getForm(), projectName);
+			}
 		}
-		
 		
 		saveUIDiagram();
 	}
 	
 	
 	/**
-	 * Método para generar el archivo de la UI, dado el projectUI y el contador
-	 * @param projectUI
-	 * @param i
+	 * Método para generar el archivo de la UI, dado el formUI y el contador
+	 * @param formUI
+	 * @param projectName
 	 */
-	private void generarArchivoUI(ProjectUI projectUI, int i) {
+	private void generarArchivoUI(FormUI formUI, String projectName) {
 		StringBuilder uiClassText = new StringBuilder();
 		
 		uiClassText.append(
 						"//codigo generado por el equipo maravilla" +
 						"\r\n" +
-						"namespace WindowsFormsApp" + i + "\r\n" +
+						"namespace " + projectName + "\r\n" +
 						"{ \r\n" +
-						"\tpartial class Form" + i + " "
+						"\tpartial class " + formUI.getName() + " "
 						+ "\r\n\t{"
 						+ "\r\n\t\tprivate System.ComponentModel.IContainer components = null;" +
 						"\r\n\r\n" +
