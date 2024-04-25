@@ -892,8 +892,13 @@ public class ModelFactoryModel {
 	 * Método para generar el archivo de la UI, dado el formUI y el contador
 	 * @param formUI
 	 * @param projectName
+	 * @throws Exception 
 	 */
-	private void generarArchivoUI(FormUI formUI, String projectName) {
+	private void generarArchivoUI(FormUI formUI, String projectName) throws Exception {
+		
+		if(formUI.getName() == null || formUI.getName().equals(""))
+			throw new Exception("EL NOMBRE DEL FORM ESTA VACIO");
+		
 		StringBuilder uiClassText = new StringBuilder();
 		
 		uiClassText.append(
@@ -919,7 +924,8 @@ public class ModelFactoryModel {
 						"		private void InitializeComponent()\r\n" + 
 						"        {" +
 						"\r\n" + 
-						
+						"			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(" + formUI.getName() + "));" + 
+						"\r\n	//Instances" +
 						
 						
 						
