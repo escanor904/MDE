@@ -156,11 +156,11 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 				
 				//click al AdjGroupBox
 				
-				if (editpart instanceof AdjGroupBoxTextEditPart ) {
+				if (editpart instanceof AdjGroupBoxTextEditPart) {
 					 parent = editpart.getParent();
 				}
 				
-				if (editpart instanceof AdjGroupBoxEditPart|| editpart instanceof AdjGroupBox2EditPart|| editpart instanceof AdjGroupBox3EditPart) {
+				if (editpart instanceof AdjGroupBoxEditPart || editpart instanceof AdjGroupBox2EditPart|| editpart instanceof AdjGroupBox3EditPart) {
 					parent = editpart;
 
 				}
@@ -273,7 +273,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 				
 				//click al AdjPictureBox
 				
-				if (editpart instanceof AdjPictureBoxText2EditPart) {
+				if (editpart instanceof AdjPictureBoxTextEditPart) {
 					 parent = editpart.getParent();
 				}
 				
@@ -287,25 +287,6 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 					TransactionalEditingDomain domain = ((GraphicalEditPart) parent).getEditingDomain();
 					Shell parentShell = new Shell();
 					PropertiesAdjPictureBox dialogClass = new PropertiesAdjPictureBox(parentShell,model,domain,parent);
-					dialogClass.open();
-				}
-				
-				//click al AdjRadioButton
-				
-				if (editpart instanceof AdjRadioButtonText2EditPart) {
-					 parent = editpart.getParent();
-				}
-				
-				if (editpart instanceof AdjRadioButtonEditPart || editpart instanceof AdjRadioButton2EditPart || editpart instanceof AdjRadioButton3EditPart) {
-					parent = editpart;
-
-				}
-				
-				if (parent instanceof AdjRadioButtonEditPart) {
-					AdjRadioButton model = (AdjRadioButton) ((GraphicalEditPart) parent).resolveSemanticElement();
-					TransactionalEditingDomain domain = ((GraphicalEditPart) parent).getEditingDomain();
-					Shell parentShell = new Shell();
-					PropertiesAdjRadioButton dialogClass = new PropertiesAdjRadioButton(parentShell,model,domain,parent);
 					dialogClass.open();
 				}
 				
@@ -328,6 +309,8 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 					dialogClass.open();
 				}
 				
+
+				
 				//click al AdjRichTextBox
 				
 				if (editpart instanceof AdjRichTextBoxTextEditPart) {
@@ -339,7 +322,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 
 				}
 				
-				if (parent instanceof AdjRadioButtonEditPart) {
+				if (parent instanceof AdjRichTextBoxEditPart) {
 					AdjRichTextBox model = (AdjRichTextBox) ((GraphicalEditPart) parent).resolveSemanticElement();
 					TransactionalEditingDomain domain = ((GraphicalEditPart) parent).getEditingDomain();
 					Shell parentShell = new Shell();
@@ -358,7 +341,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 
 				}
 				
-				if (parent instanceof AdjRadioButtonEditPart) {
+				if (parent instanceof AdjTextBoxEditPart) {
 					AdjTextBox model = (AdjTextBox) ((GraphicalEditPart) parent).resolveSemanticElement();
 					TransactionalEditingDomain domain = ((GraphicalEditPart) parent).getEditingDomain();
 					Shell parentShell = new Shell();
