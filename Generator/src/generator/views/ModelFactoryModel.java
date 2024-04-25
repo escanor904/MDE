@@ -925,7 +925,18 @@ public class ModelFactoryModel {
 						"        {" +
 						"\r\n" + 
 						"			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(" + formUI.getName() + "));" + 
-						"\r\n	//Instances" +
+						"\r\n			//Instances" +
+						"\r\n" +
+						
+						
+						
+						
+						
+						
+						
+						
+						"				this.SuspendLayout();" +
+						
 						
 						
 						
@@ -937,7 +948,7 @@ public class ModelFactoryModel {
 						"\r\n" + 
 						"        }" +
 						"\r\n" + 
-						"		//-------------------Component Declaration"
+						"			//-------------------Component Declaration"
 				);
 	}
 	
