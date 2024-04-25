@@ -323,7 +323,6 @@ public class AdjButtonEditPart extends ShapeNodeEditPart {
 					model.setHeight(notifier.getHeight());
 
 				}
-				model.setText(model.getName());
 				model.setPositionX(notifier.getX());
 				model.setPositionY(notifier.getY());
 			}
@@ -339,7 +338,6 @@ public class AdjButtonEditPart extends ShapeNodeEditPart {
 				NodeImpl node = (NodeImpl) this.getModel();
 				AdjWidget model = (AdjWidget) node.getElement();
 
-				model.setText(model.getName());
 				model.setBold(bold);
 				model.setItalic(italic);
 				model.setFontName(fontName);

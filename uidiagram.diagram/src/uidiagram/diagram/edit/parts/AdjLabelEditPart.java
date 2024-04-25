@@ -325,7 +325,6 @@ public class AdjLabelEditPart extends ShapeNodeEditPart {
 					model.setHeight(notifier.getHeight());
 
 				}
-				model.setName(model.getText());
 				model.setPositionX(notifier.getX());
 				model.setPositionY(notifier.getY());
 			}
@@ -341,7 +340,6 @@ public class AdjLabelEditPart extends ShapeNodeEditPart {
 				NodeImpl node = (NodeImpl) this.getModel();
 				AdjWidget model = (AdjWidget) node.getElement();
 
-				model.setName(model.getText());
 				model.setBold(bold);
 				model.setItalic(italic);
 				model.setFontName(fontName);

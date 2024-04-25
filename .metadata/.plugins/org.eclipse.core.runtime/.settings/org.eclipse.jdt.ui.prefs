@@ -1,5 +1,7 @@
 content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="org.eclipse.core.runtime.IAdaptable"><rhs name\="org.eclipse.gmf.runtime.diagram.ui.editparts.LabelEditPart"/><rhs name\="uidiagram.diagram.edit.parts.AdjLabelNameEditPart"/><rhs name\="uidiagram.diagram.edit.parts.AdjLabelTextEditPart"/></lhs><lhs name\="org.eclipse.gef.EditPart"><rhs name\="org.eclipse.gmf.runtime.diagram.ui.editparts.LabelEditPart"/><rhs name\="uidiagram.diagram.edit.parts.AdjLabelNameEditPart"/><rhs name\="uidiagram.diagram.edit.parts.AdjLabelTextEditPart"/></lhs><lhs name\="org.eclipse.jface.dialogs.Dialog"><rhs name\="uidiagram.diagram.edit.parts.PropertiesWidget"/></lhs><lhs name\="org.eclipse.jface.window.Window"><rhs name\="uidiagram.diagram.edit.parts.PropertiesWidget"/></lhs><lhs name\="org.eclipse.jface.window.IShellProvider"><rhs name\="uidiagram.diagram.edit.parts.PropertiesWidget"/></lhs><lhs name\="uidiagram.diagram.edit.parts.PropertiesWidget"><rhs name\="uidiagram.diagram.edit.parts.PropertiesWidget"/></lhs><lhs name\="java.lang.CharSequence"><rhs name\="java.lang.String"/></lhs><lhs name\="uidiagram.diagram.edit.parts.PropertiesLabel$SetWindow"><rhs name\="uidiagram.diagram.edit.parts.PropertiesLabel$SetWindow"/></lhs></history>
 content_assist_number_of_computers=14
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
 eclipse.preferences.version=1
 org.eclipse.jdt.internal.ui.navigator.layout=2
 org.eclipse.jdt.internal.ui.navigator.librariesnode=true
