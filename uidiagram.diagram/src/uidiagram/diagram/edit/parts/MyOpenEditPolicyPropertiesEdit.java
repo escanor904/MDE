@@ -39,18 +39,18 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 				EditPart editpart = getHost();
 				EditPart parent = null;
 				
-				if (editpart instanceof AdjLabelTextEditPart ) {
+				if (editpart instanceof AdjLabelTextEditPart || editpart instanceof AdjLabelText2EditPart || editpart instanceof AdjLabelText3EditPart ) {
 					 parent = editpart.getParent();
 				}
 				
 				
-				if (editpart instanceof AdjLabelEditPart || editpart instanceof AdjLabel2EditPart ) {
+				if (editpart instanceof AdjLabelEditPart || editpart instanceof AdjLabel2EditPart || editpart instanceof AdjLabel3EditPart ) {
 					parent = editpart;
 
 				}
 				
 				
-				if (parent instanceof AdjLabelEditPart) {
+				if (parent instanceof AdjLabelEditPart || parent instanceof AdjLabel2EditPart || parent instanceof AdjLabel3EditPart) {
 					AdjLabel model = (AdjLabel) ((GraphicalEditPart) parent).resolveSemanticElement();
 					TransactionalEditingDomain domain = ((GraphicalEditPart) parent).getEditingDomain();
 					Shell parentShell = new Shell();
@@ -61,7 +61,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 				
 				//click al AdjButton
 				
-				if (editpart instanceof AdjButtonTextEditPart ) {
+				if (editpart instanceof AdjButtonTextEditPart ||  editpart instanceof AdjButtonText2EditPart || editpart  instanceof AdjButtonText3EditPart) {
 					 parent = editpart.getParent();
 				}
 				
@@ -70,7 +70,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 
 				}
 				
-				if (parent instanceof AdjButtonEditPart) {
+				if (parent instanceof AdjButtonEditPart || parent instanceof AdjButton2EditPart|| parent instanceof AdjButton3EditPart ) {
 					AdjButton model = (AdjButton) ((GraphicalEditPart) parent).resolveSemanticElement();
 					TransactionalEditingDomain domain = ((GraphicalEditPart) parent).getEditingDomain();
 					Shell parentShell = new Shell();
@@ -80,7 +80,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 				
 				//click al AdjButton
 				
-				if (editpart instanceof AdjCheckBoxTextEditPart ) {
+				if (editpart instanceof AdjCheckBoxTextEditPart || editpart instanceof AdjCheckBoxText2EditPart || editpart instanceof AdjCheckBoxText3EditPart ) {
 					 parent = editpart.getParent();
 				}
 				
@@ -89,7 +89,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 
 				}
 				
-				if (parent instanceof AdjCheckBoxEditPart) {
+				if (parent instanceof AdjCheckBoxEditPart || parent instanceof AdjCheckBox2EditPart|| parent instanceof AdjCheckBox3EditPart) {
 					AdjCheckBox model = (AdjCheckBox) ((GraphicalEditPart) parent).resolveSemanticElement();
 					TransactionalEditingDomain domain = ((GraphicalEditPart) parent).getEditingDomain();
 					Shell parentShell = new Shell();
@@ -99,7 +99,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 				
 				//click al AdjCheckedListBox
 				
-				if (editpart instanceof AdjCheckedListBoxTextEditPart ) {
+				if (editpart instanceof AdjCheckedListBoxTextEditPart || editpart instanceof AdjCheckedListBoxText2EditPart || editpart instanceof AdjCheckedListBoxText3EditPart  ) {
 					 parent = editpart.getParent();
 				}
 				
@@ -108,7 +108,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 
 				}
 				
-				if (parent instanceof AdjCheckedListBoxEditPart) {
+				if (parent instanceof AdjCheckedListBoxEditPart || parent instanceof AdjCheckedListBox2EditPart|| parent instanceof AdjCheckedListBox3EditPart) {
 					AdjCheckedListBox model = (AdjCheckedListBox) ((GraphicalEditPart) parent).resolveSemanticElement();
 					TransactionalEditingDomain domain = ((GraphicalEditPart) parent).getEditingDomain();
 					Shell parentShell = new Shell();
@@ -118,7 +118,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 				
 				//click al AdjComboBox
 				
-				if (editpart instanceof AdjComboBoxTextEditPart ) {
+				if (editpart instanceof AdjComboBoxTextEditPart || editpart instanceof AdjComboBoxText2EditPart || editpart instanceof AdjComboBoxText3EditPart) {
 					 parent = editpart.getParent();
 				}
 				
@@ -127,7 +127,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 
 				}
 				
-				if (parent instanceof AdjComboBoxEditPart) {
+				if (parent instanceof AdjComboBoxEditPart || parent instanceof AdjComboBox2EditPart|| parent instanceof AdjComboBox3EditPart) {
 					AdjComboBox model = (AdjComboBox) ((GraphicalEditPart) parent).resolveSemanticElement();
 					TransactionalEditingDomain domain = ((GraphicalEditPart) parent).getEditingDomain();
 					Shell parentShell = new Shell();
@@ -137,7 +137,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 				
 				//click al AdjDateTimePicker
 				
-				if (editpart instanceof AdjDateTimePickerTextEditPart ) {
+				if (editpart instanceof AdjDateTimePickerTextEditPart || editpart instanceof AdjDateTimePickerText2EditPart || editpart instanceof AdjDateTimePickerText3EditPart) {
 					 parent = editpart.getParent();
 				}
 				
@@ -146,7 +146,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 
 				}
 				
-				if (parent instanceof AdjDateTimePickerEditPart) {
+				if (parent instanceof AdjDateTimePickerEditPart || parent instanceof AdjDateTimePicker2EditPart|| parent instanceof AdjDateTimePicker3EditPart) {
 					AdjDateTimePicker model = (AdjDateTimePicker) ((GraphicalEditPart) parent).resolveSemanticElement();
 					TransactionalEditingDomain domain = ((GraphicalEditPart) parent).getEditingDomain();
 					Shell parentShell = new Shell();
@@ -156,7 +156,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 				
 				//click al AdjGroupBox
 				
-				if (editpart instanceof AdjGroupBoxTextEditPart) {
+				if (editpart instanceof AdjGroupBoxTextEditPart || editpart instanceof AdjGroupBoxText2EditPart || editpart instanceof AdjGroupBoxText3EditPart) {
 					 parent = editpart.getParent();
 				}
 				
@@ -165,7 +165,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 
 				}
 				
-				if (parent instanceof AdjGroupBoxEditPart) {
+				if (parent instanceof AdjGroupBoxEditPart || parent instanceof AdjGroupBox2EditPart|| parent instanceof AdjGroupBox3EditPart) {
 					AdjGroupBox model = (AdjGroupBox) ((GraphicalEditPart) parent).resolveSemanticElement();
 					TransactionalEditingDomain domain = ((GraphicalEditPart) parent).getEditingDomain();
 					Shell parentShell = new Shell();
@@ -177,16 +177,16 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 				
 				//click al AdjlinkLabel
 				
-				if (editpart instanceof AdjLinkLabelTextEditPart ) {
+				if (editpart instanceof AdjLinkLabelTextEditPart || editpart instanceof AdjLinkLabelText2EditPart  || editpart instanceof AdjLinkLabelText3EditPart  ) {
 					 parent = editpart.getParent();
 				}
 				
-				if (editpart instanceof AdjLinkLabelEditPart|| editpart instanceof AdjLinkLabel2EditPart|| editpart instanceof AdjLinkLabel3EditPart) {
+				if (editpart instanceof AdjLinkLabelEditPart || editpart instanceof AdjLinkLabel2EditPart|| editpart instanceof AdjLinkLabel3EditPart) {
 					parent = editpart;
 
 				}
 				
-				if (parent instanceof AdjLinkLabelEditPart) {
+				if (parent instanceof AdjLinkLabelEditPart || parent instanceof AdjLinkLabel2EditPart|| parent instanceof AdjLinkLabel3EditPart) {
 					AdjLinkLabel model = (AdjLinkLabel) ((GraphicalEditPart) parent).resolveSemanticElement();
 					TransactionalEditingDomain domain = ((GraphicalEditPart) parent).getEditingDomain();
 					Shell parentShell = new Shell();
@@ -196,7 +196,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 				
 				//click al AdjlistBox
 				
-				if (editpart instanceof AdjListBoxTextEditPart ) {
+				if (editpart instanceof AdjListBoxTextEditPart || editpart instanceof AdjListBoxText2EditPart  || editpart instanceof AdjListBoxText3EditPart ) {
 					 parent = editpart.getParent();
 				}
 				
@@ -205,7 +205,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 
 				}
 				
-				if (parent instanceof AdjListBoxEditPart) {
+				if (parent instanceof AdjListBoxEditPart || parent instanceof AdjListBox2EditPart|| parent instanceof AdjListBox3EditPart) {
 					AdjListBox model = (AdjListBox) ((GraphicalEditPart) parent).resolveSemanticElement();
 					TransactionalEditingDomain domain = ((GraphicalEditPart) parent).getEditingDomain();
 					Shell parentShell = new Shell();
@@ -215,7 +215,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 				
 				//click al AdjlistView
 				
-				if (editpart instanceof AdjListViewTextEditPart ) {
+				if (editpart instanceof AdjListViewTextEditPart ||  editpart instanceof AdjListViewText2EditPart || editpart instanceof AdjListViewText3EditPart) {
 					 parent = editpart.getParent();
 				}
 				
@@ -224,7 +224,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 
 				}
 				
-				if (parent instanceof AdjListViewEditPart) {
+				if (parent instanceof AdjListViewEditPart || parent instanceof AdjListView2EditPart || parent instanceof AdjListView3EditPart) {
 					AdjListView model = (AdjListView) ((GraphicalEditPart) parent).resolveSemanticElement();
 					TransactionalEditingDomain domain = ((GraphicalEditPart) parent).getEditingDomain();
 					Shell parentShell = new Shell();
@@ -254,7 +254,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 				
 				//click al AdjPanel
 				
-				if (editpart instanceof AdjPanelText2EditPart) {
+				if (editpart instanceof AdjPanelTextEditPart || editpart instanceof AdjPanelText2EditPart || editpart instanceof AdjPanelText3EditPart) {
 					 parent = editpart.getParent();
 				}
 				
@@ -263,7 +263,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 
 				}
 				
-				if (parent instanceof AdjPanelEditPart) {
+				if (parent instanceof AdjPanelEditPart || parent instanceof AdjPanel2EditPart || parent instanceof AdjPanel3EditPart) {
 					AdjPanel model = (AdjPanel) ((GraphicalEditPart) parent).resolveSemanticElement();
 					TransactionalEditingDomain domain = ((GraphicalEditPart) parent).getEditingDomain();
 					Shell parentShell = new Shell();
@@ -273,7 +273,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 				
 				//click al AdjPictureBox
 				
-				if (editpart instanceof AdjPictureBoxTextEditPart) {
+				if (editpart instanceof AdjPictureBoxTextEditPart || editpart instanceof AdjPictureBoxText2EditPart || editpart instanceof AdjPictureBoxText3EditPart ) {
 					 parent = editpart.getParent();
 				}
 				
@@ -282,7 +282,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 
 				}
 				
-				if (parent instanceof AdjPictureBoxEditPart) {
+				if (parent instanceof AdjPictureBoxEditPart || editpart instanceof AdjPictureBox2EditPart || editpart instanceof AdjPictureBox3EditPart) {
 					AdjPictureBox model = (AdjPictureBox) ((GraphicalEditPart) parent).resolveSemanticElement();
 					TransactionalEditingDomain domain = ((GraphicalEditPart) parent).getEditingDomain();
 					Shell parentShell = new Shell();
@@ -292,7 +292,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 				
 				//click al AdjRadioButton
 				
-				if (editpart instanceof AdjRadioButtonTextEditPart) {
+				if (editpart instanceof AdjRadioButtonTextEditPart || editpart instanceof AdjRadioButtonText2EditPart || editpart instanceof AdjRadioButtonText3EditPart ) {
 					 parent = editpart.getParent();
 				}
 				
@@ -301,7 +301,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 
 				}
 				
-				if (parent instanceof AdjRadioButtonEditPart) {
+				if (parent instanceof AdjRadioButtonEditPart || parent instanceof AdjRadioButton2EditPart || parent instanceof AdjRadioButton3EditPart) {
 					AdjRadioButton model = (AdjRadioButton) ((GraphicalEditPart) parent).resolveSemanticElement();
 					TransactionalEditingDomain domain = ((GraphicalEditPart) parent).getEditingDomain();
 					Shell parentShell = new Shell();
@@ -313,7 +313,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 				
 				//click al AdjRichTextBox
 				
-				if (editpart instanceof AdjRichTextBoxTextEditPart) {
+				if (editpart instanceof AdjRichTextBoxTextEditPart || editpart instanceof AdjRichTextBoxText2EditPart || editpart instanceof AdjRichTextBoxText3EditPart) {
 					 parent = editpart.getParent();
 				}
 				
@@ -322,7 +322,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 
 				}
 				
-				if (parent instanceof AdjRichTextBoxEditPart) {
+				if (parent instanceof AdjRichTextBoxEditPart || parent instanceof AdjRichTextBox2EditPart || parent instanceof AdjRichTextBox3EditPart) {
 					AdjRichTextBox model = (AdjRichTextBox) ((GraphicalEditPart) parent).resolveSemanticElement();
 					TransactionalEditingDomain domain = ((GraphicalEditPart) parent).getEditingDomain();
 					Shell parentShell = new Shell();
@@ -332,7 +332,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 				
 				//click al AdjTextBox
 				
-				if (editpart instanceof AdjTextBoxTextEditPart	) {
+				if (editpart instanceof AdjTextBoxTextEditPart || editpart instanceof AdjTextBoxText2EditPart || editpart instanceof AdjTextBoxText3EditPart	) {
 					 parent = editpart.getParent();
 				}
 				
@@ -341,7 +341,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 
 				}
 				
-				if (parent instanceof AdjTextBoxEditPart) {
+				if (parent instanceof AdjTextBoxEditPart || editpart instanceof AdjTextBox2EditPart || editpart instanceof AdjTextBox3EditPart) {
 					AdjTextBox model = (AdjTextBox) ((GraphicalEditPart) parent).resolveSemanticElement();
 					TransactionalEditingDomain domain = ((GraphicalEditPart) parent).getEditingDomain();
 					Shell parentShell = new Shell();
