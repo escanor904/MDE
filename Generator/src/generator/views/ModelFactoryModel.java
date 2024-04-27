@@ -14,6 +14,7 @@ import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.swt.widgets.Widget;
 
 import abstractmodel.AbstractmodelFactory;
 import abstractmodel.AbstractmodelPackage;
@@ -36,6 +37,23 @@ import concretemodel.ModelFactoryConcrete;
 import concretemodel.PackageConcreteAdj;
 import concretemodel.ProjectAdj;
 import concretemodel.RelationshipAdj;
+import uidiagram.AdjButton;
+import uidiagram.AdjCheckBox;
+import uidiagram.AdjCheckedListBox;
+import uidiagram.AdjComboBox;
+import uidiagram.AdjDateTimePicker;
+import uidiagram.AdjGroupBox;
+import uidiagram.AdjLabel;
+import uidiagram.AdjLinkLabel;
+import uidiagram.AdjListBox;
+import uidiagram.AdjListView;
+import uidiagram.AdjListViewColumn;
+import uidiagram.AdjPanel;
+import uidiagram.AdjPictureBox;
+import uidiagram.AdjRadioButton;
+import uidiagram.AdjRichTextBox;
+import uidiagram.AdjTextBox;
+import uidiagram.AdjWidget;
 import uidiagram.FormUI;
 import uidiagram.ModelFactoryUI;
 import uidiagram.ProjectUI;
@@ -889,16 +907,14 @@ public class ModelFactoryModel {
 	
 	
 	/**
-	 * Método para generar el archivo de la UI, dado el formUI y el contador
+	 * Método para generar el archivo de la UI, dado el formUI
 	 * @param formUI
 	 * @param projectName
 	 * @throws Exception 
 	 */
 	private void generarArchivoUI(FormUI formUI, String projectName) throws Exception {
 		
-		if(formUI.getName() == null || formUI.getName().equals(""))
-			throw new Exception("EL NOMBRE DEL FORM ESTA VACIO");
-		
+		checkSomeData(formUI);
 		StringBuilder uiClassText = new StringBuilder();
 		
 		uiClassText.append(
@@ -924,19 +940,17 @@ public class ModelFactoryModel {
 						"		private void InitializeComponent()\r\n" + 
 						"        {" +
 						"\r\n" + 
-						"			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(" + formUI.getName() + "));" + 
+						"			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(" + formUI.getName() + "));" +
+						"\r\n" +
 						"\r\n			//Instances" +
 						"\r\n" +
+						"\t\t\t" + getComponentInstances(formUI) +
 						
 						
-						
-						
-						
-						
-						
-						
-						"				this.SuspendLayout();" +
-						
+						"			this.SuspendLayout();" +
+						"\r\n" +
+						"\r\n			//Set Component Attributes" +
+						"\r\n" +
 						
 						
 						
@@ -948,10 +962,158 @@ public class ModelFactoryModel {
 						"\r\n" + 
 						"        }" +
 						"\r\n" + 
-						"			//-------------------Component Declaration"
+						"			//-------------------Component Declaration" +
+						"\r\n" + 
+						"\t\t\t" + getComponentDeclaration(formUI) 
 				);
+		
+		//createFileWindows(rutaProyecto+"\\"+projectName, formUI.getName(), uiClassText);
 	}
 	
+	
+	
+	
+	private String getComponentInstances(FormUI formUI) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+	/**
+	 * Método que estructura la declaración de componentes de la UI
+	 * @param formUI
+	 * @return
+	 */
+	private StringBuilder getComponentDeclaration(FormUI formUI) {
+		StringBuilder textComponentDeclaration = new StringBuilder();
+		for (AdjWidget widget : formUI.getLstAdjWidget()) {
+			
+			textComponentDeclaration.append("private " + getWidgetType(widget) + " " + widget.getName() + ";\n\t\t\t");
+			
+			if (widget instanceof AdjListView) {
+				for (AdjListViewColumn listViewColumn : ((AdjListView) widget).getLstAdjListViewColumn()) {
+					textComponentDeclaration.append("private System.Windows.Forms.ColumnHeader " + listViewColumn.getText() + ";\n\t\t\t");
+				}
+			}
+		}
+		return textComponentDeclaration;
+	}
+
+
+	/**
+	 * Método para obtener el tipo del widget dado
+	 * @param widget
+	 * @return
+	 */
+	private String getWidgetType(AdjWidget widget) {
+		String type = "System.Windows.Forms.";
+		if (widget instanceof AdjLabel) 
+			return type + "Label";
+		if (widget instanceof AdjCheckBox) 
+			return type + "CheckBox";
+		if (widget instanceof AdjButton) 
+			return type + "Button";
+		if (widget instanceof AdjListBox) 
+			return type + "ListBox";
+		if (widget instanceof AdjDateTimePicker) 
+			return type + "DateTimePicker";
+		if (widget instanceof AdjTextBox) 
+			return type + "TextBox";
+		if (widget instanceof AdjCheckedListBox) 
+			return type + "CheckedListBox";
+		if (widget instanceof AdjLinkLabel) 
+			return type + "LinkLabel";
+		if (widget instanceof AdjRichTextBox) 
+			return type + "RichTextBox";
+		if (widget instanceof AdjComboBox) 
+			return type + "ComboBox";
+		if (widget instanceof AdjRadioButton) 
+			return type + "RadioButton";
+		if (widget instanceof AdjPictureBox) 
+			return type + "PictureBox";
+		if (widget instanceof AdjListView) 
+			return type + "ListView";
+		if (widget instanceof AdjPanel) 
+			return type + "Panel";
+		if (widget instanceof AdjGroupBox) 
+			return type + "GroupBox";
+		return "";
+	}
+
+	
+	/**
+	 * Verifica datos si: existencia del nombre del form y duplicidad de variables
+	 * @param formUI
+	 * @throws Exception
+	 */
+	private void checkSomeData(FormUI formUI) throws Exception {
+		if(formUI.getName() == null || formUI.getName().equals(""))
+			throw new Exception("EL NOMBRE DEL FORM ESTA VACIO");
+		
+		String info = verifyDuplicatedVariableNames(formUI);
+		
+		if(info != null)
+			throw new Exception("NOMBRES DE VARIABLES REPETIDAS: "+info);
+		
+	}
+	
+	/**
+	 * Metodo para verificar duplicidad de nombres de variables de los componentes de la UI
+	 * @param formUI
+	 * @return
+	 */
+	private String verifyDuplicatedVariableNames(FormUI formUI) {
+		EList<AdjWidget> widgetList = formUI.getLstAdjWidget();
+		List<AdjListViewColumn> adjListViewColumnList = new ArrayList<AdjListViewColumn>();
+		
+		for (AdjWidget adjWidget : widgetList) {
+			if (adjWidget instanceof AdjListView) {
+				for (AdjListViewColumn adjListViewColumn : ((AdjListView) adjWidget).getLstAdjListViewColumn()) {
+					adjListViewColumnList.add(adjListViewColumn);
+				}
+			}
+		}
+		
+		//widgets vs widgets + columns
+		for (AdjWidget adjWidget : widgetList) {
+			String widgetName = adjWidget.getName();
+			int i = 0;
+			
+			for (AdjWidget adjWidgetToSeek : widgetList) {
+				if (adjWidgetToSeek.getName().equals(widgetName)) 
+					i++;
+			}
+			
+			for (AdjListViewColumn adjListViewColumn : adjListViewColumnList) {
+				if (adjListViewColumn.getText().equals(widgetName)) 
+					i++;
+			}
+			
+			if (i > 1)
+				return adjWidget.getClass().getSimpleName();
+		}
+		
+		//columns vs columns
+		for (AdjListViewColumn adjListViewColumn : adjListViewColumnList) {
+			String columnName = adjListViewColumn.getText();
+			int i = 0;
+			
+			for (AdjListViewColumn adjListViewColumnToSeek : adjListViewColumnList) {
+				if (adjListViewColumnToSeek.getText().equals(columnName)) 
+					i++;
+			}
+			
+			if (i > 1)
+				return adjListViewColumn.getClass().getSimpleName();
+		}
+		
+		return null;
+	}
+
+
+
+
 	//---------------------------------------------------INPUTS
 	
 	/**
