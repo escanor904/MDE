@@ -238,18 +238,18 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 					 parent = editpart.getParent();
 				}
 				
-				if (editpart instanceof AdjListViewColumnEditPart ) {
+				if (editpart instanceof AdjListViewColumnEditPart  ) {
 					parent = editpart;
 
 				}
 				
-//				if (parent instanceof AdjListViewEditPart) {
-//					AdjListViewColumn model = (AdjListViewColumn) ((GraphicalEditPart) parent).resolveSemanticElement();
-//					TransactionalEditingDomain domain = ((GraphicalEditPart) parent).getEditingDomain();
-//					Shell parentShell = new Shell();
-//					PropertiesAdjListViewColumn dialogClass = new PropertiesAdjListViewColumn(parentShell,model,domain,parent);
-//					dialogClass.open();
-//				}
+				if (parent instanceof AdjListViewColumnEditPart) {
+					AdjListViewColumn model = (AdjListViewColumn) ((GraphicalEditPart) parent).resolveSemanticElement();
+					TransactionalEditingDomain domain = ((GraphicalEditPart) parent).getEditingDomain();
+					Shell parentShell = new Shell();
+					PropertiesAdjListViewColumn dialogClass = new PropertiesAdjListViewColumn(parentShell,model,domain,parent);
+					dialogClass.open();
+				}
 				
 				
 				//click al AdjPanel

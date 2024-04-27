@@ -193,8 +193,22 @@ public class PropertiesAdjPictureBox extends Dialog {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 			      Color color = JColorChooser.showDialog(null, "Pick a color...I guess", Color.black);
-			      textBackG.setText(color.toString());
-			}
+			      String rgbString = "";
+			      
+			      	//esta sección del código me permite capturar el RGB capturado
+			        if (color != null) {
+			            // Obtener los componentes RGB del color seleccionado
+			            int red = color.getRed();
+			            int green = color.getGreen();
+			            int blue = color.getBlue();
+	
+			            // Crear el string con los componentes RGB
+			            rgbString = red + ", " + green + ", " + blue;
+	
+			            // Imprimir el string con los componentes RGB
+			            
+			        }
+			      textBackG.setText(rgbString);			}
 		});
 		btnSelect.setText("Select");
 		
