@@ -2997,3 +2997,71 @@ org.eclipse.wb.internal.core.utils.exception.DesignerException: 103 (Unknown GUI
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1002 2024-04-28 15:31:59.015
+!MESSAGE Unable to read repository at http://www.eclipse.org/downloads/packages/release/Oxygen/3.RC3.
+!STACK 0
+java.io.IOException: http://www.eclipse.org/downloads/packages/release/Oxygen/3.RC3 is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2024-04-28 15:32:17.478
+!MESSAGE No repository found at http://download.eclipse.org/modeling/gmp/gmf-tooling/updates/releases/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2024-04-28 15:32:25.337
+!MESSAGE No repository found at http://download.eclipse.org/modeling/gmp/gmf-tooling/updates/dev-snapshots/3.3/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2024-04-28 15:32:30.785
+!MESSAGE No repository found at http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/oxygen/2/eclipse-rcp-oxygen-2-win32.zip.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2024-04-28 15:32:30.786
+!MESSAGE No repository found at jar:file:/D:/develpment%20TOOLS/uml%20boot.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-04-28 15:32:31.545
+!MESSAGE Server returned lastModified <= 0 for https://www.eclipse.org/e4/downloads.php/content.jar
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1002 2024-04-28 15:32:32.306
+!MESSAGE Unable to read repository at https://www.eclipse.org/e4/downloads.php.
+!STACK 0
+java.io.IOException: https://www.eclipse.org/e4/downloads.php is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:102)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor168.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2024-04-28 15:33:02.641
+!MESSAGE No repository found at http://www.eclipse.org/modeling/amalgam/downloads/package/modeling/oxygen/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2024-04-28 15:33:11.249
+!MESSAGE No repository found at https://www.eclipse.org/windowbuilder/download.php.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2024-04-28 15:33:23.929
+!MESSAGE No repository found at http://www.eclipse.org/downloads/packages/eclipse-rcpplug-developers/galileosr2.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2024-04-28 15:33:29.451
+!MESSAGE No repository found at http://www.eclipse.org/downloads.

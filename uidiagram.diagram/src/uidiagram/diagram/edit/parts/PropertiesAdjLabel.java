@@ -209,7 +209,7 @@ public class PropertiesAdjLabel extends Dialog {
 			            
 			        }
 			      textBackG.setText(rgbString);
-			      parent.setBackground();
+			      
 			      
 			      
 			      
