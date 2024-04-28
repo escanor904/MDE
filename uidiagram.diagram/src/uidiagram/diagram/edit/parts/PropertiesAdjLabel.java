@@ -209,6 +209,11 @@ public class PropertiesAdjLabel extends Dialog {
 			            
 			        }
 			      textBackG.setText(rgbString);
+			      parent.setBackground();
+			      
+			      
+			      
+			      
 			}
 		});
 		btnSelect.setText("Select");
@@ -311,6 +316,7 @@ public class PropertiesAdjLabel extends Dialog {
 	            modelElementWidget.setWidth(Integer.parseInt(textWidth.getText()));
 	            modelElementWidget.setHeight(Integer.parseInt(textHeight.getText()));
 	            modelElementWidget.setBackground(textBackG.getText());
+	            
 	            modelElementWidget.setFontName(textFontN.getText());
 				
 	            if (!textFontS.getText().isEmpty()) {

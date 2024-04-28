@@ -341,7 +341,7 @@ public class MyOpenEditPolicyPropertiesEdit extends OpenEditPolicy {
 
 				}
 				
-				if (parent instanceof AdjTextBoxEditPart || editpart instanceof AdjTextBox2EditPart || editpart instanceof AdjTextBox3EditPart) {
+				if (parent instanceof AdjTextBoxEditPart || parent instanceof AdjTextBox2EditPart || parent instanceof AdjTextBox3EditPart) {
 					AdjTextBox model = (AdjTextBox) ((GraphicalEditPart) parent).resolveSemanticElement();
 					TransactionalEditingDomain domain = ((GraphicalEditPart) parent).getEditingDomain();
 					Shell parentShell = new Shell();
