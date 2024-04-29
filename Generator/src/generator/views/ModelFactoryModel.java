@@ -1182,16 +1182,24 @@ public class ModelFactoryModel {
 			if (widget instanceof AdjPanel) {
 				EList<AdjWidget> list = ((AdjPanel) widget).getLstAdjWidget();
 				textSetComponentAttributes.append("\n\t\t\t// Panel");
+				
 				for (AdjWidget adjWidget : list) {
 					textSetComponentAttributes.append("\n\t\t\tthis." + widget.getName() + ".Control.Add(this." + adjWidget.getName() + ");");
 				}
+				
 				textSetComponentAttributes.append("\n\t\t\tthis." + widget.getName() + ".Name = \"" + widget.getName() + "\";\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Size = new System.Drawing.Size(" + widget.getPositionX() + ", " + widget.getPositionY() + ");" + "\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Location = new System.Drawing.Point(" + widget.getWidth() + ", " + widget.getHeight() + ");" + "\n");
 			}
 
 			if (widget instanceof AdjGroupBox) {
-				textSetComponentAttributes.append("\n\t\t\t//GruopBox");
+				EList<AdjWidget> list = ((AdjGroupBox) widget).getLstAdjWidget();
+				textSetComponentAttributes.append("\n\t\t\t//GroupBox");
+				
+				for (AdjWidget adjWidget : list) {
+					textSetComponentAttributes.append("\n\t\t\tthis." + widget.getName() + ".Control.Add(this." + adjWidget.getName() + ");");
+				}
+				
 				textSetComponentAttributes.append("\n\t\t\tthis." + widget.getName() + ".Name = \"" + widget.getName() + "\";\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Size = new System.Drawing.Size(" + widget.getPositionX() + ", " + widget.getPositionY() + ");\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Location = new System.Drawing.Point(" + widget.getWidth() + ", " + widget.getHeight() + ");\n");
@@ -1199,6 +1207,7 @@ public class ModelFactoryModel {
 			
 			if (widget instanceof AdjListView) {
 		        AdjListView listView = (AdjListView) widget;
+		        
 		        for (AdjListViewColumn column : listView.getLstAdjListViewColumn()) {
 		        	textSetComponentAttributes.append("\n\t\t\t//ListViewColumn");
 		        	textSetComponentAttributes.append("\n\t\t\tthis." + column.getText() + ".Text = \"" + column.getText() + ";");
