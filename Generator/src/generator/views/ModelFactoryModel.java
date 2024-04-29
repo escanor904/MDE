@@ -992,6 +992,7 @@ public class ModelFactoryModel {
 	 */
 	private StringBuilder setFormAttributes(FormUI formUI) {
 		StringBuilder textSetFormAttributes = new StringBuilder();
+		StringBuilder textSetFormAttributesAux = new StringBuilder();
 		
 		textSetFormAttributes.append("this.ClientSize = new System.Drawing.Size(800, 600);\n\t\t\t"
 				+ "this.BackColor = System.Drawing.SystemColors.ButtonFace;\n\t\t\t"
@@ -1000,8 +1001,25 @@ public class ModelFactoryModel {
 				+ "this.Location = new System.Drawing.Point(15, 15);\n\t\t\t"
 				+ "this.Name = \""+formUI.getName() + ";\n\t\t\t");
 		
+		textSetFormAttributesAux = setFormAttributesRecursive(textSetFormAttributesAux, formUI.getLstAdjWidget());
+		textSetFormAttributes.append(textSetFormAttributesAux);
 		
-		for (AdjWidget widget : formUI.getLstAdjWidget()) {
+		textSetFormAttributes.append("this.ResumeLayout(false);\n\t\t\t" + 
+				"this.PerformLayout();\n");
+
+		return textSetFormAttributes;
+	}
+
+	
+	/**
+	 * Método para hacer set a los atributos del formulario de forma recursiva
+	 * @param textSetFormAttributes
+	 * @param lstAdjWidget
+	 * @return
+	 */
+	private StringBuilder setFormAttributesRecursive(StringBuilder textSetFormAttributes, EList<AdjWidget> lstAdjWidget) {
+		
+		for (AdjWidget widget : lstAdjWidget) {
 
 			textSetFormAttributes.append("this.Controls.Add(this." + widget.getName() + ");\n\t\t\t");
 
@@ -1012,17 +1030,13 @@ public class ModelFactoryModel {
 			}
 
 			if (widget instanceof AdjGroupBox) {
-				for (AdjWidget adjWidget : ((AdjGroupBox) widget).getLstAdjWidget()) {
-					textSetFormAttributes.append("this.Controls.Add(this." + adjWidget.getName() + ");\n\t\t\t");
-				}
+				textSetFormAttributes = setFormAttributesRecursive(textSetFormAttributes, ((AdjGroupBox) widget).getLstAdjWidget());
+				textSetFormAttributes.append("this." + widget.getName() + "ResumeLayout(false);\n\t\t\t");
 			}
 
 			if (widget instanceof AdjPanel) {
-				for (AdjWidget adjWidget : ((AdjPanel) widget).getLstAdjWidget()) {
-					textSetFormAttributes.append("this.Controls.Add(this." + adjWidget.getName() + ");\n\t\t\t"
-							+ "this." + widget.getName() + "ResumeLayout(false);\n\t\t\t");
-				}
-				textSetFormAttributes.append("this." +widget.getName() + ".SuspendLayout();\n\t\t\t");
+				textSetFormAttributes = setFormAttributesRecursive(textSetFormAttributes, ((AdjPanel) widget).getLstAdjWidget());
+				textSetFormAttributes.append("this." + widget.getName() + "ResumeLayout(false);\n\t\t\t");
 			}
 			
 			if (widget instanceof AdjPictureBox) {
@@ -1030,9 +1044,6 @@ public class ModelFactoryModel {
 			}
 		}
 		
-		textSetFormAttributes.append("this.ResumeLayout(false);\n\t\t\t" + 
-									"this.PerformLayout();\n");
-	
 		return textSetFormAttributes;
 	}
 
@@ -1045,37 +1056,49 @@ public class ModelFactoryModel {
 	 */
 	private StringBuilder getComponentInstances(FormUI formUI) {
 		StringBuilder textComponentInstances = new StringBuilder();
-		for (AdjWidget widget : formUI.getLstAdjWidget()) {
-			
+		return getComponentInstancesRecursive(textComponentInstances, formUI.getLstAdjWidget());
+	}
+
+	
+	/**
+	 * Método para obtener las instancias de los componentes del formulario de forma recursiva
+	 * @param textComponentInstances
+	 * @param lstAdjWidget
+	 * @return
+	 */
+	private StringBuilder getComponentInstancesRecursive(StringBuilder textComponentInstances,
+			EList<AdjWidget> lstAdjWidget) {
+		
+		for (AdjWidget widget : lstAdjWidget) {
+
 			textComponentInstances.append("this." + widget.getName() + " = new " + getWidgetType(widget) + "()" + ";\n\t\t\t");
-			
+
 			if (widget instanceof AdjListView) {
 				for (AdjListViewColumn listViewColumn : ((AdjListView) widget).getLstAdjListViewColumn()) {
 					textComponentInstances.append("this." + listViewColumn.getText() + " = new System.Windows.Forms.ColumnHeader()" + ";\n\t\t\t");
 				}
 			}
-			
+
 			if (widget instanceof AdjGroupBox) {
-				for (AdjWidget adjWidget : ((AdjGroupBox) widget).getLstAdjWidget()) {
-					textComponentInstances.append("this." + adjWidget.getName() + " = new " + getWidgetType(adjWidget) + "()" + ";\n\t\t\t");
-				}
-			}
-			
-			if (widget instanceof AdjPanel) {
-				for (AdjWidget adjWidget : ((AdjPanel) widget).getLstAdjWidget()) {
-					textComponentInstances.append("this." + adjWidget.getName() + " = new " + getWidgetType(adjWidget) + "()" + ";\n\t\t\t");
-				}
+				textComponentInstances = getComponentInstancesRecursive(textComponentInstances, ((AdjGroupBox) widget).getLstAdjWidget());
 				textComponentInstances.append("this." +widget.getName() + ".SuspendLayout();\n\t\t\t");
 			}
-			
+
+			if (widget instanceof AdjPanel) {
+				textComponentInstances = getComponentInstancesRecursive(textComponentInstances, ((AdjPanel) widget).getLstAdjWidget());
+				textComponentInstances.append("this." +widget.getName() + ".SuspendLayout();\n\t\t\t");
+			}
+
 			if (widget instanceof AdjPictureBox) {
 				textComponentInstances.append("((System.ComponentModel.ISupportInitialize)(this." + widget.getName() + ")).BeginInit();\n\t\t\t");
 			}
-			
+
 		}
-		
+
 		return textComponentInstances;
 	}
+
+
 
 	/**
 	 * Método para crear textod el seteo de los atributos de los componentes de la UI
@@ -1228,30 +1251,42 @@ public class ModelFactoryModel {
 	 */
 	private StringBuilder getComponentDeclaration(FormUI formUI) {
 		StringBuilder textComponentDeclaration = new StringBuilder();
-		for (AdjWidget widget : formUI.getLstAdjWidget()) {
-			
+		return getComponentDeclarationRecursive(textComponentDeclaration, formUI.getLstAdjWidget());
+	}
+
+
+	/**
+	 * Método para obtener la declaración de los componentes del formulario de forma recursiva
+	 * @param textComponentDeclaration
+	 * @param lstAdjWidget
+	 * @return
+	 */
+	private StringBuilder getComponentDeclarationRecursive(StringBuilder textComponentDeclaration,
+			EList<AdjWidget> lstAdjWidget) {
+		
+		for (AdjWidget widget : lstAdjWidget) {
+
 			textComponentDeclaration.append("private " + getWidgetType(widget) + " " + widget.getName() + ";\n\t\t");
-			
+
 			if (widget instanceof AdjListView) {
 				for (AdjListViewColumn listViewColumn : ((AdjListView) widget).getLstAdjListViewColumn()) {
 					textComponentDeclaration.append("private System.Windows.Forms.ColumnHeader " + listViewColumn.getText() + ";\n\t\t");
 				}
 			}
-			
+
 			if (widget instanceof AdjGroupBox) {
-				for (AdjWidget adjWidget : ((AdjGroupBox) widget).getLstAdjWidget()) {
-					textComponentDeclaration.append("private " + getWidgetType(adjWidget) + " " + adjWidget.getName() + ";\n\t\t");
-				}
+				textComponentDeclaration = getComponentDeclarationRecursive(textComponentDeclaration, ((AdjGroupBox) widget).getLstAdjWidget());
+
 			}
-			
+
 			if (widget instanceof AdjPanel) {
-				for (AdjWidget adjWidget : ((AdjPanel) widget).getLstAdjWidget()) {
-					textComponentDeclaration.append("private " + getWidgetType(adjWidget) + " " + adjWidget.getName() + ";\n\t\t");
-				}
+				textComponentDeclaration = getComponentDeclarationRecursive(textComponentDeclaration, ((AdjPanel) widget).getLstAdjWidget());
 			}
 		}
+		
 		return textComponentDeclaration;
 	}
+
 
 
 	/**
