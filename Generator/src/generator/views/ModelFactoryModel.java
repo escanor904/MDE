@@ -947,12 +947,13 @@ public class ModelFactoryModel {
 						"\r\n			//Instances" +
 						"\r\n" +
 						"\t\t\t" + getComponentInstances(formUI) +
-						
-						
 						"this.SuspendLayout();" +
 						"\r\n" +
 						"\r\n			//Set Component Attributes" +
-						"\r\n" +setComponentAttributes(formUI) + 
+						"\r\n" + setComponentAttributes(formUI) + 
+						"\r\n" +
+						"			//" +formUI.getName() +
+						"\r\n\t\t\t" + setFormAttributes(formUI) + 
 						"		}" +
 						"\r\n" + 
 						"\r\n" + 
@@ -984,7 +985,59 @@ public class ModelFactoryModel {
 	}
 	
 	
+	/**
+	 * Método para crear el texto del set de los atributos del Form
+	 * @param formUI
+	 * @return
+	 */
+	private StringBuilder setFormAttributes(FormUI formUI) {
+		StringBuilder textSetFormAttributes = new StringBuilder();
+		
+		textSetFormAttributes.append("this.ClientSize = new System.Drawing.Size(800, 600);\n\t\t\t"
+				+ "this.BackColor = System.Drawing.SystemColors.ButtonFace;\n\t\t\t"
+				+ "this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;\n\t\t\t"
+				+ "this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);\n\t\t\t"
+				+ "this.Location = new System.Drawing.Point(15, 15);\n\t\t\t"
+				+ "this.Name = \""+formUI.getName() + ";\n\t\t\t");
+		
+		
+		for (AdjWidget widget : formUI.getLstAdjWidget()) {
+
+			textSetFormAttributes.append("this.Controls.Add(this." + widget.getName() + ");\n\t\t\t");
+
+			if (widget instanceof AdjListView) {
+				for (AdjListViewColumn listViewColumn : ((AdjListView) widget).getLstAdjListViewColumn()) {
+					textSetFormAttributes.append("this.Controls.Add(this." + listViewColumn.getText() + ");\n\t\t\t");
+				}
+			}
+
+			if (widget instanceof AdjGroupBox) {
+				for (AdjWidget adjWidget : ((AdjGroupBox) widget).getLstAdjWidget()) {
+					textSetFormAttributes.append("this.Controls.Add(this." + adjWidget.getName() + ");\n\t\t\t");
+				}
+			}
+
+			if (widget instanceof AdjPanel) {
+				for (AdjWidget adjWidget : ((AdjPanel) widget).getLstAdjWidget()) {
+					textSetFormAttributes.append("this.Controls.Add(this." + adjWidget.getName() + ");\n\t\t\t"
+							+ "this." + widget.getName() + "ResumeLayout(false);\n\t\t\t");
+				}
+				textSetFormAttributes.append("this." +widget.getName() + ".SuspendLayout();\n\t\t\t");
+			}
+			
+			if (widget instanceof AdjPictureBox) {
+				textSetFormAttributes.append("((System.ComponentModel.ISupportInitialize)(this." + widget.getName() + ")).BeginInit();\n\\t\t\t");
+			}
+		}
+		
+		textSetFormAttributes.append("this.ResumeLayout(false);\n\t\t\t" + 
+									"this.PerformLayout();\n");
 	
+		return textSetFormAttributes;
+	}
+
+
+
 	/**
 	 * Método para crear el texto de las instancias de los componentes de la UI
 	 * @param formUI
@@ -1020,6 +1073,7 @@ public class ModelFactoryModel {
 			}
 			
 		}
+		
 		return textComponentInstances;
 	}
 
@@ -1032,7 +1086,7 @@ public class ModelFactoryModel {
 		StringBuilder textSetComponentAttributes = new StringBuilder();
 		for (AdjWidget widget : formUI.getLstAdjWidget()) {
 			
-			if(widget instanceof AdjLabel) {
+			if (widget instanceof AdjLabel) {
 				textSetComponentAttributes.append("\n\t\t\t//Label");
 				textSetComponentAttributes.append("\n\t\t\tthis." + widget.getName() + ".Name = \"" + widget.getName() + "\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Size = new System.Drawing.Size(" + widget.getPositionX() + ", " + widget.getPositionY() + "\n\t\t\t");
@@ -1040,7 +1094,7 @@ public class ModelFactoryModel {
 
 			}
 			
-			if(widget instanceof AdjCheckBox) {
+			if (widget instanceof AdjCheckBox) {
 				textSetComponentAttributes.append("\n\t\t\t//Checkbox");
 				textSetComponentAttributes.append("\n\t\t\tthis." + widget.getName() + ".Name = \"" + widget.getName() + "\";\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Size = new System.Drawing.Size(" + widget.getPositionX() + ", " + widget.getPositionY() + ");\n\t\t\t");
@@ -1048,77 +1102,77 @@ public class ModelFactoryModel {
 
 			}
 			
-			if(widget instanceof AdjButton) {
+			if (widget instanceof AdjButton) {
 				textSetComponentAttributes.append("\n\t\t\t//button");
 				textSetComponentAttributes.append("\n\t\t\tthis." + widget.getName() + ".Name = \"" + widget.getName() + "\";\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Size = new System.Drawing.Size(" + widget.getPositionX() + ", " + widget.getPositionY() + ");\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Location = new System.Drawing.Point(" + widget.getWidth() + ", " + widget.getHeight() + ");\n");
 
 			}
-			if(widget instanceof AdjListBox) {
+			if (widget instanceof AdjListBox) {
 				textSetComponentAttributes.append("\n\t\t\t//ListBox");
 				textSetComponentAttributes.append("\n\t\t\tthis." + widget.getName() + ".Name = \"" + widget.getName() + "\";\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Size = new System.Drawing.Size(" + widget.getPositionX() + ", " + widget.getPositionY() + ");\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Location = new System.Drawing.Point(" + widget.getWidth() + ", " + widget.getHeight() + ");\n");
 			}
 			
-			if(widget instanceof AdjDateTimePicker) {
+			if (widget instanceof AdjDateTimePicker) {
 				textSetComponentAttributes.append("\n\t\t\t//DateTimePicker");
 				textSetComponentAttributes.append("\n\t\t\tthis." + widget.getName() + ".Name = \"" + widget.getName() + "\";\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Size = new System.Drawing.Size(" + widget.getPositionX() + ", " + widget.getPositionY() + ");\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Location = new System.Drawing.Point(" + widget.getWidth() + ", " + widget.getHeight() + ");\n");
 			}
 			
-			if(widget instanceof AdjTextBox) {
+			if (widget instanceof AdjTextBox) {
 				textSetComponentAttributes.append("\n\t\t\t//TextBox");
 				textSetComponentAttributes.append("\n\t\t\tthis." + widget.getName() + ".Name = \"" + widget.getName() + "\";\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Size = new System.Drawing.Size(" + widget.getPositionX() + ", " + widget.getPositionY() + ");\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Location = new System.Drawing.Point(" + widget.getWidth() + ", " + widget.getHeight() + ");");
 			}
 			
-			if(widget instanceof AdjCheckedListBox) {
+			if (widget instanceof AdjCheckedListBox) {
 				textSetComponentAttributes.append("\n\t\t\t//CheckedListBox");
 				textSetComponentAttributes.append("\n\t\t\tthis." + widget.getName() + ".Name = \"" + widget.getName() + "\";\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Size = new System.Drawing.Size(" + widget.getPositionX() + ", " + widget.getPositionY() + ");\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Location = new System.Drawing.Point(" + widget.getWidth() + ", " + widget.getHeight() + ");\n");
 			}
 			
-			if(widget instanceof AdjLinkLabel) {
+			if (widget instanceof AdjLinkLabel) {
 				textSetComponentAttributes.append("\n\t\t\t//LinkLabel");
 				textSetComponentAttributes.append("\n\t\t\tthis." + widget.getName() + ".Name = \"" + widget.getName() + "\";\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Size = new System.Drawing.Size(" + widget.getPositionX() + ", " + widget.getPositionY() + ");\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Location = new System.Drawing.Point(" + widget.getWidth() + ", " + widget.getHeight() + ");\n");
 			}
 			
-			if(widget instanceof AdjRichTextBox) {
+			if (widget instanceof AdjRichTextBox) {
 				textSetComponentAttributes.append("\n\t\t\t//RichLinkLabel");
 				textSetComponentAttributes.append("\n\t\t\tthis." + widget.getName() + ".Name = \"" + widget.getName() + "\";\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Size = new System.Drawing.Size(" + widget.getPositionX() + ", " + widget.getPositionY() + ");\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Location = new System.Drawing.Point(" + widget.getWidth() + ", " + widget.getHeight() + ");\n");
 			}
 			
-			if(widget instanceof AdjComboBox) {
+			if (widget instanceof AdjComboBox) {
 				textSetComponentAttributes.append("\n\t\t\t//ComboBox");
 				textSetComponentAttributes.append("\n\t\t\tthis." + widget.getName() + ".Name = \"" + widget.getName() + "\";\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Size = new System.Drawing.Size(" + widget.getPositionX() + ", " + widget.getPositionY() + ");\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Location = new System.Drawing.Point(" + widget.getWidth() + ", " + widget.getHeight() + ");\n");
 			}
 			
-			if(widget instanceof AdjRadioButton) {
+			if (widget instanceof AdjRadioButton) {
 				textSetComponentAttributes.append("\n\t\t\t//RadioButton");
 				textSetComponentAttributes.append("\n\t\t\tthis." + widget.getName() + ".Name = \"" + widget.getName() + "\";\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Size = new System.Drawing.Size(" + widget.getPositionX() + ", " + widget.getPositionY() + ");\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Location = new System.Drawing.Point(" + widget.getWidth() + ", " + widget.getHeight() + ");\n");
 			}
 			
-			if(widget instanceof AdjPictureBox) {
+			if (widget instanceof AdjPictureBox) {
 				textSetComponentAttributes.append("\n\t\t\t//PictureBox");
 				textSetComponentAttributes.append("\n\t\t\tthis." + widget.getName() + ".Name = \"" + widget.getName() + "\";\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Size = new System.Drawing.Size(" + widget.getPositionX() + ", " + widget.getPositionY() + ");\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Location = new System.Drawing.Point(" + widget.getWidth() + ", " + widget.getHeight() + ");\n");
 			}
 			
-			if(widget instanceof AdjListView) {
+			if (widget instanceof AdjListView) {
 				textSetComponentAttributes.append("\n\t\t\t//ListView");
 				textSetComponentAttributes.append("\n\t\t\tthis." + widget.getName() + ".Name = \"" + widget.getName() + "\";\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Size = new System.Drawing.Size(" + widget.getPositionX() + ", " + widget.getPositionY() + ");\n\t\t\t");
@@ -1136,7 +1190,7 @@ public class ModelFactoryModel {
 				textSetComponentAttributes.append("this." + widget.getName() + ".Location = new System.Drawing.Point(" + widget.getWidth() + ", " + widget.getHeight() + ");" + "\n");
 			}
 
-			if(widget instanceof AdjGroupBox) {
+			if (widget instanceof AdjGroupBox) {
 				textSetComponentAttributes.append("\n\t\t\t//GruopBox");
 				textSetComponentAttributes.append("\n\t\t\tthis." + widget.getName() + ".Name = \"" + widget.getName() + "\";\n\t\t\t");
 				textSetComponentAttributes.append("this." + widget.getName() + ".Size = new System.Drawing.Size(" + widget.getPositionX() + ", " + widget.getPositionY() + ");\n\t\t\t");
@@ -1153,6 +1207,7 @@ public class ModelFactoryModel {
 			}
 			
 		}
+		
 		return textSetComponentAttributes;
 		
 	}
