@@ -881,7 +881,6 @@ public interface ConcretemodelPackage extends EPackage {
 	 */
 	int ACCESS_MODIFIER = 14;
 
-
 	/**
 	 * The meta object id for the '{@link concretemodel.AccessModifierClass <em>Access Modifier Class</em>}' enum.
 	 * <!-- begin-user-doc -->

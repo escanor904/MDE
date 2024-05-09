@@ -7,8 +7,8 @@ import concretemodel.AttributeConcreteAdj;
 import concretemodel.ClassConcreteAdj;
 import concretemodel.ConcretemodelPackage;
 import concretemodel.MethodConcreteAdj;
-
 import concretemodel.TypeClass;
+
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;

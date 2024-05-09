@@ -93,6 +93,7 @@ class AttributeTypeConcreteAdj{
 	 
 }
 
+//Identificar como isPrimaryKey
 @gmf.node(label="name", color="255,255,128")
 class AttributeConcreteAdj{
 	attr String name;

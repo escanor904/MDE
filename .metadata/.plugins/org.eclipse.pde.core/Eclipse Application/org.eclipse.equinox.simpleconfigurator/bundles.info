@@ -24,9 +24,11 @@ com.sun.jna,4.1.0.v20170410-1117,file:/C:/Eclipse/2.%20Epsilon/epsilon%20modelin
 com.sun.jna.platform,4.1.0.v20170410-1117,file:/C:/Eclipse/2.%20Epsilon/epsilon%20modeling/plugins/com.sun.jna.platform_4.1.0.v20170410-1117.jar,4,false
 dc_abstract,0.1.0.qualifier,file:/C:/td/ws_class_epsilon/dc/dc/dc_abstract/,4,false
 dc_concrete,0.1.0.qualifier,file:/C:/td/ws_class_epsilon/dc/dc/dc_concrete/,4,false
+dc_concrete.diagram,1.0.0.qualifier,file:/C:/td/ws_class_epsilon/dc/dc/dc_concrete.diagram/,4,false
 dc_concrete.edit,1.0.0.qualifier,file:/C:/td/ws_class_epsilon/dc/dc/dc_concrete.edit/,4,false
 dc_concrete.editor,1.0.0.qualifier,file:/C:/td/ws_class_epsilon/dc/dc/dc_concrete.editor/,4,false
 dc_concrete.tests,1.0.0.qualifier,file:/C:/td/ws_class_epsilon/dc/dc/dc_concrete.tests/,4,false
+dsl_relational,0.1.0.qualifier,file:/C:/td/ws_class_epsilon/dc/dc/dsl_relational/,4,false
 javax.annotation,1.2.0.v201602091430,file:/C:/Eclipse/2.%20Epsilon/epsilon%20modeling/plugins/javax.annotation_1.2.0.v201602091430.jar,4,false
 javax.el,2.2.0.v201303151357,file:/C:/Eclipse/2.%20Epsilon/epsilon%20modeling/plugins/javax.el_2.2.0.v201303151357.jar,4,false
 javax.inject,1.0.0.v20091030,file:/C:/Eclipse/2.%20Epsilon/epsilon%20modeling/plugins/javax.inject_1.0.0.v20091030.jar,4,false

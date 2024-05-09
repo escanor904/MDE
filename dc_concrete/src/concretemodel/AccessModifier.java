@@ -46,7 +46,9 @@ public enum AccessModifier implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	PROTECTED(3, "protected", "protected"), /**
+	PROTECTED(3, "protected", "protected"),
+
+	/**
 	 * The '<em><b>Static</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -54,7 +56,9 @@ public enum AccessModifier implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	STATIC(4, "static", "static"), /**
+	STATIC(4, "static", "static"),
+
+	/**
 	 * The '<em><b>Internal</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -62,7 +66,9 @@ public enum AccessModifier implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	INTERNAL(5, "internal", "internal"), /**
+	INTERNAL(5, "internal", "internal"),
+
+	/**
 	 * The '<em><b>Protected internal</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -76,7 +82,7 @@ public enum AccessModifier implements Enumerator {
 	 * The '<em><b>Public</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>PUBLIC</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Public</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -91,7 +97,7 @@ public enum AccessModifier implements Enumerator {
 	 * The '<em><b>Private</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>PRIVATE</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Private</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -106,7 +112,7 @@ public enum AccessModifier implements Enumerator {
 	 * The '<em><b>Protected</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>PROTECTED</b></em>' literal object isn't clear,
+	 * If the meaning of '<em><b>Protected</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

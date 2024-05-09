@@ -960,8 +960,8 @@ public class ModelFactoryModel {
 						"		//-------------------Component Declaration" +
 						"\r\n" + 
 						"\t\t" + getComponentDeclaration(formUI) + 
-						"\r\n\t{" + 
-						"\r\n{"
+						"\r\n\t}" + 
+						"\r\n}"
 				);
 		
 		createFileWindows(rutaProyecto, formUI.getName()+".Designer", uiClassText);

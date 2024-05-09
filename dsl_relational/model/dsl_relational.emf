@@ -1,0 +1,22 @@
+@namespace( uri="http://dslrelational", prefix="dslrelational")
+package dslrelational;
+
+class ModelFactoryRelational {
+    val DataProject [*] lstDataProject;
+}
+
+class DataProject {
+	attr String name;
+    attr String path;
+    //val Schema [*] lstSchema;
+}
+
+
+
+
+
+
+class Trigger {
+	attr String name;
+	
+}

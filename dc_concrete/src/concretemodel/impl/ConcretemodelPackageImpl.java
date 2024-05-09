@@ -20,8 +20,8 @@ import concretemodel.ParameterConcreteAdj;
 import concretemodel.ProjectAdj;
 import concretemodel.RelationshipAdj;
 import concretemodel.SharingAdj;
-
 import concretemodel.TypeClass;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
