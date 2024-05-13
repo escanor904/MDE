@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated dsl_relational -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="dslrelational.presentation.DslrelationalModelWizardID"
+            name="%_UI_DslrelationalModelWizard_label"
+            class="dslrelational.presentation.DslrelationalModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/DslrelationalModelFile.gif">
+         <description>%_UI_DslrelationalModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated dsl_relational -->
+      <editor
+            id="dslrelational.presentation.DslrelationalEditorID"
+            name="%_UI_DslrelationalEditor_label"
+            icon="icons/full/obj16/DslrelationalModelFile.gif"
+            extensions="dslrelational"
+            class="dslrelational.presentation.DslrelationalEditor"
+            contributorClass="dslrelational.presentation.DslrelationalActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
