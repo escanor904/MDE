@@ -104,7 +104,7 @@ public class GeneratorModels extends ViewPart {
 		Label lblTransformacionModelTo = new Label(group_1, SWT.NONE);
 		lblTransformacionModelTo.setFont(SWTResourceManager.getFont("Segoe UI", 9, SWT.BOLD));
 		lblTransformacionModelTo.setForeground(SWTResourceManager.getColor(0, 0, 128));
-		lblTransformacionModelTo.setBounds(10, 0, 235, 15);
+		lblTransformacionModelTo.setBounds(10, 0, 209, 15);
 		lblTransformacionModelTo.setText("Model To Text (M2T) Transformation");
 		
 		Button btnGenerateCodeJava = new Button(group_1, SWT.NONE);
@@ -130,7 +130,7 @@ public class GeneratorModels extends ViewPart {
 		lblTransformationModelUi.setText("Model UI To Text Transformation ");
 		lblTransformationModelUi.setForeground(SWTResourceManager.getColor(0, 0, 128));
 		lblTransformationModelUi.setFont(SWTResourceManager.getFont("Segoe UI", 9, SWT.BOLD));
-		lblTransformationModelUi.setBounds(10, 0, 235, 15);
+		lblTransformationModelUi.setBounds(10, 0, 192, 15);
 		
 		Button btnGenerateCUi = new Button(group_1_1, SWT.NONE);
 		btnGenerateCUi.addSelectionListener(new SelectionAdapter() {
@@ -147,6 +147,31 @@ public class GeneratorModels extends ViewPart {
 		});
 		btnGenerateCUi.setText("Generate C# UI");
 		btnGenerateCUi.setBounds(79, 31, 362, 25);
+		
+		Group group_1_1_1 = new Group(parent, SWT.NONE);
+		group_1_1_1.setBounds(22, 377, 531, 82);
+		
+		Label lblModelToModel = new Label(group_1_1_1, SWT.NONE);
+		lblModelToModel.setText("Model To Model (M2M) Transformation Relational");
+		lblModelToModel.setForeground(SWTResourceManager.getColor(0, 0, 128));
+		lblModelToModel.setFont(SWTResourceManager.getFont("Segoe UI", 9, SWT.BOLD));
+		lblModelToModel.setBounds(10, 0, 283, 15);
+		
+		Button btnGenerateModelTo = new Button(group_1_1_1, SWT.NONE);
+		btnGenerateModelTo.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				ModelFactoryModel mfm = ModelFactoryModel.getInstance();
+				try {
+					mfm.transformationM2MRelational();
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					JOptionPane.showMessageDialog(null, e1.getMessage());
+				}
+			}
+		});
+		btnGenerateModelTo.setText("Generate Model to Model Transformation (Relational)");
+		btnGenerateModelTo.setBounds(79, 31, 362, 25);
 		// TODO Auto-generated method stub
 		
 	}

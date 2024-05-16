@@ -23,6 +23,9 @@ com.sun.el,2.2.0.v201303151357,file:/C:/Eclipse/2.%20Epsilon/epsilon%20modeling/
 com.sun.jna,4.1.0.v20170410-1117,file:/C:/Eclipse/2.%20Epsilon/epsilon%20modeling/plugins/com.sun.jna_4.1.0.v20170410-1117.jar,4,false
 com.sun.jna.platform,4.1.0.v20170410-1117,file:/C:/Eclipse/2.%20Epsilon/epsilon%20modeling/plugins/com.sun.jna.platform_4.1.0.v20170410-1117.jar,4,false
 dc_abstract,0.1.0.qualifier,file:/C:/td/ws_class_epsilon/dc/dc/dc_abstract/,4,false
+dc_abstract.edit,1.0.0.qualifier,file:/C:/td/ws_class_epsilon/dc/dc/dc_abstract.edit/,4,false
+dc_abstract.editor,1.0.0.qualifier,file:/C:/td/ws_class_epsilon/dc/dc/dc_abstract.editor/,4,false
+dc_abstract.tests,1.0.0.qualifier,file:/C:/td/ws_class_epsilon/dc/dc/dc_abstract.tests/,4,false
 dc_concrete,0.1.0.qualifier,file:/C:/td/ws_class_epsilon/dc/dc/dc_concrete/,4,false
 dc_concrete.diagram,1.0.0.qualifier,file:/C:/td/ws_class_epsilon/dc/dc/dc_concrete.diagram/,4,false
 dc_concrete.edit,1.0.0.qualifier,file:/C:/td/ws_class_epsilon/dc/dc/dc_concrete.edit/,4,false

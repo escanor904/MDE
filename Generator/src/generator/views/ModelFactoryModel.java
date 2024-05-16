@@ -37,6 +37,8 @@ import concretemodel.ModelFactoryConcrete;
 import concretemodel.PackageConcreteAdj;
 import concretemodel.ProjectAdj;
 import concretemodel.RelationshipAdj;
+import dslrelational.DslrelationalFactory;
+import dslrelational.ModelFactoryRelational;
 import uidiagram.AdjButton;
 import uidiagram.AdjCheckBox;
 import uidiagram.AdjCheckedListBox;
@@ -82,6 +84,7 @@ public class ModelFactoryModel {
 	ModelFactoryConcrete modelFactoryConcreta = ConcretemodelFactory.eINSTANCE.createModelFactoryConcrete();
 	ModelFactoryAbstract modelFactoryAbstracta = AbstractmodelFactoryImpl.eINSTANCE.createModelFactoryAbstract();
 	ModelFactoryUI modelFactoryUIDiagram = UidiagramFactory.eINSTANCE.createModelFactoryUI();
+	ModelFactoryRelational modelFactoryRelational = DslrelationalFactory.eINSTANCE.createModelFactoryRelational();
 	
 	//Variable de la ruta del proyecto
 	private String rutaProyecto;
@@ -93,8 +96,8 @@ public class ModelFactoryModel {
 		modelFactoryConcreta = loadConcreteModel();
 		modelFactoryAbstracta = loadAbstractaModel();
 		modelFactoryUIDiagram = loadUIDiagramModel();
+		modelFactoryRelational = loadRelationalModel();
 	}
-	
 	
 
 	// -----------------------------------------------------------------Load and
@@ -171,6 +174,29 @@ public class ModelFactoryModel {
 	}
 	
 	
+	/**
+	 * Este metodo permite cargar el modelFactoryRelational del diagrama de clases
+	 * @return
+	 */
+	private ModelFactoryRelational loadRelationalModel() {
+		ModelFactoryRelational modelFactoryRelational = null;
+		UidiagramPackage whoownmePackage = UidiagramPackage.eINSTANCE;
+		org.eclipse.emf.ecore.resource.ResourceSet resourceSet = new org.eclipse.emf.ecore.resource.impl.ResourceSetImpl();
+		org.eclipse.emf.common.util.URI uri = org.eclipse.emf.common.util.URI
+				.createURI("platform:/resource/test/src/model.dslrelational");
+		org.eclipse.emf.ecore.resource.Resource resource = resourceSet.createResource(uri);
+		try {
+			resource.load(null);
+			modelFactoryRelational = (ModelFactoryRelational) resource.getContents().get(0);
+			System.out.println("loaded: " + modelFactoryRelational);
+		} catch (java.io.IOException e) {
+			System.out.println("failed to read " + uri);
+			System.out.println(e);
+		}
+		return modelFactoryRelational;
+	}
+	
+	
 
 	/**
 	 * Este metodo permite guardar el ModelFactorySpecific del diagrama de clases
@@ -216,7 +242,7 @@ public class ModelFactoryModel {
 	}
 	
 	/**
-	 * 
+	 *  Este metodo permite guardar el ModelFactoryUI del diagrama de clases
 	 */
 	public void saveUIDiagram() {
 
@@ -227,6 +253,26 @@ public class ModelFactoryModel {
 
 		org.eclipse.emf.ecore.resource.Resource resource = resourceSet.createResource(uri);
 		resource.getContents().add(modelFactoryUIDiagram);
+		try {
+			resource.save(java.util.Collections.EMPTY_MAP);
+		} catch (java.io.IOException e) {
+			// TO-DO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * 
+	 */
+	public void saveRelatinal() {
+
+		// EXISTEN 2 FORMAS DE GUARDAR EL RECURSO
+		org.eclipse.emf.common.util.URI uri = org.eclipse.emf.common.util.URI
+				.createURI("platform:/resource/test/src/model.dslrelational");
+		org.eclipse.emf.ecore.resource.ResourceSet resourceSet = new org.eclipse.emf.ecore.resource.impl.ResourceSetImpl();
+
+		org.eclipse.emf.ecore.resource.Resource resource = resourceSet.createResource(uri);
+		resource.getContents().add(modelFactoryRelational);
 		try {
 			resource.save(java.util.Collections.EMPTY_MAP);
 		} catch (java.io.IOException e) {
@@ -599,6 +645,9 @@ public class ModelFactoryModel {
 	 */
 	private PackageAdj obtenerPackagePadre(String path, PackageAdj packageRaizAdj) {
 
+		if (path == null)
+			return packageRaizAdj;
+		
 		String[] pathArray = path.split("/");
 		PackageAdj padre = packageRaizAdj;
 
@@ -1400,6 +1449,19 @@ public class ModelFactoryModel {
 	}
 
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 
 	//---------------------------------------------------INPUTS
@@ -1447,6 +1509,27 @@ public class ModelFactoryModel {
 		
 	}
 	
+	// ----------------------------------------- Tranformacion M2M de parte abstracta a parte a relacional -------------------------------------------
+	
+	
+		/**
+		 * Este metodo realiza la transformacion del modelo especifico a el modelo
+		 * abstracto y a su vez, al modelo relacional
+		 */
+		public void transformationM2MRelational() throws Exception {
+			transformationM2M();
+			modelFactoryAbstracta = loadAbstractaModel();
+			modelFactoryRelational = loadRelationalModel();
+			modelFactoryRelational.getLstDataProject().clear();
+			
+			for (abstractmodel.ProjectAdj projectAbstract : modelFactoryAbstracta.getListProjects()) {
+				abstractmodel.PackageAdj paqueteRaiz = projectAbstract.getLstPackageAdj().get(0);
+				
+				for (abstractmodel.ClassAdj clase : paqueteRaiz.getLstClassAdj()) {
+					
+				}
+			}
+		}
 	
 	//-------------------------------------------------------FOLDERS Y ARCHIVOS
 	
