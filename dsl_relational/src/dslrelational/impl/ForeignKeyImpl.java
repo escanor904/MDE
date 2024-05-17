@@ -8,7 +8,6 @@ import dslrelational.PrimaryKey;
 import dslrelational.Table;
 
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
@@ -32,7 +31,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  */
 public class ForeignKeyImpl extends EObjectImpl implements ForeignKey {
 	/**
-	 * The cached value of the '{@link #getOwnedByTable() <em>Owned By Table</em>}' containment reference.
+	 * The cached value of the '{@link #getOwnedByTable() <em>Owned By Table</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getOwnedByTable()
@@ -42,7 +41,7 @@ public class ForeignKeyImpl extends EObjectImpl implements ForeignKey {
 	protected Table ownedByTable;
 
 	/**
-	 * The cached value of the '{@link #getThePrimaryKey() <em>The Primary Key</em>}' containment reference.
+	 * The cached value of the '{@link #getThePrimaryKey() <em>The Primary Key</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getThePrimaryKey()
@@ -76,6 +75,14 @@ public class ForeignKeyImpl extends EObjectImpl implements ForeignKey {
 	 * @generated
 	 */
 	public Table getOwnedByTable() {
+		if (ownedByTable != null && ownedByTable.eIsProxy()) {
+			InternalEObject oldOwnedByTable = (InternalEObject)ownedByTable;
+			ownedByTable = (Table)eResolveProxy(oldOwnedByTable);
+			if (ownedByTable != oldOwnedByTable) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, DslrelationalPackage.FOREIGN_KEY__OWNED_BY_TABLE, oldOwnedByTable, ownedByTable));
+			}
+		}
 		return ownedByTable;
 	}
 
@@ -84,14 +91,8 @@ public class ForeignKeyImpl extends EObjectImpl implements ForeignKey {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOwnedByTable(Table newOwnedByTable, NotificationChain msgs) {
-		Table oldOwnedByTable = ownedByTable;
-		ownedByTable = newOwnedByTable;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, DslrelationalPackage.FOREIGN_KEY__OWNED_BY_TABLE, oldOwnedByTable, newOwnedByTable);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
+	public Table basicGetOwnedByTable() {
+		return ownedByTable;
 	}
 
 	/**
@@ -100,17 +101,10 @@ public class ForeignKeyImpl extends EObjectImpl implements ForeignKey {
 	 * @generated
 	 */
 	public void setOwnedByTable(Table newOwnedByTable) {
-		if (newOwnedByTable != ownedByTable) {
-			NotificationChain msgs = null;
-			if (ownedByTable != null)
-				msgs = ((InternalEObject)ownedByTable).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - DslrelationalPackage.FOREIGN_KEY__OWNED_BY_TABLE, null, msgs);
-			if (newOwnedByTable != null)
-				msgs = ((InternalEObject)newOwnedByTable).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - DslrelationalPackage.FOREIGN_KEY__OWNED_BY_TABLE, null, msgs);
-			msgs = basicSetOwnedByTable(newOwnedByTable, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DslrelationalPackage.FOREIGN_KEY__OWNED_BY_TABLE, newOwnedByTable, newOwnedByTable));
+		Table oldOwnedByTable = ownedByTable;
+		ownedByTable = newOwnedByTable;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, DslrelationalPackage.FOREIGN_KEY__OWNED_BY_TABLE, oldOwnedByTable, ownedByTable));
 	}
 
 	/**
@@ -119,6 +113,14 @@ public class ForeignKeyImpl extends EObjectImpl implements ForeignKey {
 	 * @generated
 	 */
 	public PrimaryKey getThePrimaryKey() {
+		if (thePrimaryKey != null && thePrimaryKey.eIsProxy()) {
+			InternalEObject oldThePrimaryKey = (InternalEObject)thePrimaryKey;
+			thePrimaryKey = (PrimaryKey)eResolveProxy(oldThePrimaryKey);
+			if (thePrimaryKey != oldThePrimaryKey) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, DslrelationalPackage.FOREIGN_KEY__THE_PRIMARY_KEY, oldThePrimaryKey, thePrimaryKey));
+			}
+		}
 		return thePrimaryKey;
 	}
 
@@ -127,14 +129,8 @@ public class ForeignKeyImpl extends EObjectImpl implements ForeignKey {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetThePrimaryKey(PrimaryKey newThePrimaryKey, NotificationChain msgs) {
-		PrimaryKey oldThePrimaryKey = thePrimaryKey;
-		thePrimaryKey = newThePrimaryKey;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, DslrelationalPackage.FOREIGN_KEY__THE_PRIMARY_KEY, oldThePrimaryKey, newThePrimaryKey);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
+	public PrimaryKey basicGetThePrimaryKey() {
+		return thePrimaryKey;
 	}
 
 	/**
@@ -143,33 +139,10 @@ public class ForeignKeyImpl extends EObjectImpl implements ForeignKey {
 	 * @generated
 	 */
 	public void setThePrimaryKey(PrimaryKey newThePrimaryKey) {
-		if (newThePrimaryKey != thePrimaryKey) {
-			NotificationChain msgs = null;
-			if (thePrimaryKey != null)
-				msgs = ((InternalEObject)thePrimaryKey).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - DslrelationalPackage.FOREIGN_KEY__THE_PRIMARY_KEY, null, msgs);
-			if (newThePrimaryKey != null)
-				msgs = ((InternalEObject)newThePrimaryKey).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - DslrelationalPackage.FOREIGN_KEY__THE_PRIMARY_KEY, null, msgs);
-			msgs = basicSetThePrimaryKey(newThePrimaryKey, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DslrelationalPackage.FOREIGN_KEY__THE_PRIMARY_KEY, newThePrimaryKey, newThePrimaryKey));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case DslrelationalPackage.FOREIGN_KEY__OWNED_BY_TABLE:
-				return basicSetOwnedByTable(null, msgs);
-			case DslrelationalPackage.FOREIGN_KEY__THE_PRIMARY_KEY:
-				return basicSetThePrimaryKey(null, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
+		PrimaryKey oldThePrimaryKey = thePrimaryKey;
+		thePrimaryKey = newThePrimaryKey;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, DslrelationalPackage.FOREIGN_KEY__THE_PRIMARY_KEY, oldThePrimaryKey, thePrimaryKey));
 	}
 
 	/**
@@ -181,9 +154,11 @@ public class ForeignKeyImpl extends EObjectImpl implements ForeignKey {
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case DslrelationalPackage.FOREIGN_KEY__OWNED_BY_TABLE:
-				return getOwnedByTable();
+				if (resolve) return getOwnedByTable();
+				return basicGetOwnedByTable();
 			case DslrelationalPackage.FOREIGN_KEY__THE_PRIMARY_KEY:
-				return getThePrimaryKey();
+				if (resolve) return getThePrimaryKey();
+				return basicGetThePrimaryKey();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}

@@ -7,7 +7,6 @@ import dslrelational.Function;
 import dslrelational.Parameter;
 
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
@@ -72,7 +71,7 @@ public class ParameterImpl extends EObjectImpl implements Parameter {
 	protected String columnType = COLUMN_TYPE_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getOwnedByFunction() <em>Owned By Function</em>}' containment reference.
+	 * The cached value of the '{@link #getOwnedByFunction() <em>Owned By Function</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getOwnedByFunction()
@@ -148,6 +147,14 @@ public class ParameterImpl extends EObjectImpl implements Parameter {
 	 * @generated
 	 */
 	public Function getOwnedByFunction() {
+		if (ownedByFunction != null && ownedByFunction.eIsProxy()) {
+			InternalEObject oldOwnedByFunction = (InternalEObject)ownedByFunction;
+			ownedByFunction = (Function)eResolveProxy(oldOwnedByFunction);
+			if (ownedByFunction != oldOwnedByFunction) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, DslrelationalPackage.PARAMETER__OWNED_BY_FUNCTION, oldOwnedByFunction, ownedByFunction));
+			}
+		}
 		return ownedByFunction;
 	}
 
@@ -156,14 +163,8 @@ public class ParameterImpl extends EObjectImpl implements Parameter {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOwnedByFunction(Function newOwnedByFunction, NotificationChain msgs) {
-		Function oldOwnedByFunction = ownedByFunction;
-		ownedByFunction = newOwnedByFunction;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, DslrelationalPackage.PARAMETER__OWNED_BY_FUNCTION, oldOwnedByFunction, newOwnedByFunction);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
+	public Function basicGetOwnedByFunction() {
+		return ownedByFunction;
 	}
 
 	/**
@@ -172,31 +173,10 @@ public class ParameterImpl extends EObjectImpl implements Parameter {
 	 * @generated
 	 */
 	public void setOwnedByFunction(Function newOwnedByFunction) {
-		if (newOwnedByFunction != ownedByFunction) {
-			NotificationChain msgs = null;
-			if (ownedByFunction != null)
-				msgs = ((InternalEObject)ownedByFunction).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - DslrelationalPackage.PARAMETER__OWNED_BY_FUNCTION, null, msgs);
-			if (newOwnedByFunction != null)
-				msgs = ((InternalEObject)newOwnedByFunction).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - DslrelationalPackage.PARAMETER__OWNED_BY_FUNCTION, null, msgs);
-			msgs = basicSetOwnedByFunction(newOwnedByFunction, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DslrelationalPackage.PARAMETER__OWNED_BY_FUNCTION, newOwnedByFunction, newOwnedByFunction));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case DslrelationalPackage.PARAMETER__OWNED_BY_FUNCTION:
-				return basicSetOwnedByFunction(null, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
+		Function oldOwnedByFunction = ownedByFunction;
+		ownedByFunction = newOwnedByFunction;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, DslrelationalPackage.PARAMETER__OWNED_BY_FUNCTION, oldOwnedByFunction, ownedByFunction));
 	}
 
 	/**
@@ -212,7 +192,8 @@ public class ParameterImpl extends EObjectImpl implements Parameter {
 			case DslrelationalPackage.PARAMETER__COLUMN_TYPE:
 				return getColumnType();
 			case DslrelationalPackage.PARAMETER__OWNED_BY_FUNCTION:
-				return getOwnedByFunction();
+				if (resolve) return getOwnedByFunction();
+				return basicGetOwnedByFunction();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}

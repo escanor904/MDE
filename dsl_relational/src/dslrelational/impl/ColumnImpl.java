@@ -10,7 +10,6 @@ import dslrelational.Table;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -20,8 +19,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -102,7 +100,7 @@ public class ColumnImpl extends EObjectImpl implements Column {
 	protected Boolean isNullable = IS_NULLABLE_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getOwnedByTable() <em>Owned By Table</em>}' containment reference.
+	 * The cached value of the '{@link #getOwnedByTable() <em>Owned By Table</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getOwnedByTable()
@@ -112,7 +110,7 @@ public class ColumnImpl extends EObjectImpl implements Column {
 	protected Table ownedByTable;
 
 	/**
-	 * The cached value of the '{@link #getLstPrimaryKey() <em>Lst Primary Key</em>}' containment reference list.
+	 * The cached value of the '{@link #getLstPrimaryKey() <em>Lst Primary Key</em>}' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getLstPrimaryKey()
@@ -209,6 +207,14 @@ public class ColumnImpl extends EObjectImpl implements Column {
 	 * @generated
 	 */
 	public Table getOwnedByTable() {
+		if (ownedByTable != null && ownedByTable.eIsProxy()) {
+			InternalEObject oldOwnedByTable = (InternalEObject)ownedByTable;
+			ownedByTable = (Table)eResolveProxy(oldOwnedByTable);
+			if (ownedByTable != oldOwnedByTable) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, DslrelationalPackage.COLUMN__OWNED_BY_TABLE, oldOwnedByTable, ownedByTable));
+			}
+		}
 		return ownedByTable;
 	}
 
@@ -217,14 +223,8 @@ public class ColumnImpl extends EObjectImpl implements Column {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOwnedByTable(Table newOwnedByTable, NotificationChain msgs) {
-		Table oldOwnedByTable = ownedByTable;
-		ownedByTable = newOwnedByTable;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, DslrelationalPackage.COLUMN__OWNED_BY_TABLE, oldOwnedByTable, newOwnedByTable);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
+	public Table basicGetOwnedByTable() {
+		return ownedByTable;
 	}
 
 	/**
@@ -233,17 +233,10 @@ public class ColumnImpl extends EObjectImpl implements Column {
 	 * @generated
 	 */
 	public void setOwnedByTable(Table newOwnedByTable) {
-		if (newOwnedByTable != ownedByTable) {
-			NotificationChain msgs = null;
-			if (ownedByTable != null)
-				msgs = ((InternalEObject)ownedByTable).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - DslrelationalPackage.COLUMN__OWNED_BY_TABLE, null, msgs);
-			if (newOwnedByTable != null)
-				msgs = ((InternalEObject)newOwnedByTable).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - DslrelationalPackage.COLUMN__OWNED_BY_TABLE, null, msgs);
-			msgs = basicSetOwnedByTable(newOwnedByTable, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DslrelationalPackage.COLUMN__OWNED_BY_TABLE, newOwnedByTable, newOwnedByTable));
+		Table oldOwnedByTable = ownedByTable;
+		ownedByTable = newOwnedByTable;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, DslrelationalPackage.COLUMN__OWNED_BY_TABLE, oldOwnedByTable, ownedByTable));
 	}
 
 	/**
@@ -253,25 +246,9 @@ public class ColumnImpl extends EObjectImpl implements Column {
 	 */
 	public EList<PrimaryKey> getLstPrimaryKey() {
 		if (lstPrimaryKey == null) {
-			lstPrimaryKey = new EObjectContainmentEList<PrimaryKey>(PrimaryKey.class, this, DslrelationalPackage.COLUMN__LST_PRIMARY_KEY);
+			lstPrimaryKey = new EObjectResolvingEList<PrimaryKey>(PrimaryKey.class, this, DslrelationalPackage.COLUMN__LST_PRIMARY_KEY);
 		}
 		return lstPrimaryKey;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case DslrelationalPackage.COLUMN__OWNED_BY_TABLE:
-				return basicSetOwnedByTable(null, msgs);
-			case DslrelationalPackage.COLUMN__LST_PRIMARY_KEY:
-				return ((InternalEList<?>)getLstPrimaryKey()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -289,7 +266,8 @@ public class ColumnImpl extends EObjectImpl implements Column {
 			case DslrelationalPackage.COLUMN__IS_NULLABLE:
 				return getIsNullable();
 			case DslrelationalPackage.COLUMN__OWNED_BY_TABLE:
-				return getOwnedByTable();
+				if (resolve) return getOwnedByTable();
+				return basicGetOwnedByTable();
 			case DslrelationalPackage.COLUMN__LST_PRIMARY_KEY:
 				return getLstPrimaryKey();
 		}

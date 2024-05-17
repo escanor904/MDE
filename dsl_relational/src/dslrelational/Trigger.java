@@ -131,52 +131,52 @@ public interface Trigger extends EObject {
 	void setBody(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Owned By Schema</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Owned By Schema</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Owned By Schema</em>' containment reference isn't clear,
+	 * If the meaning of the '<em>Owned By Schema</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Owned By Schema</em>' containment reference.
+	 * @return the value of the '<em>Owned By Schema</em>' reference.
 	 * @see #setOwnedBySchema(Schema)
 	 * @see dslrelational.DslrelationalPackage#getTrigger_OwnedBySchema()
-	 * @model containment="true"
+	 * @model
 	 * @generated
 	 */
 	Schema getOwnedBySchema();
 
 	/**
-	 * Sets the value of the '{@link dslrelational.Trigger#getOwnedBySchema <em>Owned By Schema</em>}' containment reference.
+	 * Sets the value of the '{@link dslrelational.Trigger#getOwnedBySchema <em>Owned By Schema</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Owned By Schema</em>' containment reference.
+	 * @param value the new value of the '<em>Owned By Schema</em>' reference.
 	 * @see #getOwnedBySchema()
 	 * @generated
 	 */
 	void setOwnedBySchema(Schema value);
 
 	/**
-	 * Returns the value of the '<em><b>The Table</b></em>' containment reference.
+	 * Returns the value of the '<em><b>The Table</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>The Table</em>' containment reference isn't clear,
+	 * If the meaning of the '<em>The Table</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>The Table</em>' containment reference.
+	 * @return the value of the '<em>The Table</em>' reference.
 	 * @see #setTheTable(Table)
 	 * @see dslrelational.DslrelationalPackage#getTrigger_TheTable()
-	 * @model containment="true"
+	 * @model
 	 * @generated
 	 */
 	Table getTheTable();
 
 	/**
-	 * Sets the value of the '{@link dslrelational.Trigger#getTheTable <em>The Table</em>}' containment reference.
+	 * Sets the value of the '{@link dslrelational.Trigger#getTheTable <em>The Table</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>The Table</em>' containment reference.
+	 * @param value the new value of the '<em>The Table</em>' reference.
 	 * @see #getTheTable()
 	 * @generated
 	 */

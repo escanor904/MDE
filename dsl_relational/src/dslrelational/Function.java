@@ -106,26 +106,26 @@ public interface Function extends EObject {
 	void setBody(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Owned By Schema</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Owned By Schema</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Owned By Schema</em>' containment reference isn't clear,
+	 * If the meaning of the '<em>Owned By Schema</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Owned By Schema</em>' containment reference.
+	 * @return the value of the '<em>Owned By Schema</em>' reference.
 	 * @see #setOwnedBySchema(Schema)
 	 * @see dslrelational.DslrelationalPackage#getFunction_OwnedBySchema()
-	 * @model containment="true"
+	 * @model
 	 * @generated
 	 */
 	Schema getOwnedBySchema();
 
 	/**
-	 * Sets the value of the '{@link dslrelational.Function#getOwnedBySchema <em>Owned By Schema</em>}' containment reference.
+	 * Sets the value of the '{@link dslrelational.Function#getOwnedBySchema <em>Owned By Schema</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Owned By Schema</em>' containment reference.
+	 * @param value the new value of the '<em>Owned By Schema</em>' reference.
 	 * @see #getOwnedBySchema()
 	 * @generated
 	 */

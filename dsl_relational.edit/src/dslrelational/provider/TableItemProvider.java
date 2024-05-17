@@ -64,6 +64,8 @@ public class TableItemProvider
 			super.getPropertyDescriptors(object);
 
 			addNamePropertyDescriptor(object);
+			addOwnedBySchemaPropertyDescriptor(object);
+			addLstTriggerPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -91,6 +93,50 @@ public class TableItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Owned By Schema feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addOwnedBySchemaPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Table_ownedBySchema_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Table_ownedBySchema_feature", "_UI_Table_type"),
+				 DslrelationalPackage.Literals.TABLE__OWNED_BY_SCHEMA,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Lst Trigger feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addLstTriggerPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Table_lstTrigger_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Table_lstTrigger_feature", "_UI_Table_type"),
+				 DslrelationalPackage.Literals.TABLE__LST_TRIGGER,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
 	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
 	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
@@ -102,8 +148,6 @@ public class TableItemProvider
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(DslrelationalPackage.Literals.TABLE__OWNED_BY_SCHEMA);
-			childrenFeatures.add(DslrelationalPackage.Literals.TABLE__LST_TRIGGER);
 			childrenFeatures.add(DslrelationalPackage.Literals.TABLE__LST_COLUMN);
 			childrenFeatures.add(DslrelationalPackage.Literals.TABLE__LST_PRIMARY_KEY);
 			childrenFeatures.add(DslrelationalPackage.Literals.TABLE__LST_FOREIGN_KEY);
@@ -165,8 +209,6 @@ public class TableItemProvider
 			case DslrelationalPackage.TABLE__NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			case DslrelationalPackage.TABLE__OWNED_BY_SCHEMA:
-			case DslrelationalPackage.TABLE__LST_TRIGGER:
 			case DslrelationalPackage.TABLE__LST_COLUMN:
 			case DslrelationalPackage.TABLE__LST_PRIMARY_KEY:
 			case DslrelationalPackage.TABLE__LST_FOREIGN_KEY:
@@ -186,16 +228,6 @@ public class TableItemProvider
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
-
-		newChildDescriptors.add
-			(createChildParameter
-				(DslrelationalPackage.Literals.TABLE__OWNED_BY_SCHEMA,
-				 DslrelationalFactory.eINSTANCE.createSchema()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(DslrelationalPackage.Literals.TABLE__LST_TRIGGER,
-				 DslrelationalFactory.eINSTANCE.createTrigger()));
 
 		newChildDescriptors.add
 			(createChildParameter

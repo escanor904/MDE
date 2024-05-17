@@ -106,43 +106,43 @@ public interface Column extends EObject {
 	void setIsNullable(Boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Owned By Table</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Owned By Table</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Owned By Table</em>' containment reference isn't clear,
+	 * If the meaning of the '<em>Owned By Table</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Owned By Table</em>' containment reference.
+	 * @return the value of the '<em>Owned By Table</em>' reference.
 	 * @see #setOwnedByTable(Table)
 	 * @see dslrelational.DslrelationalPackage#getColumn_OwnedByTable()
-	 * @model containment="true"
+	 * @model
 	 * @generated
 	 */
 	Table getOwnedByTable();
 
 	/**
-	 * Sets the value of the '{@link dslrelational.Column#getOwnedByTable <em>Owned By Table</em>}' containment reference.
+	 * Sets the value of the '{@link dslrelational.Column#getOwnedByTable <em>Owned By Table</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Owned By Table</em>' containment reference.
+	 * @param value the new value of the '<em>Owned By Table</em>' reference.
 	 * @see #getOwnedByTable()
 	 * @generated
 	 */
 	void setOwnedByTable(Table value);
 
 	/**
-	 * Returns the value of the '<em><b>Lst Primary Key</b></em>' containment reference list.
+	 * Returns the value of the '<em><b>Lst Primary Key</b></em>' reference list.
 	 * The list contents are of type {@link dslrelational.PrimaryKey}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Lst Primary Key</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Lst Primary Key</em>' reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Lst Primary Key</em>' containment reference list.
+	 * @return the value of the '<em>Lst Primary Key</em>' reference list.
 	 * @see dslrelational.DslrelationalPackage#getColumn_LstPrimaryKey()
-	 * @model containment="true"
+	 * @model
 	 * @generated
 	 */
 	EList<PrimaryKey> getLstPrimaryKey();

@@ -21,8 +21,8 @@
     </genClasses>
     <genClasses ecoreClass="dsl_relational.ecore#//Table">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dsl_relational.ecore#//Table/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//Table/ownedBySchema"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//Table/lstTrigger"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//Table/ownedBySchema"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//Table/lstTrigger"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//Table/lstColumn"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//Table/lstPrimaryKey"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//Table/lstForeignKey"/>
@@ -31,37 +31,37 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dsl_relational.ecore#//Column/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dsl_relational.ecore#//Column/columnType"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dsl_relational.ecore#//Column/isNullable"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//Column/ownedByTable"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//Column/lstPrimaryKey"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//Column/ownedByTable"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//Column/lstPrimaryKey"/>
     </genClasses>
     <genClasses ecoreClass="dsl_relational.ecore#//PrimaryKey">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//PrimaryKey/ownedByTable"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//PrimaryKey/lstForeignKey"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//PrimaryKey/theColumn"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//PrimaryKey/ownedByTable"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//PrimaryKey/lstForeignKey"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//PrimaryKey/theColumn"/>
     </genClasses>
     <genClasses ecoreClass="dsl_relational.ecore#//ForeignKey">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//ForeignKey/ownedByTable"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//ForeignKey/thePrimaryKey"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//ForeignKey/ownedByTable"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//ForeignKey/thePrimaryKey"/>
     </genClasses>
     <genClasses ecoreClass="dsl_relational.ecore#//Trigger">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dsl_relational.ecore#//Trigger/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dsl_relational.ecore#//Trigger/statementTime"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dsl_relational.ecore#//Trigger/event"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dsl_relational.ecore#//Trigger/body"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//Trigger/ownedBySchema"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//Trigger/theTable"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//Trigger/ownedBySchema"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//Trigger/theTable"/>
     </genClasses>
     <genClasses ecoreClass="dsl_relational.ecore#//Function">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dsl_relational.ecore#//Function/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dsl_relational.ecore#//Function/returnType"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dsl_relational.ecore#//Function/body"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//Function/ownedBySchema"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//Function/ownedBySchema"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//Function/lstParameter"/>
     </genClasses>
     <genClasses ecoreClass="dsl_relational.ecore#//Parameter">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dsl_relational.ecore#//Parameter/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dsl_relational.ecore#//Parameter/columnType"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//Parameter/ownedByFunction"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dsl_relational.ecore#//Parameter/ownedByFunction"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

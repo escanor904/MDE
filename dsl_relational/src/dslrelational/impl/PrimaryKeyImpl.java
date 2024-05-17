@@ -11,7 +11,6 @@ import dslrelational.Table;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -21,8 +20,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -41,7 +39,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class PrimaryKeyImpl extends EObjectImpl implements PrimaryKey {
 	/**
-	 * The cached value of the '{@link #getOwnedByTable() <em>Owned By Table</em>}' containment reference.
+	 * The cached value of the '{@link #getOwnedByTable() <em>Owned By Table</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getOwnedByTable()
@@ -51,7 +49,7 @@ public class PrimaryKeyImpl extends EObjectImpl implements PrimaryKey {
 	protected Table ownedByTable;
 
 	/**
-	 * The cached value of the '{@link #getLstForeignKey() <em>Lst Foreign Key</em>}' containment reference list.
+	 * The cached value of the '{@link #getLstForeignKey() <em>Lst Foreign Key</em>}' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getLstForeignKey()
@@ -61,7 +59,7 @@ public class PrimaryKeyImpl extends EObjectImpl implements PrimaryKey {
 	protected EList<ForeignKey> lstForeignKey;
 
 	/**
-	 * The cached value of the '{@link #getTheColumn() <em>The Column</em>}' containment reference.
+	 * The cached value of the '{@link #getTheColumn() <em>The Column</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getTheColumn()
@@ -95,6 +93,14 @@ public class PrimaryKeyImpl extends EObjectImpl implements PrimaryKey {
 	 * @generated
 	 */
 	public Table getOwnedByTable() {
+		if (ownedByTable != null && ownedByTable.eIsProxy()) {
+			InternalEObject oldOwnedByTable = (InternalEObject)ownedByTable;
+			ownedByTable = (Table)eResolveProxy(oldOwnedByTable);
+			if (ownedByTable != oldOwnedByTable) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, DslrelationalPackage.PRIMARY_KEY__OWNED_BY_TABLE, oldOwnedByTable, ownedByTable));
+			}
+		}
 		return ownedByTable;
 	}
 
@@ -103,14 +109,8 @@ public class PrimaryKeyImpl extends EObjectImpl implements PrimaryKey {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOwnedByTable(Table newOwnedByTable, NotificationChain msgs) {
-		Table oldOwnedByTable = ownedByTable;
-		ownedByTable = newOwnedByTable;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, DslrelationalPackage.PRIMARY_KEY__OWNED_BY_TABLE, oldOwnedByTable, newOwnedByTable);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
+	public Table basicGetOwnedByTable() {
+		return ownedByTable;
 	}
 
 	/**
@@ -119,17 +119,10 @@ public class PrimaryKeyImpl extends EObjectImpl implements PrimaryKey {
 	 * @generated
 	 */
 	public void setOwnedByTable(Table newOwnedByTable) {
-		if (newOwnedByTable != ownedByTable) {
-			NotificationChain msgs = null;
-			if (ownedByTable != null)
-				msgs = ((InternalEObject)ownedByTable).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - DslrelationalPackage.PRIMARY_KEY__OWNED_BY_TABLE, null, msgs);
-			if (newOwnedByTable != null)
-				msgs = ((InternalEObject)newOwnedByTable).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - DslrelationalPackage.PRIMARY_KEY__OWNED_BY_TABLE, null, msgs);
-			msgs = basicSetOwnedByTable(newOwnedByTable, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DslrelationalPackage.PRIMARY_KEY__OWNED_BY_TABLE, newOwnedByTable, newOwnedByTable));
+		Table oldOwnedByTable = ownedByTable;
+		ownedByTable = newOwnedByTable;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, DslrelationalPackage.PRIMARY_KEY__OWNED_BY_TABLE, oldOwnedByTable, ownedByTable));
 	}
 
 	/**
@@ -139,7 +132,7 @@ public class PrimaryKeyImpl extends EObjectImpl implements PrimaryKey {
 	 */
 	public EList<ForeignKey> getLstForeignKey() {
 		if (lstForeignKey == null) {
-			lstForeignKey = new EObjectContainmentEList<ForeignKey>(ForeignKey.class, this, DslrelationalPackage.PRIMARY_KEY__LST_FOREIGN_KEY);
+			lstForeignKey = new EObjectResolvingEList<ForeignKey>(ForeignKey.class, this, DslrelationalPackage.PRIMARY_KEY__LST_FOREIGN_KEY);
 		}
 		return lstForeignKey;
 	}
@@ -150,6 +143,14 @@ public class PrimaryKeyImpl extends EObjectImpl implements PrimaryKey {
 	 * @generated
 	 */
 	public Column getTheColumn() {
+		if (theColumn != null && theColumn.eIsProxy()) {
+			InternalEObject oldTheColumn = (InternalEObject)theColumn;
+			theColumn = (Column)eResolveProxy(oldTheColumn);
+			if (theColumn != oldTheColumn) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, DslrelationalPackage.PRIMARY_KEY__THE_COLUMN, oldTheColumn, theColumn));
+			}
+		}
 		return theColumn;
 	}
 
@@ -158,14 +159,8 @@ public class PrimaryKeyImpl extends EObjectImpl implements PrimaryKey {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTheColumn(Column newTheColumn, NotificationChain msgs) {
-		Column oldTheColumn = theColumn;
-		theColumn = newTheColumn;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, DslrelationalPackage.PRIMARY_KEY__THE_COLUMN, oldTheColumn, newTheColumn);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
+	public Column basicGetTheColumn() {
+		return theColumn;
 	}
 
 	/**
@@ -174,35 +169,10 @@ public class PrimaryKeyImpl extends EObjectImpl implements PrimaryKey {
 	 * @generated
 	 */
 	public void setTheColumn(Column newTheColumn) {
-		if (newTheColumn != theColumn) {
-			NotificationChain msgs = null;
-			if (theColumn != null)
-				msgs = ((InternalEObject)theColumn).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - DslrelationalPackage.PRIMARY_KEY__THE_COLUMN, null, msgs);
-			if (newTheColumn != null)
-				msgs = ((InternalEObject)newTheColumn).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - DslrelationalPackage.PRIMARY_KEY__THE_COLUMN, null, msgs);
-			msgs = basicSetTheColumn(newTheColumn, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DslrelationalPackage.PRIMARY_KEY__THE_COLUMN, newTheColumn, newTheColumn));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case DslrelationalPackage.PRIMARY_KEY__OWNED_BY_TABLE:
-				return basicSetOwnedByTable(null, msgs);
-			case DslrelationalPackage.PRIMARY_KEY__LST_FOREIGN_KEY:
-				return ((InternalEList<?>)getLstForeignKey()).basicRemove(otherEnd, msgs);
-			case DslrelationalPackage.PRIMARY_KEY__THE_COLUMN:
-				return basicSetTheColumn(null, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
+		Column oldTheColumn = theColumn;
+		theColumn = newTheColumn;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, DslrelationalPackage.PRIMARY_KEY__THE_COLUMN, oldTheColumn, theColumn));
 	}
 
 	/**
@@ -214,11 +184,13 @@ public class PrimaryKeyImpl extends EObjectImpl implements PrimaryKey {
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case DslrelationalPackage.PRIMARY_KEY__OWNED_BY_TABLE:
-				return getOwnedByTable();
+				if (resolve) return getOwnedByTable();
+				return basicGetOwnedByTable();
 			case DslrelationalPackage.PRIMARY_KEY__LST_FOREIGN_KEY:
 				return getLstForeignKey();
 			case DslrelationalPackage.PRIMARY_KEY__THE_COLUMN:
-				return getTheColumn();
+				if (resolve) return getTheColumn();
+				return basicGetTheColumn();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}

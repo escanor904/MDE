@@ -20,8 +20,8 @@ class Schema {
 
 class Table {
 	attr String name;
-	val Schema ownedBySchema;
-    val Trigger [*] lstTrigger;
+	ref Schema ownedBySchema;
+    ref Trigger [*] lstTrigger;
     val Column [*] lstColumn;
     val PrimaryKey [*] lstPrimaryKey;
     val ForeignKey [*] lstForeignKey;
@@ -31,19 +31,19 @@ class Column {
 	attr String name;
 	attr String columnType;
 	attr Boolean isNullable;
-	val Table ownedByTable;
-    val PrimaryKey [*] lstPrimaryKey;
+	ref Table ownedByTable;
+    ref PrimaryKey [*] lstPrimaryKey;
 }
 
 class PrimaryKey {
-	val Table ownedByTable;
-	val ForeignKey [*] lstForeignKey;
-	val Column theColumn;
+	ref Table ownedByTable;
+	ref ForeignKey [*] lstForeignKey;
+	ref Column theColumn;
 }
 
 class ForeignKey {
-	val Table ownedByTable;
-	val PrimaryKey thePrimaryKey;
+	ref Table ownedByTable;
+	ref PrimaryKey thePrimaryKey;
 }
 
 
@@ -55,20 +55,20 @@ class Trigger {
 	attr String statementTime;
 	attr String event;
 	attr String body;
-	val Schema ownedBySchema;
-	val Table theTable;
+	ref Schema ownedBySchema;
+	ref Table theTable;
 }
 
 class Function {
 	attr String name;
 	attr String returnType;
 	attr String body;
-	val Schema ownedBySchema;
+	ref Schema ownedBySchema;
 	val Parameter [*] lstParameter;
 }
 
 class Parameter {
 	attr String name;
 	attr String columnType;
-	val Function ownedByFunction;
+	ref Function ownedByFunction;
 }

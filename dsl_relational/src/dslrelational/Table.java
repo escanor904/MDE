@@ -55,43 +55,43 @@ public interface Table extends EObject {
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Owned By Schema</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Owned By Schema</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Owned By Schema</em>' containment reference isn't clear,
+	 * If the meaning of the '<em>Owned By Schema</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Owned By Schema</em>' containment reference.
+	 * @return the value of the '<em>Owned By Schema</em>' reference.
 	 * @see #setOwnedBySchema(Schema)
 	 * @see dslrelational.DslrelationalPackage#getTable_OwnedBySchema()
-	 * @model containment="true"
+	 * @model
 	 * @generated
 	 */
 	Schema getOwnedBySchema();
 
 	/**
-	 * Sets the value of the '{@link dslrelational.Table#getOwnedBySchema <em>Owned By Schema</em>}' containment reference.
+	 * Sets the value of the '{@link dslrelational.Table#getOwnedBySchema <em>Owned By Schema</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Owned By Schema</em>' containment reference.
+	 * @param value the new value of the '<em>Owned By Schema</em>' reference.
 	 * @see #getOwnedBySchema()
 	 * @generated
 	 */
 	void setOwnedBySchema(Schema value);
 
 	/**
-	 * Returns the value of the '<em><b>Lst Trigger</b></em>' containment reference list.
+	 * Returns the value of the '<em><b>Lst Trigger</b></em>' reference list.
 	 * The list contents are of type {@link dslrelational.Trigger}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Lst Trigger</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Lst Trigger</em>' reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Lst Trigger</em>' containment reference list.
+	 * @return the value of the '<em>Lst Trigger</em>' reference list.
 	 * @see dslrelational.DslrelationalPackage#getTable_LstTrigger()
-	 * @model containment="true"
+	 * @model
 	 * @generated
 	 */
 	EList<Trigger> getLstTrigger();

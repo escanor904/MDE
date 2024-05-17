@@ -18,12 +18,16 @@ import org.eclipse.swt.widgets.Widget;
 
 import abstractmodel.AbstractmodelFactory;
 import abstractmodel.AbstractmodelPackage;
+import abstractmodel.AssociationAdj;
 import abstractmodel.AttributeAdj;
 import abstractmodel.AttributeTypeAdj;
 import abstractmodel.AttributeTypeFactoryAdj;
 import abstractmodel.ClassAdj;
+import abstractmodel.ContainmentAdj;
+import abstractmodel.GeneralizationAdj;
 import abstractmodel.ModelFactoryAbstract;
 import abstractmodel.PackageAdj;
+import abstractmodel.SharingAdj;
 import abstractmodel.impl.AbstractmodelFactoryImpl;
 import abstractmodel.impl.AttributeAdjImpl;
 import concretemodel.AttributeConcreteAdj;
@@ -37,8 +41,14 @@ import concretemodel.ModelFactoryConcrete;
 import concretemodel.PackageConcreteAdj;
 import concretemodel.ProjectAdj;
 import concretemodel.RelationshipAdj;
+import dslrelational.Column;
+import dslrelational.DataProject;
 import dslrelational.DslrelationalFactory;
+import dslrelational.ForeignKey;
 import dslrelational.ModelFactoryRelational;
+import dslrelational.PrimaryKey;
+import dslrelational.Schema;
+import dslrelational.Table;
 import uidiagram.AdjButton;
 import uidiagram.AdjCheckBox;
 import uidiagram.AdjCheckedListBox;
@@ -262,9 +272,9 @@ public class ModelFactoryModel {
 	}
 	
 	/**
-	 * 
+	 * Este metodo permite guardar el modelFactoryRelational del diagrama de clases
 	 */
-	public void saveRelatinal() {
+	public void saveRelational() {
 
 		// EXISTEN 2 FORMAS DE GUARDAR EL RECURSO
 		org.eclipse.emf.common.util.URI uri = org.eclipse.emf.common.util.URI
@@ -1512,6 +1522,7 @@ public class ModelFactoryModel {
 	// ----------------------------------------- Tranformacion M2M de parte abstracta a parte a relacional -------------------------------------------
 	
 	
+		
 		/**
 		 * Este metodo realiza la transformacion del modelo especifico a el modelo
 		 * abstracto y a su vez, al modelo relacional
@@ -1522,17 +1533,254 @@ public class ModelFactoryModel {
 			modelFactoryRelational = loadRelationalModel();
 			modelFactoryRelational.getLstDataProject().clear();
 			
+			int i = 1;
+			//crear tablas e intermedias
 			for (abstractmodel.ProjectAdj projectAbstract : modelFactoryAbstracta.getListProjects()) {
 				abstractmodel.PackageAdj paqueteRaiz = projectAbstract.getLstPackageAdj().get(0);
 				
+				DataProject dataProject = DslrelationalFactory.eINSTANCE.createDataProject();
+				dataProject.setName("script"+i);
+				
+				Schema schema = DslrelationalFactory.eINSTANCE.createSchema();
+				
+				dataProject.setSchema(schema);
+				modelFactoryRelational.getLstDataProject().add(dataProject);
+				
 				for (abstractmodel.ClassAdj clase : paqueteRaiz.getLstClassAdj()) {
-					
+					Table tabla = crearTabla(clase);
+					tabla.setOwnedBySchema(schema);
+					schema.getLstTable().add(tabla);
 				}
+				
+				//crear foreign keys
+				for (abstractmodel.ClassAdj clase : paqueteRaiz.getLstClassAdj()) {
+					Table tabla = buscarTabla(schema, clase.getName());
+					
+					for (abstractmodel.RelationshipAdj relationshipAdj : clase.getLstRelationShipAdj()) {
+						abstractmodel.ClassAdj targetClass = relationshipAdj.getTargetClass();
+
+						if (relationshipAdj instanceof AssociationAdj || relationshipAdj instanceof SharingAdj || relationshipAdj instanceof ContainmentAdj) {
+							String multSource = relationshipAdj.getMultiplicitySourceClass();
+							String multTarget = relationshipAdj.getMultiplicityTargetClass();
+							
+							if (multSource == null)
+								multSource = "1";
+							if (multTarget == null)
+								multTarget = "1";
+
+							//Verificacion de relación n a n
+							if (multSource.equals("*") && multTarget.equals("*")) {
+								Table tablaTarget = buscarTabla(schema, targetClass.getName());
+								//crear tabla intermedia
+								//búsqueda de la tabla intermedia
+								if (buscarTabla(schema, tabla.getName()+"_"+tablaTarget.getName()) == null && buscarTabla(schema, tablaTarget.getName()+"_"+tabla.getName()) == null) {
+									Table tablaIntermedia = obtenerTablaIntermedia(tabla, tablaTarget);
+									tablaIntermedia.setOwnedBySchema(schema);
+									schema.getLstTable().add(tablaIntermedia);
+								}
+							}
+							else {
+								//Verificacion de relación 1 a 1
+								if (multSource.equals("1") && multTarget.equals("1")) {
+									Table tablaTarget = buscarTabla(schema, targetClass.getName());
+									
+									//Verificar existencia de la pk de tabla src en target
+									if (!verificarExistenciaPk(tabla, tablaTarget)) {
+										for (PrimaryKey pk : tabla.getLstPrimaryKey()) {
+											PrimaryKey pkCopy = obtenerCopiaPk(pk, tablaTarget);
+
+											tablaTarget.getLstPrimaryKey().add(pkCopy);
+
+											ForeignKey foreignKey = DslrelationalFactory.eINSTANCE.createForeignKey();
+
+											pk.getLstForeignKey().add(foreignKey);
+											foreignKey.setThePrimaryKey(pkCopy);
+											foreignKey.setOwnedByTable(tablaTarget);
+											tablaTarget.getLstForeignKey().add(foreignKey);
+										}
+									}
+								}
+								else {
+									//Verificacion de relación n a 1
+									if (multSource.equals("*") && multTarget.equals("1")) {
+										Table tablaTarget = buscarTabla(schema, targetClass.getName());
+
+										for (PrimaryKey pk : tablaTarget.getLstPrimaryKey()) {
+//											PrimaryKey pkCopy = obtenerCopiaPk(pk, tabla);
+											ForeignKey foreignKey = DslrelationalFactory.eINSTANCE.createForeignKey();
+
+											pk.getLstForeignKey().add(foreignKey);
+											foreignKey.setThePrimaryKey(pk);
+											foreignKey.setOwnedByTable(tabla);
+											tabla.getLstForeignKey().add(foreignKey);
+										}
+									}
+								}
+							}
+						}
+						else {
+							//Aplicación de herencia
+							if (relationshipAdj instanceof GeneralizationAdj) {
+								Table tablaTarget = buscarTabla(schema, targetClass.getName());
+							}
+						}
+					}
+				}
+				i++;
+				saveRelational();
+				System.out.println();
 			}
 		}
-	
+		
+		
+		
+		
+		/**
+		 * Método para verificar la existencia de pks dado una tabla src y una tabla target
+		 * @param tabla
+		 * @param tablaTarget
+		 * @return
+		 */
+		private Boolean verificarExistenciaPk(Table tabla, Table tablaTarget) {
+			for (PrimaryKey pk : tabla.getLstPrimaryKey()) {
+				for (PrimaryKey pkTarget : tablaTarget.getLstPrimaryKey()) {
+					if (pk.getTheColumn().getName().equals(pkTarget.getTheColumn().getName()))
+						return true;
+				}
+			}
+			return false;
+		}
+
+
+		/**
+		 * Método para buscar una tabla en el esquema, dado el nombre de la clase
+		 * @param schema
+		 * @param className
+		 * @return
+		 */
+		private Table buscarTabla(Schema schema, String className) {
+			for (Table tabla : schema.getLstTable()) {
+				if (tabla.getName().equalsIgnoreCase(className))
+					return tabla;
+			}
+			return null;
+		}
+		
+		
+		/**
+		 * Método para crear una tabla intermedia
+		 * @param tabla - origen
+		 * @param tablaTarget - destino
+		 * @return
+		 */
+		private Table obtenerTablaIntermedia(Table tabla, Table tablaTarget) {
+			Table tablaIntermedia = DslrelationalFactory.eINSTANCE.createTable();
+			tablaIntermedia.setName(tabla.getName()+"_"+tablaTarget.getName());
+
+			//Crear Primary Key default
+			Column column = DslrelationalFactory.eINSTANCE.createColumn();
+			column.setName("id"+tabla.getName()+tablaTarget.getName());
+			column.setColumnType("INTEGER");
+			column.setIsNullable(false);
+			column.setOwnedByTable(tablaIntermedia);
+			
+			tablaIntermedia.getLstColumn().add(column);
+			
+			//Crear Primary Key y foreign key default
+			//pks para tabla src
+			for (PrimaryKey pk : tabla.getLstPrimaryKey()) {
+				PrimaryKey pkCopy = obtenerCopiaPk(pk, tablaIntermedia);
+
+				tablaIntermedia.getLstPrimaryKey().add(pkCopy);
+
+				ForeignKey foreignKey = DslrelationalFactory.eINSTANCE.createForeignKey();
+				
+				pk.getLstForeignKey().add(foreignKey);
+				foreignKey.setThePrimaryKey(pkCopy);
+				foreignKey.setOwnedByTable(tablaIntermedia);
+				tablaIntermedia.getLstForeignKey().add(foreignKey);
+			}
+
+			//pks para tabla target
+			for (PrimaryKey pk : tablaTarget.getLstPrimaryKey()) {
+				PrimaryKey pkCopy = obtenerCopiaPk(pk, tablaIntermedia);
+
+				tablaIntermedia.getLstPrimaryKey().add(pkCopy);
+
+				ForeignKey foreignKey = DslrelationalFactory.eINSTANCE.createForeignKey();
+
+				pk.getLstForeignKey().add(foreignKey);
+				foreignKey.setThePrimaryKey(pkCopy);
+				foreignKey.setOwnedByTable(tablaIntermedia);
+				tablaIntermedia.getLstForeignKey().add(foreignKey);
+			}
+
+			return tablaIntermedia;
+		}
+
+		
+		/**
+		 * Método para crear una copia de una pk dada
+		 * @param pk - para crear la copia
+		 * @param tablaOwner - la nueva tabla duenia de la copia
+		 * @return
+		 */
+		private PrimaryKey obtenerCopiaPk(PrimaryKey pk, Table tablaOwner) {
+			PrimaryKey primaryKey = DslrelationalFactory.eINSTANCE.createPrimaryKey();
+			primaryKey.setTheColumn(pk.getTheColumn());
+			primaryKey.setOwnedByTable(tablaOwner);
+			return primaryKey;
+		}
+
+
+		/**
+		 * Método para crear una tabla con atributos y una pk generada
+		 * @param clase
+		 * @return
+		 */
+		private Table crearTabla(ClassAdj clase) {
+			Table table = DslrelationalFactory.eINSTANCE.createTable();
+			table.setName(clase.getName());
+			
+			//Crear Primary Key default
+			Column column = DslrelationalFactory.eINSTANCE.createColumn();
+			column.setName("id"+table.getName());
+			column.setColumnType("INTEGER");
+			column.setIsNullable(false);
+			column.setOwnedByTable(table);
+			
+			table.getLstColumn().add(column);
+			
+			PrimaryKey primaryKey = DslrelationalFactory.eINSTANCE.createPrimaryKey();
+			column.getLstPrimaryKey().add(primaryKey);
+			primaryKey.setTheColumn(column);
+			primaryKey.setOwnedByTable(table);
+			
+			table.getLstPrimaryKey().add(primaryKey);
+			
+			//Crear columnas
+			for (AttributeAdj attributeAdj : clase.getLstAttributeAdj()) {
+				column = DslrelationalFactory.eINSTANCE.createColumn();
+				
+				column.setName(attributeAdj.getName());
+				column.setColumnType(attributeAdj.getAttributeTypeAdj().getName());
+				column.setIsNullable(true);
+				column.setOwnedByTable(table);
+				table.getLstColumn().add(column);
+			}
+			
+			return table;
+		}
+
+		
+		
+		
+		
+		
+		
 	//-------------------------------------------------------FOLDERS Y ARCHIVOS
 	
+
 	/**
 	 * Este metodo permite crear una carpeta en el sistema de windows
 	 * @param path

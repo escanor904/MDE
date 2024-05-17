@@ -204,7 +204,7 @@ public interface DslrelationalPackage extends EPackage {
 	int TABLE__NAME = 0;
 
 	/**
-	 * The feature id for the '<em><b>Owned By Schema</b></em>' containment reference.
+	 * The feature id for the '<em><b>Owned By Schema</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -213,7 +213,7 @@ public interface DslrelationalPackage extends EPackage {
 	int TABLE__OWNED_BY_SCHEMA = 1;
 
 	/**
-	 * The feature id for the '<em><b>Lst Trigger</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Lst Trigger</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -295,7 +295,7 @@ public interface DslrelationalPackage extends EPackage {
 	int COLUMN__IS_NULLABLE = 2;
 
 	/**
-	 * The feature id for the '<em><b>Owned By Table</b></em>' containment reference.
+	 * The feature id for the '<em><b>Owned By Table</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -304,7 +304,7 @@ public interface DslrelationalPackage extends EPackage {
 	int COLUMN__OWNED_BY_TABLE = 3;
 
 	/**
-	 * The feature id for the '<em><b>Lst Primary Key</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Lst Primary Key</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -332,7 +332,7 @@ public interface DslrelationalPackage extends EPackage {
 	int PRIMARY_KEY = 5;
 
 	/**
-	 * The feature id for the '<em><b>Owned By Table</b></em>' containment reference.
+	 * The feature id for the '<em><b>Owned By Table</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -341,7 +341,7 @@ public interface DslrelationalPackage extends EPackage {
 	int PRIMARY_KEY__OWNED_BY_TABLE = 0;
 
 	/**
-	 * The feature id for the '<em><b>Lst Foreign Key</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Lst Foreign Key</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -350,7 +350,7 @@ public interface DslrelationalPackage extends EPackage {
 	int PRIMARY_KEY__LST_FOREIGN_KEY = 1;
 
 	/**
-	 * The feature id for the '<em><b>The Column</b></em>' containment reference.
+	 * The feature id for the '<em><b>The Column</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -378,7 +378,7 @@ public interface DslrelationalPackage extends EPackage {
 	int FOREIGN_KEY = 6;
 
 	/**
-	 * The feature id for the '<em><b>Owned By Table</b></em>' containment reference.
+	 * The feature id for the '<em><b>Owned By Table</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -387,7 +387,7 @@ public interface DslrelationalPackage extends EPackage {
 	int FOREIGN_KEY__OWNED_BY_TABLE = 0;
 
 	/**
-	 * The feature id for the '<em><b>The Primary Key</b></em>' containment reference.
+	 * The feature id for the '<em><b>The Primary Key</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -451,7 +451,7 @@ public interface DslrelationalPackage extends EPackage {
 	int TRIGGER__BODY = 3;
 
 	/**
-	 * The feature id for the '<em><b>Owned By Schema</b></em>' containment reference.
+	 * The feature id for the '<em><b>Owned By Schema</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -460,7 +460,7 @@ public interface DslrelationalPackage extends EPackage {
 	int TRIGGER__OWNED_BY_SCHEMA = 4;
 
 	/**
-	 * The feature id for the '<em><b>The Table</b></em>' containment reference.
+	 * The feature id for the '<em><b>The Table</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -515,7 +515,7 @@ public interface DslrelationalPackage extends EPackage {
 	int FUNCTION__BODY = 2;
 
 	/**
-	 * The feature id for the '<em><b>Owned By Schema</b></em>' containment reference.
+	 * The feature id for the '<em><b>Owned By Schema</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -570,7 +570,7 @@ public interface DslrelationalPackage extends EPackage {
 	int PARAMETER__COLUMN_TYPE = 1;
 
 	/**
-	 * The feature id for the '<em><b>Owned By Function</b></em>' containment reference.
+	 * The feature id for the '<em><b>Owned By Function</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -728,10 +728,10 @@ public interface DslrelationalPackage extends EPackage {
 	EAttribute getTable_Name();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link dslrelational.Table#getOwnedBySchema <em>Owned By Schema</em>}'.
+	 * Returns the meta object for the reference '{@link dslrelational.Table#getOwnedBySchema <em>Owned By Schema</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Owned By Schema</em>'.
+	 * @return the meta object for the reference '<em>Owned By Schema</em>'.
 	 * @see dslrelational.Table#getOwnedBySchema()
 	 * @see #getTable()
 	 * @generated
@@ -739,10 +739,10 @@ public interface DslrelationalPackage extends EPackage {
 	EReference getTable_OwnedBySchema();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link dslrelational.Table#getLstTrigger <em>Lst Trigger</em>}'.
+	 * Returns the meta object for the reference list '{@link dslrelational.Table#getLstTrigger <em>Lst Trigger</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Lst Trigger</em>'.
+	 * @return the meta object for the reference list '<em>Lst Trigger</em>'.
 	 * @see dslrelational.Table#getLstTrigger()
 	 * @see #getTable()
 	 * @generated
@@ -826,10 +826,10 @@ public interface DslrelationalPackage extends EPackage {
 	EAttribute getColumn_IsNullable();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link dslrelational.Column#getOwnedByTable <em>Owned By Table</em>}'.
+	 * Returns the meta object for the reference '{@link dslrelational.Column#getOwnedByTable <em>Owned By Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Owned By Table</em>'.
+	 * @return the meta object for the reference '<em>Owned By Table</em>'.
 	 * @see dslrelational.Column#getOwnedByTable()
 	 * @see #getColumn()
 	 * @generated
@@ -837,10 +837,10 @@ public interface DslrelationalPackage extends EPackage {
 	EReference getColumn_OwnedByTable();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link dslrelational.Column#getLstPrimaryKey <em>Lst Primary Key</em>}'.
+	 * Returns the meta object for the reference list '{@link dslrelational.Column#getLstPrimaryKey <em>Lst Primary Key</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Lst Primary Key</em>'.
+	 * @return the meta object for the reference list '<em>Lst Primary Key</em>'.
 	 * @see dslrelational.Column#getLstPrimaryKey()
 	 * @see #getColumn()
 	 * @generated
@@ -858,10 +858,10 @@ public interface DslrelationalPackage extends EPackage {
 	EClass getPrimaryKey();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link dslrelational.PrimaryKey#getOwnedByTable <em>Owned By Table</em>}'.
+	 * Returns the meta object for the reference '{@link dslrelational.PrimaryKey#getOwnedByTable <em>Owned By Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Owned By Table</em>'.
+	 * @return the meta object for the reference '<em>Owned By Table</em>'.
 	 * @see dslrelational.PrimaryKey#getOwnedByTable()
 	 * @see #getPrimaryKey()
 	 * @generated
@@ -869,10 +869,10 @@ public interface DslrelationalPackage extends EPackage {
 	EReference getPrimaryKey_OwnedByTable();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link dslrelational.PrimaryKey#getLstForeignKey <em>Lst Foreign Key</em>}'.
+	 * Returns the meta object for the reference list '{@link dslrelational.PrimaryKey#getLstForeignKey <em>Lst Foreign Key</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Lst Foreign Key</em>'.
+	 * @return the meta object for the reference list '<em>Lst Foreign Key</em>'.
 	 * @see dslrelational.PrimaryKey#getLstForeignKey()
 	 * @see #getPrimaryKey()
 	 * @generated
@@ -880,10 +880,10 @@ public interface DslrelationalPackage extends EPackage {
 	EReference getPrimaryKey_LstForeignKey();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link dslrelational.PrimaryKey#getTheColumn <em>The Column</em>}'.
+	 * Returns the meta object for the reference '{@link dslrelational.PrimaryKey#getTheColumn <em>The Column</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>The Column</em>'.
+	 * @return the meta object for the reference '<em>The Column</em>'.
 	 * @see dslrelational.PrimaryKey#getTheColumn()
 	 * @see #getPrimaryKey()
 	 * @generated
@@ -901,10 +901,10 @@ public interface DslrelationalPackage extends EPackage {
 	EClass getForeignKey();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link dslrelational.ForeignKey#getOwnedByTable <em>Owned By Table</em>}'.
+	 * Returns the meta object for the reference '{@link dslrelational.ForeignKey#getOwnedByTable <em>Owned By Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Owned By Table</em>'.
+	 * @return the meta object for the reference '<em>Owned By Table</em>'.
 	 * @see dslrelational.ForeignKey#getOwnedByTable()
 	 * @see #getForeignKey()
 	 * @generated
@@ -912,10 +912,10 @@ public interface DslrelationalPackage extends EPackage {
 	EReference getForeignKey_OwnedByTable();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link dslrelational.ForeignKey#getThePrimaryKey <em>The Primary Key</em>}'.
+	 * Returns the meta object for the reference '{@link dslrelational.ForeignKey#getThePrimaryKey <em>The Primary Key</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>The Primary Key</em>'.
+	 * @return the meta object for the reference '<em>The Primary Key</em>'.
 	 * @see dslrelational.ForeignKey#getThePrimaryKey()
 	 * @see #getForeignKey()
 	 * @generated
@@ -977,10 +977,10 @@ public interface DslrelationalPackage extends EPackage {
 	EAttribute getTrigger_Body();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link dslrelational.Trigger#getOwnedBySchema <em>Owned By Schema</em>}'.
+	 * Returns the meta object for the reference '{@link dslrelational.Trigger#getOwnedBySchema <em>Owned By Schema</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Owned By Schema</em>'.
+	 * @return the meta object for the reference '<em>Owned By Schema</em>'.
 	 * @see dslrelational.Trigger#getOwnedBySchema()
 	 * @see #getTrigger()
 	 * @generated
@@ -988,10 +988,10 @@ public interface DslrelationalPackage extends EPackage {
 	EReference getTrigger_OwnedBySchema();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link dslrelational.Trigger#getTheTable <em>The Table</em>}'.
+	 * Returns the meta object for the reference '{@link dslrelational.Trigger#getTheTable <em>The Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>The Table</em>'.
+	 * @return the meta object for the reference '<em>The Table</em>'.
 	 * @see dslrelational.Trigger#getTheTable()
 	 * @see #getTrigger()
 	 * @generated
@@ -1042,10 +1042,10 @@ public interface DslrelationalPackage extends EPackage {
 	EAttribute getFunction_Body();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link dslrelational.Function#getOwnedBySchema <em>Owned By Schema</em>}'.
+	 * Returns the meta object for the reference '{@link dslrelational.Function#getOwnedBySchema <em>Owned By Schema</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Owned By Schema</em>'.
+	 * @return the meta object for the reference '<em>Owned By Schema</em>'.
 	 * @see dslrelational.Function#getOwnedBySchema()
 	 * @see #getFunction()
 	 * @generated
@@ -1096,10 +1096,10 @@ public interface DslrelationalPackage extends EPackage {
 	EAttribute getParameter_ColumnType();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link dslrelational.Parameter#getOwnedByFunction <em>Owned By Function</em>}'.
+	 * Returns the meta object for the reference '{@link dslrelational.Parameter#getOwnedByFunction <em>Owned By Function</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Owned By Function</em>'.
+	 * @return the meta object for the reference '<em>Owned By Function</em>'.
 	 * @see dslrelational.Parameter#getOwnedByFunction()
 	 * @see #getParameter()
 	 * @generated
@@ -1241,7 +1241,7 @@ public interface DslrelationalPackage extends EPackage {
 		EAttribute TABLE__NAME = eINSTANCE.getTable_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>Owned By Schema</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Owned By Schema</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1249,7 +1249,7 @@ public interface DslrelationalPackage extends EPackage {
 		EReference TABLE__OWNED_BY_SCHEMA = eINSTANCE.getTable_OwnedBySchema();
 
 		/**
-		 * The meta object literal for the '<em><b>Lst Trigger</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Lst Trigger</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1315,7 +1315,7 @@ public interface DslrelationalPackage extends EPackage {
 		EAttribute COLUMN__IS_NULLABLE = eINSTANCE.getColumn_IsNullable();
 
 		/**
-		 * The meta object literal for the '<em><b>Owned By Table</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Owned By Table</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1323,7 +1323,7 @@ public interface DslrelationalPackage extends EPackage {
 		EReference COLUMN__OWNED_BY_TABLE = eINSTANCE.getColumn_OwnedByTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Lst Primary Key</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Lst Primary Key</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1341,7 +1341,7 @@ public interface DslrelationalPackage extends EPackage {
 		EClass PRIMARY_KEY = eINSTANCE.getPrimaryKey();
 
 		/**
-		 * The meta object literal for the '<em><b>Owned By Table</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Owned By Table</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1349,7 +1349,7 @@ public interface DslrelationalPackage extends EPackage {
 		EReference PRIMARY_KEY__OWNED_BY_TABLE = eINSTANCE.getPrimaryKey_OwnedByTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Lst Foreign Key</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Lst Foreign Key</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1357,7 +1357,7 @@ public interface DslrelationalPackage extends EPackage {
 		EReference PRIMARY_KEY__LST_FOREIGN_KEY = eINSTANCE.getPrimaryKey_LstForeignKey();
 
 		/**
-		 * The meta object literal for the '<em><b>The Column</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>The Column</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1375,7 +1375,7 @@ public interface DslrelationalPackage extends EPackage {
 		EClass FOREIGN_KEY = eINSTANCE.getForeignKey();
 
 		/**
-		 * The meta object literal for the '<em><b>Owned By Table</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Owned By Table</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1383,7 +1383,7 @@ public interface DslrelationalPackage extends EPackage {
 		EReference FOREIGN_KEY__OWNED_BY_TABLE = eINSTANCE.getForeignKey_OwnedByTable();
 
 		/**
-		 * The meta object literal for the '<em><b>The Primary Key</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>The Primary Key</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1433,7 +1433,7 @@ public interface DslrelationalPackage extends EPackage {
 		EAttribute TRIGGER__BODY = eINSTANCE.getTrigger_Body();
 
 		/**
-		 * The meta object literal for the '<em><b>Owned By Schema</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Owned By Schema</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1441,7 +1441,7 @@ public interface DslrelationalPackage extends EPackage {
 		EReference TRIGGER__OWNED_BY_SCHEMA = eINSTANCE.getTrigger_OwnedBySchema();
 
 		/**
-		 * The meta object literal for the '<em><b>The Table</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>The Table</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1483,7 +1483,7 @@ public interface DslrelationalPackage extends EPackage {
 		EAttribute FUNCTION__BODY = eINSTANCE.getFunction_Body();
 
 		/**
-		 * The meta object literal for the '<em><b>Owned By Schema</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Owned By Schema</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1525,7 +1525,7 @@ public interface DslrelationalPackage extends EPackage {
 		EAttribute PARAMETER__COLUMN_TYPE = eINSTANCE.getParameter_ColumnType();
 
 		/**
-		 * The meta object literal for the '<em><b>Owned By Function</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Owned By Function</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

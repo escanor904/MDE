@@ -26,68 +26,68 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface PrimaryKey extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Owned By Table</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Owned By Table</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Owned By Table</em>' containment reference isn't clear,
+	 * If the meaning of the '<em>Owned By Table</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Owned By Table</em>' containment reference.
+	 * @return the value of the '<em>Owned By Table</em>' reference.
 	 * @see #setOwnedByTable(Table)
 	 * @see dslrelational.DslrelationalPackage#getPrimaryKey_OwnedByTable()
-	 * @model containment="true"
+	 * @model
 	 * @generated
 	 */
 	Table getOwnedByTable();
 
 	/**
-	 * Sets the value of the '{@link dslrelational.PrimaryKey#getOwnedByTable <em>Owned By Table</em>}' containment reference.
+	 * Sets the value of the '{@link dslrelational.PrimaryKey#getOwnedByTable <em>Owned By Table</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Owned By Table</em>' containment reference.
+	 * @param value the new value of the '<em>Owned By Table</em>' reference.
 	 * @see #getOwnedByTable()
 	 * @generated
 	 */
 	void setOwnedByTable(Table value);
 
 	/**
-	 * Returns the value of the '<em><b>Lst Foreign Key</b></em>' containment reference list.
+	 * Returns the value of the '<em><b>Lst Foreign Key</b></em>' reference list.
 	 * The list contents are of type {@link dslrelational.ForeignKey}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Lst Foreign Key</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Lst Foreign Key</em>' reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Lst Foreign Key</em>' containment reference list.
+	 * @return the value of the '<em>Lst Foreign Key</em>' reference list.
 	 * @see dslrelational.DslrelationalPackage#getPrimaryKey_LstForeignKey()
-	 * @model containment="true"
+	 * @model
 	 * @generated
 	 */
 	EList<ForeignKey> getLstForeignKey();
 
 	/**
-	 * Returns the value of the '<em><b>The Column</b></em>' containment reference.
+	 * Returns the value of the '<em><b>The Column</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>The Column</em>' containment reference isn't clear,
+	 * If the meaning of the '<em>The Column</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>The Column</em>' containment reference.
+	 * @return the value of the '<em>The Column</em>' reference.
 	 * @see #setTheColumn(Column)
 	 * @see dslrelational.DslrelationalPackage#getPrimaryKey_TheColumn()
-	 * @model containment="true"
+	 * @model
 	 * @generated
 	 */
 	Column getTheColumn();
 
 	/**
-	 * Sets the value of the '{@link dslrelational.PrimaryKey#getTheColumn <em>The Column</em>}' containment reference.
+	 * Sets the value of the '{@link dslrelational.PrimaryKey#getTheColumn <em>The Column</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>The Column</em>' containment reference.
+	 * @param value the new value of the '<em>The Column</em>' reference.
 	 * @see #getTheColumn()
 	 * @generated
 	 */

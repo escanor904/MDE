@@ -24,6 +24,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
@@ -66,7 +67,7 @@ public class TableImpl extends EObjectImpl implements Table {
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getOwnedBySchema() <em>Owned By Schema</em>}' containment reference.
+	 * The cached value of the '{@link #getOwnedBySchema() <em>Owned By Schema</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getOwnedBySchema()
@@ -76,7 +77,7 @@ public class TableImpl extends EObjectImpl implements Table {
 	protected Schema ownedBySchema;
 
 	/**
-	 * The cached value of the '{@link #getLstTrigger() <em>Lst Trigger</em>}' containment reference list.
+	 * The cached value of the '{@link #getLstTrigger() <em>Lst Trigger</em>}' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getLstTrigger()
@@ -161,6 +162,14 @@ public class TableImpl extends EObjectImpl implements Table {
 	 * @generated
 	 */
 	public Schema getOwnedBySchema() {
+		if (ownedBySchema != null && ownedBySchema.eIsProxy()) {
+			InternalEObject oldOwnedBySchema = (InternalEObject)ownedBySchema;
+			ownedBySchema = (Schema)eResolveProxy(oldOwnedBySchema);
+			if (ownedBySchema != oldOwnedBySchema) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, DslrelationalPackage.TABLE__OWNED_BY_SCHEMA, oldOwnedBySchema, ownedBySchema));
+			}
+		}
 		return ownedBySchema;
 	}
 
@@ -169,14 +178,8 @@ public class TableImpl extends EObjectImpl implements Table {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOwnedBySchema(Schema newOwnedBySchema, NotificationChain msgs) {
-		Schema oldOwnedBySchema = ownedBySchema;
-		ownedBySchema = newOwnedBySchema;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, DslrelationalPackage.TABLE__OWNED_BY_SCHEMA, oldOwnedBySchema, newOwnedBySchema);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
+	public Schema basicGetOwnedBySchema() {
+		return ownedBySchema;
 	}
 
 	/**
@@ -185,17 +188,10 @@ public class TableImpl extends EObjectImpl implements Table {
 	 * @generated
 	 */
 	public void setOwnedBySchema(Schema newOwnedBySchema) {
-		if (newOwnedBySchema != ownedBySchema) {
-			NotificationChain msgs = null;
-			if (ownedBySchema != null)
-				msgs = ((InternalEObject)ownedBySchema).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - DslrelationalPackage.TABLE__OWNED_BY_SCHEMA, null, msgs);
-			if (newOwnedBySchema != null)
-				msgs = ((InternalEObject)newOwnedBySchema).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - DslrelationalPackage.TABLE__OWNED_BY_SCHEMA, null, msgs);
-			msgs = basicSetOwnedBySchema(newOwnedBySchema, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DslrelationalPackage.TABLE__OWNED_BY_SCHEMA, newOwnedBySchema, newOwnedBySchema));
+		Schema oldOwnedBySchema = ownedBySchema;
+		ownedBySchema = newOwnedBySchema;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, DslrelationalPackage.TABLE__OWNED_BY_SCHEMA, oldOwnedBySchema, ownedBySchema));
 	}
 
 	/**
@@ -205,7 +201,7 @@ public class TableImpl extends EObjectImpl implements Table {
 	 */
 	public EList<Trigger> getLstTrigger() {
 		if (lstTrigger == null) {
-			lstTrigger = new EObjectContainmentEList<Trigger>(Trigger.class, this, DslrelationalPackage.TABLE__LST_TRIGGER);
+			lstTrigger = new EObjectResolvingEList<Trigger>(Trigger.class, this, DslrelationalPackage.TABLE__LST_TRIGGER);
 		}
 		return lstTrigger;
 	}
@@ -254,10 +250,6 @@ public class TableImpl extends EObjectImpl implements Table {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case DslrelationalPackage.TABLE__OWNED_BY_SCHEMA:
-				return basicSetOwnedBySchema(null, msgs);
-			case DslrelationalPackage.TABLE__LST_TRIGGER:
-				return ((InternalEList<?>)getLstTrigger()).basicRemove(otherEnd, msgs);
 			case DslrelationalPackage.TABLE__LST_COLUMN:
 				return ((InternalEList<?>)getLstColumn()).basicRemove(otherEnd, msgs);
 			case DslrelationalPackage.TABLE__LST_PRIMARY_KEY:
@@ -279,7 +271,8 @@ public class TableImpl extends EObjectImpl implements Table {
 			case DslrelationalPackage.TABLE__NAME:
 				return getName();
 			case DslrelationalPackage.TABLE__OWNED_BY_SCHEMA:
-				return getOwnedBySchema();
+				if (resolve) return getOwnedBySchema();
+				return basicGetOwnedBySchema();
 			case DslrelationalPackage.TABLE__LST_TRIGGER:
 				return getLstTrigger();
 			case DslrelationalPackage.TABLE__LST_COLUMN:

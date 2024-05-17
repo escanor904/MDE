@@ -76,26 +76,26 @@ public interface Parameter extends EObject {
 	void setColumnType(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Owned By Function</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Owned By Function</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Owned By Function</em>' containment reference isn't clear,
+	 * If the meaning of the '<em>Owned By Function</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Owned By Function</em>' containment reference.
+	 * @return the value of the '<em>Owned By Function</em>' reference.
 	 * @see #setOwnedByFunction(Function)
 	 * @see dslrelational.DslrelationalPackage#getParameter_OwnedByFunction()
-	 * @model containment="true"
+	 * @model
 	 * @generated
 	 */
 	Function getOwnedByFunction();
 
 	/**
-	 * Sets the value of the '{@link dslrelational.Parameter#getOwnedByFunction <em>Owned By Function</em>}' containment reference.
+	 * Sets the value of the '{@link dslrelational.Parameter#getOwnedByFunction <em>Owned By Function</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Owned By Function</em>' containment reference.
+	 * @param value the new value of the '<em>Owned By Function</em>' reference.
 	 * @see #getOwnedByFunction()
 	 * @generated
 	 */

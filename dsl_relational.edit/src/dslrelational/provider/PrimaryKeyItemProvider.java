@@ -3,9 +3,7 @@
 package dslrelational.provider;
 
 
-import dslrelational.DslrelationalFactory;
 import dslrelational.DslrelationalPackage;
-import dslrelational.PrimaryKey;
 
 import java.util.Collection;
 import java.util.List;
@@ -15,8 +13,7 @@ import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.common.util.ResourceLocator;
 
-import org.eclipse.emf.ecore.EStructuralFeature;
-
+import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
@@ -24,7 +21,6 @@ import org.eclipse.emf.edit.provider.IItemPropertySource;
 import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
 import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
-import org.eclipse.emf.edit.provider.ViewerNotification;
 
 /**
  * This is the item provider adapter for a {@link dslrelational.PrimaryKey} object.
@@ -61,40 +57,77 @@ public class PrimaryKeyItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
+			addOwnedByTablePropertyDescriptor(object);
+			addLstForeignKeyPropertyDescriptor(object);
+			addTheColumnPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
-	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
-	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
+	 * This adds a property descriptor for the Owned By Table feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
-		if (childrenFeatures == null) {
-			super.getChildrenFeatures(object);
-			childrenFeatures.add(DslrelationalPackage.Literals.PRIMARY_KEY__OWNED_BY_TABLE);
-			childrenFeatures.add(DslrelationalPackage.Literals.PRIMARY_KEY__LST_FOREIGN_KEY);
-			childrenFeatures.add(DslrelationalPackage.Literals.PRIMARY_KEY__THE_COLUMN);
-		}
-		return childrenFeatures;
+	protected void addOwnedByTablePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_PrimaryKey_ownedByTable_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_PrimaryKey_ownedByTable_feature", "_UI_PrimaryKey_type"),
+				 DslrelationalPackage.Literals.PRIMARY_KEY__OWNED_BY_TABLE,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
 	}
 
 	/**
+	 * This adds a property descriptor for the Lst Foreign Key feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	protected EStructuralFeature getChildFeature(Object object, Object child) {
-		// Check the type of the specified child object and return the proper feature to use for
-		// adding (see {@link AddCommand}) it as a child.
+	protected void addLstForeignKeyPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_PrimaryKey_lstForeignKey_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_PrimaryKey_lstForeignKey_feature", "_UI_PrimaryKey_type"),
+				 DslrelationalPackage.Literals.PRIMARY_KEY__LST_FOREIGN_KEY,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
+	}
 
-		return super.getChildFeature(object, child);
+	/**
+	 * This adds a property descriptor for the The Column feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addTheColumnPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_PrimaryKey_theColumn_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_PrimaryKey_theColumn_feature", "_UI_PrimaryKey_type"),
+				 DslrelationalPackage.Literals.PRIMARY_KEY__THE_COLUMN,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
 	}
 
 	/**
@@ -130,14 +163,6 @@ public class PrimaryKeyItemProvider
 	@Override
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
-
-		switch (notification.getFeatureID(PrimaryKey.class)) {
-			case DslrelationalPackage.PRIMARY_KEY__OWNED_BY_TABLE:
-			case DslrelationalPackage.PRIMARY_KEY__LST_FOREIGN_KEY:
-			case DslrelationalPackage.PRIMARY_KEY__THE_COLUMN:
-				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
-				return;
-		}
 		super.notifyChanged(notification);
 	}
 
@@ -151,21 +176,6 @@ public class PrimaryKeyItemProvider
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
-
-		newChildDescriptors.add
-			(createChildParameter
-				(DslrelationalPackage.Literals.PRIMARY_KEY__OWNED_BY_TABLE,
-				 DslrelationalFactory.eINSTANCE.createTable()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(DslrelationalPackage.Literals.PRIMARY_KEY__LST_FOREIGN_KEY,
-				 DslrelationalFactory.eINSTANCE.createForeignKey()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(DslrelationalPackage.Literals.PRIMARY_KEY__THE_COLUMN,
-				 DslrelationalFactory.eINSTANCE.createColumn()));
 	}
 
 	/**

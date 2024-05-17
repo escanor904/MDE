@@ -102,7 +102,7 @@ public class FunctionImpl extends EObjectImpl implements Function {
 	protected String body = BODY_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getOwnedBySchema() <em>Owned By Schema</em>}' containment reference.
+	 * The cached value of the '{@link #getOwnedBySchema() <em>Owned By Schema</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getOwnedBySchema()
@@ -209,6 +209,14 @@ public class FunctionImpl extends EObjectImpl implements Function {
 	 * @generated
 	 */
 	public Schema getOwnedBySchema() {
+		if (ownedBySchema != null && ownedBySchema.eIsProxy()) {
+			InternalEObject oldOwnedBySchema = (InternalEObject)ownedBySchema;
+			ownedBySchema = (Schema)eResolveProxy(oldOwnedBySchema);
+			if (ownedBySchema != oldOwnedBySchema) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, DslrelationalPackage.FUNCTION__OWNED_BY_SCHEMA, oldOwnedBySchema, ownedBySchema));
+			}
+		}
 		return ownedBySchema;
 	}
 
@@ -217,14 +225,8 @@ public class FunctionImpl extends EObjectImpl implements Function {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOwnedBySchema(Schema newOwnedBySchema, NotificationChain msgs) {
-		Schema oldOwnedBySchema = ownedBySchema;
-		ownedBySchema = newOwnedBySchema;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, DslrelationalPackage.FUNCTION__OWNED_BY_SCHEMA, oldOwnedBySchema, newOwnedBySchema);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
+	public Schema basicGetOwnedBySchema() {
+		return ownedBySchema;
 	}
 
 	/**
@@ -233,17 +235,10 @@ public class FunctionImpl extends EObjectImpl implements Function {
 	 * @generated
 	 */
 	public void setOwnedBySchema(Schema newOwnedBySchema) {
-		if (newOwnedBySchema != ownedBySchema) {
-			NotificationChain msgs = null;
-			if (ownedBySchema != null)
-				msgs = ((InternalEObject)ownedBySchema).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - DslrelationalPackage.FUNCTION__OWNED_BY_SCHEMA, null, msgs);
-			if (newOwnedBySchema != null)
-				msgs = ((InternalEObject)newOwnedBySchema).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - DslrelationalPackage.FUNCTION__OWNED_BY_SCHEMA, null, msgs);
-			msgs = basicSetOwnedBySchema(newOwnedBySchema, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, DslrelationalPackage.FUNCTION__OWNED_BY_SCHEMA, newOwnedBySchema, newOwnedBySchema));
+		Schema oldOwnedBySchema = ownedBySchema;
+		ownedBySchema = newOwnedBySchema;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, DslrelationalPackage.FUNCTION__OWNED_BY_SCHEMA, oldOwnedBySchema, ownedBySchema));
 	}
 
 	/**
@@ -266,8 +261,6 @@ public class FunctionImpl extends EObjectImpl implements Function {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case DslrelationalPackage.FUNCTION__OWNED_BY_SCHEMA:
-				return basicSetOwnedBySchema(null, msgs);
 			case DslrelationalPackage.FUNCTION__LST_PARAMETER:
 				return ((InternalEList<?>)getLstParameter()).basicRemove(otherEnd, msgs);
 		}
@@ -289,7 +282,8 @@ public class FunctionImpl extends EObjectImpl implements Function {
 			case DslrelationalPackage.FUNCTION__BODY:
 				return getBody();
 			case DslrelationalPackage.FUNCTION__OWNED_BY_SCHEMA:
-				return getOwnedBySchema();
+				if (resolve) return getOwnedBySchema();
+				return basicGetOwnedBySchema();
 			case DslrelationalPackage.FUNCTION__LST_PARAMETER:
 				return getLstParameter();
 		}
