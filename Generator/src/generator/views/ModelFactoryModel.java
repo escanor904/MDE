@@ -1504,6 +1504,7 @@ public class ModelFactoryModel {
 				Schema schema = DslrelationalFactory.eINSTANCE.createSchema();
 				
 				dataProject.setSchema(schema);
+				schema.setName(dataProject.getName());
 				modelFactoryRelational.getLstDataProject().add(dataProject);
 				
 				//crear tablas
