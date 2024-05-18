@@ -999,6 +999,13 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 			 "color", "255,255,128"
 		   });	
 		addAnnotation
+		  (parameterConcreteAdjEClass, 
+		   source, 
+		   new String[] {
+			 "label", "name",
+			 "color", "255,255,128"
+		   });	
+		addAnnotation
 		  (attributeConcreteAdjEClass, 
 		   source, 
 		   new String[] {
@@ -1085,6 +1092,13 @@ public class ConcretemodelPackageImpl extends EPackageImpl implements Concretemo
 		   });	
 		addAnnotation
 		  (getClassConcreteAdj_LstMethodConcreteAdj(), 
+		   source, 
+		   new String[] {
+			 "layout", "list",
+			 "collapsible", "true"
+		   });	
+		addAnnotation
+		  (getMethodConcreteAdj_LstParameterConcreteAdj(), 
 		   source, 
 		   new String[] {
 			 "layout", "list",

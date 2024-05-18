@@ -25,8 +25,10 @@ import abstractmodel.AttributeTypeFactoryAdj;
 import abstractmodel.ClassAdj;
 import abstractmodel.ContainmentAdj;
 import abstractmodel.GeneralizationAdj;
+import abstractmodel.MethodAdj;
 import abstractmodel.ModelFactoryAbstract;
 import abstractmodel.PackageAdj;
+import abstractmodel.ParameterAdj;
 import abstractmodel.SharingAdj;
 import abstractmodel.impl.AbstractmodelFactoryImpl;
 import abstractmodel.impl.AttributeAdjImpl;
@@ -39,13 +41,16 @@ import concretemodel.ConcretemodelPackage;
 import concretemodel.MethodConcreteAdj;
 import concretemodel.ModelFactoryConcrete;
 import concretemodel.PackageConcreteAdj;
+import concretemodel.ParameterConcreteAdj;
 import concretemodel.ProjectAdj;
 import concretemodel.RelationshipAdj;
 import dslrelational.Column;
 import dslrelational.DataProject;
 import dslrelational.DslrelationalFactory;
 import dslrelational.ForeignKey;
+import dslrelational.Function;
 import dslrelational.ModelFactoryRelational;
+import dslrelational.Parameter;
 import dslrelational.PrimaryKey;
 import dslrelational.Schema;
 import dslrelational.Table;
@@ -591,11 +596,20 @@ public class ModelFactoryModel {
 			attributeAdjAbstracta.setValor(attributeAdjConcreta.getValue());
 			classAdjAbstracta.getLstAttributeAdj().add(attributeAdjAbstracta);
 		}
+		
 		for (MethodConcreteAdj methodAdjConcreta : classAdjConcreta.getLstMethodConcreteAdj()) {
 			abstractmodel.MethodAdj methodAdj = AbstractmodelFactory.eINSTANCE.createMethodAdj();
 			methodAdj.setMethodName(methodAdjConcreta.getMethodName());
 			methodAdj.setBody(methodAdjConcreta.getBody());
 			methodAdj.setReturnTypeAdj(methodAdjConcreta.getReturnType());
+			
+			for (ParameterConcreteAdj parameterConcreta : methodAdjConcreta.getLstParameterConcreteAdj()) {
+				abstractmodel.ParameterAdj parameterAbstracta = AbstractmodelFactory.eINSTANCE.createParameterAdj();
+				parameterAbstracta.setName(parameterConcreta.getName());
+				parameterAbstracta.setAttributeTypeAdj(buscarTipoAtributoPorNombre(parameterConcreta.getAttributeTypeConcreteAdj().getName(), proyectoAdjAbstracta));
+				methodAdj.getLstParameterAdj().add(parameterAbstracta);
+			}
+			
 			classAdjAbstracta.getLstMethodAdj().add(methodAdj);
 		}
 	}
@@ -1462,64 +1476,7 @@ public class ModelFactoryModel {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-	//---------------------------------------------------INPUTS
-	
-	/**
-	 * Este metodo permite abrir un cuadro de dialogo para ingresar el nombre del
-	 proyecto
-	 * @return el nombre del proyecto
-	 * @throws Exception 
-	 */
-	public String capturarNombreProyecto() throws Exception {
-		// Mostrar un cuadro de diálogo de entrada
-		String nameProject = JOptionPane.showInputDialog("Ingrese el nombre del proyecto:");
-
-		// Comprobar si el usuario ingresó algo y mostrarlo
-		if (nameProject != null) {
-			if (!nameProject.equals(""))
-				return nameProject;
-			return "newProject";
-			
-		} else {
-			throw new Exception("OPERACION CANCELADA");
-		}
-	}
-	
-	
-	/**
-	 * Metodo para capturar la ruta absoluta del proyecto
-	 * @return
-	 * @throws Exception
-	 */
-	private String capturarRutaProyecto() throws Exception{
-		JFileChooser chooser = new JFileChooser();
-		chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-
-		int opcion = chooser.showSaveDialog(null); // Muestra la ventana de selección
-		
-		if (opcion == JFileChooser.APPROVE_OPTION) {
-            File archivo = chooser.getSelectedFile(); // Obtiene la ruta seleccionada por el usuario
-            return archivo.getAbsolutePath();
-		}
-		else {
-			throw new Exception("OPERACION CANCELADA");
-		}
-		
-	}
-	
-	// ----------------------------------------- Tranformacion M2M de parte abstracta a parte a relacional -------------------------------------------
+	// ----------------------------------------- Tranformacion M2M de parte abstracta a parte relacional -------------------------------------------
 	
 	
 		
@@ -1536,23 +1493,27 @@ public class ModelFactoryModel {
 			int i = 1;
 			//crear tablas e intermedias
 			for (abstractmodel.ProjectAdj projectAbstract : modelFactoryAbstracta.getListProjects()) {
+				//las clases deben estar en el paquete raiz del proyecto
 				abstractmodel.PackageAdj paqueteRaiz = projectAbstract.getLstPackageAdj().get(0);
 				
+				//crear dataproject
 				DataProject dataProject = DslrelationalFactory.eINSTANCE.createDataProject();
 				dataProject.setName("script"+i);
 				
+				//crear esquema y asignarselo al dataproject
 				Schema schema = DslrelationalFactory.eINSTANCE.createSchema();
 				
 				dataProject.setSchema(schema);
 				modelFactoryRelational.getLstDataProject().add(dataProject);
 				
+				//crear tablas
 				for (abstractmodel.ClassAdj clase : paqueteRaiz.getLstClassAdj()) {
-					Table tabla = crearTabla(clase);
+					Table tabla = crearTabla(clase, schema);
 					tabla.setOwnedBySchema(schema);
 					schema.getLstTable().add(tabla);
 				}
 				
-				//crear foreign keys
+				//crear fks a partir de relaciones
 				for (abstractmodel.ClassAdj clase : paqueteRaiz.getLstClassAdj()) {
 					Table tabla = buscarTabla(schema, clase.getName());
 					
@@ -1606,7 +1567,6 @@ public class ModelFactoryModel {
 										Table tablaTarget = buscarTabla(schema, targetClass.getName());
 
 										for (PrimaryKey pk : tablaTarget.getLstPrimaryKey()) {
-//											PrimaryKey pkCopy = obtenerCopiaPk(pk, tabla);
 											ForeignKey foreignKey = DslrelationalFactory.eINSTANCE.createForeignKey();
 
 											pk.getLstForeignKey().add(foreignKey);
@@ -1619,17 +1579,29 @@ public class ModelFactoryModel {
 							}
 						}
 						else {
-							//Aplicación de herencia
+							//herencia
 							if (relationshipAdj instanceof GeneralizationAdj) {
 								Table tablaTarget = buscarTabla(schema, targetClass.getName());
+								
+								for (PrimaryKey pk : tablaTarget.getLstPrimaryKey()) {
+									PrimaryKey pkCopy = obtenerCopiaPk(pk, tabla);
+
+									tabla.getLstPrimaryKey().add(pkCopy);
+
+									ForeignKey foreignKey = DslrelationalFactory.eINSTANCE.createForeignKey();
+
+									pk.getLstForeignKey().add(foreignKey);
+									foreignKey.setThePrimaryKey(pk);
+									foreignKey.setOwnedByTable(tabla);
+									tabla.getLstForeignKey().add(foreignKey);
+								}
 							}
 						}
 					}
 				}
 				i++;
-				saveRelational();
-				System.out.println();
 			}
+			saveRelational();
 		}
 		
 		
@@ -1639,7 +1611,7 @@ public class ModelFactoryModel {
 		 * Método para verificar la existencia de pks dado una tabla src y una tabla target
 		 * @param tabla
 		 * @param tablaTarget
-		 * @return
+		 * @return true si encuentra alguna, de lo contrario false
 		 */
 		private Boolean verificarExistenciaPk(Table tabla, Table tablaTarget) {
 			for (PrimaryKey pk : tabla.getLstPrimaryKey()) {
@@ -1656,7 +1628,7 @@ public class ModelFactoryModel {
 		 * Método para buscar una tabla en el esquema, dado el nombre de la clase
 		 * @param schema
 		 * @param className
-		 * @return
+		 * @return tablaEncontrada, de lo contraro null
 		 */
 		private Table buscarTabla(Schema schema, String className) {
 			for (Table tabla : schema.getLstTable()) {
@@ -1696,7 +1668,7 @@ public class ModelFactoryModel {
 				ForeignKey foreignKey = DslrelationalFactory.eINSTANCE.createForeignKey();
 				
 				pk.getLstForeignKey().add(foreignKey);
-				foreignKey.setThePrimaryKey(pkCopy);
+				foreignKey.setThePrimaryKey(pk);
 				foreignKey.setOwnedByTable(tablaIntermedia);
 				tablaIntermedia.getLstForeignKey().add(foreignKey);
 			}
@@ -1710,7 +1682,7 @@ public class ModelFactoryModel {
 				ForeignKey foreignKey = DslrelationalFactory.eINSTANCE.createForeignKey();
 
 				pk.getLstForeignKey().add(foreignKey);
-				foreignKey.setThePrimaryKey(pkCopy);
+				foreignKey.setThePrimaryKey(pk);
 				foreignKey.setOwnedByTable(tablaIntermedia);
 				tablaIntermedia.getLstForeignKey().add(foreignKey);
 			}
@@ -1736,46 +1708,162 @@ public class ModelFactoryModel {
 		/**
 		 * Método para crear una tabla con atributos y una pk generada
 		 * @param clase
+		 * @param schema 
 		 * @return
 		 */
-		private Table crearTabla(ClassAdj clase) {
-			Table table = DslrelationalFactory.eINSTANCE.createTable();
-			table.setName(clase.getName());
-			
-			//Crear Primary Key default
+		private Table crearTabla(ClassAdj clase, Schema schema) {
+			Table tabla = DslrelationalFactory.eINSTANCE.createTable();
+			tabla.setName(clase.getName());
 			Column column = DslrelationalFactory.eINSTANCE.createColumn();
-			column.setName("id"+table.getName());
-			column.setColumnType("INTEGER");
-			column.setIsNullable(false);
-			column.setOwnedByTable(table);
 			
-			table.getLstColumn().add(column);
-			
-			PrimaryKey primaryKey = DslrelationalFactory.eINSTANCE.createPrimaryKey();
-			column.getLstPrimaryKey().add(primaryKey);
-			primaryKey.setTheColumn(column);
-			primaryKey.setOwnedByTable(table);
-			
-			table.getLstPrimaryKey().add(primaryKey);
+			//No crear pk y columna generada si la clase es hija de otra
+			if (!verificarHerencia(clase)) {
+				//Crear Primary Key default
+				column = DslrelationalFactory.eINSTANCE.createColumn();
+				column.setName("id"+tabla.getName());
+				column.setColumnType("INTEGER");
+				column.setIsNullable(false);
+				column.setOwnedByTable(tabla);
+
+				tabla.getLstColumn().add(column);
+
+				PrimaryKey primaryKey = DslrelationalFactory.eINSTANCE.createPrimaryKey();
+				column.getLstPrimaryKey().add(primaryKey);
+				primaryKey.setTheColumn(column);
+				primaryKey.setOwnedByTable(tabla);
+
+				tabla.getLstPrimaryKey().add(primaryKey);
+			}
 			
 			//Crear columnas
 			for (AttributeAdj attributeAdj : clase.getLstAttributeAdj()) {
 				column = DslrelationalFactory.eINSTANCE.createColumn();
 				
 				column.setName(attributeAdj.getName());
-				column.setColumnType(attributeAdj.getAttributeTypeAdj().getName());
+				column.setColumnType(obtenerColumnType(attributeAdj.getAttributeTypeAdj().getName()));
 				column.setIsNullable(true);
-				column.setOwnedByTable(table);
-				table.getLstColumn().add(column);
+				column.setOwnedByTable(tabla);
+				tabla.getLstColumn().add(column);
 			}
 			
-			return table;
+			//Crear Funciones y procedimientos
+			for (MethodAdj method : clase.getLstMethodAdj()) {
+				if (method.getReturnTypeAdj() == null)
+					method.setReturnTypeAdj("");
+
+				crearFunction(method, schema);
+			}
+			
+			return tabla;
 		}
 
+		/**
+		 * Método para crear funciones y procedimientos
+		 * @param method
+		 * @param schema
+		 */
+		private void crearFunction(MethodAdj method, Schema schema) {
+			Function f = DslrelationalFactory.eINSTANCE.createFunction();
+			f.setName(method.getMethodName());
+			
+			if (method.getReturnTypeAdj().equals("")) {
+				f.setReturnType(null);
+			}
+			else {
+				f.setReturnType(obtenerColumnType(method.getReturnTypeAdj()));
+			}
+			
+			for (ParameterAdj parameter : method.getLstParameterAdj()) {
+				Parameter parameterRelational = DslrelationalFactory.eINSTANCE.createParameter();
+				parameterRelational.setName(parameter.getName());
+				parameterRelational.setColumnType(obtenerColumnType(parameter.getAttributeTypeAdj().getName()));
+				parameterRelational.setOwnedByFunction(f);
+				f.getLstParameter().add((parameterRelational));
+			}
+			
+			f.setBody(method.getBody());
+			f.setOwnedBySchema(schema);
+			schema.getLstFunction().add(f);
+		}
+
+
+		/**
+		 * Método para obtener el tipo de columna a partir de el nombre de un atributo (abstracta uml)
+		 * @param attributeName
+		 * @return columnType en Relational (si no hay coincidencia se obtiene INTEGER por default)
+		 */
+		private String obtenerColumnType(String attributeName) {
+			if (attributeName.equalsIgnoreCase("String"))
+				return "VARCHAR";
+			if (attributeName.equalsIgnoreCase("Integer"))
+				return "INTEGER";
+			if (attributeName.equalsIgnoreCase("Date"))
+				return "DATE";
+			if (attributeName.equalsIgnoreCase("Double"))
+				return "NUMBER";
+			return "INTEGER";
+		}
+
+
+		/**
+		 * Método para verificar si una clase tienen alguna relacion de tipo generalization (herencia)
+		 * @param clase
+		 * @return true, si la tiene, de lo contrario false
+		 */
+		private boolean verificarHerencia(ClassAdj clase) {
+			for (abstractmodel.RelationshipAdj relationshipAdj : clase.getLstRelationShipAdj()) {
+				if (relationshipAdj instanceof GeneralizationAdj)
+					return true;
+			}
+			return false;
+		}
 		
+
 		
-		
-		
+		//---------------------------------------------------INPUTS
+
+		/**
+		 * Este metodo permite abrir un cuadro de dialogo para ingresar el nombre del
+		 proyecto
+		 * @return el nombre del proyecto
+		 * @throws Exception 
+		 */
+		public String capturarNombreProyecto() throws Exception {
+			// Mostrar un cuadro de diálogo de entrada
+			String nameProject = JOptionPane.showInputDialog("Ingrese el nombre del proyecto:");
+
+			// Comprobar si el usuario ingresó algo y mostrarlo
+			if (nameProject != null) {
+				if (!nameProject.equals(""))
+					return nameProject;
+				return "newProject";
+
+			} else {
+				throw new Exception("OPERACION CANCELADA");
+			}
+		}
+
+
+		/**
+		 * Metodo para capturar la ruta absoluta del proyecto
+		 * @return
+		 * @throws Exception
+		 */
+		private String capturarRutaProyecto() throws Exception{
+			JFileChooser chooser = new JFileChooser();
+			chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+
+			int opcion = chooser.showSaveDialog(null); // Muestra la ventana de selección
+
+			if (opcion == JFileChooser.APPROVE_OPTION) {
+				File archivo = chooser.getSelectedFile(); // Obtiene la ruta seleccionada por el usuario
+				return archivo.getAbsolutePath();
+			}
+			else {
+				throw new Exception("OPERACION CANCELADA");
+			}
+
+		}
 		
 		
 	//-------------------------------------------------------FOLDERS Y ARCHIVOS

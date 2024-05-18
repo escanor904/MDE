@@ -122,9 +122,18 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="returnType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="accessModifier" eType="#//AccessModifier"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="lstParameterConcreteAdj"
-        upperBound="-1" eType="#//ParameterConcreteAdj" containment="true"/>
+        upperBound="-1" eType="#//ParameterConcreteAdj" containment="true">
+      <eAnnotations source="gmf.compartment">
+        <details key="layout" value="list"/>
+        <details key="collapsible" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ParameterConcreteAdj">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="name"/>
+      <details key="color" value="255,255,128"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="AttributeTypeConcreteAdj"
         eType="#//AttributeTypeConcreteAdj"/>

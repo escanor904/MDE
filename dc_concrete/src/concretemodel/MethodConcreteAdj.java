@@ -146,6 +146,7 @@ public interface MethodConcreteAdj extends EObject {
 	 * @return the value of the '<em>Lst Parameter Concrete Adj</em>' containment reference list.
 	 * @see concretemodel.ConcretemodelPackage#getMethodConcreteAdj_LstParameterConcreteAdj()
 	 * @model containment="true"
+	 *        annotation="gmf.compartment layout='list' collapsible='true'"
 	 * @generated
 	 */
 	EList<ParameterConcreteAdj> getLstParameterConcreteAdj();

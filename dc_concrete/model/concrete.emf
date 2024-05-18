@@ -77,9 +77,11 @@ class MethodConcreteAdj{
 	attr String body;
 	attr String returnType;
 	attr AccessModifier accessModifier;
+	@gmf.compartment(layout="list",collapsible="true")
 	val ParameterConcreteAdj [*] lstParameterConcreteAdj;
 }
 
+@gmf.node(label="name", color="255,255,128")
 class ParameterConcreteAdj{
 	attr String name;
 	ref AttributeTypeConcreteAdj AttributeTypeConcreteAdj; 

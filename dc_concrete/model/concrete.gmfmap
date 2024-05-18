@@ -70,7 +70,8 @@
           compartment="//@nodes.1/@ownedChild/@compartments.1">
         <containmentFeature
             href="concrete.ecore#//ClassConcreteAdj/lstMethodConcreteAdj"/>
-        <ownedChild>
+        <ownedChild
+            relatedDiagrams="//@diagram">
           <domainMetaElement
               href="concrete.ecore#//MethodConcreteAdj"/>
           <labelMappings
@@ -85,6 +86,32 @@
               href="concrete.gmftool#//@palette/@tools.0/@tools.2"/>
           <diagramNode
               href="concrete.gmfgraph#MethodConcreteAdj"/>
+          <children
+              compartment="//@nodes.1/@ownedChild/@children.1/@ownedChild/@compartments.0">
+            <containmentFeature
+                href="concrete.ecore#//MethodConcreteAdj/lstParameterConcreteAdj"/>
+            <ownedChild>
+              <domainMetaElement
+                  href="concrete.ecore#//ParameterConcreteAdj"/>
+              <labelMappings
+                  xsi:type="gmfmap:FeatureLabelMapping">
+                <diagramLabel
+                    href="concrete.gmfgraph#ParameterConcreteAdjLabel"/>
+                <features
+                    href="concrete.ecore#//ParameterConcreteAdj/name"/>
+              </labelMappings>
+              <tool
+                  xsi:type="gmftool:CreationTool"
+                  href="concrete.gmftool#//@palette/@tools.0/@tools.4"/>
+              <diagramNode
+                  href="concrete.gmfgraph#ParameterConcreteAdj"/>
+            </ownedChild>
+          </children>
+          <compartments
+              children="//@nodes.1/@ownedChild/@children.1/@ownedChild/@children.0">
+            <compartment
+                href="concrete.gmfgraph#MethodConcreteAdjLstParameterConcreteAdjCompartment"/>
+          </compartments>
         </ownedChild>
       </children>
       <compartments
