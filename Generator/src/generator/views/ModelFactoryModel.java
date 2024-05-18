@@ -1735,6 +1735,15 @@ public class ModelFactoryModel {
 
 				tabla.getLstPrimaryKey().add(primaryKey);
 			}
+			else {
+				column = DslrelationalFactory.eINSTANCE.createColumn();
+				column.setName("id"+tabla.getName());
+				column.setColumnType("INTEGER");
+				column.setIsNullable(false);
+				column.setOwnedByTable(tabla);
+
+				tabla.getLstColumn().add(column);
+			}
 			
 			//Crear columnas
 			for (AttributeAdj attributeAdj : clase.getLstAttributeAdj()) {
@@ -1795,7 +1804,7 @@ public class ModelFactoryModel {
 		 */
 		private String obtenerColumnType(String attributeName) {
 			if (attributeName.equalsIgnoreCase("String"))
-				return "VARCHAR";
+				return "VARCHAR(200)";
 			if (attributeName.equalsIgnoreCase("Integer"))
 				return "INTEGER";
 			if (attributeName.equalsIgnoreCase("Date"))

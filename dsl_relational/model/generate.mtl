@@ -1,0 +1,129 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generate.
+ */]
+[module generate('http://dslrelational')]
+
+
+[**
+ * The documentation of the template generateElement.
+ * @param aModelFactoryRelational
+ */]
+[template public generateElement(aModelFactoryRelational : ModelFactoryRelational)]
+[comment @main/]
+
+[for (dataProject : DataProject | aModelFactoryRelational.lstDataProject)]
+[file (dataProject.schema.name+'.sql', false, 'UTF-8')]
+	[let schema : Schema = dataProject.schema]
+
+[comment crear tablas con las columnas pk/]
+	[for (table : Table | schema.lstTable)]
+CREATE TABLE [table.name/] (
+    [generateColumnsPkFk(table)/]
+);
+	[/for]
+
+[comment generar pk/]
+	[for (table : Table | schema.lstTable)]
+ALTER TABLE [table.name/]
+ADD CONSTRAINT [table.name/]_pk PRIMARY KEY ( [generarPk(table)/]
+										);
+	[/for]
+
+[comment generar fk/]
+	[for (table : Table | schema.lstTable)]
+[generarFk(table)/]
+	[/for]
+
+[comment generar funciones y procedimientos/]
+	[for (function : Function | schema.lstFunction)]
+		[if (function.returnType <> null)]
+CREATE OR REPLACE FUNCTION [function.name/] ([generarParametros(function)/] )
+RETURN [function.returnType/] IS
+-- variables
+
+BEGIN
+-- instrucciones
+
+EXCEPTION
+-- excepciones
+
+END;
+		[else]
+CREATE OR REPLACE PROCEDURE [function.name/] ([generarParametros(function)/] )
+IS
+-- variables
+
+BEGIN
+-- instrucciones
+
+EXCEPTION
+-- excepciones
+
+END;
+
+		
+		[/if]
+	[/for]
+
+	[/let]
+[/file]
+[/for]
+
+[/template]
+
+
+[template public generateColumnsPkFk(table : Table)]
+[for (pk : PrimaryKey | table.lstPrimaryKey)]
+	[let isLast : Boolean = (table.lstPrimaryKey->indexOf(pk) = table.lstPrimaryKey->size())]
+	 [pk.theColumn.name/] [pk.theColumn.columnType/] [if not (pk.theColumn.isNullable)]NOT NULL[/if] [if not isLast],[/if]
+	[/let]
+[/for]
+[if (table.lstForeignKey->notEmpty())]
+	,
+[/if]
+[for (fk : ForeignKey | table.lstForeignKey)]
+	[let isLast : Boolean = (table.lstForeignKey->indexOf(fk) = table.lstForeignKey->size())]
+	 [fk.thePrimaryKey.theColumn.name/] [fk.thePrimaryKey.theColumn.columnType/] NOT NULL [if not isLast],[/if]
+	[/let]
+[/for]
+[if (table.lstColumn->size() > 1)]
+	,
+[for (column : Column | table.lstColumn)]
+	[let isFirst : Boolean = (table.lstColumn->indexOf(column) = 1)]
+	[let isLast : Boolean = (table.lstColumn->indexOf(column) = table.lstColumn->size())]
+		[if (not isFirst)]
+	[column.name/] [column.columnType/] [if not (column.isNullable)]NOT NULL[/if] [if not isLast],[/if]
+		[/if]
+	[/let]
+	[/let]
+[/for]
+[/if]
+
+
+[/template]
+
+
+[template public generarPk(table : Table)]
+[for (pk : PrimaryKey | table.lstPrimaryKey)]
+	[let isLast : Boolean = (table.lstPrimaryKey->indexOf(pk) = table.lstPrimaryKey->size())]
+[pk.theColumn.name/][if not isLast],[/if]
+	[/let]
+[/for]
+[/template]
+
+
+[template public generarFk(table : Table)]
+[for (fk : ForeignKey | table.lstForeignKey)]
+ALTER TABLE [table.name/]
+ADD CONSTRAINT [table.name/]_[fk.thePrimaryKey.ownedByTable.name/]_fk FOREIGN KEY ( [fk.thePrimaryKey.theColumn.name/] )
+REFERENCES [fk.thePrimaryKey.ownedByTable.name/] ( [fk.thePrimaryKey.theColumn.name/] );
+[/for]
+[/template]
+
+
+[template public generarParametros(function : Function)]
+[for (parameter : Parameter | function.lstParameter)]
+[parameter.name/] [parameter.columnType/]
+[/for]
+[/template]
